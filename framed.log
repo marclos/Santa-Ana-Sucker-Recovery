@@ -1,0 +1,363 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.27)  13 JUL 2016 16:40
+entering extended mode
+**./framed.sty
+(framed.sty
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+
+LaTeX Warning: You have requested package `',
+               but the package provides `framed'.
+
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.267 \newcommand\TF@T
+                      itle[1]{%
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ] in font nullfont!
+! A <box> was supposed to be here.
+<to be read again> 
+                   \@m 
+l.271   \setbox\@
+                 tempboxa\vbox{%
+I was expecting to see \hbox or \vbox or \copy or \box or
+something like that. So you might find something missing in
+your output. But keep trying; you can fix this later.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.271   \setbox\@
+                 tempboxa\vbox{%
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 271.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 271.
+! Undefined control sequence.
+l.273    \hbox{\kern\fboxsep\textcolor
+                                      {TFTitleColor}{#1}\vphantom{Tj)}}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! You can't use `macro parameter character #' in restricted horizontal mode.
+l.273 ...x{\kern\fboxsep\textcolor{TFTitleColor}{#
+                                                  1}\vphantom{Tj)}}%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no ) in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.275   \hrule
+              \@height\ht\@tempboxa
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (65.17882pt too wide) in paragraph at lines 267--275
+[]$[]\OML/cmm/m/it/10 tempboxa[]$ 
+ []
+
+! You can't use `\spacefactor' in vertical mode.
+<recently read> \spacefactor 
+                             
+l.275   \hrule\@
+                height\ht\@tempboxa
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.275   \hrule\@
+                height\ht\@tempboxa
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.275   \hrule\@
+                height\ht\@tempboxa
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Improper \spacefactor.
+\@->\spacefactor 
+                 \@m {}
+l.275   \hrule\@height\ht\@
+                           tempboxa
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   {
+l.275   \hrule\@height\ht\@
+                           tempboxa
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Improper \spacefactor.
+\@->\spacefactor 
+                 \@m {}
+l.276   \kern-\ht\@
+                   tempboxa
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+! Improper \spacefactor.
+\@->\spacefactor 
+                 \@m {}
+l.277   \box\@
+              tempboxa
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.278   \endgroup
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+! You can't use `\prevdepth' in horizontal mode.
+\nointerlineskip ->\prevdepth 
+                              -\@m \p@ 
+l.279   \nointerlineskip
+                        
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no - in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.279   \nointerlineskip
+                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \kern 
+l.280   \kern
+             -0.04pt\relax
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \kern 
+l.280   \kern
+             -0.04pt\relax
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra }, or forgotten $.
+l.282 }
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.283 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (174.98058pt too wide) in paragraph at lines 275--283
+[]$[]\OML/cmm/m/it/10 height[]tempboxa[]tempboxa[]tempboxa$$$ 
+ []
+
+\OuterFrameSep=\skip41
+\fb=\dimen102
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.477 \newdimen\fb@
+                   frw
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+\fb=\dimen103
+Missing character: There is no @ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no h in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 477--489
+[]
+ []
+
+! Undefined control sequence.
+l.496 \edef\zero@glue{\the\z
+                            @skip}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `the character @' after \the.
+l.496 \edef\zero@glue{\the\z@
+                             skip}
+I'm forgetting what you said and using zero instead.
+
+! You can't use `\spacefactor' in vertical mode.
+\@->\spacefactor 
+                 \@m {}
+l.504 \@
+        ifundefined{FrameRule}{\newdimen\FrameRule \FrameRule=\fboxrule}{}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.504 \@
+        ifundefined{FrameRule}{\newdimen\FrameRule \FrameRule=\fboxrule}{}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.504 \@
+        ifundefined{FrameRule}{\newdimen\FrameRule \FrameRule=\fboxrule}{}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\FrameRule=\dimen104
+! You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.505 \@
+        ifundefined{FrameSep} {\newdimen\FrameSep  \FrameSep =3\fboxsep}{}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+\FrameSep=\dimen105
+! Missing $ inserted.
+<inserted text> 
+                $
+l.509 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (232.86226pt too wide) in paragraph at lines 504--509
+[]$[]\OML/cmm/m/it/10 ifundefined[][][][]ifundefined[][][]$ 
+ []
+
+)
+! Emergency stop.
+<*> ./framed.sty
+                
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 51 strings out of 493335
+ 518 string characters out of 3139210
+ 53211 words of memory out of 3000000
+ 3679 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 19i,4n,12p,114b,58s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
