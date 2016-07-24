@@ -5,6 +5,7 @@ date: "July 13, 2016"
 output: html_document
 ---
 
+git@github.com:marclos/Climate_Change_Narratives.git
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
