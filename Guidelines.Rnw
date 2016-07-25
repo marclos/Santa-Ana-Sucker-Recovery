@@ -9,6 +9,8 @@
 
 \section{Introduction}
 
+Who cares?
+
 \subsection{Driving Question}
 
 How can we save the Santa Ana sucker?
