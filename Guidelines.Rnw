@@ -11,7 +11,7 @@
 
 According to Kolbert 201X, we are in the midst of a dramatic extinction event -- rivaling major catostrophic extinctions in the past. The difference with the current situation is the cause: The dominance of human beings over the Earth's surface led to the extirpation of thousands of species, and counting. 
 
-
+It's easy to second guess various scienctific and policy questions with respect to endangered species, but when we begin to evaluate what is actually being done on the ground for various species, we quickly learn that we are not just in a ecological web, we are also in a policy and regulatory morass. 
 
 \subsection{Driving Question}
 
@@ -24,7 +24,7 @@ As we have seen, this is a generic question that needs to be constrained, define
 \begin{itemize}
   \item Learn to evaluate sucker habitat using the following tools:
   \begin{itemize}
-  \item Water Quality
+  \item Define Water Quality Goals
   \item Hydrology and Geomophology
   \item Community Profile of Periphyton
 \end{itemize}
