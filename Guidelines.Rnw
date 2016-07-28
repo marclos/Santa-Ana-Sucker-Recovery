@@ -9,7 +9,9 @@
 
 \section{Introduction}
 
-Who cares?
+According to Kolbert 201X, we are in the midst of a dramatic extinction event -- rivaling major catostrophic extinctions in the past. The difference with the current situation is the cause: The dominance of human beings over the Earth's surface led to the extirpation of thousands of species, and counting. 
+
+
 
 \subsection{Driving Question}
 
