@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  28 JUL 2016 20:30
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  29 JUL 2016 08:51
 entering extended mode
  %&-line parsing enabled.
 **Guidelines.tex
@@ -171,7 +171,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 57.
  [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Guidelines.aux) ) 
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Guidelines.aux) )
+ 
 Here is how much of TeX's memory you used:
  1165 strings out of 256214
  15473 string characters out of 1917000
@@ -179,16 +180,15 @@ Here is how much of TeX's memory you used:
  4478 multiletter control sequences out of 10000+200000
  8230 words of font info for 29 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,6n,19p,324b,189s stack positions out of 5000i,500n,6000p,200000b,15000s
- </h
-ome/CAMPUS/mwl04747/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000
-.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fo
-nts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.
-pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/
-type1/bluesky/cm/cmr17.pfb>
-Output written on Guidelines.pdf (1 page, 34566 bytes).
+ 25i,6n,19p,459b,189s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/mwl04747/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm
+1000.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texm
+f/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
+r10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fo
+nts/type1/bluesky/cm/cmr17.pfb>
+Output written on Guidelines.pdf (2 pages, 48078 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
+ 34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
