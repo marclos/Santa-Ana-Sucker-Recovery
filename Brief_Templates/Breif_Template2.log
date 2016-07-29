@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  29 JUL 2016 09:55
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  29 JUL 2016 10:09
 entering extended mode
  %&-line parsing enabled.
 **Breif_Template2.tex
@@ -273,9 +273,11 @@ Package hyperref Info: Link coloring ON on input line 3120.
 (/usr/share/texmf/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
 \Fld@listcount=\count109
-)
+) (./mdframed.sty
+Package: mdframed 2012/06/02 v1.6b: mdframed
+ (./xparse.sty
 
-! LaTeX Error: File `mdframed.sty' not found.
+! LaTeX Error: File `expl3.sty' not found.
 
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
@@ -284,16 +286,16 @@ Enter file name:
 ! Emergency stop.
 <read *> 
          
-l.90 \mdfdefinestyle
-                    {sidebar}{^^M
+l.53 \RequirePackage{expl3}[2012/07/16]
+                                       ^^M
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 5104 strings out of 256214
- 74885 string characters out of 1917000
+ 5123 strings out of 256214
+ 75140 string characters out of 1917000
  177949 words of memory out of 1500000
- 8366 multiletter control sequences out of 10000+200000
+ 8379 multiletter control sequences out of 10000+200000
  4403 words of font info for 15 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  37i,0n,38p,429b,241s stack positions out of 5000i,500n,6000p,200000b,15000s
