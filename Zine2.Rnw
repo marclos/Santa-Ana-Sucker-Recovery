@@ -1,0 +1,283 @@
+ % This file is public domain.
+
+\documentclass[a4paper]{article}
+
+\usepackage[margin=1in,top=1in,bottom=1in]{geometry}
+\usepackage{url}
+\usepackage{color}
+\usepackage{flowfram}
+
+\newcommand{\sty}[1]{\textsf{#1}}
+\newcommand{\env}[1]{\textsf{#1}}
+\newcommand{\cmdname}[1]{\texttt{\symbol{92}#1}}
+\newcommand{\meta}[1]{\textnormal{\textless\textit{#1}\textgreater}}
+
+
+\twocolumnStop[1]{2in}
+\setstaticframe{1}{label=title}
+
+\twocolumn[>1]
+
+\begin{document}
+\begin{staticcontents*}{title}
+\title{Creating Flow Frames for Posters or Magazines}
+\author{Nicola L. C. Talbot\\[1cm]\url{http://www.dickimaw-books.com/}}
+\date{}
+\maketitle
+\end{staticcontents*}
+
+This document is a sample document, see \linebreak
+\texttt{ffuserguide.pdf} for
+an up-to-date guide on how to use the \sty{flowfram} package.
+
+\section{Introduction}
+
+The \sty{flowfram} package is designed to enable you to create
+frames in a document such that the
+contents of the \env{document} environment flow from one
+frame to the next in the order that they were defined.
+This is useful for creating posters\marginpar{A marginal note}
+or magazines or any other form of document that does not
+conform to the standard one or two column layout.
+
+\subsection{Setting up Frames}
+
+The \sty{flowfram} package provides three types of frame:
+{flow frames}, {static
+frames} and {dynamic frames}.
+
+\subsubsection{Flow Frames}
+
+The flow frame is the principle type of frame.
+The text of the \env{document} environment will flow from
+one frame to the next in order of definition. Each
+flow frame has an associated width, height,
+position on the page, and optionally a border\footnote{A
+footnote!}.
+
+\subsubsection{Static Frames}
+
+A static frame is a rectangular area in which text neither
+flows into, nor flows out of.  The contents must be set
+explicitly, and once set, the contents of the static frame will
+remain the same on each page until it is explicitly
+changed.  Thus, a static frame can be used, for example, to make
+a company logo appear in the same place on every page.
+
+\subsubsection{Dynamic Frames}
+
+A dynamic frame is similar to a static frame, but its contents
+are re-typeset on each page. (A static frame stores its
+contents in a savebox, whereas a dynamic frame stores its
+contents in a macro).
+
+\section{Frame Attributes}
+\label{sec:modattr}
+
+Once you have defined the {flow frames}, {static frames} and
+{dynamic frames}, their attributes can be changed.
+The three types of frame mostly have the
+same set of attributes, but some are specific to a certain type.
+The available attributes are as follows
+(\textsuperscript{\textbf{F}} indicates the key is
+only available for {flow frames},
+\textsuperscript{\textbf{S}} indicates the key is only available
+for {static frames}
+and \textsuperscript{\textbf{D}} indicates the key
+is only available for {dynamic frames}):
+
+\begin{description}
+\item[width=\meta{length}]  The width of the frame.
+
+\item[height=\meta{length}] The height of the frame.
+
+\item[x=\meta{length}] The x-coordinate of the frame.
+
+\item[y=\meta{length}] The y-coordinate of the frame.
+
+\item[border=\meta{style}] The style of the border around the
+frame, this can take the values: \texttt{none} (no border),
+\texttt{plain} (plain border) or the name of a \LaTeX\
+frame making command without the preceding backslash.
+The value \texttt{fbox} is equivalent to \texttt{plain}.
+
+\item[offset=\meta{offset}] The border offset, if it is a
+user-defined border.  This is the distance from the outer
+edge of the left hand border to the left edge of the
+bounding box of the text inside the border.  The \sty{flowfram}
+package is able to compute the border for
+known frame making commands.
+If you define your own frame making command, you may need to
+specify the offset explicitly, or the frames
+may end up shifted to the right or left.
+
+\item[bordercolor=\meta{colour}] The colour of the border
+if you are using a standard frame making command.
+The colour can either be specified as, e.g.\ \texttt{green},
+or including the colour model, e.g. \verb/[rgb]{0,1,0}/.
+
+\item[textcolor=\meta{colour}] The text colour for that
+frame. Again, the colour can either be specified as,
+e.g.\ \texttt{green}, or including the colour model,
+e.g. \verb/[rgb]{0,1,0}/.
+
+\item[pages=\meta{page list}] The {list of
+pages} for which the frame
+should appear. This can either have the values: \texttt{all},
+\texttt{even}, \texttt{odd} or \texttt{none} (the latter
+removes the frame from that point on---useful if you
+have multiple pages with the same number), or it can be a
+comma-separated list of single pages, or
+{page ranges}.
+
+\item[margin=\meta{side}\textsuperscript{F}] The side of
+the flow frame that its corresponding margin should go on. This
+can take the values \texttt{left} or \texttt{right}.
+
+\item[clear=\meta{boolean}\textsuperscript{S}] If this value
+is set, the static frame will be cleared at the start of the
+next page.
+
+\item[style=\meta{cmd}\textsuperscript{D}] This should be
+the name of a command \emph{without} the preceding backslash,
+to be applied to the contents of the specified dynamic frame.
+The command may either be a declaration, for example \verb/style=large/
+which will set the contents of all the dynamic frames in a
+large font, or it can be a command that takes a single argument,
+for example \verb/style=textbf/
+which will make the text for all the dynamic frames come out in
+bold.  To unset a style, do \verb/style=none/.
+
+\end{description}
+
+\section{Miscellaneous}
+
+\subsection{Page Layout}
+
+The \sty{flowfram} package has the package option \texttt{draft}
+which will draw the {bounding boxes} for
+each frame defined.  At the bottom right of each
+bounding box (except for the bounding box denoting the
+typeblock), a marker will be shown to indictate the type
+of frame, its IDN and its IDL.
+
+You can see the layout for the current page (irrespective of
+whether or not the \texttt{draft} option has been set) using
+the command:\newline
+\cmdname{flowframeshowlayout}
+
+The headers and footers will appear as usual (but will not
+be shown in draft mode), according to the format given by
+\cmdname{pagestyle}.
+
+\subsection{Frame Stacking Order}
+
+The material on each page is placed in the following order:
+\begin{enumerate}
+\item Each static frame defined for that page in ascending
+order of IDN.
+
+\item Each flow frame defined for that page in ascending
+order of IDN.
+
+\item Each dynamic frame defined for that page in ascending
+order of IDN.
+
+\item {Bounding boxes} if the \texttt{draft}
+package option has been used.
+\end{enumerate}
+
+This ordering can be used to determine if you want something
+to overlay or underlay everything else on the page.
+
+\subsection{Prematurely Ending a Flow Frame}
+
+You can force text to move immediately to the next defined
+flow frame using one of the standard \LaTeX\ page breaking commands
+which  work in an analogous way to the way they
+work in standard two column mode.
+
+The command \cmdname{framebreak} is provided for situations
+where a paragraph spans two flow frames
+of different widths, as \TeX's output routine does not
+adjust to the new value of \cmdname{hsize} until the last
+paragraph of the previous frame has ended. As a
+result, the end of the paragraph at the beginning of the new
+flow frame retains the width of the previous flow frame.
+
+If you want to start a new page, rather than simply move to the
+next frame, use the command\newline
+\cmdname{finishthispage}.
+
+\subsection{Floats}
+
+Since floats (such as figures and tables) can only go in
+{flow frames}, this package provides
+the additional environments:
+\env{staticfigure} and
+\env{statictable} which can be used in static frames
+and dynamic frames. Unlike their \env{figure} and
+\env{table} counterparts, they are fixed in place, and
+so do not take an optional placement specifier. The
+\cmdname{caption} and \cmdname{label} commands can
+be used within \env{staticfigure} and \env{statictable} as
+usual.
+
+The standard \env{figure} and \env{table} commands will
+behave as usual in the flow frames, but their starred versions,
+\env{figure*} and \env{table*} behave no differently
+from \env{figure} and \env{table}.
+
+\subsection{Global Values}
+
+The following macros can be changed using \cmdname{renewcommand}:
+
+\begin{itemize}
+\item \cmdname{setffdraftcolor}
+
+This sets the colour of the bounding box
+when it is displayed in draft mode.
+
+\item
+\cmdname{setffdrafttypeblockcolor}
+
+This sets the colour of
+the bounding box of the typeblock when it is displayed
+in draft mode.
+
+\item \cmdname{fflabelfont}
+
+This sets the font size for the bounding box markers in
+draft mode.
+
+\end{itemize}
+
+The following are lengths, which can be changed using
+\cmdname{setlength}:
+\marginpar{Another marginal note}
+
+\begin{itemize}
+\item \cmdname{fflabelsep}
+
+This is the distance from the right hand side of the
+bounding box at which to place the bounding box marker.
+
+\item \cmdname{flowframesep}
+
+This is the gap between the text of the frame and
+its border, for the standard border types.
+
+\item \cmdname{flowframerule}
+
+This is the width of the frame's border, if using
+a border given by a frame making command that uses \cmdname{fboxsep}
+to set its border width.
+\end{itemize}
+
+\section*{Contact Details}
+
+Dr Nicola Talbot\\
+Dickimaw Books\\
+\url{http://www.dickimaw-books.com/}
+
+\end{document}
