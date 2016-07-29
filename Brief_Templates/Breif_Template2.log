@@ -1,8 +1,8 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  29 JUL 2016 08:31
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  29 JUL 2016 09:55
 entering extended mode
  %&-line parsing enabled.
-**newsletter_2.tex
-(./newsletter_2.tex
+**Breif_Template2.tex
+(./Breif_Template2.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
@@ -27,7 +27,7 @@ File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./structure.tex
+)
 (/usr/share/texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -53,6 +53,22 @@ File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+(/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texmf/tex/latex/ltxmisc/framed.sty
+Package: framed 2003/07/21 v 0.8a: framed or shaded text with page breaks
+\FrameRule=\dimen105
+\FrameSep=\dimen106
+)
+(/usr/share/texmf/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+) (./structure.tex
 (/usr/share/texmf/tex/latex/microtype/microtype.sty
 Package: microtype 2007/01/21 v2.0 Micro-typography with pdfTeX (RS)
 \MT@toks=\toks15
@@ -60,7 +76,7 @@ Package: microtype 2007/01/21 v2.0 Micro-typography with pdfTeX (RS)
 LaTeX Info: Redefining \lsstyle on input line 1370.
 LaTeX Info: Redefining \lslig on input line 1370.
 LaTeX Info: Redefining \textls on input line 1371.
-\MT@lskern=\dimen105
+\MT@lskern=\dimen107
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (/usr/share/texmf/tex/latex/microtype/microtype.cfg
@@ -70,16 +86,16 @@ File: microtype.cfg 2007/01/14 v2.0 microtype main configuration file (RS)
 Package: multicol 2006/05/18 v1.6g multicolumn formatting (FMi)
 \c@tracingmulticols=\count89
 \mult@box=\box26
-\multicol@leftmargin=\dimen106
+\multicol@leftmargin=\dimen108
 \c@unbalance=\count90
 \c@collectmore=\count91
 \doublecol@number=\count92
 \multicoltolerance=\count93
 \multicolpretolerance=\count94
-\full@width=\dimen107
-\page@free=\dimen108
-\premulticols=\dimen109
-\postmulticols=\dimen110
+\full@width=\dimen109
+\page@free=\dimen110
+\premulticols=\dimen111
+\postmulticols=\dimen112
 \multicolsep=\skip43
 \multicolbaselineskip=\skip44
 \partial@page=\box27
@@ -107,35 +123,35 @@ Package: multicol 2006/05/18 v1.6g multicolumn formatting (FMi)
 \@tempa=\box49
 \c@columnbadness=\count95
 \c@finalcolumnbadness=\count96
-\last@try=\dimen111
-\multicolovershoot=\dimen112
-\multicolundershoot=\dimen113
+\last@try=\dimen113
+\multicolovershoot=\dimen114
+\multicolundershoot=\dimen115
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
 )
 (/usr/share/texmf/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/03/16 v1.6180 publication quality tables
-\heavyrulewidth=\dimen114
-\lightrulewidth=\dimen115
-\cmidrulewidth=\dimen116
-\belowrulesep=\dimen117
-\belowbottomsep=\dimen118
-\aboverulesep=\dimen119
-\abovetopsep=\dimen120
-\cmidrulesep=\dimen121
-\cmidrulekern=\dimen122
-\defaultaddspace=\dimen123
+\heavyrulewidth=\dimen116
+\lightrulewidth=\dimen117
+\cmidrulewidth=\dimen118
+\belowrulesep=\dimen119
+\belowbottomsep=\dimen120
+\aboverulesep=\dimen121
+\abovetopsep=\dimen122
+\cmidrulesep=\dimen123
+\cmidrulekern=\dimen124
+\defaultaddspace=\dimen125
 \@cmidla=\count97
 \@cmidlb=\count98
-\@aboverulesep=\dimen124
-\@belowrulesep=\dimen125
+\@aboverulesep=\dimen126
+\@belowrulesep=\dimen127
 \@thisruleclass=\count99
 \@lastruleclass=\count100
-\@thisrulewidth=\dimen126
+\@thisrulewidth=\dimen128
 )
 (/usr/share/texmf/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen127
-\WF@size=\dimen128
+\wrapoverhang=\dimen129
+\WF@size=\dimen130
 \c@WF@wrappedlines=\count101
 \WF@box=\box52
 \WF@everypar=\toks16
@@ -165,19 +181,19 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 (/usr/share/texmf/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2005/05/12 v1.1 Customized lists
 \labelindent=\skip45
-\enit@outerparindent=\dimen129
+\enit@outerparindent=\dimen131
 )
 (/usr/share/texmf/tex/latex/caption/caption.sty
 Package: caption 2007/01/07 v3.0k Customising captions (AR)
 
 (/usr/share/texmf/tex/latex/caption/caption3.sty
 Package: caption3 2007/01/07 v3.0k caption3 kernel (AR)
-\captionmargin=\dimen130
-\captionmarginx=\dimen131
-\captionwidth=\dimen132
-\captionindent=\dimen133
-\captionparindent=\dimen134
-\captionhangindent=\dimen135
+\captionmargin=\dimen132
+\captionmarginx=\dimen133
+\captionwidth=\dimen134
+\captionindent=\dimen135
+\captionparindent=\dimen136
+\captionhangindent=\dimen137
 )
 Package caption Info: float package v1.3 (or newer) detected on input line 275.
 
@@ -192,6 +208,7 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -210,7 +227,7 @@ File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
 ))
 (/usr/share/texmf/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
-\@linkdim=\dimen136
+\@linkdim=\dimen138
 \Hy@linkcounter=\count103
 \Hy@pagecounter=\count104
 
@@ -239,8 +256,8 @@ Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 2599.
 \Fld@menulength=\count105
-\Field@Width=\dimen137
-\Fld@charsize=\dimen138
+\Field@Width=\dimen139
+\Fld@charsize=\dimen140
 \Choice@toks=\toks19
 \Field@toks=\toks20
 Package hyperref Info: Hyper figures OFF on input line 3102.
@@ -273,11 +290,11 @@ l.90 \mdfdefinestyle
 
  
 Here is how much of TeX's memory you used:
- 5034 strings out of 256214
- 73892 string characters out of 1917000
- 176480 words of memory out of 1500000
- 8306 multiletter control sequences out of 10000+200000
+ 5104 strings out of 256214
+ 74885 string characters out of 1917000
+ 177949 words of memory out of 1500000
+ 8366 multiletter control sequences out of 10000+200000
  4403 words of font info for 15 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 37i,0n,38p,426b,241s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 37i,0n,38p,429b,241s stack positions out of 5000i,500n,6000p,200000b,15000s
 !  ==> Fatal error occurred, no output PDF file produced!
