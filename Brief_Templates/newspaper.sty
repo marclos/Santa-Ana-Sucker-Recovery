@@ -49,11 +49,11 @@
 
 %%%% set internal variables %%%%
 
-\def\@papername{Committee Times:}
-\def\@headername{Committee Times}   % because of the yfonts you may need both papername and headername
-\def\@paperlocation{Washington DC}
+\def\@papername{Research Briefs:}
+\def\@headername{Research Briefs}   % because of the yfonts you may need both papername and headername
+\def\@paperlocation{Clairmont CA}
 \def\@paperslogan{``All the News I Feel Like Printing.''}
-\def\@paperprice{Zero Dollars}
+\def\@paperprice{Free}
 
 \newcommand\SetPaperName[1]{%
 	\def\@papername{#1}}
@@ -73,7 +73,7 @@
 \vspace*{-40pt}
 \begin{center}
 {\setlength\fboxsep{3mm}\raisebox{12pt}{\framebox[1.2\width]{\parbox[c]{1.15in}{\begin{center}\small \@paperslogan\end{center}}}}}\hfill%
-{\textgoth{\huge\usefont{LYG}{bigygoth}{m}{n} \@papername}}\hfill%	
+{\large\usefont{LYG}{bigygoth}{m}{n} \@papername}\hfill%	
 \raisebox{12pt}{\textbf{\footnotesize \@paperlocation}}\\
 \vspace*{0.1in}
 \rule[0pt]{\textwidth}{0.5pt}\\
