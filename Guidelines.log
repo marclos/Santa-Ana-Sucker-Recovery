@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  30 JUL 2016 10:07
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  4 AUG 2016 22:45
 entering extended mode
  %&-line parsing enabled.
 **Guidelines.tex
@@ -241,10 +241,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3] (./Guidelines.aux) ) 
 Here is how much of TeX's memory you used:
- 3049 strings out of 256214
- 42946 string characters out of 1917000
+ 3051 strings out of 256214
+ 42976 string characters out of 1917000
  94818 words of memory out of 1500000
- 6311 multiletter control sequences out of 10000+200000
+ 6312 multiletter control sequences out of 10000+200000
  8230 words of font info for 29 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  25i,6n,36p,459b,399s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -253,9 +253,9 @@ s/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/bluesky/cm
 /cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/tex
 mf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
 r12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Guidelines.pdf (3 pages, 58070 bytes).
+Output written on Guidelines.pdf (3 pages, 59863 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 131072)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 131072)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
