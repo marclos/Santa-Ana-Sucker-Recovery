@@ -40,17 +40,26 @@ This project will attempt to answer the following question, "How can we save the
   \item Session 2: Revise 'Driving Question' and list resources needed
   \item Session 3: Read, clarify, or develop appropriate SOPs
   \item Session 4: Field Work
-  \item Session 5: Analysis
+  \item Session 5: Data Analysis
   \item Session 6: Presentation of Public Products
 \end{itemize}
 
 \section{Defining the Public Product}
 
-For this project, each student will contribet to one of four briefs on the science available to "resore and protect" the Santa Ana Sucker. 
+For this project, each student will contribute to one of four briefs on the science available to "resore and protect" the Santa Ana Sucker. 
 
-Although the audience will be the public... the breifs will be submitted the the USFWS the the USFWS and City of San Bernardino... etc...??
+Although the audience is the public at large, we will use several collaborators to help us define, refine, and evaluate our public products. 
+
+These collaborators include: 
+
+\begin{itemize}
+  \item USFWS
+  \item RCD of SB?
+  \item 
+\end{itemize}
 
 Each "issue" of the research briefs, will address a different scientific issues associated with the Santa Ana sucker--where each issues addresses a specific driving question with respect to the sucker. 
+
 EA 30 Research Briefs are short (3-4 pages) descriptions of recently EA30 project results. These "briefs" highlights also include one image, a caption (50 words), and several publication citations. Each student scientists are invited to develop one to several breifs that will be made available to the public.
 
 Teams will be in charge of each issue, but each student will make an individual contribution. The group will decide how to arrange the order of each individual based on the quality and potential interests for each of the sections.  
@@ -79,7 +88,7 @@ As one of our first excercises, we will explore the meaning of the driving quest
 
 \subsection{Understanding the Recovery Plan of the Santa Ana sucker}
 
-In the XXX of 20XX, the USFWS release a \href{https://www.fws.gov/carlsbad/SpeciesStatusList/RP/201411xx_Draft%20RP_SASU.pdf}{Draft Recovery Plan for the Santa Ana sucker}
+In the XXX of 20XX, the USFWS release a \href{https://www.fws.gov/carlsbad/SpeciesStatusList/RP/201411xx_Draft%20RP_SASU.pdf}{Draft Recovery Plan for the Santa Ana sucker}. Please read the Draft Plan before class and we will use this to help create the driving question and refine the public product. 
 
 \subsection{Resources to answer driving question}
 
