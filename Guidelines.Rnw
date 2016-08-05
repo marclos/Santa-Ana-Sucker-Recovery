@@ -89,7 +89,19 @@ Teams will be in charge of each issue, but each student will make an individual 
 
 \href{http://blogs.scientificamerican.com/extinction-countdown/}{http://blogs.scientificamerican.com/extinction-countdown/}
 
-\subsection{Evaluation Criteria of Public Products}
+\subsection{Stakeholders and Evaluation Criteria of Public Product}
+
+Working with stakeholders is a key component doing environmental science, which might be constrasted with regular scientific research. Although some make the distinction between applied and pure science, I don't find the divide all that useful. 
+
+Better that getting into the morass of these defintions, let's move on to figure out what it works with stakeholders:
+
+\begin{description}
+  \item[Active Listening]
+  \item[Defining Success]
+  \item[Outlining a Process]
+  \item[Professionalism and Completion]
+\end{description}
+
 
 \section{Driving Question}
 
@@ -102,8 +114,6 @@ As one of our first excercises, we will explore the meaning of the driving quest
 In the XXX of 20XX, the USFWS release a \href{https://www.fws.gov/carlsbad/SpeciesStatusList/RP/201411xx_Draft%20RP_SASU.pdf}{Draft Recovery Plan for the Santa Ana sucker}. Please read the Draft Plan before class and we will use this to help create the driving question and refine the public product. 
 
 \subsection{Resources to answer driving question}
-
-
 
 Each team will determine what resources are avaialble and/or needed to address the driving question. Working with the instructor is key because these resources need to be made available for the following week.
 
