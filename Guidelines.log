@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  6 AUG 2016 21:50
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  8 AUG 2016 11:48
 entering extended mode
  %&-line parsing enabled.
 **Guidelines.tex
@@ -244,7 +244,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 60.
- <Catostomus_santaanae.jpg, id=83, 602.25pt x 224.84pt>
+ <Catostomus_santaanae.jpg, id=99, 602.25pt x 224.84pt>
 File: Catostomus_santaanae.jpg Graphic file (type jpg)
 
 <use Catostomus_santaanae.jpg>
@@ -304,23 +304,23 @@ Package wrapfig Warning: Stationary wrapfigure forced to float on input line 11
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 11
 3.
 
-[2] [3] [4] [5] (./Guidelines.aux) ) 
+[2] [3] [4] [5] [6] (./Guidelines.aux) ) 
 Here is how much of TeX's memory you used:
- 3132 strings out of 256214
- 44003 string characters out of 1917000
- 96016 words of memory out of 1500000
- 6381 multiletter control sequences out of 10000+200000
+ 3141 strings out of 256214
+ 44169 string characters out of 1917000
+ 97016 words of memory out of 1500000
+ 6385 multiletter control sequences out of 10000+200000
  8230 words of font info for 29 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,6n,36p,469b,459s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/mwl04747/.texlive2007/texmf-
-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/bl
-uesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/s
-hare/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/blues
-ky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Guidelines.pdf (5 pages, 102192 bytes).
+ 25i,6n,36p,1020b,459s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/mwl04747/.texlive2007/te
+xmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type
+1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/b
+luesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
+Output written on Guidelines.pdf (6 pages, 108772 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 131072)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 131072)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
