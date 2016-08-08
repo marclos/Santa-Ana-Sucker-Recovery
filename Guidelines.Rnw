@@ -135,6 +135,9 @@ Also, instead of tying the change in habitat to a shutdown, potentially a high v
 
 \begin{quote}
 I think it would be great to have them [EA30 students] focus on the red algae and its effect on sucker behavior.  
+
+I wonder if we could do a series of snorkel videos of the sucker behavior in/around the red algae (if they are there and utilizing) and compare?
+
 \end{quote}
 
 \subsubsection{Carl Demetropoulos--Fish Ecologists, Consultant}
