@@ -128,7 +128,7 @@ Better that getting into the morass of these defintions, let's move on to figure
 \begin{quote}
 Based on the current dataset we have on sucker biology and habitat preference, I would like to identify data gaps where student work would contribute to species' conservation as well as contribute to research or other types of projects. In order to prioritize a list of data gaps, I need to know where we stand on the ongoing research projects relating to sucker.
 
-Also, instead of tying the change in habitat to a shutdown, potentially a high velocity flushing flow from RIX would provide data for a measure proposed by Heather's group. Heather - what is your thought? 
+Also, instead of tying the change in habitat to a shutdown, potentially a high velocity flushing flow from RIX [Water treatment facility] would provide data for a measure proposed by Heather's group. 
 \end{quote}
 
 \subsubsection{Heather Dyer -- San Bernardino Municipal Water District}
