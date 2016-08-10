@@ -6,7 +6,7 @@
 \author{Marc Los Huertos}
 
 \begin{document}
-%\SweaveOpts{concordance=TRUE}
+
 
 \maketitle
 
@@ -20,13 +20,12 @@ It's easy to second guess various scientific and policy questions with respect t
   \begin{center}
     \includegraphics[width=0.58\textwidth]{Catostomus_santaanae.jpg}
   \end{center}
-  \caption{Birds}
+  \caption{Santa Ana sucker, \emph{Catostomus santaanae}}
 \end{wrapfigure}
-
 
 \subsection{Driving Question}
 
-This project will attempt to answer the following question, "How can we save the Santa Ana sucker?" As we have seen, this type of generic question needs to be constrained, defined, and subject to what we already know or will learn about the topic. In addition, we need to define the terms used in the question, such as who is "we"? What do we mean by "save"?  And finally, when we ask "how", what are the options avaible that might fit into the "how"? 
+This project will attempt to answer the following question, ``How can we save the Santa Ana sucker?'' As we have seen, this type of generic question needs to be constrained, defined, and subject to what we already know or will learn about the topic. In addition, we need to define the terms used in the question, such as who is "we"? What do we mean by ``save''?  And finally, when we ask ``how'', what are the options avaible that might fit into the ``how''? 
 
 \section{Learing Goals}
 
@@ -42,13 +41,6 @@ This project will attempt to answer the following question, "How can we save the
 \end{itemize}
 
 \subsection{Why these learning goals?}
-
-%\begin{wrapfigure}{l}{0.6\textwidth}
-%  \begin{center}
-%    \includegraphics[width=0.58\textwidth]{Catostomus_santaanae.jpg}
-%  \end{center}
-%  \caption{The Santa Ana sucker \emph{Catostomus santaanae}.}
-%\end{wrapfigure}
 
 \section{Project Stages}
 
@@ -85,14 +77,6 @@ Each brief will include 5 sections:
   \item[Presentation to HPC on findings] And as the topics develop, we will bundle briefs to produce 3-5 reports that will be made public as part of a presentation to the HPC group.
 \end{description}
 
-
-
-\subsection{Examples}
-
-\href{https://www.fws.gov/Endangered/esa-library/index.html}{https://www.fws.gov/Endangered/esa-library/index.html}
-
-\href{http://blogs.scientificamerican.com/extinction-countdown/}{http://blogs.scientificamerican.com/extinction-countdown/}
-
 \subsection{Stakeholders and Evaluation Criteria of Public Product}
 
 Although the audience is the public at large, we will use several collaborators to help us define, refine, and evaluate our public products.  
@@ -104,6 +88,25 @@ Our collaborators include:
   \item RCD of SB?
   \item ??
 \end{itemize}
+
+west fork...edison... consulting report?
+
+
+
+justine...
+
+baskin...(old alheizer..)
+
+annotatee bibl. documents.
+
+recovery permit...
+
+coordinator 10A1A permit...
+
+6-25
+
+
+980? in carlsbad...
 
 As the develop of individual topics forms, we will form into teams to facilitate field work, literature reviews, and evaluation of current or unpublished data. Hote: each student is responsible for an individual contribution. 
 
@@ -119,6 +122,12 @@ Better that getting into the morass of these defintions, let's move on to figure
   \item[Outlining a Process] The process can also be called, ``project management''
   \item[Professionalism and Completion]
 \end{description}
+
+
+\begin{wrapfigure}{l}{0.6\textwidth}
+   \includegraphics[width=0.58\textwidth]{Catostomus_santaanae.jpg}
+  \caption{The Santa Ana sucker \emph{Catostomus santaanae}.}
+\end{wrapfigure}
 
 \subsubsection{Kai Pelenscar -- US Fish and Wildlife Service}
 
@@ -142,11 +151,22 @@ I wonder if we could do a series of snorkel videos of the sucker behavior in/aro
 \begin{quote}
 In discussions with other members of the group, we have come along way over the past year and now just need to put it together in a single report, and consider the next phase of analysis.  
 \end{quote}
+
 \subsubsection{Larry Brown--USGS}
 
 \begin{quote}
 Scott and a colleague have developed a 2-D habitat model of a reach below Rix and Jason works with me on the population estimates and habitat utilization. I am really interested in the dynamics of the red algae below RIX within the modeling reach. This could involve mapping of algae patches and measurements of depth, velocity, and substrate to characterize "algae habitat utilization". This could be compared against sucker habitat utilization to determine if they are "competing" for habitat. Doing this before and several times after a big shutdown would be ideal. This data would be very useful (in my mind anyway) to understanding the sucker population below RIX. I also think this data could contribute to a scientific publication. I was planning on doing this during our fall field work to the extent possible in a week but multiple observations would make for a stronger paper. I think the timing is good since our plan is to do the work in late Sep. The class could overlap or work in Sep-Oct.
 \end{quote}
+
+\subsection{US Forest Service -- ??}
+
+forest service... needs some work done too... who is the contact?
+
+\subsection{Southern Edison}
+
+
+\subsection{Retired--Cam Swift}
+
 
 \section{Driving Question}
 
@@ -173,48 +193,16 @@ Each team will determine what resources are avaialble and/or needed to address t
 Below is a list of possible themes, but this list in only one potential list and not meant to constrain how we decide to work as a group: 
 
 \begin{description}
-  \item[Issue 1: Habitat Loss] 
-  \item[Issue 2: Food Quality] Are diatoms are on the red algae
-  \item[Issue 3: Water Quality] Water velocity?
-  \item[Issue 4: Hydrology]
-  \item[Issue 5: Geomorphology]
+  \item[Issue 1: Habitat Use] Where are the Santa Sucker?  Do they move from habitat to habitat on a daily basis?
+  diel movement with a GoPro... successional changes in algae...
+  
+  \item[Issue 2: Food Quality] How has the invassive red algae influenced sucker food? Are diatoms are on the red algae? I
+  find a rock and work it up...
+  \item[Issue 3: Water Quality] 
+  \item[Issue 4: Hydrology]Water velocity? flow and feeding behavior... RIX facility...40-100 cfs before and after flushing event..., micro-velocity meter fish my be found in 1.8/2.2 m/s
+  \item[Issue 5: Geomorphology] As a comparison, Horse Ranch in Big Tujunga has a 3\% gradient good location/habitat.
 \end{description}
 
-flow and feeding behavior... micro-velocity meter fish my be found in 1.8/2.2 m/s
-
-diel movement with a GoPro...
-
-find a rock and work it up...
-
-forest service... needs some work done too... who is the contact?
-
-west fork...edison... 
-
-justine...
-
-baskin...(old alheizer..)
-
-annotatee bibl. documents.
-
-recovery permit...
-
-coordinator 10A1A permit...
-
-6-25
-
-
-980? in carlsbad...
-
-successional changes...
-
-cam swift...
-
-RIX facility...40-100 cfs
-
-before and after flushing event...
-
-
-horse ranch 3\% in BT is a good location/habitat.
 
 
 \subsection{Data Collection and Analysis}
@@ -232,5 +220,13 @@ We will rely on the Tufte style that we can access in Rstudio.
 \subsection{Evaluation of the Public Product}
 
 Our stakeholders will evaluate the public product using the criteria that we develop together that will likely include accuracy, scholarship, and clarity. 
+
+\section{Other Resources}
+
+\subsection{Examples}
+
+\href{https://www.fws.gov/Endangered/esa-library/index.html}{https://www.fws.gov/Endangered/esa-library/index.html}
+
+\href{http://blogs.scientificamerican.com/extinction-countdown/}{http://blogs.scientificamerican.com/extinction-countdown/}
 
 \end{document}
