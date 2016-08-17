@@ -114,7 +114,9 @@ Once we create topical themes, we will create teams to arrange and order of  ind
 
 Working with stakeholders is a key component doing environmental science, which might be constrasted with regular scientific research. Although some make the distinction between applied and pure science, I don't find the divide all that useful. 
 
-Better that getting into the morass of these defintions, let's move on to figure out what skills we need to apply while working with stakeholders:
+Better that getting into the morass of these defintions, let's move on to figure out what skills we need to apply while working with stakeholders. As it turns out, few stakeholders can really define their project until after it is complete -- much to the surprise of the both the stakeholder and the group doing the work. 
+
+There is no secret to get around this problem and even if you identify and try to work through it, you might still find that the project doesn't meet the "expectations" of the stakeholder -- which were either unrealistic or poorly defined or both.
 
 \begin{description}
   \item[Active Listening] Careful listening and echoing what stakeholders say is an extremely important to develop a successful partnership with stakeholders. Asking for clarity and follow up questions will help you define what the goals of the project in collaboration.
@@ -193,7 +195,7 @@ Each team will determine what resources are avaialble and/or needed to address t
 Below is a list of possible themes, but this list in only one potential list and not meant to constrain how we decide to work as a group: 
 
 \begin{description}
-  \item[Issue 1: Habitat Use] Where are the Santa Sucker?  Do they move from habitat to habitat on a daily basis?
+  \item[Issue 1: Habitat Use] Where are the Santa Sucker?  Do they move from habitat to habitat on a daily basis? 
   diel movement with a GoPro... successional changes in algae...Video with experimental manipulation of rocks with and without algae on them. E. fork of San Gabriel behavior is much different. More cover...
   
   Select a pool, six pools...too much!  exploratory study.
@@ -204,7 +206,7 @@ Below is a list of possible themes, but this list in only one potential list and
   Diatom 18s rDNA
   Faeces 18s rDNA
   
-  (http://www.fao.org/docrep/x5744e/x5744e0f.htm)[http://www.fao.org/docrep/x5744e/x5744e0f.htm]
+\href{http://www.fao.org/docrep/x5744e/x5744e0f.htm}{http://www.fao.org/docrep/x5744e/x5744e0f.htm}
   
   \item[Issue 3: Water Quality] Temperature, pH, conductivity, DO, and other chemicals?
   \item[Issue 4: Hydrology]Water velocity? flow and feeding behavior... RIX facility...40-100 cfs before and after flushing event..., micro-velocity meter fish my be found in 1.8/2.2 m/s
