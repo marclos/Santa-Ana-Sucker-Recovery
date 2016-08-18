@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  9 AUG 2016 17:09
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  17 AUG 2016 12:18
 entering extended mode
  %&-line parsing enabled.
 **Guidelines.tex
@@ -270,11 +270,7 @@ File: Catostomus_santaanae.jpg Graphic file (type jpg)
  <use Catostomus_santaanae.jpg>
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 18
-1.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 18
-4.
+3.
 
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 18
@@ -282,54 +278,63 @@ Package wrapfig Warning: Stationary wrapfigure forced to float on input line 18
 
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 18
-9.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
-2.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
-4.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
 8.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 20
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
 1.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 20
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
 4.
 
 
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+6.
+
+
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 20
-7.
+0.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 20
+3.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 20
+6.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 20
+9.
 
 [4]
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 21
-0.
+2.
 
 
-Overfull \hbox (14.84239pt too wide) in paragraph at lines 217--217
+Overfull \hbox (14.84239pt too wide) in paragraph at lines 219--219
 []\OT1/cmr/bx/n/12 Retired--Cam Swift 
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 222--222
+Underfull \hbox (badness 2189) in paragraph at lines 224--224
 \OT1/cmr/bx/n/12 strain driv-ing ques-
  []
 
 [5]
-Overfull \hbox (3.29417pt too wide) in paragraph at lines 248--250
+Overfull \hbox (3.29417pt too wide) in paragraph at lines 252--254
 []\OT1/cmr/m/n/10 How has the in-vas-sive red al-gae in-flu-enced sucker food?
  []
 
 
-Overfull \hbox (19.30956pt too wide) in paragraph at lines 251--252
+Overfull \hbox (2.6553pt too wide) in paragraph at lines 260--261
+[]\OT1/cmr/m/n/10 Temperature, pH, con-duc-tiv-ity, DO, and other chem-
+ []
+
+
+Overfull \hbox (19.30956pt too wide) in paragraph at lines 261--262
 []\OT1/cmr/m/n/10 Water ve-loc-ity? flow and feed-ing be-hav-ior... RIX facilit
 y...40-
  []
@@ -349,9 +354,9 @@ s/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/bluesky/cm
 mf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
 r12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fo
 nts/type1/bluesky/cm/cmti10.pfb>
-Output written on Guidelines.pdf (7 pages, 118832 bytes).
+Output written on Guidelines.pdf (7 pages, 120522 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
+ 196 PDF objects out of 1000 (max. 8388607)
  37 named destinations out of 1000 (max. 131072)
  238 words of extra memory for PDF output out of 10000 (max. 10000000)
 
