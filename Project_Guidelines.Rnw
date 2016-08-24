@@ -10,32 +10,32 @@
 
 \section{Introduction}
 
-According to Kolbert 2015, we are in the midst of a dramatic extinction event that is rivaling major catastrophic extinctions in the past. The difference with the current situation is the cause: The dominance of human beings over the Earth's surface led to the extirpation of thousands of species, and counting. 
+According to Kolbert 2015, we are in the midst of a dramatic extinction event that is rivaling major catastrophic extinctions in the past. The difference with the current situation is the cause: The dominance of human beings over the Earth's surface had led to the extirpation of thousands of species, and counting. 
 
-It's easy to second guess various scientific and policy questions with respect to endangered species, but when we begin to evaluate what is actually being done on the ground for various species, we quickly learn that we are not just in an ecological web, but our policy and regulatory processes are embedded in a complex context of land use history and economic agendas.  
+It's easy to second guess various scientific and policy questions with respect to endangered species, but when we begin to evaluate a specific taxon, we quickly learn that we are not just in an ecological web, but our policy and regulatory processes are embedded in a complex context of land use history and economic agendas. Thus, for this project, we shall focus on the Santa Ana sucker (\emph{Catostomus santaanae}) of an extinction potential.  
 
 \begin{figure}
     \includegraphics[width=1.0\textwidth]{Catostomus_santaanae.jpg}
-  \caption{Santa Ana sucker, \emph{Catostomus santaanae}}
+  \caption{Santa Ana sucker, \emph{Catostomus santaanae} is a member of the sucker family (Catostomidae) and endemic to California.}
 \end{figure}
 
 \subsection{Driving Question}
 
-This project will attempt to answer the following question, ``How can we save the Santa Ana sucker?'' As we have seen, this type of generic question needs to be constrained, defined, and subject to what we already know or will learn about the topic. In addition, we need to define the terms used in the question, such as who is ``we''? What do we mean by ``save''?  And finally, when we ask ``how'', what are the options available that might fit into the ``how''? 
+This project will attempt to answer the following question, "How can we save the Santa Ana sucker?" As we have seen, this type of generic question needs to be constrained, defined, and subject to what we already know or will learn about the topic. In addition, we need to define the terms used in the question, such as who is "we"? What do we mean by "save"?  And finally, when we ask "how", what are the options available that might fit into the "how"? 
 
 \section{Learning Goals}
 
-In the broadest sense, we will learn how to conduct a scientific study to meet policy and regulatory goals -- in this case for the Endangered Species Act. By selecting the Santa Ana sucker, we have ``constrained'' the methodological options available, largely to aquatic sciences, such as hydrology, geomorphology, biogeochemistry, ecology, and animal behavior. 
+In the broadest sense, we will learn how to conduct a scientific study to meet policy and regulatory goals -- in this case for the Endangered Species Act. By selecting the Santa Ana sucker, we have "constrained" the methodological options available, largely to aquatic sciences, such as hydrology, geomorphology, biogeochemistry, ecology, and animal behavior. As such, we will specific skills: 
 
 \begin{itemize}
-  \item Evaluate sucker habitat using the following tools:
+  \item To evaluate sucker habitat using the following tools:
   \begin{itemize}
-    \item Define Water Quality Goals
-    \item Characterize Hydrology and Geomorphology
-    \item Analyze Community Profile of Periphyton
+    \item Define water quality goals;
+    \item Characterize hydrology and geomorphology habitat; and
+    \item Analyze community profile of periphyton.
   \end{itemize}
-  \item Propose and evaluate options to improve Santa Ana sucker habitat.
-  \item Prepare sets of practical and effective measures that might protect (or increase) the extant populations of the Santa Ana sucker.
+  \item To propose and compare options to improve Santa Ana sucker habitat.
+  \item To prepare sets of practical and effective measures that might protect (or increase) the extant populations of the Santa Ana sucker.
 \end{itemize}
 
 \subsection{Why these learning goals?}
@@ -45,22 +45,23 @@ Scientific methods vary dramatically accross and within disciplines and subdisci
 \section{Project Stages}
 
 \begin{itemize}
-  \item Session 1: Define 'Public Product' \& Team Contract
-  \item Session 2: Revise 'Driving Question' and list resources needed
-  \item Session 3: Read, clarify, or develop appropriate SOPs
-  \item Session 4: Field Work
-  \item Session 5: Data Analysis
-  \item Session 7: Development of Public Products
-  \item Session 6: Presentation of Public Products
+  \item Session 1: Welcome to the Santa Ana River (August 30/31)
+  \item Session 2: Define \textbf{Public Product} (September 6)  
+  \item Session 3: Revise \textbf{Driving Question}, list resources needed,  \& develop \textbf{Team Contract} (Sept. 6/7)
+  \item Session 4: Read, clarify, or develop appropriate \textbf{SOPs} (Sept 6-12)
+  \item Session 5: \textbf{Field Work} (Sept 13/14)
+  \item Session 5: \textbf{Data Analysis} (September 20/21)
+  \item Session 7: Development of \textbf{Public Products} (September 27/28)
+  \item Session 6: \textbf{Presentation} of Public Products (Oct 4/5)
 \end{itemize}
 
 \section{Defining the Public Product}
 
-The stakeholder group has defined the following products for their work:
+The stakeholder group has defined the following products for our work:
 
 \begin{description}
-  \item[Annotated Bibliography] Thus, we will be collating, organize, and summarize scientific resources that can be digested by a range of stakeholders to help ``answer'' the driving question. 
-  \item[Analysis of how invasive red algae affect fish behavior]
+  \item[Annotated Bibliography] We shall collate, organize, and summarize scientific resources that can be digested by a range of stakeholders to help "answer" the driving question. 
+  \item[Analysis of how invasive red algae affect fish behavior] Using several videography, we will capture fish behavior associated with various habitats within several reaches of the Santa Ana River.
   \item[Research Briefs] These briefs will describe the knowledge base, information gaps, and research needs for a range of topics. Each student will contribute one science brief that describes the knowledge available to "restore and protect" the Santa Ana Sucker. Each research brief, will address a different scientific issues associated with the Santa Ana sucker--where each issue addresses a specific driving question with respect to the sucker. EA 30 Research Briefs are short (3-4 pages) descriptions of recently EA30 project results. These ``briefs'' highlights also include one image, a caption (50 words), and several publication citations. Each student will develop one to several briefs that will be made available to the public.
   
 Each brief will include 5 sections:
@@ -80,37 +81,29 @@ Each brief will include 5 sections:
 \subsection{Project Partners and Evaluation Criteria of Public Product}
 
 Although the audience is the public at large, we will use several collaborators to help us define, refine, and evaluate our public products.  
-
-Our collaborators include: 
+Our collaborators are members of the Santa Ana sucker HPC (Habitat Planning Committe) and others parties and include: 
 
 \begin{itemize}
   \item USFWS
   \item RCD of SB?
-  \item ??
+  \item San Bernardino Water Management Agency
+  \item UC Riverside
+  \item XX Consulting
 \end{itemize}
 
-west fork...Edison... consulting report?
 
+%west fork...Edison... consulting report?
+%Justin...
 
+%baskin...(old Alzheimer..)
 
-Justin...
+%annotate bibl. documents.
 
-baskin...(old Alzheimer..)
+%recovery permit...
 
-annotate bibl. documents.
+%coordinator 10A1A permit...
 
-recovery permit...
-
-coordinator 10A1A permit...
-
-6-25
-
-
-980? in Carlsbad...
-
-As the develop of individual topics forms, we will form into teams to facilitate field work, literature reviews, and evaluation of current or unpublished data. Note: each student is responsible for an individual contribution. 
-
-Once we create topical themes, we will create teams to arrange and order of  individual briefs based on the quality and potential interests for each of the sections.  
+%6-25 980? in Carlsbad...
 
 Working with stakeholders is a key component doing environmental science, which might be contrasted with regular scientific research. Although some make the distinction between applied and pure science, I don't find the divide all that useful. 
 
@@ -133,8 +126,7 @@ There is no secret to get around this problem and even if you identify and try t
 During the summer, our research partners describe various interests they had with our class. Below are some of the opinions expressed:
 
 \begin{description}
-  \item[Kai Pelenscar -- US Fish and Wildlife Service]
-  
+  \item[Kai Pelenscar]US Fish and Wildlife Service
   \begin{quote}
 Based on the current data set we have on sucker biology and habitat preference, I would like to identify data gaps where student work would contribute to species' conservation as well as contribute to research or other types of projects. In order to prioritize a list of data gaps, I need to know where we stand on the ongoing research projects relating to sucker.
 
@@ -185,6 +177,41 @@ As one of our first exercise, we will explore the meaning of the driving questio
 
 In the XXX of 20XX, the USFWS release a \href{https://www.fws.gov/carlsbad/SpeciesStatusList/RP/201411xx_Draft%20RP_SASU.pdf}{Draft Recovery Plan for the Santa Ana sucker}. Please read the Draft Plan before class and we will use this to help create the driving question and refine the public product. 
 
+\section{Stages for Public Product}
+
+\subsection{Developing Teams}
+
+As the development of topics coalesce, we will form teams to facilitate field work, literature reviews, and evaluation of current or unpublished data. Note: Each student is responsible for an individual contribution. 
+
+Once we create topical themes, we will create teams to arrange and order of  individual briefs based on the quality and potential interests for each of the sections.  
+
+\subsection{Thematic Approaches}
+
+Below is a list of possible themes, but this list in only one potential list and not meant to constrain how we decide to work as a group: 
+
+\begin{description}
+  \item[Issue 1: Habitat Use] Where are the Santa Sucker?  Do they move from habitat to habitat on a daily basis? How does the sucker movement vary with habitat value or red algae biomass?
+  
+
+  
+  \item[Issue 2: Food Quality] How has the invasive red algae influenced sucker food? Are diatoms are on the red algae? I
+
+  \item[Issue 2b: Food Quality] How has the invassive red algae influenced sucker food? Are diatoms are on the red algae? I
+
+  \item[Issue 2a] Epiphytic diatoms -- growing on Red Alagae. ..
+  
+
+
+  \item[Issue2b: Stomach and Feaces] 
+  
+\href{http://www.fao.org/docrep/x5744e/x5744e0f.htm}{http://www.fao.org/docrep/x5744e/x5744e0f.htm}
+  
+  \item[Issue 3: Water Quality] 
+  \item[Issue 4: Hydrology]
+  \item[Issue 5: Geomorphology] 
+\end{description}
+
+
 \subsection{Resources to answer driving question}
 
 Each team will determine what resources are available and/or needed to address the driving question. Working with the instructor is key because these resources need to be made available for the following week.
@@ -197,38 +224,30 @@ Each team will determine what resources are available and/or needed to address t
 
 
 
-Below is a list of possible themes, but this list in only one potential list and not meant to constrain how we decide to work as a group: 
-
-\begin{description}
-  \item[Issue 1: Habitat Use] Where are the Santa Sucker?  Do they move from habitat to habitat on a daily basis? 
-  Diel movement with a Go Pro... succession changes in algae...Video with experimental manipulation of rocks with and without algae on them. E. fork of San Gabriel behavior is much different. More cover...
-  
-  Select a pool, six pools...too much!  exploratory study.
-  
-  \item[Issue 2: Food Quality] How has the invasive red algae influenced sucker food? Are diatoms are on the red algae? I
-  find a rock and work it up... What about lipid content?  As it turns out that lipid PHA and ARA imputes egg quality up to 3 generations? 
-
-  \item[Issue 2b: Food Quality] How has the invassive red algae influenced sucker food? Are diatoms are on the red algae? I
-
-  \item[Issue 2a] Epiphytic diatoms -- growing on Red Alagae. ..
-  
-  find a rock and work it up... What about lipid content?  As it turns out that lipid PHA and ARA imputes egg quality upto 3 generations? 
-
-  \item[Issue2b: Stomach and Feaces] We have fish faeces samples from the fall 2015. We will extract the DNA...  Faeces 18s rDNA
-  Diatom 18s rDNA
-
-  
-\href{http://www.fao.org/docrep/x5744e/x5744e0f.htm}{http://www.fao.org/docrep/x5744e/x5744e0f.htm}
-  
-  \item[Issue 3: Water Quality] Temperature, pH, conductivity, DO, and other chemicals?
-  \item[Issue 4: Hydrology]Water velocity? flow and feeding behavior... RIX facility...40-100 cfs before and after flushing event..., micro-velocity meter fish my be found in 1.8/2.2 m/s
-  \item[Issue 5: Geomorphology] As a comparison, Horse Ranch in Big Tujunga has a 3\% gradient good location/habitat.
-\end{description}
 
 
 \subsection{Data Collection and Analysis}
 
 We will go to the field on three times locations??...
+
+\begin{itemize}
+\item Monday Sept. 5th (Labor day) Larry and Jason will drive down to Riverside no work this day.
+\item Tuesday Sept. 6th - Larry and Jason will mark off sampling reaches, could possibly use one or two additional people to help but we won't need the full crew of people on this day. 
+\item Wednesday Sept, 7th will be the 1st full day of reach sampling with the full crew of people
+
+Below is the rest of the tentative schedule:
+
+\item Sept 7-9th - Full crew -Reach sampling
+\item Sept 10-11th-Jason and Larry -Micro habitat assessments
+\item Sept 12-16th - Full crew -Reach sampling
+\item Sept 17-18th-Jason and Larry -Micro habitat assessments
+
+\item Sept 19-23rd - Full crew - Reach sampling
+\item Sept. 24th-25th-Jason and Larry - Micro habitat assessments
+\item Sept. 26th- Jason and Larry -wrap up/ drive home.
+\end{itemize}
+
+Other streams??
 
 \begin{itemize}
   \item Santa Ana River

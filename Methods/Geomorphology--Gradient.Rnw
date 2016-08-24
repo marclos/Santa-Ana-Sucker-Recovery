@@ -1,0 +1,8 @@
+\documentclass{article}
+
+\begin{document}
+
+As a comparison, Horse Ranch in Big Tujunga has a 3\% gradient good location/habitat.
+
+
+\end{document}
