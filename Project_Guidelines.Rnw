@@ -228,7 +228,17 @@ Each team will determine what resources are available and/or needed to address t
 
 \subsection{Data Collection and Analysis}
 
-We will go to the field on three times locations??...
+The Santa Ana sucker has been studied in an uneven way from each of the following watersheds: 
+
+\begin{itemize}
+  \item Santa Ana River
+  \item San Gabriel River
+  \item Big Tujunga Wash
+\end{itemize}
+
+We will go to the field on two - four times depending on our success. But we will need to coordinate with our collaborators because of permitting requirements and ensuring data are consistent within the time frame of sampling -- thus, we will only be able to sample the Santa Ana River.
+
+Below is the schedule for field work by the USGS and collaborators:
 
 \begin{itemize}
 \item Monday Sept. 5th (Labor day) Larry and Jason will drive down to Riverside no work this day.
@@ -247,29 +257,15 @@ Below is the rest of the tentative schedule:
 \item Sept. 26th- Jason and Larry -wrap up/ drive home.
 \end{itemize}
 
-Other streams??
-
-\begin{itemize}
-  \item Santa Ana River
-  \item San Gabriel River
-  \item Big Tujunga Wash
-\end{itemize}
-
-
-?Water Quality
-
-?Velocity
-
-
-
-
-
-
-
-
 \section{Create Public Product}
 
-To create pubic product, we will develop four/five pdf briefs, using LaTeX and Rstudio. 
+Using LaTeX and Rstudio, we will create the following public products: 
+
+\begin{description}
+  \item[Annoated Bibliography]
+  \item[Videography and Behavioral Analysis]
+  \item[Research Briefs] develop four/five pdf briefs
+\end{description}
 
 \subsection{Selecting a Style}
 
@@ -277,13 +273,18 @@ We will rely on the Tufte style that we can access in Rstudio.
 
 \subsection{Writing and Presenting Results}
 
+
 \subsection{Evaluation of the Public Product}
 
 Our stakeholders will evaluate the public product using the criteria that we develop together that will likely include accuracy, scholarship, and clarity. 
 
 \section{Other Resources}
 
-\subsection{Examples}
+\subsection{Annoated Bibliography Examples}
+
+\subsection{Habitat Evaluation with Videography}
+
+\subsection{Examples of Research Briefs}
 
 \href{https://www.fws.gov/Endangered/esa-library/index.html}{https://www.fws.gov/Endangered/esa-library/index.html}
 
