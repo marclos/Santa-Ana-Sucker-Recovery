@@ -177,6 +177,12 @@ forest service... needs some work done too... who is the contact?
 \end{description}
 
 
+\subsection{Pre-Project Efforts}
+
+\paragraph{Permitting} The San Bernadardino County Department of Public Works requires us to get a permit to access the river. With this permit, which I have loaded onto the Github, comes a range of responsibilities and priviledges. For example, access to the river where we can drive onto the levi and get closer to our field sites. 
+
+\paragraph{Purchasing Equipment} The EA Program will purchase field equipment, including cameras that can be installed in the field. At this point, it's unclear which type of camera will be the best.
+
 
 \section{Driving Question}
 
