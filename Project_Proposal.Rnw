@@ -84,11 +84,12 @@ Although the audience is the public at large, we will use several collaborators 
 Our collaborators are members of the Santa Ana sucker HPC (Habitat Planning Committe) and others parties and include: 
 
 \begin{itemize}
-  \item USFWS
-  \item RCD of SB?
+  \item US Fish and Wildlife Service
+  \item US Geological Survey
+  \item Resource Conservation District of San Bernardino
   \item San Bernardino Water Management Agency
-  \item UC Riverside
-  \item XX Consulting
+  \item UC Riverside/Colton Flood Control District
+  \item Environmental Consults
 \end{itemize}
 
 
@@ -167,12 +168,15 @@ Scott and a colleague have developed a 2-D habitat model of a reach below RIX an
 
 \item[TBD] US Forest Service
 
-forest service... needs some work done too... who is the contact?
+US Forest Service has worked on the Santa Ana sucker in the San Gabriel River, but the reports have not been widely distributed. At some point, we need to create a contact with their office and obtain these reports.
 
 \item[TBD] Southern Edison
 
+Souther Edison has been doing work with the Santa Ana sucker, but at this point, we don't have a contact for that informaton. 
+
 \item[Cam Swift] LA Natural History Musuem--Retired Fish Ecologists
 
+He might be very interested, but at this point, we have not had direct contact with him regarding this work.
 
 \end{description}
 
@@ -194,7 +198,7 @@ As one of our first exercise, we will explore the meaning of the driving questio
 
 \subsection{Understanding the Recovery Plan of the Santa Ana sucker}
 
-In the XXX of 20XX, the USFWS release a \href{https://www.fws.gov/carlsbad/SpeciesStatusList/RP/201411xx_Draft%20RP_SASU.pdf}{Draft Recovery Plan for the Santa Ana sucker}. Please read the Draft Plan before class and we will use this to help create the driving question and refine the public product. 
+In 2010, the USFWS release a \href{https://www.gpo.gov/fdsys/pkg/FR-2010-12-14/pdf/2010-30447.pdf#page=2}{Revised Critical Habitat for Santa Ana Sucker Rule} and in 2012 a \href{https://www.fws.gov/carlsbad/SpeciesStatusList/RP/201411xx_Draft%20RP_SASU.pdf}{Recovery Ouline}. Please read the Draft Plan before class and we will use this to help create the driving question and refine the public product. 
 
 \section{Stages for Public Product}
 
@@ -209,40 +213,76 @@ Once we create topical themes, we will create teams to arrange and order of  ind
 Below is a list of possible themes, but this list in only one potential list and not meant to constrain how we decide to work as a group: 
 
 \begin{description}
-  \item[Issue 1: Habitat Use] Where are the Santa Sucker?  Do they move from habitat to habitat on a daily basis? How does the sucker movement vary with habitat value or red algae biomass?
+  \item[Issue 1: Habitat Use] Where are the Santa Sucker?  Do they move from habitat to habitat on a daily basis? How does the sucker movement vary with habitat value or red algae biomass? What is the relationship between the fish that are in the deep pool downstream and the idividual upstream? Do they migrate, is one habitat less valuable than than the other? We might use video to capture this, but we will need to select and purchase something relatively quickly so accomplish our task.
   
-
+  \item[Issue 2a High Quality Food Displaced]  --- The invasive reg algae species, \emph{Compsopogon aeruginosus}, has been introduced to the Santa Ana River and seems to be particularly successful downstream of the RIX facility discharge point. There may be epiphytic diatoms on the red alage that the Santa Ana sucker are using, but anecdotal information suggest that the algae may displace the diatoms, making the habitat unsuitable. We might use video to capture this, but we will need to select and purchase something relatively quickly so accomplish our task. 
   
-  \item[Issue 2: Food Quality] How has the invasive red algae influenced sucker food? Are diatoms are on the red algae? I
+  \item[Issue 2b: Epiphytic Diatoms] How has the invassive red algae influenced sucker food? Are diatoms are on the red algae? Perhaps, the anecdotal information is incorrect and the fish are using the red algae and a substrate for diatoms. How can we tell?  Pehaps, their behavior -- for example, feeding activity could be carefully evaluated with video and we can determine if the fish are using the red algae habitat as much as others. We might use video to capture this, but we will need to select and purchase something relatively quickly so accomplish our task. Or we might college samples from rocks and view them on the microscope and determine which species are present by sending the samples out for DNA analysis.
 
-  \item[Issue 2b: Food Quality] How has the invassive red algae influenced sucker food? Are diatoms are on the red algae? I
-
-  \item[Issue 2a] Epiphytic diatoms -- growing on Red Alagae. ..
+  \item[Issue2b: Stomach and Feaces] We have collected feaces samples in the previous years and we might consider extracting the DNA to analyze what species are in the fish guts -- as it turns out the fish evaculate when they are electro-shocked, so getting samples is relatively easy. We have developed a pretty straightforward method to extract the DNA, so this could be pretty easy.
   
-
-
-  \item[Issue2b: Stomach and Feaces] 
+  \item[Issue 3: Water Quality] Water temperature, canopy cover, and pH may play a significant role for the Santa Ana sucker. We can access long-term data on water quality, but these parameters might not explain everything we need to know. We might consider analyzing the water for a wider suite of chemicals. Of course, the methods to accomplish will require some effort, but we have the equipment needed.
   
-\href{http://www.fao.org/docrep/x5744e/x5744e0f.htm}{http://www.fao.org/docrep/x5744e/x5744e0f.htm}
+  \item[Issue 4: Hydrology] The volume and velocity of the water may play an important role for the suckers. Faster waters might be preferable than slower waters, but this parameter has not been carefully evaluated. The methods are fairly straightforward and we have the equipment.
   
-  \item[Issue 3: Water Quality] 
-  \item[Issue 4: Hydrology]
-  \item[Issue 5: Geomorphology] 
+  \item[Issue 5: Geomorphology] The geomorphology of a stream is characterized by the stream's width, gradient (slope), bank height, channel characteristics. For example, the sucker might prefer specific bed characteristics, such as gravel or pebbles. There are some ideas that they like cobble since diatoms might be better associated with them, but this hasn't been carefully analyzed.
 \end{description}
 
 
 \subsection{Resources to answer driving question}
 
-Each team will determine what resources are available and/or needed to address the driving question. Working with the instructor is key because these resources need to be made available for the following week.
+Each team will determine what resources are available and/or needed to address the driving question. Below I have outlined the process to develop our project which begins with indvidual research, then teamwork to partition effort, and finally an ``individualized project plan.'' The plan will be worth 15\% of the project grade. I will evaluate is based on clarity, completeness, and likelihood of success. 
+
+This plan will have the following sections: 
+
+\begin{description}
+  \item[Question to be Addressed] A clearly articulated question that we can address given our resources. I recommend that you frame it as a question AND a testable hypothesis. A testable null hypothesis is simple a thoughtful expectation that can easily proven incorrect. For example, we might want to answer the following question -- Do Santa Ana sucker each diatoms?  To revise the question, we articulate the null hypothesis as ``Santa Ana sucker have recognizable diatom cells in their gut.'' Notice that this hypothesis has a specific outcome and a good indication of the method. Of course, it doesn't really answer the question, but it might be as close as we can get. Coming up with a good question and null hypothesis comes with experience, i.e. it's a learned skill. So, you might find the first few you come up with don't do what you want.   
+  \item[Approach] A narrative that describe a reasonable approach to test they hypothesis. This might discuss how many times we go in the field, where we go and how many people are needed. What types of equipment or method development you might need and how these will be used to test the null hypothesis. Of course, it will also require some acknowledgement that we have the resources to conduct the work. 
+  \item[Cited Methods] Include an annoated bibliography that references several papers, describing how the methods and equipment were used to test their hypothesis or answer their question. Be sure to highlight how their question might or might not align with what you have in mind.
+\end{description}
+
+Before these plans are turned in, however, we need to have a vetting process. Basically, a way to increase the changes that your plan will work. Frist, we should acknowledge that our initial ideas may not nor do not need to be perfect. We will use our classroom -- there will be some negotiation in the classroom next week -- but there will be no progress if you have not vetted your interests with some rigor.
+
+Thus, collaboration is the key to the course. Working with others in the class is the first and most effective place to start --- but you want to use me as a resource as much as you can as well. 
+
+Please consider the following steps as a reasonable approach toward the development of our final product. 
+
+\begin{description}
+  \item[Tuesday or Wednesday, September 6/7] Be prepared to vet ideas about what you would like to do. During our time together, we will be sharing our ideas -- but they need to be concrete and actionable. What won't help us, is a vague, ``I wonder if we can do  X'' or ``Here's a cool study, but we can't do it because...'' or ``I didn't find anything'' or  ``I haven't looked up anything yet''. The real bummer is that you can't help us define how we will ultimately do our work. 
+  
+Although there are several ways to approach this, I'll give you some ideas how I find my way to start a research project. Here's how I suggest you prepare for the conversation: 
+  
+  \begin{enumerate}
+  \item I read as much of the literature as I can. This includes textbooks, peer-reviewed articles, wikipedia pages. But I don't skim them -- I use an active reading approach. I wrote an active reading guide this weekend for us. I wrote it to guide you as you learn to read scientific journal articles.
+  \item As I read, I write a short paragraph summarizing each article -- this helps me remember what each one is about and what results were found.
+As part of the active reading, I highlight important parts of the text that I might want to follow up with -- this usually includes source of methods and any problems with the methods. 
+  \item Next, I ``follow the bread crumbs'' into other articles and evaluate their results and methods. 
+  \item During this process, I refine the question that I find most compelling. 
+Once I have a sense of the literature (results, methods), I ask which of the methods meet the following: 
+\begin{itemize}
+  \item Which method will answer the questions I am most interested and 
+  \item Which method is possible given my resource limitation.
+\end{itemize}
+
+\item Finally, I write a short 1-page summary of my methods and expected results and share it with colleagues. 
+\end{enumerate}
+
+\begin{marginfigure}
+   \includegraphics[width=1.0\textwidth]{github_logo.jpg}
+\end{marginfigure}
+
+\item[Tuesday/Wednesday] Github and team contracts. We will also use our time in the lab to explore how to use R, Rstudio, and Github. In addition, we'll determine how our teams will be composed and how they will work together.
+
+\item[Friday, September 9] Submit a hardcopy of Individual Project Plan -- It would be preferable to meet with me before or during submision so we can hash out any further unknowns, because I will be spending my weekend working with you to prepare for our field work during the following week.
+\end{description}
 
 \subsection{Determine Required Resources and Methods}
 
+Based on your individual project plan, I will work with each student and team to develop the appropriate methods and ensuring we have access to the appropriate equipment. If you have a specific piece of equipment in mind, be sure to let me know as soon as possible to make sure that we have it or I can obtain it relatively quickly. For example, I wondered if we might use enclosures for a feeding study (\href{http://www.fao.org/docrep/x5744e/x5744e0f.htm}{http://www.fao.org/docrep/x5744e/x5744e0f.htm}, but the FWS didn't like the idea doing a manipulative study at this point.
+
+We will use the Github site to develop and share SOPs.
 
 \subsection{Answering the Driving Questions}
-
-
-
-
 
 
 \subsection{Data Collection and Analysis}
