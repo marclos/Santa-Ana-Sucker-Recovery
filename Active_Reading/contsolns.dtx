@@ -1,0 +1,296 @@
+%\iffalse meta-comment
+%<*internal>
+\def\nameofplainTeX{plain}
+\ifx\fmtname\nameofplainTeX\else
+  \expandafter\begingroup
+\fi
+%</internal>
+%<*install>
+\input docstrip.tex
+\keepsilent
+\askforoverwritefalse
+\preamble
+\endpreamble
+\ifx\fmtname\nameofplainTeX
+    \generate{\file{\jobname.def}{\from{\jobname.dtx}{package}}}
+\fi
+%</install>
+%<install>\endbatchfile
+%<*internal>
+\ifx\fmtname\nameofplainTeX
+  \expandafter\endbatchfile\else
+  \expandafter\endgroup\fi
+%</internal>
+%<*driver>
+\documentclass{ltxdoc}
+%\usepackage[numbered]{hypdoc}
+\begin{document}
+  \DocInput{\jobname.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+%\title{\textsf{contsolns}}
+%\author{D. P. Story}
+%
+%\maketitle
+%
+%     \paragraph{Installation.} Open the file \texttt{\jobname.dtx} in
+%     your favorite tex editor (\textsf{WinEdt}) and compile using the
+%     \emph{\textbf{tex} compiler}, not the \textbf{latex} compiler. Doing so,
+%     generates the file \texttt{\jobname.def}. The files \texttt{\jobname.dtx}
+%     and \texttt{\jobname.def} are distributed with AeB. The \textsf{exerquiz}
+%     package has the \texttt{contsolns} option to use the code in this file.
+%
+%    \subparagraph{Demo file.} The demo file for this feature of \textsf{exerquiz}
+%    is \texttt{contsolns\_ex.tex}. This feature is available to users of any
+%    supported driver.
+%    \begin{macrocode}
+%<*package>
+%    \end{macrocode}
+%
+% \section{Introduction}
+%
+%     This collection of definitions is designed for use with \textbf{AeB}
+%     (more specifically, the \textsf{web} and \textsf{exerquiz} package).
+%     My occasional friend J\"{u}rgen wanted to have a ``continued on next page'' string to
+%     appear at the bottom of a solution (when it appears at the end of the
+%     file) to indicate the solution to this current problem continues onto the
+%     next page. Originally, this was done for the \texttt{shortquiz}
+%     environment, and later extended to the \texttt{quiz} and \texttt{exercise}
+%     environments.
+%
+%     \paragraph{Assumptions.} The code assumes the \textsf{web} package page style,
+%     \texttt{webheadings}, is in effect; otherwise, this code fails.
+%
+%\section{Documentation}
+%
+%     The use of the \texttt{contsolns} option should be pretty
+%     seamless. The message that appears in the right footer is \DescribeMacro{\rfootContStr}
+%     \cmd{\rfootContStr}; the command takes two argument, the second of which is a short
+%     string that identifies the question. It can be redefined. The labels \DescribeMacro{\Qlabel}\cmd{\Qlabel}
+%     and \DescribeMacro{\Elabel}\cmd{\Elabel} may also be redefined. When compiled
+%     for paper (\texttt{forpaper} option), we emit the \textsf{exerquiz} command
+%     \cmd{\promoteNewPageHere} with an argument of \DescribeMacro{\promoteNPHskip}\cmd{\promoteNPHskip}
+%     in a vain attempt to get the numbers right. \cmd{\promoteNPHskip} is set to
+%     \texttt{.1\cs{textheight}} and may be redefined if this value is not working as it should.
+%
+%     This code file uses the running headers, left and right. If you want to use these
+%     footers and this feature, you need to preserve the code. This is what I do in this
+%     code file:
+%\begin{verbatim}
+%\expandafter\lfooter\expandafter{\expandafter\newLFooterCmd\web@lfoot}
+%\expandafter\rfooter\expandafter{\web@rfoot\newRFooterCmd}
+%\end{verbatim}
+%This demonstrates how to put the new code on the left of the old, or on the right.
+%
+%   \subparagraph{Problems.} Problems arise if the numbers in the footer do not match
+%   the exercise or quiz numbers, this may occur when using the \texttt{forpaper} option,
+%   the workaround is to adjust \cmd{\promoteNPHskip} to a larger value.
+%
+%   When using the \texttt{navibar} option of \textsf{web}, there may be insufficient
+%   room to the right of the navigation bar; in this case, shorten the text created by
+%   \cmd{\rfootContStr}, or reduce the number of navigation buttons on the solution pages.
+%
+% \section{The Code}
+% First, we determine if \textsf{web} is loaded.
+%    \begin{macrocode}
+\@ifpackageloaded{web}{}{\PackageError{exerquiz}
+    {The consolns option of exerquiz requires\MessageBreak
+     the web package}{Use the web package.}}
+%    \end{macrocode}
+%     \DescribeMacro{\setQNum}\cmd{\setQNum} sets the question number in to the solutions at
+%     end of the file. While \DescribeMacro{\setENum}\cs{setENum} does the same thing
+%     for exercises. \DescribeMacro{\Qlabel}\cmd{\Qlabel} provides a label for the
+%     quiz question as a result, \cs{setQNum} expands to strings like `Q1', `Q1(a)',
+%     or `Q1(a)(i)'. \DescribeMacro{\Elabel}\cmd{\Elabel} does the same for exercises.
+%    \cs{setEnum} expands to `E1' and `E1(a)', for example.
+%    Both \cs{Qlabel} and \cs{Elabel} are fragile. All four of these commands may be redefined.
+
+%    \begin{macrocode}
+\def\setQNum{\Qlabel\ifcase\@eqquestiondepth\or\arabic{eqquestionnoi}%
+    \or\arabic{eqquestionnoi}(\alph{eqquestionnoii})%
+    \or\arabic{eqquestionnoi}(\alph{eqquestionnoii})%
+        (\roman{eqquestionnoiii})\fi}
+\def\setENum{\Elabel\if\exerstar*\theeqexno(\alph{partno})\else
+    \theeqexno\fi}
+%    \end{macrocode}
+% The default definitions of \cs{Qlabel} and \cs{Elabel} are next.
+%    \begin{macrocode}
+\def\Qlabel{Q}\def\Elabel{E}
+%    \end{macrocode}
+%     \DescribeMacro{\solContMarks}\cmd{\solContMarks} really does nothing other than expand
+%     to arguments enclosed in braces. The arguments act as a signal
+%     to the running footer telling it to insert some text or not.
+%    \begin{macrocode}
+\def\SolContMrk#1#2{\gdef\solContMarks{{#1}{#2}}}
+%    \end{macrocode}
+%    The default definition of \cs{solContMarks}
+%    \begin{macrocode}
+\def\solContMarks{{}{}}
+%    \end{macrocode}
+%     We use \cs{eq@sqPostHeaderHook} (\cs{eq@qPostHeaderHook}) to insert some
+%     special code into the top of each solution. It inserts the command
+%     \cmd{\SolContMrk} with two arguments, the quiz number
+%     (\verb!Q\@shortquizCnt!, resp., \verb!Q\@quizCnt!) and the question
+%     number (\verb!\setQNum!).
+%    \begin{macrocode}
+\def\eq@sqPostHeaderHook{%
+    \string\SolContMrk{Q\@shortquizCnt}{\setQNum}\relax}
+\def\eq@qPostHeaderHook{%
+    \string\SolContMrk{Q\@quizCnt}{\setQNum}\relax}
+\def\exer@solnheadhook{%
+    \string\SolContMrk{Ex}{\setENum}}
+%    \end{macrocode}
+%    \DescribeMacro{\promoteNPHskip} used if compiled for paper, this is the amount
+%    that we use to promote a new page. We have to do this for otherwise, if {\TeX}s
+%    page breaking algorithm is used, then the page number may be wrong.
+%    \begin{macrocode}
+\newlength{\promoteNPHskip}
+\setlength{\promoteNPHskip}{.1\textheight}
+%    \end{macrocode}
+%    There are two definitions of \DescribeMacro{\redefForContSolns}\cmd{\redefForContSolns},
+%    one for paper and one for screen. The command itself redefines the solution markers
+%    that appear in the solution files (\textsf{SOL} and \textsf{QSL}).
+%    \begin{macrocode}
+\ifeqforpaper
+\def\redefForContSolns{%
+%    \end{macrocode}
+%     If the document is compiled for paper, we promote a new page using the
+%     command \verb!\promoteNewPageHere{\promoteNPHskip}!, and modify the
+%     commands \cs{fpAfterSolutionsSkip} and \cmd{\belowexsolnskip}, which appear
+%     in the \texttt{forpaper} option.
+%     It's the last command that appears at the end of each solution.
+%     Here we clear the arguments of \cs{SolContMrk}.
+%    The two \cs{prior@...} commands are special hooks at the top of the
+%    definitions of \cs{quizSolnHeader} and \cs{exerSolnHeader}. These latter
+%    two hooks were added (2013/12/15) to \textsf{exerquiz}
+%    \begin{macrocode}
+     \def\prior@quizSolnHeaderHook{\promoteNewPageHere{\promoteNPHskip}}
+     \def\prior@exerSolnHeaderHook{\promoteNewPageHere{\promoteNPHskip}}
+%    \end{macrocode}
+%    We use \cs{eq@scratchtoks}, a token register declared in \textsf{exerquiz}
+%    \begin{macrocode}
+    \eq@scratchtoks=\expandafter{\fpAfterSolutionsSkip\SolContMrk{}{}}
+    \edef\@tempExp{\noexpand\promoteNewPageHere{%
+        \noexpand\promoteNPHskip}\the\eq@scratchtoks}
+    \eq@scratchtoks=\expandafter{\@tempExp}
+    \edef\fpAfterSolutionsSkip{\the\eq@scratchtoks}
+    \eq@scratchtoks=\expandafter{%
+        \belowexsolnskip\protect\SolContMrk{}{}}
+    \edef\belowexsolnskip{\noexpand\noexpand
+        \string\promoteNewPageHere{%
+        \noexpand\noexpand\string\promoteNPHskip}\the\eq@scratchtoks}
+}
+\else
+%    \end{macrocode}
+%     Now if the document is compiled for the screen, each solution starts
+%     on a new digital piece of paper, so no need to modify \cs{eqSQt} as
+%     above. The command \cs{fpAfterSolutionsSkip} is not used in the
+%     screen version, so the last command is \cs{endeqSqt}, which we
+%     modify.
+%    \begin{macrocode}
+\def\redefForContSolns{%
+    \let\endeqSQtSAVE\endeqSQt
+    \def\endeqSQt{\endeqSQtSAVE\par\SolContMrk{}{}}
+    \let\endeqQtSAVE\endeqSQt
+    \def\endeqQt{\endeqQtSAVE\par\SolContMrk{}{}}
+    \let\endeqEXtSAVE\endeqEXt
+    \def\endeqEXt{\endeqEXtSAVE\par\SolContMrk{}{}}
+}
+\fi % \ifeqforpaper
+%    \end{macrocode}
+%    We expand \cmd\redefForContSolns at the beginning of the document so as to
+%    include any changes made by the document author, or another package developer.
+%    \begin{macrocode}
+\AtBeginDocument{\redefForContSolns}
+%    \end{macrocode}
+%     \DescribeMacro{\getSolContMarks} is the command that decides whether
+%     to put something in the running footer. If the first argument is
+%     empty (we have already cleared the arguments of \cs{SolContMrk} we do
+%     nothing; if the first argument is nonempty, we emit a message.
+%     \DescribeMacro{\rfootContStr} \cmd{\rfootContStr} is the string that
+%     contains the string that appears in the running footer.
+%    \begin{macrocode}
+\newcommand{\getSolContMarks}[2]{\ifcontSoln
+    \rfootContStr{#1}{#2}\fi}
+\newcommand{\rfootContStr}[2]{Solution to {#2} continues next page}
+%    \end{macrocode}
+%     Set the running footer; this should only appear in the solutions section
+%     at the end of the file. \DescribeMacro{\ifcontSol}We establish a new
+%     switch \cs{ifcontSoln} that will be use to signal the need for a
+%     continuation of the solution.
+%    \begin{macrocode}
+\newif\ifcontSoln \contSolnfalse
+%    \end{macrocode}
+%     We put this in the left footer. {\TeX} processes from left to right,
+%     so we need this on the left, so the switch will be set for the
+%     \cs{cfooter} and \cs{rfooter}. The \DescribeMacro{\bSolContMarks}\cmd{\bSolContMarks}
+%    command makes the decision of setting the switch \cs{ifcontSoln}. It reads the
+%    expansion of \cs{solContMarks}, which holds two arguments.
+%    \begin{macrocode}
+\newcommand{\bSolContMarks}[2]{%
+    \def\eq@argi{#1}\def\eq@argii{#2}%
+    \ifx\eq@argi\@empty\global\contSolnfalse\else
+        \global\contSolntrue\fi}
+%    \end{macrocode}
+%    \DescribeMacro{\lFootbCont} is placed in \cs{lfooter}, and it will set the switch
+%    by first expanding \cs{solContMarks}, then \cs{bSolContMarks}.
+%    \begin{macrocode}
+\def\lFootbCont{\expandafter\bSolContMarks\solContMarks}
+%    \end{macrocode}
+%    \cs{rFootCont} goes in \cs{rfooter}, and holds the continuation string.
+%    \begin{macrocode}
+\def\rFootCont{\makebox[0pt][r]{%
+    \expandafter\getSolContMarks\solContMarks}}
+%    \end{macrocode}
+%    Set the left and right footers.
+%    \begin{macrocode}
+\@ifundefined{web@footerprivate}{%
+    \def\addtolfooter{\expandafter
+    \lfooter\expandafter{\expandafter\lFootbCont\web@lfoot}}%
+}{%
+    \def\addtolfooter{\def\web@footerprivate{\lFootbCont}}%
+}
+\def\addtorfooter{\expandafter
+    \rfooter\expandafter{\web@rfoot\rFootCont}}
+%    \end{macrocode}
+%    Install these footers at the beginning of the document. First check
+%    to see if the \texttt{webheadings} pagestyle is being used.
+%    \begin{macrocode}
+\def\cs@testWH#1#2{\ifx\webfootwrapper#1
+    \def\cs@next{\AtBeginDocument{\addtolfooter\addtorfooter}}\else
+    \def\cs@next{\PackageError{contsoln.def}{%
+        webheadings of the web package are NOT\MessageBreak
+        in effect. The contsoln.def file requires\MessageBreak
+        webheadings}{Use the default webheadings pagestyle
+        from the web package.}}\fi
+    \cs@next
+}
+%    \end{macrocode}
+%    The default definition of \cs{@oddfoot} is
+%\begin{verbatim}
+%   \renewcommand{\@oddfoot}{\webfootwrapper{..}}
+%\end{verbatim}
+%    So, the first token is \cs{webfootwrapper}, if that token
+%    is there, we install the footers, and they should work as
+%    expected; otherwise we declare an error.
+%    \begin{macrocode}
+\AtBeginDocument{\expandafter\cs@testWH\@oddfoot}
+%    \end{macrocode}
+%    \begin{macrocode}
+%</package>
+%    \end{macrocode}
+%\Finale
+\endinput
+
+\def\addtolfooter{\ifx\web@lfoot\@empty
+    \lfooter{\lFootbCont}\else
+    \expandafter\lfooter\expandafter{\expandafter
+    \noexpand\expandafter\lFootbCont\web@lfoot}\fi
+}
+\def\addtorfooter{\ifx\web@rfoot\@empty
+    \rfooter{\rFootCont}\else
+    \expandafter\rfooter\expandafter{\expandafter
+    \noexpand\expandafter\rFootCont\web@rfoot}\fi
+}

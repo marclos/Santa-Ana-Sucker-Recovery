@@ -1,0 +1,87 @@
+%%
+%% This is file `contsolns.def',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% contsolns.dtx  (with options: `package')
+%% 
+\@ifpackageloaded{web}{}{\PackageError{exerquiz}
+    {The consolns option of exerquiz requires\MessageBreak
+     the web package}{Use the web package.}}
+
+\def\setQNum{\Qlabel\ifcase\@eqquestiondepth\or\arabic{eqquestionnoi}%
+    \or\arabic{eqquestionnoi}(\alph{eqquestionnoii})%
+    \or\arabic{eqquestionnoi}(\alph{eqquestionnoii})%
+        (\roman{eqquestionnoiii})\fi}
+\def\setENum{\Elabel\if\exerstar*\theeqexno(\alph{partno})\else
+    \theeqexno\fi}
+\def\Qlabel{Q}\def\Elabel{E}
+\def\SolContMrk#1#2{\gdef\solContMarks{{#1}{#2}}}
+\def\solContMarks{{}{}}
+\def\eq@sqPostHeaderHook{%
+    \string\SolContMrk{Q\@shortquizCnt}{\setQNum}\relax}
+\def\eq@qPostHeaderHook{%
+    \string\SolContMrk{Q\@quizCnt}{\setQNum}\relax}
+\def\exer@solnheadhook{%
+    \string\SolContMrk{Ex}{\setENum}}
+\newlength{\promoteNPHskip}
+\setlength{\promoteNPHskip}{.1\textheight}
+\ifeqforpaper
+\def\redefForContSolns{%
+     \def\prior@quizSolnHeaderHook{\promoteNewPageHere{\promoteNPHskip}}
+     \def\prior@exerSolnHeaderHook{\promoteNewPageHere{\promoteNPHskip}}
+    \eq@scratchtoks=\expandafter{\fpAfterSolutionsSkip\SolContMrk{}{}}
+    \edef\@tempExp{\noexpand\promoteNewPageHere{%
+        \noexpand\promoteNPHskip}\the\eq@scratchtoks}
+    \eq@scratchtoks=\expandafter{\@tempExp}
+    \edef\fpAfterSolutionsSkip{\the\eq@scratchtoks}
+    \eq@scratchtoks=\expandafter{%
+        \belowexsolnskip\protect\SolContMrk{}{}}
+    \edef\belowexsolnskip{\noexpand\noexpand
+        \string\promoteNewPageHere{%
+        \noexpand\noexpand\string\promoteNPHskip}\the\eq@scratchtoks}
+}
+\else
+\def\redefForContSolns{%
+    \let\endeqSQtSAVE\endeqSQt
+    \def\endeqSQt{\endeqSQtSAVE\par\SolContMrk{}{}}
+    \let\endeqQtSAVE\endeqSQt
+    \def\endeqQt{\endeqQtSAVE\par\SolContMrk{}{}}
+    \let\endeqEXtSAVE\endeqEXt
+    \def\endeqEXt{\endeqEXtSAVE\par\SolContMrk{}{}}
+}
+\fi % \ifeqforpaper
+\AtBeginDocument{\redefForContSolns}
+\newcommand{\getSolContMarks}[2]{\ifcontSoln
+    \rfootContStr{#1}{#2}\fi}
+\newcommand{\rfootContStr}[2]{Solution to {#2} continues next page}
+\newif\ifcontSoln \contSolnfalse
+\newcommand{\bSolContMarks}[2]{%
+    \def\eq@argi{#1}\def\eq@argii{#2}%
+    \ifx\eq@argi\@empty\global\contSolnfalse\else
+        \global\contSolntrue\fi}
+\def\lFootbCont{\expandafter\bSolContMarks\solContMarks}
+\def\rFootCont{\makebox[0pt][r]{%
+    \expandafter\getSolContMarks\solContMarks}}
+\@ifundefined{web@footerprivate}{%
+    \def\addtolfooter{\expandafter
+    \lfooter\expandafter{\expandafter\lFootbCont\web@lfoot}}%
+}{%
+    \def\addtolfooter{\def\web@footerprivate{\lFootbCont}}%
+}
+\def\addtorfooter{\expandafter
+    \rfooter\expandafter{\web@rfoot\rFootCont}}
+\def\cs@testWH#1#2{\ifx\webfootwrapper#1
+    \def\cs@next{\AtBeginDocument{\addtolfooter\addtorfooter}}\else
+    \def\cs@next{\PackageError{contsoln.def}{%
+        webheadings of the web package are NOT\MessageBreak
+        in effect. The contsoln.def file requires\MessageBreak
+        webheadings}{Use the default webheadings pagestyle
+        from the web package.}}\fi
+    \cs@next
+}
+\AtBeginDocument{\expandafter\cs@testWH\@oddfoot}
+\endinput
+%%
+%% End of file `contsolns.def'.

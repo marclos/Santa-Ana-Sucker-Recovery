@@ -1,0 +1,263 @@
+\documentclass{tufte-handout}
+\usepackage[pdftex]{eforms}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{amsmath,amsthm,amssymb}
+
+\newdimen\longline
+\longline=\textwidth\advance\longline-4cm
+
+\def\LayoutTextField#1#2{#2} % override default in hyperref
+
+\def\lbl#1{\hbox to 4cm{#1\dotfill\strut}}%
+\def\labelline#1#2{\lbl{#1}\vbox{\hbox{\TextField[name=#1,width=#2]{\null}}\kern2pt\hrule}}
+
+\def\q#1{\hbox to \hsize{\labelline{#1}{\longline}}\vskip1.4ex}
+
+\newcounter{infoLineNum}
+\setcounter{infoLineNum}{0}
+\newcommand{\infoInput}[2][4in]{%
+  \stepcounter{infoLineNum}%
+  \makebox[0pt][l]{%
+    \kern 4 pt
+    \raisebox{.75ex}
+      {\textField[\W0\BC{0 0 1}\BG{0.98 0.92 0.73}\TU{#2}\Ff{\FfMultiline}]{name\theinfoLineNum}{#1}{26bp}}%
+  }
+    \dotfill
+}
+
+\title{Preci\'s \#1: Paleontology and Freshwater Fossils}
+\author[Marc Los Huertos]{Marc Los Huertos\thanks{Modified ``Active Reading Checklist'', Copyright \copyright 2014 Deidre Hughes \& Valerie Hannah with permission}}
+%\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Paleontology is the scientific study of life existent prior to, and sometimes including, the start of the Holocene Epoch roughly 11,700 years before present. It includes the study of fossils to determine organisms' evolution and interactions with each other and their environments (their paleoecology). Paleontology has several subdisciplines, which demonstrate the diversity of the field:
+
+\begin{description}
+	\item[Micropaleontology] Study of generally microscopic fossils, regardless of the group to which they belong.
+	\item[Paleobotany] Study of fossil plants; traditionally includes the study of fossil algae and fungi in addition to land plants.
+
+\item[Palynology] Study of pollen and spores, both living and fossil, produced by land plants and protists.
+
+\item [Invertebrate Paleontology] Study of invertebrate animal fossils, such as mollusks, echinoderms, and others.
+
+\item[Vertebrate] Paleontology: Study of vertebrate fossils, from primitive fishes to mammals.
+
+\item[Human Paleontology (Paleoanthropology)] The study of prehistoric human and proto-human fossils.
+
+\item[Taphonomy] Study of the processes of decay, preservation, and the formation of fossils in general.
+
+\item[Ichnology] Study of fossil tracks, trails, and footprints.
+
+\item[Paleoecology] Study of the ecology and climate of the past, as revealed both by fossils and by other methods.
+\end{description}
+
+Thus, paleontology is the study of what fossils tell us about the ecologies of the past, about evolution, and about our place, as humans, in the world. Paleontology incorporates knowledge from biology, geology, ecology, anthropology, archaeology, and even computer science to understand the processes that have led to the origination and eventual destruction of the different types of organisms since life arose. 
+
+% AR Checklist
+\newpage
+
+\begin{table}
+\begin{tabular}{p{3.5in}lp{2in}}
+   & Submitted by 						& \textField[\BC{0 0 1}\BG{0.98 0.92 0.73}\textColor{1 0 0 rg}]{Name}{2in}{12bp}\\
+	 & Prec\'is No. 						& \listBox[\autoCenter{n}\DV{1}\V{1}\BG{0.98 0.92 0.73}\BC{0 .6 0}\Ff{\FfMultiline}]
+	{precis}{.3in}{12bp}{[(1)(1)][(2)(2)][(3)(3)][(4)(4)][(5)(5)][(6)(6)][(7)(7)]}\\[6pt]
+\end{tabular}
+\end{table}
+
+\section{Article Background}
+%\textField[#1]{#2}{#3}{#4}
+
+\begin{tabular}{lp{4in}}
+First Author  & \textField[\BC{0 0 1}\BG{0.98 0.92 0.73}\textColor{1 0 0 rg}]{Author}{2.25in}{12bp}\\[4pt]
+Article Title & \textField[\BC{0 0 1}\BG{0.98 0.92 0.73}\textColor{1 0 0 rg}\Ff{\FfMultiline}]{Title}{3.2in}{24bp}\\[12pt]
+Journal       & \textField[\BC{0 0 1}\BG{0.98 0.92 0.73}\textColor{1 0 0 rg}\Ff{\FfMultiline}]{Journal}{3.2in}{24bp}\\[12pt]
+\end{tabular}
+
+\noindent Using Google Scholar, record the number of times the article has been cited \textField[\BC{0 0 1}\BG{0.98 0.92 0.73}\textColor{1 0 0 rg}]{TimesCited}{.3in}{12bp} 
+
+\begin{marginfigure}
+	\includegraphics[width=1.00\textwidth]{Cartoon_60wtmk_1.jpg}
+	\label{fig:Cartoon_60wtmk_1}
+	\caption{Effective reading is a learned skill.}
+\end{marginfigure}
+
+\section{Pre-Reading Activities}
+
+\subsection{Predictions from the \emph{Title}}
+
+\begin{enumerate}
+	\item Read the \emph{Title} and create two predictions.
+
+What question(s) will be addressed in this paper? 
+
+\infoInput{Question1}
+
+Why is answering this question important? 
+
+\infoInput{Question2}
+
+\end{enumerate}
+	
+\subsection{Skimming the \emph{Introduction}}
+
+Skim the \emph{Introduction} without trying to understand everything, but get a sense of the paper. As you read look for the purpose or objectives of the paper and vocabulary words:
+	 
+\begin{itemize}
+	\item Highlight the sentence(s) that describe the purpose or objectives of the paper. Write an annotation in the margin that describes the purpose in your own words.
+
+	\item Using a different color, highlight vocabulary words that are unfamiliar to you. 
+	
+	\item After reading the \emph{Introduction}, make a list of these words and write out their definitions. 
+\end{itemize}
+
+\subsection{Making Predictions from the \emph{Introduction}}
+
+As you become familiar with scholarly work, you will learn to judge your familiarity of the topic by learning how well you can predict the content of the paper based on close read of the introduction. Re-read the \emph{Introduction }and make the following predictions: 
+	
+\begin{enumerate}
+	\item What methods could you envision to meet the objectives of the article? 
+
+\infoInput{Question3}
+
+	\item What results do you think the researchers will obtain? 
+
+\infoInput{Question4}
+
+	\item What are the expected outcomes of the paper? 
+
+\infoInput{Question5}
+
+\end{enumerate}
+
+\subsection{Previewing the Results via Figures and Tables}
+
+Being good a reading journal articles is learning how to appreciate the results, and being able to explain them to others. But first, we need to decode the information in these figures and tables.
+
+\begin{itemize}
+	\item Read caption for each figure and table. 
+	\item For graphs or plots, note the x- and y-axis and their units. 
+	\item For tables, read the row and column headings and note the units of measures. 
+	\item Determine if there are any statistics reported and note how they are reported. 
+	\item Write a short summary in the margin about the figure or table.
+\end{itemize}
+
+\begin{marginfigure}
+	\includegraphics[width=1.00\textwidth]{Buoyancy.jpg}
+	\caption{Some figures are easier to decode than others, but even simple ones have some complex topics embedded in them, e.g. What's $p\xi gV$ referring to? That might be something to watch for in the text, since it appears to have real implications to the stick figure!}
+	\label{fig:Buoyancy}
+\end{marginfigure}
+
+\subsection{Connecting article with background knowledge}
+
+Reading comprehension depends on our capacity to make neural connections with old, i.e. background information already in your brain. Complete a short free write (7-9 sentences) to connect the article to your background knowledge and/or personal experience.
+
+\textField[\BC{0 0 1}\BG{0.98 0.92 0.73}\textColor{1 0 0 rg}\Ff{\FfMultiline}]{FreeWrite}{6.5in}{86bp} 
+
+
+\section{Reading Activity}
+\begin{marginfigure}
+	\includegraphics[width=1.00\textwidth]{howtoread}
+	\label{fig:howtoread}
+	\caption{Reading ``How to Read'' to learn to read. As it turns out, this isn't the most effective way to learn how to read.}
+\end{marginfigure}
+
+``Active reading'' relies on combining reading, reflecting, and physically interacting with the text. The following tasks are designed to facilitate the process.
+
+\begin{itemize}
+	\item Decide on a highlighting system and implement it. (Ex.: one color for main ideas, another for details). Avoid over- or under-highlighting. 
+	
+	\item As you read, determine if you need to look up unfamiliar vocabulary that you highlighted during pre-reading. Only look up unfamiliar vocabulary that impedes your ability to understand the main ideas of the text.
+	
+	\item As you read, answer all guide questions.
+
+Confirm or deny predictions with a check
+
+\end{itemize}
+\begin{tabular}{p{4in}ccc}
+	Prediction & Correct & Incorrect & Partially \\
+How well did you predict the content based on the \emph{Title}?
+	  & \raisebox{.75ex}{\radioButton{Content}{10bp}{10bp}{Correct}} 
+		& \raisebox{.75ex}{\radioButton{Content}{10bp}{10bp}{Incorrect}}
+		& \raisebox{.75ex}{\radioButton{Content}{10bp}{10bp}{Partial}} \\[6pt]
+How did you predict why the topic was important?
+    & \raisebox{.75ex}{\radioButton{Importance}{10bp}{10bp}{Correct}} 
+		& \raisebox{.75ex}{\radioButton{Importance}{10bp}{10bp}{Incorrect}}
+		& \raisebox{.75ex}{\radioButton{Importance}{10bp}{10bp}{Partial}} \\[6pt]
+How well did you predict the methods?
+    & \raisebox{.75ex}{\radioButton{Methods}{10bp}{10bp}{Correct}} 
+		& \raisebox{.75ex}{\radioButton{Methods}{10bp}{10bp}{Incorrect}}
+		& \raisebox{.75ex}{\radioButton{Methods}{10bp}{10bp}{Partial}} \\[6pt]
+How well did you predict the results of the paper?
+    & \raisebox{.75ex}{\radioButton{Results}{10bp}{10bp}{Correct}} 
+		& \raisebox{.75ex}{\radioButton{Results}{10bp}{10bp}{Incorrect}}
+		& \raisebox{.75ex}{\radioButton{Results}{10bp}{10bp}{Partial}} \\[6pt]
+\end{tabular}
+
+
+\subsection{Annotating the Text}
+
+To facilitate the ``tactile'' value of the process, annotate the text as you read.  Be sure to have at least 2-3 annotations per page.  Make sure the annotations have meaning to you, i.e. comments engage the content and are not just symbols that might fail to give meaning later.
+
+Annotations should include the following:
+
+\begin{tabular}{p{5in}c} \toprule
+Annotation Type															& Completed \\ \midrule
+Summary notes 															& \raisebox{.75ex}{\radioButton{Summary}{10bp}{10bp}{Summary}} \\
+Use of Symbols (*, ?, !) 										& \raisebox{.75ex}{\radioButton{Symbols}{10bp}{10bp}{Symbols}} \\
+Questions for self, class, or instructor		& \raisebox{.75ex}{\radioButton{Questions}{10bp}{10bp}{Questions}} \\
+Comments that link information to your background knowledge & \raisebox{.75ex}{\radioButton{Comments}{10bp}{10bp}{Comments}} \\
+Connections to personal experiences					& \raisebox{.75ex}{\radioButton{Connections}{10bp}{10bp}{Connections}} \\
+Predictions																	& \raisebox{.75ex}{\radioButton{Predictions}{10bp}{10bp}{Predications}} \\
+Talking-to-the-text comments (``The big idea is \ldots''; ``I wonder if''; ``I get confused when \ldots'' etc.) & \raisebox{.75ex}{\radioButton{TextTalk}{10bp}{10bp}{TextTalk}} \\
+Survival Words (words that are essential to understanding the text's meaning) & \raisebox{.75ex}{\radioButton{Survival}{10bp}{10bp}{Survival}} \\
+Other relevant comments	& \raisebox{.75ex}{\radioButton{Other}{10bp}{10bp}{Other}} \\ \bottomrule
+\end{tabular}
+
+
+\section{Post-Reading Activities}
+
+\subsection{Tasks to Increase Retention and Understanding}
+
+Complete 3 of the following tasks after reading the text. Select the tasks that you believe will increase your comprehension of the task.  Initial the three tasks after you complete 
+
+\bigskip
+Check completed tasks and write out response in boxes below:
+
+\begin{tabular}{|p{5in}|c|}\toprule
+Task & Checkmark \\ \midrule
+1. Highlight the Golden line, make a note in the margin and in a textbox on the next page, and describe why you believe this is the most compelling quote. & \raisebox{.75ex}{\radioButton{Golden}{10bp}{10bp}{Golden}} \\ [6pt]
+2. At the end of the text, write the 3 most important take-away or points from the text below.  & \raisebox{.75ex}{\radioButton{Takehome}{10bp}{10bp}{Takehome}} \\[6pt]
+	
+3. Using a box on the next page, create a detailed outline of the text. Think about paragraph level first, then combine to higher categories but below the Intro/Methods/Results/Conclusion hierarchy & \raisebox{.75ex}{\radioButton{Outline}{10bp}{10bp}{Outline}} \\
+	
+4. In the space on the next page and write a 7-9 sentence summary statement that covers the main ideas of the text. & \raisebox{.75ex}{\radioButton{Summary}{10bp}{10bp}{Summary}} \\
+	
+5. Write a 5-7 sentence personal reflection of the text in a box on the next page, commenting on how you can relate personally to the ideas presented in the text.& \raisebox{.75ex}{\radioButton{Reflection}{10bp}{10bp}{Reflection}} \\
+
+6. Reread the comments that you wrote in the margins while reading. & \raisebox{.75ex}{\radioButton{Margins}{10bp}{10bp}{Margins}} \\
+
+7. In the space provided on the next page, write the ways in which this text relates to other course materials (either from this course or another). & \raisebox{.75ex}{\radioButton{Related}{10bp}{10bp}{Related}} \\
+	
+8. Talk about the text with others. Sharing the ideas from the text is one of the best ways to process and remember ideas. In a box on the next page, write down the person's name with whom you spoke and the three main ideas that you discussed with him/her. & \raisebox{.75ex}{\radioButton{Conversation}{10bp}{10bp}{Conversation}} \\ \bottomrule
+\end{tabular}	
+
+\newpage
+\subsection{Post-Reading Task 1}
+\textField[\BC{0 0 1}\BG{0.98 0.92 0.73}\textColor{1 0 0 rg}\Ff{\FfMultiline}]{FreeWrite1}{6.5in}{140bp} 
+
+\subsection{Post-Reading Task 2}
+\textField[\BC{0 0 1}\BG{0.98 0.92 0.73}\textColor{1 0 0 rg}\Ff{\FfMultiline}]{FreeWrite2}{6.5in}{140bp}
+
+\subsection{Post-Reading Task 3}
+\textField[\BC{0 0 1}\BG{0.98 0.92 0.73}\textColor{1 0 0 rg}\Ff{\FfMultiline}]{FreeWrite3}{6.5in}{140bp} 
+
+	
+
+\end{document}

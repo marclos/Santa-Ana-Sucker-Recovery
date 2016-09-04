@@ -1,0 +1,2525 @@
+% \iffalse
+% makeindex -s gglo.ist -o insdljs.gls insdljs.glo
+% makeindex -s gind.ist -o insdljs.ind insdljs.idx
+%<*copyright>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% InsDLJS.sty package,                                 %%
+%% Copyright (C) 2001-2016  D. P. Story                 %%
+%%   dpstory@uakron.edu                                 %%
+%%                                                      %%
+%% This program can redistributed and/or modified under %%
+%% the terms of the LaTeX Project Public License        %%
+%% Distributed from CTAN archives in directory          %%
+%% macros/latex/base/lppl.txt; either version 1 of the  %%
+%% License, or (at your option) any later version.      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%</copyright>
+%<package>\NeedsTeXFormat{LaTeX2e}
+%<package>\ProvidesPackage{insdljs}
+%<package> [2016/07/31 v2.3a Insert Document Level JavaScripts (dps)]
+%<*driver>
+\documentclass{ltxdoc}
+\usepackage[colorlinks,hyperindex=false]{hyperref}
+\usepackage{makeidx}
+\makeindex
+\def\EXPT{!}
+\pdfstringdefDisableCommands{\let\\\textbackslash}%
+% \OnlyDescription  % comment out for implementation details
+\EnableCrossrefs
+\CodelineIndex
+\RecordChanges
+\InputIfFileExists{aebdocfmt.def}{\PackageInfo{insdljs}{Inputting aebdocfmt.def}}
+    {\def\IndexOpt{\DescribeMacro}\def\IndexKey{\DescribeMacro}\let\setupFullwidth\relax
+     \PackageInfo{insdljs}{aebdocfmt.def cannot be found}}
+\begin{document}
+  \GetFileInfo{insdljs.sty}
+  \title{The \texttt{insDLJS} Package}
+  \author{D. P. Story\\
+    Email: \texttt{dpstory@uakron.edu}}
+  \date{processed \today}
+  \maketitle
+  \tableofcontents
+  \let\Email\texttt
+  \DocInput{insdljs.dtx}
+\IfFileExists{\jobname.ind}{\newpage\setupFullwidth\PrintIndex}{\paragraph*{Index} The index goes here.\\Execute
+    \texttt{makeindex -s gind.ist -o insdljs.ind insdljs.idx} on the command line and recompile
+    \texttt{insdljs.dtx}.}
+\IfFileExists{\jobname.gls}{\PrintChanges}{\paragraph*{Change History} The list of changes goes here.\\Execute
+    \texttt{makeindex -s gglo.ist -o insdljs.gls insdljs.glo} on the command line and recompile
+    \texttt{insdljs.dtx}.}
+\end{document}
+%</driver>
+% \fi
+%
+% \InputIfFileExists{aebdonotindex.def}{\PackageInfo{insdljs}{Inputting aebdonotindex.def}}
+%    {\PackageInfo{insdljs}{aebdonotindex.def cannot be found}}
+%
+%    \section{Introduction}
+% This package defines a new environment, \texttt{insDLJS}, used
+% for inserting Acrobat JavaScript into a PDF file created from a
+% \LaTeX{} source. This package works correctly for users of
+% \textsf{pdftex} or \textsf{dvipdfm}. For those that use the
+% \textsf{Acrobat Distiller} (specifically, those that use either
+% \textsf{dvips} or \textsf{dvipsone} to produce a postscript file,
+% which is then distilled), you are required to have Acrobat~5.0 (or
+% later).
+%
+% \section{Features of the \textsf{insdljs} package}
+% We present a few of the several features of the package to get some feel for its
+% purpose.
+%
+% \subsection{The \texttt{insDLJS} Environment}
+%
+% The following is a quick illustration of the use of the new environment.
+% \begin{verbatim}
+% \documentclass{article}
+% \usepackage[pdftex]{hyperref}
+% \usepackage[pdftex]{insdljs}
+%
+% \newcommand\tugHello{Welcome to TUG 2001!}
+%
+% \begin{insDLJS}[HelloWorld]{mydljs}{My Private DLJS}
+% function HelloWorld()
+% {
+%     app.alert("\tugHello", 3);
+% }
+% \end{insDLJS}
+% \begin{document}
+% \begin{Form}     % needed for \PushButton
+%
+% \section{Test of the \texttt{insDLJS} Package}
+%
+% % use built in form button of hyperref
+% Push \PushButton[name=myButton,
+%        onclick={HelloWorld();}]{Button}
+%
+% \end{Form}
+% \end{document}
+% \end{verbatim}
+% This environment takes three parameters, the first of which is required
+% for users of \texttt{dvips} and \texttt{dvipsone} and optional otherwise.
+% Within the environment, `|\|', is the escape character, and `|%|' is the comment
+% character, as they are in \TeX{} and \LaTeX.
+% See the documentation preceding the definition of the
+% \texttt{\hyperlink{insDLJS}{insDLJS}} environment.
+%
+% \subsection{Debugging}
+%
+% Another feature of this package is the ability to place debugging markers
+% within the JavaScript. When the \texttt{debug} option is used, the markers
+% show up in the document level JavaScript; otherwise, they are not written
+% to the PDF document. Here is a simple example,
+% \begin{verbatim}
+%\begin{insDLJS}[HelloWorld]{mydljs}{My Private DLJS}
+%function HelloWorld()
+%{
+%    app.alert("\tugHello", 3);
+%    var x = "\\";
+%\db console.println("Entered HelloWorld function and x = " + x);\db%
+%}
+%\end{insDLJS}
+%\end{verbatim}
+% The last line of the function will appear in the DLJS if compiled under
+% the \texttt{debug} option; otherwise, it is removed. Additional discussion
+% of this debugging device is given below.
+%
+% \subsection{Open Action}
+%
+% This package also defines an \cs{OpenAction} command to introduce actions that are
+% executed when the PDF document is  opened on page~1. The open action command only
+% applies to page~1.
+% \begin{flushleft}
+% \textbf{Usage}
+%\begin{verbatim}
+%\OpenAction{/S/JavaScript/JS(app.alert("Hello World!");)}
+%\end{verbatim}
+% \end{flushleft}
+% The package defines a |\JS| that takes one argument. The code |\JS{#1}| expands to
+% |/S/JavaScript/JS (#1)|, and so the above example may be written as
+% \begin{flushleft}
+%\begin{verbatim}
+%\OpenAction{\JS{app.alert("Hello World!");}}
+%\end{verbatim}%
+%\end{flushleft}
+% Multiple JavaScript commands can be entered. For nice formatting use \cs{r}
+% and \cs{t} for carriage return and tab, respectively.
+%\goodbreak
+%\begin{verbatim}
+%\OpenAction{\JS{%
+%     app.alert("Hello World!");\r
+%     app.alert("Good Day to You!");
+%}}
+%\end{verbatim}
+% The open actions are placed in a token list. Additional actions are added to the token list, so
+% you say
+%\begin{verbatim}
+%\OpenAction{\JS{app.alert("Hello World!");}}
+%\OpenAction{\JS{app.alert("Good Day to You!");}}
+%\end{verbatim}
+% the two messages will appear each time you open page~1 of the document.
+%
+% In the case of users of the distiller, \textsf{insdljs} uses this mechanism to
+% define an open action. To avoid overwriting this definition, the \cs{OpenAction}
+% command is necessary in insert additional actions.
+%
+% See \Nameref{openaction} for more details.
+%
+% \subsection{How \textsf{insdljs} Works}
+%
+% Let me describe in rough terms what goes on behind the scenes. In the discussion
+% below, the following example will be used:
+%\begin{verbatim}
+%\newcommand\tugHello{"Hello World!"}
+%\begin{insDLJS}[HelloWorld]{mydljs}{My Private DLJS}
+%function HelloWorld()
+%{
+%    app.alert("\tugHello", 3);
+%}
+%\end{insDLJS}
+%\end{verbatim}
+%
+% \subsubsection{For the \texttt{pdftex} and \texttt{dvipdfm} Options}
+%
+% Both \texttt{pdftex} and \texttt{dvipdfm} have primitives/macros for inserting
+% JavaScript at the document level into the PDF document. The work of the package,
+% in this case, is to take the JavaScript and place it into the correct form
+% for the application (\textsf{pdftex} or \textsf{dvipdfm}).
+%
+% Material within the \texttt{insDLJS} environment is written verbatim to a file.
+% The name of this file is \texttt{mydljs.djs}. The file base name comes from the
+% first required parameter of the \texttt{insDLJS} environment, see example above.
+% The file extension \texttt{.djs} stands for ``define javascript''.
+%
+% At begin document, the file \texttt{mydljs.djs} is input back into the document after
+% special definitions have already been read. These special definitions are the content
+% of the file \texttt{dljscc.def}.  The script is placed in the appropriate construct
+% for insertion by the application at the document level.
+%
+% For more information about \texttt{dljscc.def}, see documentation given in the Section~\ref*{dljscc},
+% \Nameref{dljscc}.
+%
+% \subsubsection{For the \texttt{dvipsone} and \texttt{dvips} Options}
+%
+% When you use the \texttt{dvipsone} or \texttt{dvips}, this means you are going to convert
+% your document to postscript and distill it to create a PDF document. There is no \texttt{pdfmark}
+% construct for inserting document level JavaScripts; however, the recent release of Acrobat~5.0
+% gives postscript users an avenue for inserting DLJS.
+%
+% The material within the \texttt{insDLJS} environment is written verbatim to the file
+% \texttt{mydljs.djs}, as above. It is input back into the document where macros are allowed
+% to expand, then written back out to another file. The name of this new file is \texttt{mydljs.fdf}.
+% The file base name comes from the first required parameter of the \texttt{insDLJS} environment.
+% The file extension \texttt{.fdf} stands for ``forms data format''. This is an extension defined
+% and recognized by the Acrobat line of products.
+%
+% The file \texttt{mydljs.fdf} contains the document level JavaScript in a form that
+% the Acrobat application (version~5.0 or later) can import. Part of the work of the package
+% is to define an open page action. When the PDF document is opened for the first time in
+% Acrobat, the JavaScript is imported.  Usually, you open the document following distillation.
+% After the \texttt{.fdf} file(s) have been imported, you need to save the document, usually using
+% the ``SaveAs'' file option, this saves the JavaScript code with the file. (There is no need for the
+% \texttt{.fdf} file(s) at this point.)
+%
+% \subsection{Comments on JavaScript}
+% A few words on JavaScript.
+%
+% \subsubsection{What is Document Level JavaScript?}
+% The document level is a location in the PDF document where script can be stored.
+% When the PDF document is opened, the document level functions are scanned, and any
+% ``exposed script'' is executed.
+%
+% Normally, the type of scripts you would place at the document level are
+% general purpose JavaScript functions, functions that are called repeatedly or large special
+% purpose functions.  Functions at the document level
+% are known throughout the document, so they can be called by links, form buttons, page open
+% actions, etc.
+%
+% Variables declared within a JavaScript function have local scope, they are not known outside
+% that function. However, if you can declare variables and initialize them at the document level outside
+% of a function, these variables will have document wide scope. Throughout the document, the values of these
+% global variables are known. For example
+%\begin{verbatim}
+%\begin{insDLJS}[HelloWorld]{mydljs}{My Private DLJS}
+%var myVar = 17;                // defined outside a function, global scope
+%function HelloWorld()
+%{
+%   var x = 3;                 // defined inside a function, local scope
+%   app.alert("\tugHello", 3);
+%}
+% \end{insDLJS}
+%\end{verbatim}
+% Both the function \texttt{HelloWorld()} and the variable \texttt{myVar} are known throughout
+% the document. The function \texttt{HelloWorld()} can be called by a mouse up button action;
+% some form field, executing some JavaScript, may access the value of \texttt{myVar} and/or
+% change its value.  The variable \texttt{x} is not known outside of the \texttt{HelloWorld()} function.
+%
+% \subsubsection{Access and Debugging}
+% For those who do not have \textsf{Acrobat}, the application,
+% unless you are writing very simple code, writing and debugging
+% JavaScript will be very difficult.  From the Acrobat Reader,
+% there is not access to the document level JavaScript. You will be
+% pretty much writing blind. You can use the debug feature of
+% \textsf{insdljs} and insert some debugging code to try to give you
+% some insight into what is going wrong. Even so, debugging will be a problem.
+%
+% Normally, I develop the JavaScript from within Acrobat. The GUI editor does check for
+% syntax errors, giving you a chance to correct some simple errors as you go. After I am satisfied
+% with my code, I copy it from the editor and paste it into a \texttt{insDLJS} environemnt. This is
+% how the JavaScript code of \textsf{exerquiz} was developed.
+%
+% In my opinion, if you want to develop rather complicated code, having the full Acrobat product
+% is a must. (This implies that the Windows or Mac platform is needed!)
+%
+% \subsubsection{JavaScript References}
+% The JavaScript used by Acrobat consists of the core JavaScript plus Acrobat's JavaScript extensions.
+% Acrobat~5.0 uses core JavaScript~1.5, see
+%\begin{quote}
+%   \footnotesize\url{https://developer.mozilla.org/en/JavaScript}
+%\end{quote}
+% and documentation of the Acrobat extensions can be found in the ``JavaScript for Acrobat API Reference,''
+% see
+%\begin{quote}
+%\href{http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&file=JS_API_AcroJSPreface.87.1.html}
+%{JavaScript for Acrobat API Reference}
+%\end{quote}
+%
+% \subsection{The \textsf{execJS} Environment}
+% This is an environment useful to PDF developers who want to tap into the power of JavaScript.
+% To use this environment, the developer needs Acrobat~5.0 or higher, or Acrobat Approval~5.0
+% or higher. \textsf{pdftex} or \textsf{dvipdfm} can be used to produce the PDF document, but one of the
+% applications (not the Reader) listed above is needed for this environment to do anything.
+%
+% The \texttt{execJS} is used primarily for post-distillation processing (post-creation processing, in the case of
+% \textsf{pdftex} and \textsf{dvipdfm}). The \texttt{execJS} environment can be used, for example, to automatically import
+% named icons into the document, which can, in turn, be used for an animation.
+%
+% The \textsf{execJS} is an environment in which you can write verbatim JavaScript code. This environment
+% is a variation on \textsf{insdljs}, it writes a couple of auxiliary files to disk; in particular, the
+% environment creates an \texttt{.fdf} file. When the newly produced PDF is loaded for the first time
+% into the viewer (Acrobat or Approval, not Reader), the \texttt{.fdf} file generated by the \textsf{execJS}
+% environment is imported, and the JavaScript executed. This JavaScript is \emph{not} saved with
+% the document.
+%
+% The environment takes one required argument, the base name of the auxiliary files to be generated.
+%
+%
+% For more details on this environment, see
+% \Nameref{execJS}. Also, see the demo file \texttt{execjstst.tex} and \texttt{execjstst.pdf} for
+% a short tutorial on the \texttt{execJS} environment, and an animation example, built entirely from
+% {\LaTeX} commands.
+%
+% \paragraph*{Security Note:} Executing arbitrary
+%JavaScript through a menu is potentially a security hole. If a
+%malicious hacker knows that you have a menu item with the name of
+%\texttt{MenuProc}, and that you use the variable
+%\texttt{\_MenuProc} in the way described above, the hacker could
+%distribute a PDF that executes (security restricted) JavaScript
+%through the menu in this way. Therefore, you should select
+%\texttt{private names} for \texttt{MenuProc} and \texttt{\_MenuProc}.
+%
+% \subsection{The \textsf{defineJS} Environment}
+%
+%When you create a form element (button, text field, etc.), you sometimes want to attach
+%JavaScript.  The \textsf{defineJS} environment aids you in writing your Field level JavaScript.
+%It too is a verbatim environment, however, this environment does not write to this, but
+%saves the contents in a token register. The contents of the register are used in defining
+%a macro that expands to the verbatim listing.
+%
+% The \textsf{defineJS} environment takes two parameters, the first optional.
+% the required parameter is the cmd name of the command you want to define.
+% You can use the optional first parameter to modify the verbatim environment,
+% as illustrated.  The \textsf{defineJS} is a complete verbatim environment: no escape,
+% and no comment characters are defined. You can use the optional parameter to create
+% an escape character.  You can pretty much use any character you wish, \emph{except}
+% the usual one `\verb+\+', backslash.
+%
+% The following environment, defines a command \cs{myCmd} what expands to the verbatim
+% contents of the environment.
+%\begin{verbatim}
+%\begin{defineJS}{\myCmd}
+% ...
+% <JavaScript code>
+% ...
+%\end{defineJS}
+%\end{verbatim}
+%
+% There is also a \textsf{localJS} environment that makes any definitions within the
+% environment local.
+%
+%The following examples uses some macros from the \textsf{eforms} package:
+%\begin{verbatim}
+% % Define a text macro that will be expanded from within the
+% % defineJS environment
+%\def\HelloWorld{Hello World}
+% % Now define some JavaScript to execute with a button to be created.
+% % We enclose the defineJS and the \pushButton in the localJS environment
+% % That way, the macro definitions, \JSA, \JSAAE, \JSAAX will be local to
+% % this group
+%\begin{localJS}
+% % Make @ the escape so we can demonstrate the optional parameter.
+%\begin{defineJS}[\catcode`\@=0\relax]{\JSA}
+%var sum = 0;
+%for (var i = 0; i < 10; i++)
+%{
+%    sum += i;
+%    console.println("@HelloWorld i = " + i );
+%}
+%console.println("sum = "+sum);
+%\end{defineJS}
+%\begin{defineJS}{\JSAAE}
+%console.println("Enter the button area");
+%\end{defineJS}
+%\begin{defineJS}{\JSAAX}
+%console.println("Exiting the button area");
+%\end{defineJS}
+%\pushButton[%
+%    \A{\JS{\JSA}}
+%    \AA{\AAMouseEnter{\JS{\JSAAE}}
+%       \AAMouseExit{\JS{\JSAAX}}}
+%]{myButton}{30bp}{15bp}
+%\end{localJS}
+%\end{verbatim}
+%
+% See the section \Nameref{defineJS} for details of these two environments.
+% \section{Package Options and Requirements}
+%
+% \subsection{Package Options}
+%
+% The options are \texttt{dvipsone}, \texttt{dvips}, \texttt{pdftex} and
+% \texttt{dvipdfm}. The default is \texttt{dvipsone}/\texttt{dvips}.
+%    \begin{macrocode}
+%<*package>
+%    \end{macrocode}
+%    \begin{macrocode}
+\usepackage{xkeyval}
+\RequirePackage{ifpdf}[2006/02/20]
+\RequirePackage{ifxetex}[2006/08/21]
+%    \end{macrocode}
+%
+% Standard driver options.\par\medskip\noindent
+% \textbf{Those using Distiller}
+%   \IndexOpt{dvips}
+%   \IndexOpt{dvipsone}
+%   \IndexOpt{textures}
+%    \begin{macrocode}
+\DeclareOptionX{dvipsone}{\def\dljs@drivernum{0}%
+    \AtBeginDocument{\dvips@marker}}
+\DeclareOptionX{dvips}{\def\dljs@drivernum{0}%
+    \AtBeginDocument{\dvips@marker}}
+\DeclareOptionX{textures}{\def\dljs@drivernum{0}%
+    \AtBeginDocument{\dvips@marker}}
+%    \end{macrocode}
+%\textbf{Those not using Distiller}
+%    \IndexOpt{pdftex}
+%    \IndexOpt{dvipdfm}
+%    \IndexOpt{dvipdfmx}
+%    \IndexOpt{xetex}
+%    \begin{macrocode}
+\DeclareOptionX{pdftex}{\def\dljs@drivernum{1}}
+\DeclareOptionX{dvipdfm}{\def\dljs@drivernum{2}}
+\DeclareOptionX{dvipdfmx}{\def\dljs@drivernum{2}}
+\DeclareOptionX{xetex}{\def\dljs@drivernum{2}}
+%    \end{macrocode}
+% Set the default value of the driver: assume the distiller is used.
+%    \begin{macrocode}
+%\def\dljs@drivernum{0}
+%    \end{macrocode}
+% Some switch definitions
+%    \begin{macrocode}
+\let\dl@YES=y \let\dl@NO=n
+\let\dl@One=1 \let\dl@Zero=0
+\let\dljs@YES=y \let\dljs@NO=n
+%    \end{macrocode}
+% When using pdfmarks, the open action is initiated by the document JavaScript code,
+% when there was not document JavaScript, the open action did not get executed.
+% This was a bad idea, here is a work around. When the \texttt{insDLJS} environment is used,
+% we |\let\dljspresent=y|, and if at the beginning of the document, \cs{dljspresent} is still
+% \texttt{n}, we'll issue a special execution of \cs{@OAction}.
+%    \begin{macrocode}
+\def\dvips@marker{\ifx\dljspresent\dl@NO\@OAction\fi}
+%    \end{macrocode}
+% This command sequence will mark the passing of the first open event that is defined. The rest of the open events,
+% if any, will be in a \texttt{Next} dictionary.
+%    \begin{macrocode}
+\let\isOpenAction\dl@NO
+%    \end{macrocode}
+%    \IndexOpt{nodljs}
+% Option to cancel the insertion of DLJS, useful for a document meant to be
+% printed only, or one that does not use the \texttt{shortquiz} or
+% \texttt{quiz} environments, for example.
+%    \begin{macrocode}
+\DeclareOptionX{nodljs}{\let\importdljs\dl@NO}
+\let\importdljs\dl@YES
+%    \end{macrocode}
+% Need to place certain code only once. This switch will make sure of that.
+%    \begin{macrocode}
+\let\firstdljs\dl@YES
+\let\dljspresent\dl@NO
+%    \end{macrocode}
+%    \IndexOpt{debug}
+% Use this option to help debug DLJS.
+%    \begin{macrocode}
+\DeclareOptionX{debug}{\let\dljs@debug\dl@YES}
+\let\dljs@debug\dl@NO
+%    \end{macrocode}
+%    \IndexOpt{execJS}
+% If the execution of JavaScript code is permitted following distillation. The default is no.
+%    \begin{macrocode}
+\DeclareOptionX{execJS}{\let\execjs\dl@YES}
+\let\execjs\dl@NO
+\DeclareOptionX{nopro}{\let\dl@gopro\dl@NO}
+\let\dl@gopro\dl@YES
+%    \end{macrocode}
+%    \begin{macrocode}
+\@ifpackageloaded{web}{%
+    \ExecuteOptionsX{\eq@driver@name}%
+}{%
+    \@ifpackageloaded{eforms}{%
+        \ExecuteOptionsX{\ef@driver}%
+    }{%
+        \ifpdf\ExecuteOptionsX{pdftex}\else
+        \ifxetex\ExecuteOptionsX{xetex}\else
+        \@ifundefined{l@tex@@@@driver}{\ExecuteOptionsX{dvips}}
+            {\ExecuteOptionsX{dvipsone}}\fi\fi
+%        \ExecuteOptionsX{dvips}\fi\fi
+    }%
+}
+%    \end{macrocode}
+%    \IndexOpt{reqjs}
+%    Beginning with PDF 1.7, a document can specify requirements, here we declare
+%    the document uses JavaScripts. The option \texttt{reqjs} is taken by default,
+%    that is, JavaScripts are required for this document
+%
+%    \DescribeMacro{!reqjs}
+%    The  option \texttt{!reqis} turns off this feature; that is, there is no notification
+%    via the \textsf{YMB} (\textsf{Yellow Message Bar}) that Javascripts are used in the document, and the
+%    document may not function as designed.
+%    \changes{v2.2d}{2016/04/06}{Added \texttt{reqjs} and \texttt{{\string\quotechar}reqjs}.}
+%    \begin{macrocode}
+\DeclareOptionX{reqjs}{\let\dl@reqJS\dl@YES}
+\let\dljs@reqJS\dl@YES
+\DeclareOptionX{!reqjs}{\let\dl@reqJS\dl@NO}
+%    \end{macrocode}
+%    \paragraph*{Process the package options}
+%    \begin{macrocode}
+\ProcessOptionsX
+%    \end{macrocode}
+%    This package uses the double quote as a double quote, other packages the make double quote
+%    an active character.
+%    \begin{macrocode}
+\edef\dl@dquoteCat{\the\catcode`\"}
+\catcode`\"=12\relax
+%    \end{macrocode}
+%    Issue a package error if there is no driver specified or implied.
+%    \begin{macrocode}
+\@ifundefined{dljs@drivernum}{%
+    \PackageError{insdljs}%
+        {You have not specified dvips, dvipsone, pdftex,\MessageBreak
+        dvipdfm, dvipdfmx, or xetex in the option list
+        \MessageBreak of the insdljs package}
+        {Place one of the drivers dvips, dvipsone, pdftex,  dvipdfm,
+        dvipdfmx, or xetex
+        \MessageBreak in the option list of the insdljs package.}
+}{}
+%    \end{macrocode}
+% \subsection{Required Packages}
+% We need \texttt{hyperref} to provide some fundamental code for the
+% various drivers and \texttt{verbatim} to help write verbatim code
+% to a file.
+% \changes{v2.2h}{2016/06/09}{Added \string\cs{ifpdfmarkup} to easily detect
+% use of pdfmarks}
+%    \begin{macrocode}
+\@ifundefined{ifpdfmarkup}{\newif\ifpdfmarkup}{}\pdfmarkupfalse
+\ifpdf\else\ifxetex\else\pdfmarkuptrue\fi\fi
+\RequirePackage{hyperref}
+%    \end{macrocode}
+% LuaTeX v0.85 has made some changes to primitives, the definition below follows
+% the pattern of \texttt{hluatex.def} of \textsf{hyperref}.
+%    \changes{v2.3}{2016/06/09}{Fixed \string\cs{pdfnames} corresponding to
+%    changes in primitives of LuaTeX v0.85}
+%    \changes{v2.3a}{2016/07/31}{Added luatex85 definition of \string\cs{pdfpageref}}
+%    \begin{macrocode}
+\ifpdf\ifx\pdfextension\@undefined\else
+    \protected\def\pdfnames{\pdfextension names }
+    \def\pdfpageref{\pdffeedback pageref}\fi\fi
+\RequirePackage{verbatim}
+\@ifundefined{dljs@drivernum}{%
+    \@ifundefined{eq@drivernum}{%
+        \PackageWarning{insdljs}
+            {No driver specified, will check for pdftex.}
+        \@ifundefined{pdfoutput}{%
+            \@ifundefined{@pdfm@mark}{\def\eq@drivernum{2}%
+            \def\dljs@drivernum{1}\let\isOpenAction\dl@NO
+            \PackageWarning{insdljs}{No pdftex, but detected dvipdfm}}%
+            {\PackageWarning{insdljs}{Neither pdftex nor dvipdfm,
+                assuming dvips/dvipsone.}%
+            \def\eq@drivernum{0}\def\dljs@drivernum{0}%
+            \let\isOpenAction\dl@YES}
+        }{%
+            \ifcase\pdfoutput
+                \def\eq@drivernum{1}\def\dljs@drivernum{1}%
+                \let\isOpenAction\dl@NO
+                \PackageInfo{insdljs}{Pdftex detected.}%
+            \else
+                \def\eq@drivernum{0}\def\dljs@drivernum{0}%
+                \let\isOpenAction\dl@YES
+                \PackageWarning{insdljs}{Pdftex engine detected,
+                but is outputting dvi. Assuming dvips as the driver.}%
+            \fi
+        }%
+    }{%
+        \begingroup
+            \count0=\eq@drivernum
+            \xdef\dljs@drivernum{\ifcase\count0 0\or1\or2\or0\else0\fi}
+            \ifnum\dljs@drivernum=0\global\let\isOpenAction\dl@YES
+                \else\global\let\isOpenAction\dl@NO\fi
+        \endgroup
+    }%
+}{}
+%    \end{macrocode}
+% I've always had problems with the pdftex option and inserting open page actions.
+% The problem is that the open page action, which is defined using the token list
+% \cs{pdfpageattr} appears not only on the first page, but every page thereafter.
+% To solve this problem, I've used \textsf{everyshi}, a nice and useful package by
+% Martin Schr\"oder, to set the open page action with \cs{AtNextShipout}.
+% This approach seems to work.
+%    \begin{macrocode}
+\ifnum\dljs@drivernum=1\relax
+    \RequirePackage{everyshi}
+\fi
+%    \end{macrocode}
+% If \texttt{reqjs} is in effect, we execute the following code, otherwise, we
+% do not. The \textbf{\textsf{Requirements}} dictionary goes in the document \textbf{\textsf{Catalog}}.
+%    \changes{v2.2d}{2016/04/06}{Code to support \texttt{reqjs} and \texttt{{\string\EXPT}reqjs} options.}
+%    \begin{macrocode}
+\def\AEB@psMrk{[\space}
+\ifx\dl@reqJS\dl@YES
+   \def\dl@@reqJS{/Type/Requirement/S/EnableJavaScripts}
+   \ifpdf\pdfcatalog{\dl@@reqJS}\else
+   \ifxetex\immediate\@pdfm@mark{put @catalog <<\dl@@reqJS>>}\else
+   \literalps@out{\AEB@psMrk{Catalog} <<\dl@@reqJS>> /PUT pdfmark}\fi\fi
+\fi
+%    \end{macrocode}
+%    \section{Main Code}
+%
+% Before we begin, we need to document the problems that need to be addressed by this package.
+%
+% \subsection{Complications}
+%
+% There is a complication with writing JavaScript and \TeX{} together; they both use
+% the backslash character, `|\|', as the escape character. The following two tables
+% list escaped characters that have special meanings in different situations. These two tables
+% were taken from the book \textsl{JavaScript, The Definitive Guide}, by David Flanagan, 4th Edition,
+% O'Reilly publishers.
+%
+%\begin{flushleft}
+%\begin{minipage}{\linewidth}
+% \textbf{Escape Sequences in String Literals}
+%
+% \begin{tabular}{@{}ll@{}}
+% Sequence & Character represented \\
+% \cs{0}   & the NULL character (\cs{u0000}) \\
+% \cs{b}   & backspace (\cs{u0008}) \\
+% \cs{t}   & horizontal tab (\cs{u0009}) \\
+% \cs{n}   & newline (\cs{u000A}) \\
+% \cs{v}   & vertical tab (\cs{u000B}) \\
+% \cs{f}   & form feed (\cs{u000C}) \\
+% \cs{r}   & carriage return (\cs{u000D}) \\
+% \cs{"}   & double quote (\cs{u0022}) \\
+% \cs{'}   & apostrophe or single quote (\cs{u0027}) \\
+% |\\|     & backslash (\cs{u005C})\\
+% \cs{xXX} & the Latin-1 character specified by the two hexadecimal digits \texttt{XX} \\
+% \cs{uXXXX}& the unicode character specified by the four hexadecimal digits \texttt{XXXX} \\
+% \cs{XXX} & the Latin-1 character specified by the octal digits \texttt{XXX}, between \\
+%          & $1$ and $377$. \\
+% \end{tabular}
+%\end{minipage}
+%\end{flushleft}
+%
+%\begin{flushleft}
+%\begin{minipage}{\linewidth}
+% \textbf{Regular Expression Literal characters}
+%
+% \begin{tabular}{ll}
+% Character & Matches \\
+% Alphanumeric & Itself \\
+% \cs{0}   & the NULL character (\cs{u0000}) \\
+% \cs{t}   & horizontal tab (\cs{u0009}) \\
+% \cs{n}   & newline (\cs{u000A}) \\
+% \cs{v}   & vertical tab (\cs{u000B}) \\
+% \cs{f}   & form feed (\cs{u000C}) \\
+% \cs{r}   & carriage return (\cs{u000D}) \\
+% \cs{xXX} & the Latin-1 character specified by the two hexadecimal\\
+%          & digits \texttt{XX} \\
+% \cs{uXXXX}& the unicode character specified by the four hexadecimal\\
+%           & digits \texttt{XXXX} \\
+% \cs{cXX}  & the control character |^X|
+% \end{tabular}
+%\end{minipage}
+%\end{flushleft}
+%
+% Again, both JavaScript and \TeX, certain punctuation marks have special meaning; in the case of
+% JavaScript, punctuation has a special meaning within regular expressions:
+%\begin{flushleft}
+%\textbf{Special Punctuation in Regular Expressions}
+%\begin{verbatim}
+%     ^ $ . * + ? = ! : | \ / ( ) [ ] { }
+%\end{verbatim}
+%\end{flushleft}
+%
+% Complications continued. The distiller method (the \texttt{dvipsone} or the
+% \texttt{dvips} option), and the \textsf{pdftex}/\textsf{dvipdfm} applications
+% handle the backslash differently. The following example illustrates the problem.
+% {\small
+%\begin{verbatim}
+%dvipsone/dvips
+%LaTeX Source      As appears in PDF
+%var x = "\";  --> var x = "\";  (SyntaxError: Unterminated string literal)
+%var x = "\\"; --> var x = "\\"; (Correct)
+%\end{verbatim}}
+% When we type \texttt{"\string\"}, we are beginning a string (with the first
+% double quotes, but then we have a literal \texttt{\string\"}, so we have not
+% closed the opening string, hence the error message. We have to type
+% `\verb+\\+' to get the single backslash.
+% {\small
+%\begin{verbatim}
+%pdftex/dvipdfm
+%LaTeX Source        As appears in PDF
+%var x = "\";    --> var x = "";  (\" is the literal ")
+%var x = "\\";   --> var x = "\"; (SyntaxError: Unterminated string literal)
+%var x = "\\\\"; --> var x = "\\"; (Correct)
+%\end{verbatim}}
+% These applications write raw PDF code to the \texttt{.pdf} file.
+% All special characters need to be escaped. You can see, that \textsf{pdftex}
+% and \textsf{dvipdfm} require extra backslashs.
+%
+% The solution to this problem---the problem of how distiller and the two applications
+% handle backslashes---is to define control sequences for all the sequences JavaScript uses
+% and to adjust their definitions depending on the driver option. As a result, of these
+% background definitions, the JavaScript writer does not worry too much about these details,
+% for example
+%\begin{verbatim}
+%\begin{insDLJS}[HelloWorld]{mydljs}{My Private DLJS}
+%function HelloWorld()
+%{
+%    app.alert("\tugHello", 3);
+%    var x = "\\";
+%    app.alert("x = " + x);
+%}
+%\end{insDLJS}
+%\end{verbatim}
+% So much for the complication.
+%
+%\subsection{Begin Code}
+%
+% Some control sequences that are useful for formatting JavaScript.
+%    \begin{macro}{\JS}
+%    \begin{macro}{\Named}
+% A convenience command for writing JavaScript.
+%    \begin{macrocode}
+\providecommand\JS[1]{/S/JavaScript/JS(#1)}
+\providecommand\Named[1]{/S/Named/N/#1}
+\providecommand{\GoTo}[1]{/S/GoTo/D#1}
+%    \end{macrocode}
+%    \end{macro}
+%    \end{macro}
+%    \begin{macrocode}
+\def\previewMiKTeX{\def\jsR{\string\r}\def\jsT{\string\t}}
+{\obeylines %
+\gdef\js@@R{\noexpand
+}}
+%    \end{macrocode}
+%    \begin{macrocode}
+\let\dljstfor\@tfor
+%    \end{macrocode}
+% 2012/06/20 Change the following code so there are no special cases.
+%    \begin{macrocode}
+\def\jsR{\string\r\string\n}
+%\def\jsR{\string\r\eqbs\js@@R}
+\def\defineJSjsR{\string\r\eqbs^^J}
+%    \end{macrocode}
+% \changes{v2.0l}{2012/11/10}{Added \cs{jsN}}
+% \cs{r} is recognized by hyperref when \cs{pdfstringdef} is used. Hyperref
+% then modifies the expansion of \cs{r}. So, we'll use \cs{n} is those situations.
+%    \begin{macrocode}
+\def\jsN{\string\n}
+{\catcode`\^^I\active %
+\gdef^^I{\noexpand^^I}%
+\gdef\js@@T{\noexpand^^I}%
+}%  end of \catcode`\^^I
+\let\jsT=\js@@T
+%    \end{macrocode}
+% Need to write to files. This stream will be used for that purpose.
+%    \begin{macrocode}
+\newwrite\js@verbatim@out
+\def\iwvo#1{\immediate\write\js@verbatim@out{#1}}
+%    \end{macrocode}
+% \subsection{Some JavaScript Support}
+%
+%    \begin{macro}{\flJSStr}
+%    \begin{macro}{\dlJSStr}
+%
+% A simple command for creating JavaScript strings that recognize unicode escape
+% sequences \cs{uXXXX}. This command defines a macro with name contained in \texttt{\#1},
+% the first argument, the second argument \texttt{\#2} is the JavaScript string. Enclosing
+% the string with double quotes is not necessary, this is done automatically. Any expandable
+% commands within string are expanded at define time, unless they are protected with \cs{protect}.
+% The string can be formatted using \cs{r} and \cs{t}. Also, \verb!\\! expands to a backslash
+% should the need arise.
+%\changes{v2.0b}{2008/06/19}
+%{
+%  A simple command for creating JS strings with unicode \cs{uXXXX}.
+%}
+% The following is the old definition, it is superseded by the ones below.
+%\begin{verbatim}
+%\newcommand{\defineJSStr}[2]{{%
+%    \let\protect\noexpand
+%    \let\jslit\string
+%    \def\\{\eqbs\eqbs}\def\cs##1{\\\\##1}%
+%    \def\r{\\r}\def\t{\\t}%
+%    \def\n{\\n}\def\u{\\u}%
+%    \xdef#1{"#2"}%
+%}}
+%\end{verbatim}
+% \changes{v2.0m}{2013/12/23}{Added \cs{jscsDflt} and \cs{jscsDLJS}, incorporated into \cs{dl@defJSStr}.}
+% Added \cs{jscsDflt} and \cs{jscsDLJS}, incorporated them into \cs{dl@defJSStr}.
+%    \begin{macrocode}
+\def\jscsDflt{\let\protect\noexpand\let\jslit\string
+    \let\~\dl@tilda\let\^\dl@sup
+    \def\\{\eqbs\eqbs}\def\cs##1{\\\\##1}%
+    \def\r{\\r}\def\t{\\t}\def\n{\\n}%
+    \let\{\dl@lBrace\let\}\dl@rBrace
+    \ifx\jsstr@useUni\dl@One\def\Uni{\\u}\else\def\u{\\u}\fi
+}
+\def\jscsDLJS{\let\protect\noexpand\let\jslit\string
+    \let\~\dl@tilda\let\^\dl@sup
+    \ifxetex\def\\{\eqbs\eqbs}\else\def\\{\eqbs}\fi\def\cs##1{\\\\##1}%
+    \def\r{\\r}\def\t{\\t}\def\n{\\n}%
+    \let\{\dl@lBrace\let\}\dl@rBrace
+    \ifx\jsstr@useUni\dl@One\def\Uni{\\u}\else\def\u{\\u}\fi
+}
+\ifpdf\let\jscsDLJS\jscsDflt\fi
+\let\dl@JSCS\jscsDflt
+%    \end{macrocode}
+% \DescribeMacro{\flJSStr} This form is designed for writing literal strings
+% at the field level.
+% When the \texttt{*}-form is used, \texttt{\#2} is passed through \cs{pdfstringdef},
+% needed if there are some latex to pdf strings to be converted.
+%    \begin{macrocode}
+\newcommand{\flJSStr}{\bgroup
+    \let\dl@JSCS\jscsDflt
+    \@ifstar{\def\isStar{*}\dl@defJSStr}
+    {\let\isStar\relax\dl@defJSStr}}
+\let\fieldJSStr\flJSStr
+%    \end{macrocode}
+% For backward compatibility, we \cs{let} \cs{defineJSStr} to \cs{flJSStr}.
+%    \begin{macrocode}
+\let\defineJSStr\flJSStr
+%    \end{macrocode}
+% \DescribeMacro{\dlJSStr} This form is designed for writing strings to the document
+% level JavaScript, as embedded using the \texttt{insDLJS} environment.
+% When the \texttt{*}-form is used, \texttt{\#2} is passed through \cs{pdfstringdef},
+% needed if there are some latex to pdf strings to be converted.
+%    \begin{macrocode}
+\newcommand{\dlJSStr}{\bgroup
+    \@ifstar{\def\isStar{*}\let\dl@JSCS\jscsDLJS\dl@defJSStr}
+    {\let\isStar\relax\let\dl@JSCS\jscsDLJS\dl@defJSStr}}
+%    \end{macrocode}
+% Some simple key-values for both commands above. Both commands, by default,
+% insert double quotations marks at the beginning and end of the string as a convenience.
+% \IndexKey{quotes}\texttt{quotes} option just affirms that default; it need not be specified.
+% The \IndexKey{noquotes}\texttt{noquotes} option signals \textsf{eforms} not to
+% insert said double quotation marks. The other option, \texttt{useUni} is implemented, but not
+% documented publicly, to change the command for unicode from \cs{u} to \cs{Uni} in case there
+% is a clash of definitions with some accents, \u{a} (\verb!\u{a}!), for example. Hyperref has a
+% \cs{u} command defined in the PU encoding, but \cmd{\flJSStr} and \cmd{\dlJSStr} through
+% \cmd{\dl@defJSStr} sets \cmd{\Hy@unicodefalse} to support PD1 encoding only. The user can
+% access the full range of unicode glyphs through \cs{u}.
+%    \begin{macrocode}
+\define@key{jsstr}{quotes}[]{\let\jsstr@quotes\dl@One}
+\define@key{jsstr}{noquotes}[]{\let\jsstr@quotes\dl@Zero}
+\let\jsstr@quotes\dl@One
+\define@key{jsstr}{useUni}[]{\let\jsstr@useUni\dl@One}
+\let\jsstr@useUni\dl@Zero
+%    \end{macrocode}
+% The common part to both \cs{flJSStr} and \cs{dlJSStr}.
+%    \begin{macrocode}
+\newcommand{\dl@defJSStr}[3][quotes]{\def\dl@argi{#1}\ifx\dl@argi\@empty
+    \else\setkeys{jsstr}{#1}\fi\dl@JSCS
+    \ifx\jsstr@quotes\dl@One\xdef#2{"#3"}\else\xdef#2{#3}\fi
+    \if\isStar*\gdef\dl@afterAction{{\Hy@unicodefalse\expandafter
+        \pdfstringdef\expandafter#2\expandafter{#2}}}\else
+        \global\let\dl@afterAction\relax\fi
+    \aftergroup\dl@afterAction\egroup}
+%    \end{macrocode}
+%    \end{macro}
+%    \end{macro}
+%
+% \subsection{A Macro for Debugging JS}
+%    \begin{macro}{\db...\db}
+% The \cs{db} macro can be used within the \texttt{insDLJS} to insert
+% addition JS commands to help debug the code. Usage:
+%\begin{verbatim}
+% \db console.println("myVal = " + myVal);\db%
+%\end{verbatim}
+% Any material (on one line) that is between the two \verb+\db+ will either be
+% written to the DLJS (if \cmd{\dljs@debug} expands to \texttt y), or be removed from
+% the final output (if \cmd{\dljs@debug} does not expand to \texttt y).
+%
+% Note that the comment character (|%|) following the terminating \verb+\db+.
+% This comment keeps a carriage return from being invoked; if \cmd{dljs@debug} is false
+% then this will not create an empty line in your JavaScript.
+%    \begin{macrocode}
+\def\js@R{\ifcase\dljs@drivernum^^J\else\jsR\fi}
+%    \end{macrocode}
+% The three spaces (\cs{space}) is meant to align the debug statement, since |\db| takes
+% up three spaces.
+%    \begin{macrocode}
+\def\db#1\db{\ifx\dljs@debug\dl@YES\space\space\space#1\js@R\fi}
+%    \end{macrocode}
+%    \end{macro}
+% Acrobat (and Reader) expect the JavaScript code will be listed in the JavaScript
+% array in sorted form.  \texttt{pdftex} and \texttt{dvipdfm} do not sort this array
+% and it would be difficult for \TeX{} to do the sorting; therefore a workaround.
+% Each set of DLJS will be numbered in the order in which they are defined. This puts
+% them naturally in proper sorted order. The following counter, numbers the JS.
+%    \begin{macrocode}
+\newcounter{dljs@cnt}
+\newcounter{dljssegs}\setcounter{dljssegs}{2}
+%    \end{macrocode}
+% \subsection{Some Verbatim Write Environments}
+% Here is a verbatim write environment, based on an example in the
+% \texttt{verbatim} package. One modification: The output stream is
+% not opened by this environment, this must be done prior. This is necessary
+% to write some other stuff prior to the verbatim write.
+%
+% This verbatim is used internally to write the \texttt{.djs} files, containing
+% the JavaScript.
+%    \begin{macrocode}
+\newenvironment{js@verbatimwrite}% writes to current \js@verbatim@out
+ {%
+    \@bsphack
+    \let\do\@makeother\dospecials\catcode`\^^M\active
+    \def\verbatim@processline{%
+        \immediate\write\js@verbatim@out{\the\verbatim@line}}%
+    \verbatim@start}{\@esphack}
+%    \end{macrocode}
+% Unlike the example of verbatimwrite in the \texttt{verbatim} package, we do not
+% automatically close the stream when we finish out \texttt{js@verbatimwrite} environment.
+% We need to write more to this file, so we have an explicit close.
+%    \begin{macrocode}
+\def\closejs@verbatim@out{\immediate\closeout\js@verbatim@out}
+%    \end{macrocode}
+% Same as above, except we expand the line with an \cmd{\edef}.
+%
+% For the case of \texttt{dvipsone/dvips}, which use the pdfmark operator, we have
+% a couple of definitions for escape (esc). It turns out, I find it convenient to have
+% two versions, a \cs{eqesc}, and a \cs{eqesci}, the latter one is only used once, the former
+% one is used numerous times, see the \texttt{\hyperref[dljscc]{dljscc.def}} file.
+%    \begin{macrocode}
+\begingroup
+\catcode`\@=0 @catcode`@\=12
+@gdef@eqbs{\}
+@gdef@ccpdfmark{@gdef@eqesc{\}@gdef@eqesci{}}
+@endgroup
+%    \end{macrocode}
+% Here's a definition of left and right braces that will be used in writing JavaScript code.
+%    \begin{macrocode}
+\begingroup
+    \catcode`<=1 \catcode`\>=2 \@makeother\{ \@makeother\}
+\gdef\definebraces<\def\{<\eqesc{>\def\}<\eqesc}>>
+\endgroup
+%    \end{macrocode}
+% My own special dos and don'ts. Preserve |\| and \texttt{\%}
+%    \begin{macrocode}
+\def\eqdospecials{\do\ \do\{\do\}\do\$\do\&%
+  \do\#\do\^\do\_\do\~}
+%    \end{macrocode}
+% The \texttt{jsexpverbatimwrite} environment is used to write a quasi-verbatim
+% file. We keep original default definitions of |\| and |%| (they are not included in the
+% \cs{eqdospecials} above). The code for \texttt{jsexpverbatimwrite} is based on that found
+% in the \texttt{verbatim} package. The trouble is, this package assumes that |\| has been changed
+% to catcode 12, other.  Consequently, I had a devil of a time trying to stop the verbatim write
+% with |\| as an escape rather than other. I finally decided it was necessary to rewrite some of
+% the main macros in \texttt{verbatim} so they would properly stop.  Below are the modifications
+% designed to stop when \texttt{*end} encountered rather than \cs{end}. These changes seem to
+% work o.k.
+%    \begin{macrocode}
+\begingroup
+\catcode`\~=\active \lccode`\~=`\^^M
+\lowercase{\endgroup
+    \def\eqverbatim@#1~{\verbatim@@#1*end\@nil}%
+    \def\eqverbatim@@#1*end{%
+    \verbatim@addtoline{#1}%
+    \futurelet\dl@next\eqverbatim@@@}%
+    \def\eqverbatim@@@#1\@nil{%
+    \ifx\dl@next\@nil
+        \verbatim@processline
+        \verbatim@startline
+        \let\dl@next\eqverbatim@
+    \else
+        \def\@tempa##1*end\@nil{##1}%
+        \@temptokena{*end}%
+        \def\dl@next{\expandafter\verbatim@test\@tempa#1\@nil~}%
+    \fi\dl@next}%
+}%
+\def\jsexpverbatimwrite
+{% writes to current \js@verbatim@out
+    \@bsphack
+%    \escapechar=-1%
+    \ccpdfmark
+    \catcode`\<=12 \catcode`\>=12
+    \input{dljscc.def}%
+% Attempt to redefine some macros from the the verbatim package
+    \let\verbatim@=\eqverbatim@
+    \let\verbatim@@=\eqverbatim@@
+    \let\verbatim@@@=\eqverbatim@@@
+% end redefine of verbatim package
+    \let\do\@makeother\eqdospecials%
+    \catcode`\^^M=\active\catcode`\^^I=12%
+    \def\verbatim@processline{%
+        \edef\expVerb{\the\verbatim@line}%
+        \immediate\write\js@verbatim@out{\expVerb}}%
+        \verbatim@start%
+}
+\def\endjsexpverbatimwrite{\immediate\closeout\js@verbatim@out\@esphack}
+%    \end{macrocode}
+%    \begin{macro}{\insPath}
+% Set this macro in the \textbf{preamble} of your document to
+% direct (almost) all auxiliary files of insDLJS to the specified
+% path. The macro takes one parameter, a path on your local hard
+% disk.  Usage:
+%\begin{verbatim}
+%\insPath{c:/temp/}
+%\end{verbatim}
+% Be sure to use only forward slashes, and don't forget to finish
+% the string with a final forward slash, as illustrated above.
+%
+% All \texttt{*.fdf} files are written to this folder. The
+% \texttt{.djs} files of any \texttt{insDLJS} environments created
+% after the \cmd{\insPath} will also be written to the path. Any
+% \texttt{.djs} created by packages loaded earlier (such as
+% \textsf{exerquiz}) will be written to the current directory.
+%
+% This macro may be useful for users of Distiller~5.0, and is of marginal
+% value to users of \textsf{pdftex/dvipdfm}.
+%    \begin{macrocode}
+\let\js@Path\@empty
+\def\insPath#1{\def\js@Path{#1}}
+%    \end{macrocode}
+%    \end{macro}
+% \DescribeMacro{\makeJSspecials}
+% This command is typically executed at the beginning of each field
+% or link (see \cs{eq@setButtonProps} and \cs{eq@setWidgetProps}).
+% They are used for formatting JavaScript code. The command
+% \cs{makespecialJS} is defined in \textsf{insdljs}.
+% \changes{v2.1}{2015/06/15}{Moved \cs{makeJSspecials} from \textsf{eforms}
+% to here.}
+%    \begin{macrocode}
+\begingroup
+\catcode`\{=12 \catcode`\}=12 \catcode`\<=1 \catcode`\>=2
+\gdef\dl@lBrace<\string\{> \gdef\dl@rBrace<\string\}>
+\gdef\dl@tilda<\string~> \gdef\dl@sup<\string^>
+\endgroup
+\def\makeJSspecials{%
+    \def\\{\eqbs\eqbs}%         % define \\ to be \\
+    \let\jslit\string
+%    \end{macrocode}
+% \changes{v2.0n}{2014/05/20}{Remake the definition of \cs{\char`\{} and \cs{\char`\}}}
+% In an attempt to avoid the use of \verb~\jslit\{~ and \verb~\jslit\}~, we remake
+% the definition of \verb~\{} and \verb~\}~.
+%    \begin{macrocode}
+    \let\{\dl@lBrace\let\}\dl@rBrace
+%    \end{macrocode}
+% \changes{v2.1}{2015/07/12}{\cs{let} \cs{u} to \cs{@empty}.}
+% \cs{let} \cs{u} to \cs{@empty}.
+%    \begin{macrocode}
+    \let\u\@empty
+    \def\({\eqbs(}\def\){\eqbs)}%
+    \makespecialJS              % make \r=\jsR and \t=\jsT
+}
+%    \end{macrocode}
+% \subsection{Open Document Actions}\label{opendocactions}
+% Early in the process of opening a document, the `\texttt{/OpenAction}' event occurs, where
+% various action-types may be executed. These actions occur before the document JavaScripts
+% are read and before any pages are opened. We give support for this event, originally part
+% of the \textsf{aeb\_pro} package.
+%\changes{v2.1}{2015/06/15}{Moved definition of \cs{addToDocOpen} from
+% \textsf{aeb\_pro} to \textsf{insdljs}, added support for \texttt{pdftex} and \texttt{xetex}
+% options.}
+% \paragraph*{Page views}
+% The view can be set when the page key is used. Possible values are
+% \texttt{fitpage}, \texttt{actualsize}, \texttt{fitwidth},
+% \texttt{fitvisible}, and \texttt{inheritzoom}. These terms correspond
+% to Acrobat's UI. When jumping to a destination, the view is set by the
+% destination code.
+%    \begin{macrocode}
+\def\dl@fitpage{/Fit}
+\def\dl@actualsize{/XYZ null null 1.0}  %{/XYZ -32768 -32768 1.0}
+\def\dl@fitwidth{/FitH null}            %{/FitH -32768}
+\def\dl@fitheight{/FitV null}           %{/FitV -32768}
+\def\dl@fitvisible{/FitBH null}         %{/FitBH -32768}
+\def\dl@inheritzoom{/XYZ 0 0 0}
+\def\dl@mag#1{/XYZ null null #1}
+\edef\dl@Page#1{\ifcase\dljs@drivernum
+    {Page#1}\or\noexpand\pdfpageref#1\space\space 0 R\or
+    @page#1\fi}
+\def\dl@preProcDefns{\let\Page\dl@Page\let\mag\dl@mag
+    \let\fitpage\dl@fitpage\let\actualsize\dl@actualsize
+    \let\fitwidth\dl@fitwidth\let\fitheight\dl@fitheight
+    \let\fitvisible\dl@fitvisible\let\inheritzoom\dl@inheritzoom
+}
+\let\aeb@additionalOpenAction\@empty
+\let\aeb@addActionCode\@empty
+\let\addActionObj\@empty
+\let\aebpopentoks\@empty
+\let\aebpFA\dl@NO
+\def\aebp@rightDelimiters{}
+%    \end{macrocode}
+% The argument of \DescribeMacro\addToDocOpen\cmd{\addToDocOpen} is an action-type, usually
+% \textbf{JavaScript} or a \textbf{GoTo}. The command is accumulative, it can be invoked several types
+% with different action-types. Must be executed in the preamble or it has no effect.
+% It populates the value of the key \textbf{/OpenAction} in the \textbf{Catalog} of the
+% PDF file.
+%\begin{verbatim}
+%   \addToDocOpen{\JS{console.println("Open the doc!");}}
+%   \addToDocOpen{/S/GoTo/D[\Page{2}\fitpage]}
+%\end{verbatim}
+%    \begin{macrocode}
+\newcommand{\addToDocOpen}[1]{%
+    \ifx\aebpFA\dl@NO
+        \g@addto@macro\aebpopentoks{#1}%
+        \def\aeb@additionalOpenAction{/Next {pubAddToDocOpen}}%
+\ifpdf
+        \let\@pdfstartview\@empty
+        \def\aeb@addActionCode{\immediate\pdfobj{<<
+        \aebpopentoks\aebp@rightDelimiters >>}%
+        \edef\addActionObj{\the\pdflastobj\space 0 R}}%
+\else\ifxetex
+        \def\aeb@addActionCode{\immediate
+            \@pdfm@mark{obj @objAddActionObj
+            << \aebpopentoks\aebp@rightDelimiters >> }}%
+        \def\addActionObj{@objAddActionObj}%
+\else % postscript
+        \def\aeb@addActionCode{\literalps@out{%
+        \AEB@psMrk/_objdef {pubAddToDocOpen}
+            /type/dict /OBJ pdfmark^^J%
+        \AEB@psMrk{pubAddToDocOpen} <<
+        \aebpopentoks\aebp@rightDelimiters >> /PUT pdfmark}}%
+        \def\addActionObj{{pubAddToDocOpen}}%
+\fi\fi
+        \global\let\aebpFA\dl@YES
+    \else
+            \edef\aebp@dljstmp{\aebp@rightDelimiters}%
+            \xdef\aebp@rightDelimiters{\aebp@dljstmp >> }%
+            \g@addto@macro\aebpopentoks{/Next << #1 }%
+    \fi
+}
+\def\dljs@OpenActions{/OpenAction \addActionObj}
+\def\dljs@setOpenActions{\bgroup\makeJSspecials\dl@preProcDefns
+    \aeb@addActionCode
+    \ifpdf\pdfcatalog{\dljs@OpenActions}\else
+    \ifxetex\immediate
+        \@pdfm@mark{put @catalog <<\dljs@OpenActions>>}\else
+    \literalps@out{\AEB@psMrk
+     {Catalog} <<\dljs@OpenActions>> /PUT pdfmark}\fi\fi\egroup}
+%    \end{macrocode}
+% If \textsf{aeb\_pro} is not loaded, we set the open actions. If \textsf{aeb\_pro}
+% is loaded, we do nothing for \textsf{aeb\_pro} has its own contributions to the
+% PDF \textbf{Catalog}.
+%    \begin{macrocode}
+\@ifpackageloaded{aeb_pro}{}
+    {\AtBeginDocument{\ifx\addActionObj\@empty\else
+        \dljs@setOpenActions\fi}}
+%    \end{macrocode}
+%
+% \subsection{Open Page Actions}\label{openaction}
+%
+% In order to get automatic insertion of DLJS using Distiller~5.0 or greater, it is necessary
+% to use a ``Page Open Action'' for page 1 of the document. This section contains some commands
+% for defining an open page action. Originally, these macros were defined only for Distiller
+% users (\textsf{dvips} and \textsf{dvipsone} users), later, I extended their use to
+% \textsf{pdftex} and \textsf{dvipdfm}.
+%
+%\subsubsection{\texorpdfstring{\cs{OpenAction}}{\textbackslash{OpenAction}}}
+%
+% Here are the macros that actually place the open page action into the PDF document. One for
+% the \textsf{Distiller}, one for \textsf{pdftex}, and one for \textsf{dvipdfm}.
+%    \begin{macrocode}
+\let\@CloseAction\@empty
+\def\@OAction@pdfmark{\literalps@out{%
+     \AEB@psMrk{ThisPage} << /AA << /O << \theFirstAction\space
+    \opentoks\@rightDelimiters >> \@CloseAction >> >> /PUT pdfmark}}
+\def\@POAction@pdfmark{\literalps@out{%
+    \AEB@psMrk{ThisPage} << /AA << \@thisOpenAction
+    \@thisCloseAction >> >> /PUT pdfmark}%
+}
+\def\@OAction@pdftex{%
+    \ifx\isOpenAction\dl@YES
+        \xdef\pdftexOAction{/AA << /O << \theFirstAction\space
+        \opentoks\@rightDelimiters >> \@CloseAction  >>}%
+        \AtNextShipout{\pdfpageattr=\expandafter{\pdftexOAction}}%
+    \fi
+}
+\def\@POAction@pdftex{%
+  \xdef\thisPageActionpdftex{/AA << \@thisOpenAction
+    \@thisCloseAction >>}%
+  \AtNextShipout{\pdfpageattr=\expandafter{\thisPageActionpdftex}}%
+}
+%    \end{macrocode}
+% For \textsf{dvipdfm}
+%    \begin{macrocode}
+\def\@OAction@dvipdfm{\ifx\isOpenAction\dl@YES
+    \@pdfm@mark{put @thispage << /AA << /O << \theFirstAction\space
+    \opentoks\@rightDelimiters >> \@CloseAction >> >>}\fi
+}
+\def\@POAction@dvipdfm{%
+    \@pdfm@mark{put @thispage << /AA << \@thisOpenAction
+    \@thisCloseAction >> >>}%
+}
+%    \end{macrocode}
+% Now we choose the one appropriate to the user's driver option.
+%    \begin{macrocode}
+\ifcase\dljs@drivernum
+    \let\@OAction\@OAction@pdfmark
+    \let\@POAction\@POAction@pdfmark
+    \gdef\theFirstAction{/S/JavaScript/JS (\the\importfdftoks)}
+    \let\isOpenAction\dl@YES
+\or
+    \let\@OAction\@OAction@pdftex
+    \let\@POAction\@POAction@pdftex
+    \AtBeginDocument{\@OAction@pdftex}
+\or
+    \let\@OAction\@OAction@dvipdfm
+    \let\@POAction\@POAction@dvipdfm
+    \AtBeginDocument{\@OAction@dvipdfm}
+\fi
+%    \end{macrocode}
+%    \begin{macro}{\OpenAction}
+% In order for the DLJS to be inserted, \texttt{insdljs} places an open page action
+% on the first page.  If the document author wants his/her own open page action, inserting
+% it with the pdfmark operator may lead to unpredictable results.  For the uses of the
+% Distiller (dvipsone and dvips users of the distiller), if additional open page action
+% is needed on the first page, you can insert this action using the \cmd{\nextOAction} command.
+%
+%\medskip\noindent Usage
+%\begin{verbatim}
+%   \OpenAction{\JS{app.beep(-1); app.alert("Welcome to my Page!",3);}}
+%\end{verbatim}
+% The macro takes two parameters, the \cmd{\Next} followed by the desired action, in this
+% case it is a JavaScript action.
+%
+% From the code below, you can see that \cmd{\nextOAction} ends calling itself. If the next token
+% is a \cmd{\Next}, additional code is entered into the open page action. Thus, for example, the
+% following code is effectively the same as the above example, but the individual lines are
+% listed separately in the GUI action dialog of Acrobat.
+%\begin{verbatim}
+%   \OpenAction{\JS{app.beep(-1);}}
+%   \Next{\JS{app.alert("Welcome to my Page!",3);}}
+%\end{verbatim}
+% In the above example, several open page actions are  ``chained'' together.
+%
+% You are not restricted to JavaScript actions, for example, you can perform a \texttt{Named}
+% action:
+%\begin{verbatim}
+%   \OpenAction{/S/Named/N/Open}
+%\end{verbatim}
+% There is a |\Named| command that expands to |/S /Named /N#1|, so the above
+% example can be written
+%\begin{verbatim}
+%   \OpenAction{\Named{Open}}
+%\end{verbatim}
+%\cs{opentoks} accumulates the ``action''.
+%    \begin{macrocode}
+%\newtoks\opentoks \opentoks={}
+\def\opentoks{}
+%    \end{macrocode}
+% The open action is really not meant for anything too fancy, such as searching using regular
+% expressions. Of the special characters, we include only \cs{r} and \cs{t} for formatting
+% purposes. If you want to use a regular expression in the open page action (not likely),
+% put it at the document level as a JavaScript function, and call that function from the
+% open page action.
+%    \begin{macrocode}
+\def\makespecialJS{%
+    \let\r\jsR\let\t\jsT\let\n\jsN}
+\def\@rightDelimiters{}
+%    \end{macrocode}
+% If the next token is \cs{Next} then we gobble it up, and begin \cs{@OpenAction}
+% otherwise we begin \cs{@OpenAction}. This allows the ``chaining'' as illustrated above.
+%    \begin{macrocode}
+\def\OpenAction{\@ifnextchar\Next
+    {\expandafter\@OpenAction\@gobble}{\@OpenAction}}
+%    \end{macrocode}
+% \cs{@OpenAction}: This is the macro that actually does the work. We differentiate between whether the
+% current argument \texttt{\#1} is the first of all open actions, or not. If the former,
+% we define it as \cs{theFirstAction}, and reset \cs{isOpenAction}, which keeps track of
+% whether there has been a \textit{prior} open action defined. If the latter, we place it in
+% the \cs{opentoks} token register.
+%    \begin{macrocode}
+\def\@OpenAction#1{%
+    \ifx\isOpenAction\dl@NO
+        {\makespecialJS\xdef\theFirstAction{#1}}%
+        \global\let\isOpenAction\dl@YES
+    \else
+        \edef\dljstmp{\@rightDelimiters}%
+        \xdef\@rightDelimiters{\dljstmp >> }%
+        {\makespecialJS\xdef\dljstmp{\opentoks /Next << #1 }}%
+        \xdef\opentoks{\dljstmp}%
+    \fi
+    \@nextOpenAction
+}
+%    \end{macrocode}
+% As its last act, \cs{@OpenAction} calls \cs{@nextOpenAction}, which is nearly identical to
+% \cs{OpenAction}, except if there is no \cs{Next} token, the macro terminates.
+%    \begin{macrocode}
+\def\@nextOpenAction{\@ifnextchar\Next{\expandafter
+    \@OpenAction\@gobble}{}}
+%    \end{macrocode}
+%    \end{macro}
+% Here is a last example that uses the \texttt{insDLJS} environment and the \cs{OpenAction} command. This code
+% will cause the following action: Ten seconds after the document is opened, an annoying
+% message is placed on the screen. The annoying message appears only \texttt{once}, otherwise,
+% it would really be annoying. Reader (Acrobat)~5.0 is required for this code.
+%\begin{verbatim}
+%\begin{insDLJS}[DoIt]{doit}{DoIt}
+%var timeout;
+%var didIt = false;
+%var myWelcome="Welcome to your PDF Page!\r\r You can remove this annoying"
+%     +" message by sending \u00A3100 to my Swiss bank account!"
+%function startToDoIt()
+%{
+%    if(!didIt) timeout = app.setInterval("DoIt();", 10000);
+%}
+%function DoIt()
+%{
+%    app.beep(-1);
+%    app.alert(myWelcome,1);
+%    app.clearInterval(timeout);
+%    didIt = true;
+%}
+%\end{insDLJS}
+%\OpenAction{/S /JavaScript /JS(startToDoIt();)}
+%\end{verbatim}
+% See the ``Acrobat JavaScript Object Specification'' for the definitions of some
+% of these JavaScript methods.
+%
+%\subsubsection{\texorpdfstring{\cs{thisPageAction}}{\textbackslash{thisPageAction}}}
+% \DescribeMacro{\thisPageAction} places page actions on the current page.
+% The first argument is on open page action, the second one is a closed page action.
+%    \begin{macrocode}
+\def\protectJSCtrls{\def\r{\string\r\string\n}%
+    \def\t{\string\t}\def\n{\string\n}}
+\def\dljs@tstlp{\@ifnextchar\bgroup
+    {\let\dljs@multi\dl@YES\dljs@tstlpi}%
+    {\let\dljs@multi\dl@NO\dljs@tstlpi}}
+\def\dljs@tstlpi#1\@nil{}%
+% #1=arg, #2=O|C, #3=cmd
+\def\dljs@bldScript#1#2#3{{%
+    \dljs@tstlp#1\@nil
+    \ifx\dljs@multi\dl@NO{\protectJSCtrls\xdef#3{/#2<<#1>>}}\else
+        \toks0={}\let\dljs@rAngles\@empty\count0=0
+        \@tfor\dljs@arg:=#1\do{%
+            \ifnum\count0=0
+                \toks0=\expandafter{\dljs@arg}\else
+                \toks2=\expandafter{\dljs@arg}%
+                \edef\holdtokstmp{\the\toks0
+                    /Next<<\the\toks2 }%
+                \edef\dljs@rAngles{\dljs@rAngles\space>>}%
+                \toks0=\expandafter{\holdtokstmp}%
+            \fi
+            \advance\count0by1
+        }%
+        {\protectJSCtrls\xdef#3{/#2<<\the\toks0 \dljs@rAngles>>}%
+         \xdef#3{#3}}%
+    \fi
+}}
+\newcommand{\thisPageAction}[2]{%
+    \let\@CloseAction\@empty
+    \let\@thisOpenAction\@empty
+    \let\@thisCloseAction\@empty
+    \def\dljs@argi{#1}\def\dljs@argii{#2}%
+%    \end{macrocode}
+% On the first page, \cs{OpenAction} is used to process the open action
+%    \begin{macrocode}
+    \ifnum\value{page}=1\relax
+        \ifx\dljs@argii\@empty\else
+            \dljs@bldScript{#2}{C}{\@CloseAction}\fi
+        \ifx\dljs@argi\@empty\else\dljs@tstlp#1\@nil
+            \ifx\dljs@multi\dl@NO\OpenAction{#1}\else
+            \@tfor\dljs@arg:=#1\do{\expandafter
+                \OpenAction\expandafter{\dljs@arg}%
+            }\fi
+        \fi
+    \else
+%    \end{macrocode}
+% If this is not the first page, we just populate the \texttt{/O} dictionary
+%    \begin{macrocode}
+        \ifx\dljs@argi\@empty\else
+            \dljs@bldScript{#1}{O}{\@thisOpenAction}\fi
+        \ifx\dljs@argii\@empty\else
+            \dljs@bldScript{#2}{C}{\@thisCloseAction}\fi
+        \@POAction
+    \fi
+}
+%    \end{macrocode}
+% \subsection{The \texttt{insDLJS} Environments}
+%
+%    \begin{macro}{insDLJS}\hypertarget{insDLJS}{}
+%    \begin{macro}{insDLJS*}
+% This is the main environment defined by this package. These environments
+% first set some global variables, then set the program flow to driver-dependent
+% environments. There are two forms of this environment, the \texttt{insDLJS} and the
+% \texttt{insDLJS*}.
+%
+% The \texttt{insDLJS} is the simplest of the two environments. Any material
+% within the environment, eventually ends up in the DLJS section of the
+% PDF document
+%
+% The environment takes the \texttt{<base\_name>} and writes the
+% file \texttt{<base\_name>.djs}. This file contains a verbatim
+% listing of the JS within the environment, plus some changing of
+% catcodes. This file is then input back into the document at
+% \cmd{\AtBeginDocument} with the necessary code for
+% \textsf{pdftex} and \textsf{dvipdfm} properly place the JS.
+%
+% The case of \textsf{dvipsone} and \textsf{dvips} is a little different. A
+% \texttt{<base\_name>.djs} is written and input back, and a second file
+% \texttt{<base\_name>.fdf} is written. This second file is later input
+% into the PDF document after distillation.
+%
+% The syntax of usage for this environment, which takes three
+% arguments, is given next.
+%\begin{verbatim}
+%   \begin{insDLJS}[<function>]{<base_name>}{<script_name>}
+%   <JavaScript functions or exposed code>
+%   ...
+%   ...
+%   \end{insDLJS}
+%\end{verbatim}
+% where,
+% \begin{description}
+% \item[\texttt{\#1:}] This optional parameter, \texttt{<function>},
+% is \emph{required} for the \texttt{dvipsone} and \texttt{dvips}
+% options; otherwise it is ignored. Its value must be the name of
+% one of the functions defined in the environment. This is used to
+% detect whether the DLJS has already be loaded by Acrobat.
+% \item[\texttt{\#2}:] This parameter, \texttt{<base\_name>}, is  an
+% alphabetic word with no spaces and limited to eight characters. It
+% is used to build the names of auxiliary files and to build the
+% names of macros used by the environment.
+% \item[\texttt{\#3}:] The \texttt{<script\_name>} of your JavaScript.
+% This title will appear in the Documentlevel JavaScript dialog of
+% Acrobat.
+% \end{description}
+% Within the insDLJS environment, there are two types of comment characters:
+% (1) a \TeX{} comment (|%|) and (2) a JavaScript comment.   The JavaScript
+% comments are `\texttt{//}', a line comment, and `\texttt{/*...*/}' for more
+% extensive commenting. These comments will survive and be placed into the
+% PDF file. In JavaScript the `|%|' is used as well, use |\%| when you want to use
+% the percent character in a JavaScript statement, for example
+% |app.alert("\%.2f", 3.14159);|, this statement will appear within your JavaScript
+% code as  |app.alert("%.2f", 3.14159);|.
+% \changes{v2.2c}{2015/11/13}{Turned \cs{Hy@unicodefalse} so unicode is not written
+% in the name of the script.}
+%    \begin{macrocode}
+\let\insdljsloadVar\@empty
+\newenvironment{insDLJS}[3][]
+{%
+    \gdef\detectdljs{#1}\gdef\dljsBase{#2}%
+    \ifxetex{\def\1{\string\1}\def\2{\string2}%
+    \def\3{\string\3}\xdef\dljsName{#3}}\else
+    \Hy@unicodefalse\pdfstringdef{\dljsName}{#3}\fi
+%    \end{macrocode}
+% If the optional argument is not passed,
+% we generate one for the user.
+%\changes{v2.0k}{2012/06/21}{If the optional argument is not passed,
+% we generate one for the user.}
+%    \begin{macrocode}
+\ifx\detectdljs\@empty
+    \stepcounter{dljs@cnt}%
+    \xdef\detectdljs{_bInsdljsload\arabic{dljs@cnt}}%
+    \edef\insdljsloadVar{var \detectdljs=true;}%
+    \addtocounter{dljs@cnt}{-1}%
+\fi
+    \global\let\multisegments\dl@NO\setcounter{dljssegs}{2}%
+    \global\dljsobjtoks={}%
+    \expandafter\ifx\csname dljs\dljsBase\endcsname\relax
+        \else\@insjserrDuplicate\fi
+    \ifcase\dljs@drivernum
+        \let\insert@DLJS=\insert@DLJS@pdfmark
+        \let\endinsDLJS=\endinsert@DLJS@pdfmark
+        \let\newsegment=\newsegment@pdfmark
+        \let\endnewsegment=\endnewsegment@pdfmark
+    \or
+        \let\insert@DLJS=\insert@DLJS@pdftex
+        \let\endinsDLJS=\endinsert@DLJS@pdftex
+        \let\newsegment=\newsegment@pdftex
+        \let\endnewsegment=\endnewsegment@pdftex
+    \or
+        \let\insert@DLJS=\insert@DLJS@dvipdfm
+        \let\endinsDLJS=\endinsert@DLJS@dvipdfm
+        \let\newsegment=\newsegment@dvipdfm
+        \let\endnewsegment=\endnewsegment@dvipdfm
+    \fi
+    \insert@DLJS
+}{}
+%    \end{macrocode}
+%
+% The \texttt{insDLJS*} environment can be used to better organize,
+% edit and debug your JavaScript.  If you have the full Acrobat
+% product, you can open the DLJS edit dialog. There you will see a
+% listing of all DLJS contained in the document. When you double
+% click on one of the \textsl{script names}, you enter the edit
+% window, where you can edit all JavaScript contained under that
+% name. Each \texttt{insDLJS} environment creates a new listing
+% within this   DLJS dialog; and, each environment creates a
+% `\texttt{.djs}' file and possibly  a  \texttt{.fdf}' file. Each
+% \texttt{insDLJS*} environment also creates a `\texttt{.djs}' file
+% and possibly a `\texttt{.fdf}' file too, but within the
+% \texttt{insDLJS*} environment you can create JavaScript under
+% different \textsl{script names}.
+%
+% The syntax is
+%\begin{verbatim}
+%   \begin{insDLJS*}[<function>]{<base_name>}
+%   \begin{newsegment}{<script_name>}
+%       <JavaScript functions or exposed code>
+%   \end{newsegment}
+%   \begin{newsegment}{<script_name>}
+%       <JavaScript functions or exposed code>
+%   \end{newsegment}
+%   ...
+%   ...
+%   <JavaScript functions or exposed code>
+%   \end{newsegment}
+%   \begin{newsegment}{<name_name>}
+%       <JavaScript functions or exposed code>
+%   \end{newsegment}
+%   \end{insDLJS*}
+%\end{verbatim}
+% where,
+% \begin{description}
+% \item[\texttt{\#1:}] This optional parameter, \texttt{<function>},
+% is \emph{required} for the \texttt{dvipsone} and \texttt{dvips}
+% options; otherwise it is ignored. Its value must be the name of
+% one of the functions defined in the environment. This is used to
+% detect whether the DLJS has already be loaded by Acrobat.
+% \item[\texttt{\#2}:] This parameter, \texttt{<base\_name>}, is  an
+% alphabetic word with no spaces and limited to eight characters. It
+% is used to build the names of auxiliary files and to build the
+% names of macros used by the environment.
+% \item[\texttt{\#3}:] The \texttt{<script\_name>} of your JavaScript.
+% This title will appear in the Document level JavaScript dialog of
+% Acrobat.
+% \end{description}
+%    \begin{macrocode}
+\newenvironment{insDLJS*}[2][]
+{%
+    \gdef\detectdljs{#1}\gdef\dljsBase{#2}%
+%    \end{macrocode}
+% If the optional argument is not passed,
+% we generate one for the user.
+%\changes{v2.0k}{2012/06/21}{If the optional argument is not passed,
+% we generate one for the user.}
+%    \begin{macrocode}
+\ifx\detectdljs\@empty
+    \stepcounter{dljs@cnt}%
+    \xdef\detectdljs{_bInsdljsload\arabic{dljs@cnt}}%
+    \edef\insdljsloadVar{var \detectdljs=true;}%
+    \addtocounter{dljs@cnt}{-1}%
+\fi
+    \global\let\multisegments\dl@YES\setcounter{dljssegs}{2}%
+    \global\dljsobjtoks={}%
+    \expandafter\ifx\csname dljs\dljsBase\endcsname\relax
+        \else\@insjserrDuplicate\fi
+    \ifcase\dljs@drivernum
+        \let\insert@DLJS=\insert@DLJS@pdfmark
+        \expandafter
+            \let\csname endinsDLJS*\endcsname\endinsert@DLJS@pdfmark
+        \let\newsegment=\newsegment@pdfmark
+        \let\endnewsegment=\endnewsegment@pdfmark
+    \or
+        \let\insert@DLJS=\insert@DLJS@pdftex
+        \expandafter
+            \let\csname endinsDLJS*\endcsname\endinsert@DLJS@pdftex
+        \let\newsegment=\newsegment@pdftex
+        \let\endnewsegment=\endnewsegment@pdftex
+    \or
+        \let\insert@DLJS=\insert@DLJS@dvipdfm
+        \expandafter
+            \let\csname endinsDLJS*\endcsname\endinsert@DLJS@dvipdfm
+        \let\newsegment=\newsegment@dvipdfm
+        \let\endnewsegment=\endnewsegment@dvipdfm
+    \fi
+    \insert@DLJS
+}{}
+\def\@insjserrDuplicate{%
+    \typeout{^^J! insdljs Package error.}
+    \typeout{! insDLJS environment: On line number \the\inputlineno,}
+    \typeout{! the base name `\dljsBase' has already been chosen.}
+    \typeout{! A DLJS earlier defined has been overwritten!}
+    \typeout{! Choose another name for the first required argument}
+    \typeout{! of the insDLJS environment.^^J}
+}
+%    \end{macrocode}
+%    \end{macro}
+%    \end{macro}
+% \subsection{The \texttt{execJS} Environment}\label{execJS}
+% This environment works only for those document authors using Acrobat 5.0 or
+% Acrobat Approval. The \texttt{execJS} environment writes a verbatim \texttt{.djs} and
+% \texttt{.fdf} files using the same scheme as \texttt{insDLJS} environment.
+% The \texttt{.fdf} file is imported into the newly created PDF document and the JavaScript contained
+% within the environments are executed.
+%
+% In order for the JavaScript to be imported and executed, the \texttt{execJS} must be used. The
+% JavaScript is executed once, when the document is first opened in Acrobat.
+%
+% This feature is potentially useful for developmental purposes.
+%    \begin{macrocode}
+\newif\ifisdljs \isdljsfalse
+\begingroup
+\catcode`\~=12 \catcode`\#=12
+\gdef\efdlspecials{\catcode`\~=12 \catcode`\#=12}
+\endgroup
+\def\ckivspace#1{\if\noexpand#1\space\else\expandafter#1\fi}
+%    \end{macrocode}
+% \changes{v2.2b}{2015/08/03}{Added a hook \cs{DLspecialDefs} into the DJS file}
+% (2015/08/03) Added the \cs{DLspecialDefs} hook into the DJS file, used in
+% \textsf{aeb\_pro}.
+%    \begin{macrocode}
+\let\DLspecialDefs\@empty
+\def\fdfAfterheader
+{%
+    \iwvo{\string\begingroup\string\efdlspecials}
+    \iwvo{\string\DLspecialDefs}
+    \iwvo{\string\isdljstrue}
+    \iwvo{\string\makeatletter}
+    \iwvo{\string\immediate\string\openout\string
+\js@verbatim@out=\string\js@Path\space\dljsBase.fdf}%
+    \iwvo{\string\begin{jsexpverbatimwrite}}
+    \iwvo{\string\firstFDFline}
+    \iwvo{1 0 obj}
+    \iwvo{<< /FDF << /JavaScript << /Doc 2 0 R /After 3 0 R >> >> >> }
+    \iwvo{endobj}
+    \iwvo{2 0 obj}
+%    \end{macrocode}
+%    When a non-Distiller workflow, insure execJSs are listed first.
+%    \changes{v2.2h}{2016/06/09}{When a non-Distiller workflow, insure execJSs are listed first}
+%    \begin{macrocode}
+\ifpdfmarkup
+    \iwvo{[ (ExecJS \dljsBase) (var _\dljsBase\space = true;) ] }\else
+    \iwvo{[ (00 ExecJS \dljsBase) (var _\dljsBase\space = true;) ] }\fi
+    \iwvo{endobj}
+    \iwvo{3 0 obj}
+    \iwvo{<<>>}
+    \iwvo{stream}
+}
+%    \end{macrocode}
+%    \begin{environment}{execJS}
+% The parameter \texttt{\#1} is the base name for this environment.
+% The base name will be used to create
+% a filename to save the \texttt{.fdf} file under.
+%    \begin{macrocode}
+\newenvironment{execJS}[1]
+{%
+    \gdef\detectdljs{\string_#1}\gdef\dljsBase{#1}%
+    \global\dljsobjtoks={}%
+    \expandafter\gdef\csname dljs\dljsBase\endcsname{}%
+    \ifx\importdljs\dl@YES\ifx\execjs\dl@YES
+        \ifx\dl@gopro\dl@YES
+        \ifnum\dljs@drivernum=0\relax
+            \addImportAnFDF\importAnFDFTemplate
+        \else
+            \OpenAction{/S/JavaScript/JS (\importAnFDFTemplate)}%
+        \fi\fi
+    \fi\fi
+    \immediate\openout \js@verbatim@out \js@Path\dljsBase.djs
+    \fdfAfterheader
+    \js@verbatimwrite
+}{%
+    \fdfendstreamobj
+    \endjs@verbatimwrite
+    \fdftrailer
+    \closejs@verbatim@out
+    \expandafter\xdef\csname\dljsBase OBJ\endcsname{\the\dljsobjtoks}%
+    \edef\@dljstmp{\noexpand\AtBeginDocument{%
+        \noexpand\input{\js@Path\dljsBase.djs}}}\@dljstmp
+%    \end{macrocode}
+%\changes{v2.2g}{2016/05/11}{Removed \string\cs{AtBeginDocument} code
+%from the \string\texttt{execJS} environment. This causes problems with
+%the order of \string\texttt{execJS} and \string\texttt{insDLJS}.}
+%(2016/05/11) Remove the following code, seens to cause problems with
+%the order of \texttt{execJS} and \texttt{insDLJS}.
+%\begin{verbatim}
+%    \ifx\firstdljs\dl@YES
+%        \AtBeginDocument{\importAnFDF}%
+%        \global\let\firstdljs\dl@NO
+%    \fi
+%\end{verbatim}
+%    \begin{macrocode}
+}
+%    \end{macrocode}
+%    \end{environment}
+% \subsection{The \texttt{defineJS} Environment}\label{defineJS}
+% When we create a form field that has a JavaScript action attached, it would be nice
+% to be able to write verbatim JavaScript code into the action. Due to the limitations
+% of \TeX, this is not possible. The other possibility is to create an environment for
+% writing JavaScript. This section introduced a couple of environments, the
+% \texttt{defineJS} and \texttt{localJS} environments.
+%    \begin{environment}{defineJS}
+% The \texttt{defineJS} environment takes two parameters, the first one optional.
+%\begin{description}
+%\item[\ttfamily\#1 = ] This optional parameter can be used to change catcodes
+%   before the verbatim read begins.
+%\item[\ttfamily\#2 = ] The command to be defined.
+%\end{description}
+% The material within the environment is read verbatim and a new command by the name of \#2
+% is defined.
+%    \begin{macrocode}
+\newtoks\JStoks
+\newenvironment{defineJS}[2][]
+{%
+    \expandafter\@ifundefined\expandafter{%
+        \expandafter\@gobble\string#2}{}{%
+            \PackageWarning{insdljs}{The command
+                \string#2 already defined}}%
+    \gdef\defineJSArg{#2}\JStoks={}%
+    \def\verbatim@processline
+        {%
+            \xdef\JS@temp{\the\JStoks\the\verbatim@line\defineJSjsR}%
+            \global\JStoks=\expandafter{\JS@temp}%
+        }%
+    \let\do\@makeother\dospecials\catcode`\^^M\active
+    #1%
+    \verbatim@start
+}{\gdef\eq@JStemp{\expandafter\edef\defineJSArg{\the\JStoks}}%
+    \aftergroup\eq@JStemp}
+%    \end{macrocode}
+% Silent version of \texttt{defineJS}, can repeatedly be used to redefine the same
+% macro.
+%    \begin{macrocode}
+\newenvironment{@defineJS}[2][]
+{%
+    \gdef\defineJSArg{#2}\JStoks={}%
+    \def\verbatim@processline
+        {%
+            \xdef\JS@temp{\the\JStoks\the\verbatim@line\defineJSjsR}%
+            \global\JStoks=\expandafter{\JS@temp}%
+        }%
+    \let\do\@makeother\dospecials\catcode`\^^M\active
+    #1%
+    \verbatim@start
+}{\gdef\eq@JStemp{\expandafter\edef\defineJSArg{\the\JStoks}}%
+    \aftergroup\eq@JStemp}
+%    \end{macrocode}
+%    \end{environment}
+% An author might want these definitions to be local in definition, so the
+% \texttt{localJS} environment is supplied.
+%    \begin{environment}{localJS}
+% This environment does nothing more than to enclose the material
+% in \cs{begingroup} and \cs{endgroup}.
+%    \begin{macrocode}
+\newenvironment{localJS}[1][]{}{\ifvmode\else\unskip\fi}
+%    \end{macrocode}
+%    \end{environment}
+%
+% \subsection{Set Document Actions}
+% We provide simple environments for writing document actions.
+%    \begin{environment}{willClose}
+% Execute a script just before closing the document.
+%    \begin{environment}{willSave}
+% Execute script just before a save.
+%    \begin{environment}{didSave}
+% Execute a script just after a save
+%    \begin{environment}{willPrint}
+% Execute a script just before a print job
+%    \begin{environment}{didPrint}
+% Execute a script just after a print job
+%    \begin{macrocode}
+\newenvironment{willClose}[1][]
+{\@defineJS[#1]{\will@Close}}
+{\end@defineJS}
+\let\will@Close\@empty
+\newenvironment{willSave}[1][]
+{\@defineJS[#1]{\will@Save}}
+{\end@defineJS}
+\let\will@Save\@empty
+\newenvironment{didSave}[1][]
+{\@defineJS[#1]{\did@Save}}
+{\end@defineJS}
+\let\did@Save\@empty
+\newenvironment{willPrint}[1][]
+{\@defineJS[#1]{\will@Print}}
+{\end@defineJS}
+\let\will@Print\@empty
+\newenvironment{didPrint}[1][]
+{\@defineJS[#1]{\did@Print}}
+{\end@defineJS}
+\let\did@Print\@empty
+\def\dljs@willDidActions{/AA <<
+   \ifx\test@will@Close\@empty\else/WC <<
+        \JS{\will@Close} >>\fi
+   \ifx\test@will@Save\@empty\else/WS <<
+        \JS{\will@Save} >>\fi
+   \ifx\test@did@Save\@empty\else/DS <<
+        \JS{\did@Save} >>\fi
+   \ifx\test@will@Print\@empty\else/WP <<
+        \JS{\will@Print} >>\fi
+   \ifx\test@did@Print\@empty\else/DP <<
+        \JS{\did@Print} >>\fi
+    >>
+}
+\newcommand\dljs@setDocActions{%
+    \edef\test@will@Close{\will@Close}%
+    \edef\test@will@Save{\will@Save}%
+    \edef\test@did@Save{\did@Save}%
+    \edef\test@will@Print{\will@Print}%
+    \edef\test@did@Print{\did@Print}%
+%    \end{macrocode}
+% Driver dependent code to put any document actions into the additional actions
+% dictionary of the document catalog.
+%    \begin{macrocode}
+    \ifpdf\pdfcatalog{\dljs@willDidActions}\else
+    \ifxetex\immediate
+        \@pdfm@mark{put @catalog <<\dljs@willDidActions>>}\else
+    \literalps@out{\AEB@psMrk
+     {Catalog} <<\dljs@willDidActions>> /PUT pdfmark}\fi\fi
+}
+\@ifpackageloaded{aeb_pro}{}
+    {\AtBeginDocument{\dljs@setDocActions}}
+%    \end{macrocode}
+%    \end{environment}
+%    \end{environment}
+%    \end{environment}
+%    \end{environment}
+%    \end{environment}
+%
+%    \subsection{For \texttt{dvipsone}/\texttt{dvips}}
+% The method of automatic insertion of document level JavaScript is to
+% write an FDF file (Forms Data Format), then import this FDF into the
+% document using the JavaScript method \texttt{Doc.importAnFDF()}.
+%
+% We break the FDF file into three parts: the \cmd{\fdfheader} (the stuff prior
+% to the JavaScript code); the JavaScript code itself; and the
+% \cmd{\fdftrailer}, the stuff that follows the code.
+%    \begin{macrocode}
+\begingroup
+\catcode`\%=12
+\gdef\firstFDFline{%FDF-1.2}
+\gdef\lastFDFline{%%EOF}
+\endgroup
+\def\fdfheader
+{%
+    \iwvo{\string\begingroup\string\efdlspecials}
+    \iwvo{\string\isdljstrue}
+    \iwvo{\string\makeatletter}
+    \iwvo{\string\immediate\string\openout\string
+        \js@verbatim@out=\string\js@Path\space\dljsBase.fdf}%
+    \iwvo{\string\begin{jsexpverbatimwrite}}
+    \iwvo{\string\firstFDFline}
+    \iwvo{1 0 obj}
+    \iwvo{<< /FDF << /JavaScript << /Doc 2 0 R >> >> >>}
+    \iwvo{endobj}
+    \iwvo{2 0 obj}
+    \iwvo{[ \string\csname\string\@gobble\space\dljsBase%
+        OBJ\string\endcsname]}
+    \iwvo{endobj}
+}
+\def\fdfbeginstreamobj
+{%
+    \iwvo{\thedljssegs\space 0 obj}
+    \iwvo{<<>>}
+    \iwvo{stream}
+%    \end{macrocode}
+% If the user has not passed the optional
+% name, we generated one for him, now we insert it into the \texttt{stream}.
+%\changes{v2.0k}{2012/06/21}{If the user has not passed the optional
+% name, we generated one for him, now we insert it into the \texttt{stream}.}
+%    \begin{macrocode}
+    \ifx\insdljsloadVar\@empty\else
+        \iwvo{\insdljsloadVar}
+        \global\let\insdljsloadVar\@empty
+    \fi
+}
+\def\fdfendstreamobj{%
+    \iwvo{endstream}
+    \iwvo{endobj}
+}
+    \def\fdftrailer{%
+    \iwvo{trailer}
+    \iwvo{<< /Root 1 0 R >>}
+    \iwvo{\string\lastFDFline}
+%    \end{macrocode}
+% Here we write \texttt{*end{jsexpverbatimwrite}} as a signal for our modified verbatim write
+% code to stop.
+%    \begin{macrocode}
+    \iwvo{*end{jsexpverbatimwrite}}
+    \iwvo{\string\endgroup}
+}
+%    \end{macrocode}
+% There may be more than one use of the \texttt{insDLJS}
+% environment and we need to be able to import each of the resultant
+% FDF files. The \cmd{\importfdftoks} accumulates material to be
+% used after all chance for the user to insert JS code has been
+% exhausted.
+%    \begin{macrocode}
+\newtoks\importfdftoks \importfdftoks={}
+\newtoks\dljsobjtoks \dljsobjtoks={}
+%    \end{macrocode}
+% This is a template for detecting whether the DLJS has been imported into
+% the document.
+%    \begin{macrocode}
+\def\importAnFDFTemplate{%
+if(typeof \detectdljs\space == "undefined")\jsR\jsT
+%    \end{macrocode}
+% Beginning with Acrobat 8.1, the \texttt{Doc.importAnFDF} has additional security. We must call
+% it through a trusted function which is in the file aeb.js, which resides in the user JavaScript folder.
+%\changes{v2.0h}{2006/10/03}
+%{
+%   Created aeb.js, which must be installed for users of distiller. The importAnFDF method is now called
+%   through a trusted function.
+%}
+%    \begin{macrocode}
+    ( app.viewerVersion > 8 ) ? %
+        aebTrustedFunctions( this, aebImportAnFDF, %
+        "\js@Path\dljsBase.fdf") : %
+        this.importAnFDF("\js@Path\dljsBase.fdf");\jsR
+}
+%    \end{macrocode}
+% Add in another template into \cmd{\importfdftoks}.
+%    \begin{macrocode}
+\def\addImportAnFDF#1{%
+    \ifx\importdljs\dl@YES
+%        \let\jsR\relax\let\jsT\relax
+        \edef\importAnFDFtmp{\the\importfdftoks#1}%
+        \global\importfdftoks=\expandafter{\importAnFDFtmp}%
+    \fi
+}
+%    \end{macrocode}
+% This is used by \texttt{insert@DLJS@pdfmark} and is placed
+% \cmd{\AtBeginDocument}.
+%    \begin{macrocode}
+\def\importAnFDF{\ifx\importdljs\dl@YES\@OAction\fi}
+%    \end{macrocode}
+% The \texttt{insert@DLJS@pdfmark} environment writes the \cmd{\dljsBase.djs} file
+% which is in turn input back in, and rewritten as \cmd{\dljsBase.fdf}. This is
+% necessary to give the user a chance to modify the JavaScript code in an
+% authorized way.
+%    \begin{macrocode}
+\newenvironment{newsegment@pdfmark}[1]{%
+    \addtocounter{dljssegs}{1}%
+    \addtocounter{dljs@cnt}{1}%
+    \Hy@unicodefalse\pdfstringdef{\dljsName}{#1}%
+    \edef\@dljstmp{\the\dljsobjtoks(\dljsName)
+        \thedljssegs\space 0 R\space}
+    \global\dljsobjtoks=\expandafter{\@dljstmp}
+    \fdfbeginstreamobj
+    \js@verbatimwrite
+}{%
+    \fdfendstreamobj
+    \endjs@verbatimwrite
+}
+\def\insert@DLJS@pdfmark{%
+    \global\let\dljspresent\dl@YES
+    \expandafter\gdef\csname dljs\dljsBase\endcsname{}%
+    \ifx\importdljs\dl@YES\ifx\dl@gopro\dl@YES
+        \addImportAnFDF\importAnFDFTemplate
+    \fi\fi
+    \immediate\openout \js@verbatim@out \js@Path\dljsBase.djs
+    \fdfheader
+    \ifx\multisegments\dl@NO\expandafter
+        \newsegment\expandafter{\expandafter\dljsName\expandafter}\fi
+}
+\def\endinsert@DLJS@pdfmark{%
+    \ifx\importdljs\dl@YES
+        \ifx\multisegments\dl@NO\expandafter\endnewsegment\fi
+        \fdftrailer
+        \closejs@verbatim@out
+        \expandafter\xdef\csname\dljsBase%
+            OBJ\endcsname{\the\dljsobjtoks}%
+        \edef\@dljstmp{\noexpand\AtBeginDocument{%
+            \noexpand\input{\js@Path\dljsBase.djs}}}%
+        \@dljstmp
+        \ifx\firstdljs\dl@YES
+            \AtBeginDocument{\edef\@dljstmp{\importAnFDF}%
+                \@dljstmp}\global\let\firstdljs\dl@NO
+        \fi
+    \fi
+}
+%    \end{macrocode}
+%    \subsection{For \texttt{pdftex}/\texttt{dvipdfm}}
+% Again, we break the problem of creating DLJS into four parts: \cmd{\begindljs},
+% \cmd{\enddljs}, the code itself, driver dependent material, \cmd{\write@pdftex@obj}
+% and \cmd{\write@dvipdfm@obj}.
+%
+% The following is used by both \texttt{pdftex} and \texttt{dvipdfm}.
+%    \begin{macrocode}
+\begingroup
+\catcode`\@=0 @catcode`@\=12
+@gdef@ccpdftex{@gdef@eqesc{\\}@gdef@eqesci{\}}
+@endgroup
+\def\begindljs
+{%
+    \iwvo{\string\begingroup\string\efdlspecials}
+    \iwvo{\string\isdljstrue}
+%    \end{macrocode}
+%\changes{v2.2f}{2016/05/07}{Include \string\cs{makeletter} in verbatim write}
+%    \begin{macrocode}
+    \iwvo{\string\makeatletter}
+    {\uccode`c=`\%\uppercase{%
+        \iwvo{\string\obeyspaces\string\obeylines
+            \string\let\string^\string^M=\string\jsR c}}}
+%    \end{macrocode}
+% (2014/08/09) For pdftex and xetex, this global let messages up
+% the \texttt{Verbatim} environment. Not sure why this is global anyway
+%\begin{verbatim}
+%       \iwvo{\string\obeyspaces\string\obeylines\string
+%           \global\string\let\string^\string^M=\string\jsR c}}}
+%\end{verbatim}
+%    \begin{macrocode}
+    {\escapechar=-1 \lccode`C=`\%\lowercase{%
+        \iwvo{\string\\catcode`\string\\"=12C}}}
+}
+\def\beginseg
+{%
+    {\lccode`P=`\{\lccode`C=`\%\lowercase{%
+        \iwvo{\string\gdef\string\dljs\dljsBase\roman{dljssegs}PC}}}%
+}
+%    \end{macrocode}
+% With \cs{enddsljs}, we now finish the macro definition with a closing right brace, followed by a
+% comment, `\texttt\%, and an end of group.
+%    \begin{macrocode}
+\def\endseg
+{%
+    {\uccode`c=`\%\uccode`p=`\}\uppercase{\iwvo{pc}}}%
+}
+\def\enddljs
+{%
+    \iwvo{\string\endgroup}%
+}
+%    \end{macrocode}
+%\changes{v2.0j}{2011/06/27}{made some changes as suggested by Christian Feuersaenger, who reported some
+% problem clashes between \textsf{babel} (spanish) and \textsf{insdljs}.}
+%    \begin{macrocode}
+\def\@roman#1{\romannumeral#1}
+\def\write@objs
+{%
+		\iwvo{\begingroup}
+		\iwvo{\string\catcode`\string\<=12 }
+		\iwvo{\string\catcode`\string\>=12 }
+		{\lccode`C=`\%\lowercase{\iwvo{\string\ccpdftex C}}}
+		{\lccode`C=`\%\lowercase{\iwvo{%
+            \string\input{dljscc.def}C\the\dljsobjtoks}}}
+		\iwvo{\endgroup}
+}
+%    \end{macrocode}
+%    \subsubsection{\texttt{pdftex} Specific Code}
+%    \begin{macrocode}
+\newenvironment{newsegment@pdftex}[1]{%
+    \addtocounter{dljssegs}{1}%
+    \addtocounter{dljs@cnt}{1}%
+    \edef\tmp{^^J\string\immediate\string\pdfobj{ << /S/JavaScript/JS%
+    (\string\dljs\dljsBase\roman{dljssegs}) >> }}%
+    \edef\@dljstmp{\the\dljsobjtoks\tmp}%
+    \global\dljsobjtoks=\expandafter{\@dljstmp}%
+    \edef\tmp{^^J\string\xdef\string\obj\dljsBase\roman{dljssegs}%
+        {\string\the\string\pdflastobj\string\space 0 R}}%
+    \edef\@dljstmp{\the\dljsobjtoks\tmp}%
+    \global\dljsobjtoks=\expandafter{\@dljstmp}%
+    \edef\curr@Cnt{\ifnum\arabic{dljs@cnt}<10 0\fi\arabic{dljs@cnt}}%
+    \Hy@unicodefalse\pdfstringdef{\dljsName}{#1}%
+    \edef\dljspdftextmp
+    {\the\importfdftoks (\curr@Cnt\space\dljsName)
+        \noexpand\csname obj\dljsBase\roman{dljssegs}%
+            \noexpand\endcsname\space}%
+    \global\importfdftoks=\expandafter{\dljspdftextmp}%
+    \beginseg
+    \js@verbatimwrite
+}{%
+    \endjs@verbatimwrite
+    \endseg
+}
+%    \end{macrocode}
+% The main branch of the \texttt{insDLJS} for \texttt{pdftex}. This
+% environment writes to the file \cmd{\dljsBase.djs} all the necessary code, then
+% is input back into the file using \cmd{\AtBeginDocument}.
+%    \begin{macrocode}
+\newenvironment{insert@DLJS@pdftex}{%
+    \expandafter\gdef\csname dljs\dljsBase\endcsname{}%
+    \immediate\openout \js@verbatim@out \js@Path\dljsBase.djs
+    \begindljs
+    \ifx\multisegments\dl@NO\expandafter
+        \newsegment\expandafter{\expandafter\dljsName\expandafter}\fi
+}{%
+    \ifx\multisegments\dl@NO\expandafter\endnewsegment\fi
+    \enddljs
+    \write@objs
+    \endjs@verbatimwrite
+    \closejs@verbatim@out
+    \edef\@dljstmp{\noexpand\AtBeginDocument{%
+        \noexpand\input{\js@Path\dljsBase.djs}}}%
+    \@dljstmp
+    \ifx\importdljs\dl@YES
+        \ifx\firstdljs\dl@YES
+            \AtEndDocument{\edef\@dljstmp{\setDLJSRef@pdftex}\@dljstmp}
+            \global\let\firstdljs\dl@NO
+        \fi
+    \fi
+}
+%    \end{macrocode}
+% This code places the \texttt{/JavaScript} key-value in the \texttt{/Names} dictionary
+% of the PDF document. This code is inserted into the document in \texttt{insert@DLJS@pdftex}
+% using \cmd{\AtEndDocument}.
+%    \begin{macrocode}
+\def\setDLJSRef@pdftex
+{%
+  \noexpand\immediate\noexpand\pdfobj {%
+    << /Names [\the\importfdftoks] >> }%
+  \edef\noexpand\objNames{\noexpand\the\noexpand\pdflastobj\space 0 R}%
+  \pdfnames {/JavaScript \noexpand\objNames}%
+}
+%    \end{macrocode}
+%    \subsubsection{\texttt{dvipdfm} Specific Code}
+% Begin by writing driver-specific code to \cmd{\dljsBase.djs}.
+%    \begin{macrocode}
+\newenvironment{newsegment@dvipdfm}[1]
+{%
+    \addtocounter{dljssegs}{1}%
+    \addtocounter{dljs@cnt}{1}%
+    \edef\tmp{^^J\string\immediate\string
+        \csname\space @pdfm@mark\string\endcsname
+        {obj @obj\dljsBase\roman{dljssegs}\space << /S/JavaScript%
+        /JS(\string\dljs\dljsBase\roman{dljssegs}) >> }}%
+    \edef\@dljstmp{\the\dljsobjtoks\space\tmp}%
+    \global\dljsobjtoks=\expandafter{\@dljstmp}%
+    \edef\curr@Cnt{\ifnum\arabic{dljs@cnt}<10 0\fi\arabic{dljs@cnt}}%
+    {\def\1{\string\1}\def\2{\string2}%
+    \def\3{\string\3}\xdef\dljsName{#1}}%
+    \edef\dljspdftextmp
+    {\the\importfdftoks (\curr@Cnt\space \dljsName) %
+        @obj\dljsBase\roman{dljssegs}\space}%
+    \global\importfdftoks=\expandafter{\dljspdftextmp}%
+    \beginseg
+    \js@verbatimwrite
+}{%
+    \endjs@verbatimwrite
+    \endseg
+}
+%    \end{macrocode}
+% This code places the \texttt{/JavaScript} key-value in the \texttt{/Names} dictionary
+% of the PDF document. This code is inserted into the document in \texttt{insert@DLJS@dvipdfm}
+% using \cmd{\AtEndDocument}.
+%    \begin{macrocode}
+\def\setDLJSRef@dvipdfm
+{%
+  \immediate\@pdfm@mark{obj @objnames %
+    << /Names [\the\importfdftoks] >> }%
+  \@pdfm@mark{put @names %
+    << /JavaScript @objnames >> }%
+}
+%    \end{macrocode}
+% The main branch of the \texttt{insDLJS} for \texttt{dvipdfm}. This
+% environment writes to the file \cmd{dljsBase.djs} all the necessary code, then
+% is input back into the file using \cmd{\AtBeginDocument}.
+%    \begin{macrocode}
+\newenvironment{insert@DLJS@dvipdfm}
+{%
+    \expandafter\gdef\csname dljs\dljsBase\endcsname{}%
+    \immediate\openout \js@verbatim@out \js@Path\dljsBase.djs
+    \begindljs
+    \ifx\multisegments\dl@NO\expandafter\newsegment\expandafter{%
+        \expandafter\dljsName\expandafter}\fi
+}{%
+    \ifx\multisegments\dl@NO\expandafter\endnewsegment\fi
+    \enddljs
+    \write@objs
+    \endjs@verbatimwrite
+    \closejs@verbatim@out
+    \edef\@dljstmp{\noexpand\AtBeginDocument{%
+        \noexpand\input{\js@Path\dljsBase.djs}}}%
+    \@dljstmp
+    \ifx\importdljs\dl@YES
+        \ifx\firstdljs\dl@YES
+%    \end{macrocode}
+% 2012/06/09 Changed positioning of \cmd{\setDLJSRef@dvipdfm}.
+%    \begin{macrocode}
+            \AtBeginDocument{\setDLJSRef@dvipdfm}%
+%            \AtEndDocument{\setDLJSRef@dvipdfm}
+            \global\let\firstdljs\dl@NO
+        \fi
+    \fi
+}
+\catcode`\"=\dl@dquoteCat
+%</package>
+%    \end{macrocode}
+%    \begin{macrocode}
+%<*cc4js>
+%    \end{macrocode}
+%\section{Command Changes for JavaScript}\label{dljscc}
+% Regular expressions are a very important part of JavaScript, but they do present
+% some problems for \LaTeX.  Ideally, we would like to type JavaScript code into the
+% \texttt{insDLJS} environment using standard JavaScript syntax.
+% (Whether I am successful remains to be seen.) As a result, some new definitions
+% and changes in old definitions are necessary.  All definitions take place within a
+% group, so they are unknown outside the \texttt{insDLJS} environment.
+%
+%\subsection{Regular Expressions}
+% Regular expressions can be constructed in two ways, by using (1) a literal text format; or (2)
+% using the \texttt{RegExp} constructor function. The literal text format:
+%\begin{flushleft}
+%\texttt/\textsl{pattern}\texttt/\textsl{flags}
+%\end{flushleft}
+% The \texttt{RegExp} constructor method:
+%\begin{flushleft}\ttfamily
+%new RegExp("\textsl{pattern}" [, "\textsl{flags}"])
+%\end{flushleft}
+% For additional details on regular expressions, see
+%\begin{flushleft}\small
+%\url{http://developer.netscape.com/docs/manuals/js/core/jsref15/regexp.html}
+%\end{flushleft}
+% There is a further complication when dealing with regular expressions. To quote from the above
+% document:\par\medskip\noindent
+% \textbf{Description }
+% When using the constructor function, the normal string escape rules (preceding special characters with `|\|' when included in a string) are necessary.
+% For example, the following are equivalent:
+% \begin{flushleft}
+% \ttfamily\obeylines
+% re = new RegExp("\string\\w+")
+% re = /\string\w+/
+%\end{flushleft}
+%\subsection{Begin Definitions}
+% \subsubsection{Handling of Formatting Sequences}
+% The macro \cmd{\eqesc} expands to `|\|' in the case of the distiller and to `|\\|' in the
+% case of \textsf{pdftex} or \textsf{dvipdfm}. This group of special characters formats the
+% output and they require a different definition than most of the others.
+%
+% The \cs{ckivspace} (``check for space'') macro sees whether the next token is a space,
+% if yes, it absorbs it, if not, it replaces it. I implemented this in order to get
+% final output identical to the JavaScript. For example, the following is legal JavaScript
+%\begin{verbatim}
+% var str = "First line.\r\rSkip a line.     // (1)
+%\end{verbatim}
+% This is a problem for \TeX. In order to delimit the macro, \TeX{} users need to write the
+% above line as
+%\begin{verbatim}
+% var str = "First line.\r\r Skip a line.    // (2)
+%\end{verbatim}
+% which then introduces a spurious space into the JavaScript code. The \cs{ckivspace} solves this
+% problem, I hope. With the definition of \cs{r} given below, after expansion of the line (2)
+% occurs, we have line (1), the space following the second \cs{r} gets absorbed. Note: (2014/05/20)
+% I moved this to the main code thread of \textsf{insdljs}.
+% \changes{v2.0n}{2014/05/20}{Moved code for \cs{ckivspace} to main code thread of \textsf{insdljs}.}
+%    \begin{macrocode}
+%\def\ckivspace#1{\if\noexpand#1\space\else\expandafter#1\fi}
+%    \end{macrocode}
+%    \begin{macro}{\r}
+% Matches a carriage return.
+%    \begin{macrocode}
+\def\r{\eqesc r\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\t}
+% Matches a tab.
+%    \begin{macrocode}
+\def\t{\eqesc t\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\n}
+% Matches a linefeed.
+%    \begin{macrocode}
+\def\n{\eqesc n\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\f}
+% Matches a form-feed.
+%    \begin{macrocode}
+\def\f{\eqesc f\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\v}
+% Matches a form-feed.
+%    \begin{macrocode}
+\def\v{\eqesc v\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+% \subsubsection{Matching a Word Boundary or Not}
+%    \begin{macro}{\b}
+% Matches a word boundary, such as a space. (Not to be confused with |[\b]|, which
+% matches a backspace.)
+%    \begin{macrocode}
+\def\b{\eqesc b\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+% The next group are all defined in the same way, pretty much. The macro \cmd{\eqesc} expands to `|\|'
+% in the case of the distiller options, and to `|\\\|' otherwise.
+%    \begin{macro}{\B}
+% Matches a non-word boundary.
+%    \begin{macrocode}
+\def\B{\eqesc B\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\cX}
+% Where X is a letter from A - Z. Matches a control character in a string.  Doesn't seem to have
+% much use in Acrobat JavaScript, will comment this one out.   Usage: \cs{cM}
+%    \begin{macrocode}
+% \def\doAlpha{\do A\do B\do C\do D\do E\do F%
+%   \do G\do H\do I\do J\do K\do K\do M\do N%
+%   \do O\do P\do Q\do R\do S\do T\do U\do V\do W\do X\do Y\do Z}
+% \def\mkDefns#1{\expandafter\def\csname c#1\endcsname{\eqesc c#1}}
+% \let\do=\mkDefns\doAlpha
+%    \end{macrocode}
+%    \end{macro}
+% \subsubsection{Matching Digits or Not}
+%    \begin{macro}{\d}
+% Matches a digit character. Equivalent to \texttt{[0-9]}.
+%    \begin{macrocode}
+\def\d{\eqesc d\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\D}
+% Matches any non-digit character. Equivalent to |[^0-9]|.
+%    \begin{macrocode}
+\def\D{\eqesc D\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%\subsubsection{Matching Whitespaces or Not}
+%    \begin{macro}{\s}
+% Matches a single white space character, including space, tab, form feed, line feed.
+% Equivalent to |[\f\n\r\t\u00A0\u2028\u2029]|.
+%    \begin{macrocode}
+\def\s{\eqesc s\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\S}
+% Matches a single character other than white space.\newline
+% Equivalent to |[^ \f\n\r\t\u00A0\u2028\u2029]|.
+%    \begin{macrocode}
+\def\S{\eqesc S\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%\subsubsection{Matching Alphanumeric Characters or Not}
+%    \begin{macro}{\w}
+% Matches any alphanumeric character including the underscore. Equivalent to |[A-Za-z0-9\_]|.
+%    \begin{macrocode}
+\def\w{\eqesc w\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\W}
+% Matches any non-word character. Equivalent to |[^A-Za-z0-9_]|.
+%    \begin{macrocode}
+\def\W{\eqesc W\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+% \subsubsection{Handling of Character Codes}
+%    \begin{macro}{\xXX}
+% Matches the character with the code \texttt{XX} (two hexadecimal digits).
+% The character with the Latin-1 encoding specified by the two hexadecimal digits \texttt{XX}
+% between 00 and FF. For example, \cs{xA9} is the hexadecimal sequence for the copyright
+% symbol.
+%\begin{flushleft}
+%\textbf{Usage}
+%\begin{verbatim}
+%\x9A
+%\end{verbatim}
+%if the most significant digit is a number \texttt{[0-9]},
+%\begin{verbatim}
+%\x A9
+%\end{verbatim}
+%if the most significant digit is a letter \texttt{[a-fA-F]}
+%\end{flushleft}
+%    \begin{macrocode}
+\def\x{\eqesc x\ckivspace}
+\dljstfor\dlhex:={AA}{AB}{AC}{AD}{AE}{AF}%
+    {BA}{BB}{BC}{BD}{BE}{BF}{CA}{CB}{CC}{CD}{CE}{CF}%
+    {DA}{DB}{DC}{DD}{DE}{DF}{EA}{EB}{EC}{ED}{EE}{EF}%
+    {FA}{FB}{FC}{FD}{FE}{FF}\do{%
+    \expandafter\edef\csname x\dlhex\endcsname{\noexpand\eqesc x\dlhex}%
+}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\uXXXX}
+% In a regular expression search, \cs{uXXXX} matches the character
+% with unicode character code \texttt{XXXX} (four hexadecimal
+% digits). For example, \cs{u00A9} is the Unicode sequence for the
+% copyright symbol. See Unicode Escape Sequences. http://www.unicode.org
+%\begin{flushleft}
+%\textbf{Usage}
+%\begin{verbatim}
+%\u00A9
+%\end{verbatim}
+%if the most significant digit is a number \texttt{[0-9]},
+%\begin{verbatim}
+%\u F0A9
+%\end{verbatim}
+%if the most significant digit is a letter \texttt{[a-fA-F]}
+%\end{flushleft}
+%    \begin{macrocode}
+\def\u{\eqesc u\ckivspace}
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{\XXX}
+% The character with the Latin-1 encoding specified by up to three octal digits \texttt{XXX} between
+% 0 and 377. For example, \cs{251} is the octal sequence for the copyright symbol.
+%
+% Since this goes only up to octal 377, it suffices to make only the following four definitions.
+%    \begin{macrocode}
+\def\0{\eqesc0}
+\def\1{\eqesc1}
+\def\2{\eqesc2}
+\def\3{\eqesc3}
+%    \end{macrocode}
+%    \end{macro}
+%\subsubsection{Other Special Characters}
+%    \begin{macro}{braces}
+% Braces are a problem when they are unbalanced.  In a regular expression, |\{| works properly, but |\\{| works
+% for the distiller options but not otherwise. For example, if I wanted to replace every instance
+% of \texttt{\{} with \texttt{(}, we can do this by
+%\begin{verbatim}
+%     myString = myString.replace( /\{/, "\(");
+%\end{verbatim}
+% This works for all options, even though the braces are not balanced. However, when the constructor
+% function is used, we must double-escape:
+%\begin{verbatim}
+%     var re = new RegExp("\\{", "g");
+%     myString = myString.replace( re, "\(");
+%\end{verbatim}
+% This works for the distiller options, but not for \texttt{pdftex/dvipdfm}. The reason |\{| works is that
+% it is a control sequence, defined by the \cmd{\definebraces} command below. Where as |\\{| consists
+% of the control sequence |\\|, which is defined below, followed by a left brace.
+% \TeX{} still requires the braces to be balanced.
+%
+% If you are searching for balanced braces, there should't be a problem, for example,
+% the code
+%\begin{verbatim}
+%     var re = new RegExp("\\{|\\}", "g");
+%     myString = myString.replace( re, "\(");
+%\end{verbatim}
+% works correctly.
+%
+% To continue the discussion of the problem with searching for
+% unbalanced braces, one workaround is to balance out the left
+% brace with a right brace in the form of a JavaScript comment.
+% This ``fools'' \TeX!  For example,
+%\begin{verbatim}
+%     var re = new RegExp("\\{", "g");           // }
+%     myString = myString.replace( re, "\(");
+%\end{verbatim}
+% Finally, we have\par\medskip
+% \noindent\textbf{The Recommended Workaround:} Use |\\\{| and |\\\}|, e.g.,
+%\begin{verbatim}
+%     var re = new RegExp("\\\{", "g");
+%     myString = myString.replace( re, "\(");
+%\end{verbatim}
+% This is more verbose than needed, but it works for all options! These comments are only for regular expression
+% strings within the constructor function. Note the replacement text, |\(|, is only escaped.
+%
+% Here we make the definitions for left and right braces. See the definition of \cs{definebraces}
+% given earlier.
+%    \begin{macrocode}
+\definebraces
+%    \end{macrocode}
+%    \end{macro}
+%    \begin{macro}{parentheses}
+% Just as braces can give us problems with \TeX, so too, parentheses can give us problems with
+% Acrobat JavaScript interpreter.  There seems to be a requirement that parentheses be balanced
+% unless they are properly escaped.  Generally, we have no problems in the case of distiller options,
+% once again \textsf{pdftex} and \textsf{dvipdfm} are causing (me) problems.
+%
+% No problems when the regular expression uses the literal string format
+%\begin{verbatim}
+%    myString = myString.replace(/\(/g, "\[");
+%\end{verbatim}
+% The above code works for all options. However, for the constructor function we have some problems
+% in non-distiller options. If we type instead
+%\begin{verbatim}
+%    var re = new RegExp("\\(", "g");
+%    myString = myString.replace(re, "\[");
+%\end{verbatim}
+% The above code works for the distiller folks, but not for the
+% others. In the case of \textsf{pdftex}, I cannot access the UI to
+% the document level JavaScripts, and the script is undefined. I suspect
+% the lack of balanced parentheses is the curprit.  For example,
+% consider the code
+%\begin{verbatim}
+%    var re = new RegExp("\\(|\\)", "g");
+%    myString = myString.replace(re, "\[");
+%\end{verbatim}
+% works. I can access the UI to the DLJS from Acrobat, and the script is defined.  Another
+% example, we can fool the JavaScript interpreter as we did the \TeX{} compiler:
+%\begin{verbatim}
+%    var re = new RegExp("\\(", "g");  // )
+%    myString = myString.replace(re, "\[");
+%\end{verbatim}
+% Here I have placed a balancing right parenthesis as a JavaScript comment. Both sets of code
+% work correctly.
+%\par\medskip
+%\noindent\texttt{Recommended Workaround:} As in the case of parentheses, a more verbose version
+% of the script works of all options.
+%\begin{verbatim}
+%    var re = new RegExp("\\\(", "g");
+%    myString = myString.replace(re, "\[");
+%\end{verbatim}
+% This is only for the case of the constructor function.
+%    \begin{macrocode}
+\def\({\eqesc\eqesci(}
+\def\){\eqesc\eqesci)}
+%    \end{macrocode}
+%    \end{macro}
+% The rest of these definitions are for characters that have a
+% special meaning when they appear in a regular expression. See
+%\begin{flushleft}\small
+%\url{http://developer.netscape.com/docs/manuals/js/core/jsref15/regexp.html}
+%\end{flushleft}
+% for a description of the meaning for the special characters given below (and above).
+% To ``escape'' the special meaning of any character, ``escape'' them.
+%    \begin{macrocode}
+\def\.{\eqesc.}
+\def\/{\eqesc/}
+\def\[{\eqesc[}
+\def\]{\eqesc]}
+%    \end{macrocode}
+%    \begin{macrocode}
+\def\|{\eqesc|}
+\def\+{\eqesc+}
+\def\*{\eqesc*}
+\def\-{\eqesc-}
+\def\?{\eqesc?}
+\def\${\eqesc$}
+\def\^{\eqesc^}
+\def\\{\eqesc\eqesc}
+%    \end{macrocode}
+% The next group of characters have no special meaning in a regular expression, but are using elsewhere
+% in JavaScript. These definitions may come in handy.
+%    \begin{macrocode}
+\def\'{\eqesc'}
+%    \end{macrocode}
+% The \texttt{german} package makes doublequotes, |"|, active, so within the \texttt{insDLJS}
+% environment, we change its catcode to 12.
+%    \begin{macrocode}
+\catcode`\"=12
+\def\"{\eqesc"}
+%    \end{macrocode}
+% We de-activate angle brackets.
+%    \begin{macrocode}
+\catcode`\<=12
+\def\<{\eqesc<}
+\catcode`\>=12
+\def\>{\eqesc>}
+%    \end{macrocode}
+% Here, we define `\texttt{\%}' differently. The percent has no special meaning in regular expressions,
+% but is used by the \texttt{util.printf()} method.
+%    \begin{macrocode}
+\catcode`\%=12
+\def\%{%}
+\catcode`\%=14
+%    \end{macrocode}
+% The `and' symbol has not special meaning for regular expressions, but is used as a logical `and'.
+% Probably don't need this escape.
+%    \begin{macrocode}
+\catcode`\& = 12
+\def\&{\eqesc&}
+%    \end{macrocode}
+%    \begin{macrocode}
+%</cc4js>
+%    \end{macrocode}
+\endinput

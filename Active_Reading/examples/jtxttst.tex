@@ -1,0 +1,237 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage
+    [tight,designi]{web}
+\usepackage{exerquiz}
+\usepackage[indefIntegral]{dljslib}
+
+\title{Extending the Exerquiz Package Text Fill-in Questions}
+\author{D. P. Story}
+\subject{Sample file}
+\keywords{LaTeX, PDF, derivative, calculus, JavaScript}
+
+\university{NORTHWEST FLORIDA STATE COLLEGE\\
+Department of Mathematics}
+\email{dpstory@uakron.edu}
+\version{2.0}
+\copyrightyears{1999-\the\year}
+
+\nocopyright
+\norevisionLabel
+
+\def\D{\dfrac {\hbox{\text{d}}}{\text{d}x}}
+\def\dPose#1{$\D#1=$ }
+
+\newcommand\redpoint{\par\ifdim\lastskip>0pt\relax\vskip-\lastskip\fi
+\vskip\medskipamount\noindent
+  \makebox[\parindent][l]{\large\color{red}$\blacktriangleright$}}
+\newcommand{\cs}[1]{\texttt{\char`\\#1}}
+
+\useMCCircles
+
+\begin{document}
+
+\maketitle
+
+\section{Text Fill-in Questions}
+
+\textsf{Exerquiz} can now create text fill-in questions, questions
+in which the response is text (as opposed to a mathematical
+expression). The underlying JavaScript compares the user's
+response against acceptable alternatives, as supplied by the
+author of the question. If there is a match, the response is
+deemed correct. For example:
+
+\redpoint\begin{oQuestion}{ex1}%
+Who was the first President\footnote{of the United States}?\
+\RespBoxTxt{0}{0}{4}{George Washington}{Washington}
+    {G. Washington}{Geo. Washington}
+\end{oQuestion}
+
+\medskip\noindent
+The command \cs{RespBoxTxt} is the one that creates a text fill-in question. Its
+syntax is
+\begin{verbatim}
+\RespBoxTxt[#1]#2#3[#4]#5<plus listing of alternatives>
+\end{verbatim}
+\noindent\textbf{\hypertarget{paraRespBoxTxt}{Parameters:}}
+\begin{enumerate}
+\item[\ttfamily\#1:]Optional parameter used to modify the appearance of the
+    text field.
+\item[\ttfamily\#2:]This required parameter is a number that indicates
+the filtering method to be used. Permissible values of this parameter are
+\begin{enumerate}
+    \item[\ttfamily-1:] (The default) The author's and user's answers are not filtered
+    in any way. (Spaces, case, and punctuation are preserved.)
+    \item[\ttfamily0:] The author's and user's answers are converted to
+    lower case, any white space and non-word characters are removed.
+    \item[\ttfamily1:] The author's and user's answers are converted to
+    lower case, any white space is removed.
+    \item[\ttfamily2:] The author's and user's answers are stripped of
+    white space.
+\end{enumerate}
+See the JavaScript function \texttt{eqFilter} in \texttt{exerquiz.dtx} for
+program code details.  Additional filtering options may be added.
+
+\item[\ttfamily\#3:] This parameter is a number that indicates the compare
+method to be used. Permissible values of this parameter are
+\begin{enumerate}
+    \item[\ttfamily0:] (The default) The author's and user's answers are
+    compared for an exact match. (These answers are filtered before they are
+    compared.)
+    \item[\ttfamily1:] The user's response is searched in an attempt to
+    get a substring match with the author's alternatives. Additional comparison
+    methods may be added.
+\end{enumerate}
+See the JavaScript function \texttt{compareTxt} in
+\texttt{exerquiz.dtx} for the program code details.
+
+\item[\ttfamily\#4:] Optional, a named destination to the
+solution to the question. If this parameter appears, then a
+solution must follow the question, enclosed in a \texttt{solution}
+environment.  If the forth parameter is a `\texttt*', then an automatic
+naming scheme is used instead.
+\item[\ttfamily\#5:] This required parameter is the
+number of alternative answers that are acceptable. The alternative
+answers are listed immediately after this parameter. (The example
+above specified that $4$ alternatives follow.)
+\end{enumerate}
+
+\makeatletter
+% remove label `Quiz' and gobble up the space that follows it.
+\renewcommand\sqlabel[1]{\@gobble}
+\makeatother
+\begin{shortquiz}[comboexamp]%
+The following series of examples illustrate different combinations
+parameters~\texttt{\#2} and~\texttt{\#3}.  All questions are in
+response to the question ``Who was the first president of the
+United States?''
+\begin{questions}
+\item Remove all white space and non-word characters, convert to lower case,
+then look for a match.
+\RespBoxTxt{0}{0}{4}{George Washington}{Washington}
+    {G. Washington}{Geo. Washington}
+Of course, ``George Washington'' and ``G. Washington'' are correct, but
+so too are ``georgewashington''and ``gwashington''.
+
+\item Remove all white space, convert to lower case, then look for an
+exact match. Here we don't remove non-word characters, such as punctuation.
+\RespBoxTxt{1}{0}{4}{George Washington}{Washington}
+    {G. Washington}{Geo. Washington}
+For example, answers ``G. Washington'', ``georgewashington'' and
+``g. washington'' are correct, but ``gwashington'' is not.
+
+\item Remove all white space, then look for an exact match. (Here,
+we do not remove punctuation and do not convert to lower case.)
+\RespBoxTxt{2}{0}{4}{George Washington}{Washington}
+    {G. Washington}{Geo. Washington} The
+response ``G. Washington'' is correct, but ``g. washington'' is not.
+
+\item Now lets put parameter~\texttt{\#3} equal to \texttt1. Here, we convert
+to lower case, remove white space, and look for a substring match.
+\RespBoxTxt{1}{1}{4}{George Washington}{Washington}
+    {G. Washington}{Geo. Washington} Note that ``President Washington'',
+``General Geo. Washington'', and ``Washington, George'' are correct.
+Also ``Fred Washington'' is correct, since it matches the second
+alternative, Washington. (If we eliminate Washington as an
+alternative, then ``Fred Washington'' would be judged incorrect,
+let's test that theory:
+\begin{oQuestion}{wash2}\RespBoxTxt{2}{1}{3}{George Washington}
+{G. Washington}{Geo. Washington}\end{oQuestion}
+\end{questions}
+\end{shortquiz}
+
+\section{Short Quiz Environment}
+
+\begin{shortquiz}
+Answer each of the following. Passing is 100\%.
+
+\begin{questions}
+
+\answersEndHook{\hfill\makebox[0pt][r]{\sqTallyBox}}
+
+\item Who was the first president of the United States?\par\kern3pt\noindent
+\RespBoxTxt{0}{0}[geow]{4}{George Washington}{Washington}{G. Washington}{Geo. Washington}\hfill
+\CorrAnsButton{George Washington}\kern1bp\sqTallyBox
+\begin{solution}
+Yes, George Washington was the first President of the United
+States of America.
+\end{solution}
+
+\item Name \emph{one} of the two people recognized as a founder of
+Calculus.\par\kern3pt\noindent
+\RespBoxTxt{2}{0}{5}{Isaac Newton}{Newton}{I. Newton}{Gottfried Leibniz}{Leibniz}\hfill
+\CorrAnsButton{Isaac Newton or Gottfried Leibniz}\kern1bp\sqTallyBox
+
+\item If $f$ is differentiable, then $f$ is continuous.
+\begin{answers}{4}
+\Ans1 True &
+\Ans0 False
+\end{answers}
+
+\item
+\dPose {4 x^{-1/2}}\RespBoxMath{-2*pow(x,-3/2)}{4}{.0001}{[1,2]}\hfill
+\CorrAnsButton{-2*x^(-3/2)}\kern1bp\sqTallyBox
+
+\item
+$\displaystyle\int \frac 1x\,dx = $\space
+\RespBoxMath{ln(abs(x))}{4}{.0001}{[1,2]}[indefCompare]\hfill
+\CorrAnsButton{ln(|x|)}\kern1bp\sqTallyBox
+
+\end{questions}
+\end{shortquiz}
+\begin{flushright}
+\sqClearButton\kern1bp\sqTallyTotal
+\end{flushright}
+
+\newpage
+\section{Quiz Environment}
+
+Here is a mixture of all types of questions, all with solutions.
+
+\useBeginQuizButton[\CA{Begin}]
+\useEndQuizButton[\CA{Finish}]
+
+\begin{quiz}*{calcquiz} Answer each of the following. Passing
+is 100\%.
+
+\begin{questions}
+
+\item If $\lim_{x\to a} f(x) = f(a)$, then we say that $f$ is\dots
+\begin{answers}[cont]3
+\Ans0 differentiable &\Ans1 continuous &\Ans0 integrable
+\end{answers}
+\begin{solution}
+A function $f$ is said to be continuous at $x=a$ if $x\in\operatorname{Dom}(f)$,
+$\lim_{x\to a} f(x) $ exists and $\lim_{x\to a} f(x) = f(a)$.
+\end{solution}
+
+\item Name \emph{one} of the two people recognized as a founder of
+Calculus.\par\kern3pt
+\RespBoxTxt{0}{0}[calc]{4}{Isaac Newton}{Newton}{Gottfried Leibniz}{Leibniz}%
+\CorrAnsButton{Isaac Newton or Gottfried Leibniz}
+\begin{solution}
+Isaac Newton and Gottfried Leibniz are the co-creators of Calculus.
+\end{solution}
+
+\item $\cos(\pi) = \RespBoxMath{-1}[cospi]{1}{.0001}{[2,4]}\CorrAnsButton{-1}$
+\begin{solution}
+Oh, come on now. You know that $\cos(\pi)=-1$.
+\end{solution}
+
+\item $\displaystyle\int \sin(x)\,dx =
+\RespBoxMath{-cos(x)}[intSin]{4}{.0001}{[0,1]}[indefCompare]\CorrAnsButton{-cos(x)}$
+\begin{solution}
+\relax\begin{equation*}
+        \int \sin(x) \,dx = -\cos(x) + C
+\end{equation*}
+\adjDisplayBelow
+\end{solution}
+
+\end{questions}
+\end{quiz}\quad\ScoreField\currQuiz\eqButton\currQuiz
+
+\noindent
+Answers: \AnswerField\currQuiz
+
+\end{document}

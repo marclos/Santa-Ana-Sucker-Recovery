@@ -1,0 +1,240 @@
+%\iffalse
+%<*copyright>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% taborder.sty package,                                %%
+%% Copyright (C) 2009--2016  D. P. Story                %%
+%%   dpstory@uakron.edu                                 %%
+%%                                                      %%
+%% This program can redistributed and/or modified under %%
+%% the terms of the LaTeX Project Public License        %%
+%% Distributed from CTAN archives in directory          %%
+%% macros/latex/base/lppl.txt; either version 1 of the  %%
+%% License, or (at your option) any later version.      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%</copyright>
+%<package>\NeedsTeXFormat{LaTeX2e}[1997/12/01]
+%<package>\ProvidesPackage{taborder}
+%<package> [2009/09/04 v0.1 taborder: Sets the tab order, Acrobat Distiller only (dps)]
+%<*driver>
+\documentclass{ltxdoc}
+\usepackage[colorlinks,hyperindex]{hyperref}
+%\pdfstringdefDisableCommands{\let\\\textbackslash}
+%\EnableCrossrefs \CodelineIndex
+\begin{document}
+\def\CMD#1{\textbackslash#1}
+  \GetFileInfo{taborder.sty}
+  \title{\textsf{taborder}: Package for setting the tab order}
+  \author{D. P. Story\\
+    Email: \texttt{dpstory@uakron.edu}}
+  \date{processed \today}
+  \maketitle
+  \tableofcontents
+  \let\Email\texttt
+  \DocInput{taborder.dtx}
+  \PrintIndex
+\end{document}
+%</driver>
+% \fi
+% \MakeShortVerb{|}
+% \StopEventually{}
+%
+% \DoNotIndex{\def,\edef,\gdef,\xdef,\global,\long,\let}
+% \DoNotIndex{\expandafter,\string,\the,\ifx,\else,\fi}
+% \DoNotIndex{\csname,\endcsname,\relax,\begingroup,\endgroup}
+% \DoNotIndex{\DeclareTextCommand,\DeclareTextCompositeCommand}
+% \DoNotIndex{\space,\@empty,\special}
+%
+%    \begin{macrocode}
+%<*package>
+%    \end{macrocode}
+%    \begin{macro}{structure}
+% If the driver is based on the \textbf{pdfmark}, we read the full package,
+% otherwise, we end early.
+%    \begin{macrocode}
+\DeclareOption{structure}{\let\to@earlyendinput\relax}
+%    \end{macrocode}
+%    \end{macro}
+% If option passed is not \texttt{structure}, we will end input early,
+% we also \cs{let} other commands defined in this package to \cs{relax}.
+%    \begin{macrocode}
+\let\to@earlyendinput\endinput
+\let\setTabOrderByList\relax\let\setTabOrderByNumber\relax
+\ProcessOptions
+%    \end{macrocode}
+% \section{Introduction}
+%
+% This is a short package that provides support for setting tab order
+% for Acrobat form fields and other PDF objects, such as links and
+% comments. The basic portion of the package, provides support for
+% setting tab order based on rows, column, and widgets. If the author
+% uses \textsf{Adobe Distiller} to create a PDF file, support for
+% setting tab order from structure is also provided.
+%
+% The code for this package was originally placed in the
+% \textsf{eforms} package, but I've decided to move it to its own
+% package so \textsf{eforms} can share the code with the
+% \textsf{annot\_pro} package. This package is input by
+% \textsf{eforms} and \texttt{annot\_pro}, and is not meant as a
+% standalone package.
+%
+% \section{Setting Tab Order}
+%
+%    \begin{macro}{\setTabOrder}
+% The tab order is determined by the \texttt{Tabs} key of the page object.
+% The value of Tabs are \texttt{R}, \texttt{C}, \texttt{S}, \texttt{W}, and \texttt{A}. (\texttt{W} is implemented in Version 9.0,
+% \texttt{A} was documented for v9.0, but not implemented.) The command is page oriented, it sets
+% the tab order on the current page.
+%
+%    \begin{macrocode}
+\newif\ifto@structOrder\to@structOrderfalse
+\newcommand{\setTabOrder}[1]{\begingroup
+    \global\to@structOrderfalse
+    \def\to@to@C{C}\def\to@to@R{R}\def\to@to@S{S}%
+    \def\to@to@W{W}\def\to@to@A{A}\def\to@to@us{UNSPECIFIED}%
+    \uppercase{\def\ef@taborder{#1}}%
+    \ifx\ef@taborder\@empty
+    \else\ifx\ef@taborder\to@to@us
+    \let\ef@taborder\@empty
+    \else\ifx\to@to@C\ef@taborder
+    \else\ifx\to@to@R\ef@taborder
+    \else\ifx\to@to@S\ef@taborder
+        \ifx\to@earlyendinput\endinput
+            \PackageWarning{taborder}{%
+            The structure (S) option is supported only\MessageBreak
+            with Acrobat Distiller. Using the default\MessageBreak
+            value of 'unspecified'}\let\ef@taborder\@empty
+        \else\global\to@structOrdertrue\fi
+    \else\ifx\to@to@W\ef@taborder
+    \else\ifx\to@to@A\ef@taborder
+    \else\PackageWarning{taborder}{%
+        Invalid value for \string\setTabOrder. Permissible \MessageBreak
+        values are R, C, S, W, A, and unspecified. Using \MessageBreak
+        the default value of 'unspecified'}\let\ef@taborder\@empty
+    \fi\fi\fi\fi\fi\fi\fi\ef@setTabOrder
+}
+%    \end{macrocode}
+% If the driver is not based on \textbf{pdfmark}, we end here; otherwise, we allow
+% tex compiler to continue, and we define code for setting tab order based on structure.
+%    \begin{macrocode}
+\to@earlyendinput
+%    \end{macrocode}
+% We place this definition here because it is need for the \textsf{eforms} package and the
+% \textsf{annot\_pro} package.
+%    \begin{macrocode}
+\def\ef@setTabOrder{%
+    \ifx\ef@taborder\@empty\else\literalps@out{%
+    [ {ThisPage} <</Tabs/\ef@taborder>> /PUT pdfmark}\fi
+    \endgroup
+}
+%    \end{macrocode}
+%    \end{macro}
+% When the tab order is by structure, there are two ways of specifying the order,
+% by List (the default) or by Number.
+%    \begin{macro}{\setTabOrderByList}
+% Declare that you are using the list method of specifying order. Valid only for structure ordering.
+% This is the default, but if the method is switched to Number, this command can switch it back to
+% the list format.  When using structure order, with the list method, tab order
+% is set with \cs{setStrucTabOrder}, defined below.
+%    \begin{macrocode}
+\newcommand{\setTabOrderByList}{%
+    \global\to@settabsbylisttrue
+    \global\let\setStructTabOrder\to@setStructTabOrder
+}
+%    \end{macrocode}
+%    \end{macro}
+%
+%    \begin{macro}{\setTabOrderByNumber}
+% Declare that you are using the number method of specifying order.
+% Valid only for structure ordering. Here's an example of the syntax used
+% for specifying tab order by number.
+%\begin{verbatim}
+%\setTabOrder{s}
+%\setTabOrderByNumber
+%....
+%   \textField[\V{text1}\objdef{text1-\thepage}
+%       \taborder{1}]{text1-\thepage}{1.25in}{11bp}
+%   \textField[\V{text2}\objdef{text2-\thepage}
+%       \taborder{0}]{text2-\thepage}{1.25in}{11bp}
+%\end{verbatim}
+% It seems that a value of 0 is required when setting the tab order. The tabs are
+% ordered 0, 1, 2, 3, .... If you order them as 1,2,3,4,5..., then the order you
+% specify is ignored, and they are listed in the order they were created. So it appears
+% we need a 0 included. If you specify 0,0,1,2,3..., then the two PDF objects with tab order
+% of 0 are visited in the order they were created. Similarly, for the other tab values.
+% A tab order of 0, 2, 3, 4 ... seems to work as well. (The object labeled 2 will be visited
+% after the object labeled 0.)
+%    \begin{macrocode}
+\newcommand{\setTabOrderByNumber}{%
+    \global\to@settabsbylistfalse
+    \global\let\setStructTabOrder\@gobble
+}
+%    \end{macrocode}
+%    \end{macro}
+%
+%    \begin{macro}{\setStrucTabOrder}
+%
+% Added 07/08/09. Set the tab order on a page where tab order is set to structure,
+% and \cs{setTabOrderByList} is executed prior to \cs{setStrucTabOrder}. Setting
+% tab order by a list is the default on startup.
+%
+% The command \cs{setStrucTabOrder} takes one argument, a list of
+% references to fields with a \texttt{objdef} definition. The first
+% optional argument will be the title of the tag, the second is
+% an indirect reference to the field.
+%\begin{verbatim}
+% \setStrucTabOrder{%
+%   [text3]{text3-\thepage}
+%   [text4]{text4-\thepage}
+%   [text2]{text2-\thepage}
+%   [text1]{text1-\thepage}}
+%\end{verbatim}
+% Setting the structure order is only supported under PS drivers (\textsf{dvips} or \textsf{dvipsone}).
+%
+% The command itself just starts calls the command \cs{@setStructTabOrder}.
+%    \begin{macrocode}
+\newcommand{\to@setStructTabOrder}[1]{%
+    \@setStructTabOrder#1\end
+}
+\newif\ifto@settabsbylist\to@settabsbylisttrue
+\let\setStructTabOrder\to@setStructTabOrder
+%    \end{macrocode}
+% Added 07/08/09. This is the command that sets to code using postscript specials.
+% This commands reads its key-value pairs, creates some logical structure, then
+% loops back on itself to get another argument. The argument is of the form
+% \verb![key-values]{objdefName}!. The first bracket argument is optional. The default
+% is \texttt{title=} (no title) and \texttt{type=Field}.
+%    \begin{macrocode}
+\define@key{structOpts}{title}[]{\def\structOpts@title{#1}}
+\define@key{structOpts}{type}[Form]{\def\structOpts@type{#1}}
+\newcommand{\@setStructTabOrder}[2][]{%
+    \setkeys{structOpts}{title,type,#1}
+    \ifx#2\end\else\literalps@out{%
+        [/Subtype/\structOpts@type\ifx\structOpts@title\@empty
+            \else/Title (\structOpts@title)\fi/StPNE pdfmark
+        [/Obj {#2} /StOBJ pdfmark
+        [/StPop pdfmark}\expandafter\@setStructTabOrder
+    \fi
+}
+%    \end{macrocode}
+%    \end{macro}
+% This command is used to insert structure tab order. For this code
+% to be inserted, we must have structure order declared, a nonempty
+% \texttt{objdef} key and a nonempty \texttt{settab} key.
+%
+% This command assumes \cs{eq@objdef}, \cs{eq@taborder}, and \cs{eq@objdefName}
+% have already been defined. Many thanks to Genevieve of Adobe for setting my
+% thinking straight on tab order using the \textbf{At} key.
+%    \begin{macrocode}
+\def\to@insertStrucTabOrder#1{%
+    \ifto@structOrder\ifx\eq@objdef\@empty\else
+    \ifx\eq@taborder\@empty\else\literalps@out{%
+        [/Subtype/#1/At \eq@taborder/StPNE pdfmark
+        [/Obj {\eq@objdefName} /StOBJ pdfmark [/StPop pdfmark}%
+    \fi\fi\fi
+}
+%    \end{macrocode}
+%    \begin{macrocode}
+%</package>
+%    \end{macrocode}
+%  \Finale
+\endinput

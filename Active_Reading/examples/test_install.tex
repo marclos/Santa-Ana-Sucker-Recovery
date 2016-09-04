@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[designiv]{web}
+\usepackage{eforms}
+
+\begin{defineJS}{\isImportAnFDFKnown}
+console.clear(); console.show();
+if ( typeof aebImportAnFDF == "function" ) {
+    app.beep(0);
+    console.println("aeb.js is successfully installed, congratulations!");
+    console.println("\\nYou're ready to Rock with AcroTeX!");
+} else {
+    app.beep(0); app.beep(0);
+    console.println("aeb.js is not, repeat NOT, installed correctly!");
+}
+\end{defineJS}
+
+\thispagestyle{empty}
+\parindent0pt\parskip6pt
+
+\begin{document}
+
+This is a file to test your \textsf{AeB} installation.
+
+To test the \textsf{AeB} installation, press this button:
+\pushButton[\CA{Test AeB}\A{\JS{\isImportAnFDFKnown}}]{btnTest}{}{11bp}
+
+Upon pressing the button, if you have installed the \texttt{aeb.js} file
+correctly, a congratulatory message appears in the console window; if the
+installation is not correct, a message informs you so. On failure, did you
+close \textsf{Acrobat} before opening this file? (The JS files are only read
+once when the \textsf{Acrobat} application is opened.) When all else fails,
+try rereading the installation instructions again
+(\texttt{install\_jsfiles.pdf}), found in the \texttt{doc} folder, but more
+carefully this time.
+
+
+
+\end{document}

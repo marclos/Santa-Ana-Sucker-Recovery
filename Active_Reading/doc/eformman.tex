@@ -1,0 +1,3496 @@
+% makeindex < aebpro_man.idx > aebpro_man.ind
+\documentclass{article}
+\usepackage[fleqn]{amsmath}
+\usepackage[%
+    web={centertitlepage,designv,
+        forcolorpaper,latextoc,pro,useui},
+    exerquiz,aebxmp
+]{aeb_pro}
+\usepackage{aeb_mlink}
+\usepackage[altbullet]{lucidbry}
+%\usepackage{myriadpro}
+
+\usepackage{graphicx,array,longtable}
+%\usepackage[usecmtt]{myriadpro}
+
+%\makeatletter
+%\renewcommand*\l@subsection{\@dottedtocline{2}{2.5em}{3.5em}}
+%\renewcommand*\l@subsubsection{\@dottedtocline{4}{5em}{1em}}
+%\def\numberline#1{\hb@xt@2.5em{#1\hfil}}
+%\makeatother
+\makeatletter
+\renewcommand*\l@subsection{\@dottedtocline{2}{2em}{3.5em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{4}{5.5em}{1.5em}}
+\renewcommand\@pnumwidth{2.55em}
+\renewcommand*\l@section[2]{%
+  \ifnum \c@tocdepth >\z@
+    \addpenalty\@secpenalty
+    \addvspace{1.0em \@plus\p@}%
+    \setlength\@tempdima{2em}%{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\hfil \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+    \endgroup
+  \fi}
+\makeatother
+
+\hfuzz=1pt
+
+\setlongtables
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{acroman}
+
+\usepackage[active]{srcltx}
+
+\urlstyle{rm}
+
+\def\tutpath{doc/tutorial}
+\def\tutpathi{tutorial}
+\def\expath{../examples}
+
+\DeclareDocInfo
+{
+    university={\AcroTeX.Net\protect\\[1ex]eforms and insdljs Documentation},
+    title={Support for AcroForms and Links, and for\texorpdfstring{\protect\\[2ex]}{ }Document JavaScript and Open Page Events},
+    author={D. P. Story},
+    email={dpstory@acrotex.net},
+    subject={Documentation for the eforms and insdljs packages},
+    talksite={\url{www.acrotex.net}},
+    version={2.0},
+    keywords={LaTeX, hyperref, PDF, exercises, quizzes},
+    copyrightStatus=True,
+    copyrightNotice={Copyright (C) \the\year, D. P. Story},
+    copyrightInfoURL={http://www.acrotex.net}
+}
+
+\def\AEBBook{\textsl{{Acro\!\TeX} eDucation System Tools: {\LaTeX} for interactive PDF documents}}
+
+
+\renewcommand\hproportionwebtitle{.75}
+\universityLayout{fontsize=Large,fontfamily=sffamily}
+\titleLayout{fontsize=LARGE,fontfamily=sffamily}
+\authorLayout{fontsize=Large,fontfamily=sffamily}
+\tocLayout{fontsize=Large,color=aeb,fontfamily=sffamily}
+\sectionLayout{indent=-62.5pt,fontsize=large,color=aeb,fontfamily=sffamily}
+\subsectionLayout{indent=-31.25pt,color=aeb,fontfamily=sffamily}
+\subsubsectionLayout{indent=0pt,color=aeb,fontfamily=sffamily}
+\subsubDefaultDing{\texorpdfstring{$\bullet$}{\textrm\textbullet}}
+
+\def\verygoodbreak{%
+\vskip0pt plus1in\goodbreak\vskip0pt plus-1in}
+
+\hyphenation{Java-Script}
+
+\def\AcroT{Acro\!\TeX}\def\cAcroT{{\textcolor{blue}{\AcroT}}}
+\def\AcroEB{\AcroT{} eDucation Bundle}\def\cAcroEB{\textcolor{blue}{\AcroEB}}
+\def\AcroB{\AcroT{} Bundle}\def\cAcroB{\textcolor{blue}{\AcroB}}
+\def\bUrl{http://www.math.uakron.edu/~dpstory}
+\definePath{\urlAcroTeXBlog}{http://www.acrotex.net/blog}
+
+
+\makeatletter
+\let\bslash=\@backslashchar
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{0pt}{6pt}{-3pt}{\bfseries}}
+
+% Begin definition of \appendixsubsection
+\newcounter{appendixsubsection} %\setcounter{appendixsubsection}{0}
+\def\theappendixsubsection{\Alph{appendixsubsection}}
+\def\theHappendixsubsection{\Alph{appendixsubsection}}
+\newcommand\appendixsubsection{%
+   \renewcommand{\@seccntformat}[1]{\csname the##1\endcsname.\enspace}%
+   \@startsection{appendixsubsection}{1}{\z@}%
+   {-2.5ex\@plus -1ex \@minus -.2ex}%
+   {1ex \@plus .2ex}%
+   {\normalfont\normalsize\bfseries\color{blue}}}
+\let\appendixsubsectionmark=\@gobble
+\expandafter\def\csname toclevel@appendixsubsection\endcsname{1}
+
+\let\l@appendixsubsection=\l@section
+\def\web@appendixsubsection#1#2#3{\web@parse#1\\\par\penalty-50 \hspace*{\@tempdima}\mbox{}%
+        \textbf{\makebox[0pt][r]{\makebox[\@tempdima][r]{\hyperlink{#3}{\numberline.\enspace}}}\web@title}\endgraf}
+% end definition of appendixsubsection
+
+\newcommand{\aebDescriptionlabel}[1]{%
+    \setlength\dimen@{\amtIndent+\labelsep}%
+    {\hspace*{\dimen@}#1}}
+\newenvironment{aebDescript}
+    {\begin{list}{}{\setlength{\labelwidth}{0pt}%
+%        \setlength{\leftmargin}{\leftmargin}%
+        \setlength{\leftmargin}{\leftmargin+\amtIndent}%
+        \setlength\itemindent{-\leftmargin}%
+        \let\makelabel\aebDescriptionlabel
+    }}{\end{list}}
+
+\def\hardspace{{\fontfamily{cmtt}\selectfont\symbol{32}}}
+\def\AcroBlog{{Acro\!\TeX} Blog}
+\newlength{\aebdimen}
+\def\anglemeta#1{$\langle\textit{\texttt{#1}}\rangle$}
+\def\meta#1{\textit{\texttt{#1}}}
+\let\pkg\textsf
+\let\env\texttt
+\let\opt\texttt
+\let\app\textsf
+\def\AEB{\textsf{AeB}}
+\def\AcroTeX{Acro\!\TeX}
+\def\HTML{HTML}\def\FDF{FDF}
+\def\PDF{PDF}\def\URL{URL}
+\let\amtIndent\leftmargini
+\def\bNH{\begin{NoHyper}}\def\eNH{\end{NoHyper}}
+\def\nhnameref#1{\bNH\nameref{#1}\eNH}
+\def\nhNameref#1{\bNH\Nameref{#1}\eNH}
+\def\nhurl#1{\bNH\url{#1}\eNH}
+\def\grayV#1{\textcolor{gray}{#1}}
+\def\darg#1{\{#1\}}
+\def\parboxValign{t}
+\renewcommand*{\backrefalt}[4]{%
+    \ifcase #1\or
+       See page~#2.\else See pages~#2.\fi
+}
+\newenvironment{aebQuote}
+   {\list{}{\leftmargin\amtIndent}%
+    \item\relax}{\endlist}
+\newcommand{\FmtMP}[2][0pt]{\mbox{}\marginpar{%
+    \raisebox{.5\baselineskip+#1}{%
+    \expandafter\parbox\expandafter[\parboxValign]%
+        {\marginparwidth}{\aebbkFmtMp#2}}}}
+\def\aebbkFmtMp{\kern0pt\itshape\small
+    \ifusebw\color{gray}\else\color{blue}\fi
+    \raggedleft\hspace{0pt}}
+\def\dps{$\mbox{$\mathfrak D$\kern-.3em\mbox{$\mathfrak P$}%
+   \kern-.6em \hbox{$\mathcal S$}}$}
+\def\FitItIn{\eq@fititin}
+\def\endredpoint{\FitItIn{{\large\ifusebw\color{black}\else\color{red}\fi$\blacktriangleleft$}}}
+
+
+\makeatother
+
+\hypersetup{linktocpage}
+
+%\newenvironment{sverbatim}
+%{\par\footnotesize\verbatim}{\endverbatim}
+
+%\newcommand\redpoint{\par\ifdim\lastskip>0pt\relax\vskip-\lastskip\fi
+%\vskip\medskipamount\noindent
+%  \makebox[\parindent][l]{\large\color{red}$\blacktriangleright$}}
+%\newcommand\handpoint{\par\ifdim\lastskip>0pt\relax\vskip-\lastskip\fi
+%\vskip\medskipamount\noindent
+%  \makebox[\parindent][l]{\large\color{blue}\ding{042}}}
+%\newcommand\newtopic{\par\ifdim\lastskip>0pt\relax\vskip-\lastskip\fi
+%\vskip\medskipamount\noindent
+%}
+
+\def\cs#1{\texttt{\bslash#1}}
+\def\Cs#1{\hyperlink{#1}{\cs{#1}}}
+\def\tableCs#1{\hyperlink{table#1}{\cs{#1}}}
+\def\targ#1#2?{\hypertarget{#2}{\bslash#2}#1}
+
+\def\dps{$\mbox{$\mathfrak D$\kern-.3em\mbox{$\mathfrak P$}%
+   \kern-.6em \hbox{$\mathcal S$}}$}
+
+\def\eForm{\textsf{eForm}}
+
+
+\def\OpenToHere{\OpenAction{\JS{this.gotoNamedDest("Here")}}}
+\def\OpenHere{\hypertarget{Here}{\strut}}%\OpenToHere
+
+\makeatletter
+\let\web@copyright\@gobble
+\let\web@revision\@gobble
+\renewcommand\webdirectory
+{%
+    \par\ifeqforpaper\else\minimumskip\fi\vspace{\stretch{1}}%
+    \begin{flushleft}\textbf{\large\web@directory}%
+    \vspace{-3pt}
+    \begin{itemize}\setlength{\itemsep}{-3pt}%
+        \bfseries
+        \item \leavevmode\hyperlink{webtoc}{\web@toc}%
+        \item \web@article
+        \item[] \rule[2pt]{2.25in}{.4pt}
+        \item \textsf{\href{apb_man.pdf}{APB}} Documentation
+        \item \href{webeqman.pdf}{\AcroEB} Documentation
+    \end{itemize}
+    \end{flushleft}
+}
+\renewcommand\titlepageTrailer
+{%
+    \web@copyright\ \copyright\ \webcopyrightyears\ \webversion
+        \hfill\url{http://www.acrotex.net}\\
+    \web@revision\ \@date \hfill\href{mailto:\webemail}{\webemail}
+}
+\makeatother
+
+\newcounter{exampleno}
+\def\theexampleno{\arabic{exampleno}}
+\newcommand\Example{\refstepcounter{exampleno}%
+\paragraph*{Example~\arabic{exampleno}.}}
+
+\definecolor{aeb}{rgb}{0.24,0.38,0.68}%bleu
+\universityColor{aeb}
+\tocColor{aeb}
+
+\everyCheckBox{\BC{.690 .769 .871}\BG{.941 1 .941}\textColor{1 0 0}}
+\everyRadioButton{\BC{.690 .769 .871}\BG{.941 1 .941}\textColor{0 0 1}\symbolchoice{star}}
+
+\definePath\bgPath{"C:/Users/Public/Documents/ManualBGs/Manual_BG_Print_AeB.pdf"}
+\begin{docassembly}
+\addWatermarkFromFile({
+    bOnTop: false,
+    cDIPath: \bgPath
+})
+\executeSave()
+\end{docassembly}
+
+\begin{document}
+
+\maketitle
+
+\selectColors{linkColor=black}
+
+\tableofcontents
+
+\selectColors{linkColor=webgreen}
+
+\part{PDF Links and Forms}
+
+%\section{Introduction}
+
+In \hypertarget{eformsPkg}{this} document we describe the support for Acrobat form elements
+in an {\cAcroT} document. The \textit{PDF Reference} indicates there
+are four different categories of fields for a total of seven types
+of fields.
+\begin{questions}
+
+\setbox0=\hbox{(d)}
+\def\I#1{\makebox[\wd0]{\color{blue}(\hfil#1\hfil)}\ }
+
+    \item \textbf{Button Fields}
+        \begin{description}
+            \item[\I{a}] \textbf{Push Button}
+            \item[\I{b}] \textbf{Check Box}
+            \item[\I{c}] \textbf{Radio Button}
+        \end{description}
+    \item \textbf{Choice Fields}
+        \begin{description}
+            \item[\I{a}] \textbf{List Box}
+            \item[\I{b}] \textbf{Combo Box}
+        \end{description}
+    \item \textbf{Text Fields}
+    \item \textbf{Signature Fields}
+
+\end{questions}
+The {\cAcroB} now supports \textit{signature fields}. Using the
+command \cs{sigField}, an unsigned signature field is created.
+The field can be signed, either by using Acrobat, or programmatically
+from a {\LaTeX} source, but you need to use \textsf{aeb\_pro} and to
+create the PDF using Acrobat Distiller.
+
+The \textsf{hyperref} Package (Rahtz, Oberdiek \textit{et al})
+provides support for the same set of form fields; however, not all
+features of these fields can be accessed through the
+\textsf{hyperref} commands.  I was determined to write my own set
+of commands which would be sufficiently comprehensive and
+extendable to suit all the needs of the \cAcroB.  All the quiz
+environments have been modified to use this new set of form
+commands, in this way, there is a uniform treatment of all form
+fields in the \cAcroB.
+
+\redpoint The demo files for {\eForm} support are
+\texttt{eqform.tex}, for those using the \textsf{Acrobat
+Distiller} to create a PDF document, and \texttt{eqform\_pd.tex},
+for those who use \textsf{pdftex} or \textsf{dvipdfm}.
+
+\newtopic\textbf{\textcolor{red}{Online Resources:}} The following online
+resources are recommended:
+\begin{itemize}
+  \item \href{https://developer.mozilla.org/en/JavaScript}{Core JavaScript Reference} at
+  Mozilla Developer Center.
+  \item \href{http://livedocs.adobe.com/acrobat_sdk/9/Acrobat9_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm?&accessible=true}
+  {\emph{JavaScript for Acrobat API Reference}} at the Acrobat Developer Center. In the navigation panel
+  on the left, select JavaScript.
+  \item \href{\urlAcroTeXBlog/?cat=5}{PDF Blog},
+  by D. P. Story.
+  \item \href{\urlAcroTeXBlog/?cat=24}{AeB Blog},
+  by D. P. Story.
+\end{itemize}
+
+\section{Package Requirement and Options}
+
+Prior to \textsf{Exerquiz} version 5.9, \textsf{eforms} was
+an integral part of \textsf{Exerquiz}. I've now separated the two, making
+\textsf{eforms} into a stand-alone package that is called by
+\textsf{Exerquiz}.
+
+\subsection{Package Requirements}
+
+The \textsf{eforms} package requires \textsf{hyperref} (a newer version)
+and \textsf{insdljs}, a package that is part of the {\cAcroB}.
+
+\subsection{Package Options}
+
+The \textsf{eforms} package has the usual driver options:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+dvipsone, dvips, pdftex, dvipdfm, dvipdfmx, xetex
+\end{Verbatim}
+The package also works correctly with the \textsf{luatex} executable.
+Informing the package what driver you are using is important, because each
+driver has its own code that needs to be used to create form fields. For
+dvips, you should use
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\usepackage[dvips]{eforms}
+\end{Verbatim}
+The \textsf{eforms} package now does automatic detection of
+\textsf{pdftex} (including luatex) and \textsf{xetex}. If the \textsf{web}
+or \textsf{exerquiz} package is used, \textsf{eforms} will use the driver
+defined in these earlier included packages.
+
+\newtopic A minimal document is
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\documentclass{article}
+\usepackage{eforms}  % <-- the driver is pdftex or xetex
+\begin{document}
+    % Content containing form fields, such as...
+    Don't \pushButton[\CA{Push Me}]{myButton}{}{12bp},
+    I fall down easily.
+\end{document}
+\end{Verbatim}
+\noindent The \textsf{eforms} package brings in the \textsf{hyperref} package
+and passes it the driver, so there is no need to specify
+\textsf{hyperref}, usually. If you wish to introduce \textsf{hyperref}
+yourself with specific options, place it before \textsf{eforms}.
+
+If you use the \textsf{exerquiz} package, \textsf{exerquiz} brings
+in the \textsf{eforms} package and passes it to the driver.
+
+\subsection{The \texttt{preview} option}
+
+Use the \texttt{preview} option if you use a \texttt{dvi} previewer
+to view your document. When \texttt{preview} is taken, a frame box
+is drawn around any form field created by \textsf{eforms}, making
+the position of the field visible in the previewer. This makes it
+easy to make any additional adjustments for the position of the
+field. Turn off this option when you build a PDF file.
+
+\subsection{The \texttt{useui} option}
+
+The \texttt{useui} option includes the \textsf{xkeyval} package, and
+defines a number of key-value pairs that are used in the optional
+arguments of the form fields and links. These key-value pairs are
+more ``user-friendly'' to use. See
+\hyperref[useui]{Section~\ref*{useui}}, page~\pageref*{useui}, for a
+description of these key-value pairs.
+
+\subsection{The \texttt{unicode} option of \textsf{hyperref}}
+
+The \textsf{eforms} package will obey the \texttt{unicode} option of
+\textsf{hyperref}. Whenever this option is taken in hyperref, for
+certain keys (namely, \cs{V}, \cs{DV}, \cs{TU}, \cs{CA}, \cs{RC}, and
+\cs{AC}), standard latex markup may be used to enter the values of
+these keys, for example, in a text field, you might set
+\verb!\V{J\"{u}rgen}!. This key-value pair will produce a field
+value of ``J\"{u}rgen'' in that text field.
+
+
+\section{Form Fields}
+
+The \texttt{eforms} support for {\eForm} defines seven basic (and internal)
+commands for creating the seven types of form elements. These seven are used
+as ``building blocks'' for defining all buttons, check boxes, radio buttons
+and text fields used in the \texttt{exerquiz} quizzes; and for defining seven
+user-commands: \cs{listBox}, \cs{comboBox}, \cs{pushButton}, \cs{checkBox},
+\cs{radioButton}, \cs{textField}, and \cs{sigField}. These user commands are
+the topic of the subsequent sections.
+
+Each of the above listed field commands has an optional first
+parameter that is used to modify the appearance of the field,
+and/or to add actions to the field.  This is a ``local''
+capability, i.e., a way of modifying an individual field. There is
+also a ``global'' mechanism. Each field type has its own
+\cs{every\anglemeta{FieldTypeName}} command. For example, all buttons
+created by \cs{pushButton}  can be modified using the
+\cs{everyPushButton} command. See the sections on
+\nameref{CheckBoxes} and \nameref{RadioButtons} for examples and
+additional comments.
+
+\redpoint The local modifications (the ones inserted into the
+field by the first parameter) are read \textit{after} the global
+modifications, in this way, the local modifications overwrite the
+global ones.
+
+\paragraph*{Key-value Pairs.} The optional first parameter of each of the form and link commands take
+two styles of key-values:
+\begin{enumerate}
+    \item \textsf{eforms} KVP: This is the key-value system originally developed, each KVP has the form
+        \cs{\anglemeta{key}\darg{\meta{val}}}. Through these keys, you can set the appearance of a form or link, and
+        set the actions as well.
+
+     \item[] The \cs{presets} key is useful for developing collections of pre-defined
+        key-value pairs for insertion into the optional parameter list. For example,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\def\myFavFive{%
+    \BC{1 0 0}\BG{0 1 0}\textColor{1 0 0}\Q{2}\CA{Push Me}}
+\end{Verbatim}
+Later, a button can be created using these preset values:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\presets{\myFavFive}
+    \A{\JS{app.alert("AcroTeX rocks!")}}]{pb1}{}{11bp}
+\end{Verbatim}
+
+    \item[] The \textsf{eforms} KVP system is explained throughout the manual, a complete listing
+    of all supported KVPs is found in the \hyperref[appendix]{Appendices}, page~\pageref{appendix}.
+
+    \item \textsf{xkeyval} KVP: When the \texttt{useui} option is taken, key-value pairs are
+        defined of the form \texttt{\anglemeta{key}[=\anglemeta{value}]}. The key-value pairs are actually a value of
+        a special \textsf{eforms} key, \cs{ui}. The value of \cs{ui} consists of a comma-delimited list of
+        \textsf{xkeyval} key-value pairs.
+
+    \item[] This style of key-value pairs also has
+        a \texttt{presets} key, useful for developing collections of pre-defined
+        key-value pairs for insertion into the optional parameter list. For example,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\def\myFavFive{%
+    bordercolor={1 0 0},bgcolor={0 1 0},
+    textcolor={1 0 0},align={right},uptxt={Push Me}}
+\end{Verbatim}
+Later, a button can be created using these preset values:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\ui{presets=\myFavFive,
+    js={app.alert("AcroTeX rocks!")}}]{pb1}{}{11bp}
+\end{Verbatim}
+
+    \item[] The \textsf{xkeyval} KVP system is described in \mlNameref{useui}.
+
+\end{enumerate}
+\redpoint The first (optional) parameter is read in first, but only after ``sanitizing'' certain
+characters that have special meaning to {\LaTeX}, these are \texttt{\string~}, \texttt{\#},
+and \texttt{\&}; each of these may appear as part of a URL, or may appear in JavaScript code.
+Within the first parameter, these three character can be used freely, without escaping them.
+
+\subsection{Button Fields}
+
+Buttons are form elements that the user interacts with using only a
+mouse. There are three types of buttons: push buttons, check boxes
+and radio buttons.
+
+\subsubsection{Push Buttons}
+
+The push button is a button field that has no
+value, it is neither on nor off. Generally, push buttons are used
+to initiate some action, such as JavaScript action.
+
+\settowidth{\aebdimen}{\cs{pushButton[\#1]\darg{\#2}\darg{\#3}\darg{\#4}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\pushButton[#1]{#2}{#3}{#4}
+\end{dCmd}
+
+\PD
+\begin{enumerate}
+\item[\texttt{\#1}:] optional, used to enter any modification of appearance/actions
+\item[\texttt{\#2}:] the title of the button field
+\item[\texttt{\#3}:] the width of the bounding rectangle
+\item[\texttt{\#4}:] the height of the bounding rectangle
+\end{enumerate}
+
+\paragraph*{Default Appearance:} The default appearance of
+a push button is determined by the following:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\W{1}\S{B}\F{\FPrint}\BC{0 0 0}
+\H{P}\BG{.7529 .7529 .7529}
+\end{Verbatim}
+
+\paragraph*{Key Variables:} The first (optional) parameter can be
+used to modify the default appearance of a button field and to add
+some actions. Following is a list of the variables used within the
+brackets of this optional argument for the pushbutton: \tableCs{Ff},
+\tableCs{F}, \Cs{H}, \Cs{TU}, \Cs{W}, \Cs{S}, \Cs{R}, \Cs{BC},
+\Cs{BG}, \Cs{CA}, \Cs{RC}, \Cs{AC}, \Cs{mkIns}, \Cs{textFont},
+\Cs{textSize}, \Cs{textColor}, \Cs{A}, \Cs{AA} and \Cs{rawPDF}.
+See the \hyperlink{kv}{Support Key Variables} table for
+descriptions and notes on each of these variables.
+
+\handpoint If the \textit{width} argument (\texttt{\#3}) is left
+empty, the {\LaTeX} code attempts to determine the appropriate
+width based on the width of the text given by \Cs{CA}, \Cs{RC} and
+\Cs{AC}. See \textbf{Example~2}, below.
+
+\paragraph*{Global Modification:} \cs{everyPushButton\darg{\anglemeta{KV-pairs}}}
+
+\Example This example resets all forms in this document:
+    \pushButton[\CA{Push}\AC{Me}\RC{Reset}\A{/S/ResetForm}]{myButton}{36bp}{12bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Push}\AC{Me}\RC{Reset}\A{/S/ResetForm}]
+    {myButton}{36bp}{12bp}
+\end{Verbatim}
+
+\Example Button with empty \textit{width} argument:
+    \pushButton[\CA{Push}\AC{Me}\RC{Reset}\A{/S/ResetForm}]{myButton}{}{12bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Push}\AC{Me}\RC{Reset}\A{/S/ResetForm}]
+    {myButton}{}{12bp}
+\end{Verbatim}
+
+\subsubsection{Check Boxes}\label{CheckBoxes}
+
+A check box is a type of button that has one of two values,
+``off'' or ``on''.  The value of the field when the field is
+``off'' is \texttt{Off}; the value of the ``on'' state can be
+defined by the user.
+
+\settowidth{\aebdimen}{\cs{checkBox[\#1]\darg{\#2}\darg{\#3}\darg{\#4}\darg{\#5}}}
+\begin{dCmd}{\aebdimen+2\fboxsep+2\fboxrule}
+\checkBox[#1]{#2}{#3}{#4}{#5}
+\end{dCmd}
+
+\PD
+\begin{enumerate}
+\item[\texttt{\#1}:] optional, used to enter any modification of appearance/actions
+\item[\texttt{\#2}:] the title of the check box button
+\item[\texttt{\#3}:] the width of the bounding rectangle
+\item[\texttt{\#4}:] the height of the bounding rectangle
+\item[\texttt{\#5}:] the name of the ``on'' state (the export value)
+\end{enumerate}
+
+\paragraph*{Default Appearance:} The default appearance of
+a standard check box is determined by the following:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\W{1}\S{S}\BC{0 0 0}\F{\FPrint}
+\end{Verbatim}
+
+\paragraph*{Key Variables:} The first (optional) parameter can be
+used to modify the default appearance of a check box and to add
+some actions. Following is a list of the variables used within the
+brackets of this optional argument for the check box: \tableCs{Ff},
+\tableCs{F}, \Cs{TU}, \Cs{W}, \Cs{S}, \Cs{MK}, \Cs{DA}, \Cs{AP},
+\Cs{AS}, \Cs{R}, \Cs{textFont}, \Cs{textSize}, \Cs{textColor},
+\Cs{DV}, \Cs{V}, \Cs{A}, \Cs{AA} and \Cs{rawPDF}. See the
+\hyperlink{kv}{Supported Key Variables} table for descriptions and
+notes on each of these variables.
+
+\paragraph*{Global Modification:} \cs{everyCheckBox\darg{\anglemeta{KV-pairs}}}
+
+\Example  Are you married? Yes: \checkBox[\symbolchoice{circle}]{myCheck}{10bp}{10bp}{On}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\checkBox[\symbolchoice{circle}]{myCheck}{10bp}{10bp}{On}
+\end{Verbatim}
+\noindent In the example, the appearance of this check box was
+modified through the global modification scheme. The following
+command appears in the preamble of this document:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\everyCheckBox{
+    \BC{.690 .769 .871}     % border color
+    \BG{.941 1 .941}        % background color
+    \textColor{1 0 0}       % text color
+}
+\end{Verbatim}
+
+\subsubsection{Radio Buttons}\label{RadioButtons}
+
+A radio button field is similar to a check box, but is meant to be
+used in unison with one or more additional radio buttons.
+
+\settowidth{\aebdimen}{\cs{radioButton[\#1]\darg{\#2}\darg{\#3}\darg{\#4}\darg{\#5}}}
+\begin{dCmd}{\aebdimen+2\fboxsep+2\fboxrule}
+\radioButton[#1]{#2}{#3}{#4}{#5}
+\end{dCmd}
+
+\PD
+\begin{enumerate}
+\item[\texttt{\#1}:] optional, used to enter any modification of appearance/actions
+\item[\texttt{\#2}:] the title of the radio button
+\item[\texttt{\#3}:] the width of the bounding rectangle
+\item[\texttt{\#4}:] the height of the bounding rectangle
+\item[\texttt{\#5}:] the name of the ``on'' state (the export value)
+\end{enumerate}
+\redpoint A collection of radio buttons meant to be used in unison
+need to all have the same title (parameter~\texttt{\#2}) but
+different export values (parameter~\texttt{\#5)}.
+
+\paragraph*{Default Appearance:} The default appearance of
+a standard radio button is determined by the following:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\W{1}\S{S}\BC{0 0 0}\F{\FPrint}
+\end{Verbatim}
+
+\paragraph*{Key Variables:} The first (optional) parameter can be
+used to modify the default appearance of a radio button and to add
+some actions. Following is a list of the variables used within the
+brackets of this optional argument for the radio button: \tableCs{Ff},
+\tableCs{F}, \Cs{TU}, \Cs{W}, \Cs{S}, \Cs{MK}, \Cs{DA}, \Cs{AP},
+\Cs{AS}, \Cs{R}, \Cs{textFont}, \Cs{textSize}, \Cs{textColor},
+\Cs{DV}, \Cs{V}, \Cs{A}, \Cs{AA} and \Cs{rawPDF}. See the
+\hyperlink{kv}{Supported Key Variables} table for descriptions and
+notes on each of these variables.
+
+%\redpoint \cs{Ff} \textbf{Field flags.}  The values
+%{250606175054} appropriate to a radio button are \Cs{FfNoToggleToOff} (if set,
+%one radio button must be set at all times) and
+%\Cs{FfRadiosInUnison} (if set, radio buttons with the same value
+%will be turned on or off in unison, PDF 1.5).
+
+\paragraph*{Global Modification:} \cs{everyRadioButton\darg{\anglemeta{KV-pairs}}}
+
+\Example What is your gender? Male: \radioButton{myRadio}{10bp}{10bp}{Male} %[\Ff{\FfNoToggleToOff}]
+    Female: \radioButton{myRadio}{10bp}{10bp}{Female}
+    Neither: \radioButton[\A{\JS{app.alert("You can't be 'neither'! I'm resetting the field, guess again!");\r
+    this.resetForm(["myRadio"])}}]{myRadio}{10bp}{10bp}{Neither}
+
+\begin{Verbatim}[xleftmargin=\amtIndent]
+Male: \radioButton{myRadio}{10bp}{10bp}{Male}
+Female: \radioButton{myRadio}{10bp}{10bp}{Female}
+Neither: \radioButton[\A{\JS{app.alert("You can't be 'neither'!
+    I'm resetting the field, guess again!");\r
+    this.resetForm(["myRadio"])}}]{myRadio}{10bp}{10bp}{Neither}
+\end{Verbatim}
+\noindent In the example, the appearance of these radio button fields was
+modified through the global modification scheme. The following
+command appears in the preamble of this document:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\everyRadioButton{
+    \BC{.690 .769 .871}     % border color
+    \BG{.941 1 .941}        % background color
+    \textColor{0 0 1}       % text color
+    \symbolchoice{star}     % check symbol
+}
+\end{Verbatim}
+
+\subsection{Choice Fields}
+
+A choice field is a list of text items, one or more of which can
+be selected by the user.
+
+\subsubsection{List Boxes}
+
+A scrollable list box is a type of choice field in which several
+of the choices are visible in a rectangle.  A scroll bar becomes
+available if any of the items in the list are not visible in the
+rectangle provided.
+
+\settowidth{\aebdimen}{\cs{listBox[\#1]\darg{\#2}\darg{\#3}\darg{\#4}\darg{\#5}}}
+\begin{dCmd}{\aebdimen+2\fboxsep+2\fboxrule}
+\listBox[#1]{#2}{#3}{#4}{#5}
+\end{dCmd}
+
+\PD
+\begin{enumerate}
+\item[\texttt{\#1}:] optional, used to enter any modification of appearance/actions
+\item[\texttt{\#2}:] the title of the list box
+\item[\texttt{\#3}:] the width of the bounding rectangle
+\item[\texttt{\#4}:] the height of the bounding rectangle
+\item[\texttt{\#5}:] an array of appearance/values of list.
+\end{enumerate}
+\newtopic The fifth parameter needs more explanation. The value of this
+parameter which defines the items in the list---their appearance
+text and their export values---take two forms:
+\begin{questions}
+    \item An array of arrays:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+[(v1)(item1)][(v2)(item2)]...[(vn)(itemn)]
+\end{Verbatim}
+        The first entry in the two member array is the export value of the item, the second
+        is the appearance text of that item.
+    \item An array of strings:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+(item1)(item2)...(itemn)
+\end{Verbatim}
+        In this case, the export value is the same as the appearance text.
+\end{questions}
+
+\paragraph*{Default Appearance:} The default appearance of
+a standard list box is determined by the following:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\W{1}\S{I}\F{\FPrint}\BC{0 0 0}
+\end{Verbatim}
+
+\paragraph*{Key Variables:} The first (optional) parameter can be
+used to modify the default appearance of a list and to add some
+actions. Following is a list of the variables used within the
+brackets of this optional argument for the list box: \tableCs{Ff},
+\tableCs{F}, \Cs{TU}, \Cs{W}, \Cs{S}, \Cs{R}, \Cs{BC}, \Cs{BG},
+\Cs{mkIns}, \Cs{textFont}, \Cs{textSize}, \Cs{textColor}, \Cs{DV},
+\Cs{V}, \Cs{A} and \Cs{AA}. See the \hyperlink{kv}{Supported Key
+Variables} table for descriptions and notes on each of these
+variables.
+
+\redpoint \cs{Ff} \textbf{Field flags.} Values appropriate to a
+list box are \Cs{FfCommitOnSelChange} (commits
+immediately after selection, PDF 1.5); \Cs{FfSort} (sorts\footnote
+{This flag really is not useful unless you have the full Acrobat application, the
+\texttt{Sort} \texttt{items} check box is checked in the Options
+tab of the Fields Properties dialog for the field.
+Initially, the items are listed in the same order as listed in the
+\texttt{\#5} argument; the Acrobat application will sort the list
+if you view the \textit{Fields Properties} for the field and click
+\texttt{OK}. Be sure to save the changes.\label{FfSortfoot}}the
+items); \Cs{FfMultiSelect} (allows more than one value to be
+selected, PDF 1.4). It is important to note
+that the flags \Cs{FfMultiSelect} and \Cs{FfCommitOnSelChange}
+cannot both be in effect. See the \hyperref[appendix]{Appendix}
+for a complete list of values for the
+\hyperlink{tableFf}{\textsf{Ff} flag}.
+
+\paragraph*{Global Modification:} \cs{everyListBox\darg{\anglemeta{KV-pairs}}}
+
+\Example List Box (Version 5.0 Required):
+\hfill\smash[b]{\raisebox{-45bp}{\listBox[\autoCenter{n}\DV{1}\V{1}\BG{0.98 0.92 0.73}\BC{0 .6 0}
+  \Ff\FfSort
+  \AA{\AAKeystroke{%
+    if(!event.willCommit)app.alert(%
+      "You chose \\"" + event.change\r
+      + "\\""+", which has an export value of "
+      + event.changeEx);}}]
+      {myList}{1in}{55bp}{[(1)(Socks)][(2)(Shoes)][(3)(Pants)][(4)(Shirt)][(5)(Tie)]}}}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\listBox[\autoCenter{n}\DV{1}\V{1}
+  \BG{0.98 0.92 0.73}\BC{0 .6 0}
+  \AA{\AAKeystroke{%
+    if(!event.willCommit)app.alert(%
+      "You chose \\"" + event.change\r
+      + "\\""+", which has an export value of "
+      + event.changeEx);}}]{myList}{1in}{55bp}
+      {[(1)(Socks)][(2)(Shoes)][(3)(Pants)][(4)(Shirt)][(5)(Tie)]}
+\end{Verbatim}
+
+
+\subsubsection{Combo Boxes}
+
+A combo box is a drop down list of items that can optionally have
+an editable text box for the user to type in a value other than
+the predefined choices.
+
+\settowidth{\aebdimen}{\cs{comboBox[\#1]\darg{\#2}\darg{\#3}\darg{\#4}\darg{\#5}}}
+\begin{dCmd}{\aebdimen+2\fboxsep+2\fboxrule}
+\comboBox[#1]{#2}{#3}{#4}{#5}
+\end{dCmd}
+
+\PD
+\begin{enumerate}
+\item[\texttt{\#1}:] optional, used to enter any modification of appearance/actions
+\item[\texttt{\#2}:] the title of the combo box
+\item[\texttt{\#3}:] the width of the bounding rectangle
+\item[\texttt{\#4}:] the height of the bounding rectangle
+\item[\texttt{\#5}:] an array of appearance/values of list
+\end{enumerate}
+\newtopic The fifth parameter needs more explanation. The value of this
+parameter which defines the items in the list---their appearance text
+and their export values---take two forms:
+\begin{questions}
+    \item An array of arrays:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+[(v1)(item1)][(v2)(item2)]...[(vn)(itemn)]
+\end{Verbatim}
+        The first entry in the two member array is the export value of the item, the second
+        is the appearance text of that item.
+    \item An array of strings:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+(item1)(item2)...(itemn)
+\end{Verbatim}
+        In this case, the export value is the same as the appearance text.
+\end{questions}
+
+\paragraph*{Default Appearance:} The default appearance of
+a standard combo box is determined by the following:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\W{1}\S{I}\F{\FPrint}\BC{0 0 0}
+\end{Verbatim}
+
+\paragraph*{Key Variables:} The first (optional) parameter can be
+used to modify the default appearance of a list and to add some
+actions. Following is a list of the variables used within the
+brackets of this optional argument for the list box: \tableCs{Ff},
+\tableCs{F}, \Cs{TU}, \Cs{W}, \Cs{S}, \Cs{R}, \Cs{BC}, \Cs{BG},
+\Cs{mkIns}, \Cs{textFont}, \Cs{textSize}, \Cs{textColor}, \Cs{DV}
+and \Cs{V}, \Cs{A} and \Cs{AA}. See the \hyperlink{kv}{Support Key
+Variables} table for descriptions and notes on each of these
+variables.
+
+\redpoint \cs{Ff} \textbf{Field flags.} Values appropriate to a
+combo box are \Cs{FfEdit} (allows the user to type in a choice);
+\Cs{FfDoNotSpellCheck} (turn spell check off, applicable only if
+\Cs{FfEdit} is set);
+\Cs{FfCommitOnSelChange} (commits immediately after selection);
+ and \Cs{FfSort} (sorts the
+items, see~\hyperref[FfSortfoot]{footnote~\ref*{FfSortfoot}}, page~\pageref*{FfSortfoot}).
+See the \hyperref[appendix]{Appendix} for a complete list of values
+for the \hyperlink{tableFf}{\textsf{Ff} flag}.
+
+\paragraph*{Global Modification:} \cs{everyComboBox\darg{\anglemeta{KV-pairs}}}
+
+\begin{defineJS}{\getComboJS}
+var f = this.getField("myCombo");
+var a = f.currentValueIndices;
+if ( a == -1 )
+    app.alert("You've typed in \\"" + f.value +"\\".");
+else
+    app.alert("Selection: " + f.getItemAt(a, false)
+        + " (export value: " + f.getItemAt(a, true)+").");
+\end{defineJS}
+
+\Example \label{defineJSEx} Editable combo box (Version 5.0):
+    \comboBox[\Ff\FfEdit\DV{1}\V{1}\BG{0.98 0.92 0.73}\BC{0 .6 0}]
+    {myCombo}{.8in}{11bp}{[(1)(Socks)][(2)(Shoes)][(3)(Pants)][(4)(Shirt)][(5)(Tie)]}\kern1bp%
+    \pushButton[\BC{0 .6 0}\CA{Get}\RC{Combo}\AC{Box}\A{\JS{\getComboJS}}]
+    {myComboButton}{33bp}{11bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\comboBox[\Ff\FfEdit\DV{1}\V{1}
+\BG{0.98 0.92 0.73}\BC{0 .6 0}]{myCombo}{1in}{11bp}
+{[(1)(Socks)][(2)(Shoes)][(3)(Pants)][(4)(Shirt)][(5)(Tie)]}\kern1bp%
+% Follow up with a pushbutton
+\pushButton[\BC{0 .6 0}\CA{Get}\AC{Combo}\RC{Box}\A{\JS{\getComboJS}}]
+{myComboButton}{33bp}{11bp}
+\end{Verbatim}
+\newtopic The JavaScript action for the button is given below:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\begin{defineJS}{\getComboJS}
+var f = this.getField("myCombo");
+var a = f.currentValueIndices;
+if ( a == -1 )
+    app.alert("You've typed in \\"" + f.value +"\\".");
+else
+    app.alert("Selection: " + f.getItemAt(a, false)
+        + " (export value: " + f.getItemAt(a, true)+").");
+\end{defineJS}
+\end{Verbatim}
+
+\subsection{Text Fields}
+
+A text field is the way a user can enter text into a form.
+
+\settowidth{\aebdimen}{\cs{textField[\#1]\darg{\#2}\darg{\#3}\darg{\#4}}}
+\begin{dCmd}{\aebdimen+2\fboxsep+2\fboxrule}
+\textField[#1]{#2}{#3}{#4}
+\end{dCmd}
+
+\PD
+\begin{enumerate}
+\item[\texttt{\#1}:] optional, used to enter any modification of appearance/actions
+\item[\texttt{\#2}:] the title of the text field
+\item[\texttt{\#3}:] the width of the bounding rectangle
+\item[\texttt{\#4}:] the height of the bounding rectangle
+\end{enumerate}
+
+\paragraph*{Default Appearance:} The default appearance of
+a standard text field is determined by the following:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\F{\FPrint}\BC{0 0 0}\W{1}\S{S}
+\end{Verbatim}
+
+\paragraph*{Key Variables:} The first (optional) parameter can be
+used to modify the default appearance of a text field and to add some
+actions. Following is a list of the variables used within the
+brackets of this optional argument for the text field: \tableCs{Ff},
+\tableCs{F}, \Cs{TU}, \Cs{Q}, \Cs{W}, \Cs{S}, \Cs{MaxLen}, \Cs{R},
+\Cs{BC}, \Cs{BG}, \Cs{mkIns}, \Cs{textFont}, \Cs{textSize},
+\Cs{textColor}, \Cs{DV}, \Cs{V}, \Cs{A}, \Cs{AA} and \Cs{rawPDF}.
+See the \hyperlink{kv}{Supported Key Variables} table for
+descriptions and notes on each of these variables.
+
+\redpoint \cs{Ff} \textbf{Field flags.}  There are several values
+appropriate to a text field:\ \Cs{FfMultiline} (create a multiline
+text field); \Cs{FfPassword} (create a password field);
+\Cs{FfFileSelect} (select a file from the local hard drive as the
+value of the text field, PDF 1.4); \Cs{FfComb} (if set, the text field
+becomes a comb field, the number of combs is determined by the
+value of \Cs{MaxLen}, PDF 1.5); \Cs{FfDoNotSpellCheck}
+(automatic spell check is not performed, PDF 1.4);
+\Cs{FfDoNotScroll} (disable the scrolling of long text, this
+limits the amount of text that can be entered to the width of the
+text field provided, PDF 1.4); \Cs{FfRichText} (allows rich text
+to be entered into the text field, PDF 1.5).
+
+\paragraph*{Global Modification:} \cs{everyTextField\darg{\anglemeta{KV-pairs}}}
+
+\Example Enter Name:
+    \textField
+       [\BC{0 0 1}
+        \BG{0.98 0.92 0.73}
+        \textColor{1 0 0}
+       ]{myText}{1.5in}{12bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField
+    [\BC{0 0 1}\BG{0.98 0.92 0.73}
+     \textColor{1 0 0}
+    ]{myText}{1.5in}{12bp}
+\end{Verbatim}
+
+
+\Example An example of a calculation using a Calculate script. (Calculate works correctly
+with drivers \texttt{dvips}, \texttt{dvipsone}, or \texttt{dvipdfm} are used.)
+
+\newtopic\begin{tabular}{@{\hspace{20pt}}rl}
+Number 1: & \textField[\AA{%
+    \AAKeystroke{AFNumber_Keystroke(1,1,0,0,"",true)}
+    \AAFormat{AFNumber_Format(1,1,0,0,"",true)}}]{num.1}{1in}{11bp} \\[6pt]
+%
+Number 2: & \textField[\AA{%
+    \AAKeystroke{AFNumber_Keystroke(1,1,0,0,"",true)}
+    \AAFormat{AFNumber_Format(1,1,0,0,"",true)}}]{num.2}{1in}{11bp}\\[6pt]
+%
+Total:    & \textField[\AA{%
+    \AAKeystroke{AFNumber_Keystroke(1,1,0,0,"",true)}
+    \AAFormat{AFNumber_Format(1,1,0,0,"",true)}
+    \AACalculate{AFSimple_Calculate("SUM", new Array("num"))}
+}]{totalNum}{1in}{11bp}
+\end{tabular}
+
+\newtopic The listing for this list of three text fields is\medskip
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField[\AA{%
+    \AAKeystroke{AFNumber_Keystroke(1,1,0,0,"",true)}
+    \AAFormat{AFNumber_Format(1,1,0,0,"",true)}}
+]{num.1}{1in}{11bp}
+\textField[\AA{%
+    \AAKeystroke{AFNumber_Keystroke(1,1,0,0,"",true)}
+    \AAFormat{AFNumber_Format(1,1,0,0,"",true)}}
+]{num.2}{1in}{11bp}
+\textField[\AA{%
+    \AAKeystroke{AFNumber_Keystroke(1,1,0,0,"",true)}
+    \AAFormat{AFNumber_Format(1,1,0,0,"",true)}
+    \AACalculate{AFSimple_Calculate("SUM", new Array("num"))}
+]{sum}{1in}{11bp}
+\end{Verbatim}
+
+\subsection{Signature Fields}\label{sigfields}
+
+A signature field is a field that can be digitally signed.
+
+\settowidth{\aebdimen}{\cs{sigField[\#1]\darg{\#2}\darg{\#3}\darg{\#4}}}
+\begin{dCmd}{\aebdimen+2\fboxsep+2\fboxrule}
+\sigField[#1]{#2}{#3}{#4}
+\end{dCmd}
+
+\PD
+\begin{enumerate}
+\item[\texttt{\#1}:] optional, used to enter any modification of appearance/actions
+\item[\texttt{\#2}:] the title of the signature field
+\item[\texttt{\#3}:] the width of the bounding rectangle
+\item[\texttt{\#4}:] the height of the bounding rectangle
+\end{enumerate}
+
+\paragraph*{Default Appearance:} The default appearance of
+a standard signature field is determined by the following:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\F{\FPrint}\BC{}\BG{}\W{1}\S{S}
+\end{Verbatim}
+
+\paragraph*{Key Variables:} The first (optional) parameter can be
+used to modify the default appearance of a signature field and to add some
+actions. Following is a list of the variables used within the
+brackets of this optional argument for the signature field:
+\tableCs{F}, \Cs{TU}, \Cs{W}, \Cs{S}, \Cs{R}, \Cs{Lock},
+\Cs{BC}, \Cs{BG}, \Cs{mkIns}, \Cs{textFont}, \Cs{textSize},
+\Cs{textColor}, \Cs{DV}, \Cs{A}, \Cs{AA} and \Cs{rawPDF}.
+See the \hyperlink{kv}{Supported Key Variables} table for
+descriptions and notes on each of these variables.
+
+\paragraph*{Global Modification:} \cs{everySigField\darg{\anglemeta{KV-pairs}}}
+
+\Example Sign here:\\[3pt]
+    \sigField[\BC{0 0 0}]{mySig}{2in}{4\baselineskip}\hfill
+    \begin{minipage}{\linewidth-2in-10bp}
+    \verb!\sigField[\BC{0 0 0}]!\\
+    \verb!  {mySig}{2in}{4\baselineskip}!
+    \end{minipage}
+
+\newtopic To sign this field, use the Acrobat user interface, or use the
+package \textsf{aeb\_pro}, and the following \texttt{docassembly} code:
+
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\begin{docassembly}
+\signInfo{
+    cSigFieldName: "mySig", ohandler: security.PPKLiteHandler,
+    cert: "D_P_Story.pfx", password: "dps017",
+    oInfo: { location: "Niceville, FL",
+      reason: "I am approving this document",
+      contactInfo: "dpstory@acrotex.net",
+      appearance: "My Signature" }
+};
+\signatureSign
+\end{docassembly}
+\end{Verbatim}
+
+\begin{itemize}
+  \item \texttt{cSigFieldName} is the name of the field to be signed.
+  \item \texttt{ohandler} is the name of the security handler to be
+    used to sign the field, usually, this is \texttt{security.PPKLiteHandler};
+    \texttt{security.PPKLiteHandler} is used if \texttt{ohandler} is not listed in the property list.
+  \item \texttt{cert} is the name of the Digital ID certificate file to be used.
+  The extension for this file is \texttt{.pfx} (Windows) and \texttt{.p12} (Mac OS).
+  These files reside in the folder,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+app.getPath( {cCategory:"user"})/Security
+\end{Verbatim}
+However, just enter the file name, such as \texttt{cert:} \texttt{"D\_P\_Story.pfx"}.
+\item \texttt{password}: The Digital ID requires a password to access and to use.
+For example: \texttt{password:} \texttt{"dps017"}.
+\item \texttt{oInfo} is a JavaScript object with various properties to be filled in,
+\texttt{location}, \texttt{reason}, \texttt{contactInfo}, and \texttt{appearance}.
+The \texttt{appearance} is important, through it, you can choose a particular appearance
+for the digital signature, including a custom signature that you've created. In the example
+above, we have \texttt{appearance: "My Signature"}.  \texttt{My Signature} is the name I've
+given a particular digital ID of mine. If the \texttt{appearance} property is not
+included in \texttt{oInfo}, Acrobat will use the one named \texttt{"Standard Text"}.
+\end{itemize}
+
+\Important Additional information on signatures can be found
+at the \mlhref{http://www.adobe.com/go/acrobat_developer}{Acrobat Developer Center};
+or go to the \href{http://www.adobe.com/go/acrobat_security}{Security page};
+in particular, see the document \textit{Digital Signature User Guide for Acrobat 9.0
+and Adobe Reader 9.0}. Other comments on the topic of signature fields:
+\begin{itemize}
+\item The open key \cs{textSize} is recognized, but is change to 0.
+\item The Signed tab of the Digital Signatures Properties dialog box, lists
+an entry titled ``This script executes when the field is signed.'' This
+JavaScript is implemented through the format script of the \texttt{AA} key.
+Thus,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\AA{\AAFormat{console.println("Signed!");}}
+\end{Verbatim}
+places message in the console when the field is signed.
+
+\item The \cs{Lock} key can be used to lock various fields when the document
+is signed.
+\begin{Verbatim}[xleftmargin=\amtIndent,numbers=left]
+\Lock{/Action/All}
+\Lock{/Action/Include/Fields [(field1)(field2)...]}
+\Lock{/Action/Exclude/Fields [(field1)(field2)...]}
+\end{Verbatim}
+\begin{itemize}
+    \item In (1), all fields are locked when the signature field is signed.
+    \item In (2), only the listed fields are locked when the signature
+        field is signed.
+    \item In (3), all fields, except the ones listed, are locked when the
+        signature field is signed.
+\end{itemize}
+The \texttt{/Fields} key is required when the action is either \texttt{/Include} or \texttt{/Exclude}.
+\end{itemize}
+
+
+\verygoodbreak
+
+
+\section{Link Annotations}\label{linkAnnots}
+
+The \textsf{eforms} package has several link commands that are
+sufficiently general that they can be given arbitrary appearances,
+and can perform a wide range of actions.
+
+The borders of the link commands can be controlled through optional
+parameter, their default appearance follow the same pattern of
+hyperref: If the \texttt{colorlinks} option is used (in
+\textsf{hyperref}) then the border is invisible by default;
+otherwise, there is a visible border.
+
+When the \texttt{colorlinks} option is chosen (in hyperref), the
+link text is colored using the command \cs{defaultlinkcolor}, this
+is a named color. \cs{defaultlinkcolor} has a definition of
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\newcommand{\defaultlinkcolor}{\@linkcolor}
+\end{Verbatim}
+\noindent where \cs{@linkcolor} is a command defined in
+\textsf{hyperref}, and is defined to be \texttt{red}. This can be
+redefined as desired.\footnote{The {\Web} package redefines
+\cs{@linkcolor} to be a flavor of green.}
+
+The first link command is a general link for text, or any
+{\LaTeX} content. It is used, for example, by the \textsf{aeb\_mlink}
+package to create multiple-line links.
+
+\settowidth{\aebdimen}{\cs{setLinkText[\meta{options}]\darg{\meta{link\_text}}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\setLink[!meta(options)]{!meta(link_text)}
+\setLinkText[!meta(options)]{!meta(link_text)}
+\end{dCmd}
+\newtopic Both link commands are the same, the use of the second one, \cs{setLink}, is
+discouraged in favor of the use of \cs{setLink}.
+
+\PD The command has two arguments, the first is optional. The first
+parameter takes key-value pairs to change appearance and define
+actions. The default appearance of this link is \verb!\S{S}\Border{0 0 0}!,
+an invisible yet solid border line. (The visibility of the border is
+actually controlled by the \texttt{colorlinks} option of
+\textsf{hyperref}, as explained above.) The second parameter is the
+link text. This argument does not have to be text, it can be
+anything that takes up space, such as a graphic or \cs{parbox}.
+
+\Example \setLink[\A{\JS{app.alert("AcroTeX rocks!")}}
+    \linktxtcolor{blue}\Color{0 0 1}\W1\S{U}\H{P}]{Push me!}
+\begingroup\obeyspaces\settowidth{\aebdimen}{\ttfamily%
+    \string\linktxtcolor\darg{blue}\string\Color\darg{0 0 1}\string\W1\string\S\darg{U}\string\H\darg{P}]\darg{Push me!}%
+}%
+\begin{dCmd*}{\aebdimen+2\fboxsep+2\fboxrule}
+\setLink[\A{\JS{app.alert("AcroTeX rocks!")}}
+    \linktxtcolor{blue}\Color{0 0 1}\W1\S{U}\H{P}]{Push me!}
+\end{dCmd*}
+\endgroup
+
+\exAeBBlogPDF{p=371} Additional examples of \cs{setLink} may be found in the
+rather comprehensive article \textit{Support for Links in AeB/eForms},
+\texttt{\href{\urlAcroTeXBlog/?p=371}{aeb\_links.pdf}}, found on the
+{\AcroBlog} website.
+
+\newtopic\indent The next link command is a convenience command to put the link content into a parbox,
+the parameters enable you to set the width, height and position of material in the box.
+
+\settowidth{\aebdimen}{\cs{setLinkBbox[\meta{options}]\darg{\meta{width}}\darg{\meta{height}}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\setLinkBbox[!meta(options)]{!meta(width)}{!meta(height)}
+    [!meta(position)]{!meta(link_content)}
+\end{dCmd}
+\PD The command has five arguments, the first is optional.
+\begin{aebDescript}
+\item [\meta{options}] are optional key-value pairs to change the appearance or action
+ of this link.
+\item [\meta{width}] is the width of the \cs{parbox}.
+\item [\meta{height}] is the height of the \cs{parbox}.
+\item [\meta{position}] is the positioning parameter of the \cs{parbox} (\texttt{b}, \texttt{c}, \texttt{t}).
+\item [\meta{link\_content}] is the text or object to be enclosed in a \cs{parbox}
+\end{aebDescript}
+
+\Example \setLinkBbox[\W{1}\Color{1 0 0}\A{\JS{app.alert("Thank you for using AcroTeX!")}}]{50bp}{30bp}[c]{\centering Press Me!}
+\begingroup\obeyspaces%
+\settowidth{\aebdimen}{\ttfamily%
+    \string\A\darg{\string\JS\darg{app.alert("Thank you for using AcroTeX!")}}%
+}%
+\begin{dCmd*}{\aebdimen+2\fboxsep+2\fboxrule}
+\setLinkBbox[\W{1}\Color{1 0 0}
+    \A{\JS{app.alert("Thank you for using AcroTeX!")}}
+]{50bp}{30bp}[c]{\centering Press Me!}
+\end{dCmd*}
+\endgroup
+
+\section{Actions}\label{Actions}
+
+A form field may simply gather data from the user; additionally,
+it may perform one or more \textit{actions}. Actions include
+execute JavaScript code, going to a particular page in a document,
+open a file, execute a menu item, reset a form, play media or a
+sound, and so on.  Beginning with Acrobat~5.0, most actions can be
+performed using JavaScript methods.
+
+An action is initiated by a \textit{trigger}, a field may have
+many actions, each with a separate trigger. The different triggers
+are discussed in \nameref{triggers}, and the various types of
+actions available are covered in the
+section~\nameref{actiontypes}.
+
+\subsection{Trigger Events}\label{triggers}
+
+Event actions are initiated by \textit{triggers}. For fields,
+there are ten different triggers.
+\begin{questions}
+    \item \textbf{Mouse Enter:} The event is triggered when mouse
+    enters the region defined by the bounding rectangle. The
+    \cs{AAMouseEnter} key is used within the argument of \Cs{AA}
+    to define a mouse enter event:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField[\AA{\AAMouseEnter{%
+    \JS{app.alert("You've entered my text field, get out!")}}}]
+    {myText}{1.5in}{12bp}
+\end{Verbatim}
+    \item \textbf{Mouse Exit:} The event is triggered when mouse
+    exits the region defined by the bounding rectangle. The
+    \cs{AAMouseExit} key is used within the argument \Cs{AA} to
+    define a mouse exit event:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField[\AA{\AAMouseExit{%
+    \JS{app.alert("You've exited my domain, never return!")}}}]
+    {myText}{1.5in}{12bp}
+\end{Verbatim}
+    \item \textbf{Mouse Down:} The event is triggered when the
+    (left) mouse button is pushed down while the mouse is within the
+    bounding rectangle of the field. The \cs{AAMouseDown} key is
+    used within the argument of \Cs{AA} to define a mouse down
+    event:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\AA{\AAMouseDown{\JS{app.alert("Mouse Down!")}}}]
+    {myButton}{30bp}{12bp}
+\end{Verbatim}
+    \item \textbf{Mouse Up:} The event is triggered when the
+    (left) mouse  button is released while the mouse is within the
+    bounding rectangle of the field. The \Cs{A} key (or
+    \cs{AAMouseUp} key is used within the argument of \Cs{AA}) is
+    used to define a mouse up event:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\A{\JS{app.alert("Mouse Up!")}}]
+    {myButton}{30bp}{12bp}
+\end{Verbatim}
+The same code can be performed as follows:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\AA{\AAMouseUp{\JS{app.alert("Mouse Up!")}}}]
+    {myButton}{30bp}{12bp}
+\end{Verbatim}
+When both types of mouse up actions are defined for the same
+field, the one defined by \Cs{A} is the one that is executed.
+
+    \item \textbf{On Focus:} The event is triggered when the field
+    comes into focus (either by tabbing from another field, or
+    clicking the mouse within the bounding rectangle. The \cs{AAOnFocus}
+    key is used within the argument of \Cs{AA} to define an `on focus'
+    event:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField[\AA{\AAOnFocus{\JS{%
+    app.alert("Please enter some data!")}}}]
+{myText}{1.5in}{12bp}
+\end{Verbatim}
+
+    \item \textbf{On Blur:} The event is triggered when the field
+    loses focus (either by tabbing to another field, by clicking
+    somewhere outside the field, or (in the case of a text field,
+    for example) pressing the \texttt{Enter} button. The \cs{AAOnBlur}
+    key is used within the argument of \Cs{AA} to define an `on blur'
+    event:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField[\AA{\AAOnBlur{%
+    \JS{app.alert("Thanks for the data, I think!")}}}]
+{myText}{1.5in}{12bp}
+\end{Verbatim}
+
+    \item \textbf{Format:}\label{format} The format event is the event that
+    occurs when text is entered into a text or combo box; during
+    this event, optionally defined JavaScript code is executed to
+    format the appearance of the text within the field. The
+    \cs{AAFormat} key is used within the argument of \Cs{AA} to
+    define a format event:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField[\AA{%
+    \AAKeystroke{AFNumber_Keystroke(2,0,1,0,"\\u0024",true);}
+    \AAFormat{AFNumber_Format(2,0,1,0,"\\u0024",true);}}]
+{myText}{1.5in}{12bp}
+\end{Verbatim}
+The above example creates a text field which will accept only a
+number into it and which will format the number into U.S.
+currency.
+
+    \item \textbf{Keystroke:} This keystroke event is the event
+    that occurs when individual keystroke is entered into a choice
+    field (list or combo) or a text field; during this event,
+    optionally defined JavaScript can be used to process the
+    keystroke. The \cs{AAKeystroke} key is used within the
+    argument of \Cs{AA} to define a keystroke event; see the format
+    example above.
+
+    \item \textbf{Validate:} The validate event is an event for
+    which JavaScript code can be defined to validate the data that
+    has been entered (text and combo fields only). The
+    \cs{AAVali\-date} key is used within the argument of \Cs{AA} to
+    define a validate event:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField[\AA{%
+  \AAKeystroke{AFNumber_Keystroke(2,0,1,0,"\\u0024",true);}
+  \AAFormat{AFNumber_Format(2,0,1,0,"\\u0024",true);}
+  \AAValidate{%
+    if (event.value > 1000 || event.value < -1000) {\r\t
+      app.alert("Invalid value, rejecting your value!");\r\t
+      event.rc = false;\r
+    }}
+}]{myText}{1.5in}{12bp}
+\end{Verbatim}
+
+    \item \textbf{Calculate:} The calculate event is an event for
+    which JavaScript code can be defined to make automatic
+    calculations based on entries of one or more fields (text and
+    combo fields only). The \cs{AACalculate} key is used within the
+    argument of \Cs{AA} to define a calculate event:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField[\AA{%
+  \AAKeystroke{AFNumber_Keystroke(2,0,1,0,"\\u0024",true);}
+  \AAFormat{AFNumber_Format(2,0,1,0,"\\u0024",true);}
+  \AACalculate{AFSimple_Calculate("SUM",new Array("Prices"));}
+}]{myText}{1.5in}{12bp}
+\end{Verbatim}
+    \item \textbf{PageOpen:} (The \textbf{PO} key, Table 8.10, PDF 1.5) An
+        action to be performed when the page containing the annotation
+        is opened (for example, when the user navigates to it from the
+        next or previous page or by means of a link annotation or outline
+        item). The action is executed after the page's open action. The
+        \cs{AAPageOpen} key is used within the argument of \Cs{AA} to
+        define an annotation page open event:
+    \item \textbf{PageClose:} (The \textbf{PC} key, Table 8.10, PDF 1.5) An
+        action to be performed when the page containing the annotation
+        is closed (for example, when the user navigates to the next or
+        previous page, or follows a link annotation or outline item).
+        The action is executed before the page's close action.
+        \cs{AAPageClose} key is used within the argument of \Cs{AA} to
+        define an annotation page close event.
+    \item \textbf{PageVisible:} (The \textbf{PV} key, Table 8.10,
+        PDF 1.5) An action to be performed when the page containing the
+        annotation becomes visible in the viewer application's user
+        interface. \cs{AAPageVisible} key is used within the
+        argument of \Cs{AA} to define an annotation page visible event.
+    \item \textbf{PageInvisible:} (The \textbf{PI} key, Table 8.10,
+        PDF 1.5) An action to be performed when the page containing
+        the annotation is no longer visible in the viewer
+        application's user interface. \cs{AAPageInvisible} key is used
+        within the argument of \Cs{AA} to define an annotation page
+        invisible event.
+    \item[] Below is a simple example of usage. The actions write to the console.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\textField[\AA{%
+    \AAPageOpen{console.println("Page \thepage: PO");}
+    \AAPageClose{console.println("Page \thepage: PC");}
+    \AAPageVisible{console.println("Page \thepage: PV");}
+    \AAPageInvisible{console.println("Page \thepage: PI");}
+    }]{tf\thepage}{2in}{11bp}
+}
+\end{Verbatim}
+\end{questions}
+Additional examples appear in the file \texttt{eqforms.tex}.
+
+\subsection{Action Types}\label{actiontypes}
+
+The following is only a partial listing of the action types, as
+given in \textsf{Table~8.36} of the \textit{PDF
+Reference}~\cite{tech:PDFRef}. The entire list and the details of
+usage can be obtained from the \textit{PDF Reference}.
+
+\begin{center}
+\begin{tabular}{>{\ttfamily\small}l>{\small}l}
+\multicolumn{1}{>{\bfseries}l}{Action Type} & \multicolumn{1}{>{\bfseries}l}{Description}\\\hline
+GoTo & Go to a destination in the current document\\
+GoToR& Go to a destination in another document\\
+Launch& Launch an application, usually to open a file\\
+URI&Resolve a uniform resource identifier\\
+Named & Execute an action predefined by the viewer\\
+SubmitForm & Send data to a uniform resource locator\\
+JavaScript & Execute a JavaScript script (PDF 1.3)\\
+\end{tabular}
+\end{center}
+Examples of each type of action follow.
+
+\redpoint{\texttt{GoTo}:} Go to a (named or explicit) destination
+within the current document. In this example, we `go to' the named
+destination \texttt{toc.1}, which references the table of contents
+pages. This button goes to a \textit{named destination}:
+\pushButton[\CA{Go}\AC{Now!}\RC{to TOC}\A{/S/GoTo/D(toc.1)}]{myButton1}{}{10bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Go}\AC{Now!}\RC{to TOC}
+    \A{/S/GoTo/D(toc.1)}]{myButton1}{}{10bp}
+\end{Verbatim}
+\noindent For a named destination, the value of the \texttt{/D} key is a string, \texttt{(toc.1)}
+in the above example, that specifies the destination name.
+
+The following is an example of an \textit{explicit destination}:
+\pushButton[\CA{Go}\AC{Now!}\RC{to Page 3}\A{/S/GoTo/D[{Page3}/Fit]}]{myButton1}{}{10bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Go}\AC{Now!}\RC{to Page 3}
+\A{/S/GoTo/D[{Page3}/Fit]}]{myButton1}{}{10bp}
+\end{Verbatim}
+\noindent The value of the destination key \texttt{/D} is an array
+referencing a page number (\verb+{Page3}+) and a view
+(\texttt{/Fit}).
+
+For a \texttt{GoTo} action, the first entry in the destination
+array, \texttt{\char123Page3\char125}, is an indirect reference to
+a page, the notation \texttt{\char123Page3\char125} is understood
+by the \textsf{distiller}. For  \textsf{dvipdfm}, use the \texttt{@page}
+primitive:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\makeatletter\def\Page#1{@page#1}\makeatother
+\pushButton[\CA{Go}\AC{Now!}\RC{to Page 3}
+\A{/S/GoTo/D[\Page3/Fit]}]{myButton1}{}{10bp}
+\end{Verbatim}
+\noindent \textsf{pdftex} has no mechanism for inserting
+indirect page references.
+
+See section~8.5.3, `Go-To Actions', of the \textit{PDF
+Reference}~\cite{tech:PDFRef} for details of the syntax of
+\texttt{GoTo}, and section~8.2.1 for documentation on explicit and
+named destinations.
+
+\redpoint{\texttt{GoToR}:} Go to a (named or explicit) destination in a remote
+document. In this example, we `go to a remote' destination, a
+\textit{named destination} in another document.
+\pushButton[\CA{Go}\AC{Now!}\RC{to TOC}\A{/S/GoToR/F(webeqtst.pdf)/D(webtoc)}]{myButton2}{}{10bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Go}\AC{Now!}\RC{to TOC}
+    \pushButton[\CA{Go}\AC{Now!}\RC{to TOC}
+    \A{/S/GoToR/F(webeqtst.pdf)/D(webtoc)]{myButton2}{}{10bp}
+\end{Verbatim}
+\noindent This example illustrates an \textit{explicit destination};
+the following button jumps to page~3 in another document:
+\pushButton[\CA{Go}\AC{Now!}\RC{to Page 3}\A{/S/GoToR/F(webeqtst.pdf)/D[2/Fit]}]{myButton2}{}{10bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Go}\AC{Now!}\RC{to Page 3}
+\A{/S/GoToR/F(webeqtst.pdf)/D[2/Fit]}]{myButton2}{}{10bp}
+\end{Verbatim}
+\noindent The value of the destination key \texttt{/D} is an array
+referencing a page number and a view (\texttt{/Fit}).
+
+For an \textit{explicit destination}, the \textit{PDF
+Reference}~\cite{tech:PDFRef} specifies that the first entry in
+the destination array should be a page number (as contrasted with
+an indirect reference to a page number, for the case of
+\texttt{GoTo}). The destination, \texttt{/D[2/Fit]} would correctly work
+for \textsf{distiller}, \textsf{dvipdfm} and \textsf{pdftex}.
+
+See section~8.5.3, `Remote Go-To Actions', of the \textit{PDF
+Reference}~\cite{tech:PDFRef} for details of the syntax of
+\texttt{GoToR}, and section~8.2.1 for documentation on explicit
+and named destinations.
+
+\redpoint{\texttt{Launch}:} Launch an application (`Open a file').
+In this example, we open a {\TeX} file using the application
+associated with the \texttt{.tex} extension:
+\pushButton[\CA{Go}\AC{TeX Doc!}\RC{to a}\A{/S/Launch/F(webeqtst.tex)}]{myButton3}{}{10bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Go}\AC{Now!}\RC{to TOC}
+\A{/S/Launch/F(webeqtst.tex)}]{myButton3}{}{10bp}
+\end{Verbatim}
+\noindent See section~8.5.3, `Launch Actions', of the \textit{PDF Reference}~\cite{tech:PDFRef}
+for details of the syntax.
+
+\redpoint{\texttt{URI}:} Open a web link. In this example, we go to the Adobe web site:
+\pushButton[\CA{Go}\AC{Adobe!}\RC{To}\A{/S/URI/URI(http://www.adobe.com/)}]{myButton4}{}{10bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Go}\AC{Adobe!}\RC{To}
+\A{/S/URI/URI(http://www.adobe.com/)}]{myButton4}{}{10bp}
+\end{Verbatim}
+\noindent See section~8.5.3, `URI Actions', of the \textit{PDF
+Reference}~\cite{tech:PDFRef} for details of the syntax.
+
+Acrobat (Adobe Reader) also support open parameters, using these key-value pairs,
+we can go to a specific page in a PDF on the web, and even search for words, for example
+\pushButton[\CA{Go & Search}\A{/S/URI/URI(http://www.math.uakron.edu/~dpstory/acrotex/aeb_man.pdf#page=8&search=AcroTeX web exerquiz)}]{myButton4a}{}{10bp}
+opens the AeB Manual on the Internet, goes to page 8, and searches for the words
+AcroTeX, web, and exerquiz.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Go & Search}
+\A{/S/URI/URI(http://www.math.uakron.edu/~dpstory/
+    acrotex/aeb_man.pdf#page=8&search=AcroTeX web exerquiz)}]
+    {myButton4a}{}{10bp}
+\end{Verbatim}
+The same can be accomplished using \cs{setLink}.
+
+\redpoint{\texttt{Named}:} Execute a `named' action (i.e., a menu
+item). Named actions listed in the \textit{PDF Reference} are
+\texttt{NextPage}, \texttt{PrevPage}, \texttt{FirstPage} and
+\texttt{LastPage}. A complete list of named actions can be
+obtained by executing the code \texttt{app.listMenuItems()} in
+the JavaScript console of Acrobat (Pro).
+\pushButton[\CA{Go}\AC{Previous!}\RC{To}\A{/S/Named/N/PrevPage}]{myButton5}{}{10bp}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Go}\AC{Previous!}\RC{To}
+\A{/S/Named/N/PrevPage}]{myButton5}{}{10bp}
+\end{Verbatim}
+\newtopic See section~8.5.3, `Named Actions,' of the \textit{PDF
+Reference}~\cite{tech:PDFRef} for details of the syntax. The named
+actions listed in the PDF Reference are \texttt{NextPage},
+\texttt{PrevPage}, \texttt{FirstPage}, and \texttt{LastPage}.
+
+In theory, any menu item can be executed as a named actions; there
+are several factors to be taken into consideration: (1) Not all menu
+items available to Acrobat are listed on the menu bar of Adobe
+Reader, when choosing a name event to use, you should decide if the
+application executing the named action supports that action; (2) In
+recent versions, starting with version 7, there have been security
+restrictions on the execution of menu items, the so-called ``white
+list.'' Only named actions listed on the white list are allowed to
+execute.  The white list for version 8.0 is
+
+\begin{small}
+\begin{longtable}{@{}>{\small\ttfamily}l>{\small}l>{\small}l@{}}
+\multicolumn{3}{>{\bfseries}c}{Named Actions on Whitelist}\\\hline
+\endfirsthead
+\multicolumn{3}{>{\bfseries}c}{Named Actions on Whitelist}\\\hline
+\endhead
+AcroSendMail:SendMail  & LastPage                  &  ShowHideToolbarCommenting         \\
+ActualSize             & NextPage                  &  ShowHideToolbarData               \\
+AddFileAttachment      & OneColumn                 &  ShowHideToolbarEdit               \\
+BookmarkShowLocation   & OpenOrganizer             &  ShowHideToolbarEditing            \\
+Close                  & PageSetup                 &  ShowHideToolbarFile               \\
+CropPages              & PrevPage                  &  ShowHideToolbarFind               \\
+DeletePages            & Print                     &  ShowHideToolbarForms              \\
+ExtractPages           & PropertyToolbar           &  ShowHideToolbarMeasuring          \\
+Find                   & Quit                      &  ShowHideToolbarNavigation         \\
+FindCurrentBookmark    & ReplacePages              &  ShowHideToolbarPageDisplay        \\
+FindSearch             & RotatePages               &  ShowHideToolbarPrintProduction    \\
+FirstPage              & SaveAs                    &  ShowHideToolbarRedaction          \\
+FitHeight              & Scan                      &  ShowHideToolbarTasks              \\
+FitPage                & ShowHideAnnotManager      &  ShowHideToolbarTypewriter         \\
+FitVisible             & ShowHideArticles          &  SinglePage                        \\
+FitWidth               & ShowHideBookmarks         &  Spelling                          \\
+FullScreen             & ShowHideFields            &  Spelling:Check                    \\
+GeneralInfo            & ShowHideFileAttachment    &  TwoColumns                        \\
+GeneralPrefs           & ShowHideModelTree         &  TwoPages                          \\
+GoBack                 & ShowHideOptCont           &  Web2PDF:OpenURL                   \\
+GoForward              & ShowHideSignatures        &  ZoomTo                            \\
+GoToPage               & ShowHideThumbnails        &  ZoomViewIn                        \\
+InsertPages            & ShowHideToolbarBasicTools &  ZoomViewOut
+\end{longtable}
+\end{small}
+In addition to the Whitelist for version 8, the following menu items are added for version 9.
+
+\begin{small}
+\begin{longtable}{>{\small\ttfamily}l>{\small}l>{\small}l}
+\multicolumn{3}{>{\bfseries}c}{Named Actions on Whitelist}\\\hline
+\endfirsthead
+\multicolumn{3}{>{\bfseries}c}{Named Actions on Whitelist}\\\hline
+\endhead
+Annots:Tool:InkMenuItem & CollectionShowRoot    & HandMenuItem\\
+CollectionDetails       & DocHelpUserGuide      & HelpReader\\
+CollectionHome          & GoBackDoc             & rolReadPage\\
+CollectionPreview       & GoForwardDoc          & ZoomDragMenuItem\\
+\end{longtable}
+\end{small}
+\newtopic As mentioned before, some of these are for Acrobat only, others are available for Adobe Reader. I'll
+let you sort them out. If you try to execute a named action that is not on the white list, the action will
+silently fail.
+
+\definePath{\URL}{http://www.math.uakron.edu/~dpstory}
+
+\redpoint{\texttt{SubmitForm}:} Submit forms Action. In this example, we submit
+a URL to a CGI, which then sends the requested file back to the browser:\\[1ex]
+\comboBox[\DV{\URL}\V{\URL}\BG{webyellow}\BC{webgreen}]
+{dest}{1.75in}{11bp}{%
+ [(\URL)( Homepage of D. P. Story)]
+ [(\URL/acrotex.html)( AcroTeX Homepage)]
+ [(\URL/webeq.html)( AcroTeX Bundle)]
+ [(\URL/acrotex/examples/webeqtst.pdf)( Exerquiz Demo file {(PDF)})]
+}\kern1bp%
+\pushButton[\BC{webgreen}\CA{Go!}
+\A{\JS{app.alert("This example no longer works!");}}]{redirect}{33bp}{11bp}
+
+\newtopic\textbf{\textcolor{red}{Note:}} This script no longer works, server-side scripting
+at the \texttt{uakron.edu} server is no longer permitted (for security reasons). The
+verbatim lisiting of the code as it used to be when it worked.
+\begin{Verbatim}[xleftmargin=\amtIndent,fontsize=\small]
+\definePath{\URL}{http://www.math.uakron.edu/~dpstory}
+\comboBox[\DV{\URL}\V{\URL}\BG{webyellow}\BC{webgreen}]
+{dest}{1.75in}{11bp}{%
+    [(\URL)( Homepage of D. P. Story)]
+    [(\URL/acrotex.html)( AcroTeX Homepage)]
+    [(\URL/webeq.html)( AcroTeX Bundle)]
+    [(\URL/acrotex/examples/webeqtst.pdf)(Exerquiz Demo file {(PDF)})]
+}\kern1bp\pushButton[\BC{webgreen}\CA{Go!}
+\A{/S/SubmitForm/F(http://www.math.uakron.edu/cgi-bin/nph-cgiwrap/%
+dpstory/scripts/nph-redir.cgi)/Fields[(dest)]/Flags 4}]
+{redirect}{33bp}{11bp}
+\end{Verbatim}
+\noindent See section~8.6.4 of the \textit{PDF Reference}~\cite{tech:PDFRef}
+for details of the syntax for `Submit Actions'.
+
+\redpoint{\texttt{JavaScript}:} Execute a JavaScript action. This is perhaps
+the most important type of action.  In this example,
+the previous example is duplicated using the \texttt{Doc.getURL()} method, we don't
+need to submit to a CGI.\\[1ex]
+\comboBox[\DV{\URL}\V{\URL}\BG{webyellow}\BC{webgreen}]
+{dest}{1.75in}{11bp}{%
+    [(\URL)( Homepage of D. P. Story)]
+    [(\URL/acrotex.html)( AcroTeX Homepage)]
+    [(\URL/webeq.html)( AcroTeX Bundle)]
+    [(\URL/acrotex/examples/webeqtst.pdf)( Exerquiz Demo file {(PDF)})]
+}\kern1bp%
+\pushButton[\BC{webgreen}\CA{Go!}
+\A{\JS{%
+    var f = this.getField("dest");\r
+    app.launchURL(f.value,false);
+}}]{redirect}{33bp}{11bp}
+\begin{Verbatim}[xleftmargin=\amtIndent,fontsize=\small]
+\definePath{\URL}{http://www.math.uakron.edu/~dpstory}
+\comboBox[\DV{\URL}\V{\URL}\BG{webyellow}\BC{webgreen}]
+{dest}{1.75in}{11bp}{%
+    [(\URL)( Homepage of D. P. Story)]
+    [(\URL/acrotex.html)( AcroTeX Homepage)]
+    [(\URL/webeq.html)( AcroTeX Bundle)]
+    [(\URL/acrotex/examples/webeqtst.pdf)(Exerquiz Demo file {(PDF)})]
+}\kern1bp\pushButton[\BC{webgreen}\CA{Go!}
+\A{\JS{%
+    var f = this.getField("dest");\r
+    app.launchURL(f.value,false);
+}}]{redirect}{33bp}{11bp}
+\end{Verbatim}
+\newtopic\hypertarget{JSdefined}{Note} the use of the convenience
+command \cs{JS}, defined in the \textsf{insldjs} package, it expands to the correct syntax:
+\texttt{/S/JavaScript/JS(\#1)}, where \texttt{\#1} is the argument
+of \cs{JS}.
+
+Most all actions can be performed using JavaScript, the reader is
+referred to the \textit{JavaScript for Acrobat API
+Reference}~\cite{tech:AcroJSRef}.
+
+\section{JavaScript}
+
+Acrobat JavaScript is the cross-platform scripting language of the
+Acrobat suite of products. For Acrobat 5.0 or later, Acrobat
+JavaScript based on JavaScript version 1.5 of ISO-16262 (formerly
+known as ECMAScript), and adds extensions to the core language to
+manipulate Acrobat forms, pages, documents, and even the viewer
+application.
+
+Web-based references to core JavaScript are the \textit{Core
+JavaScript Guide}~\cite{tech:NetscapeJSGuide} and the \textit{Core
+JavaScript Reference}~\cite{tech:NetscapeJSReference}. For Acrobat
+JavaScript, we refer you to the \textit{Developing Acrobat
+Applications using JavaScript}~\cite{tech:AcroJSGuide} and the
+\textit{JavaScript for Acrobat API Reference}~\cite{tech:AcroJSRef}.
+
+\verygoodbreak
+
+\subsection{Support of JavaScript}
+
+The {\cAcroEB} has extensive support for JavaScript, not only for
+JavaScript executed in response to a field trigger, but for
+document level and open page actions as well.  As the topic of this
+document is \textsf{eForm} support, the reader is referred to the
+documentation in the \textsf{insdljs} package, which is distributed with
+the {\cAcroB}.
+
+\subsubsection{The Convenience Command
+    \texorpdfstring{\protect\cs{JS}}{\CMD{JS}}}\label{convienceJS}
+
+The syntax for writing JavaScript actions is
+\begin{Verbatim}[xleftmargin=\amtIndent,commandchars=!~@]
+\pushButton[\A{/S/JavaScript/JS(!anglemeta~script@)}]
+    {jsEx}{22bp}{11bp}
+\end{Verbatim}
+Notice the code is enclosed in matching parentheses.
+\hyperlink{JSdefined}{As noted earlier}, {\cAcroT} defines the command
+\cs{JS} as a convenience for this very common actions; the above example
+becomes:
+\begin{Verbatim}[xleftmargin=\amtIndent,commandchars=!()]
+\pushButton[\A{\JS{!anglemeta(script)}}]{jsEx}{22bp}{11bp}
+\end{Verbatim}
+\noindent The code is now enclosed in matching braces.
+
+\subsubsection{Inserting Simple JavaScript}
+
+Actions are introduced into a field command through its optional
+first parameter. JavaScript actions, in particular, can be
+inserted by a mouse up\footnote{Other types of possible actions
+are discussed and illustrated in \Nameref{Actions}.} action, for
+example, using the \Cs{A} and \hyperref[convienceJS]{\cs{JS}}
+commands.
+
+The ``environment'' for entering JavaScript is not a verbatim
+environment: `\verb+\+' is the usual {\TeX} escape character and
+expandable commands are expanded; active characters are expanded
+(which is usually not what you want); and primitive commands
+appear verbatim (so you can use, for example, `\verb+{+' and
+`\verb+}+). Within the optional argument, the macro
+\cs{makeJSspecials}, which can be redefined, is expanded; the
+macro makes several special definitions: (1) it defines \verb+\\+ to be
+`\verb+\\+'; (2) defines \cs{r} to be the JavaScript escape
+sequence for new line; and (3) defines \cs{t} to be the JavaScript
+escape sequence for tab.
+
+\Example\label{ex:formattedBtn} \pushButton[\CA{Sum}\A{\JS{%
+        var n = app.response("Enter a positive integer", "Summing the first \\"n\\" integers");\r
+        if ( n != null ) {\r\t
+            var sum = 0;\r\t
+            for ( var i=1; i <= n; i++ ) {\r\t\t
+                sum += i;\r\t
+            }\r
+        app.alert("The sum of the first n = " + n + " integers is " + sum + ".", 3);
+        }
+    }}]{jsSum}{22bp}{11bp}
+
+\smallskip\noindent The verbatim listing for this button is
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\CA{Sum}\A{\JS{%
+    var n = app.response("Enter a positive integer",
+        "Summing the first \\"n\\" integers");\r
+    if ( n != null ) {\r\t
+        var sum = 0;\r\t
+        for ( var i=1; i <= n; i++ ) {\r\t\t
+            sum += i;\r\t
+        }\r
+    app.alert("The sum of the first n = " + n
+        + " integers is " + sum + ".", 3);
+    }
+}}]{jsSum}{22bp}{11bp}
+\end{Verbatim}
+
+\paragraph*{Code Comments.} Within the JavaScript string, we want
+literal double quotes \texttt{"}, to avoid \texttt{"} being
+interpreted as the end of the string (or the beginning of a string)
+we have to double escape the double quotes, as in \verb+\\"+.  (This
+is not necessary when entering code in the JavaScript editor if you
+have the Acrobat application.)  I try to write JavaScript that I can easily
+read, edit, and debug in the JavaScript editor (available in
+the full Acrobat application); for this reason, I've added in new
+lines and tabbing (\cs{r} and \cs{t}). Many people, however, have
+only the Adobe Reader and cannot see their code to debug it; in this
+case, the formatting is really not needed.
+
+%\newtopic Consider the following code
+%\begin{Verbatim}[xleftmargin=\amtIndent]
+%    \pushButton[\A{\JS{var x = "~"}}]{jsTilde}{22bp}{11bp}
+%\end{Verbatim}
+%\noindent In {\LaTeX}, `\texttt{\~}' is an active character. JavaScript above appears
+%within the JavaScript editor as
+%\begin{Verbatim}[xleftmargin=\amtIndent]
+%var x = "protect unhbox voidb@x penalty @M  {}"
+%\end{Verbatim}
+%\noindent Not good! Using `\verb+\~+' or `\verb+\\~+ fairs no better.
+%The work around is to use \verb!\string~!.
+%\begin{Verbatim}[xleftmargin=\amtIndent]
+%    \pushButton[\A{\JS{var x = "\jslit~"}}]{jsTilde}{22bp}{11bp}
+%\end{Verbatim}
+
+\newtopic Needless to say, the following sample will not compile because we do not have
+matching braces.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\A{\JS{var x = "{"}}]{jsBrace}{22bp}{11bp}
+\end{Verbatim}
+\noindent The work around here is
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\A{\JS{var x = "\jslit\{"}}]{jsBrace}{22bp}{11bp}
+\end{Verbatim}
+
+\newtopic In the above work about, the \cs{jslit} command (for JavaScript literal) is used. This command is defined only within the optional arguments of a form field. The definition of \cs{jslit} is \verb!\let\jslit\string!
+
+
+\subsubsection{Inserting Complex or Lengthy JavaScript}\label{lengthyJS}
+
+For JavaScript that is more complex or lengthy, the
+\textsf{insdljs} Package, distributed with the \cAcroB, has the
+verbatim \texttt{defineJS} environment. Details and idiosyncracies of this
+environment are documented in \Nameref{defineJS}. The
+example given in \hyperref[defineJSEx]{Example~\ref*{defineJSEx}} will suffice; the verbatim listing
+is reproduced here for convenience.
+
+\redpoint First, we define the JavaScript action and name it
+\cs{getComboJS} for the button (prior to defining the field,
+possibly in the preamble, or in style files):
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\begin{defineJS}{\getComboJS}
+    var f = this.getField("myCombo");
+    var a = f.currentValueIndices;
+    if ( a == -1 )
+        app.alert("You've typed in \\"" + f.value +"\\".");
+    else
+        app.alert("Selection: " + f.getItemAt(a, false)
+            + " (export value: " + f.getItemAt(a, true)+").");
+\end{defineJS}
+\end{Verbatim}
+\noindent There is no need for the \cs{r} and \cs{t} commands to format the JavaScript;
+the environment obeys lines and spaces; contrast this example with \textbf{Example~\ref*{ex:formattedBtn}},
+page~\pageref{ex:formattedBtn}.
+
+Now we can define our fields, a combo box (not shown) and button, in
+this example. It is the button that uses the JavaScript defined
+above.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\BC{0 .6 0}\CA{Get}\AC{Combo}\RC{Box}
+    \A{\JS{\getComboJS}}]{myComboButton}{33bp}{11bp}
+\end{Verbatim}
+\noindent Within the argument of \cs{JS} we insert the macro
+command, \verb!\JS{\getComboJS}!
+for our JavaScript defined earlier in the
+\texttt{defineJS} environment
+
+%\redpoint The demo file \href{examples/definejs.pdf}{definejs.pdf}
+%(source \texttt{definejs.tex}) has additional examples of this
+%environment.
+
+\exAeBBlogPDF{p=875} The demo file
+\texttt{\href{\urlAcroTeXBlog/?p=875}{aeb\_links.pdf}}, with source attached,
+is found on the {\AcroBlog} website.
+
+
+\subsection{Defining JavaScript Strings with
+    \texorpdfstring{\protect\cs{defineJSStr}}{\CMD{defineJSStr}}}
+
+The command \Com{defineJSStr} is used to define JavaScript strings, such as in dialog boxes.
+The syntax for this command is
+\settowidth{\aebdimen}{\cs{defineJSStr\darg{\cs{\anglemeta{CMD}}}\darg{\anglemeta{JS\_string}}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\defineJSStr{\!anglemeta(CMD)}{!anglemeta(JS_string)}
+\end{dCmd}
+\PD The parameter \cs{\anglemeta{CMD}} is a command to be define by
+\cs{defineJSStr}, for example, \cs{myMessage}, and \anglemeta{JS\_string} is
+the JavaScript string to be defined as the expansion of the
+\cs{\anglemeta{CMD}}.
+
+\CmdDescription \cs{defineJSStr} executes \verb!\xdef#1{"#2"}!, so
+the JavaScript is expanded at the time of definition. (Note the
+enclosing double quotes) Before the expansion occurs, however, there
+are a number of definitions that occur locally:
+\begin{itemize}
+  \item \cs{uXXXX} is recognized as a unicode escape sequence. So, within the JavaScript string,
+  unicode can be entered directly, for example, \cs{u00FC} is the u-umlaut.
+
+  \item Backslash is still the tex escape character, so any commands
+  in the JavaScript string get expanded. You can delay the expansion
+  by using \cs{protect}. Expansion occurs when the tex compiler
+  actually expands \cs{\anglemeta{CMD}}.
+
+  \item \cs{r} (carriage return), \cs{n} (line feed) and, \cs{t}
+  (tab) can be used to format the message, as desired.
+
+  \item Use the \cs{cs} command to write a word containing a literal backslash in it;
+  for example, to get \cs{LaTeX} to appear in a JavaScript string, you must type \verb!\cs{LaTeX}!
+  in the JavaScript string.
+  \item The JavaScript string is enclosed in double quotes (\texttt{"}), if you want
+  a literal double quote, use \verb!\\"! to get a literal double quote
+  to appear in a JavaScript string. For example,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\defineJSStr{\myMessage}
+    {My name is \\"Stan\\" and I'm \\"the man.\\"}
+\end{Verbatim}
+
+  \item The command \cs{jslit} is recognized within the JavaScript string. Using \cs{jslit}
+  (short for JavaScript literal), you can insert, for example, unbalanced braces:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\defineJSStr{\myMessage}
+    {You forgot the left brace \\"\jslit\{\\",
+     please insert it.}
+\end{Verbatim}
+The definition of \cs{jslit} is \verb!\let\jslit\string!.
+
+
+\end{itemize}
+
+\newtopic The design decision to automatically insert the double
+quotes in the definition of the string has its faults. When you want
+to break the string to insert dynamic content, you must always be
+aware of the definition \verb!\xdef#1{"#2"}! contained with the
+definition of \cs{defineJSStr}. To illustrate, we return to an
+earlier example presented in \nameref{lengthyJS}, on
+page~\pageref*{lengthyJS}.
+
+We begin by defining some JavaScript strings. Note that in each of
+these two definitions, the leading and trailing double quote
+(\texttt{"}) is missing (these are the ones inserted automatically).
+The definitions look a bit strange because we break the string to
+insert dynamic content (\texttt{f.value}, \texttt{f.getItemAt(a,
+false)}, etc.), then continue on with the string from there.
+
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\defineJSStr\myAlerti{You've typed in \\"" + f.value +"\\".}
+\defineJSStr\myAlertii{Selection: " + f.getItemAt(a, false)
+   + " (export value: " + f.getItemAt(a, true)+").}
+\end{Verbatim}
+
+\newtopic We use the \texttt{defineJS} environment, after setting the escape code to \texttt{@}. The \texttt{defineJS}
+is a fully verbatim environment, the escape character cannot be changed to \verb!\!, but it
+may be changed to another character, such as \texttt{@}.
+
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\begin{defineJS}[\catcode`\@=0\relax]{\getComboJS}
+var f = this.getField("myCombo");
+var a = f.currentValueIndices;
+if ( a == -1 )
+    app.alert(@myAlerti);
+else
+    app.alert(@myAlertii);
+\end{defineJS}
+\end{Verbatim}
+
+\newtopic Then again, the use of \cs{defineJSStr} is not required, it is a convenience for creating
+JavaScript strings, especially ones with embedded Unicode. The previous example could have been
+done by defining \cs{myAlerti} and \cs{myAlertii} by
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\newcommand\myAlerti{"You've typed in \\"" + f.value +"\\"."}
+\newcommand\myAlertii{"Selection: " + f.getItemAt(a, false)
+   + " (export value: " + f.getItemAt(a, true)+")."}
+\end{Verbatim}
+\noindent Note the \emph{presence} of the leading and trailing double quotes.
+
+\section{The \texttt{useui} option: A User-Friendly Interface}\label{useui}
+
+\def\myFavFive{%
+bordercolor={1 0 0},bgcolor={0 1 0},
+textcolor={1 0 0},align={right},
+uptxt={Push Me}}
+
+
+To use the ``user-friendly'' interface, the \texttt{useui} option must be taken. The key-value pairs
+described below are enclosed as the argument of the special \cs{ui} key.  For example,
+\bgroup\obeyspaces\ttfamily%
+\settowidth{\aebdimen}{    bordercolor=\darg{1 0 0},bgcolor=\darg{0 1 0},}%
+\begin{dCmd*}{\aebdimen+2\fboxsep+2\fboxrule}
+\pushButton[\ui{%
+    bordercolor={1 0 0},bgcolor={0 1 0},
+    textcolor={1 0 0},align={right},
+    uptxt={Push Me},
+    js={app.alert("AcroTeX rocks!")}
+}]{pb1}{}{11bp}
+\end{dCmd*}
+\egroup\newtopic You can develop your own set of appearances and use the \texttt{presets} key to conveniently set these.
+For example,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\def\myFavFive{%
+    bordercolor={1 0 0},bgcolor={0 1 0},
+    textcolor={1 0 0},align={right},
+    uptxt={Push Me}
+}
+\end{Verbatim}
+Later, a push button can use this preset, like so,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\ui{presets=\myFavFive,
+    js={app.alert("AcroTeX rocks!")}}]{pb1}{}{11bp}
+\end{Verbatim}
+\newtopic which produces \pushButton[\ui{presets=\myFavFive, js={app.alert("AcroTeX rocks!")}}]{pb1}{}{11bp}\,
+\footnote{The reader is reminded once again that the author has no understanding of colors.}
+
+\newtopic You can mix your \cs{myFavFive} with different key-value pairs, such as a JavaScript action.
+
+\subsection{The Appearance Tab}
+
+We set these key-value pairs to model the user interface of Acrobat.
+
+The key is \texttt{border}. In the case of a link, this is the Link Type: \textsf{Visible Rectangle}
+or \textsf{Invisible Rectangle}. For forms, this key has no counterpart
+in the user interface. If you set border equal to \texttt{invisible}, that
+will set border line width to zero \verb!\W{0}!.
+
+\settowidth{\aebdimen}{\ttfamily border=visible|invisible}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+border=visible|invisible
+\end{dCmd}
+\CmdDescription Used with link annotations and determines whether the border surrounding the bounding
+box of the link is visible. If this key is not specified, the \textsf{eforms}
+follows the rule: If \texttt{colorlinks} option of  \textsf{hyperref} is used, the border is invisible;
+otherwise, it is visible (and the default \texttt{linewidth} is 1). Use the border key to override
+this behavior.
+
+\settowidth{\aebdimen}{\ttfamily linewidth=thin|medium|thick}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+linewidth=thin|medium|thick
+\end{dCmd}
+\CmdDescription The \texttt{linewidth} of the border around a link
+or a form. The user interface choices are \texttt{thin},
+\texttt{medium}, and \texttt{thick}. This key-value is ignored if the
+document author has set the border to \texttt{invisible}.
+
+\settowidth{\aebdimen}{\ttfamily highlight=none|invert|outline|inset|push}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+highlight=none|invert|outline|inset|push
+\end{dCmd}
+\CmdDescription The highlight type for links and forms, choices are
+\texttt{none}, \texttt{invert}, \texttt{outline}, \texttt{inset} and
+\texttt{push}. The term \texttt{inset} is used with links, and
+\texttt{push} is used with forms. They each have the same key value pair.
+
+\settowidth{\aebdimen}{\ttfamily bordercolor=\anglemeta{num}\hardspace\anglemeta{num}\hardspace\anglemeta{num}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+bordercolor=!anglemeta(num)!hardspace!anglemeta(num)!hardspace!anglemeta(num)
+\end{dCmd}
+\CmdDescription The color of the border, when visible, in RGB color space.
+For example, \texttt{bordercolor=1 0 0}, is the color red.
+
+\settowidth{\aebdimen}{\ttfamily linestyle=solid|dashed|underlined|beveled|inset}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+linestyle=solid|dashed|underlined|beveled|inset
+\end{dCmd}
+\CmdDescription  The line style of the border, possible values are \texttt{solid},\texttt{dashed},
+\texttt{underlined}, \texttt{beveled},and \texttt{inset}. Links do not support
+the \texttt{beveled} option.
+
+\settowidth{\aebdimen}{\ttfamily dasharray=\anglemeta{num}[\hardspace\anglemeta{num}]}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+dasharray=!anglemeta(num)[!hardspace!anglemeta(num)]
+\end{dCmd}
+\CmdDescription When a line style of \texttt{dashed} is chosen, you can specify a dash array.
+The default is 3.0, which means a repeating pattern of 3 points of line, followed by 3 points of space.
+A value of \texttt{dasharray=3~2} means three points of line, followed
+by two points of space. When this key is used without a value, the value is 3.0.
+When the \texttt{dashed} key is not present, 3.0 is used.
+
+\settowidth{\aebdimen}{\ttfamily linktxtcolor=\anglemeta{named\_color}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+linktxtcolor=!anglemeta(named_color)
+\end{dCmd}
+\CmdDescription Set the color of the link text. Ignored if the
+\texttt{colorlinks} option of hyperref has not been taken.  The
+value of \texttt{linktxtcolor} is a named color. For example,
+\texttt{linktxtcolor=red}. The default is \verb|\@linkcolor| from hyperref.
+This default can be changed by redefining \cs{@linkcolor}, or
+redefining \cs{defaultlinkcolor}. If \verb!linktxtcolor={}! (an
+empty argument), or simply \texttt{linktxtcolor}, no color is
+applied to the text, the color of the text will be whatever the current color is.
+
+\settowidth{\aebdimen}{\ttfamily annotflags=hidden|print|-print|noview|lock}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+annotflags=hidden|print|-print|noview|lock
+\end{dCmd}
+
+\CmdDescription This is a bit field, possible values are \texttt{hidden}, \texttt{print},
+\texttt{-print}, \texttt{noview}, and \texttt{lock}. \textit{Multiple values can
+be specified}. The values are ``or-ed'' together. Most all forms are printable
+by default. If you don't want a form field to print specify \texttt{-print}.
+For example, \verb|annotflags={-print,lock}| makes the field not printable and is
+locked, so the field cannot be moved through the UI.
+
+
+\settowidth{\aebdimen}{\ttfamily fieldflags=readonly|required|noexport|multiline|password|}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+fieldflags=readonly|required|noexport|multiline|password|
+     notoggleoff|radio|pushbutton|combo|edit|
+     sort|fileselect|multiselect|nospellcheck|
+     noscrolling|comb|radiosinunison|commitonchange|
+     richtext
+\end{dCmd}
+\CmdDescription There are a large number of field flags (\texttt{Ff}) that set a
+number of properties of a field. This is a multiple-selection key as well. The
+values are ``or-ed'' together.
+
+Normally, a document author would not specify \texttt{radio}, \texttt{pushbutton} or \texttt{combo}. These properties are used by \textsf{eforms} to construct a radio button field, a push button and a combo box. The others can be used as appropriate.
+
+\settowidth{\aebdimen}{\ttfamily maxlength=\anglemeta{num}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+maxlength=!anglemeta(num)
+\end{dCmd}
+\CmdDescription Use \texttt{maxlength} to limit the number of characters input into a text field.
+Example: \texttt{maxlength=12}. When the \texttt{fieldflags} is set to \texttt{comb}, the value
+of \texttt{maxlength} determines the number of combs in the field.
+
+
+\settowidth{\aebdimen}{\ttfamily tooltip=\anglemeta{string}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+tooltip=!anglemeta(string)
+\end{dCmd}
+\CmdDescription Enter a text value to appear as a tool tip. A tool
+tip is text that appears in a frame when the user hovers the mouse
+over the field. The link annotation does not have a tool tip
+feature. Enclose in parentheses if the text string contains a comma;
+for example, \verb|tooltip={Hi, press me and see what happens!}|.
+The \texttt{tooltip} key obeys the \texttt{unicode} option. If the
+unicode option of hyperref is in effect, then setting
+\begin{Verbatim}[xleftmargin=\amtIndent]
+tooltip = {J\"{u}rgen, press me and see what happens!}
+\end{Verbatim}
+\noindent yields a tool tip of ``J\"{u}rgen, press me and see what happens!''
+
+\settowidth{\aebdimen}{\ttfamily default=\anglemeta{string}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+default=!anglemeta(string)
+value=!anglemeta(string)
+\end{dCmd}
+\CmdDescription Set default value of a field (text, list, combobox)
+using the \texttt{default} key. The default value is the value used
+for the field when the field is reset. Example:
+\texttt{default=Name}.
+
+The \texttt{value} key is used to set the current value of a
+field (text, list, combobox). Example: \texttt{value=AcroTeX}. % unicode
+
+These two keys obey the \texttt{unicode} option.
+If the unicode option of hyperref is in effect, then setting
+\verb|value = \texteuro\ 1 000 000| sets the (initial) value of this field to
+``\char1 \ 1 000 000''.
+
+\settowidth{\aebdimen}{\ttfamily rotate=0|90|180|270}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+rotate=0|90|180|270
+\end{dCmd}
+\CmdDescription Set the orientation of the field, values are 0, 90, 180 and 270. If 90 or 270
+are chosen, the height and width of the field need to be reversed. This is not
+done automatically by \textsf{eforms}
+
+\settowidth{\aebdimen}{\ttfamily bgcolor=\anglemeta{num}\hardspace\anglemeta{num}\hardspace\anglemeta{num}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+bgcolor=!anglemeta(num)!hardspace!anglemeta(num)!hardspace!anglemeta(num)
+\end{dCmd}
+\CmdDescription The background color of a form field. This is a RGB color value.
+
+\settowidth{\aebdimen}{\ttfamily rollovertxt=\anglemeta{string}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+uptxt=!anglemeta(string)
+downtxt=!anglemeta(string)
+rollovertxt=!anglemeta(string)
+\end{dCmd}
+\CmdDescription The normal (mouse up), mouse down and rollover text
+for a button field. All three of these keys obey the \texttt{unicode} option.
+If the \opt{unicode} option of \pkg{hyperref} is in effect, then setting
+\verb!uptxt = J\"{u}rgen! yields a normal caption of ``J\"{u}rgen'' on the button.
+
+% \texttt{eqforms\_pro.tex}
+
+
+\newtopic \textbf{Push buttons only.} The following list of keys are used for
+creating custom appearances on button faces. Acrobat Distiller required for
+this set. The example files
+\marginpar{\mbox{\makebox[0pt][l]{\textcolor{blue}{\Pisymbol{webd}{254}}}\raisebox{-2pt}{\color{red}{{\zqacr
+b\hspace{9.5pt}}}}}}\texttt{\href{\urlAcroTeXBlog/?p=879}{eqforms.pdf}} and
+\texttt{\href{\urlAcroTeXBlog/?p=1291}{eqforms\_pro.pdf}} illustrate the
+creation of icons as button appearances. In the latter PDF,
+\texttt{eqforms\_pro.pdf}, \textsf{Acrobat Distiller} is required to be the
+PDF creator.
+\begin{itemize}
+\item[]
+\settowidth{\aebdimen}{\ttfamily normappr=\anglemeta{string}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+normappr=!anglemeta(string)
+rollappr=!anglemeta(string)
+downappr=!anglemeta(string)
+\end{dCmd}
+\item[]\CmdDescription The normal, rollover, and down appearances of the button face icon. The value of each
+key is an indirect reference to a form XObject. Normally, you can use the \texttt{graphicxsp} package
+to embed graphics and give a symbolic name which is used as the value of these keys.
+
+\item[]
+\settowidth{\aebdimen}{\ttfamily layout=labelonly|icononly|icontop|iconbottom|}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+layout=labelonly|icononly|icontop|iconbottom|
+       iconleft|iconright|labelover
+\end{dCmd}
+\item[]\CmdDescription The value of this key determines the layout of the icon relative to the label (or caption).
+    The default is \texttt{labelonly}, if if you define icons, you need to set layout to something
+    other than \texttt{labelonly}.
+
+\item[]
+\settowidth{\aebdimen}{\ttfamily scalewhen=always|never|iconbig|iconsmall}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+scalewhen=always|never|iconbig|iconsmall
+\end{dCmd}
+\item[]\CmdDescription The value of this key tells when to scale the icon. The \texttt{iconbig}
+    scales the icon when it is too big for the bounding rectangle; while
+    \texttt{iconsmsll} scales the icon when it is too small for the bounding rectangle.
+    The default is \texttt{always}.
+
+\item[]
+\settowidth{\aebdimen}{\ttfamily scale=proportional|nonproportional}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+scale=proportional|nonproportional
+\end{dCmd}
+\item[]\CmdDescription This parameter sets the scale type, either \texttt{proportional} scaling, where
+the aspect ratio of the icon is preserved; or \texttt{nonproportional} scaling is used. The
+default is \texttt{proportional}.
+
+\item[]
+\settowidth{\aebdimen}{\ttfamily position=\anglemeta{x}\hardspace\anglemeta{y})}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+position=!anglemeta(x)!hardspace!anglemeta(y)
+\end{dCmd}
+\item[]\CmdDescription Both \anglemeta{x} and \anglemeta{y} are numbers
+    between 0 and 1, inclusive, and separated by a space (not a comma). They
+    indicate the fraction of the left over space to allocate at the left
+    and bottom of the icon. A value of \verb!{0.0 0.0}! positions the
+    icon at the bottom-left corner; a value of \verb!{0.5 0.5}! centers
+    it within the rectangle. This entry is only used of the icon is
+    scaled proportionally. The default is \verb!{0.5 0.5}!.
+
+\item[]
+\settowidth{\aebdimen}{\ttfamily fitbounds=true|false}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+fitbounds=true|false
+\end{dCmd}
+\item[]\CmdDescription A Boolean value, if \texttt{true}, indicates
+    that the button appearance should be scaled to fit fully
+    within the bounds of the field's bounding rectangle without
+    taking into consideration the line width of the border. The
+    default is \texttt{false}. \texttt{fitbounds} is the same as \texttt{fitbounds=true}.
+
+\end{itemize}
+
+\newtopic \textbf{Check boxes and Radio Buttons Only.} The following
+list of keys are used for creating custom appearances on check boxes and
+radio buttons. Acrobat Distiller required for this set. The example files
+\marginpar{\mbox{\makebox[0pt][l]{\textcolor{blue}{\Pisymbol{webd}{254}}}\raisebox{-2pt}{\color{red}{{\zqacr
+b\hspace{9.5pt}}}}}}\texttt{\href{\urlAcroTeXBlog/?p=879}{eqforms.pdf}} and
+\texttt{\href{\urlAcroTeXBlog/?p=1291}{eqforms\_pro.pdf}} illustrate the
+creation of these appearances.. In the latter PDF, \texttt{eqforms\_pro.pdf},
+\textsf{Acrobat Distiller} is required to be the PDF creator.
+
+\begin{itemize}
+
+\item[]
+\settowidth{\aebdimen}{\ttfamily appr=\darg{ norm=\darg{on=\darg\anglemeta{normOnAppr}},off=\darg{\anglemeta{normOffAppr}}},}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+appr={ norm={on={!anglemeta(normOnAppr)},off={!anglemeta(normOffAppr)}},
+       down={on={!anglemeta(downOnAppr)},off={!anglemeta(downOffAppr)}},
+       roll={on={!anglemeta(rollOnAppr)},off={!anglemeta(rollOffAppr)}}}
+\end{dCmd}
+\item[] \CmdDescription The \texttt{norm} key is the normal appearance of the button;
+        it has two appearances, the \texttt{on} and the \texttt{off} appearances. The
+        \texttt{on} and \texttt{off} are indirect references to a form XObject. The other
+        two keys, down and roll, are the down and rollover appearances, respectively; they
+        have the same structure as \texttt{norm} does.
+
+\item[] If \texttt{appr} is not specified, then, by default, the usual appearances of the
+        buttons are used, as provided by Acrobat/AR.
+
+\item[] The \texttt{down} and \texttt{roll} are optional, if you use \texttt{appr} at all, you should
+        specify the norm appearance, both \texttt{on} and \texttt{off} appearances.
+
+\end{itemize}
+
+\settowidth{\aebdimen}{\ttfamily align=left|centered|right}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+align=left|centered|right
+\end{dCmd}
+\CmdDescription The type of alignment of a text field. Permitted values are
+\texttt{left}, \texttt{centered}, and \texttt{right}.
+
+
+\settowidth{\aebdimen}{\ttfamily textcolor=\anglemeta{num}[\hardspace\anglemeta{num}\hardspace\anglemeta{num}[\hardspace\anglemeta{num}]]}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+textfont=!anglemeta(font_name)
+textsize=!anglemeta(num)
+textcolor=!anglemeta(num)[!hardspace!anglemeta(num)!hardspace!anglemeta(num)[!hardspace!anglemeta(num)]]
+\end{dCmd}
+\CmdDescription
+The key \texttt{textfont} is the text font to be used with the text of the field,
+while \texttt{textsize} is the text size to be used. A value of 0 means auto size.
+The color of the text in the field. This can be in \textsf{G}, \textsf{RGB} or \textsf{CMYK} color
+space by specifying 1, 3 or 4 numbers between 0 and 1.
+
+\settowidth{\aebdimen}{\ttfamily autocenter=yes|no}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+autocenter=yes|no
+\end{dCmd}
+\CmdDescription This is a feature of \textsf{eforms}. Use
+\texttt{autocenter=yes} (the default) to moderately center the bounding box,
+and use \texttt{autocenter=no} otherwise.
+
+\settowidth{\aebdimen}{\ttfamily presets=\meta{\string\CMD}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+presets=!meta(\CMD)
+\end{dCmd}
+\CmdDescription Set presets from inside a \cs{ui} argument. The value of \cs{ui} must be a user defined
+command, which expands to a  comma-delimited list of ui-key-value pairs.
+
+\Example Use the presets key to place pre-defined key-value pairs into the option
+argument of a link. Define a command,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\def\myUIOpts{%
+    border=visible,linktxtcolor=blue,
+    linewidth=medium,highlight=outline,
+    linestyle=dashed,bordercolor={1 0 0},
+    js={app.alert("AcroTeX rocks!")}
+}
+\end{Verbatim}
+Later, we can type,
+\settowidth{\aebdimen}{\ttfamily \string\setLink[\string\ui\darg{presets=\darg{\string\myUIOpts}}]\darg{Press Me Again!!}}
+\begin{dCmd*}{\aebdimen+2\fboxsep+2\fboxrule}
+\setLink[\ui{presets={\myUIOpts}}]{Press Me Again!!}
+\end{dCmd*}
+
+\settowidth{\aebdimen}{\ttfamily symbolchoice=check|circle|cross|diamond|square|star}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+symbolchoice=check|circle|cross|diamond|square|star
+\end{dCmd}
+\CmdDescription Used with a checkbox or radio button field. This sets the symbol
+that appears in the field when the box is checked. Choices are
+\texttt{check}, \texttt{circle}, \texttt{cross}, \texttt{diamond},
+\texttt{square}, and \texttt{star}.
+
+
+\subsection{The Action Tab}
+
+There are several common actions that are supported through the user-friendly interface, these
+are \texttt{goto} actions, and JavaScript actions.
+
+
+\settowidth{\aebdimen}{\ttfamily goto=\darg{\meta{KV-pairs}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+goto={!meta(KV-pairs)}
+\end{dCmd}
+\CmdDescription This key incorporates jumps to pages and destinations within the current PDF file,
+and to pages and destinations to another PDF file. these are
+\KVP There are a number of key-value pairs that are recognized,
+\texttt{file}, \texttt{targetdest}, \texttt{labeldest}, \texttt{page},
+\texttt{view}, and \texttt{open}. A brief description of each follows.
+\begin{enumerate}
+  \item \texttt{file}: Specify a relative path to the PDF file. This will work on the Web if
+        the position is the same relative to the calling file. If the \texttt{file} key is not present,
+        the jump is to a page or destination in the current file.
+  \item \texttt{url}: This key is used to create a weblink, similar to what \cs{href} does.
+        The value of this key is a url (\texttt{http}, \texttt{https}, \texttt{mailto}, etc.).
+        If the \texttt{url} key is present, only the \texttt{openparams} key is recognized.
+  \item \texttt{openparams}: Open parameters that should be included with the URL, as passed by
+        the \texttt{url} key. These parameters are key value pairs \texttt{key=value} and are separated
+        by an ampersand (\texttt{\&}).
+        See \emph{\href{http://www.adobe.com/devnet/acrobat/?view=documentation}{Parameters for Opening PDF Files}} for more information, examples are found below.
+  \item \texttt{targetdest}: Jump to a target, perhaps created by \verb|\hypertarget|. For example,
+        if we say \verb|\hypertarget{acrotex}{Welcome!}|, we jump to the
+        \texttt{acrotex} named destination by specifying \texttt{targetdest=acrotex}.
+  \item \texttt{labeldest}: Same as \texttt{targetdest}, but we jump to a destination specified by
+        a latex label. For example, if we type \verb|\section{AcroTeX}\label{acrotex}|,
+        we can jump to this section by specifying \texttt{labeldest=acrotex}.
+
+  \item \texttt{page}: The page number to which the \texttt{goto}
+      action is to jump. If we set \texttt{page=1}, we will jump to the
+      first page of the document.
+
+  \item \texttt{view}: The view can be set when the \texttt{page} key is used.
+    Possible values are \texttt{fitpage}, \texttt{actualsize},
+    \texttt{fitwidth}, \texttt{fitvisible}, and \texttt{inheritzoom}.
+    These terms correspond to Acrobat's UI. When jumping to a
+    destination, the view is set by the destination code.
+
+  \item \texttt{open}: This key is used when you specify the \texttt{file} key. The
+    \texttt{open} key determines if a new window is opened or not when the PDF viewer
+    jumps to the file. Possible values are \texttt{userpref} (use user preferences),
+    \texttt{new} (open new window), \texttt{existing} (use the existing window).
+
+\end{enumerate}
+
+\Example The following are examples of the \texttt{goto} key.
+\begin{itemize}
+    \item \setLink[\ui{goto={file=aeb_man.pdf,page=8,view=fitwidth}}]{AeB Manual}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\setLink[\ui{goto={file=aeb_man.pdf,page=8,%
+    view=fitwidth}}]{AeB Manual}
+\end{Verbatim}
+This link should work on your local hard drive and it should work on
+the web, from within a web browser, assuming \texttt{aeb\_man.pdf} is
+in the same folder as \texttt{eformman.pdf}.
+
+\item \setLink[\ui{goto={url=http://www.math.uakron.edu/~dpstory/acrotex/aeb_man.pdf,
+    openparams={page=8&search=AcroTeX web exerquiz}}}]{AeB Manual on Web}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\setLink[\ui{%
+    goto={url=http://www.math.uakron.edu/~dpstory/%
+        acrotex/aeb_man.pdf,%
+    openparams={page=8&search=AcroTeX web exerquiz}}}
+        ]{AeB Manual on Web}
+\end{Verbatim}
+Here, we open the AeB Manual that is on the web, go to page 8, and search for the words
+\texttt{AcroTeX}, \texttt{web}, and \texttt{exerquiz}.  Notice that we don't have to
+do anything special with the tilde (\texttt{\string~}) or the sharp (\texttt{\#}), both of
+these are handled by the \textsf{eforms} package.
+\end{itemize}
+
+
+\settowidth{\aebdimen}{\ttfamily js=\darg{\anglemeta{script}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+js={!anglemeta(script)}
+\end{dCmd}
+\CmdDescription A general purpose key to execute JavaScript actions on a mouse up trigger.
+The argument is a JavaScript text string, for example,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+js={app.alert("Hello World!")}
+\end{Verbatim}
+The value of \texttt{js} may be a macro containing JavaScript, which would include
+a macro created by the \texttt{defineJS} environment of \textsf{insdljs}.
+
+% Next up are additional actions, and there are a lot of them. All these
+% take JavaScript code as their values.
+\settowidth{\aebdimen}{\ttfamily pageinvisible=\darg{\anglemeta{script}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+mouseup={!anglemeta(script)}
+mousedown={!anglemeta(script)}
+onenter={!anglemeta(script)}
+onexit={!anglemeta(script)}
+onfocus={!anglemeta(script)}
+onblur={!anglemeta(script)}
+format={!anglemeta(script)}
+keystroke={!anglemeta(script)}
+validate={!anglemeta(script)}
+calculate={!anglemeta(script)}
+pageopen={!anglemeta(script)}
+pageclose={!anglemeta(script)}
+pagevisible={!anglemeta(script)}
+pageinvisible={!anglemeta(script)}
+\end{dCmd}
+\CmdDescription These are all additional actions (\texttt{AA}) of a form field, which take as their values
+JavaScript code (\anglemeta{script}).
+ \begin{itemize}
+   \item \texttt{mouseup}: Executes its code with a mouse up event. If there is a JavaScript
+         action defined by the \texttt{js} key (or the \verb|\A| key), the \texttt{js} (\verb|\A|) action is executed.
+   \item \texttt{mousedown}: Executes its when the mouse is hovering over the field and the user clicks
+         on the mouse.
+   \item \texttt{onenter}: Executes its code when the user moves the mouse into the form field (the bounding rectangle).
+   \item \texttt{onexit}: Executes its code when the user moves the mouse out of the form field (the bounding rectangle).
+   \item \texttt{onfocus}: Executes its code when the user brings the field into focus.
+   \item \texttt{onblur}: Executes its code when the user brings the field loses focus (the user tabs away from
+         the field, or click outside the field).
+   \item \texttt{format}: JavaScript to format the text that appears to
+           the user in a text field or editable combo box.
+   \item \texttt{keystroke}: JavaScript to process each keystroke in a text field or editable combo box.
+   \item \texttt{validate}: JavaScript to validate the committed data input into a text field or editable combo box.
+   \item \texttt{calculate}: JavaScript to make calculations based on the values of other fields.
+   \item \texttt{pageopen}: JavaScript that executes when the page containing the field is opened.
+   \item \texttt{pageclose}: JavaScript that executes when the page containing the field is closed.
+   \item \texttt{pagevisible}: JavaScript that executes when the page containing the field first becomes visible to the user.
+   \item \texttt{pageinvisible}: JavaScript that executes when the page containing the field is no longer visible to the user.
+ \end{itemize}
+
+ \subsection{The Signed Tab}
+
+ A signature field has a Signed tab. On that tab is an option to mark a set of fields
+ as readonly (locked). The locked key controls that option.
+
+\settowidth{\aebdimen}{\ttfamily lock=\darg{\anglemeta{PDF KV-pairs}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+lock={!anglemeta(PDF KV-pairs)}
+\end{dCmd}
+
+\CmdDescription The \texttt{lock} key is used with signature fields, currently, there is
+ no nice user interface to this key. Typical entries are
+\begin{Verbatim}[xleftmargin=\amtIndent]
+lock={/Action/All}         % lock all fields in the doc
+lock={/Action/Include      % lock all fields listed in Fields
+    /Fields [(field1)(field2)...]}
+lock={/Action/Exclude      % lock all fields not listed in Fields
+    /Fields [(field1)(field2)...]}
+\end{Verbatim}
+
+\newtopic Another option that is included in the Signed tab is titled ``This script executes
+when field is signed.''
+
+This is an option that, through the user interface, is mutually exclusive from
+locking fields. This option is implemented through the format event;
+thus, to populate this option with JavaScript use the \texttt{format} key. For example,
+\begin{Verbatim}[xleftmargin=\amtIndent]
+format={app.alert("Thank you for signing this field.");}
+\end{Verbatim}
+
+\part{Setting the Tab Order}
+
+The \hypertarget{\pkg{taborder}}{taborderPkg} package is an internal AeB package that is called by
+both the \textsf{eforms} and the \texttt{annot\_pro packages}. The
+\texttt{taborder} package sets the tab order for form fields and link
+annotations (when the link is created by the command \cs{setLink}, defined
+in the \textsf{eforms} package. The package works for all drivers when
+setting tab order by column, row, or widget order. For setting tabbing
+order by structure, only documents generated using the \textbf{pdfmark}
+are supported; those using the \textsf{dvips} or \textsf{dvipsone} driver along with Adobe
+Distiller.
+
+\section{Setting the Tab Order}
+
+The tabbing order of the fields is usually the order in which the fields were created. In rare cases, it may be desirable to set the order to one of the orders defined by the PDF Reference.
+\settowidth{\aebdimen}{\ttfamily \string\setTabOrder\darg{c|C|r|R|s|S|w|W|a|A|unspecified}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\setTabOrder{c|C|r|R|s|S|w|W|a|A|unspecified}
+\end{dCmd}
+
+\CmdDescription Command Description: This command is page oriented, it sets to the tab order of fields on
+the page the TEX compiler executes this command. The permissible values of the parameter are
+described below, taken verbatim from the \emph{PDF Reference}, the cross-references that appear in the
+descriptions are references to the \emph{PDF Reference} document.
+\begin{itemize}
+\item \texttt{c|C} (column order): ``Annotations are visited in columns running vertically up and down
+the page. Columns are ordered by the Direction entry in the viewer preferences dictionary
+(see Section 8.1, `Viewer Preferences'). The first annotation visited is the one at the top of
+the first column. When the end of a column is encountered, the first annotation in the next
+column is visited.''
+\item  \texttt{r|R} (row order): ``Annotations are visited in rows running horizontally across the page.
+The direction within a row is determined by the Direction entry in the viewer preferences
+dictionary (see Section 8.1, `Viewer Preferences'). The first annotation visited is the first
+annotation in the topmost row. When the end of a row is encountered, the first annotation
+in the next row is visited.''
+\item \texttt{s|S} (structure order): ``Annotations are visited in the order in which they appear in the
+structure tree (see Section 10.6, ``Logical Structure''). The order for annotations that are not
+included in the structure tree is application-dependent.''
+\item \texttt{w|W} (version 9.0, widget order): ``Widget annotations are visited in the order in which they
+appear in the page Annots array, followed by other annotation types in row order.''
+\item \texttt{a|A} (version 9.0, annotations array order): ``All annotations are visited in the order in which
+they appear in the page Annots array.'' (In version 9.0, this key is not implemented.)
+\item \texttt{unspecified|empty} The tab order follows the order of the annotations as listed in the
+Annots array. For LATEX, this is the order in which the annotations were created. You get
+the same result if the argument is left empty \verb!\setTabOrder{}!, or if \cs{setTabOrder} is
+not used at all. If an unrecognized argument is passed to \cs{setTabOrder}, \texttt{unspecified}
+is used.
+\end{itemize}
+The behavior of tabbing has changed over the years; documentation of tabbing behavior is given
+in the \emph{Adobe Supplement to the ISO 32000, BaseVersion 1.7, ExtensionLevel 3}.\footnote{\url{http://www.adobe.com/devnet/acrobat/pdfs/PDF3200_2008.pdf}} See the section
+Errors and Implementation Notes. Annotations include things like form fields (widget annotations), links (link annotations) and
+the various types of comment annotations. See section 8.4.5 of the PDF Reference.
+
+The \cs{setTabOrder} command is available for users of pdftex and dvipdfm, as well as users of dvipsone and dvips (with distiller); for row, column, and widget (version 9 or later), the PDF viewer does all the work on tabbing, for tabbing using structure, one necessarily needs structure, otherwise, the tabbing follows row order. For users of Adobe Distiller, the \texttt{taborder} package provides two ways for defining the structure order; on any page in which structure order is used, use only one of the following commands:
+\settowidth{\aebdimen}{\ttfamily\string\setTabOrderByNumber}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\setTabOrderByList
+\setTabOrderByNumber
+\end{dCmd}
+
+\subsection{Using \texorpdfstring{\protect\cs{setTabOrderByList}}{\CMD{setTabOrderByList}}}
+
+We illustrate with a simple example, followed by a verbatim listing of the code, and a discussion
+afterward. We begin by placing two text fields in a row; normally,we would tab from the first one created
+by the {\TeX} compiler to the next one created. We use structure to reverse the order of tabbing.
+
+\setTabOrder{s}     % set tab order to structure
+\setTabOrderByList  % the default initially
+
+\textField[\V{text1}\objdef{otext1}]{text1}{1.25in}{11bp}\\[3bp]
+\textField[\V{text2}\objdef{otext2}]{text2}{1.25in}{11bp}
+
+\setStructTabOrder{% The list of the fields in the desired order
+    {otext2}
+    {otext1}
+}
+\newtopic The verbatim listing of the above form fields follows:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\setTabOrder{s}     % set tab order to structure
+\setTabOrderByList  % the default initially
+
+\textField[\V{text1}\objdef{otext1}]{text1}{1.25in}{11bp}\\[3bp]
+\textField[\V{text2}\objdef{otext2}]{text2}{1.25in}{11bp}
+
+\setStructTabOrder{% The list of the fields in the desired order
+    {otext2}
+    {otext1}
+}
+\end{Verbatim}
+\newtopic We begin by specifying \verb!\setTabOrder{s}! structure tab order. In the optional argument of the two text fields, we specify an object name for each. These names must be unique throughout the whole document; they are used to reference the fields when setting up the tabbing order.
+
+The \cs{setStructTabOrder} is used to set up the tabbing order, its arguments (enclosed in
+braces) consists of a list of object names (which must exist on the current page). The order of
+the object names is the order of visitation when you tab. PDF objects not referenced are visited
+last after the structure tabbing is complete.
+
+After all annotations have been created on a page, we use the \cs{setStructTabOrder} to
+actually set the tab order; this is none by simply listing the object names, in the desired order, of
+the annotations you want included in the tabbing order. These annotations can be fields, links,
+and markup comments, like sticky notes.
+
+The syntax for \cs{setStructTabOrder} is
+
+\bgroup\obeyspaces%
+\settowidth{\aebdimen}{\ttfamily    [type=\anglemeta{type},title=\anglemeta{title}]\darg{\anglemeta{oRef\_n}}}%
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\setStructTabOrder{%
+    [type=!anglemeta(type),title=!anglemeta(title)]{!anglemeta(oRef_1)}
+    [type=!anglemeta(type),title=!anglemeta(title)]{!anglemeta(oRef_1)}
+    ...
+    [type=!anglemeta(type),title=!anglemeta(title)]{!anglemeta(oRef_n)}
+}
+\end{dCmd}
+\egroup\newtopic Each argument has an optional argument, the required argument (\anglemeta{<oRef\_i>}) is an object name
+of a previously defined PDF object, such as a form field (widget), a link, or an annotation. The
+optional argument takes two optional key-value pairs: (1) The type is a declaration of the type
+the PDF object is, the default is \texttt{Form} (you can use \texttt{Link} if its a link, and \texttt{Annot} if its a comment);
+(2) \texttt{title} is the title of the structure, the value of title appears in the Tags panel of the Acrobat
+user interface. The default title is to have no title.
+
+\newtopic The demo file is \marginpar{\mbox{\makebox[0pt][l]{\textcolor{blue}{\Pisymbol{webd}{254}}}\raisebox{-2pt}{\color{red}{{\zqacr
+b\hspace{9.5pt}}}}}}\texttt{\href{\urlAcroTeXBlog/?p=320}{settaborder.pdf}} for these tabbing features,
+including tabbing using structure, has its source file attached to the PDF file.
+The file is posted one the \href{\urlAcroTeXBlog}{AeB Blog}.
+
+\subsection{Using \texorpdfstring{\protect\cs{setTabOrderByNumber}}{\CMD{setTabOrderByNumber}}}
+
+An alternate method for setting tab order by structure is to directly enter the tab order into the
+optional argument of the field, link, or comment annotation.
+
+\setTabOrder{s} % set tab order to structure
+\setTabOrderByNumber
+
+\textField[\V{text3}\objdef{otext3}\taborder{1}]{text3}{1.25in}{11bp}\\[3bp]
+\textField[\V{text3}\objdef{otext4}\taborder{0}]{text4}{1.25in}{11bp}
+
+\newtopic The verbatim listing of the above form fields follows:
+\begin{Verbatim}[xleftmargin=\amtIndent,]
+\setTabOrder{s} % set tab order to structure
+\setTabOrderByNumber
+
+\textField[\V{text3}\objdef{otext3}\taborder{1}]
+    {text3}{1.25in}{11bp}\\[3bp]
+\textField[\V{text3}\objdef{otext4}\taborder{0}]
+    {text4}{1.25in}{11bp}
+\end{Verbatim}
+\newtopic Note the user of the \cs{objdef} and \cs{taborder} keys. The latter is used to set the order of tabbing.
+
+\newtopic\textcolor{red}{\textbf{Important:}} When setting tab order, there must be an object with \verb!\taborder{0}!; from what I've been able to observe, if no PDF object has tab order zero, the tabbing reverts to what is listed in the Annots array, which is the order the PDF objects were created. If you specify 0, 0, 1, 2, 3\dots, then the two PDF objects with tab order of 0 are visited in the order they were created. Similarly, for the other tab values. A tab order of 0, 2, 3, 4\dots seems to work as well. The object labeled 2 will be visited after the object labeled 0.
+
+%The demo file, \texttt{settaborder1.pdf}, for these tabbing features, including tabbing using structure, has its source file attached to the PDF file. The file is posted one the \href{http://www.math.uakron.edu/~dpstory/aebblog.html}{AeB Blog}.
+
+\newtopic The demo file is \marginpar{\mbox{\makebox[0pt][l]{\textcolor{blue}{\Pisymbol{webd}{254}}}\raisebox{-2pt}{\color{red}{{\zqacr
+b\hspace{9.5pt}}}}}}\texttt{\href{\urlAcroTeXBlog/?p=334}{settaborder1.pdf}} for these tabbing features, including tabbing using structure, has its source file attached to the PDF file. The file is posted one the \href{\urlAcroTeXBlog}{AeB Blog}.
+
+
+%------------------ End PDF Forms and Link ----------------------------
+
+\part{Document and Page JavaScript}
+
+%\section{Introduction}
+
+The \hypertarget{\pkg{insdljs}}{insdljsPkg} package provides support to {\LaTeX} in four areas:
+\begin{enumerate}
+  \item for embedding document level JavaScript into the PDF file created from a {\LaTeX} source,
+        the \texttt{insDLJS} environment.
+  \item for creating open page actions that are executed when the document is first opened to the first
+        page, the \cs{OpenAction} command.
+  \item for writing JavaScript code in an environment that preserves the formatting of the code,
+        this is the \texttt{defineJS} environment.
+  \item for executing JavaScript code once to perform post
+      distill tasks, this is the \texttt{execJS} environment. This environment works only for document
+      authors that use Acrobat/Acrobat Distiller to create PDF files.
+\end{enumerate}
+
+\newtopic This package defines a new environment, \texttt{insDLJS}, used
+for inserting Acrobat JavaScript into a PDF file created from a \LaTeX{}
+source. This package works correctly for users of \textsf{pdftex} (and
+luatex), \textsf{dvipdfm}, \textsf{dvipdfmx}, and \texttt{xetex}. For
+those that use the \textsf{Acrobat Distiller} (specifically, those that
+use either \textsf{dvips} or \textsf{dvipsone} to produce a postscript
+file, which is then distilled), you are required to have Acrobat~5.0 (or
+later).
+
+\section{Package Options}
+
+The \textsf{insdljs} supports five common ``drivers'': \texttt{dvipsone},
+\texttt{dvips}, \texttt{pdftex} (including the executable \textsf{lu(la)tex}), \texttt{dvipdfm},
+\texttt{dvipdfmx}, \texttt{xetex}, and \texttt{tex\-tures}. When using
+\texttt{dvipsone} or \texttt{dvips}, Acrobat Distiller and Acrobat
+(version 5.0 or later) are required to embed the JavaScripts at the
+document level. The other drivers have primitives that allow the embedding
+of the JavaScripts.
+
+\newtopic Other options are discussed in the following paragraphs.
+\begin{description}\def\NH{\hspace{-\labelsep}}
+\item\NH\texttt{nodljs} turns off the embedding of the document level
+    JavaScript. This might be useful, for creating a paper document that is
+    not interactive. For a non-interactive paper document, no JS is needed.
+
+\item\NH\texttt{execJS} is a very useful option/feature if you know  how to use
+    it.  Any JavaScript that is written in an \env{execJS} environment is
+    executed once when the document is first opened in Acrobat, then
+    discarded. AeB uses this for post-distillation document processing. The
+    default is that the JavaScript in an \texttt{execJS} environment is not
+    executed; using this option turns on this feature.
+\end{description}
+
+\section{The \texttt{insDLJS} and \texttt{insDLJS*} Environments}
+
+These are the main environments defined by this package. There are
+two forms of the document level environment, the \texttt{insDLJS} and the
+\texttt{insDLJS*}.  First, we discuss what a document JavaScript is.
+
+\subsection{What is Document Level JavaScript?}
+The document level is a location in the PDF document where scripts can be stored.
+When the PDF document is opened, the document level functions are scanned, and any
+``exposed script'' is executed.
+
+Normally, the type of scripts you would place at the document level are
+general purpose JavaScript functions, functions that are called repeatedly
+or large special purpose functions.  Functions at the document level are
+known throughout the document, so they can be called by links, form
+buttons, page open actions, etc.
+
+Variables declared within a JavaScript function have local scope, they are
+not known outside that function. However, if you can declare variables and
+initialize them at the document level outside of a function, these
+variables will have document wide scope. Throughout the document, the
+values of these global variables are known. For example, suppose the
+following code is at the document level:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+var myVar = 17;       // defined outside a function, global scope
+function HelloWorld()
+{
+    var x = 3;        // defined inside a function, local scope
+    app.alert("AcroTeX, by Hech!", 3);
+}
+\end{Verbatim}
+Both the function \texttt{HelloWorld()} and the variable \texttt{myVar}
+are known throughout the document. The function \texttt{HelloWorld()} can
+be called by a mouse up button action; some form field, executing some
+JavaScript, may access the value of \texttt{myVar} and/or change its
+value.  The variable \texttt{x} is not known outside of the
+\texttt{HelloWorld()} function.
+
+\subsection{The \texttt{insDLJS} Environment}
+
+The \texttt{insDLJS} is the simplest of the two environments. Any material
+within the environment, eventually ends up in the \textsf{DLJS} section of the
+PDF document.
+
+The environment takes the \meta{base\_name} and writes the
+file \texttt{\anglemeta{base\_name}.djs}. This file contains a verbatim
+listing of the JavaScript within the environment, plus some lines
+that change catcodes. The file is then input into the document at
+\cs{AtBeginDocument}.
+
+The case of \textsf{dvipsone} and \textsf{dvips} is a little different. A
+\texttt{\anglemeta{base\_name}.djs} is written and input back, and a second file
+\texttt{\anglemeta{base\_name}.fdf} is written. The second file is later input
+into the PDF document after distillation.
+
+The syntax of usage for this environment, which takes three
+arguments, is given next.
+\settowidth{\aebdimen}{\cs{begin\darg{insDLJS}[\meta{js\_var}]\darg{\meta{base\_name}}\darg{\meta{script\_name}}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\begin{insDLJS}[!meta(js_var)]{!meta(base_name)}{!meta(script_name)}
+...
+    !anglemeta(JavaScript functions or exposed code)
+...
+\end{insDLJS}
+\end{dCmd}
+\EnvDescription JavaScript code is written within the \texttt{insDLJS} environment.
+The code is stored as document-level JavaScript, and is global to the document. Functions
+and variables defined at the top-most level are known to other form elements in the document.
+
+The \texttt{insDLJS} is a verbatim environment, with backslash (\verb!\!)
+and percentage (\texttt{\%}) maintaining their usual {\LaTeX} meaning.
+Commands defined in the {\LaTeX} source file, therefore, are expanded
+before the JavaScript is embedded in the PDF file. The left and right
+braces are set to normal characters, so the commands can't have any
+argument, they should be just text macros.
+
+\PD The environment takes three parameters, the first is optional, but required
+when  using the Acrobat Distiller.
+\begin{description}\def\NH{\hspace{-\labelsep}}%
+\item\NH\texttt{[\meta{js\_var}]} is an
+    optional parameter \emph{was required} for the \texttt{dvipsone}
+    and \texttt{dvips} options; otherwise it is ignored. Its value
+    must be the name of one of the functions or JavaScript variables
+    defined in the environment. This is used to detect whether the
+    \textsf{DLJS} has already been loaded by Acrobat.
+
+\handpoint The \texttt{[\meta{js\_var}]} is now optional even for
+    users of \textsf{dvipsone} and \textsf{dvips}. If one is not
+    provided, then appropriate code is automatically generated.
+
+\item\NH \meta{base\_name} is an alphabetic word with no spaces and limited
+    to eight characters.\footnote{There is actually no limitation on the
+    number of characters in the name, this is a legacy statement from the
+    days of DOS, you remember DOS, don't you?}  It is used to build the
+    names of auxiliary files and to build the names of macros used by the
+    environment.
+
+\item\NH\meta{script\_name} is the name of the JavaScript that you are
+    embedding in the document. This title will appear in the document
+    JavaScript dialog in Acrobat; unless you use Acrobat, you can't
+    see this name in the user interface anyway. The
+    \meta{script\_name} should be a string that is descriptive of
+    the functionality of the code.
+\end{description}
+
+\paragraph*{Commenting.} Within the \texttt{insDLJS} environment, there
+are two types of comment characters: (1) a \TeX{} comment (\verb|%|) and
+(2) a JavaScript comment.   The JavaScript comments are `\texttt{//}', a
+line comment, and `\texttt{/*...*/}' for more extensive commenting. These
+comments will survive and be placed into the PDF file. In JavaScript the
+`\verb|%|' is used as well, use \verb|\%| when you want to use the percent
+character in a JavaScript statement, for example \verb|app.alert("\%.2f", 3.14159);|,
+this statement will appear within your JavaScript code as \verb|app.alert("%.2f", 3.14159);|.
+
+
+\Example The following is a minimal illustration of the use of the
+new environment. Here we assume the document author is using pdftex,
+and is not using the wonderful packages of \textsf{web},
+\textsf{exerquiz} or \textsf{eforms}. In this case, the hyperref
+package with driver in the option must be introduced first, followed
+by \textsf{insdljs} with the same driver, of course. The optional argument
+of the \texttt{insDLJS} environment is not used in this example.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\documentclass{article}
+\usepackage[pdftex]{hyperref}
+\usepackage[pdftex]{insdljs}
+
+\newcommand\tugHello{Welcome to TUG 2001!}
+\begin{insDLJS}{mydljs}{My Private DLJS}
+function HelloWorld() { app.alert("\tugHello", 3); }
+\end{insDLJS}
+\begin{document}
+\begin{Form}     % a hyperref environment, needed for \PushButton
+% use built in form button of hyperref
+Push \PushButton[name=myButton,onclick={HelloWorld();}]{Button}
+\end{Form}
+\end{document}
+\end{Verbatim}
+\noindent The Form environment and the \cs{PushButton} command are defined
+in the hyperref package. The \textsf{insDLJS} uses the Form environment,
+the \textsf{eforms} package defines its own \cs{pushButton} command.
+
+\Example Here is the same example as above, but with \textsf{dvips} as the
+driver and using the \textsf{eforms} package, which calls
+\textsf{insdljs}. Note the  use of the optional argument in the
+\texttt{insDLJS} environment, and the missing \textsf{hyperref} package
+statement and \texttt{Form} environment, the \textsf{eforms} package
+automatically inserts this code.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\documentclass{article}
+\usepackage[dvips]{eforms}
+
+\newcommand\tugHello{Welcome to TUG 2001!}
+\begin{insDLJS}[HelloWorld]{mydljs}{My Private DLJS}
+function HelloWorld() { app.alert("\tugHello", 3); }
+\end{insDLJS}
+\begin{document}
+\pushButton[\CA{Push}\A{\JS{HelloWorld();}}]{Button}{}{11bp}
+\end{document}
+\end{Verbatim}
+
+\subsection{The \texttt{insDLJS*} Environment}
+
+The \texttt{insDLJS*} environment can be used to better organize,
+edit and debug your JavaScript. It is suitable for package
+developers who write a large amount of code package application.
+
+If you have the full Acrobat product, you can open the DLJS edit
+dialog. There you will see a listing of all DLJS contained in the
+document. When you double click on one of the \textit{script names},
+you enter the edit window, where you can edit all JavaScript
+contained under that name.
+
+\bgroup\obeyspaces%
+\settowidth{\aebdimen}{\ttfamily    \anglemeta{JavaScript functions or exposed code}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\begin{insDLJS*}[!meta(js_var)]{!meta(base_name)}
+\begin{newsegment}{!meta(script_name_1)}
+    !anglemeta(JavaScript functions or exposed code)
+\end{newsegment}
+\begin{newsegment}{!meta(script_name_2)}
+    !anglemeta(JavaScript functions or exposed code)
+\end{newsegment}
+...
+...
+\begin{newsegment}{!meta(script_name_n)}
+    !anglemeta(JavaScript functions or exposed code)
+\end{newsegment}
+\end{insDLJS*}
+\end{dCmd}
+\egroup
+\PD The environment takes two parameters, the first is optional, but required
+when  using the Acrobat Distiller. The nested environment \texttt{newsegment} takes
+one required parameter.
+\begin{description}\def\NH{\hspace{-\labelsep}}
+\item\NH\texttt{[\meta{js\_var}]} is an optional parameter, its use is discouraged.
+
+\item\NH\meta{base\_name} is an alphabetic word with no spaces and
+    limited to eight characters. It is used to build the names of auxiliary
+    files and to build the names of macros used by the environment.
+\item\NH\meta{script\_name\_i} is the script name (title) that appears in
+    the Document level JavaScript dialog of Acrobat.
+\end{description}
+
+\subsection{Escaping}
+
+JavaScript uses the backslash as an escape character, just as does \TeX. The insdljs pacakge
+tries to make the transition from {\TeX} to JavaScript as easy as possible. In the table below,
+is a listing of the more useful characters represented by a backslash.
+
+\begin{tabular}{ll}
+Sequence & Character represented \\
+\cs{t}   & horizontal tab (\cs{u0009}) \\
+\cs{n}   & newline (\cs{u000A}) \\
+\cs{r}   & carriage return (\cs{u000D}) \\
+\cs{"}   & double quote (\cs{u0022}) \\
+\cs{'}   & apostrophe or single quote (\cs{u0027}) \\
+\verb|\\|     & backslash (\cs{u005C})\\
+\cs{xXX} & the Latin-1 character specified by the two hexadecimal digits \texttt{XX} \\
+\cs{uXXXX}& the unicode character specified by the four hexadecimal digits \texttt{XXXX} \\
+\cs{XXX} & the Latin-1 character specified by the octal digits \texttt{XXX}, between \\
+      & 1 and 377. \\
+\end{tabular}
+
+\newtopic Within a JavaScript string, these special characters should be double escaped, \verb|\\|, like so:
+
+\newtopic \pushButton[\textFont{Arial}\CA{Push Me}\A{\JS{%
+    app.alert("The \\"cost\\" of this package is \\u20AC 0.\\rThis, \\"\\\\\\" is a backslash");
+}}]{demoEsc}{}{11bp}
+
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\pushButton[\textFont{Arial}\CA{Push Me}\A{\JS{%
+    app.alert("The \\"cost\\" of this package is \\u20AC 0.\\rThis,
+    \\"\\\\\\" is a backslash");
+}}]{demoEsc}{}{11bp}
+\end{Verbatim}
+\newtopic Note the double backslash of backslash, which comes out to four, count them four backslashes,
+`'\verb|\\\\|''.
+
+Again, both JavaScript and \TeX, certain punctuation marks have special meaning; in the case of
+JavaScript, punctuation has a special meaning within regular expressions:
+\begin{flushleft}
+\textbf{Special Punctuation in Regular Expressions}
+\begin{Verbatim}[xleftmargin=\amtIndent]
+     ^ $ . * + ? = ! : | \ / ( ) [ ] { }
+\end{Verbatim}
+\end{flushleft}
+\noindent When these occur in a regular expression, within a string, they need to be double escaped, \verb|\\|.
+Outside of a sting, they need only be escaped.
+
+\Example The following code searches through the string \texttt{str} and
+replaces every occurrence of the period character with ``\verb|\.|''.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+str = "AcroTeX rocks. AcroTeX rolls."
+str = str.replace(/\./g, "\\.");
+\end{Verbatim}
+\noindent When this code is executed, the result is
+``AcroTeX rocks\verb|\.| AcroTeX rolls\verb|\.|''.
+
+\Example If one of these special characters appears outside a
+JavaScript string, within a regular expression pattern, for example,
+they need only be escaped. The code \verb|(/\)\^\(/.test(str))|
+searches the string \texttt{str} for any occurrence of ``\verb!)^(!''
+and returns \texttt{true} if such a pattern is found, \texttt{false}
+otherwise. If \verb!str="(x+1)^(3)"!, the search returns \texttt{true}.
+
+\subsection{Access and Debugging}
+For those who do not have \textsf{Acrobat}, the application,
+unless you are writing very simple code, writing and debugging
+JavaScript will be very difficult.  From the Acrobat Reader,
+there is no access to the document JavaScript. You will be
+pretty much writing blind.
+
+Normally, I develop the JavaScript from within Acrobat. The GUI editor
+does check for syntax errors, giving you a chance to correct some simple
+errors as you go. After I am satisfied with my code, I copy it from the
+editor and paste it into a \texttt{insDLJS} environment. This is how the
+JavaScript code of \textsf{exerquiz} was developed.
+
+In my opinion, if you want to develop rather complicated code, having the
+full Acrobat product is a must. (This implies that the Windows or Mac
+platform is needed!)
+
+\subsection{JavaScript References}
+
+The JavaScript used by Acrobat consists of the core JavaScript plus Acrobat's JavaScript extensions.
+The \textit{Core JavaScript Reference}~\cite{tech:NetscapeJSReference} may be found at \mlhref{http://developer.mozilla.org/en/docs/JavaScript}{Mozilla Developer Center}.
+The documentation for the Acrobat extensions may be found in the guides \textit{JavaScript for Acrobat API Reference}~\cite{tech:AcroJSRef}
+and \textit{Developing Acrobat Applications using JavaScript}~\cite{tech:AcroJSGuide}, both of which I've had a hand in writing. These
+are found at \href{http://www.adobe.com/devnet/acrobat/}{Acrobat Developer Center}. (Click on \textbf{JavaScript for Acrobat} in the right-hand navigation panel.)
+
+\section{Open Action}
+
+This package also defines an \cs{OpenAction} command to introduce actions that are
+executed when the PDF document is  opened on page~1. The open action command only
+applies to page~1.
+\settowidth{\aebdimen}{\ttfamily\string\OpenAction\darg{\meta{action\_code}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\OpenAction{!meta(action_code)}
+\end{dCmd}
+\CmdLoc This command must appear in the preamble of the document.
+
+\CmdDescription Executes the action(s) each time page~1 is
+opened. The argument \texttt{<action\_code>} is any action subtype, as listed
+in Section 8.5.3 of the \emph{PDF Reference, sixth edition, PDF
+1.7}. Two common types are JavaScript and Named actions. The \cs{OpenAction}
+command may be repeated, which will add to the list of open actions
+to be executed at the opening of page~1.
+
+Special commands are defined in \textsf{insdljs}, \cs{JS} and \cs{Named}, that
+make it easy to specify these types of actions.
+
+\Example \verb|\OpenAction{\JS{app.alert("Hello World!");}}|
+
+\Example You can use \cs{r} and \cs{t}---carriage return and tab,
+respectively---to format multiple lines of JavaScript:
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\OpenAction{\JS{%
+    app.alert("Hello World!");\r
+    app.alert("Good Day to You!");
+}}
+\end{Verbatim}
+
+\Example Multiple \cs{OpenAction} can be entered. Code is executed in the same order.
+Here, we show an alert box with a message, then jump to the last page.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\OpenAction{\JS{app.alert("AcroTeX rocks the world!");}}
+\OpenAction{\Named{LastPage}}
+\end{Verbatim}
+
+\newtopic For the other pages, beyond page~1, \cs{thisPageAction} can be used;
+the command can also be used for page~1 as well (it must go in the
+preamble).
+
+\settowidth{\aebdimen}{\ttfamily\string\thisPageAction\darg{\meta{open\_script}}\darg{\meta{close\_script}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\thisPageAction{!meta(open_script)}{!meta(close_script)}
+\end{dCmd}
+\CmdLoc For page~1, this command must go in the preamble, otherwise, it
+goes on the page for which it is intended.
+
+\CmdDescription \meta{open\_script} is an action that is to be
+executed when the current page is opened; \meta{close\_script} is an
+action to be executed when the current page is closed.
+
+\Example Below is a simple example of how to use \cs{thisPageAction}.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+...
+\thisPageAction{\JS{console.println("Open: page 1");}}
+    {\JS{console.println("Close: page 1");}}
+\begin{document}
+page 1
+\newpage
+page 2
+\thisPageAction{\JS{console.println("Open: page 2");}}
+    {\JS{console.println("Close: page 2");}}
+...
+\end{document}
+\end{Verbatim}
+When \cs{thisPageAction} is executed in the preamble,
+the \texttt{<open\_action>} argument gets passed to
+the \cs{OpenAction} command.
+
+\section{The \textsf{execJS} Environment}
+
+This is an environment useful to PDF developers who want to tap into
+the power of JavaScript. To use this environment, the developer
+needs Acrobat~5.0 or higher. \textsf{pdftex} or \textsf{dvipdfm} can
+be used to produce the PDF document, but the developer needs
+the Acrobat product for this environment to do anything.
+
+The \texttt{execJS} is used primarily for post-distillation
+processing (post-creation processing, in the case of \textsf{pdftex}
+and \textsf{dvipdfm}). The \texttt{execJS} environment can be used,
+for example, to automatically import named icons into the document,
+which can, in turn, be used for an animation.
+
+The \textsf{execJS} is an environment in which you can write
+verbatim JavaScript code. This environment is a variation on
+\textsf{insdljs}, it writes a couple of auxiliary files to disk; in
+particular, the environment creates an \texttt{.fdf} file. When the
+newly produced PDF is loaded for the first time into the viewer
+(Acrobat, not Reader), the \texttt{.fdf} file generated
+by the \textsf{execJS} environment is imported, and the JavaScript
+executed. This JavaScript is \emph{not} saved with the document.
+The syntax of this environment is\dots
+
+\settowidth{\aebdimen}{\ttfamily\string\begin\darg{execJS}\darg{\meta{name}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\begin{execJS}{!meta(name)}
+....
+!anglemeta(JavaScript code)
+....
+\end{execJS}
+\end{dCmd}
+
+\PD The environment takes one required argument, the base name of the
+auxiliary files to be generated.
+
+Many of the more useful JavaScript methods have security restrictions,
+the developer must create folder JavaScript that can be used to \emph{raise
+the privilege} of the methods.
+
+\Example Here is an extensive example taken from the AeB Pro distribution.
+The following code is user folder JavaScript code, see the AeB Pro documentation
+on how to locate the user JavaScript folder. We define a function \texttt{aebTrustedFunctions}
+that is the interface to accessing the restricted methods.
+\begin{Verbatim}[xleftmargin=\amtIndent]
+/*
+    AEB Pro Document Assembly Methods
+    Copyright (C) 2006 AcroTeX.Net
+    D. P. Story
+    http://www.acrotex.net
+    Version 1.0
+*/
+if ( typeof aebTrustedFunctions == "undefined") {
+    aebTrustedFunctions = app.trustedFunction(
+        function ( doc, oFunction, oArgs ) {
+        app.beginPriv();
+            var retn = oFunction( oArgs, doc )
+        app.endPriv();
+        return retn;
+    });
+}
+// Add a watermark background to a document
+aebAddWatermarkFromFile = app.trustPropagatorFunction (
+    function ( oArgs, doc ) {
+    app.beginPriv();
+        return retn = doc.addWatermarkFromFile(oArgs);
+    app.endPriv();
+});
+\end{Verbatim}
+
+Once this code is installed in the user JavaScript folder, and Acrobat is re-started, the code
+is ready to be used. The way the code is used is with the \texttt{execJS} environment.
+
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\def\bgPath{"/C/acrotex/ManualBGs/Manual_AeB.pdf"}
+\begin{execJS}{execjs}
+    aebTrustedFunctions( this, aebAddWatermarkFromFile,
+        {bOnTop: false, cDIPath: \bgPath} )
+\end{execJS}
+\end{Verbatim}
+
+\newtopic This is the code used to prepare this manual. It places a
+background graphic on each page of the document.  When the newly
+distilled document is first opened in Acrobat, (version 7.0 or
+higher, is when the privilege bit started to appear), the trusted
+function \texttt{aebTrustedFunctions} is executed with its
+arguments. Looking at the definition of
+\texttt{aebTrustedFunctions}, what is executed is
+\begin{Verbatim}[xleftmargin=\amtIndent]
+app.beginPriv();
+    return retn = this.addWatermarkFromFile({bOnTop: false,
+        cDIPath: "/C/acrotex/ManualBGs/Manual_AeB.pdf"});
+app.endPriv();
+\end{Verbatim}
+\newtopic AeB Pro, the {Acro\!\TeX} Presentation Bundle and @EASE use these execJS techniques.
+
+\section{The \textsf{defineJS} Environment}\label{defineJS}
+
+When you create a form element (button, text field, etc.), you
+sometimes want to attach JavaScript.  The \texttt{defineJS}
+environment aids you in writing your field level JavaScript. It too
+is a verbatim environment, however, this environment does not write to an auxiliary
+file, but saves the contents in a token register. The contents of
+the register are used in defining a macro that expands to the
+verbatim listing.
+
+\settowidth{\aebdimen}{\ttfamily\string\begin\darg{defineJS}[\anglemeta{tex/latex\_cmds}]\darg{\meta{Cmd}}}
+\begin{dCmd}[commandchars=!()]{\aebdimen+2\fboxsep+2\fboxrule}
+\begin{defineJS}[!anglemeta(tex/latex_cmds)]{!meta(Cmd)}
+...
+!anglemeta(JavaScript code)
+...
+\end{defineJS}
+\end{dCmd}
+
+\PD The \texttt{defineJS} environment takes two parameters, the
+first optional. the required parameter is the command name to be
+defined. Use the optional first parameter to modify the verbatim
+environment, as illustrated in the example below.  The
+\texttt{defineJS} is a complete verbatim environment: no escape, and
+no comment characters are defined. You can use the optional
+parameter to create an escape character.  You can pretty much use
+any character you wish, \emph{except} the usual one `\verb+\+',
+backslash.
+
+\Example The following example illustrates the usage of the \texttt{defineJS} environment.
+\begin{dCmd*}{.67\linewidth}
+% Make @ the escape so we can
+% demonstrate the optional parameter.
+\def\HelloWorld{Hello World!}
+\begin{defineJS}[\catcode`\@=0\relax]{\JSA}
+var sum = 0;
+for (var i = 0; i < 10; i++)
+{
+    sum += i;
+    console.println("@HelloWorld i = " + i );
+}
+console.println("sum = "+sum);
+\end{defineJS}
+\begin{defineJS}{\JSAAE}
+console.println("Enter the button area");
+\end{defineJS}
+\begin{defineJS}{\JSAAX}
+console.println("Exiting the button area");
+\end{defineJS}
+\pushButton[\A {\JS{\JSA}}
+    \AA{\AAMouseEnter{\JS{\JSAAE}}
+        \AAMouseExit{\JS{\JSAAX}}}
+]{myButton}{30bp}{15bp}
+\end{dCmd*}
+\newtopic The code of \cs{JSAAE} and \cs{JSAAX} are so simple, the \texttt{defineJS} environment
+was really not needed. A simple \cs{newcommand} definition would have been sufficient.
+
+\newtopic See \Nameref{lengthyJS} for an additional example of the use of the \texttt{defineJS} environment.
+
+\newpage
+%\appendix
+\markright{Appendix}
+\part{Appendices}\label{appendix}
+%\section*{Appendix}\label{appendix}
+% \addcontentsline{toc}{section}{\protect\numberline{}Appendix}
+
+\appendixsubsection{The Annotation Flag \textsf{F}}
+%\addcontentsline{toc}{appendixsubsection}{\protect\numberline{}The Annotation Flag \textsf{F}}
+
+The annotation flag \textsf{F} is a bit field that is common to all
+annotations.
+
+\begin{center}
+\begin{tabular}{>{\small\ttfamily\bslash}l>{\small}l}
+\multicolumn{2}{>{\bfseries}l}{Annotation Flag \textsf{F}}\\\hline
+\multicolumn{1}{>{\bfseries\small}l}{\hypertarget{tableF}{Flag}} &\multicolumn{1}{>{\bfseries\small}l}{Description}\\
+FHidden    & hidden field \\
+FPrint     & print\\
+FNoView    & no view\\
+FLock      & locked field (PDF 1.4)\\
+\end{tabular}
+\end{center}
+
+\medskip\noindent
+In the user interface for Acrobat, there are four visibility
+attributes for a form field. The table below is a list of these,
+and an indication of how each visibility attribute can be attained
+through the \textsf{F}.
+
+\begin{center}
+\begin{tabular}{>{\small}l>{\small}l}
+\bfseries \hypertarget{visibility}{UI Description}&\bfseries Use\\\hline
+ Visible (and printable)     &  \\
+ Hidden but printable        & \verb+\F{\FNoView}+\\
+ Visible but doesn't print   & \verb+\F{\FNoPrint}+\\
+ Hidden (and does not print) & \verb+\F{\FHidden}+  \\
+\end{tabular}
+\end{center}
+\redpoint All fields created by the \textsf{eForm} commands are
+printable by default.
+
+
+\newpage
+
+% Field Flags /Ff
+% Choice : Pushbuttons, Checkboxes, Radio Buttons
+% Text Fields
+% Choice Fields: list box, combo box
+% Signature fields
+\appendixsubsection{Annotation Field flags \textsf{Ff}}
+%\addcontentsline{toc}{appendixsubsection}{\protect\numberline{}Annotation Field flags \textsf{Ff}}
+
+The table below lists some convenience macros for setting the \textsf{Ff} bit field.
+
+\begin{longtable}{>{\small\ttfamily\targ}l>{\small}l>{\small}l}
+\multicolumn3{>{\bfseries}c}{\hypertarget{tableFf}{Annotation Field flags} \textsf{Ff}}\\\hline
+\multicolumn1{>{\bfseries\small}l}{Flag}& \multicolumn1{>{\bfseries\small}l}{Description}&\multicolumn1{>{\bfseries\small}l}{Fields}\\
+\endfirsthead
+\multicolumn1{>{\bfseries\small}l}{Flag}& \multicolumn1{>{\bfseries\small}l}{Description}&\multicolumn1{>{\bfseries\small}l}{Fields}\\
+\endhead
+FfReadOnly?           &  Read only field               & all \\
+FfRequired?           &  Required field (Submit)       & all \\
+FfNoExport?           &  Used with Submit Action       & all \\
+FfMultiline?          &  For Multiline text field      & text\\
+FfPassword?           &  Password field                & text \\
+FfNoToggleToOff?      &  Used with Radio Buttons       & Radio only\\
+FfRadio?              &  Radio Button Flag             & Radio if set\\
+FfPushButton?         &  Push Button Flag              & Push button\\
+FfCombo?              &  Combo Flag                    & choice\\
+FfEdit?               &  Edit/NoEdit                   & combo\\
+FfSort?               &  Sort List                     & choice\\
+FfFileSelect?         &  File Select  (PDF 1.4)        & text\\
+FfMultiSelect?        &  multiple select (PDF 1.4)     & choice\\
+FfDoNotSpellCheck?    &  Do not spell check (PDF 1.4)  & text, combo\\
+FfDoNotScroll?        &  do not scroll (PDF 1.4)       & text\\
+FfComb?               &  comb field  (PDF 1.5)         & text\\
+FfRadiosInUnison?     &  radios in unison  (PDF 1.5)   & radio\\
+FfCommitOnSelChange?  &  commit on change (PDF 1.5)    & choice\\
+FfRichText?           &  rich text (PDF 1.5)           & text\\
+\end{longtable}
+
+\newpage
+
+\appendixsubsection{Supported Key Variables}
+%\addcontentsline{toc}{appendixsubsection}{\protect\numberline{}Supported Key Variables}
+
+Below is a list of the keys supported for modifying the appearance
+or for creating an action of a field. If the default value of a
+key is empty, e.g., \verb+\Ff{}+, then that key does not appear in
+the widget.  The Acrobat viewer may have a default when any
+particular key does not appear, e.g. \verb+\W{}+ will be
+interpreted as \verb+\W{1}+ by the viewer.
+
+\newtopic In the past, the value of the \Cs{textColor} key must include the color model specification:
+\begin{itemize}
+\item \texttt{g} (for gray scale): a single number between 0 and 1; example, \verb!\textColor{.5 g}!
+\item \texttt{rg}: Red Green Blue: a list of three numbers between 0 and 1 giving the components of color; for example \verb!\textColor{.1 .2 .3 rg}!
+\item \texttt{k} Cyan Magenta Yellow [K]Black: a list of four numbers between 0 and 1 giving the components of the color according to the subtractive model used in most printers; for example \verb!\textColor{.1 .2 .3 .4 k}!
+\end{itemize}
+In this current version of \textsf{eforms}, the color model can be optionally included. The \textsf{eforms} package will supply the correct specification as a function of the number of arguments provided. Thus, the examples above can now be written as \verb!\textColor{.5}!, \verb!\textColor{.1 .2 .3}!, and \verb!\textColor{.1 .2 .3 .4}!.
+
+\newtopic\textbf{\textcolor{red}{Note:}} Regarding the keys \Cs{textColor}, \Cs{BG}, \Cs{BC}, and \cs{Color}\footnote{Information regarding the \cs{Color}
+key may be found in \hyperref[linkAnnots]{Section~\ref*{linkAnnots}},
+page~\pageref*{linkAnnots}. The \cs{Color} key is more fully documented in
+the rather comprehensive article
+\textsl{\href{http://www.math.uakron.edu/~dpstory/aebblog/aeb_links.pdf}{Support
+for Links in AeB/eForms}} posted on the
+\href{\urlAcroTeXBlog}{AeB Blog}.},
+beginning with \textsf{eforms} dated 2010/07/23 or later, \textsf{eforms}
+now uses the \textsf{hycolor} package to process all color keys (listed
+above); consequently, if the \textsf{xcolor} package is also loaded on
+your system, you can use \emph{named colors} to specify color for the
+\textsf{eforms} keys. For example, if the definition was made
+\begin{Verbatim}[xleftmargin=\amtIndent]
+\definecolor{myBlue}{rgb}{0.24,0.38,0.68}
+\end{Verbatim}
+then each of the following is valid: \verb!\textColor{myBlue}! (for specifying text color for text fields), \verb!\BG{myBlue}! (for specifying the background color of a field), \verb!\BC{myBlue}! (for specifying the border color of a field), and \verb!\Color{myBlue}! (for specifying the border color of a link).
+
+\newpage
+\begingroup
+\setlength{\extrarowheight}{3mm}\setlength{\tabcolsep}{3pt}
+
+\begin{longtable}{>{\small\ttfamily\targ}l>{\small\PBS\raggedright}p{2.25in}>{\small}p{1.25in}}
+\multicolumn{3}{>{\bfseries}c}{Supported Key \hypertarget{kv}{Variables}}\\
+\multicolumn1{>{\bfseries\small}l}{Key}& \multicolumn1{>{\bfseries\small}l}{Description}&\multicolumn1{>{\bfseries\small}l}{Default}\\\hline
+\endfirsthead
+\multicolumn1{>{\bfseries\small}l}{Key}& \multicolumn1{>{\bfseries\small}l}{Description}&\multicolumn1{>{\bfseries\small}l}{Default}\\\hline
+\endhead
+%----------------------------------------------------------------
+\multicolumn{3}{l}{\color{blue}Entries common to all annotations:}\\
+F?       & See the \hyperlink{tableF}{annotation \textsf{F} flag Table}  &\verb+\F{}+\\
+\multicolumn{3}{>{\small\bfseries}l}{Border Style Dictionary (BS)}\\
+W?   & Width in points around the boundary of the field,
+      for example, \verb+\W{1}+.                          &\verb+\W{}+\newline (same as \verb+\W{1})+\\
+S?   & Line style, values are \texttt{S} (solid), \texttt{D} (dashed),
+      \texttt{B} (beveled), \texttt{I} (inset), \texttt{U} (underlined); \verb+\S{B}+ &\verb+\S{}+\\
+AA?     & Additional actions, a dictionary. These actions are triggers by mouse up, mouse down,
+         mouse enter, mouse exit, on focus, on blur events; for text and editable combo boxes there is also
+         the format, keystroke, validate and calculate events. The various triggers are discussed in
+         \nameref{triggers}.
+       & \verb+\AA{}+ \newline(no actions)\\
+A?      & Action dictionary, use this to define JavaScript actions, as well as other actions,
+          for mouse up events. See \nameref{triggers} for a discussion of the mouse up event.
+       & \verb+\A{}+\newline(no action)\\
+Border? & Used with link annotations, an array of three numbers and an optional dash array.
+         If all three numbers are 0, no border is drawn &\verb+\Border{0 0 0}+\newline (no border)\\
+AP?     & Appearance dictionary, used mostly in {\AcroT} with check boxes
+         to define the `On' value. &\verb+\AP{}+\\
+AS?     & Appearance state, normally used with check boxes and radio buttons when there are
+         more than one appearance. Advanced techniques only. &\verb+\AS{}+\\\hline
+%--------------------------------------------------------------
+\multicolumn{3}{l}{\color{blue}Entries common to all fields:}\\
+TU? & Tool tip (PDF 1.3), for example, \verb+\TU{Address}+. Obeys \texttt{unicode} option.&\verb+\TU{}+\\
+Ff? & See the \hyperlink{tableFf}{Field flag \textsf{Ff} table}; e.g. \verb+\Ff{\FfReadOnly}+
+     makes the field read only. & \verb+\Ff{}+\\
+DV?  & Default value of a field. This is the value that appears when the field is reset;
+      e.g., \verb+\DV{Name:}+. Obeys \texttt{unicode} option.&\verb+\DV{}+\\
+V?   & Current value of the field; for example, \verb+\V{D. P. Story}+. Obeys \texttt{unicode} option.&\verb+\V{}+\\\hline
+%--------------------------------------------------------------
+\multicolumn{3}{l}{\color{blue}Entries specific to a widget annotation:}\\
+H? & Highlight, used in button fields and link annotations. Possible values
+ are \texttt{N} (None), \texttt{P} (Push), \texttt{O} (Outline), \texttt{I} (Invert); e.g.,
+ \verb+\H{P}+.&\verb+\H{}+\newline(same as \verb+\H{I}+)\\
+%\pagebreak
+\multicolumn{3}{>{\small\bfseries}l}{Appearance Characteristics Dictionary (MK)}\\
+MK?& A dictionary that contains the keys listed below. For all fields
+     the \texttt{MK} has a template that is filled in using the keys below; this key
+     is available only for check boxes and radio buttons. & various\\
+R? & Number of degrees the field is to be rotated counterclockwise.
+    Must be a multiple of 90 degrees; \verb+\R{90}+.&\verb+\R{}+\\
+BC?& The boundary color, a list of 0 (transparent), 1 (gray), 3 (RGB) or 4 (CMYK)
+    numbers between 0 and 1. For example, \verb+\BC{1 0 0}+ is a red border.
+    &\verb+\BC{}+\newline(transparent)\\
+BG?& Background color. Color specification same as \cs{BC}&\verb+\BG{}+\newline(transparent)\\
+CA?& Button fields (push, check, radio) The widget's normal caption; e.g. \verb+\CA{Push}+,
+    in the case of a push button. For check boxes and radio, the value of
+    \cs{CA} is a code that indicates whether a check, circle, square, star, etc.
+    is used.  These codes are introduced through \cs{symbolchoice}. Obeys \texttt{unicode} option.&\verb+\CA{}+\\
+RC?& Push button fields only. The roll over text caption. Obeys \texttt{unicode} option.&\verb+\RC{}+\\
+AC?& Push button fields only. The down button caption. Obeys \texttt{unicode} option.&\verb+\AC{}+\\
+mkIns?& A variable for introducing into the \texttt{MK} dictionary any other key-value pairs not listed above.
+        Principle examples are \texttt{I}, \texttt{RI}, \texttt{IX}, \texttt{IF}, \texttt{TP},
+        which are used for displaying icons on a button field. See an
+        example in the demo file \textsf{eforms.tex} &\verb+\mkIns{}+\\
+I?   & (push buttons only) an indirect reference to a form XObject defining the buttons's \emph{normal icon}&\verb+\I{nIcon}+\\
+RI?   & (push buttons only) an indirect reference to a form XObject defining the buttons's \emph{rollover icon}&\verb+\RI{rIcon}+\\
+IX?   & (push buttons only) an indirect reference to a form XObject defining the buttons's \emph{down icon}&\verb+\I{dIcon}+\\
+TP?   & (push buttons only; optional) A code indicating the \texttt{layout} of the text and icon; these codes are
+        0 (label only); 1 (icon only); 2 (label below icon); 3 (label above icon); 4 (label to the right of icon);
+        5 (label to the left of icon); 6 (label overlaid on the icon). The default is 0.&\verb+\TP{1}+\\
+SW?   & (push buttons only; optional) The \emph{scale when key}. Permissible values are \texttt{A} (always scale),
+        \texttt{B} (scale when icon is too big), \texttt{S} (scale when icon is too small), \texttt{N}
+        (never scale). The default is \texttt{A}. &\verb+\SW{A}+\\
+ST?     & (push buttons only; optional) The \emph{scaling type.} Permissible values are \texttt{A}
+            (anamorphic scaling); \texttt{P} (proportional scaling). The default is \texttt{P}.
+            &\verb+\ST{P}+\\
+PA?     & (push buttons only; optional) The \textit{position array.} An array of two numbers, each
+            between 0 and 1 indicating the fraction of left-over space to allocate at the left and bottom
+            of the annotation rectangle. The two numbers should be separated by a space. The default value, \verb!\PA{.5 .5}!,
+            centers the icon in the rectangle. & \verb!\PA{0 0}!\\
+FB?  & (push buttons only; optional) The \emph{fit bounds} Boolean. If \texttt{true}, the button appearance
+        is scaled to fit fully within the bounds of the annotation without taking into consideration
+        the line width of the border. The default is \texttt{false}. &\verb+\FB{true}+\\\hline
+%--------------------------------------------------------------
+%\pagebreak
+\multicolumn{3}{l}{\color{blue}Entries common to fields containing variable text:}\\
+Q?      & Quadding for text fields. Values are \texttt{0} (left-justified),
+         \texttt{1} (centered), \texttt{2} (right-justified); e.g., \verb+\Q{1}+.
+       &\verb+Q{}+\newline(left justified)\\
+\multicolumn{3}{>{\small\bfseries}l}{Default Appearance (DA)}\\
+DA?       & Default appearance string of the text in the widget. Normally, you just
+           specify text font, size and color. Can be redefined, advance techniques needed.&\\
+textFont? & Font to be used to display the text &\verb+\textFont{Helv}+\\
+textSize? & size in points of the text &\verb+\textSize{9}+\\
+textColor?& color of the text, there are several color spaces, including
+           grayscale and RGB; for example, \verb+\textColor{1 0 0 rg}+,
+           gives a red font. Recent advances in parsing this command have eliminated the
+           need to include the color space specification. Thus, \verb+\textColor{1 0 0}+
+           also gives a red font.
+           &\verb+\textColor{0 g}+\\\hline
+%------------------------------------------------------------------
+%\pagebreak
+\multicolumn{3}{l}{\color{blue}Entries specific to text fields:}\\
+MaxLen?   & The maximum length of the text string input into a text field.
+           Used also with comb fields to set the number of combs.
+           Example, \verb+\MaxLeng{15}+.&\verb+\MaxLen{}+\\\hline
+%------------------------------------------------------------------
+\multicolumn{3}{l}{\color{blue}Entries specific to signature fields:}\\
+Lock?   & This key is used to lock fields after the signature field is
+           signed. Example, \verb+\Lock{/Actions/All}+. See
+           \autoref{sigfields}, page~\pageref*{sigfields} for more examples.
+            &\verb+\Lock{}+\\\hline
+%-------------------------------------------------------------------
+%\pagebreak
+\multicolumn{3}{l}{\color{blue}Specialized, non-PDF Spec, commands:}\\
+rawPDF?  & If all else fails, you can always introduce key-value pairs
+          through this variable. &\verb+\rawPDF{}+\\
+autoCenter? & There is a centering code that attempts to give a pleasant
+             placement of the field. Say \verb+\autoCenter{n}+ to
+             turn this off.&\\
+presets? & This commands takes a macro as its argument, the text of the macro
+          are key-value pairs. This is useful for setting up a series of
+          presets for fields. Example, \verb|\presets{\myFavFive}|\\
+symbolchoice? & Use this variable to specify what symbol is to be used
+               with a check box or radio button. Possible values are
+               \texttt{check}, \texttt{circle}, \texttt{cross},
+               \texttt{diamond}, \texttt{square} and \texttt{star}. Can
+               be used to globally change the symbol choice as well; for
+               example, \verb+\symbolchoice{check}+, which is the
+               default value.\\
+linktxtcolor? & The value of this variable is a named color and is the
+               color of the link text. Only recognized
+               in link annotations. A value of
+               \verb!\linktxtcolor{}! paints the text the \cs{normalcolor}.&\cs{linktxtcolor}\newline\verb+   {\@linkcolor}+
+\end{longtable}
+\endgroup
+
+%The JavaScript used by Acrobat consists of the core JavaScript plus Acrobat's JavaScript extensions.
+%Core JavaScript can be found at \href{http://developer.mozilla.org/en/docs/JavaScript}{Mozilla Developer Center}.\footnote
+%{\url{http://developer.mozilla.org/en/docs/JavaScript}}
+%and documentation of the Acrobat extensions can be found in the guides \texttt{JavaScript for Acrobat API Reference}
+%and \emph{Developing Acrobat Applications using JavaScript}, both of which I've had a hand in writing. These
+%can be found at the \href{http://www.adobe.com/devnet/acrobat/}{Acrobat Developer Center},\footnote
+%{\url{http://www.adobe.com/devnet/acrobat/}}. Click on \textbf{JavaScript for Acrobat} in the right-hand navigation panel.
+
+
+\newpage
+\markright{References}
+
+\begin{thebibliography}{[1]}\label{references}
+\addcontentsline{toc}{section}{\protect\numberline{}References}
+
+\bibitem{tech:NetscapeJSGuide}
+    \textit{Core JavaScript Guide}, available from \href{http://developer.mozilla.org/en/docs/JavaScript}{Mozilla Developer Center}.
+
+\bibitem{tech:NetscapeJSReference}
+    \textit{Core JavaScript Reference} available from \href{http://developer.mozilla.org/en/docs/JavaScript}{Mozilla Developer Center}.
+
+\bibitem{tech:AcroJSGuide}
+   \textit{Developing Acrobat Applications using JavaScript}, available from
+   \mlhref{http://www.adobe.com/devnet/acrobat/}{Acrobat Developer Center}
+
+\bibitem{tech:AcroJSRef}\hypertarget{references}{}%
+   \textit{JavaScript for Acrobat API Reference},available from
+   \href{http://www.adobe.com/devnet/acrobat/}{Acrobat Developer Center}
+
+
+\bibitem{tech:PDFRef}
+    \textit{PDF Reference, sixth edition, PDF 1.7}, available from
+   \href{http://www.adobe.com/devnet/acrobat/}{Acrobat Developer Center}
+
+\end{thebibliography}
+
+\end{document}
+
+
+\def\@eqautoCenter#1{\let\autoCenter=#1}
+\let\autoCenter=y
+\def\@eqsymbolchoice#1{\expandafter\ifx\csname eq@#1\endcsname\relax
+   \typeout{exerquiz: `#1' is not an acceptable option
+   for \string\symbolechoice, inserting default, `check'.}
+   \edef\symbol@choice{\eq@check}\else
+   \edef\symbol@choice{\csname eq@#1\endcsname}\fi
+}
+\def\eq@protect#1{\let#1=\@empty}
+
+
+% \begin{localJS}
+% \begin{defineJS}{\validateJS}
+% if (event.value > 1000 || event.value < -1000) {
+%     app.alert("Invalid value, rejecting your value!");
+%     event.rc = false;
+% }
+% \end{defineJS}
+% \textField[\AA{
+%     \AAKeystroke{AFNumber_Keystroke(2, 0, 1, 0, "\\u0024", true);}
+%     \AAFormat{AFNumber_Format(2, 0, 1, 0, "\\u0024", true);}
+%     \AAValidate{\validateJS}}]{myTexta}{1.5in}{12bp}
+% \end{localJS}
+
+% \textField[\AA{
+%     \AAKeystroke{AFNumber_Keystroke(2, 0, 1, 0, "\\u0024", true);}
+%     \AAFormat{AFNumber_Format(2, 0, 1, 0, "\\u0024", true);}
+%     \AAValidate{%
+%         if (event.value > 1000 || event.value < -1000) {\r\t
+%             app.alert("Invalid value, rejecting your value!");\r\t
+%             event.rc = false;\r
+%         }
+%     }
+%     }]{myTexta}{1.5in}{12bp}
+
+9.0:Close|GeneralInfo|Quit|FirstPage|PrevPage|NextPage|LastPage|ActualSize|FitPage|FitWidth|FitHeight|SinglePage|OneColumn|TwoPages|TwoColumns|ZoomViewIn|ZoomViewOut|ShowHideBookmarks|ShowHideThumbnails|Print|GoToPage|ZoomTo|GeneralPrefs|SaveAs|FullScreen|OpenOrganizer|Scan|Web2PDF:OpnURL|AcroSendMail:SendMail|Spelling:CheckSpelling|PageSetup|Find|FindSearch|GoBack|GoForward|FitVisible|                       ShowHideToolbarCommenting|ShowHideToolbarEdit|ShowHideToolbarFile|ShowHideToolbarFind|ShowHideToolbarForms|ShowHideToolbarMeasuring|ShowHideToolbarData|ShowHideToolbarPageDisplay|ShowHideToolbarNavigation|ShowHideToolbarPrintProduction|ShowHideToolbarRedaction|ShowHideToolbarBasicTools|ShowHideToolbarTasks|ShowHideToolbarTypewriter|PropertyToolbar|ShowHideArticles|ShowHideFileAttachment|ShowHideAnnotManager|ShowHideFields|ShowHideOptCont|ShowHideModelTree|ShowHideSignatures|InsertPages|ExtractPages|ReplacePages|DeletePages|CropPages|RotatePages|AddFileAttachment|FindCurrentBookmark|BookmarkShowLocation|GoBackDoc|GoForward   |DocHelpUserGuide|HelpReader|rolReadPage|HandMenuItem|ZoomDragMenuItem|ShowHideToolbarEditing|Annots:Tool:InkMenuItem
+9.2:Close|GeneralInfo|Quit|FirstPage|PrevPage|NextPage|LastPage|ActualSize|FitPage|FitWidth|FitHeight|SinglePage|OneColumn|TwoPages|TwoColumns|ZoomViewIn|ZoomViewOut|ShowHideBookmarks|ShowHideThumbnails|Print|GoToPage|ZoomTo|GeneralPrefs|SaveAs|FullScreen|OpenOrganizer|Scan|Web2PDF:OpnURL|AcroSendMail:SendMail|Spelling:CheckSpelling|PageSetup|Find|FindSearch|GoBack|GoForward|FitVisible|ShowHideToolbarEditing|ShowHideToolbarCommenting|ShowHideToolbarEdit|ShowHideToolbarFile|ShowHideToolbarFind|ShowHideToolbarForms|ShowHideToolbarMeasuring|ShowHideToolbarData|ShowHideToolbarPageDisplay|ShowHideToolbarNavigation|ShowHideToolbarPrintProduction|ShowHideToolbarRedaction|ShowHideToolbarBasicTools|ShowHideToolbarTasks|ShowHideToolbarTypewriter|PropertyToolbar|ShowHideArticles|ShowHideFileAttachment|ShowHideAnnotManager|ShowHideFields|ShowHideOptCont|ShowHideModelTree|ShowHideSignatures|InsertPages|ExtractPages|ReplacePages|DeletePages|CropPages|RotatePages|AddFileAttachment|FindCurrentBookmark|BookmarkShowLocation|GoBackDoc|GoForwardDoc|DocHelpUserGuide|HelpReader|rolReadPage|HandMenuItem|ZoomDragMenuItem|                       Annots:Tool:InkMenuItem|CollectionHome|CollectionDetails|CollectionPreview|CollectionShowRoot

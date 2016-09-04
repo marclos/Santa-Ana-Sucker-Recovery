@@ -1,0 +1,2692 @@
+% \iffalse
+%<*copyright>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% dljsLib.sty package,                                 %%
+%% Copyright (C) 2001-2016  D. P. Story                 %%
+%%   dpstory@uakron.edu                                 %%
+%%                                                      %%
+%% This program can redistributed and/or modified under %%
+%% the terms of the LaTeX Projet Public License         %%
+%% Distributed from CTAN archives in directory          %%
+%% macros/latex/base/lppl.txt; either version 1 of the  %%
+%% License, or (at your option) any later version.      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%</copyright>
+%<package>\NeedsTeXFormat{LaTeX2e}
+%<package>\ProvidesPackage{dljslib}
+%<package> [2014/10/05 v2.0 Manage a Library of Document Level JavaScripts (dps)]
+%<*driver>
+\documentclass{ltxdoc}
+\usepackage[colorlinks,hyperindex=false]{hyperref}
+\pdfstringdefDisableCommands{\let\\\textbackslash}%
+%\OnlyDescription  % comment out for implementation details
+\EnableCrossrefs
+\CodelineIndex
+\RecordChanges
+\InputIfFileExists{aebdocfmt.def}{\PackageInfo{dljslib}{Inputting aebdocfmt.def}}
+    {\def\IndexOpt{\DescribeMacro}\def\IndexKey{\DescribeMacro}\let\setupFullwidth\relax
+     \PackageInfo{dljslib}{aebdocfmt.def cannot be found}}
+\begin{document}
+  \GetFileInfo{dljslib.sty}
+  \title{The \texttt{dljsLib} Package}
+  \author{D. P. Story\\
+    Email: \texttt{dpstory@uakron.edu}}
+  \date{processed \today}
+  \maketitle
+  \tableofcontents
+  \let\Email\texttt
+  \DocInput{dljslib.dtx}
+\IfFileExists{\jobname.ind}{\newpage\setupFullwidth\PrintIndex}{\paragraph*{Index} The index goes here.\\Execute
+    \texttt{makeindex -s gind.ist -o dljslib.ind dljslib.idx} on the command line and recompile
+    \texttt{dljslib.dtx}.}
+\IfFileExists{\jobname.gls}{\PrintChanges}{\paragraph*{Change History} The list of changes goes here.\\Execute
+    \texttt{makeindex -s gglo.ist -o dljslib.gls dljslib.glo} on the command line and recompile
+    \texttt{dljslib.dtx}.}
+\end{document}
+%</driver>
+% \fi
+%
+% \InputIfFileExists{aebdonotindex.def}{\PackageInfo{dljslib}{Inputting aebdonotindex.def}}
+%    {\PackageInfo{dljslib}{aebdonotindex.def cannot be found}}
+%
+% \changes{v1.3}{2005/08/27}{Added new user contributed routines for unordered,
+%        interval, point and factored responses. Added a feature whereby you
+%        can create a file called libcusopt.opt to declare your own options
+%        for this package, but these should be a combination of existing
+%        options.}
+% \changes{v2.0}{2014/10/05}{replaced app.alert with eqAppAlert}
+%
+%\section{Introduction}
+% This is a companion package to the \texttt{insdljs} package. \texttt{Insdljs} gives the
+% document author the ability to write document level JavaScripts to the PDF docuement, when
+% it is finally built.  I personally will be writing a number of general routines to
+% handle situations that arise, and I would hope that other enthusiasts of \texttt{insdljs} will
+% do the same. Therefore, it is desirable to gather together some general purpose routines into
+% a single library, and have a way of selecting the desired function or functions to be used.
+%
+% This package is meant for document authors, not for package developers. This package can only be used
+% once per document, perhaps called from the preamble of a document.
+%
+%\section{The Library Procedures}
+%    \begin{macrocode}
+%<*package>
+%    \end{macrocode}
+% Define some convenience commands, \cs{dljsRegister} and \cs{DeclareAndRegister}, see comments that follow.
+%    \begin{macrocode}
+\newcommand\dljsRegister[2][n]
+    {\expandafter\let\csname checkout@#2\endcsname=#1}
+\def\@ifcheckedout#1{\expandafter\if\csname checkout@#1\endcsname y}
+\newcommand\DeclareAndRegister[1]
+    {\DeclareOption{#1}{\dljsRegister[y]{#1}}\dljsRegister{#1}}
+%    \end{macrocode}
+% Here we ``register'' the functions contained in the library. \cs{dljsRegister} defines a
+% control sequence that records the name of the function (actually, the option name). This
+% control is set to `n'. When a package user chooses a particular function for inclusion, the
+% control is set to `y'.
+%    \begin{macrocode}
+\dljsRegister[y]{dljslib}
+%    \end{macrocode}
+% \subsection{Library Card Catalog}
+% \IndexOpt{equations}
+% \IndexOpt{vectors}
+% \IndexOpt{indefIntegral}
+% \IndexOpt{ImplMulti}
+% \IndexOpt{nodec}
+% The arguments of the \cs{DeclareAndRegister} command are the options of this package, and
+% their names represent JavaScript functions in the library.
+%    \begin{macrocode}
+\DeclareAndRegister{equations}
+\DeclareAndRegister{vectors}
+\DeclareAndRegister{indefIntegral}
+\DeclareAndRegister{ImplMulti}
+\DeclareAndRegister{nodec}
+%    \end{macrocode}
+% \IndexOpt{noBinFac}
+% \IndexOpt{limitArith}
+% \IndexOpt{combinatorics}
+% \IndexOpt{setSupport}
+% More options.
+%    \begin{macrocode}
+\DeclareAndRegister{noBinFac}
+\DeclareAndRegister{limitArith}
+\DeclareAndRegister{combinatorics}
+\DeclareAndRegister{setSupport}
+%    \end{macrocode}
+% \IndexOpt{unordered}
+% \IndexOpt{complex}
+% \IndexOpt{satisfyEq}
+% \IndexOpt{useGermanNums}
+% \IndexOpt{factors}
+% More options still.
+%    \begin{macrocode}
+\DeclareOption{unordered}{\PackageWarning{dljslib}
+    {The `unordered' option is now combined with the\MessageBreak
+    `setSupport' option, will use the `setSupport' option\MessageBreak
+    instead}\ExecuteOptions{setSupport}}
+%\DeclareAndRegister{unordered}
+\DeclareAndRegister{complex}
+\DeclareAndRegister{satisfyEq}
+\DeclareAndRegister{useGermanNums}
+\DeclareAndRegister{factors}
+%    \end{macrocode}
+% \IndexOpt{point}
+% \IndexOpt{intervals}
+% The final set of options.
+%    \begin{macrocode}
+\DeclareAndRegister{point}
+\DeclareAndRegister{intervals}
+\def\includeOptions#1{\@for\@option:=#1\do{\dljsRegister[y]{\@option}}}
+\InputIfFileExists{libcusopt.opt}{}{}
+%    \end{macrocode}
+%    \begin{macrocode}
+\ProcessOptions
+%    \end{macrocode}
+% \subsection{Requirements for a Library Card}
+%
+% In order to check a function out of this library, you must have
+% the \texttt{insdljs} Package. The \texttt{insdljs} package itself
+% has software requirements: (1) the \texttt{verbatim} and
+% \texttt{hyperref} packages; (2) One of the following,
+% \textsf{Distiller~5.0} or greater, \textsf{pdftex}, or
+% \textsf{dvipdfm}.
+%
+%    \begin{macrocode}
+\RequirePackage{insdljs}
+%    \end{macrocode}
+% After inputting \textsf{insdljs}, we define |\setdecimalpoint|, which populates
+% the text command |\aebdecimalpoint|. The text command |\aebdecimalpoint| is used in the \texttt{nodec}
+% option.
+%    \begin{macrocode}
+\def\setdecimalpoint#1{\def\aebdecimalpoint{\eqbs#1}}
+\setdecimalpoint{.}
+%    \end{macrocode}
+%
+% \subsection{Checkout Procedure}
+%
+% Functions can be checkout of the library by using the \texttt{dljslib} package
+% in the usual way. For example:
+%\begin{verbatim}
+%\documentclass{article}
+%\usepackage{amsmath}
+%\usepackage[pdftex,designi]{web}
+%\usepackage{exerquiz}
+%\usepackage[indefIntegral]{dljslib}  % <- check out `indefIntegral'
+%\end{verbatim}
+% Here, we first use \texttt{exerquiz}, which has \texttt{insdljs} as a required package.
+% The use of this package is not limited to users of \texttt{exerquiz}, for example, we can
+% say
+%\begin{verbatim}
+%\documentclass{article}
+%\def\mydriver{dvipdfm}
+%\usepackage[\mydriver]{color}
+%\usepackage[\mydriver,colorlinks,pdfpagemode=None]{hyperref}
+%\usepackage[\mydriver]{insdljs}
+%\usepackage[indefIntegral]{dljslib}  % <- check out `indefIntegral'
+%\end{verbatim}
+% However, at the time of the release of v1.0 of this package, the only functions in this
+% library are ones used by \texttt{exerquiz}.
+%
+% \subsection{Exiting the Library with your Checkouts}
+%
+% This package has an output stream, \cs{dljslib@verbatim@out},
+% that is used to write all the functions that are to be included.
+% We use a control sequence \cs{js@verbatim@out} defined in
+% \texttt{insdljs}. We also use a verbatim write from
+% \texttt{insdljs} as well, the \cs{js@verbatimwrite} environment.
+% \cs{js@verbatimwrite} writes to the output stream pointed to
+% \cs{js@verbatim@out}.
+%    \begin{macrocode}
+\newwrite\dljslib@verbatim@out
+%    \end{macrocode}
+% This package generates only one auxiliary file,
+% \texttt{dljslib.ljs}, which can be deleted after the document is
+% latexed. The file \texttt{dljslib.ljs} (\texttt{ljs} means
+% ``library javascripts'') and contains the functions that are
+% specified in the package options.  At the end of this package,
+% the file \texttt{dljslib.ljs} is input back into the calling
+% document where the package \texttt{insdljs} takes over.
+%    \begin{macrocode}
+\immediate\openout\dljslib@verbatim@out=dljslib.ljs
+%    \end{macrocode}
+% \subsection{The Catalog and Checkout Mechanism}
+%    \begin{macro}{library@holding}
+% This is a simple environment, it reads its parameter, and if that option was specified by the
+% user, it writes the function verbatim to the \texttt{dljslib.ljs}, otherwise, it comments out
+% that function using the \texttt{comment} environment from the \texttt{verbatim} package.
+% This environment uses, \texttt{js@verbatimwrite}, an environment
+% defined in the \texttt{insdljs} package.
+%    \begin{macrocode}
+\newenvironment{library@holding}[1]
+{%
+    \expandafter\ifx\csname checkout@#1\endcsname y%
+    \let\js@verbatim@out\dljslib@verbatim@out
+    \let\dljs@verbatim\js@verbatimwrite
+    \let\enddljs@verbatim\endjs@verbatimwrite\else
+    \let\dljs@verbatim\comment
+    \let\enddljs@verbatim\endcomment\fi\dljs@verbatim
+}{\enddljs@verbatim}
+%    \end{macrocode}
+%    \end{macro}
+%\section{The DLJS Library}
+% We finally reach the ``stacks'', the location of the actual library holdings.
+%
+%   \medskip\noindent This item must always accompany the collection of functions that are to be
+% checked out. This is the beginning of the \texttt{insDLJS} environment. To continue this library analogy,
+% this of this as the ``front wrapper'' or ``front cover'' of your library selections. It contains the
+% ``name'' of the library from which you checked out your selections.
+%    \begin{macrocode}
+\begin{library@holding}{dljslib}
+\begin{insDLJS*}[dljslib]{dljslib}
+\begin{newsegment}{dljslib: AcroTeX DLJS Library}
+/*
+        The Document Level JavaScript Library
+        D. P. Story copyright 2001-\the\year
+*/
+var dljslib = true;
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+%\subsection{The Stacks}
+% Now we reach of the beginning of the stacks. There are several sections of the library, currently,
+% \nameref{s:respfunctions} and \nameref{s:compfunctions}.
+%
+% \subsection{Response Functions}\label{s:respfunctions}
+%
+% \textbf{Used by Exerquiz.} In this section we catalog response functions. A response function is the one that
+% \cs{RespBoxMath} calls to process the user's response to a math fill-in question. See the sample file
+% \texttt{jqzspec.tex} for a detailed explanation of this type of function.
+%
+% \subsubsection{\texttt{equations}}\label{equations}
+%    \IndexOpt{equations}
+% These routines process questions for which an equation is the expected answer.
+%    \begin{macrocode}
+\@ifcheckedout{equations}
+\newcommand\equationsAlertMsg{"An equation is expected"}
+\fi
+\begin{library@holding}{equations}
+\begin{newsegment}{dljslib: Equation Handling}
+function ProcRespEq(flag,CorrAns,n,epsilon,domain,indepVar,oComp)
+{
+    if (!ProcessIt) return null;
+    ok2Continue = true;
+    var success;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+%    \end{macrocode}
+%    \begin{macrocode}
+    var CorrExpressions = CorrAns.split("=");
+    var zCorrAns = "("+CorrExpressions[0]+")-("+CorrExpressions[1] +")";
+    UserAns = stripWhiteSpace (UserAns);
+    if(!ok2Continue ) return null;
+    if (!/[=]/.test(UserAns)) {
+            eqAppAlert(\equationsAlertMsg, 3);
+            return null;
+    }
+%    \end{macrocode}
+% Check for commas, not permitted here. (2012/05/25)
+%    \begin{macrocode}
+    var reComma=/,/;
+    if ( reComma.test(UserAns) ) {
+        eqAppAlert(\eqSyntaxErrorComma,3);
+        return null;
+    }
+%    \end{macrocode}
+%    \begin{macrocode}
+    var UserExpressions = UserAns.split("=");
+    var zUserAns = "("+UserExpressions[0]+")-("+UserExpressions[1] +")";
+
+%    \end{macrocode}
+% If \texttt{oComp} is an object, then see if it has a \texttt{comp} property
+%    \begin{macrocode}
+    var comp = ( typeof oComp == "object" ) ?
+       (typeof oComp.comp == "undefined" ) ?
+            diffCompare : oComp.comp : oComp;
+%    \end{macrocode}
+% The \texttt{comp} parameter, which has been changed to \texttt{oComp} can now be
+% an object. One property of this object is \texttt{comp}, handled above. Another
+% property is \texttt{priorParse}, this is a function that returns \texttt{null}
+% or \texttt{true}. This \texttt{priorParse} function allows for additional
+% filtering of the \texttt{zUserAns} before parsing. If it returns \texttt{true},
+% we are ok to continue, if \texttt{null}, we don't like something the user has entered,
+% and ask him/her to change it.
+%    \begin{macrocode}
+    if ( typeof oComp == "object"
+        && typeof oComp.priorParse != "undefined" ) {
+%    \end{macrocode}
+% Let's go ahead and allow \texttt{oComp.priorParse} be an array of functions.
+%    \begin{macrocode}
+        if ( typeof oComp.priorParse == "object" ) {
+            for ( var i=0; i < oComp.priorParse.length; i++) {
+                var retn = oComp.priorParse[i](zUserAns);
+                if ( retn == null ) return null;
+            }
+        } else {
+            var retn = oComp.priorParse(zUserAns);
+            if ( retn == null ) return null;
+        }
+    }
+    zCorrAns = ParseInput(zCorrAns);
+    if (!ok2Continue) {
+        eqAppAlert("Syntax error in author's answer! Check console.", 3);
+        console.println("Syntax Error: " + CorrAns);
+        return null;
+    }
+    zUserAns = ParseInput(zUserAns);
+    if (!ok2Continue) return null;
+%   convert vars to  new format, if needed
+    indepVar = TypeParameters(indepVar);
+    var lambda = getNonZeroRatio (domain, indepVar, zCorrAns, zUserAns);
+    if ( lambda == null ) {
+        eqAppAlert(\eqSyntaxErrorUndefVar,3); return null; };
+    if ( !ok2Continue ) return notifyField(false, flag, fieldname);
+    zCorrAns  = lambda + "*(" + zCorrAns + ")";
+    success=randomPointCompare (n,domain,indepVar,epsilon,
+        zCorrAns,zUserAns,comp)
+    if ( success == null ) { eqAppAlert(\eqSyntaxErrorUndefVar,3);
+        return null; }
+    return notifyField(success, flag, fieldname);
+}
+function getNonZeroRatio (_a, _v, _F, _G)
+{
+    var _i, _j;
+    var aXY = new Array();
+    _a = _a.replace(/[\[\]\s]/g, "");
+    var _V = _v.split(",");  // e.g. _V[0] = "i:x"
+    var _n = _V.length;
+    var aIntervals = _a.split("&");
+    var aInterval = aIntervals[0].split("x");
+    var endpoints = aInterval[0].split(",");
+        for (_j=0; _j < 4; _j++) {
+            for (_i = 0; _i < _n; _i++) {
+                var endpoints = aInterval[_i].split(",");
+                aXY[_i] = endpoints[0]-0
+                    +(endpoints[1]-endpoints[0])*Math.random();
+\db             console.println("aXY["+_i+"] = " + aXY[_i]);\db%
+            }
+            for (var _i = 0; _i< _n; _i++) {
+                if (_V[_i].charAt(0) == "r" )
+                    eval ( "var "+ _V[_i].charAt(2)
+                        + " = " + aXY[_i] + ";");
+                else // assume type "i"
+                    eval ( "var "+ _V[_i].charAt(2)
+                        + " = " + Math.ceil(aXY[_i]) + ";");
+            }
+            _F = eval(_F);
+            if ( app.viewerVersion >= 5)
+            {
+                var rtnCode = 0;
+                eval("try { if(isNaN(_G = eval(_G))) rtnCode=-1; }"
+                    +"catch (e) { rtnCode=1; }");
+                switch(rtnCode) {
+                    case  0: break;
+                    case  1: return null;
+                    case -1: ok2Continue=false;
+                             return -1;
+                }
+            }
+            else
+                if(isNaN(_G=eval(_G))) {ok2Continue=false;return -1;}
+            if ( _F != 0 && _G != 0 ) return _G/_F;
+        }
+    console.println( "Can't find a non zero scalar");
+    return null;
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+%
+% \subsubsection{\texttt{vectors}}\label{vectors}
+%
+%    \IndexOpt{vectors}
+% This function attempts to process questions that have vectors
+% as answers. Note the name of the function is \texttt{ProcVec}, this is the name used to call it.
+%\begin{verbatim}
+%$\vec a + \vec b = \RespBoxMath{<4, 4, 4>}{1}{.0001}{[2,4]}*{ProcVec}$
+%\end{verbatim}
+%See also the file \texttt{jqzspec.tex} for more details.
+%    \begin{macrocode}
+\@ifcheckedout{vectors}
+\newcommand\vectorsErrorMsgi{"I'm looking for a vector.
+    You need to use proper vector notation, try using
+    angle brackets <....>."}
+\newcommand\vectorsErrorMsgii{"Angle brackets are not balanced.
+    Check the expression you typed in."}
+\newcommand\vectorsErrorMsgiii{"Incorrect number of components.
+    The answer requires " + aCorrAns.length+" components."}
+\def\vectorEmptyCompMsgiv(#1){"You entered nothing for the
+        component " +(#1+1) +" of your answer. Please enter
+        a component for the vector."}
+\fi
+\begin{library@holding}{vectors}
+\begin{newsegment}{dljslib: Vector Handling}
+function ProcVec (flag,CorrAns,n,epsilon,domain,indepVar,oComp)
+{
+%    \end{macrocode}
+% This function attempts to process questions that have vectors
+% as answers.
+%    \begin{macrocode}
+    if (!ProcessIt) return null;
+    ok2Continue = true;
+    var i, success, truthCnt=1;
+    var aScalar, scalar = 1;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns); // sets ok2Continue
+    CorrAns = stripWhiteSpace(CorrAns);
+    if ( !ok2Continue ) return null;
+    var isSpecResp=false;
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (CorrAns == aDlLibSpecResp[i]) {
+            isSpecResp=true; break;
+        }
+    }
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (UserAns == aDlLibSpecResp[i]) {
+            success = (CorrAns == UserAns);
+            return notifyField(success, flag, fieldname);
+        }
+    }
+    if (isSpecResp) return notifyField(false, flag, fieldname);
+    if (!/[<>]/.test(UserAns)) {
+        eqAppAlert(\vectorsErrorMsgi, 3);
+        return null;
+    }
+    if (!CkBalP(UserAns,"<",">")) {
+        eqAppAlert(\vectorsErrorMsgii, 3);
+        return null;
+    }
+    // see if there is a scalar multiple to the left of '<'
+    aScalar = UserAns.match(/(.*)(\*)(\s*<)/);
+    if (aScalar != null) {
+        scalar = aScalar[1];
+        UserAns = UserAns.slice(aScalar.index + aScalar[0].length-1)
+    }
+%    \end{macrocode}
+% If \texttt{oComp} is an object, then see if it has a \texttt{comp} property
+%    \begin{macrocode}
+    var comp = ( typeof oComp == "object" ) ?
+       (typeof oComp.comp == "undefined" ) ?
+            diffCompare : oComp.comp : oComp;
+%    \end{macrocode}
+%    \begin{macrocode}
+    CorrAns = CorrAns.replace(/[<>]/g, ""); // strip of < and >
+    UserAns = UserAns.replace(/[<>]/g, "");
+%    \end{macrocode}
+% The \texttt{comp} parameter, which has been changed to \texttt{oComp} can now be
+% an object. One property of this object is \texttt{comp}, handled above. Another
+% property is \texttt{priorParse}, this is a function that returns \texttt{null}
+% or \texttt{true}. This \texttt{priorParse} function allows for additional
+% filtering of the \texttt{UserAns} before parsing. If it returns \texttt{true},
+% we are ok to continue, if \texttt{null}, we don't like something the user has entered,
+% and ask him/her to change it.
+%    \begin{macrocode}
+    if ( typeof oComp == "object" && %
+typeof oComp.priorParse != "undefined" ) {
+        var retn=processSpecialParse(oComp.priorParse,UserAns);
+        if (retn==null) return null;
+    }
+%    \end{macrocode}
+% Not convert each to an array
+%    \begin{macrocode}
+    aUserAns = UserAns.split(",");
+    aCorrAns = CorrAns.split(",");
+    if (scalar != 1)
+        for (i=0; i<aUserAns.length; i++)
+            aUserAns[i]=""+scalar+"*"+aUserAns[i];
+    if (aCorrAns.length != aUserAns.length) {
+        eqAppAlert(\vectorsErrorMsgiii,3);
+        return null;
+    }
+    // convert to new format, if needed
+    indepVar = TypeParameters(indepVar);
+    for (i=0; i<aCorrAns.length; i++) {
+        aCorrAns[i] = ParseInput(aCorrAns[i]);
+        if (!ok2Continue) {
+            eqAppAlert("Author Syntax error!", 3);
+            return null;
+        }
+        aUserAns[i] = ParseInput(aUserAns[i]);
+        if (aUserAns[i]==null) {
+            eqAppAlert(\vectorEmptyCompMsgiv(i), 3);
+            return null;
+        }
+        if (!ok2Continue) return null;
+        success=randomPointCompare (n,domain,indepVar,epsilon,
+            aCorrAns[i],aUserAns[i],comp)
+        if ( success == null ) {
+            eqAppAlert(\eqSyntaxErrorUndefVar,3); return null; }
+        truthCnt *= (success) ? 1 : 0;
+    }
+    return notifyField(!!truthCnt, flag, fieldname);
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+% \subsubsection{\texttt{setSupport}}
+%
+%    \IndexOpt{setSupport}
+% We introduce two JavaScript functions \texttt{ProcRespSetNum} and
+% \texttt{ProcRespSetSym}, for handling a set of answers or a comma
+% delimited list of answers. The first function is for
+% numerical answers, the second for simple symbolic answers.  The
+% demo file for these two response functions is
+% \texttt{set\_test.tex}; the examples below were taken from that file.
+%\changes{v1.9h}{2014/01/21}{Combined unordered option with setSupport option}
+%    \begin{macrocode}
+\@ifcheckedout{setSupport}
+\newcommand{\noBracesInAnsMsg}{"Do not insert braces in your answer.
+    Please remove the braces (\{\})."}
+\newcommand{\noBracketsInAnsMsg}{"Do not insert braces in your answer.
+    Please remove the angle brackets (<>)."}
+\fi
+\begin{library@holding}{setSupport}
+\begin{newsegment}{dljslib: Support for Sets}
+%    \end{macrocode}
+% This function can handle (math fill-in) questions whose answers are a set of numbers or a
+% comma delimited list of numbers.
+%\begin{flushleft}
+% Sample usage:
+%\begin{verbatim}
+% $(x+1)(2x-1)(x-2)^3 = 0$, $x = \RespBoxMath[\rectW{.75in}\textSize{0}]
+%    {-1, 1/2, 2, 2, 2}{1}{.0001}{[0,1]}*{ProcRespSetNum}$
+%\end{verbatim}
+%\end{flushleft}
+%    \begin{macrocode}
+function ProcRespSetNum(flag,CorrAns,n,epsilon,domain,indepVar,oComp)
+{
+    ok2Continue = true;
+    if (!ProcessIt) return null;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns);
+    CorrAns = stripWhiteSpace(CorrAns);
+    if (!ok2Continue) return null;
+    var isSpecResp=false;
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (CorrAns == aDlLibSpecResp[i]) {
+            isSpecResp=true; break;
+        }
+    }
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (UserAns == aDlLibSpecResp[i]) {
+            success = (CorrAns == UserAns);
+            return notifyField(success, flag, fieldname);
+        }
+    }
+    if (isSpecResp) return notifyField(false, flag, fieldname);
+    var retn=ck4Braces(UserAns);
+    if (retn==null) return null;
+    var aUserAns = UserAns.split(",");
+%    \end{macrocode}
+% Make sure all of UserAns are numbers
+%    \begin{macrocode}
+    for ( var i=0; i < aUserAns.length; i++) {
+        try {
+            if (isNaN(eval(aUserAns[i]))) return syntaxError(), null;
+        } catch(e) { return syntaxError(), null; }
+    }
+    var aUserAns = aUserAns.sort(
+        function(a,b) { return eval(a) - eval(b);} );
+    var aCorrAns = CorrAns.split(",").sort(
+        function(a,b) { return  eval(a) - eval(b);} );
+    var numCorrect = 0;
+    if ( aUserAns.length != aCorrAns.length )
+        return notifyField(false, flag, fieldname);
+    for ( var i=0; i< aCorrAns.length; i++) {
+        var retn = _ProcResp(%
+flag,aCorrAns[i],aUserAns[i],n,epsilon,domain,indepVar,oComp);
+        if ( retn == -1 ) return null;
+        if ( retn == null ) return syntaxError(), null;
+        numCorrect += (retn) ? 1 : 0;
+    }
+    var success = (numCorrect == aCorrAns.length);
+    return notifyField(success, flag, fieldname);
+}
+var ok2format=true;
+function formatAsSet() {
+    if (ok2format&&event.value.replace(/\\s/g,"") != "")
+        event.value =  "{ " + event.value + " }";
+}
+function ck4Braces (UserAns) {
+    ok2format=true;
+    if (/^\{/.test(UserAns) || /\}$/.test(UserAns) ) {
+        ok2format=false;
+        return eqAppAlert(\noBracesInAnsMsg,3), null;
+    }
+    else return true;
+}
+function ck4AngleBrackets (UserAns) {
+    ok2format=true;
+    if (/^</.test(UserAns) || />$/.test(UserAns) ) {
+        ok2format=false;
+        return eqAppAlert(\noBracketsInAnsMsg,3), null;
+    }
+    else return true;
+}
+function formatAsVector() {
+    if (ok2format&&event.value.replace(/\\s/g,"") != "") {
+        event.value =  "< " + event.value + " >";
+    }
+}
+%    \end{macrocode}
+% Input an order pair of numbers, determine if it satisfies an equation. This problem
+% type is new as there are ``infinitely many answers.''  If we pose the question
+% ``Enter a point that lies on the line $2x+3y=6$.'' The user enters an ordered pair
+% of numbers. The CorrAns that is passed is $2x+3y-6$, and we test the user's input
+% to see if the expression evaluates to zero.
+%
+%    \begin{macrocode}
+%    \end{macrocode}
+% This function can handle simple symbolic answers. The variable list, \texttt{inderVar}, should
+% be the ``universal set'' of the problem.
+% \begin{flushleft}
+% Sample usage:
+%\begin{verbatim}
+% \def\U{a,b,c,d,e,f,g} % define a universal set
+% $A \cap B = \RespBoxMath[\AddAAFormat{\formatAsSet}
+%           \rectW{.75in}\textSize{0}
+%       ]{c,d}(\U){1}{.0001}{[0,1]}*{ProcRespSetSym}$
+%\end{verbatim}
+% \end{flushleft}
+%    \begin{macrocode}
+function ProcRespSetSym(flag,CorrAns,n,epsilon,domain,indepVar,oComp)
+{
+    ok2Continue = true;
+    if (!ProcessIt) return null;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns);
+    CorrAns = stripWhiteSpace(CorrAns);
+    if (!ok2Continue) return null;
+    var isSpecResp=false;
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (CorrAns == aDlLibSpecResp[i]) {
+            isSpecResp=true; break;
+        }
+    }
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (UserAns == aDlLibSpecResp[i]) {
+            success = (CorrAns == UserAns);
+            return notifyField(success, flag, fieldname);
+        }
+    }
+    if (isSpecResp) return notifyField(false, flag, fieldname);
+    var retn=ck4Braces(UserAns);
+    if (retn==null) return null;
+    var aUserAns = UserAns.split(",");
+    var _V = indepVar.split(",");
+    for ( var _i=0; _i < _V.length; _i++) {
+         eval ( "var "+ _V[_i] + " = \"" + _i + "\";");
+    }
+%    \end{macrocode}
+% Make sure all of UserAns are numbers
+%    \begin{macrocode}
+    for ( var _i=0; _i < aUserAns.length; _i++) {
+        try {
+            if (isNaN(eval(aUserAns[_i]))) return syntaxError(), null;
+            aUserAns[_i] = eval(aUserAns[_i]);
+        } catch(e) { return syntaxError(), null; }
+    }
+    var aCorrAns = CorrAns.split(",");
+    for ( var _i=0; _i < aCorrAns.length; _i++) {
+        try {
+            if (isNaN(eval(aCorrAns[_i])))
+                return eqAppAlert(
+                    "Author error, recheck your code",3), null;
+            aCorrAns[_i] = eval(aCorrAns[_i]);
+        } catch(e) { return eqAppAlert(
+            "Author error, recheck your code",3), null; }
+    }
+    var aUserAns = aUserAns.sort(
+        function(a,b) { return eval(a) - eval(b);} );
+    var aCorrAns = aCorrAns.sort(
+        function(a,b) { return  eval(a) - eval(b);} );
+    var numCorrect = 0;
+    if ( aUserAns.length != aCorrAns.length )
+        return notifyField(false, flag, fieldname);
+    for ( var _i=0; _i< aCorrAns.length; _i++) {
+        var retn = _ProcResp(%
+flag,aCorrAns[_i],aUserAns[_i],n,epsilon,"[0,1]","i:_x",oComp);
+        if ( retn == -1 ) return null;
+        if ( retn == null ) return syntaxError(), null;
+        numCorrect += (retn) ? 1 : 0;
+    }
+%    console.println( aUserAns.toSource() );
+    var success = (numCorrect == aCorrAns.length);
+%    var success = (numCorrect == aCorrAns.length) ? true : false;
+%    if ( success == null ) return syntaxError(), null;
+    return notifyField(success, flag, fieldname);
+}
+%    \end{macrocode}
+% The function \texttt{ProcRespListFormula} can be used to process a comma-delimited
+% \emph{ordered} list of expressions.
+%    \begin{macrocode}
+function ProcRespListFormula(flag,CorrAns,n,epsilon,domain,%
+indepVar,oComp) {
+    ok2Continue = true;
+    if (!ProcessIt) return null;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns);
+    CorrAns = stripWhiteSpace(CorrAns);
+    if (!ok2Continue) return null;
+    var isSpecResp=false;
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (CorrAns == aDlLibSpecResp[i]) {
+            isSpecResp=true; break;
+        }
+    }
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (UserAns == aDlLibSpecResp[i]) {
+            success = (CorrAns == UserAns);
+            return notifyField(success, flag, fieldname);
+        }
+    }
+    if (isSpecResp) return notifyField(false, flag, fieldname);
+    var retn=ck4AngleBrackets(UserAns);
+    if (retn==null) return null;
+    UserAns = UserAns.replace(/,+/g, ",");
+    UserAns = UserAns.replace(/,$/, "");
+    UserAns = UserAns.replace(/^,/, "");
+    event.value = UserAns;
+    CorrAns = stripWhiteSpace(CorrAns);
+    if (!ok2Continue) return null;
+    var aUserAns = UserAns.split(",");
+    var aCorrAns = CorrAns.split(",");
+    var numCorrect = 0;
+    if ( aUserAns.length != aCorrAns.length )
+        return notifyField(false, flag, fieldname);
+    for ( var i=0; i< aCorrAns.length; i++) {
+        var retn =_ProcResp(flag,aCorrAns[i],aUserAns[i],%
+n,epsilon,domain,indepVar,oComp);
+        if ( retn == -1 ) return null;
+        if ( retn == null ) return syntaxError(), null;
+        numCorrect += (retn) ? 1 : 0;
+     }
+     var success = (numCorrect == aCorrAns.length);
+     return notifyField(success, flag, fieldname);
+}
+%    \end{macrocode}
+%  The JS function \texttt{ProcRespSetFormula} will grade an
+%  unordered list of formulas, such as
+%  \texttt{x}, \verb!x^2!, \verb!x^3!. The code is a modification of
+%  \texttt{ProcRespListFormula}. The idea is to split the user and correct
+%  answers and then compare the first correct answer with each of the
+%  user answers in turn. If there is a match, swap that user answer
+%  with the first user answer. Then compare the second correct answer
+%  with the rest of the user answers, and continue in that way.
+%\begin{flushleft}
+% Usage:
+%\begin{verbatim}
+%\def\formulasetbox#1#2#3{\RespBoxMath{#1}(#2)[\thequestionno]{10}
+%    {1.0E-15}{#3}*{ProcRespSetFormula}}
+%\formulasetbox{x,x^2,x^3}{x}{[1,2]}
+%\end{verbatim}
+%\end{flushleft}
+%    \begin{macrocode}
+function ProcRespSetFormula(flag,CorrAns,n,epsilon,%
+domain,indepVar,oComp) {
+    ok2Continue = true;
+    if (!ProcessIt) return null;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns);
+    CorrAns = stripWhiteSpace(CorrAns);
+    if (!ok2Continue) return null;
+    var isSpecResp=false;
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (CorrAns == aDlLibSpecResp[i]) {
+            isSpecResp=true; break;
+        }
+    }
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (UserAns == aDlLibSpecResp[i]) {
+            success = (CorrAns == UserAns);
+            return notifyField(success, flag, fieldname);
+        }
+    }
+    if (isSpecResp) return notifyField(false, flag, fieldname);
+    var retn=ck4Braces(UserAns);
+    if (retn==null) return null;
+    UserAns = UserAns.replace(/,+/g, ",");
+    UserAns = UserAns.replace(/,$/, "");
+    UserAns = UserAns.replace(/^,/, "");
+    event.value = UserAns;
+    CorrAns = stripWhiteSpace(CorrAns);
+    if (!ok2Continue) return null;
+    var aUserAns = UserAns.split(",");
+    var aCorrAns = CorrAns.split(",");
+    var numCorrect = 0, match = 0;
+    if ( aUserAns.length != aCorrAns.length )
+    return notifyField(false, flag, fieldname);
+    for ( var i=0; i<aCorrAns.length; i++) {
+        match = 0;
+        for ( var j=i; j< aUserAns.length; j++) {
+            var retn = _ProcResp(%
+flag,aCorrAns[i],aUserAns[j],n,epsilon,domain,indepVar,oComp);
+            if ( retn == -1 ) return null;
+            if ( retn == null ) return syntaxError(), null;
+            if (retn==1) {
+                var temp=aUserAns[j];
+                aUserAns[j]=aUserAns[i];
+                aUserAns[i]=temp;
+                match = match + 1;
+            }
+        }
+        numCorrect += (match) ? 1 : 0;
+    }
+    var success = (numCorrect == aCorrAns.length);
+    return notifyField(success, flag, fieldname);}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+% \subsubsection{\texttt{complex}}
+% \IndexOpt{complex}The function \texttt{ProcRespComplex} supplies support for answers that are
+% complex numbers. The function test whether there is exactly one \texttt{i}
+% in the expression, if not, a message appears reminding the user that the form
+% of a complex number is \texttt{a + bi}. The function adds \texttt{i} as one of the
+% variables, and appends \texttt{x[0,1]} to the domain specification. This might be a
+% problem if the document author uses the old style of specifying the domain; use
+% \texttt{[a,b]} to specify the domain, we change this to \texttt{[a,b]x[0,1]}.
+%
+% The rest of the function is like a multiv-ariable problem. Seems to work ok.
+% Here is a sample syntax:
+%\begin{verbatim}
+% $(3+3i)(4+5i) = \RespBoxMath{-3+27i}{3}{0.0001}{[0,1]}*{ProcRespComplex}$
+%\end{verbatim}
+%The correct answer must be supplied with the \cs{RespBoxMath}, and is used to compare
+% with what the student enters.
+% \changes{v1.7}{2007/10/12}
+%{%
+%   Added support for answer that are complex numbers.
+%}
+%    \begin{macrocode}
+\@ifcheckedout{complex}
+\newcommand{\complexPowerAlertMsg}{%
+    "Powers of i (for example, i^2, i^3) are not supported,
+    replace powers of i with their complex equivalents."}
+\newcommand{\complexCisAlertMsg}{%
+    "The cis function does not support exponents. Write,
+    for example, cis^3(x) as cis(3*x), instead."}
+\newcommand{\alertNotComplexMsg}{%
+    "The expression is not in the form of a complex
+    number, a+bi"}
+\def\emptyCompComplexMsg(#1){%
+    "You entered nothing for the component "
+     +(#1+1)+" of your answer. Please enter a complex number."}
+\fi
+\begin{library@holding}{complex}
+\begin{newsegment}{dljslib: Support for Complex Numbers}
+%    \end{macrocode}
+% Defined (11/11/08). The \texttt{cis} function is undefined unless the \texttt{complex} option is used.
+%    \begin{macrocode}
+function cis(x,i) { return Math.cos(x) + i*Math.sin(x); }
+JSfCustom.push("cis");
+JSf = JSf.concat(JSfBuiltIn, JSfCustom);
+function ProcRespComplex(flag,CorrAns,n,epsilon,domain,indepVar,oComp)
+{
+    if (!ProcessIt) return null;
+    ok2Continue = true;
+    var i, success;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    CorrAns = stripWhiteSpace (CorrAns);
+    UserAns = stripWhiteSpace (UserAns); // sets ok2Continue
+    if ( !ok2Continue ) return null;
+    indepVar+="i";
+    domain+="x[0,1]";
+%    \end{macrocode}
+% We don't support powers of i
+%    \begin{macrocode}
+    if (/(\b|[^a-zA-Z])i\^/.test(UserAns)) {
+        eqAppAlert(\complexPowerAlertMsg,3);
+        return null;
+    }
+%    \end{macrocode}
+% Powers of \texttt{cis} function are not supported at this time.
+%    \begin{macrocode}
+%    var re=/cis\^/
+    if ( /cis\^/.test(UserAns) ) {
+        eqAppAlert(\complexCisAlertMsg,3);
+        return null;
+    }
+%    \end{macrocode}
+% (2012/05/25) Check for commas, not permitted here.
+% \changes{v1.9f}{2012/11/17}{Moved this block higher, before testing for comma.}
+%    \begin{macrocode}
+    var reComma=/,/;
+    if ( reComma.test(UserAns) ) {
+        eqAppAlert(\eqSyntaxErrorComma,3);
+        return null;
+    }
+%    \end{macrocode}
+% To make the \texttt{cis} function work, we've defined it to be a function of two variables,
+% \texttt{cis(x,i)}, but the user does not need to know that. We search for \texttt{cis(<arg>)} and
+% replace with \texttt{cis(<arg>,i)}. I hope this works.
+%    \begin{macrocode}
+    UserAns=changeArgs4Cis(UserAns);
+%    \end{macrocode}
+% ...and do the same thing for the correct answer.
+%    \begin{macrocode}
+    CorrAns=changeArgs4Cis(CorrAns);
+%    \end{macrocode}
+% The complex option is not meant to be an option to do complex arithmetic, but only
+% to accept a complex number as an answer. So, we do not accept an answer with two
+% or more i's in it.
+%    \begin{macrocode}
+    var aMatch = UserAns.match(/(\b|[^a-zA-Z])i/g);
+    if ( aMatch != null && aMatch.length > 1) {
+        eqAppAlert(\alertNotComplexMsg, 3);
+        return null;
+    }
+    var comp = ( typeof oComp == "object" ) ?
+       (typeof oComp.comp == "undefined" ) ?
+            diffCompare : oComp.comp : oComp;
+    if ( typeof oComp == "object" &&
+        typeof oComp.priorParse != "undefined" ) {
+        if ( typeof oComp.priorParse == "object" ) {
+            for ( var i=0; i < oComp.priorParse.length; i++) {
+                var retn = oComp.priorParse[i](UserAns);
+                if ( retn == null ) return null;
+            }
+        } else {
+            var retn = oComp.priorParse(UserAns);
+            if ( retn == null ) return null;
+        }
+    }
+%    \begin{macrocode}
+    UserAns = ParseInput(UserAns);
+    CorrAns = ParseInput(CorrAns);
+    indepVar = TypeParameters(indepVar);
+    if (!ok2Continue) return null;
+    success=randomPointCompare(
+        n,domain,indepVar,epsilon,CorrAns,UserAns,comp);
+    if ( success == null ) { eqAppAlert(%
+\eqSyntaxErrorUndefVar,3); return null; }
+    return notifyField(success, flag, fieldname);
+}
+%    \end{macrocode}
+% \texttt{ProcRespListComplex}, contributed by Bruce Wagner, extends
+% \texttt{ProcRespComplex} to lists; an ordered listing of complex responses.
+% Sample syntax:
+%\begin{verbatim}
+%If $z=4(\cos x+i\sin x)$, compute $z^2$ and $z^3$, in that order.
+%\RespBoxMath{16*cis(2x),64*cis(3x)}{4}{0.0001}{[0,1]}*{ProcRespListComplex}
+%\end{verbatim}
+%    \begin{macrocode}
+function ProcRespListComplex(flag,CorrAns,n,epsilon,%
+domain,indepVar,oComp) {
+    ok2Continue = true;
+    if (!ProcessIt) return null;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns);
+    CorrAns = stripWhiteSpace(CorrAns); // sets ok2Continue
+    if ( !ok2Continue ) return null;
+    var isSpecResp=false;
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (CorrAns == aDlLibSpecResp[i]) {
+            isSpecResp=true; break;
+        }
+    }
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (UserAns == aDlLibSpecResp[i]) {
+            success = (CorrAns == UserAns);
+            return notifyField(success, flag, fieldname);
+        }
+    }
+    if (isSpecResp) return notifyField(false, flag, fieldname);
+    UserAns = UserAns.replace(/,+/g, ",");
+    UserAns = UserAns.replace(/,$/, "");
+    UserAns = UserAns.replace(/^,/, "");
+    event.value = UserAns;
+    var aUserAns = UserAns.split(",");
+    var aCorrAns = CorrAns.split(",");
+    if ( aUserAns.length != aCorrAns.length )
+        return notifyField(false, flag, fieldname);
+    var numCorrect = 0;
+    var match = 0;
+    for ( var i=0; i< aCorrAns.length; i++) {
+        match = 0;
+        event.value = aUserAns[i];
+        var retn = ProcRespComplex(
+        flag,aCorrAns[i],n,epsilon,domain,indepVar,oComp);
+        event.value = UserAns;
+        if ( retn == null ) return null;
+        numCorrect += (retn) ? 1 : 0;
+    }
+    var success = (numCorrect == aCorrAns.length);
+    return notifyField(success, flag, fieldname);
+}
+%    \end{macrocode}
+% \texttt{ProcRespSetComplex}, contributed by Bruce Wagner, extends
+% \texttt{ProcRespComplex} to sets; an un-ordered listing of complex responses.
+%\begin{verbatim}
+% Find all real and complex solutions of the equation $x^2=-9$. \\
+% Express your answer(s) in rectangular form $a+bi$.
+% \RespBoxMath{3i,-3i}{4}{0.0001}{[0,1]}*{ProcRespSetComplex}
+%\end{verbatim}
+%    \begin{macrocode}
+function ProcRespSetComplex(flag,CorrAns,n,epsilon,%
+domain,indepVar,oComp) {
+    ok2Continue = true;
+    if (!ProcessIt) return null;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns);
+    CorrAns = stripWhiteSpace(CorrAns); // sets ok2Continue
+    if ( !ok2Continue ) return null;
+    var isSpecResp=false;
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (CorrAns == aDlLibSpecResp[i]) {
+            isSpecResp=true; break;
+        }
+    }
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (UserAns == aDlLibSpecResp[i]) {
+            success = (CorrAns == UserAns);
+            return notifyField(success, flag, fieldname);
+        }
+    }
+    if (isSpecResp) return notifyField(false, flag, fieldname);
+    UserAns = UserAns.replace(/,+/g, ",");
+    UserAns = UserAns.replace(/,$/, "");
+    UserAns = UserAns.replace(/^,/, "");
+    event.value = UserAns;
+    CorrAns = stripWhiteSpace(CorrAns);
+    if (!ok2Continue) return null;
+    var aUserAns = UserAns.split(",");
+    var aCorrAns = CorrAns.split(",");
+    if ( aUserAns.length != aCorrAns.length )
+        return notifyField(false, flag, fieldname);
+    var numCorrect = 0;
+    var match = 0;
+    for ( var i=0; i< aCorrAns.length; i++) {
+        match = 0;
+        for ( var j=i; j< aUserAns.length; j++) {
+            event.value = aUserAns[j];
+            var retn = ProcRespComplex(%
+flag,aCorrAns[i],n,epsilon,domain,indepVar,oComp);
+            event.value = UserAns;
+            if ( retn == null ) return null;
+            if (retn==1) {
+                var temp=aUserAns[j];
+                aUserAns[j]=aUserAns[i];
+                aUserAns[i]=temp;
+                match = match + 1;
+            }
+        }
+        numCorrect += (match) ? 1 : 0;
+    }
+    var success = (numCorrect == aCorrAns.length);
+    return notifyField(success, flag, fieldname);
+}
+function changeArgs4Cis(str) {
+    var re =/cis\(/g;
+    while ( (aP=re.exec(str) ) != null ) {
+        var LeftP=re.lastIndex;
+        var RightP=FindBalP(str,re.lastIndex,1);
+        str = str.substring(0,RightP)
+            +",i"+str.substring(RightP);
+    }
+    return str;
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+% \subsubsection{\texttt{satisfyEq}}
+%
+% \IndexOpt{satisfyEq} These functions are used for questions where the student is asked to enter one or more
+% points that satisfy a given equation $ F = G $. For these types of problems, there
+% are infinity many correct answers.
+%
+%    \begin{macrocode}
+\@ifcheckedout{satisfyEq}
+\newcommand{\notifyWrongNumEntries}{\def\satisfyEqNotify{true}}
+\def\satisfyEqNotify{false}
+\newcommand{\wrongNumEntriesMsg}{"You don't have the correct number
+    of entries in your coordinate points. Expecting "+_n
+    +" entries per point." }
+\newcommand{\eqSyntaxErrorNoParens}{"Syntax Error: Enter the point
+    using parentheses, for example (1,2) or (1,2,3), as applicable."}
+\newcommand{\eqNonzeroEntries}{"Syntax Error: All entries are required
+    to be nonzero, try again."}
+\newcommand{\eqTooManyEntries}{"You've entered more points than
+    requested, enter only "+l+" points."}
+\newcommand{\eqTooFewEntries}{"You've entered fewer points than
+    requested, enter only "+l+" points."}
+\newcommand{\eqDuplEntries}{"One or more points are the same,
+    provide "+l+" distinct points."}
+\fi
+\begin{library@holding}{satisfyEq}
+\begin{newsegment}
+    {dljslib: Support for n-tuple input to Satisfy an Equation}
+%    \end{macrocode}
+%\DescribeMacro{ProcRespEvalEq} is not based on random point generation, as
+%all the other \textsf{exerquiz} functions are. Here, the user enters
+%numerical data, the function then verifies the data entered satisfies the
+%given equation. The role of \texttt{CorrAns} has changed. If the equation
+%is $ F = G $, then $ F - G $ should be passed as the
+%\texttt{CorrAns} variable. This function obeys the value of
+%\texttt{epsilon} but ignores the number of iterations (\verb!{1}! below),
+%and the domain of the variables (\cs{ixdna} below) \cs{ixdna} is a special
+%command that can be used for this parameter, in this context only.  The \texttt{oComp}
+%parameter is also ignored.
+%\medskip\noindent\textbf{Sample Use.}
+%\begin{verbatim}
+%\item Enter a point that lies on the line $2x+3y=6$,\\[3pt]
+%    $\text{A point is }\RespBoxMath[\rectW{.75in}
+%    \textSize{0}]{2x+3y-6}(xy){1}{.0001}{[0,1]x[0,1]}*{ProcRespEvalEq}
+%    \CorrAnsButton{various, such as (0,2)}$
+%\end{verbatim}
+% The demo document is \texttt{satisfy\_eq.tex}.
+%\changes{v1.9}{2011/06/24}{Added \texttt{ProcRespEvalEq} in response to
+% a problem posed by David Arnold.}
+%    \begin{macrocode}
+var bNotifyWrngNumEntries=\satisfyEqNotify;
+function ProcRespEvalEq(flag,CorrAns,n,epsilon,domain,indepVar,oComp){
+    var retn=_ProcRespEvalEq(true,flag,CorrAns,n,epsilon,indepVar);
+    return retn;
+}
+%    \end{macrocode}
+% \DescribeMacro{ProcRespEvalEqNonZero} is the same as \texttt{ProcRespEvalEq}, but requires
+% all entries to be nonzero.
+%    \begin{macrocode}
+function ProcRespEvalEqNonZero(flag,CorrAns,n,epsilon,%
+domain,indepVar,oComp) {
+    var retn=_ProcRespEvalEq(false,flag,CorrAns,n,epsilon,indepVar);
+    return retn;
+}
+%    \end{macrocode}
+%    \begin{macrocode}
+function _ProcRespEvalEq(allowzero,flag,CorrAns,n,epsilon,indepVar)
+{
+    ok2Continue = true;
+    if (!ProcessIt) return null;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns);
+    if (!ok2Continue) return null;
+    if ( (UserAns.charAt(0) != "\(") || %
+(UserAns.charAt(UserAns.length-1) != "\)"))
+        return eqAppAlert(\eqSyntaxErrorNoParens,3), null;
+    UserAns=UserAns.substring(1,UserAns.length-1);
+    var aUserAns = UserAns.split(",");
+%    \end{macrocode}
+% Make sure all of UserAns are numbers
+%    \begin{macrocode}
+    for ( var i=0; i < aUserAns.length; i++) {
+        try {
+            if (isNaN(eval(aUserAns[i]))) return syntaxError(), null;
+            if (!allowzero && (eval(aUserAns[i])==0))
+                return eqAppAlert(\eqNonzeroEntries,3), null;
+        } catch(e) { return syntaxError(), null; }
+    }
+    var _v = TypeParameters(indepVar);
+    var _V = _v.split(",");  // e.g. _V[0] = "i:x"
+    var _n = _V.length;
+    if ( aUserAns.length != _n) {
+        if (bNotifyWrngNumEntries)
+            return eqAppAlert(\wrongNumEntriesMsg,3), null;
+        else
+            return notifyField(false, flag, fieldname);
+    }
+%    \end{macrocode}
+% The following code is taken from \texttt{diffCompare}, it uses a "safe" technique
+% for evaluating an expression.
+%    \begin{macrocode}
+    for (var _i=0; _i < _n; _i++) {
+        if (_V[_i].charAt(0) == "r" )
+          eval("var "+_V[_i].charAt(2)+"="+aUserAns[_i]+";");
+        else // assume type "i"
+          eval("var "+_V[_i].charAt(2)+"="+Math.ceil(aUserAns[_i])+";");
+    }
+    var UserInput=ParseInput(CorrAns);
+    var UserAns=eval(UserInput);
+    success=(Math.abs(UserAns) < epsilon)?true:false;
+    return notifyField(success, flag, fieldname);
+}
+%    \end{macrocode}
+% This function takes a semi-colon delimited list of ordered n-tuples.
+% The \texttt{CorrAns} parameter is of the form \texttt{n\_pairs; F-G}
+%    \begin{macrocode}
+function ProcRespEvalEqList(flag,CorrAns,n,epsilon,domain,%
+indepVar,oComp) {
+    var retn=_ProcRespEvalEqList(true,flag,CorrAns,n,epsilon,indepVar);
+    return retn;
+}
+function ProcRespEvalEqListNonZero(flag,CorrAns,n,epsilon,domain,%
+indepVar,oComp){
+    var retn=_ProcRespEvalEqList(false,flag,CorrAns,n,epsilon,indepVar);
+    return retn;
+}
+function _ProcRespEvalEqList(allowzero,flag,CorrAns,n,epsilon,indepVar)
+{
+    ok2Continue = true;
+    if (!ProcessIt) return null;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns);
+    if (!ok2Continue) return null;
+    var success;
+%    \end{macrocode}
+% Remove any semicolons at end of line, then remove any duplicated semicolons.
+% This is done to prevent simple errors by user input.
+%    \begin{macrocode}
+    UserAns=UserAns.replace(/;+$/,"");
+    UserAns=UserAns.replace(/;+/g,";");
+    var aUsersArray = new Array();
+%    \end{macrocode}
+% Split the user's answer up by the delimiting semi-colon.
+%    \begin{macrocode}
+    var aUserAns = UserAns.split(";");
+%    \end{macrocode}
+% First component is the number of points expected, second component is \texttt{F(x)-G(x)}
+%    \begin{macrocode}
+    var aCorrAns = CorrAns.split(";");
+    var l = aCorrAns[0];
+%    \end{macrocode}
+% If the user gave too many answers, broadcast alert.
+%    \begin{macrocode}
+    if (l < aUserAns.length )
+        return eqAppAlert(\eqTooManyEntries,3), null;
+%    \end{macrocode}
+% If the user gave too few answers, broadcast alert.
+%    \begin{macrocode}
+    if (l > aUserAns.length )
+        return eqAppAlert(\eqTooFewEntries,3), null;
+    var _v = TypeParameters(indepVar);
+    var _V = _v.split(",");  // e.g. _V[0] = "i:x"
+%    \end{macrocode}
+% \texttt{\_n} is the number of variables
+%    \begin{macrocode}
+    var _n = _V.length;
+%    \end{macrocode}
+% \texttt{testFunc} is a random linear function of the form
+% \texttt{ax+by+...}, where \texttt{a} and \texttt{b} are selected at random.
+%    \begin{macrocode}
+    var testFunc="";
+    for (var _i=0; _i < _n; _i++)
+        testFunc += ("+"+(Math.random()*9)+"*"+_V[_i].charAt(2));
+%    \end{macrocode}
+%\changes{v1.9d}{2012/05/13}{Introduced \texttt{iCorrect} variable}
+% Introduced \texttt{iCorrect} variable to correct check each of the
+% user's pairs of responses.
+%    \begin{macrocode}
+    var isCorrect=1;
+    for (var pair=0; pair< l; pair++) {
+%    \end{macrocode}
+% We require each ordered pair to be enclosed in parentheses
+%    \begin{macrocode}
+        if ( (aUserAns[pair].charAt(0) != "\(") || %
+(aUserAns[pair].charAt(aUserAns[pair].length-1) != "\)"))
+                return eqAppAlert(\eqSyntaxErrorNoParens,3), null;
+%    \end{macrocode}
+% Strip away the parentheses, so for example, \texttt{UserAnsPair="3,5"}
+%    \begin{macrocode}
+        UserAnsPair=aUserAns[pair].substring(1,aUserAns[pair].length-1);
+%    \end{macrocode}
+% \texttt{aUserAnsPair} an the array that contains the components of
+% \texttt{aUserAns[pair]}
+%    \begin{macrocode}
+        var aUserAnsPair = UserAnsPair.split(",");
+%    \end{macrocode}
+% See if each component is a number
+%    \begin{macrocode}
+        for ( var i=0; i < aUserAnsPair.length; i++) {
+            try { if (isNaN(eval(aUserAnsPair[i]))) %
+return syntaxError(), null;
+%    \end{macrocode}
+%\changes{v1.9d}{2012/05/13}{Corrected reference, changed
+%\texttt{aUserAns} to \texttt{aUserAnsPair}}
+% \texttt{(2012/05/13)} Corrected reference, changed \texttt{aUserAns} to \texttt{aUserAnsPair}
+%    \begin{macrocode}
+            if (!allowzero && (eval(aUserAnsPair[i])==0))
+                return eqAppAlert(\eqNonzeroEntries,3), null;
+            } catch(e) { return syntaxError(), null; }
+        }
+%    \end{macrocode}
+% If the number of components does not match the number of variables, this is an
+% error. Give the user a chance to correct it.
+%    \begin{macrocode}
+        if ( aUserAnsPair.length != _n) {
+            if (bNotifyWrngNumEntries)
+                return eqAppAlert(\wrongNumEntriesMsg,3), null;
+            else
+                return notifyField(false, flag, fieldname);
+        }
+%    \end{macrocode}
+% Evaluate each component of the user's answer.
+%    \begin{macrocode}
+        for (var _i=0; _i < _n; _i++) {
+            if (_V[_i].charAt(0) == "r" )
+              eval ("var "+_V[_i].charAt(2)+"="+aUserAnsPair[_i]+";");
+            else // assume type "i"
+              eval ("var "+_V[_i].charAt(2)+"="%
++Math.ceil(aUserAnsPair[_i])+";");
+        }
+%    \end{macrocode}
+% \texttt{UserInput} is misnamed, this is the answer the author provides,
+% for example, \texttt{2x+3y-6}. We parse it, then evaluate it (using the values
+% of the variables computed above.
+%    \begin{macrocode}
+        var UserInput=ParseInput(aCorrAns[1]);
+        var UserAns=eval(UserInput);
+%    \end{macrocode}
+% We also evaluate the test function \texttt{testFunc} for the values of the
+% variables computed above. We store the result in \texttt{aUsersArray}.
+%    \begin{macrocode}
+        aUsersArray[pair]=eval(testFunc);
+%    \end{macrocode}
+% If less than \texttt{epsilon}, we set \texttt{success} to \texttt{true},
+% or we return \texttt{false}
+%    \begin{macrocode}
+        success=(Math.abs(UserAns) < epsilon)?true:false;
+%    \end{macrocode}
+% If \texttt{success} is true, we multiply by 1, else we multiply by 0
+%    \begin{macrocode}
+		isCorrect *=Number(success);
+    }
+%    \end{macrocode}
+% If \texttt{isCorrect} is \texttt{1}, all comparisons were successful.
+%    \begin{macrocode}
+    success=(isCorrect==1);
+%    \end{macrocode}
+% Sort \texttt{aUsersArray} from least to greatest
+%    \begin{macrocode}
+    var aOrderArray = aUsersArray.sort(function(a,b){return a-b});
+    var m = aUsersArray.length - 1;
+%    \end{macrocode}
+% See if any two consecutive entries differ by a little, if not, we'll
+% say the two answers are the same and ask the user for distinct entries.
+%    \begin{macrocode}
+    for (i=0; i<m; i++)
+        if (Math.abs(aUsersArray[i]-aUsersArray[i+1])<.0001)
+            return eqAppAlert(\eqDuplEntries,3), null;
+%    \end{macrocode}
+% If we have not exited earlier, we exit now with \texttt{success} as \texttt{true} or \texttt{false}.
+%    \begin{macrocode}
+    return notifyField(success, flag, fieldname);
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+% \subsubsection{\texttt{useGermanNums}}
+% \IndexOpt{useGermanNums}A simple \texttt{ProcResp()} for processing numbers entered in a German format: 1234,56.
+% The Germans have a block delimiter of period or space (1.234,56 or 1 234,56).
+% The period is not supported and causes an alert box.
+%\changes{v1.9g}{2014/01/14}{Added a proc to accept the comma for the decimal mark}
+%    \begin{macrocode}
+\@ifcheckedout{useGermanNums}
+\newcommand{\noDecPtGerMsg}{"A period (.) is not allowed in answer,
+    use German notation for numbers"}
+\fi
+\begin{library@holding}{useGermanNums}
+\begin{newsegment}
+    {dljslib: Support for process numbers in the German format}
+%    \end{macrocode}
+% \DescribeMacro{ProcRespNumsDe} This segment only has one ProcResp function in it,
+% this is named \texttt{ProcRespNumsDe}.
+%    \begin{macrocode}
+function ProcRespNumsDe (flag,CorrAns,n,epsilon,%
+domain,indepVar,oComp) {
+    if (!ProcessIt) return null;
+    ok2Continue = true;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+%    \end{macrocode}
+% This is the only change over the \texttt{ProcResp}, we call
+% \texttt{\_ProcRespNumsDe}.
+%    \begin{macrocode}
+    var success = _ProcRespNumsDe(flag,CorrAns,UserAns,n,%
+epsilon,domain,indepVar,oComp);
+    if ( success == -1 || !ok2Continue ) return null;
+    if ( success == null ) { return syntaxError(), null; }
+    return notifyField(success, flag, fieldname);
+}
+function _ProcRespNumsDe(flag,CorrAns,UserAns,n,epsilon,%
+domain,indepVar,oComp) {
+    ok2Continue = true;
+    CorrAns = ParseInput(CorrAns);
+    if (!ok2Continue) {
+        eqAppAlert("Syntax error in author's answer! Check console.", 3);
+        return null;
+    }
+%    \end{macrocode}
+% Save \texttt{UserAns} as \texttt{UserAnsSave} and pass \texttt{UserAnsSave} to
+% \texttt{processSpecialParse} instead of \texttt{UserAns}.
+%    \begin{macrocode}
+    var UserAnsSave=UserAns;
+    var reDe=/,/g;
+    var reDec=/\./g;
+%    \end{macrocode}
+% Deny use of the traditional decimal point (.)
+%    \begin{macrocode}
+    if ( reDec.test(UserAns) ) {
+        eqAppAlert(\noDecPtGerMsg,3);
+        return -1;
+    }
+%    \end{macrocode}
+% Replace all occurrences of \texttt{","} with \texttt{"."}, for internal use
+%    \begin{macrocode}
+    UserAns=UserAns.replace(reDe,".");
+    var comp = ( typeof oComp == "object" ) ?
+        (typeof oComp.comp == "undefined" ) ?
+            diffCompare : oComp.comp : oComp;
+    if ( (typeof(oComp)=="object") %
+&& (typeof(oComp.priorParse)!="undefined") ) {
+%    \end{macrocode}
+% We pass \texttt{UserAnsSave} in case author uses \texttt{priorParse} etc.
+%    \begin{macrocode}
+        var retn=processSpecialParse(oComp.priorParse,UserAnsSave);
+        if (retn==null) return -1;
+    }
+    var reComma=/,/;
+    if ( reComma.test(UserAns) ) {
+        eqAppAlert(\eqSyntaxErrorComma,3);
+        return -1;
+    }
+    UserAns = ParseInput(UserAns);
+    indepVar = TypeParameters(indepVar);
+    if (!ok2Continue) return null;
+    var success=randomPointCompare(n,domain,indepVar,%
+epsilon,CorrAns,UserAns,comp);
+        if ( success && (typeof(oComp)=="object") %
+&& (typeof(oComp.postParse)!="undefined") )
+        success=processSpecialParse(oComp.postParse,UserAns);
+    return success;
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+% The following functions, which are \texttt{ProcResp}-types, were written for an online
+% grading system being developed by Drs.\ Bruce Wagner and David Arnold, and Mr.
+% Jacob Miles-Prystowsky.  The descriptions given below were provided by the authors.
+%    \begin{macrocode}
+\begin{library@holding}{unordered}
+%    \end{macrocode}
+% \subsubsection{\texttt{unordered}}
+% \IndexOpt{unordered}The \texttt{unordered} option is deprecated.
+%    \begin{macrocode}
+\begin{newsegment}{dljslib: Contrib - Processing Unordered Responses}
+/*
+** The ProcRespSetFormula function is now listed  under the
+** setSupport option, titled 'dljslib: Support for Sets'
+*/
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+%    \begin{macrocode}
+\@ifcheckedout{factors}
+\newcommand{\facNoPropForm}{"Factorization is not in the proper form,
+    try placing the constant, if any, at the beginning of the
+    factorization"}
+\newcommand{\noNotEncloseMonos}{"Do not enclose constants or
+    monomials in parentheses"}
+\fi
+\begin{library@holding}{factors}
+%    \end{macrocode}
+% \subsubsection{\texttt{factors}}
+%  \IndexOpt{factors}\texttt{ProcRespFactors} is for grading polynomial factoring
+%  questions. For example, if a polynomial factors as
+%  \verb!-5x^2(x-4)(x+2)!, then the answer is only unique up to the order of
+%  factors and a change of sign on an even number of factors. For
+%  example, it could also be written as \verb!-5x^2(x+2)(x-4)! or
+%  \verb!5x^2(-x+4)(x+2)! or \verb!-5(x-4)(x+2)x^2!, etc. This script
+%  should grade all of these correctly. (However, it will not allow
+%  something like \verb!-(x-4)(x+2)5x^2!. The leading coefficient, if
+%  there is one, must be placed at the beginning, which conforms to
+%  our usual conventions.)
+%\begin{flushleft}
+% Usage:
+%\begin{verbatim}
+%\def\factorsbox#1#2#3{%
+%       \RespBoxMath{#1}(#2){4}{1.0E-15}{#3}*{ProcRespFactors}}
+%Some question requiring a factored response
+%\factorsbox{3x(x^2+1)(2x-1)^3}{x}{[0,1]}
+%\end{verbatim}
+%\end{flushleft}
+% (2014/08/08) Rewrote portions of Bruce's code,
+% introduce the \texttt{getFactorArray} function, giving better
+% parsing and error feedback.
+%\changes{v1.9j}{2014/08/08}{Rewrote portions of Bruce's code,
+% introduce the function \texttt{getFactorArray}, giving better
+% parsing and error feedback.}
+%    \begin{macrocode}
+\begin{newsegment}{dljslib: Contrib - Processing Factors as Responses}
+function ProcRespFactors(flag,CorrAns,n,epsilon,domain,indepVar,oComp)
+{
+    ok2Continue = true;
+    if (!ProcessIt) return null;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace(UserAns);
+    if (!ok2Continue) return null;
+    var retn = _ProcResp(flag,CorrAns,UserAns,n,epsilon,%
+domain,indepVar,oComp);
+    if ( retn == -1 ) return null;
+    if ( retn == null ) return syntaxError(), null;
+    if ( retn == 0 ) {
+        var initialsuccess = false;
+        return notifyField(initialsuccess, flag, fieldname);
+    }
+    var aUserAns=new Array();
+    var aCorrAns=new Array();
+    var aNegCorrAns=new Array();
+    aUserAns=getFactorArray(UserAns);
+    if (aUserAns==null) {
+        eqAppAlert(\facNoPropForm, 3);
+        return null;
+    }
+    if (aUserAns==-1) return null;
+    aCorrAns=getFactorArray(CorrAns);
+    if ( aCorrAns==null) {
+        app.beep(); console.show();
+        console.println("Author error in factorization, its not in %
+the proper form");
+        return null;
+    }
+    for ( var i=0; i< aCorrAns.length; i++) {
+        aNegCorrAns[i] = "-" + "(" + aCorrAns[i] + ")"}
+    var numCorrect = 0, match=0,signflag=0;
+    if ( aUserAns.length != aCorrAns.length )
+        return notifyField(false, flag, fieldname);
+    for ( var i=0; i< aCorrAns.length; i++) {
+        match = 0;
+        for ( var j=i; j< aUserAns.length; j++) {
+            var retn = _ProcResp(flag,aCorrAns[i],aUserAns[j],%
+n,epsilon,domain,indepVar,oComp);
+            if ( retn == -1 ) return null;
+            if ( retn == null ) return syntaxError(), null;
+            if (retn==1) {
+                var temp=aUserAns[j];
+                aUserAns[j]=aUserAns[i];
+                aUserAns[i]=temp;
+                match = match + 1;
+            }
+            else {
+                var retn = _ProcResp(flag,aNegCorrAns[i],aUserAns[j],%
+n,epsilon,domain,indepVar,oComp);
+                if ( retn == -1 ) return null;
+                if ( retn == null ) return syntaxError(), null;
+                if (retn==1) {
+                    var temp=aUserAns[j];
+                    aUserAns[j]=aUserAns[i];
+                    aUserAns[i]=temp;
+                    match = match + 1;
+                    signflag = signflag + 1;
+                }
+            }
+        }
+        numCorrect += (match) ? 1 : 0;
+    }
+    var success = ((numCorrect==aCorrAns.length)&&(signflag\%2==0));
+    if ( success == null ) return syntaxError(), null;
+    return notifyField(success, flag, fieldname);
+}
+%    \end{macrocode}
+% This function identifies the factors of a factored polynomial, does some
+% rearrangement, and returns an array of the factors.
+%    \begin{macrocode}
+function getFactorArray(str) {
+    var aFactors=new Array();
+    var i,j,front,factor,back,bInitGrped=true;
+%    \end{macrocode}
+% First, see of the first factor is grouped.
+%    \begin{macrocode}
+    if (str.charAt(0) != "\(" ) {
+%    \end{macrocode}
+% Not grouped, we'll scan forward for the next left paren and
+% push the whole thing onto aFactors.
+%    \begin{macrocode}
+        bInitGrped=false;
+        i=str.indexOf("\(");
+        if ( i != -1 ) {
+            aFactors.push(str.substring(0,i));
+%console.println("Initial factor: "+ str.substring(0,i));
+%    \end{macrocode}
+% Reset the string, removing what we've pushed onto aFactos
+%    \begin{macrocode}
+            str=str.substring(i);
+%console.println("new str="+str);
+        }
+    }
+%var scan=0
+%    \end{macrocode}
+% We now identify grouped factors, push them onto the aFactors array
+% and reset the string.
+%    \begin{macrocode}
+    while ( (i=str.indexOf("\(")) != -1 ) {
+%console.println("scan "+(++scan));
+        j=FindBalP(str,i,true);
+        front=str.substring(0,i);
+        factor=str.substring(i,j+1);
+        back = str.substring(j+1);
+%    \end{macrocode}
+% See if this factor has multiplicities, if so, combine it with the factor
+% and push onto aFactors
+%    \begin{macrocode}
+        if ( back.charAt(0) == "\^" ) {
+            getExp=back.match(/\^\d+/);
+            theExp=back.substring(0,getExp[0].length);
+            factor+=(theExp);
+            aFactors.push(factor);
+%console.println("Adding factor: " + factor);
+            back=back.substring(getExp[0].length);
+        } else {
+            aFactors.push(factor);
+%console.println("Adding factor: " + factor);
+        }
+        str=front + back;
+%console.println("new str="+str);
+%    \end{macrocode}
+% Before we finish with this factor, we'll check whether this is an
+% enclosed monomial eg \verb!(-2x^2)!, the sign may not be present, but
+% we need to test for it. We test for a sign, and beyond that, we search
+% \texttt{+/-}. If we find \texttt{+/-}, we emit an warning box and we
+% return a \texttt{-1}, same as null, but indicates an alert has been given.
+%    \begin{macrocode}
+        if ( factor.charAt(1)=="-" || factor.charAt(1)=="+" )
+            factor=factor.substring(2);
+        if (!/[+-]/.test(factor)) {
+            eqAppAlert(\noNotEncloseMonos, 3);
+            return -1;
+        }
+    }
+%console.println("finished with scan step");
+%    \end{macrocode}
+% Added the initial un-grouped factor and exhausted all grouped factors
+% what's left over is out of place
+%    \begin{macrocode}
+    if (/[A-Za-z]/.test(str)) {
+%    \end{macrocode}
+% want to pluck off the variable with optional power only, any constant
+% is misplaced
+%    \begin{macrocode}
+        var aExp = str.match(/[A-Za-z](\^\d+)*/);
+        factor=aExp[0];
+        i=aExp.index;
+        front=str.substring(0,i);
+        back=str.substring(i+factor.length);
+        str=front+back;
+        if (!bInitGrped) {
+            if (aFactors[0]=="-" || aFactors[0]=="+")
+                aFactors[0]=aFactors[0]+factor;
+            else
+                aFactors[0]="\("+aFactors[0]+"\)"+"\("+factor+"\)";
+%console.println("Modified first factor: " + aFactors[0]);
+        } else {
+            aFactors.push(str);
+%console.println("adding factor: " +str);
+            str="";
+        }
+    }
+%    \end{macrocode}
+% finally be sure this factor is not just a \texttt{"+"} or \texttt{"-"}
+%    \begin{macrocode}
+    if (aFactors[0]=="-"||aFactors[0]=="+"||isFinite(aFactors[0])){
+        factor=aFactors.shift();
+        aFactors[0]=factor+aFactors[0];
+    }
+%console.println("aFactors: " + aFactors.toSource());
+%console.println("Final str="+str);	
+%    \end{macrocode}
+% If \texttt{str} is non-empty, that usually means there is a constant left over
+% that was misplaced in the middle or end of the factorization. Otherwise, we return
+% the aFactors array.
+%    \begin{macrocode}
+    return (str!="") ? null : aFactors
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+%    \begin{macrocode}
+\@ifcheckedout{point}
+\newcommand{\pointErrorMsgi}{%
+    "I'm looking for a point. You need to use proper point notation."}
+\newcommand{\pointErrorMsgii}{"Parentheses are not balanced."}
+\newcommand{\pointErrorMsgiii}{"Incorrect number of components.
+    The answer requires "+ aCorrAns.length+" components."}
+\def\pointEmptyCompMsgiv(#1){
+    "You entered nothing for the component " +(#1+1)
+        +" of your answer. Please enter a component for the point."}
+\fi
+\begin{library@holding}{point}
+%    \end{macrocode}
+% \subsubsection{\texttt{point}}
+%  \IndexOpt{point}The JS function \texttt{ProcPoint} is an almost exact copy of your
+%  \texttt{ProcVec}, but uses parentheses instead of angle brackets as
+%  delimiters. This is for questions that have a point $(x,y)$ as the
+%  answer.
+%\begin{flushleft}
+% Usage:
+%\begin{verbatim}
+%\def\formulapointbox#1#2#3{%
+%       \RespBoxMath{#1}(#2){4}{1.0E-15}{#3}*{ProcPoint}}
+%Some question requiring a point (ordered pair) response
+%\formulapointbox{(e^t,te^t)}{t}{[0,1]}
+%\end{verbatim}
+%\end{flushleft}
+%    \begin{macrocode}
+\begin{newsegment}{dljslib: Contrib - Processing a Point Response}
+function ProcPoint(flag,CorrAns,n,epsilon,domain,indepVar,oComp)
+{
+    if (!ProcessIt) return null;
+    ok2Continue = true;
+    var i, success, truthCnt=1;
+    var aScalar, scalar = 1;
+    var fieldname = event.target.name;
+    var UserAns = event.value;
+    UserAns = stripWhiteSpace (UserAns); // sets ok2Continue
+    CorrAns = stripWhiteSpace(CorrAns);
+    if ( !ok2Continue ) return null;
+    var isSpecResp=false;
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (CorrAns == aDlLibSpecResp[i]) {
+            isSpecResp=true; break;
+        }
+    }
+    for ( var i=0; i<aDlLibSpecResp.length; i++) {
+        if (UserAns == aDlLibSpecResp[i]) {
+            success = (CorrAns == UserAns);
+            return notifyField(success, flag, fieldname);
+        }
+    }
+    if (isSpecResp) return notifyField(false, flag, fieldname);
+    if (!/[()]/.test(UserAns)) {
+        return eqAppAlert(\pointErrorMsgi, 3), null;
+    }
+    if (!CkBalP(UserAns,"(",")")) {
+        return eqAppAlert(\pointErrorMsgii, 3), null;
+    }
+%    \end{macrocode}
+% If \texttt{oComp} is an object, then see if it has a \texttt{comp} property
+%    \begin{macrocode}
+    var comp = ( typeof oComp == "object" ) ?
+       (typeof oComp.comp == "undefined" ) ?
+            diffCompare : oComp.comp : oComp;
+    CorrAns = CorrAns.replace(/[()]/g, ""); // strip off ( and )
+    UserAns = UserAns.replace(/[()]/g, "");
+%    \end{macrocode}
+% The \texttt{comp} parameter, which has been changed to \texttt{oComp} can now be
+% an object. One property of this object is \texttt{comp}, handled above. Another
+% property is \texttt{priorParse}, this is a function that returns \texttt{null}
+% or \texttt{true}. This \texttt{priorParse} function allows for additional
+% filtering of the \texttt{UserAns} before parsing. If it returns \texttt{true},
+% we are ok to continue, if \texttt{null}, we don't like something the user has entered,
+% and ask him/her to change it.
+%    \begin{macrocode}
+    if ( typeof oComp == "object" &&
+        typeof oComp.priorParse != "undefined" ) {
+%    \end{macrocode}
+% Let's go ahead and allow \texttt{oComp.priorParse} be an array of functions.
+%    \begin{macrocode}
+        if ( typeof oComp.priorParse == "object" ) {
+            for ( var i=0; i < oComp.priorParse.length; i++) {
+                var retn = oComp.priorParse[i](UserAns);
+                if ( retn == null ) return null;
+            }
+        } else {
+            var retn = oComp.priorParse(UserAns);
+            if ( retn == null ) return null;
+        }
+    }
+% Not convert each to an array
+    aUserAns = UserAns.split(",");
+    aCorrAns = CorrAns.split(",");
+    if (scalar != 1)
+        for (i=0; i<aUserAns.length; i++)
+            aUserAns[i]=""+scalar+"*"+aUserAns[i];
+    if (aCorrAns.length != aUserAns.length) {
+        eqAppAlert(\pointErrorMsgiii,3);
+        return null;
+    }
+    indepVar = TypeParameters(indepVar);
+    for (i=0; i<aCorrAns.length; i++) {
+        aCorrAns[i] = ParseInput(aCorrAns[i]);
+        if (!ok2Continue) {
+            eqAppAlert("Author Syntax error!", 3);
+            return null;
+        }
+        aUserAns[i] = ParseInput(aUserAns[i]);
+        if (aUserAns[i]==null) {
+            eqAppAlert(\pointEmptyCompMsgiv(i), 3);
+            return null;
+        }
+        if (!ok2Continue) return null;
+        success=randomPointCompare (
+            n,domain,indepVar,epsilon,aCorrAns[i],aUserAns[i],comp)
+        if ( success == null ) {
+            eqAppAlert(\eqSyntaxErrorUndefVar,3); return null; }
+        truthCnt *= (success) ? 1 : 0;
+%-        if (success) truthCnt +=1;
+    }
+%    return notifyField((truthCnt == 3), flag, fieldname);
+    return notifyField(!!truthCnt, flag, fieldname);
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+%    \begin{macrocode}
+\begin{library@holding}{intervals}
+%    \end{macrocode}
+% \subsubsection{\texttt{intervals}}
+%  \IndexOpt{intervals}\texttt{ProcRespIntervals} is for grading questions that have an
+%  interval or union of intervals as the answer. Example answers
+%  include:
+%\begin{verbatim}
+%(2,3)
+%[2,3]
+%(-inf,4)
+%(-inf,4]
+%(6,inf)
+%[6,inf)
+%(2,3)U[8,9)
+%(-inf,6)U(9,inf)
+%(-inf,6]U[7,8)U(9,inf)
+%\end{verbatim}
+%  Here I've used "inf" for infinity and the capital letter "U" for
+%  the union symbol. Note also that intervals in a union can appear
+%  in any order.
+%\begin{flushleft}
+%The \texttt{ProcRespIntervals} function has been modified by Robert Marik
+%to allow intervals with end points \texttt{ln(2)}, \texttt{exp(4)} or \texttt{sqrt(3)}.
+%Thus, intervals of the form
+%\verb!(ln(2),ln(3)]U(exp(10),inf)! are recognized by this procedure.
+%\medskip\noindent
+% Usage:
+%\begin{verbatim}
+%\def\intervalbox#1{\RespBoxMath{#1}(infU){10}
+%    {1.0E-4}{[0,1]x[0,1]x[0,1]x[0,1]}*{ProcRespIntervals}}
+%Some question requiring an interval or union of intervals
+%\intervalbox{(-inf,4]U[5,inf)}
+%\end{verbatim}
+% To avoid problems with unbalanced parentheses, as in this example,
+%\verb!\intervalbox{(-inf,4)U[5,inf)}!.
+% Here there is only one right parenthesis and two left parentheses. As a
+% workaround, escape the odd
+% parenthesis, like so
+%\verb!\intervalbox{(-inf,4)U[5,inf\eqbs)}!,
+% where \cs{eqbs} is defined in the \textsf{insdljs} package.
+%\end{flushleft}
+%    \begin{macrocode}
+\begin{newsegment}{dljslib: Contrib - Processing Interval Responses}
+function ProcRespIntervals(flag,CorrAns,n,epsilon,domain,indepVar,oComp)
+{
+     ok2Continue = true;
+     if (!ProcessIt) return null;
+     var fieldname = event.target.name;
+     var UserAns = event.value;
+     UserAns = stripWhiteSpace(UserAns);
+     CorrAns = stripWhiteSpace(CorrAns);
+     if (!ok2Continue) return null;
+     UserAns = UserAns.replace(/inf/g, "x");
+     CorrAns = CorrAns.replace(/inf/g, "x");
+     indepVar = "x";
+     domain="[0,1]";
+     var aUserAns = UserAns.split("U");
+     var aCorrAns = CorrAns.split("U");
+     var numCorrect = 0;
+     var match = 0;
+     var matchparts = 0;
+     if ( aUserAns.length != aCorrAns.length )
+        return notifyField(false,flag, fieldname);
+     for ( var i=0; i< aCorrAns.length; i++) {
+         match = 0;
+         for ( var j=i; j< aUserAns.length; j++) {
+             CorrInt=aCorrAns[i];
+             UserInt=aUserAns[j];
+             var levaUser = UserInt.charAt(0);
+             var pravaUser = UserInt.charAt(UserInt.length-1);
+             var stredUser = UserInt.substring(1,UserInt.length-1);
+             UserInt = levaUser+","+stredUser+","+pravaUser;
+             var levaCorr = CorrInt.charAt(0);
+             var pravaCorr = CorrInt.charAt(CorrInt.length-1);
+             var stredCorr = CorrInt.substring(1,CorrInt.length-1);
+             CorrInt = levaCorr+","+stredCorr+","+pravaCorr;
+             var aCorrInt = CorrInt.split(",");
+             var aUserInt = UserInt.split(",");
+             if ( aUserInt.length != 4 )
+                return notifyField(false, flag, fieldname);
+             matchparts = 0;
+             if (aCorrInt[0] == aUserInt[0]) matchparts+=1;
+             if (aCorrInt[3] == aUserInt[3]) matchparts+=1;
+             var retn1 = _ProcResp(flag,aCorrInt[1],aUserInt[1],%
+n,epsilon,domain,indepVar,oComp);
+             if (retn1 == -1 ) return null;
+             if (retn1 == null) return syntaxError(), null;
+             if (retn1 == 1) matchparts+=1;
+             var retn2 = _ProcResp(flag,aCorrInt[2],aUserInt[2],%
+n,epsilon,domain,indepVar,oComp);
+             if (retn2 == -1 ) return null;
+             if (retn2 == null) return syntaxError(), null;
+             if (retn2 == 1) matchparts+=1;
+             if (matchparts == 4) {
+                 var temp=aUserAns[j];
+                 aUserAns[j]=aUserAns[i];
+                 aUserAns[i]=temp;
+                 match = match + 1;
+             }
+         }
+         numCorrect += (match) ? 1 : 0;
+     }
+     var success = (numCorrect == aCorrAns.length);
+     return notifyField(success, flag, fieldname);
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+%
+% \subsection{Compare Functions}\label{s:compfunctions}
+%
+% \textbf{Used by Exerquiz.}   A compare function is a JavaScript that compares the author's answer
+% with the user's answer. There may be a need for compare functions other than the default one provided
+% by \texttt{exerquiz}.
+%
+% \subsubsection{\texttt{indefIntegral}}\label{indefIntegral}
+% \IndexOpt{indefIntegral}The answer to an indefinite integral is non-unique; however all answers differ by a constant.
+% This compare function is used with indefinite integrals. See \texttt{jqzspec.tex} for an
+% example of the use of this function. Note the name of the function is \texttt{indefCompare}, this
+% is the name you use to call the function. An example of usage of this function can be found in
+% the sample file \texttt{jslib\_ex.tex} that comes with the Acro\TeX{} Bundle; from that file we
+% have:
+%\begin{verbatim}
+%$\displaystyle\int\sin(x)\,dx =
+%    \RespBoxMath{-cos(x)}[intSin]{4}{.0001}{[0,1]}[indefCompare]$
+%\end{verbatim}
+% See also the file \texttt{jqzspec.tex} for more details.
+%    \begin{macrocode}
+\begin{library@holding}{indefIntegral}
+\begin{newsegment}{dljslib: Indefinite Integral Handling}
+function indefCompare(_a,_c,_v,_F,_G) {
+    var eqC;
+    var aAB = _a.split(",");
+    var aXY = _c.split(",");
+    var _V = _v.split(",");  // e.g. _V[0] = "i:x"
+    var _n = aXY.length
+        for (var _i=0; _i< _n; _i++) {
+            if (_V[_i].charAt(0) == "r" )
+                eval ( "var "+ _V[_i].charAt(2)
+                    + " = " + aAB[2*_i] + ";");
+            else // assume type "i"
+                eval ( "var "+ _V[_i].charAt(2)
+                    + " = " + Math.ceil(aAB[2*_i]) + ";");
+        }
+% var C = 0 is used to designate an arbitrary constant
+        var C = 0;
+        if ( app.viewerVersion >= 5)
+        {
+            var rtnCode = 0;
+            eval("try {if (isNaN(eqC = eval(_F)-eval(_G))) rtnCode=-1;}"
+                +" catch (e) { rtnCode=1; }");
+            switch(rtnCode)
+            {
+                case  0: break;
+                case  1: return null;
+                case -1: return -1;
+            }
+        }
+        else
+            if (isNaN(eqC = eval(_F)-eval(_G))) return -1;
+        for (var _i=0; _i< _n; _i++)
+        {
+            if (_V[_i].charAt(0) == "r" )
+                eval ( "var "+ _V[_i].charAt(2)
+                    + " = " + aXY[_i] + ";");
+            else // assume type "i"
+                eval ( "var "+ _V[_i].charAt(2)
+                    + " = " + Math.ceil(aXY[_i]) + ";");
+        }
+        _F = eval(_F);
+        if ( app.viewerVersion >= 5)
+        {
+            var rtnCode = 0;
+            eval("try { if(isNaN(_G = eval(_G))) rtnCode=-1; }"
+                +" catch (e) { rtnCode=1; }");
+            switch(rtnCode)
+            {
+                case  0: break;
+                case  1: return null;
+                case -1: return -1;
+            }
+        }
+        else
+            if(isNaN(_G = eval(_G))) return -1;
+        return Math.abs( _F - _G - eqC );
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+%
+% \subsection{Filter User's Responses}
+% The following two function were contributed by Ross Moore and Frances
+% Griffin, and were taken from their
+% \href{http://rutherglen.ics.mq.edu.au/~macqtex/}{MacQ\TeX} online testing
+% system. See the sample file \texttt{integer\_tst.tex} for sample usage.
+% These two functions take \texttt{UserAns} as a parameter and return
+% \texttt{null} or \texttt{true} to signal the user expression is not an
+% acceptable response, or that it's ok for processing, respectively.
+%    \begin{macrocode}
+\@ifcheckedout{nodec}
+\newcommand\nodecAlertMsg{%
+    "A decimal answer is not acceptable here.
+     Please express your answer using fractions, square roots,
+     e, log, etc."}
+\fi
+\begin{library@holding}{nodec}
+%    \end{macrocode}
+% \subsubsection{\texttt{nodec}}
+% \IndexOpt{nodec}Do not allow the use of decimal numbers. (Just searches of ``.''.)
+%    \begin{macrocode}
+\begin{newsegment}{dljslib: Contrib - No Decimals}
+function nodec(UserAns)
+{
+    var dot = /[\.\aebdecimalpoint]/;
+    if (dot.test(UserAns)) {
+        eqAppAlert(\nodecAlertMsg,3);
+        return null;
+    } else return true;
+}
+\end{newsegment}
+%    \end{macrocode}
+%    \begin{macrocode}
+\end{library@holding}
+\@ifcheckedout{noBinFac}
+\newcommand\noBinFactBinCoeffAlertMsg{%
+    "You may not use this notation here.
+     Please evaluate the binomial coefficient.
+     You may present your answer as a product rather
+     than calculating a very large number."}
+\newcommand\noBinFactPermAlertMsg{%
+    "You may not use this notation here.
+     Please evaluate the permutation.
+     You may present your answer as a product rather
+     than calculating a very large number."}
+\newcommand\noBinFactFactAlertMsg{%
+    "You may not use this notation here.
+     Please evaluate the factorial.
+     You may present your answer as a product rather
+     than calculating a very large number."}
+\fi
+\begin{library@holding}{noBinFac}
+%    \end{macrocode}
+% \subsubsection{\texttt{noBinFac}}
+% \IndexOpt{noBinFac}Disallow binomial coefficients and factorials in math fill-ins.
+%    \begin{macrocode}
+\begin{newsegment}{dljslib: Contrib - No Binomial Coefficients Allowed}
+aReFact = new Array(
+    /(?=\()?(\d+)(?=\))?!/,
+    /(?=\[)?(\d+)(?=\])?!/,
+    /(?=\{)?(\d+)(?=\})?!/
+);
+function noBinFac(UserAns)
+{
+    var bad = /(C\()/;
+    if (bad.test(UserAns)) {
+        eqAppAlert(\noBinFactBinCoeffAlertMsg,3);
+        return null;
+    }
+    bad = /(P\()/;
+    if (bad.test(UserAns)) {
+        eqAppAlert(\noBinFactPermAlertMsg,3);
+        return null;
+    }
+    for ( var i=0; i<aReFact.length; i++) {
+        if (aReFact[i].test(UserAns)) {
+            eqAppAlert(\noBinFactFactAlertMsg,3);
+            return null;
+        }
+    }
+    bad = /(fact)/;
+    if (bad.test(UserAns)) {
+        eqAppAlert(\noBinFactFactAlertMsg,3);
+        return null;
+    }
+    return true
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+%    \begin{macrocode}
+\@ifcheckedout{limitArith}
+\newcommand{\allowWrngNormSciNotn}{\def\allowWrngNSN{true}}
+\def\allowWrngNSN{false}
+\newcommand{\DecimalsOnlyErrorMsg}{%
+    "Enter only an integer, e.g., 17, or a decimal number, e.g. 12.4.
+    Using arithmetic operations or built in function is not acceptable
+    for this problem."}
+\newcommand{\NoProductsErrorMsg}{%
+    "Multiplication is not allowed for this problem."}
+\newcommand{\NoDivisionErrorMsg}{%
+    "Division is not allowed for this problem."}
+\newcommand{\NoAddOrSubErrorMsg}{%
+    "Neither addition nor subtraction is allowed for this problem."}
+\newcommand{\NoExpAllowedErrorMsg}{%
+    "The use of exponents is not allowed for this problem."}
+\newcommand{\NoTrigAllowedErrorMsg}{%
+    "The use of trig functions in this problem is not allowed."}
+\newcommand{\NoPiAllowedErrorMsg}{%
+    "The use of PI or pi is not allowed in this problem."}
+\newcommand{\NoTrigLogAllowedErrorMsg}{%
+    "The use of trig and log functions is not allowed
+        in this problem."}
+\newcommand{\sciNotSyntaxError}{"Enter the answer in
+    scientific notation."}
+\newcommand{\sciNotNormalForm}{"The scientific notation entered
+    is not in normalized form."}
+\newcommand{\NoNegExpMsg}{"No negative exponents permitted,
+    keep working!"}
+\fi
+\begin{library@holding}{limitArith}
+%    \end{macrocode}
+% \subsubsection{\texttt{limitArith}}
+% \IndexOpt{limitArith}A collection of functions to limit the use of the arithmetic operations and to limit
+% the use of the trig functions. These functions are called through an optional parameter
+% of \cs{RespBoxMath}, as illustrated below and in the demo document \texttt{limarith.tex}.
+%    \begin{macrocode}
+\begin{newsegment}{dljslib: Limit Arithmetic and Built in Functions}
+%    \end{macrocode}
+% The \texttt{DecimalsOnly} is a function that takes only numbers, either integer or decimal.
+% Usage
+%\begin{verbatim}
+% $ 2.3 + 4.5=\RespBoxMath[\rectW{.75in}\textSize{0}]{6.8}{1}{.0001}{[0,1]}
+%    [{priorParse: DecimalsOnly }]\CorrAnsButton{6.8}$
+%\end{verbatim}
+%    \begin{macrocode}
+function DecimalsOnly(UserAns) {
+    UserAns  = stripWhiteSpace(UserAns);
+    if ( !ok2Continue ) return null;
+    if( !isFinite( UserAns ) ) {
+        eqAppAlert(\DecimalsOnlyErrorMsg,3);
+        return null;
+    }
+    return true;
+}
+%    \end{macrocode}
+% The function \texttt{NoProducts} requires that \texttt{ImplMulti} be taken.
+% An example of usage is
+%\begin{verbatim}
+%$ 3/4 = \RespBoxMath[\rectW{.75in}\textSize{0}]{.75}{1}{.0001}{[0,1]}
+%    [{priorParse: new Array(NoDivision, NoProducts) }]\CorrAnsButton{.75}$
+%\end{verbatim}
+% In the above example, we first call \texttt{NoDivision} then \texttt{NoProducts}. This is
+% the way you can chain these filtering functions together.
+%    \begin{macrocode}
+function NoProducts (UserAns) {
+    // Requires the ImplMulti option of dljslib
+    UserAns  = stripWhiteSpace(UserAns);
+    if ( !ok2Continue ) return null;
+    UserAns = Ck4Products(UserAns);
+    if ( /\*/.test( UserAns ) )
+        return eqAppAlert(\NoProductsErrorMsg,3), null;
+    return true;
+}
+function NoDivision (UserAns) {
+    if ( /\//.test( UserAns) )
+        return eqAppAlert(\NoDivisionErrorMsg,3), null;
+    return true;
+}
+%    \end{macrocode}
+% This function, as the name implies, denies the use of both addition and subtraction.
+% The algorithm I use here is that if a plus or minus follows anything but a left parenthesis,
+% we assume it is a binary operation of addition or subtraction, respectively.
+%\begin{verbatim}
+%$ 5.1 - 3.2 = \RespBoxMath[\rectW{.75in}\textSize{0}]{1.9}{1}{.0001}{[0,1]}
+%       [{priorParse: NoAddOrSub }]\CorrAnsButton{1.9}$
+%\end{verbatim}
+%    \begin{macrocode}
+function NoAddOrSub (UserAns) {
+    UserAns  = stripWhiteSpace(UserAns);
+    if ( !ok2Continue ) return null;
+    UserAns=ChngAllGrpsToParens(UserAns);
+    var result;
+    var re = /.[+-]/g;
+    re.lastIndex = 0;
+    while ( (result = re.exec( UserAns )) != null ) {
+        if ( result[0].charAt(0) != "\(" )
+            return eqAppAlert(\NoAddOrSubErrorMsg,3), null;
+    }
+    return true;
+}
+%    \end{macrocode}
+% Deny user the use of all arithmetic functions, including exponents.
+%    \begin{macrocode}
+function NoArithAllowed (UserAns) {
+    var aNoArithmetic = new Array ( NoAddOrSub, NoProducts,
+        NoDivision, NoExpAllowed );
+    for ( var i = 0; i < aNoArithmetic.length; i++ )
+        if ( (retn = aNoArithmetic[i](UserAns)) == null ) return null;
+    return true;
+}
+%    \end{macrocode}
+% Deny user the use of exponents.
+%    \begin{macrocode}
+function NoExpAllowed (UserAns) {
+    // Requires the ImplMulti option of dljslib
+    UserAns  = stripWhiteSpace(UserAns);
+    if ( !ok2Continue ) return null;
+    if ( /\^/.test( UserAns ) || /pow/.test( UserAns ) )
+        return eqAppAlert(\NoExpAllowedErrorMsg,3), null;
+    return true;
+}
+%    \end{macrocode}
+% Deny user the use all trig functions, as well as the constants \texttt{PI} and \texttt{pi},
+% which are aliases for $\pi$. Example:
+%\begin{verbatim}
+%$ \sin(\pi/4) = \RespBoxMath[\rectW{.75in}\textSize{0}]
+%    {sqrt(2)/2}{1}{.0001}{[0,1]}[{priorParse: NoTrigAllowed }]
+%    \CorrAnsButton{sqrt(2)/2}$
+%\end{verbatim}
+%You can obviously build similar function to deny the use of logs or square roots, for example.
+%\changes{v1.5}{2007/02/05}
+%{
+% Removed \texttt{"pi"} and \texttt{"PI}" from the \texttt{aTrigFuncs array}, and added
+% \texttt{"arcsin"}, \texttt{"arccos"}, "\texttt{arctan"}.
+%}
+%    \begin{macrocode}
+function NoTrigAllowed (UserAns)
+{
+    UserAns  = stripWhiteSpace(UserAns);
+    if ( !ok2Continue ) return null;
+    var aTrigfuncs = new Array
+    ( "acos","asin","atan","cos", "sin", "tan","sec","csc","cot",
+      "arcsin", "arccos", "arctan"
+    );
+    var re, regexp;
+    re = /[a-zA-Z]{2,}/g;
+    aF = UserAns.match(re);
+    if (  aF != null ) {
+        for (var i=0; i < aF.length; i++)
+        {
+            for(var j=0; j < aTrigfuncs.length; j++) {
+                if ( aF[i].indexOf(aTrigfuncs[j]) != -1 )
+                    return eqAppAlert(\NoTrigAllowedErrorMsg,3), null;
+            }
+        }
+    }
+    return true;
+}
+function NoPiAllowed(UserAns)
+{
+    UserAns  = stripWhiteSpace(UserAns);
+    if ( !ok2Continue ) return null;
+    var re=/PI|pi/;
+    if ( re.test(UserAns) )
+        return eqAppAlert(\NoPiAllowedErrorMsg,3), null;
+    return true;
+}
+function NoTrigLogAllowed (UserAns)
+{
+    UserAns  = stripWhiteSpace(UserAns);
+    if ( !ok2Continue ) return null;
+    var aTrigfuncs = new Array
+    ( "acos","asin","atan","cos", "sin",
+      "tan","sec","csc","cot", "arcsin", "arccos", "arctan",
+      "logc","log", "ln"
+    );
+    var re, regexp;
+    re = /[a-zA-Z]{2,}/g;
+    aF = UserAns.match(re);
+    if (  aF != null ) {
+        for (var i=0; i < aF.length; i++)
+        {
+            for(var j=0; j < aTrigfuncs.length; j++) {
+                if ( aF[i].indexOf(aTrigfuncs[j]) != -1 )
+                    return eqAppAlert(\NoTrigLogAllowedErrorMsg,3), null;
+            }
+        }
+    }
+    return true;
+}
+%    \end{macrocode}
+%\changes{v1.9a}{2011/07/15}{Added \texttt{sciNotResp} and \texttt{SciNotResp}}
+% This filter function checks to see if the user's input is in the form of (normalized)
+% scientific notation: \verb![+-]*d[.d*]*[ ]*E[+-]*d+!, written in pseudo-reg expr.
+%    \begin{macrocode}
+var bAllowWrngNormSciNotn=false;
+var bItsNormSciNot=false;
+function SciNotNoNotify(UserAns) {
+    bAllowWrngNormSciNotn=true;
+    var rtn=SciNotResp(UserAns);
+    return rtn;
+}
+function SciNotResp(UserAns) {
+    bItsNormSciNot=false;
+    var _sciNotation, _a, _b;
+    _sciNotation = /^[+-]*(\d*)*(\.\d*)*E[+-]*\d+$/;
+    UserAns=stripWhiteSpace(UserAns);
+    if ( (_a=_sciNotation.exec(UserAns)) !=null) {
+        if (isNaN(_a[1])) {
+            if (bAllowWrngNormSciNotn)
+                return true;
+            else
+                return eqAppAlert(\sciNotNormalForm,3), null;
+        }
+        if (isNaN(_a[2])) _a[2]=0;
+        _b = Math.abs(Number(_a[1])+Number(_a[2]));
+        if ( _b < 1 || _b >= 10 ) {
+            if (bAllowWrngNormSciNotn)
+                return true;
+            else
+                return eqAppAlert(\sciNotNormalForm,3), null;
+        }
+        else {
+            bItsNormSciNot=true;
+            return true
+        }
+    } else
+        return eqAppAlert(\sciNotSyntaxError,3), null;
+}
+function sciNotResp(UserAns) {return SciNotResp(UserAns);}
+function postSciNotResp(UserAns) {
+    bAllowWrngNormSciNotn=false;
+    return bItsNormSciNot;
+}
+%    \end{macrocode}
+%\changes{v1.9a}{2011/07/15}{Added \texttt{noNegExp}}
+% \texttt{noNegExp} does not allow negative exponents in the answer
+%    \begin{macrocode}
+function NoNegExp (UserAns) {
+    var re=/(\^|\^\()+-/g;
+    UserAns=ChngAllGrpsToParens(UserAns);
+    if (re.test(UserAns))
+        return eqAppAlert(\NoNegExpMsg,3), null;
+    return true;
+}
+function noNegExp(UserAns){return NoNegExp(UserAns)}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+% \subsection{Additional mathematical functions}
+% The following are contributions by Ross Moore and Frances Griffin, from their work
+% on \href{http://rutherglen.ics.mq.edu.au/~macqtex/}{MacQ\TeX}.
+% These define function of an integer variable: combinations, permutations and factorials.
+% These can be used for math fill-ins.
+%    \begin{macrocode}
+\begin{library@holding}{combinatorics}
+%    \end{macrocode}
+% \subsubsection{\texttt{combinatorics}}
+% Combinatorial function\IndexOpt{combinatorics}
+%    \begin{macrocode}
+\begin{newsegment}{dljslib: Contrib - Combinatorial Functions}
+function ch(n,r)
+{
+    if ((n==r)||(r==0)) return(1);
+    if ((n==(r+1))||(r==1)) return(n);
+    if (r > (n-r))
+        var coeff = factorialCancel(
+            expandFactorial(r+1,n),expandFactorial(1,n-r));
+    else
+        var coeff = factorialCancel(
+            expandFactorial(n-r+1,n),expandFactorial(1,r));
+    return (eval(coeff));
+}
+function perm(n,r)
+{
+    if (r==0) return(1);
+    else
+        var coeff = factorialCancel(
+            expandFactorial(n-r+1,n),expandFactorial(1,n-r));
+    return (eval(coeff));
+}
+%    \end{macrocode}
+% \texttt{factorialCancel} and \texttt{expandFactorial} are needed by \texttt{binomialCoeff}
+%    \begin{macrocode}
+function expandFactorial(lo,hi)
+{
+    var f = lo;
+    for (var i=lo+1;i<=hi;i++) f = i+"*"+f;
+    return f;
+}
+%    \end{macrocode}
+% \texttt{factorialCancel} cancels common factors in \texttt{num} and \texttt{denom} using strings produced
+% by \texttt{expandFactorial}. It expects tails of factorials to have already been cancelled.
+%    \begin{macrocode}
+function factorialCancel(top,bot)
+{
+    var num = top.split("*");
+    var denom = bot.split("*");
+    var len = denom.length;
+    var temp = 0;
+    var i, j;
+    for (i=0;i<=len-1;i++) {
+        for (j=0;j<=len-1;j++) {
+            temp = num[i]/denom[j];
+            if ((temp - Math.round(temp)) == 0) {
+                num[i] = temp;
+                denom[j] = 1;
+            }
+        }
+    }
+    var t = denom.join("");
+    var reg = /[^1]/;
+    if (reg.test(t)) {
+        temp = factorialCancel(denom.join("*"),num.join("*"));
+    } else {
+        temp = num.join("*");
+    }
+    return (temp);
+}
+function fact(num)
+{
+    var tot = 1;
+    for (var r=1; r <= num; r++) tot *= r;
+    return(tot);
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+% \subsection{\texttt{ParseInput} Extensions}\label{s:parseinput}
+% The default behavior for processing a math fill-in question is to
+% require the student to insert `\texttt*' for multiplication and to
+% enclose any function being raised to a power in parentheses, e.g.
+% \verb+x*(sin(x))^2+. This becomes quite tiresome if the expression to be entered
+% is complicated. The following two functions enable the student to use
+% `implied multiplication' and simplified exponentiation.
+%
+%    \IndexOpt{ImplMulti}
+% The \texttt{ImplMulti} option loads two JavaScript functions, \texttt{Ck4Products()}
+% and \texttt{Ck4Exponents()}.  The latter implements the notation, \verb+sin^2(x)+
+% for $\sin^2(x)$, equivalent to $(\sin(x))^2$. The exponent can be complex and enclosed
+% in parentheses, for example \verb-ln^(x+1)(x)-. The former function, \texttt{Ck4Products()},
+% inserts the multiplication symbol, `\texttt{*}', wherever implied. For example,
+% \verb+xysin(xy)+ becomes \verb+x*y*sin(x*y)+.
+% \begin{flushleft}
+% \textcolor{red}{Important:} If loaded, \texttt{Exerquiz} will automatically use these two functions.
+% \end{flushleft}
+%    \begin{macrocode}
+\begin{library@holding}{ImplMulti}
+%    \end{macrocode}
+% \subsubsection{\texttt{ImplMulti}}
+%    \begin{macrocode}
+\begin{newsegment}{dljslib: Implied Multiplication}
+%    \end{macrocode}
+% The JavaScript function \texttt{Ck4Products()} takes the user input and tries to
+% insert the multiplication symbol, `\texttt*', wherever implied.
+%    \begin{macrocode}
+function Ck4Products(UserInput)
+{
+    var re, aR;
+%    \end{macrocode}
+% Search through for matches with known functions
+%    \begin{macrocode}
+    for (var i=0; i<JSf.length; i++)
+    {
+%    \end{macrocode}
+% Here we mark the beginning of the left parenthesis for a
+% that follows one of the  known functions. This way we can
+% distinguish between the built in JavaScript functions and
+% other sequences of letters that may represent products.
+% \begin{flushleft}
+% \textbf{Note:} In the regular
+% expression below, and elsewhere, when our search includes unbalanced parentheses
+% we need to triple escape them, i.e., instead of `\verb+\\(+' we write
+% `\verb+\\\(+'. See comments in \texttt{insdlis.dtx}.
+% \end{flushleft}
+%    \begin{macrocode}
+        re = new RegExp("("+JSf[i]+")(\\\()","g");
+        UserInput = UserInput.replace(re, "\\$1@$2");
+%    \end{macrocode}
+% If a known function has a letter or a right parenthesis to the left of it,
+% the user must want multiplication, make it so!
+%    \begin{macrocode}
+        re = new RegExp("([\\w\\\)])(\\"+JSf[i]+")(@\\\()","g");
+        UserInput = UserInput.replace(re, "$1*$2$3");
+    }
+%    \end{macrocode}
+% Now do the same type thing for known constants.
+%    \begin{macrocode}
+    for (var i=0; i<JSc.length; i++)
+    {
+%    \end{macrocode}
+% We mark the beginning and end of a known predefined constant
+% \changes{v1.6}{2007/02/23}
+%{
+%    If we match up with "E", we do nothing. This is support of
+%    using "E" for scientific notation.
+%}
+%    \begin{macrocode}
+        re = new RegExp("("+JSc[i]+")","g");
+        if ( JSc[i] != "E" ) {
+            UserInput = UserInput.replace(re, "\\$1@");
+%    \end{macrocode}
+% If a known constant has a letter or an right parenthesis to the left of it,
+% the user must want multiplication, make it so!
+%    \begin{macrocode}
+            re = new RegExp("([\\w\\\)])(\\"+JSc[i]+")(@)","g");
+        }
+    }
+%    \end{macrocode}
+% Search for a number or right paren followed by a letter or right paren
+% and insert *.
+%\changes{v1.6}{2007/02/23}
+%{
+%    dps/change 02/23/07. In the search below, we exclude the search
+%   for the letter "E", because it is used for scientific notation (called exponential)
+%}
+% notation in JavaScript).
+%    \begin{macrocode}
+    UserInput = UserInput.replace(
+        /([\d\)])([A-DF-Za-z\(\\])/g, "$1*$2");
+%    \end{macrocode}
+% Search for a right paren followed by a number.
+%    \begin{macrocode}
+    UserInput = UserInput.replace(/(\))(\d)/g, "$1*$2");
+%    \end{macrocode}
+% Search for a letter followed by a number of right paren, and insert *
+%    \begin{macrocode}
+    UserInput = UserInput.replace(/([A-Za-z])([\d\(\\])/g, "$1*$2");
+%    \end{macrocode}
+% If a predefined constant, such as \texttt{PI}, is multiplied on the
+% right by a factor, there will be a \texttt{@} followed by a letter or decimal.
+%    \begin{macrocode}
+%    re = /(@)([A-Za-z\d])/g;
+    UserInput = UserInput.replace(/(@)([A-Za-z\d])/g, "$1*$2");
+%    \end{macrocode}
+% Now strip off the markers
+%    \begin{macrocode}
+    UserInput = UserInput.replace(/(\\)([A-Za-z]{1,})(@)/g, "$2");
+%    \end{macrocode}
+%  Search through list of known functions for a match.
+%    \begin{macrocode}
+% MacQTeX change   dps/change 02/23/07
+    re = /[A-Za-z]{1,}/g;
+    while ( (aR = re.exec(UserInput)) != null)
+    {
+        for (var i=0; i<JSf.length; i++) if ( aR[0] == JSf[i]) break;
+        if ( i < JSf.length ) continue;
+        for (var i=0; i<JSc.length; i++) if ( aR[0] == JSc[i]) break;
+        if ( i < JSc.length ) continue;
+%    \end{macrocode}
+% If there is no match with known functions or constants, then we need to assume
+% this word is a series of products, and separate them on their non-word
+% boundaries by a multiplication operator *. We will not be able to identify
+% mistyped functions, for example, if the user enters \texttt{cis(x)} instead of
+% \texttt{cos(x)}, this will end up as \texttt{c*i*s*(x)}. Ultimately,
+% the user will get a message that there is an error in the expression, but not
+% hints as to what the error is will not be given.
+%    \begin{macrocode}
+        aR[0] = aR[0].replace(/([A-Za-z])\B/g,"$1*");
+        UserInput = UserInput.substring(0,aR.index)
+            +aR[0]+UserInput.substring(re.lastIndex);
+    }
+    return UserInput;
+}
+%    \end{macrocode}
+% The function \texttt{Ck4Exponents()} attempts to convert the notation \verb+sin^2(x)+
+% into standard JavaScript format of \texttt{pow(sin(x),2)}.
+%    \begin{macrocode}
+function Ck4Exponents(UserInput)
+{
+    var re, regexp, aP, RightP;
+    for (var i=0; (i<JSf.length) && (ok2Continue); i++)
+    {
+        re = new RegExp(JSf[i]+"\\^");
+        while ( re.test(UserInput) && (ok2Continue) )
+        {
+%    \end{macrocode}
+% Here we seek to match an expression of the form: \verb+cos^(exp)(arg)+
+%    \begin{macrocode}
+            regexp = new RegExp(JSf[i]+"\\^\\\(", "g");
+            if ( (aP = regexp.exec(UserInput)) != null ) {
+                // forward search
+                RightP=FindBalP(UserInput,regexp.lastIndex-1,1);
+                var offsetExp = RightP-regexp.lastIndex;
+                regexp = new RegExp(
+                    JSf[i]+"\\^\\(.{"+offsetExp+"}\\)\\\(", "g");
+                regexp.lastIndex=0;
+                if ( (aP = regexp.exec(UserInput)) != null ) {
+                    // forward search
+                    RightP=FindBalP(UserInput,regexp.lastIndex-1,1);
+                    var offsetArg = RightP - regexp.lastIndex;
+                    regexp = new RegExp("("+JSf[i]
+                        +")\\^\\((.{"+offsetExp+"})\\)\\((.{"
+                        +offsetArg+"})\\)");
+                    regexp.lastIndex=0;
+                    if (regexp.test(UserInput))
+                        UserInput=UserInput.replace(
+                            regexp,"(pow($1($3),$2))");
+                    else ok2Continue=false;
+                    continue;
+                }
+            }
+%    \end{macrocode}
+% Here we seek to match an expression of the form: \verb+cos^\pmNum.Num(arg)+
+%    \begin{macrocode}
+            regexp = new RegExp(JSf[i]
+                +"\\^([a-zA-Z]|[+-]?\\d+\\.?\\d*|[+-]?\\d*\\.?\\d+)"
+                +"\\\(","g");
+            if ( (aP = regexp.exec(UserInput)) != null ) {
+                // forward search
+                RightP=FindBalP(UserInput,regexp.lastIndex-1,1);
+                regexp = new RegExp("("
+                    +JSf[i]+")\\^([a-zA-Z]|[+-]?\\d+"
+                    +"\\.?\\d*|[+-]?\\d*\\.?\\d+)\\((.{"
+                    +eval(RightP-regexp.lastIndex)+"})\\)");
+                regexp.lastIndex=0;
+                if (regexp.test(UserInput))
+                    UserInput=UserInput.replace(
+                        regexp,"(pow($1($3),$2))");
+                else ok2Continue=false;
+            }
+            else ok2Continue=false;
+        }
+    }
+%    \end{macrocode}
+% Now we do the same thing for declared constants.
+%    \begin{macrocode}
+    for (var i=0; (i < JSc.length) && (ok2Continue); i++)
+    {
+        re = new RegExp(JSc[i]+"\\^", "g");
+        while ( re.test(UserInput) && (ok2Continue) )
+        {
+            re.lastIndex = 0;
+            aR = re.exec(UserInput);
+            if (UserInput.charAt(re.lastIndex)=='\(') {
+                // forward search
+                RightP=FindBalP(UserInput,re.lastIndex,1);
+                var offsetExp = RightP - re.lastIndex - 1;
+                re.lastIndex=0;
+                regexp = new RegExp("("+JSc[i]
+                    +")\\^\\((.{"+offsetExp+"})\\)");
+                if ( regexp.test(UserInput) )
+                    UserInput = UserInput.replace(
+                        regexp, "(pow($1,$2))");
+                else ok2Continue = false;
+            }
+            else
+            {
+                re.lastIndex=0;
+                regexp = new RegExp("("+JSc[i]
+                +")\\^([a-zA-Z]|[+-]?\\d+\\.?\\d*|[+-]?\\d*\\.?\\d+)");
+                if (regexp.test(UserInput))
+                    UserInput = UserInput.replace(
+                        regexp, "(pow($1,$2))");
+                else ok2Continue = false;
+            }
+        }
+    }
+    return UserInput;
+}
+\end{newsegment}
+\end{library@holding}
+%    \end{macrocode}
+% Finally, we have the ``back wrapper'' or ``back cover'' of the selected materials. We close the
+% \texttt{insDLJS} environment
+%    \begin{macrocode}
+\begin{library@holding}{dljslib}
+\end{insDLJS*}
+\end{library@holding}
+%    \end{macrocode}
+% \section{Out the Door and Close it behind you}
+% \dots and free up this write register.
+%    \begin{macrocode}
+\immediate\closeout\dljslib@verbatim@out
+\advance\count17 by -1
+%    \end{macrocode}
+% \section{Back Home with your Selections}
+%    \begin{macrocode}
+\input{dljslib.ljs}
+%</package>
+%    \end{macrocode}
+\endinput
