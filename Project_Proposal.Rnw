@@ -2,7 +2,7 @@
 \usepackage{hyperref}
 
 \title{How can the Santa Ana sucker be saved?}
-\author{Marc Los Huertos and EA30 Lab Section 1}
+\author{Marc Los Huertos and Val}
 
 \begin{document}
 
