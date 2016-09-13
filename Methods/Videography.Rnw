@@ -2,7 +2,7 @@
 \usepackage{hyperref}
 
 \title{Where is the Santa Ana Sucker?: An Exploration Through Videography}
-\author{Wendy Norena and EA30!!!!}
+\author{Wendy Norena and Clare Flynn}
 
 \begin{document}
 \SweaveOpts{concordance=TRUE}
@@ -15,7 +15,28 @@
   Diel movement with a Go Pro... succession changes in algae...Video with experimental manipulation of rocks with and without algae on them. E. fork of San Gabriel behavior is much different. More cover...
   
   Select a pool, six pools...too much!  exploratory study.
+  
+  
 Where does the Santa Ana Sucker like to hang out? Is it possible that we could capture images of the Santa Ana Sucker in some places more than others?
+
+
+Sampling at different times of the day if possible. Morning when water is coolest, another in late afternoon when it's hottest. Maybe they move downstream at the hottest point of the day and back upstream at the coolest point of the day. Maybe they don't move at all?
+
+Two camera locations, record when/at what time fish were there and how many. 
+
+
+Or maybe we can just stick with location. Choose two different camera locations at different points in the day. 
+
+
+Steps:
+Tuesday Sept. 13th
+-Scout and choose two locations. Figure out ideal camera set up. Film minimum 1 hour of footage.
+-Back on campus, analyze footage using time interval-count method. Practice with that, work out kinks. Maybe adjust experiment based on what we find from this anaylsis.
+
+Future date, TBD
+Return to river, take minimum another hour of footage. If time permits maybe we could shoot at a different time of day-- morning, afternoon, late evening. Morning ideal since we will hopefully already have footage from afternoon and late evening probably wouldn't make much of a temperature difference. 
+
+Repeat as possible recognizing time constraints.
 
 
 \end{document}
