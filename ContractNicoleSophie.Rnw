@@ -1,0 +1,50 @@
+\documentclass{article}
+% \usepackage{showframe} % uncomment to show margins
+
+\title{Nicole and Sophie Contract}
+\author{Sophie Janssen, Nicole Larson}
+%\date{} % Uncomment to remove date from document
+%\date{09/01/2016} % Uncomment to create a specified date
+
+\newcommand*{\SignatureAndDate}[1]{%
+  \par\noindent\makebox[2.5in]{\hrulefill} \hfill\makebox[1.2in]{\hrulefill}%
+  \par\noindent\makebox[2.5in][l]{#1}      \hfill\makebox[1.2in][l]{Date}%
+}%
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Contract}
+
+\begin{itemize}
+  \item We all promise to listen to each other's ideas with respect.
+  \item We promise to communicate frequently and check in with each other.
+  \item We promise to be honest about our abilities and concerns.
+  \item We promise to follow through with the work we agreed to do.
+  \item We promise to try and create a project that we equally contribute to.
+\end{itemize}
+
+\section{Contribution Documentation}
+
+We will record each of our contributions via a Google Doc/texting with honesty and integity. We understand our contribution to the project will be part of our project grade and we will divide our work so that each member can make equivalent contributions.
+
+\section{Consequences}
+
+If a team member breaks one or more of our rules we will first try to talk about it and bring it to the attention of the offending member. If that does not work, we will see the project manager as a mediator in the conflict.
+
+\section{Signatures}
+
+\SignatureAndDate{Nicole Larson}
+
+
+
+\SignatureAndDate{Sophie Janssen}
+
+\vspace{.2in}
+\SignatureAndDate{Professor Los Huertos}
+
+
+\end{document}
