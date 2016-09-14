@@ -1,0 +1,45 @@
+\documentclass{tufte-handout}
+\usepackage{hyperref}
+
+\title{Santa Ana Sucker and Temperature}
+\author{Sophie Janssen and Nicole Larson}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+%\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\section{Introduction}
+
+Each team will determine what resources are available and/or needed to address the driving question. Below I have outlined the process to develop our project which begins with indvidual research, then teamwork to partition effort, and finally an ``individualized project plan.'' The plan will be worth 15\% of the project grade. I will evaluate is based on clarity, completeness, and likelihood of success. 
+
+This plan will have the following sections: 
+
+\begin{description}
+  \item[Question to be Addressed and Hypothesis] How does temperature affect the Santa Ana Sucker? The Santa Ana Suckers will be most abundant in areas of the stream that have temperatures close to their optimum termperature, which is under 22 degrees Celsius. Suckers will not be present where temperatures exceed 32.8 degrees Celsius, based on research done by the Fish and Wildlife Service that found extremely high temperatures correlated with mortality.
+  \item[Approach] We will obtain four HOBO Tidbit water temperature Data Loggers to set up at the Rialto Channel at Agua Mansa, where the hot water meets the Santa Ana River, and in the pool where Suckers have previously been observed. They will be hidden so no one steals them during collection. In order to collect date, we will also need to obtain a USB cable and download the software. We will go into the field to set these up and later to collect them and their data, after at three days of collection time. Using this data and last year's data about where the Suckers were found, we will determine whether temperature correlates with population density.
+  \item[Cited Methods] 
+  
+ \end{description} 
+\section{Background}
+
+\section{Question to be Addressed}
+
+\section{Hypothesis/Hypotheses}
+
+\section{Approach}
+
+ 
+
+\section{Methods w/Citations}
+
+\paragraph{Equipment}
+
+\paragraph{Sampling}
+
+
+\section{Expected Results and Analysis Methods}
+
+
+\end{document}
