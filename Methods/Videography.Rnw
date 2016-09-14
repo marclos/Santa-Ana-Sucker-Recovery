@@ -5,7 +5,7 @@
 \author{Wendy Norena and Clare Flynn}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+%\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -37,6 +37,24 @@ Future date, TBD
 Return to river, take minimum another hour of footage. If time permits maybe we could shoot at a different time of day-- morning, afternoon, late evening. Morning ideal since we will hopefully already have footage from afternoon and late evening probably wouldn't make much of a temperature difference. 
 
 Repeat as possible recognizing time constraints.
+
+\section{Methods}
+
+\paragraph{Equipment}
+
+\paragraph{Camera Placement}
+
+7AM-8AM: Leave for Santa Ana river. I will likely be accompanying you for this part since I can’t come in the afternoon/evening. 
+At the river, I will choose two appropriate locations for the cameras and set them up with camouflage and everything. I’ll start recording hopefully at 8:30-9am and allow the cameras to run until they die (about two hours). Clare will return later to switch out the batteries.
+Likely leave the river in time to return to campus by 10am.
+
+3pm: Leave for Santa Ana river with Clare! She will check on the cameras/camouflage and switch out the batteries and hit record again. The cameras will hopefully record from 4-6pm.
+
+Leave as soon as this and any necessary adjustments are done. 
+
+
+Hopefully after all this, the USFW folks can pick up these cameras for us after they're done on Friday.
+
 
 
 \end{document}

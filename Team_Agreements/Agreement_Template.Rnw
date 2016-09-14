@@ -1,7 +1,7 @@
 \documentclass{article}
 % \usepackage{showframe} % uncomment to show margins
 
-\title{Team X Contract}
+\title{Team X Agreement}
 \author{TeamMember1, TeamMember2, etc}
 %\date{} % Uncomment to remove date from document
 %\date{09/01/2016} % Uncomment to create a specified date
