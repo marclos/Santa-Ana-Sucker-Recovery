@@ -2,7 +2,7 @@
 \usepackage{hyperref}
 
 \title{Where is the Santa Ana Sucker?: An Exploration Through Videography}
-\author{Wendy Norena and Clare Flynn}
+\author{Wendy Nore\~{n}a and Clare Flynn}
 
 \begin{document}
 %\SweaveOpts{concordance=TRUE}
@@ -12,13 +12,18 @@
 \section{Introduction}
 
 
-  Diel movement with a Go Pro... succession changes in algae...Video with experimental manipulation of rocks with and without algae on them. E. fork of San Gabriel behavior is much different. More cover...
+  Diel movement with a Go Pro... succession changes in algae...Video with experimental manipulation of rocks with and without algae on them. 
+  %E. fork of San Gabriel behavior is much different. More cover...
   
   Select a pool, six pools...too much!  exploratory study.
   
   
 Where does the Santa Ana Sucker like to hang out? Is it possible that we could capture images of the Santa Ana Sucker in some places more than others?
 
+\section{Background}
+
+
+\section{Approach}
 
 Sampling at different times of the day if possible. Morning when water is coolest, another in late afternoon when it's hottest. Maybe they move downstream at the hottest point of the day and back upstream at the coolest point of the day. Maybe they don't move at all?
 
@@ -55,6 +60,9 @@ Leave as soon as this and any necessary adjustments are done.
 
 Hopefully after all this, the USFW folks can pick up these cameras for us after they're done on Friday.
 
+\paragraph{Expected Results and Analysis Methods}
+
+\section{Results}
 
 
 \end{document}
