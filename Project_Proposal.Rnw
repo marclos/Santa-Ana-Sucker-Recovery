@@ -2,7 +2,7 @@
 \usepackage{hyperref}
 
 \title{How can the Santa Ana sucker be saved?}
-\author{Marc Los Huertos and Val}
+\author{Marc Los Huertos}
 
 \begin{document}
 
@@ -271,19 +271,21 @@ Once I have a sense of the literature (results, methods), I ask which of the met
    \includegraphics[width=1.0\textwidth]{github_logo.jpg}
 \end{marginfigure}
 
-\item[Tuesday/Wednesday] Github and team contracts. We will also use our time in the lab to explore how to use R, Rstudio, and Github. In addition, we'll determine how our teams will be composed and how they will work together.
+\item[September 13/14 -- Tuesday/Wednesday] Github and team contracts/agreements. We will also use our time in the lab to explore how to use R, Rstudio, and Github. In addition, we'll determine how our teams will be composed and how they will work together.
 
-\item[Friday, September 9] Submit a hardcopy of Individual Project Plan -- It would be preferable to meet with me before or during submision so we can hash out any further unknowns, because I will be spending my weekend working with you to prepare for our field work during the following week.
+\item[Friday, September 16] Submit a hardcopy of Indvidualized Project Plan -- It would be preferable to meet with me before or during submision so we can hash out any further unknowns, because I will be spending my weekend working with you to prepare for our field work during the following week.
+
 \end{description}
 
 \subsection{Determine Required Resources and Methods}
 
 Based on your individual project plan, I will work with each student and team to develop the appropriate methods and ensuring we have access to the appropriate equipment. If you have a specific piece of equipment in mind, be sure to let me know as soon as possible to make sure that we have it or I can obtain it relatively quickly. For example, I wondered if we might use enclosures for a feeding study (\href{http://www.fao.org/docrep/x5744e/x5744e0f.htm}{http://www.fao.org/docrep/x5744e/x5744e0f.htm}, but the FWS didn't like the idea doing a manipulative study at this point.
 
-We will use the Github site to develop and share SOPs.
+%We will use the Github site to develop and share SOPs.
 
 \subsection{Answering the Driving Questions}
 
+Define/refine the driving questions that you intend to address and how it fits into the overall driving question. Then outline the approach you intend use. Finally, describe how your efforts will be used to answer the driving question.
 
 \subsection{Data Collection and Analysis}
 
