@@ -1,10 +1,11 @@
 \documentclass{tufte-handout}
 \usepackage{hyperref}
 
-\title{Some title}
-\author{My name}
+\title{Santa Ana Sucker and Temperature}
+\author{Sophie Janssen and Nicole Larson}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 %\SweaveOpts{concordance=TRUE}
 
 \maketitle
@@ -16,8 +17,8 @@ Each team will determine what resources are available and/or needed to address t
 This plan will have the following sections: 
 
 \begin{description}
-  \item[Question to be Addressed] A clearly articulated question that we can address given our resources. I recommend that you frame it as a question AND a testable hypothesis. A testable null hypothesis is simple a thoughtful expectation that can easily proven incorrect. For example, we might want to answer the following question -- Do Santa Ana sucker each diatoms?  To revise the question, we articulate the null hypothesis as ``Santa Ana sucker have recognizable diatom cells in their gut.'' Notice that this hypothesis has a specific outcome and a good indication of the method. Of course, it doesn't really answer the question, but it might be as close as we can get. Coming up with a good question and null hypothesis comes with experience, i.e. it's a learned skill. So, you might find the first few you come up with don't do what you want.   
-  \item[Approach] A narrative that describe a reasonable approach to test they hypothesis. This might discuss how many times we go in the field, where we go and how many people are needed. What types of equipment or method development you might need and how these will be used to test the null hypothesis. Of course, it will also require some acknowledgement that we have the resources to conduct the work. 
+  \item[Question to be Addressed and Hypothesis] How does temperature affect the Santa Ana Sucker? The Santa Ana Suckers will be most abundant in areas of the stream that have temperatures close to their optimum termperature, which is under 22 degrees Celsius. Suckers will not be present where temperatures exceed 32.8 degrees Celsius, based on research done by the Fish and Wildlife Service that found extremely high temperatures correlated with mortality.
+  \item[Approach] We will obtain three HOBO Tidbit water temperature Data Loggers to set up above where the Rialto Channel meets the Santa Ana River, where it meets, and in the pool where Suckers have previously been observed. They will be hidden so no one steals them during collection. In order to collect date, we will also need to obtain a USB cable and download the software. We will go into the field to set these up and later to collect them and their data, after at three days of collection time. Using this data and last year's data about where the Suckers were found, we will determine whether temperature correlates with population density.
   \item[Cited Methods] Include an annoated bibliography that references several papers, describing how the methods and equipment were used to test their hypothesis or answer their question. Be sure to highlight how their question might or might not align with what you have in mind.
 \end{description}
 \section{Background}
