@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\title{Our Awesome Methods}
+
+\begin{document}
+\maketitle
+
+\section{Materials and Equipment}
+
+Including manufacter of equipment...
+
+\section{Procedures}
+
+These should be detailed enough that ANYONE in the class could follow your procedures and generate similar results. They should be detailed and informative. I suggest each team member work on a section and then have others add to it until it's complete. When you are done, upload the methods to Github/methods using the following naming convention: Method\_LABDAY\_TEAM\#.Rnw (where LABDAY is TUE or WED, and TEAM\# is 1-4, Frank's group is Team 1, Wendy's team is Team 2, David's team is Team 3 and Nicole's team is Team 4), for example Method\_WED\_4.Rnw, where the file can be compiled to a pdf in github.
+
+Note: RStudio doesnt like underscores and hash tags unless they have a backslash in front of them!
+
+marc
+
+\end{document}
