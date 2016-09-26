@@ -1,0 +1,44 @@
+---
+title: "Meta_Tues_Template2"
+author: "Marc Los Huertos"
+date: "9/26/2016"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r import}
+file = "/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_Tues_Template.csv"
+import <- read.csv(file)
+```
+
+## Summary Statistics
+
+Write some stuff about the summary here...
+```{r summary}
+summary(import)
+```
+
+
+## Distribution
+
+Write some stuff about the summary here...
+
+```{r histogram1}
+hist(import$Predictor)
+```
+
+
+Write some stuff about the summary here...
+
+```{r histogram2}
+hist(import$Response)
+```
