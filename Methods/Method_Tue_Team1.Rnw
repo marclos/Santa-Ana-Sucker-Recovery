@@ -1,0 +1,42 @@
+\documentclass{article}
+
+\title{Field methods for determining distribution of red algae in Santa Ana River}
+
+\begin{document}
+\maketitle
+
+\section{Materials and Equipment}
+
+Analogue pyrex thermometer
+
+GPS 
+
+Swim goggles 
+
+Densiometer 
+
+5 containers for algae specimens, from EA laborary 
+
+30cm x 30cm Quadrat
+
+30 m measuring tape
+
+Random number generator: https://www.random.org/
+
+\section{Procedures}
+
+Site selection: 3 nonrandom reaches (Reaches A-C) were selected on the Santa Ana River due to their distinct physical characteristics. Reach A was farthest down stream, selected at the recommendation of US Fish and Wildlife for its abundance of SA suckers, at N34*2'5" W117*21'17". Reach B was just below the SA River's confluence with the RIX facility's outflow pipe, at N34*2'21" W117*21'20". Reach C was farthest upstream, above the confluence, at N34*2'29" W117*21'15". 
+
+Along each reach, 3 sites 1-10m apart were selected (Sites 1-3) with site 1 being farthest downstream in a reach, site 3 being farthest upstream. A random number generator was used ahead of time to select the distances between sites within a reach. Each site was composed of individual measurements along the right, middle, and lefthand sides of the stream (while facing upstream). 
+
+Each measurement (27 total: right, middle, and left for 3 sites for 3 reaches; 3x3x3=27 measurements) consisted of the following parameters: 
+
+Percent algae: a 30cm x 30cm quadrat was placed into the stream, which was then viewed using goggles. Percent cover was visually estimated 10 percent increments.
+
+Stream bed composition: the relative coarseness of the streambed was categorically characterized as either coarse (gravel and cobbles) or fine (sand and silt).
+   
+Canopy cover: directly above each alage measurement, the densiometer was used quantify canopy cover. Measurements were recorded as the proportion of dark dots on the densiometer. 
+
+Temperature: the analogue pyrex themometer was submerged into the stream for approximately 1 minute, then read. 
+
+\end{document}
