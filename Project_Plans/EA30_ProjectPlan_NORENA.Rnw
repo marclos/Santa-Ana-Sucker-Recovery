@@ -24,7 +24,7 @@ The team will start the recordings on the morning of the first day and then, dep
 
 \section{Methods w/Citations}
  Include an annoated bibliography that references several papers, describing how the methods and equipment were used to test their hypothesis or answer their question. Be sure to highlight how their question might or might not align with what you have in mind.
-\section{Equipment}
+\paragraph{Equipment}
 \begin{itemize}
 \item 2 Waterproof GoPro Hero 4 Silver cameras with mounts
 \item 4 64GB memory cards
@@ -38,6 +38,7 @@ The team will start the recordings on the morning of the first day and then, dep
 In order to generate our samples we will take 2 to 6 hour-long segments of footage 
 
 \section{Expected Results and Analysis Methods}
-We expect to be able to reject our null hypothesis. We will be using an interval-counting method to analyze our footage and determine how many fish are present in the two different camera locations throughout the day. We will keep in mind that after the disturbance caused by placing the cameras in the stream, the suckers will probably not return to their normal activities for some time. In order to avoid skewing the data by counting fish during this period of disturbance, we will start counting the fish five minutes after the camera is placed and the team leaves the area.
+We expect to find that the Santa Ana suckers move further downstream as the day gets warmer. We will be able to determine this if there are more Santa Ana suckers at the downstream camera location than at the upstream camera location later in the day in comparison to earlier in the day.
+We will be using an interval-counting method to sample our footage and generate our data. We will be using an ANOVA to determine how many fish are present in the two different camera locations throughout the day. We will keep in mind that after the disturbance caused by placing the cameras in the stream, the suckers will probably not return to their normal activities for some time. In order to avoid skewing the data by counting fish during this period of disturbance, we will start counting the fish five minutes after the camera is placed and the team leaves the area. At this start point, we will pause the video and count the number of suckers that are visible. Then, we will skip forward 90 seconds and pause the video again to count the number of suckers. We will continue this procedure until we get through two hours of footage. 
 
 \end{document}
