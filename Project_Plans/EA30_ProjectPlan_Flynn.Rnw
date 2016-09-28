@@ -31,7 +31,13 @@ This plan will have the following sections:
 
  
 
-\section{Methods w/Citations} 
+\section{Methods w/Citations} Cooke, S. J., & Schreer, J. F. (2002). Determination of fish community composition in the untempered regions of a thermal effluent canal–The efficacy of a fixed underwater videography system. Environmental Monitoring and Assessment, 73(2), 109-129.  DOI: 10.1023/A:1013099430900
+Their goal was to monitor the number and behavior of many different species of fish in thermal discharge canals.  They reviewed many different tecniques for monitoring fish, and came to the conclusion that fixed underwater videography was the most effective.
+
+Yoshida, T., Akagi, K., Toda, T., Kushairi, M. M. R., Kee, A. A. A., & Othman, B. H. R. (2010). Evaluation of fish behaviour and aggregation by underwater videography in an artificial reef in Tioman island, Malaysia. Sains Malaysiana, 39(3), 395-403.
+
+Bergman, P. (2011). Videography monitoring of adult sturgeon in the Feather River basin, CA. Report to Anadromous Fish Restoration Program, Cramer Fish Sciences, Gresham, Oregon.
+
 
 \paragraph{Equiptment}  \begin{itemize}
 \item 2 Waterproof GoPro Hero 4 Silver cameras with mounts
