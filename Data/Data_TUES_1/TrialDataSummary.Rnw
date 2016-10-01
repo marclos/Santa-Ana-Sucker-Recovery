@@ -1,0 +1,110 @@
+\documentclass{article}
+
+\begin{document}
+
+\section{Data Description}
+
+This data currently describes the tests run to determine statistically significant differences among various reaches regarding different parameters. 
+
+\subsection{Importing Data}
+
+
+<<>>=
+file = "/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParameters.csv"
+import <- read.csv(file)
+
+@
+
+
+\subsection{Summary Statistics}
+
+Write some stuff about the summary here...
+<<>>=
+summary(import)
+@
+
+\subsection{Distribution}
+
+Write some stuff about the summary here...
+<< figure=TRUE >>=
+hist(import$Predictor)
+@
+
+FOCUS ON P-VALUES 
+summary(results.aov)
+
+#Site
+Df Sum Sq Mean Sq F value   Pr(>F)    
+Site         2  40093   20047   35.25 7.19e-08 ***
+  Residuals   24  13647     569                     
+---
+ #Sediment
+  
+Df Sum Sq Mean Sq F value Pr(>F)  
+Sediment     1   7006    7006   3.748 0.0643 .
+Residuals   25  46735    1869                 
+---
+  #Temperature
+  
+Df Sum Sq Mean Sq F value Pr(>F)
+Temperature  1   1259    1259     0.6  0.446
+Residuals   25  52482    2099               
+----
+#Canopy 
+
+Df Sum Sq Mean Sq F value Pr(>F)
+Canopy       1   2009    2009   0.971  0.334
+Residuals   25  51732    2069               
+
+# results.aov=aov(Algae~Site+Sediment,data=import)
+summary(results.aov)
+Df Sum Sq Mean Sq F value   Pr(>F)    
+Site         2  37830   18915  29.307 4.73e-07 ***
+  Sediment     1   1067    1067   1.653    0.211    
+Residuals   23  14844     645                     
+---
+ # results.aov=aov(Algae~Site+Temperature,data=import)
+  
+Df Sum Sq Mean Sq F value   Pr(>F)    
+Site         2  37830   18915  31.589 2.53e-07 ***
+  Temperature  1   2139    2139   3.572   0.0714 .  
+Residuals   23  13772     599                     
+---
+  Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> import=read.csv(mydata)
+
+  # results.aov=aov(Algae~Site+Sediment,data=import)
+  # repeated???
+
+Df Sum Sq Mean Sq F value   Pr(>F)    
+Site         2  37830   18915  29.307 4.73e-07 ***
+  Sediment     1   1067    1067   1.653    0.211    
+Residuals   23  14844     645                     
+---
+  #  > results.aov=aov(Algae~Site+Sediment+Temperature,data=import)
+
+Df Sum Sq Mean Sq F value   Pr(>F)    
+Site         2  37830   18915  32.156 2.95e-07 ***
+  Sediment     1   1067    1067   1.813   0.1918    
+Temperature  1   1904    1904   3.236   0.0858 .  
+Residuals   22  12941     588                     
+---
+  # results.aov=aov(Algae~Site+Sediment+Temperature+Canopy,data=import)
+
+Df Sum Sq Mean Sq F value   Pr(>F)    
+Site         2  37830   18915  30.987 5.43e-07 ***
+  Sediment     1   1067    1067   1.747   0.2004    
+Temperature  1   1904    1904   3.119   0.0919 .  
+Canopy       1    122     122   0.200   0.6591    
+Residuals   21  12819     610                     
+<< figure=TRUE >>=
+hist(import$Response)
+@
+
+\section{Bias and Data Limitations}
+
+Write some stuff about the summary here...
+
+
+
+\end{document}
