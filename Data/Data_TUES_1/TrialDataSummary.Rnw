@@ -18,7 +18,13 @@ import <- read.csv(file)
 
 \subsection{Summary Statistics}
 
-Write some stuff about the summary here...
+Mean Algae Cover: 49%
+ "      " REACH A: 54%
+ "      " R    B : 90%
+ "      " R    C : 0%
+ 
+ 
+
 <<>>=
 summary(import)
 @
@@ -30,73 +36,72 @@ Write some stuff about the summary here...
 hist(import$Predictor)
 @
 
-FOCUS ON P-VALUES 
-summary(results.aov)
+ANOVA TESTS summary(results.aov)
 
-#Site
-Df Sum Sq Mean Sq F value   Pr(>F)    
-Site         2  40093   20047   35.25 7.19e-08 ***
-  Residuals   24  13647     569                     
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1           
+
+Algae v Site: 
+Pr(>F)     7.19e-08 ***
+         HIGHLY SIGNIFICANT          
 ---
- #Sediment
-  
-Df Sum Sq Mean Sq F value Pr(>F)  
-Sediment     1   7006    7006   3.748 0.0643 .
-Residuals   25  46735    1869                 
+ v Sediment
+           Pr(>F)  
+Sediment   0.0643 . 
+          SIGNIFICANT
+               
 ---
-  #Temperature
+v Temperature
   
-Df Sum Sq Mean Sq F value Pr(>F)
-Temperature  1   1259    1259     0.6  0.446
-Residuals   25  52482    2099               
+             Pr(>F)
+Temperature  0.446
+             NOT SIGNIFICANT
 ----
-#Canopy 
+Canopy 
 
-Df Sum Sq Mean Sq F value Pr(>F)
-Canopy       1   2009    2009   0.971  0.334
-Residuals   25  51732    2069               
+       Pr(>F)
+Canopy 0.334
+            NOT SIG.
+           SHOULD DO REGRESSION INSTEAD?
 
-# results.aov=aov(Algae~Site+Sediment,data=import)
-summary(results.aov)
-Df Sum Sq Mean Sq F value   Pr(>F)    
-Site         2  37830   18915  29.307 4.73e-07 ***
-  Sediment     1   1067    1067   1.653    0.211    
-Residuals   23  14844     645                     
 ---
- # results.aov=aov(Algae~Site+Temperature,data=import)
+Algae~Site+Temperature
   
-Df Sum Sq Mean Sq F value   Pr(>F)    
-Site         2  37830   18915  31.589 2.53e-07 ***
-  Temperature  1   2139    2139   3.572   0.0714 .  
-Residuals   23  13772     599                     
+            Pr(>F)    
+Site        2.53e-07 ***
+Temperature 0.0714 .  
+           SIG. 
+           SHOULD DO REGRESSION INSTEAD?
 ---
-  Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-> import=read.csv(mydata)
+Algae~Site+Sediment
 
-  # results.aov=aov(Algae~Site+Sediment,data=import)
-  # repeated???
+            Pr(>F)    
+Site       4.73e-07 ***
+Sediment   0.211    
 
-Df Sum Sq Mean Sq F value   Pr(>F)    
-Site         2  37830   18915  29.307 4.73e-07 ***
-  Sediment     1   1067    1067   1.653    0.211    
-Residuals   23  14844     645                     
+          HIGHLY SIGNIFICANT (2nd in significance?)
+                   
 ---
-  #  > results.aov=aov(Algae~Site+Sediment+Temperature,data=import)
+Algae~Site+Sediment+Temperature
 
 Df Sum Sq Mean Sq F value   Pr(>F)    
-Site         2  37830   18915  32.156 2.95e-07 ***
-  Sediment     1   1067    1067   1.813   0.1918    
-Temperature  1   1904    1904   3.236   0.0858 .  
-Residuals   22  12941     588                     
+Site         2.95e-07 ***
+Sediment     0.1918    
+Temperature  0.0858 .  
+                MIXING CATEGORICAL AND CONT. PREDICTORS. 
+                NEED OTHER TEST?
 ---
-  # results.aov=aov(Algae~Site+Sediment+Temperature+Canopy,data=import)
+Algae~Site+Sediment+Temperature+Canopy
+   
+             Pr(>F)    
+Site         5.43e-07 ***
+Sediment     0.2004    
+Temperature  0.0919   .  
+Canopy       0.6591  
 
-Df Sum Sq Mean Sq F value   Pr(>F)    
-Site         2  37830   18915  30.987 5.43e-07 ***
-  Sediment     1   1067    1067   1.747   0.2004    
-Temperature  1   1904    1904   3.119   0.0919 .  
-Canopy       1    122     122   0.200   0.6591    
-Residuals   21  12819     610                     
+MIXING CATEGORICAL AND CONT. PREDICTORS. 
+                NEED OTHER TEST?
+                   
+---
 << figure=TRUE >>=
 hist(import$Response)
 @

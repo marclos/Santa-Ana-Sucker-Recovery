@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  1 OCT 2016 08:09
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  2 OCT 2016 08:50
 entering extended mode
  %&-line parsing enabled.
 **TrialDataSummary.tex
@@ -177,71 +177,17 @@ US/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data[]TUES[]1/AllParameters.c
 sv':
  []
 
-Package color Info: Redefining color shadecolor on input line 79.
-Package color Info: Redefining color shadecolor on input line 92.
-LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 98.
-
+Package color Info: Redefining color shadecolor on input line 85.
+Package color Info: Redefining color shadecolor on input line 98.
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 104
+.
 (/usr/share/texmf/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `TS1/cmtt/bx/n' undefined
 (Font)              using `TS1/cmtt/m/n' instead
-(Font)              for symbol `textdollar' on input line 98.
-
-! You can't use `macro parameter character #' in vertical mode.
-l.104 #
-       Site
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.109  #
-        Sediment
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.115   #
-         Temperature
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.121 #
-       Canopy
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in vertical mode.
-l.127 #
-        results.aov=aov(Algae~Site+Sediment,data=import)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.134  #
-         results.aov=aov(Algae~Site+Temperature,data=import)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-Overfull \hbox (139.63991pt too wide) in paragraph at lines 127--135
-\OT1/cmr/m/n/10 ment 1 1067 1067 1.653 0.211 Resid-u-als 23 14844 645 ---  re-s
-ults.aov=aov(Algae Site+Temperature,data=import) 
- []
+(Font)              for symbol `textdollar' on input line 104.
 
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -273,49 +219,12 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-! You can't use `macro parameter character #' in vertical mode.
-l.144   #
-          results.aov=aov(Algae~Site+Sediment,data=import)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.145   #
-          repeated???
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
 [1
 
 {/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-! You can't use `macro parameter character #' in horizontal mode.
-l.152   #
-           > results.aov=aov(Algae~Site+Sediment+Temperature,data=import)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! You can't use `macro parameter character #' in horizontal mode.
-l.160   #
-          results.aov=aov(Algae~Site+Sediment+Temperature+Canopy,data=import)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-Overfull \hbox (102.13985pt too wide) in paragraph at lines 154--161
-\OT1/cmr/m/n/10 Resid-u-als 22 12941 588 ---  re-sults.aov=aov(Algae Site+Sedim
-ent+Temperature+Canopy,data=import) 
- []
-
-Package color Info: Redefining color shadecolor on input line 169.
-[2] (./TrialDataSummary.aux)
+Package color Info: Redefining color shadecolor on input line 174.
+ [2]
+(./TrialDataSummary.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -323,7 +232,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  1139 strings out of 256214
  15622 string characters out of 1917000
- 61565 words of memory out of 1500000
+ 62565 words of memory out of 1500000
  4456 multiletter control sequences out of 10000+200000
  5315 words of font info for 20 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
@@ -332,7 +241,7 @@ Here is how much of TeX's memory you used:
 tt1000.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/te
 xmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/c
 mtt10.pfb>
-Output written on TrialDataSummary.pdf (2 pages, 36354 bytes).
+Output written on TrialDataSummary.pdf (2 pages, 37081 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
