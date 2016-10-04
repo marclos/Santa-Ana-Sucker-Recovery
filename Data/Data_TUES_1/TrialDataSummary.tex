@@ -1,0 +1,189 @@
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+\section{Data Description}
+
+This data currently describes the tests run to determine statistically significant differences among various reaches regarding different parameters. 
+
+\subsection{Importing Data}
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{file} \hlkwb{=} \hlstr{"/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParameters.csv"}
+\hlstd{import} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(file)}
+\end{alltt}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data\_TUES\_1/AllParameters.csv': No such file or directory}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}\end{kframe}
+\end{knitrout}
+
+
+\subsection{Summary Statistics}
+
+Mean Algae Cover: 49%
+ "      " REACH A: 54%
+ "      " R    B : 90%
+ "      " R    C : 0%
+ 
+ 
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{summary}\hlstd{(import)}
+\end{alltt}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in summary(import): object 'import' not found}}\end{kframe}
+\end{knitrout}
+
+\subsection{Distribution}
+
+Write some stuff about the summary here...
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{hist}\hlstd{(import}\hlopt{$}\hlstd{Predictor)}
+\end{alltt}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in hist(import\$Predictor): object 'import' not found}}\end{kframe}
+\end{knitrout}
+
+ANOVA TESTS summary(results.aov)
+
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1           
+
+Algae v Site: 
+Pr(>F)     7.19e-08 ***
+         HIGHLY SIGNIFICANT          
+---
+ v Sediment
+           Pr(>F)  
+Sediment   0.0643 . 
+          SIGNIFICANT
+               
+---
+v Temperature
+  
+             Pr(>F)
+Temperature  0.446
+             NOT SIGNIFICANT
+----
+Canopy 
+
+       Pr(>F)
+Canopy 0.334
+            NOT SIG.
+           SHOULD DO REGRESSION INSTEAD?
+
+---
+Algae~Site+Temperature
+  
+            Pr(>F)    
+Site        2.53e-07 ***
+Temperature 0.0714 .  
+           SIG. 
+           SHOULD DO REGRESSION INSTEAD?
+---
+Algae~Site+Sediment
+
+            Pr(>F)    
+Site       4.73e-07 ***
+Sediment   0.211    
+
+          HIGHLY SIGNIFICANT (2nd in significance?)
+                   
+---
+Algae~Site+Sediment+Temperature
+
+Df Sum Sq Mean Sq F value   Pr(>F)    
+Site         2.95e-07 ***
+Sediment     0.1918    
+Temperature  0.0858 .  
+                MIXING CATEGORICAL AND CONT. PREDICTORS. 
+                NEED OTHER TEST?
+---
+Algae~Site+Sediment+Temperature+Canopy
+   
+             Pr(>F)    
+Site         5.43e-07 ***
+Sediment     0.2004    
+Temperature  0.0919   .  
+Canopy       0.6591  
+
+MIXING CATEGORICAL AND CONT. PREDICTORS. 
+                NEED OTHER TEST?
+                   
+---
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{hist}\hlstd{(import}\hlopt{$}\hlstd{Response)}
+\end{alltt}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in hist(import\$Response): object 'import' not found}}\end{kframe}
+\end{knitrout}
+
+\section{Bias and Data Limitations}
+
+Write some stuff about the summary here...
+
+
+
+\end{document}

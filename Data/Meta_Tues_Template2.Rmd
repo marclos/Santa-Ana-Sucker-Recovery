@@ -2,7 +2,9 @@
 title: "Meta_Tues_Template2"
 author: "Marc Los Huertos"
 date: "9/26/2016"
-output: pdf_document
+output:
+  word_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
