@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  27 SEP 2016 22:40
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  28 SEP 2016 16:23
 entering extended mode
  %&-line parsing enabled.
 **EA30_ProjectPlan_Flynn.tex
@@ -597,7 +597,7 @@ LaTeX Info: Redefining \selectfont on input line 8.
 \langwohyphens=\language48
 (./EA30_ProjectPlan_Flynn-concordance.tex)
 ! Misplaced alignment tab character &.
-l.25 ...anta Ana river up to 35.5°C (Greenfield &
+l.14 ...anta Ana river up to 35.5°C (Greenfield &
                                                    Ross & Deckert 1970).  Th...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -607,8 +607,18 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.25 ...a river up to 35.5°C (Greenfield & Ross &
+l.14 ...a river up to 35.5°C (Greenfield & Ross &
                                                    Deckert 1970).  This rise...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.15 Greenfield, D. W., Ross, S. T., &
+                                       Deckert, G. D. (1970). Some aspects o...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -618,15 +628,45 @@ might try typing `S' now just to see what is salvageable.
 
 [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 38.
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+! Misplaced alignment tab character &.
+l.25 \section{Methods w/Citations} Cooke, S. J., &
+                                                   Schreer, J. F. (2002). De...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
+! Misplaced alignment tab character &.
+l.28 ..., T., Kushairi, M. M. R., Kee, A. A. A., &
+                                                   Othman, B. H. R. (2010). ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[2]
+! Misplaced alignment tab character &.
+l.34 Chamness, M., Abernethy, S., &
+                                    Tunnicliffe, C. (2007). Walla Walla Rive...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 40.
 (/usr/share/R/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 38.
- [3]
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 40.
+ [3] [4]
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
@@ -634,10 +674,10 @@ Package bibentry Warning: You have used \nobibliography*
 
 (./EA30_ProjectPlan_Flynn.aux) ) 
 Here is how much of TeX's memory you used:
- 7866 strings out of 256214
- 107493 string characters out of 1917000
+ 7865 strings out of 256214
+ 107477 string characters out of 1917000
  189640 words of memory out of 1500000
- 10941 multiletter control sequences out of 10000+200000
+ 10940 multiletter control sequences out of 10000+200000
  24381 words of font info for 40 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  46i,11n,45p,1124b,423s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -646,9 +686,9 @@ fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/bluesk
 y/cm/cmcsc10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share
 /texmf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/type1/bluesky/
 cm/cmti12.pfb>
-Output written on EA30_ProjectPlan_Flynn.pdf (3 pages, 50859 bytes).
+Output written on EA30_ProjectPlan_Flynn.pdf (4 pages, 51988 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  13 named destinations out of 1000 (max. 131072)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
