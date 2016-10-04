@@ -8,98 +8,38 @@ This data was collected on September 20, 2016 along 3 reaches of the Santa Ana R
 
 \subsection{Importing Data}
 
-
+The following code was used to import data into rstudio, assign a file path, and create a command to read the csv file. 
 <<>>=
-file = "/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParameters.csv"
-import <- read.csv(file)
+mydataGood= "/home/CAMPUS/vesj2015/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParametersGood.csv"
 
+importGood=read.csv(mydataGood)
 @
-
-
 \subsection{Summary Statistics}
 
-
- 
-
+The following code was used to generate summary statisitics. 
 <<>>=
-summary(import)
+summary(importGood)
 @
+
 
 \subsection{Distribution}
 
 Write some stuff about the summary here...
 << figure=TRUE >>=
-hist(import$Predictor)
+hist(importGood$Algae)
 @
 
-ANOVA TESTS summary(results.aov)
-
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1           
-
-Algae v Site: 
-Pr(>F)     7.19e-08 ***
-         HIGHLY SIGNIFICANT          
----
- v Sediment
-           Pr(>F)  
-Sediment   0.0643 . 
-          SIGNIFICANT
-               
----
-v Temperature
-  
-             Pr(>F)
-Temperature  0.446
-             NOT SIGNIFICANT
-----
-Canopy 
-
-       Pr(>F)
-Canopy 0.334
-            NOT SIG.
-           SHOULD DO REGRESSION INSTEAD?
-
----
-Algae~Site+Temperature
-  
-            Pr(>F)    
-Site        2.53e-07 ***
-Temperature 0.0714 .  
-           SIG. 
-           SHOULD DO REGRESSION INSTEAD?
----
-Algae~Site+Sediment
-
-            Pr(>F)    
-Site       4.73e-07 ***
-Sediment   0.211    
-
-          HIGHLY SIGNIFICANT (2nd in significance?)
-                   
----
-Algae~Site+Sediment+Temperature
-
-Df Sum Sq Mean Sq F value   Pr(>F)    
-Site         2.95e-07 ***
-Sediment     0.1918    
-Temperature  0.0858 .  
-                MIXING CATEGORICAL AND CONT. PREDICTORS. 
-                NEED OTHER TEST?
----
-Algae~Site+Sediment+Temperature+Canopy
-   
-             Pr(>F)    
-Site         5.43e-07 ***
-Sediment     0.2004    
-Temperature  0.0919   .  
-Canopy       0.6591  
-
-MIXING CATEGORICAL AND CONT. PREDICTORS. 
-                NEED OTHER TEST?
-                   
----
 << figure=TRUE >>=
-hist(import$Response)
+hist(importGood$Sediment)
+@
+
+<< figure=TRUE >>=
+hist(importGood$Temperature)
+@
+
+
+<< figure=TRUE >>=
+hist(importGood$Canopy)
 @
 
 \section{Bias and Data Limitations}

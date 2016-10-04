@@ -57,38 +57,43 @@ This data was collected on September 20, 2016 along 3 reaches of the Santa Ana R
 
 \subsection{Importing Data}
 
-
+The following code was used to import data into rstudio, assign a file path, and create a command to read the csv file. 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlstd{file} \hlkwb{=} \hlstr{"/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParameters.csv"}
-\hlstd{import} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(file)}
+\hlstd{mydataGood}\hlkwb{=} \hlstr{"/home/CAMPUS/vesj2015/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParametersGood.csv"}
+
+\hlstd{importGood}\hlkwb{=}\hlkwd{read.csv}\hlstd{(mydataGood)}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
-
-
 \subsection{Summary Statistics}
 
-
- 
-
+The following code was used to generate summary statisitics. 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{summary}\hlstd{(import)}
+\hlkwd{summary}\hlstd{(importGood)}
 \end{alltt}
 \begin{verbatim}
-##  Site      Algae           Sediment       Temperature        Canopy      
-##  A:9   Min.   :  0.00   Min.   :0.0000   Min.   :28.00   Min.   : 0.000  
-##  B:9   1st Qu.:  0.00   1st Qu.:0.0000   1st Qu.:29.00   1st Qu.: 3.000  
-##  C:9   Median : 50.00   Median :1.0000   Median :29.00   Median :11.000  
-##        Mean   : 48.52   Mean   :0.5926   Mean   :28.89   Mean   : 8.593  
-##        3rd Qu.:100.00   3rd Qu.:1.0000   3rd Qu.:29.00   3rd Qu.:14.000  
-##        Max.   :100.00   Max.   :1.0000   Max.   :30.00   Max.   :15.000
+##        ID       Site      Algae           Sediment       Temperature   
+##  Min.   : 1.0   A:9   Min.   :  0.00   Min.   :0.0000   Min.   :28.00  
+##  1st Qu.: 7.5   B:9   1st Qu.:  0.00   1st Qu.:0.0000   1st Qu.:29.00  
+##  Median :14.0   C:9   Median : 50.00   Median :1.0000   Median :29.00  
+##  Mean   :14.0         Mean   : 48.52   Mean   :0.5926   Mean   :28.89  
+##  3rd Qu.:20.5         3rd Qu.:100.00   3rd Qu.:1.0000   3rd Qu.:29.00  
+##  Max.   :27.0         Max.   :100.00   Max.   :1.0000   Max.   :30.00  
+##      Canopy      
+##  Min.   : 0.000  
+##  1st Qu.: 3.000  
+##  Median :11.000  
+##  Mean   : 8.593  
+##  3rd Qu.:14.000  
+##  Max.   :15.000
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
+
 
 \subsection{Distribution}
 
@@ -96,87 +101,42 @@ Write some stuff about the summary here...
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{hist}\hlstd{(import}\hlopt{$}\hlstd{Predictor)}
+\hlkwd{hist}\hlstd{(importGood}\hlopt{$}\hlstd{Algae)}
 \end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
 
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in hist.default(import\$Predictor): 'x' must be numeric}}\end{kframe}
 \end{knitrout}
 
-ANOVA TESTS summary(results.aov)
-
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1           
-
-Algae v Site: 
-Pr(>F)     7.19e-08 ***
-         HIGHLY SIGNIFICANT          
----
- v Sediment
-           Pr(>F)  
-Sediment   0.0643 . 
-          SIGNIFICANT
-               
----
-v Temperature
-  
-             Pr(>F)
-Temperature  0.446
-             NOT SIGNIFICANT
-----
-Canopy 
-
-       Pr(>F)
-Canopy 0.334
-            NOT SIG.
-           SHOULD DO REGRESSION INSTEAD?
-
----
-Algae~Site+Temperature
-  
-            Pr(>F)    
-Site        2.53e-07 ***
-Temperature 0.0714 .  
-           SIG. 
-           SHOULD DO REGRESSION INSTEAD?
----
-Algae~Site+Sediment
-
-            Pr(>F)    
-Site       4.73e-07 ***
-Sediment   0.211    
-
-          HIGHLY SIGNIFICANT (2nd in significance?)
-                   
----
-Algae~Site+Sediment+Temperature
-
-Df Sum Sq Mean Sq F value   Pr(>F)    
-Site         2.95e-07 ***
-Sediment     0.1918    
-Temperature  0.0858 .  
-                MIXING CATEGORICAL AND CONT. PREDICTORS. 
-                NEED OTHER TEST?
----
-Algae~Site+Sediment+Temperature+Canopy
-   
-             Pr(>F)    
-Site         5.43e-07 ***
-Sediment     0.2004    
-Temperature  0.0919   .  
-Canopy       0.6591  
-
-MIXING CATEGORICAL AND CONT. PREDICTORS. 
-                NEED OTHER TEST?
-                   
----
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{hist}\hlstd{(import}\hlopt{$}\hlstd{Response)}
+\hlkwd{hist}\hlstd{(importGood}\hlopt{$}\hlstd{Sediment)}
 \end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
+
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{hist}\hlstd{(importGood}\hlopt{$}\hlstd{Temperature)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
+
+\end{knitrout}
 
 
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in hist.default(import\$Response): 'x' must be numeric}}\end{kframe}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{hist}\hlstd{(importGood}\hlopt{$}\hlstd{Canopy)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
+
 \end{knitrout}
 
 \section{Bias and Data Limitations}
