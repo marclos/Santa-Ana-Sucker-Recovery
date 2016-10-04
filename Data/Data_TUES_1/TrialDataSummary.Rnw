@@ -1,0 +1,115 @@
+\documentclass{article}
+
+\begin{document}
+
+\section{Data Description}
+
+This data currently describes the tests run to determine statistically significant differences among various reaches regarding different parameters. 
+
+\subsection{Importing Data}
+
+
+<<>>=
+file = "/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParameters.csv"
+import <- read.csv(file)
+
+@
+
+
+\subsection{Summary Statistics}
+
+Mean Algae Cover: 49%
+ "      " REACH A: 54%
+ "      " R    B : 90%
+ "      " R    C : 0%
+ 
+ 
+
+<<>>=
+summary(import)
+@
+
+\subsection{Distribution}
+
+Write some stuff about the summary here...
+<< figure=TRUE >>=
+hist(import$Predictor)
+@
+
+ANOVA TESTS summary(results.aov)
+
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1           
+
+Algae v Site: 
+Pr(>F)     7.19e-08 ***
+         HIGHLY SIGNIFICANT          
+---
+ v Sediment
+           Pr(>F)  
+Sediment   0.0643 . 
+          SIGNIFICANT
+               
+---
+v Temperature
+  
+             Pr(>F)
+Temperature  0.446
+             NOT SIGNIFICANT
+----
+Canopy 
+
+       Pr(>F)
+Canopy 0.334
+            NOT SIG.
+           SHOULD DO REGRESSION INSTEAD?
+
+---
+Algae~Site+Temperature
+  
+            Pr(>F)    
+Site        2.53e-07 ***
+Temperature 0.0714 .  
+           SIG. 
+           SHOULD DO REGRESSION INSTEAD?
+---
+Algae~Site+Sediment
+
+            Pr(>F)    
+Site       4.73e-07 ***
+Sediment   0.211    
+
+          HIGHLY SIGNIFICANT (2nd in significance?)
+                   
+---
+Algae~Site+Sediment+Temperature
+
+Df Sum Sq Mean Sq F value   Pr(>F)    
+Site         2.95e-07 ***
+Sediment     0.1918    
+Temperature  0.0858 .  
+                MIXING CATEGORICAL AND CONT. PREDICTORS. 
+                NEED OTHER TEST?
+---
+Algae~Site+Sediment+Temperature+Canopy
+   
+             Pr(>F)    
+Site         5.43e-07 ***
+Sediment     0.2004    
+Temperature  0.0919   .  
+Canopy       0.6591  
+
+MIXING CATEGORICAL AND CONT. PREDICTORS. 
+                NEED OTHER TEST?
+                   
+---
+<< figure=TRUE >>=
+hist(import$Response)
+@
+
+\section{Bias and Data Limitations}
+
+Write some stuff about the summary here...
+
+
+
+\end{document}
