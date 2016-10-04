@@ -4,7 +4,7 @@
 
 \section{Data Description}
 
-This data currently describes the tests run to determine statistically significant differences among various reaches regarding different parameters. 
+This data was collected on September 20, 2016 along 3 reaches of the Santa Ana River, with 9 observations per reach. Each observation contains the following variables:  
 
 \subsection{Importing Data}
 
@@ -18,11 +18,7 @@ import <- read.csv(file)
 
 \subsection{Summary Statistics}
 
-Mean Algae Cover: 49%
- "      " REACH A: 54%
- "      " R    B : 90%
- "      " R    C : 0%
- 
+
  
 
 <<>>=
@@ -108,8 +104,9 @@ hist(import$Response)
 
 \section{Bias and Data Limitations}
 
-Write some stuff about the summary here...
+All data collected on one day, Sept. 20, 2016.
 
+Abnormal event (car accident) occurred a few ? days before data collection which caused the RIX treatment plant to temporarily shut off water outlet pipes, effectively draining the river and adeversely impacting algae populations to an unknown degree. Therefore our measurements likely reflect less-than-typical algae abundance. Our measuremnts were taken by undergraduate students without extensive algae fieldwork experience or training. 
 
 
 \end{document}
