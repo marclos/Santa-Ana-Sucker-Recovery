@@ -5,7 +5,7 @@
 
 \section{Data Description}
 
-This data was collected in the Rialto portion of the Santa Ana river over a period of ten days for the locations 1, 2, and 4, and seven days for location 3. Location 1 was the plunge pool, located the furthest downstream. Location 2 was where the Rix influx was. Location 3 was upstream below the concrete channel and Location 4 was in the concrete Rialto channel. The pendant data logger collected data in degrees Celsius every fifteen minutes from 9/24/16 through 10/05/16, 10/1/16 for Location 3. 
+This data was collected in the Rialto portion of the Santa Ana river over a period of eleven nights for the locations 1, 2, and 4, and seven nights for location 3. Location 1 was the plunge pool, located the furthest downstream. Location 2 was where the Rix influx was. Location 3 was upstream below the concrete channel and Location 4 was in the concrete Rialto channel. The pendant data logger collected data in degrees Celsius every fifteen minutes from 9/24/16 through 10/05/16, 10/1/16 for Location 3. 
 
 
 \subsection{Importing Data}
