@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\begin{document}
+
+\section{Data Description}
+
+This data was collected on September 20, 2016 along 3 reaches of the Santa Ana River, with 9 observations per reach. Each observation contains the following variables:  
+
+\subsection{Importing Data}
+
+The following code was used to import data into rstudio, assign a file path, and create a command to read the csv file. 
+<<>>=
+mydataGood= "/home/CAMPUS/vesj2015/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParametersGood.csv"
+
+importGood=read.csv(mydataGood)
+@
+\subsection{Summary Statistics}
+
+The following code was used to generate summary statisitics. 
+<<>>=
+summary(importGood)
+@
+
+
+\subsection{Distribution}
+
+Write some stuff about the summary here...
+<< figure=TRUE >>=
+hist(importGood$Algae)
+@
+
+<< figure=TRUE >>=
+hist(importGood$Sediment)
+@
+
+<< figure=TRUE >>=
+hist(importGood$Temperature)
+@
+
+
+<< figure=TRUE >>=
+hist(importGood$Canopy)
+@
+
+\section{Bias and Data Limitations}
+
+All data collected on one day, Sept. 20, 2016.
+
+Abnormal event (car accident) occurred a few ? days before data collection which caused the RIX treatment plant to temporarily shut off water outlet pipes, effectively draining the river and adeversely impacting algae populations to an unknown degree. Therefore our measurements likely reflect less-than-typical algae abundance. Our measuremnts were taken by undergraduate students without extensive algae fieldwork experience or training. 
+
+
+\end{document}
