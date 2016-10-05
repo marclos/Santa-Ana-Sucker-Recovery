@@ -1,11 +1,11 @@
 \documentclass{article}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+%\SweaveOpts{concordance=TRUE}
 
 \section{Data Description}
 
-This data was collected in the Rialto portion of the Santa Ana river over a period of ten days for the locations 1, 2, and 4, and seven days for location 3. Location 1 was the plunge pool, located the furthest downstream. Location 2 was where the Rix influx was. Location 3 was upstream below the concrete channel and Location 4 was in the concrete Rialto channel. 
+This data was collected in the Rialto portion of the Santa Ana river over a period of ten days for the locations 1, 2, and 4, and seven days for location 3. Location 1 was the plunge pool, located the furthest downstream. Location 2 was where the Rix influx was. Location 3 was upstream below the concrete channel and Location 4 was in the concrete Rialto channel. The pendant data logger collected data in degrees Celsius every fifteen minutes from 9/24/16 through 10/05/16, 10/1/16 for Location 3. 
 
 
 \subsection{Importing Data}
@@ -29,7 +29,7 @@ site4 <- read.csv(file4)
 
 \subsection{Summary Statistics}
 
-Write some stuff about the summary here...
+The mean temperatures at Locations 1-4 were all relatively similar, however the range in maximum and minimum tempratures seemed to vary. The locations closer to the Rialto channel had the most range in temperature, ranging up to 5.41 degrees difference, whereas as the water travelled downstream to the plunge pool and lower regions, the variation in temperature was reduced. Therefore, the plunge pool, Location 1, had the least temperature variation of 1.59 degrees Celsius.
 <<>>=
 summary(site1)
 @
@@ -67,8 +67,7 @@ hist(site4$Temp)
 
 \section{Bias and Data Limitations}
 
-Write some stuff about the summary here...
-
+Location 3 was removed four days prior to the removal of locations 1, 2, and 4. The probes also may vary in their accuracy and calibration, which will be tested for via an ice bath test. 
 
 
 \end{document}
