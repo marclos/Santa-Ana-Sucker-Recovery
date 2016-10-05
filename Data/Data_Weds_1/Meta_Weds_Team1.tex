@@ -1,0 +1,84 @@
+\documentclass{article}
+
+\usepackage{Sweave}
+\begin{document}
+\input{Meta_Weds_Team1-concordance}
+
+\section{Data Description}
+
+Write some intro stuff here...
+
+
+\subsection{Importing Data}
+
+
+\begin{Schunk}
+\begin{Sinput}
+> file1 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/Plunge_Pool clipped.csv"
+> site1 <- read.csv(file1)
+> file2 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/2nd_Site clipped.csv"
+> site2 <- read.csv(file2)
+> file3 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/3rd_Site clipped.csv"
+> site3 <- read.csv(file3)
+> file4 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/Concrete clipped.csv"
+> site4 <- read.csv(file4)
+> 
+\end{Sinput}
+\end{Schunk}
+
+
+\subsection{Summary Statistics}
+
+Write some stuff about the summary here...
+\begin{Schunk}
+\begin{Sinput}
+> summary(site1)
+\end{Sinput}
+\begin{Soutput}
+       ID                   DateTime         Temp      
+ Min.   :   3.0   10/1/2016 0:14:   1   Min.   :27.07  
+ 1st Qu.: 262.8   10/1/2016 0:29:   1   1st Qu.:27.47  
+ Median : 522.5   10/1/2016 0:44:   1   Median :27.66  
+ Mean   : 522.5   10/1/2016 0:59:   1   Mean   :27.74  
+ 3rd Qu.: 782.2   10/1/2016 1:14:   1   3rd Qu.:27.96  
+ Max.   :1042.0   10/1/2016 1:29:   1   Max.   :28.66  
+                  (Other)       :1034                  
+\end{Soutput}
+\end{Schunk}
+
+\subsection{Distribution}
+
+Write some stuff about the summary here...
+\begin{Schunk}
+\begin{Sinput}
+> hist(site1$Temp)
+\end{Sinput}
+\end{Schunk}
+
+
+Write some stuff about the summary here...
+\begin{Schunk}
+\begin{Sinput}
+> hist(site2$Temp)
+\end{Sinput}
+\end{Schunk}
+
+\begin{Schunk}
+\begin{Sinput}
+> hist(site3$Temp)
+\end{Sinput}
+\end{Schunk}
+
+\begin{Schunk}
+\begin{Sinput}
+> hist(site4$Temp)
+\end{Sinput}
+\end{Schunk}
+
+\section{Bias and Data Limitations}
+
+Write some stuff about the summary here...
+
+
+
+\end{document}

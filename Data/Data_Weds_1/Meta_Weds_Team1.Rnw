@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \section{Data Description}
 
@@ -11,8 +12,17 @@ Write some intro stuff here...
 
 
 <<>>=
-file = "/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_Tues_Template.csv"
-import <- read.csv(file)
+file1 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/Plunge_Pool clipped.csv"
+site1 <- read.csv(file1)
+
+file2 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/2nd_Site clipped.csv"
+site2 <- read.csv(file2)
+
+file3 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/3rd_Site clipped.csv"
+site3 <- read.csv(file3)
+
+file4 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/Concrete clipped.csv"
+site4 <- read.csv(file4)
 
 @
 
@@ -21,20 +31,28 @@ import <- read.csv(file)
 
 Write some stuff about the summary here...
 <<>>=
-summary(import)
+summary(site1)
 @
 
 \subsection{Distribution}
 
 Write some stuff about the summary here...
 << figure=TRUE >>=
-hist(import$Predictor)
+hist(site1$Temp)
 @
 
 
 Write some stuff about the summary here...
 << figure=TRUE >>=
-hist(import$Response)
+hist(site2$Temp)
+@
+
+<< figure=TRUE >>=
+hist(site3$Temp)
+@
+
+<< figure=TRUE >>=
+hist(site4$Temp)
 @
 
 \section{Bias and Data Limitations}
