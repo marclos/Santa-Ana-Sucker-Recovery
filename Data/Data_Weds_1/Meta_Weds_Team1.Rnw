@@ -5,7 +5,7 @@
 
 \section{Data Description}
 
-Write some intro stuff here...
+This data was collected in the Rialto portion of the Santa Ana river over a period of ten days for the locations 1, 2, and 4, and seven days for location 3. Location 1 was the plunge pool, located the furthest downstream. Location 2 was where the Rix influx was. Location 3 was upstream below the concrete channel and Location 4 was in the concrete Rialto channel. 
 
 
 \subsection{Importing Data}
@@ -34,6 +34,18 @@ Write some stuff about the summary here...
 summary(site1)
 @
 
+<<>>=
+summary(site2)
+@
+
+<<>>=
+summary(site3)
+@
+
+<<>>=
+summary(site4)
+@
+
 \subsection{Distribution}
 
 Write some stuff about the summary here...
@@ -41,8 +53,6 @@ Write some stuff about the summary here...
 hist(site1$Temp)
 @
 
-
-Write some stuff about the summary here...
 << figure=TRUE >>=
 hist(site2$Temp)
 @

@@ -6,7 +6,7 @@
 
 \section{Data Description}
 
-Write some intro stuff here...
+This data was collected in the Rialto portion of the Santa Ana river over a period of ten days for the locations 1, 2, and 4, and seven days for location 3. Location 1 was the plunge pool, located the furthest downstream. Location 2 was where the Rix influx was. Location 3 was upstream below the concrete channel and Location 4 was in the concrete Rialto channel. 
 
 
 \subsection{Importing Data}
@@ -46,6 +46,54 @@ Write some stuff about the summary here...
 \end{Soutput}
 \end{Schunk}
 
+\begin{Schunk}
+\begin{Sinput}
+> summary(site2)
+\end{Sinput}
+\begin{Soutput}
+       ID                   DateTime         Temp      
+ Min.   :   4.0   10/1/2016 0:00:   1   Min.   :27.37  
+ 1st Qu.: 263.8   10/1/2016 0:15:   1   1st Qu.:27.66  
+ Median : 523.5   10/1/2016 0:30:   1   Median :27.86  
+ Mean   : 523.5   10/1/2016 0:45:   1   Mean   :27.94  
+ 3rd Qu.: 783.2   10/1/2016 1:00:   1   3rd Qu.:28.06  
+ Max.   :1043.0   10/1/2016 1:15:   1   Max.   :30.76  
+                  (Other)       :1034                  
+\end{Soutput}
+\end{Schunk}
+
+\begin{Schunk}
+\begin{Sinput}
+> summary(site3)
+\end{Sinput}
+\begin{Soutput}
+       ID                  DateTime        Temp      
+ Min.   :  4.0   10/1/2016 0:03:  1   Min.   :25.12  
+ 1st Qu.:176.2   10/1/2016 0:18:  1   1st Qu.:26.68  
+ Median :348.5   10/1/2016 0:33:  1   Median :27.37  
+ Mean   :348.5   10/1/2016 0:48:  1   Mean   :27.46  
+ 3rd Qu.:520.8   10/1/2016 1:03:  1   3rd Qu.:28.16  
+ Max.   :693.0   10/1/2016 1:18:  1   Max.   :30.25  
+                 (Other)       :684                  
+\end{Soutput}
+\end{Schunk}
+
+\begin{Schunk}
+\begin{Sinput}
+> summary(site4)
+\end{Sinput}
+\begin{Soutput}
+       ID                   DateTime         Temp      
+ Min.   :   3.0   10/1/2016 0:02:   1   Min.   :25.90  
+ 1st Qu.: 262.2   10/1/2016 0:17:   1   1st Qu.:27.37  
+ Median : 521.5   10/1/2016 0:32:   1   Median :27.91  
+ Mean   : 521.5   10/1/2016 0:47:   1   Mean   :28.03  
+ 3rd Qu.: 780.8   10/1/2016 1:02:   1   3rd Qu.:28.66  
+ Max.   :1040.0   10/1/2016 1:17:   1   Max.   :31.37  
+                  (Other)       :1032                  
+\end{Soutput}
+\end{Schunk}
+
 \subsection{Distribution}
 
 Write some stuff about the summary here...
@@ -55,8 +103,6 @@ Write some stuff about the summary here...
 \end{Sinput}
 \end{Schunk}
 
-
-Write some stuff about the summary here...
 \begin{Schunk}
 \begin{Sinput}
 > hist(site2$Temp)

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  5 OCT 2016 15:13
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  5 OCT 2016 15:20
 entering extended mode
  %&-line parsing enabled.
 **Meta_Weds_Team1.tex
@@ -187,22 +187,22 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 16.
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ) [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Meta_Weds_Team1.aux) 
-) 
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Meta_Weds_Team1.a
+ux) ) 
 Here is how much of TeX's memory you used:
  1756 strings out of 256214
- 23440 string characters out of 1917000
+ 23459 string characters out of 1917000
  69312 words of memory out of 1500000
  5042 multiletter control sequences out of 10000+200000
  17176 words of font info for 37 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,4n,21p,221b,190s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/ty
-pe1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsltt10.pfb>
-</usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb>
-Output written on Meta_Weds_Team1.pdf (1 page, 33086 bytes).
+ 35i,4n,21p,387b,276s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/font
+s/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsltt10.
+pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb>
+Output written on Meta_Weds_Team1.pdf (2 pages, 38134 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  5 words of extra memory for PDF output out of 10000 (max. 10000000)
 
