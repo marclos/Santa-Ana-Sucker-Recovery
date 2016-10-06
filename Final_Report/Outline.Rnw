@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\title{Draft Outline -- SAS Report}
+\author{EA30 Students}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\subsection{Project Stages}
+
+\section{Literature Review}
+
+
+\section{Methods}
+
+\section{Results}
+
+\section{Discussion}
+
+
+\section{Conclusion and Recommendations}
+
+
+\end{document}
