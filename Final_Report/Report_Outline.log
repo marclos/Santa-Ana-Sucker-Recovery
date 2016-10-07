@@ -1,8 +1,8 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  6 OCT 2016 13:41
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  7 OCT 2016 08:40
 entering extended mode
  %&-line parsing enabled.
-**Outline.tex
-(./Outline.tex
+**Report_Outline.tex
+(./Report_Outline.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
@@ -139,8 +139,8 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
-)) (./Outline.aux)
-\openout1 = `Outline.aux'.
+)) (./Report_Outline.aux)
+\openout1 = `Report_Outline.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
@@ -169,22 +169,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 57.
  [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Outline.aux) ) 
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Report_Outline.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `Report_Outline.toc'.
+
+ [2] [3] (./Report_Outline.aux) ) 
 Here is how much of TeX's memory you used:
- 1138 strings out of 256214
- 15209 string characters out of 1917000
+ 1145 strings out of 256214
+ 15363 string characters out of 1917000
  60578 words of memory out of 1500000
- 4452 multiletter control sequences out of 10000+200000
- 7587 words of font info for 27 fonts, out of 1200000 for 2000
+ 4455 multiletter control sequences out of 10000+200000
+ 7895 words of font info for 28 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,6n,19p,250b,189s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/s
-hare/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/blue
-sky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share
-/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Outline.pdf (1 page, 21844 bytes).
+ 25i,6n,19p,257b,189s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx1
+0.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fon
+ts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
+Output written on Report_Outline.pdf (3 pages, 37762 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

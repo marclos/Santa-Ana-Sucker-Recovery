@@ -7,11 +7,18 @@
 
 \maketitle
 
+\newpage
+\tableofcontents
+\newpage
+
 \section{Introduction}
 
-\subsection{Project Stages}
+\subsection{Problem Statement}
 
-\section{Literature Review}
+
+\subsection{Background (Literature Review)}
+
+\subsection{Objectives}
 
 
 \section{Methods}
