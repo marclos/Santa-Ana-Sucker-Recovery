@@ -48,5 +48,22 @@ All data collected on one day, Sept. 20, 2016.
 
 Abnormal event (car accident) occurred a few ? days before data collection which caused the RIX treatment plant to temporarily shut off water outlet pipes, effectively draining the river and adeversely impacting algae populations to an unknown degree. Therefore our measurements likely reflect less-than-typical algae abundance. Our measuremnts were taken by undergraduate students without extensive algae fieldwork experience or training. 
 
+\section{Results}
 
+<< figure=TRUE >>=
+plot(importGood$Temperature,importGood$Algae)
+@
+Our temperature data was too coarse to really be useful. Will eventually redo with other temp data, perhaps testing variance of temp by site rather than raw temp data. 
+<< figure=TRUE >>=
+plot(importGood$Canopy,importGood$Algae)
+@
+Cannot reject null hypothesis. 
+<< figure=TRUE >>=
+plot(importGood$Canopy,importGood$Temperature)
+@
+Our temperature data was too coarse to really be useful. Will eventually redo with other temp data, perhaps testing variance of temp by site rather than raw temp data. 
+<< figure=TRUE >>=
+boxplot(Algae~Sediment,importGood)
+@
+Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. 
 \end{document}
