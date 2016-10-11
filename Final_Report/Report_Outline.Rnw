@@ -25,6 +25,7 @@
 
 \subsection{Site Descrition}
 
+\subsection{MAP}
 
 \subsection{Field Methods}
 
