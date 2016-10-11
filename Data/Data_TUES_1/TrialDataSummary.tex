@@ -145,5 +145,46 @@ All data collected on one day, Sept. 20, 2016.
 
 Abnormal event (car accident) occurred a few ? days before data collection which caused the RIX treatment plant to temporarily shut off water outlet pipes, effectively draining the river and adeversely impacting algae populations to an unknown degree. Therefore our measurements likely reflect less-than-typical algae abundance. Our measuremnts were taken by undergraduate students without extensive algae fieldwork experience or training. 
 
+\section{Results}
 
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importGood}\hlopt{$}\hlstd{Temperature,importGood}\hlopt{$}\hlstd{Algae)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-7-1} 
+
+\end{knitrout}
+Our temperature data was too coarse to really be useful. Will eventually redo with other temp data, perhaps testing variance of temp by site rather than raw temp data. 
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importGood}\hlopt{$}\hlstd{Canopy,importGood}\hlopt{$}\hlstd{Algae)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-8-1} 
+
+\end{knitrout}
+Cannot reject null hypothesis. 
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importGood}\hlopt{$}\hlstd{Canopy,importGood}\hlopt{$}\hlstd{Temperature)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-9-1} 
+
+\end{knitrout}
+Our temperature data was too coarse to really be useful. Will eventually redo with other temp data, perhaps testing variance of temp by site rather than raw temp data. 
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Sediment,importGood)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-10-1} 
+
+\end{knitrout}
+Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future.
 \end{document}

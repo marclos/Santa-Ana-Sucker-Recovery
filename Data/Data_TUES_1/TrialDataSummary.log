@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  11 OCT 2016 15:03
+=======
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  11 OCT 2016 15:20
+>>>>>>> 1199b087edff66f2bc4e3a1f88fb0379f73441ca
 entering extended mode
  %&-line parsing enabled.
 **TrialDataSummary.tex
@@ -254,22 +258,64 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 138--139
 [][] 
  []
 
-[4 <./figure/unnamed-chunk-5-1.pdf>] [5 <./figure/unnamed-chunk-6-1.pdf>]
+[4 <./figure/unnamed-chunk-5-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 151.
+ [5 <./figure/unnamed-chunk-6-1.pdf>]
+<figure/unnamed-chunk-7-1.pdf, id=48, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-7-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 156--157
+[][] 
+ []
+
+Package color Info: Redefining color shadecolor on input line 161.
+<figure/unnamed-chunk-8-1.pdf, id=49, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-8-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-8-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 166--167
+[][] 
+ []
+
+[6 <./figure/unnamed-chunk-7-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 171.
+
+<figure/unnamed-chunk-9-1.pdf, id=58, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-9-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-9-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 176--177
+[][] 
+ []
+
+[7 <./figure/unnamed-chunk-8-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 181.
+
+<figure/unnamed-chunk-10-1.pdf, id=68, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-10-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-10-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 186--187
+[][] 
+ []
+
+[8 <./figure/unnamed-chunk-9-1.pdf>] [9 <./figure/unnamed-chunk-10-1.pdf>]
 (./TrialDataSummary.aux) ) 
 Here is how much of TeX's memory you used:
- 1143 strings out of 256214
- 15735 string characters out of 1917000
+ 1163 strings out of 256214
+ 16348 string characters out of 1917000
  62565 words of memory out of 1500000
- 4458 multiletter control sequences out of 10000+200000
+ 4474 multiletter control sequences out of 10000+200000
  5018 words of font info for 19 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,5n,19p,463b,248s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,6n,19p,463b,248s stack positions out of 5000i,500n,6000p,200000b,15000s
 </usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb><
 /usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1
 /bluesky/cm/cmtt10.pfb>
-Output written on TrialDataSummary.pdf (5 pages, 53259 bytes).
+Output written on TrialDataSummary.pdf (9 pages, 77763 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
