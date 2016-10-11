@@ -65,5 +65,5 @@ Our temperature data was too coarse to really be useful. Will eventually redo wi
 << figure=TRUE >>=
 boxplot(Algae~Sediment,importGood)
 @
-Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. 
+Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. hmmmm. 
 \end{document}
