@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  11 OCT 2016 09:01
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  12 OCT 2016 12:35
 entering extended mode
  %&-line parsing enabled.
 **Report_Outline.tex
@@ -178,22 +178,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `Report_Outline.toc'.
 
- [2] [3] (./Report_Outline.aux) ) 
+ [2]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
+ PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<Figures/SantaAna_SatelliteImage.pdf, id=13, 614.295pt x 794.97pt>
+File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
+
+<use Figures/SantaAna_SatelliteImage.pdf> [3] [4 <./Figures/SantaAna_SatelliteI
+mage.pdf>] (./Report_Outline.aux) ) 
 Here is how much of TeX's memory you used:
- 1145 strings out of 256214
- 15363 string characters out of 1917000
+ 1154 strings out of 256214
+ 15578 string characters out of 1917000
  60583 words of memory out of 1500000
- 4455 multiletter control sequences out of 10000+200000
+ 4461 multiletter control sequences out of 10000+200000
  7895 words of font info for 28 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,6n,19p,257b,189s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx1
-0.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fon
-ts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pf
-b></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Report_Outline.pdf (3 pages, 39172 bytes).
+ 25i,6n,19p,257b,211s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmb
+x10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/f
+onts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.
+pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
+Output written on Report_Outline.pdf (4 pages, 289873 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

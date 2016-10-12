@@ -25,7 +25,13 @@
 
 \subsection{Site Descrition}
 
-\subsection{MAP}
+We evaluated the Santa Ana River between... near Colton, California (Figure \ref{SAR_Image}). 
+
+\begin{figure}
+\includegraphics[width=1.00\textwidth]{Figures/SantaAna_SatelliteImage}
+\caption{Google Earth --Example of a map. What's wrong with this image?}
+\label{SAR_Image}
+\end{figure}
 
 \subsection{Field Methods}
 
