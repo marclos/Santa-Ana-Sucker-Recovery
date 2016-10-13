@@ -13,10 +13,11 @@ site2$datetime <- as.POSIXct(site2$DateTime,format="%m/%d/%Y %H:%M")
 site3$datetime <- as.POSIXct(site3$DateTime,format="%m/%d/%Y %H:%M")
 site4$datetime <- as.POSIXct(site4$DateTime,format="%m/%d/%Y %H:%M")
 
-plot(site4$datetime, site4$Temp, ty='l')
-lines(site3$datetime, site3$Temp, col='green')
+# Creates a plot of time using lines
+plot(site4$datetime, site4$Temp, ty='l', 
+     ylab="Temperature (C)", xlab="Date", las=1, main="Temperature for Site 4", ylim=c(25, 32))
+lines(site3$datetime, site3$Temp, col='darkgreen')
 lines(site2$datetime, site2$Temp, col='red')
-
 lines(site1$datetime, site1$Temp, col='blue')
 
 
