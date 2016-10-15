@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  13 OCT 2016 10:42
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  15 OCT 2016 13:38
 entering extended mode
  %&-line parsing enabled.
 **Report_Outline.tex
@@ -185,23 +185,31 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
 <Figures/SantaAna_SatelliteImage.pdf, id=13, 614.295pt x 794.97pt>
 File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
 
-<use Figures/SantaAna_SatelliteImage.pdf> [3] [4 <./Figures/SantaAna_SatelliteI
-mage.pdf>] (./Report_Outline.aux) ) 
+<use Figures/SantaAna_SatelliteImage.pdf>
+<Figures/Temp.pdf, id=14, 505.89pt x 505.89pt>
+File: Figures/Temp.pdf Graphic file (type pdf)
+ <use Figures/Temp.pdf>
+Overfull \hbox (160.88875pt too wide) in paragraph at lines 96--97
+[][] 
+ []
+
+[3] [4 <./Figures/SantaAna_SatelliteImage.pdf>] [5 <./Figures/Temp.pdf>]
+(./Report_Outline.aux) ) 
 Here is how much of TeX's memory you used:
- 1154 strings out of 256214
- 15578 string characters out of 1917000
+ 1160 strings out of 256214
+ 15675 string characters out of 1917000
  60583 words of memory out of 1500000
- 4461 multiletter control sequences out of 10000+200000
+ 4466 multiletter control sequences out of 10000+200000
  7895 words of font info for 28 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  25i,6n,19p,257b,211s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmb
-x10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/f
-onts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.
-pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Report_Outline.pdf (4 pages, 289874 bytes).
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/
+bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/s
+hare/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
+Output written on Report_Outline.pdf (5 pages, 309384 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
