@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  29 JUL 2016 19:17
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 SEP 2016 14:55
 entering extended mode
  %&-line parsing enabled.
 **Brief_Template1.tex
@@ -43,9 +43,8 @@ File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen102
 )
-(/usr/share/texmf/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2006/02/20 v1.4 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
+(/usr/share/texmf/tex/latex/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 (/usr/share/texmf/tex/generic/multido/multido.sty
 Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
@@ -311,14 +310,6 @@ TextBlockOrigin set to 1cm x 1cm
 
 
 Writing index file Brief_Template1.idx
-(/usr/share/texmf/tex/latex/ltxmisc/framed.sty
-Package: framed 2003/07/21 v 0.8a: framed or shaded text with page breaks
-\FrameRule=\dimen133
-\FrameSep=\dimen134
-)
-(/usr/share/texmf/tex/latex/base/alltt.sty
-Package: alltt 1997/06/16 v2.0g defines alltt environment
-)
 (/usr/share/texmf/tex/latex/base/inputenc.sty
 Package: inputenc 2006/05/05 v1.1b Input encoding file
 \inpenc@prehook=\toks24
@@ -336,7 +327,7 @@ File: latin.ldf 2007/03/20 v.2.0f Latin support from the babel system
 (/usr/share/texmf/tex/generic/babel/babel.def
 File: babel.def 2005/11/23 v3.8h Babel common definitions
 \babel@savecnt=\count129
-\U@D=\dimen135
+\U@D=\dimen133
 )
 Package babel Info: Making ^ an active character on input line 110.
 Package babel Info: Making = an active character on input line 111.
@@ -348,16 +339,27 @@ Package babel Info: Making " an active character on input line 141.
 \UL@skip=\skip60
 \UL@hook=\toks26
 \UL@pe=\count130
-\UL@pixel=\dimen136
+\UL@pixel=\dimen134
 \ULC@box=\box60
 Package: ulem 2000/05/26
-\ULdepth=\dimen137
+\ULdepth=\dimen135
 )
-(/usr/share/texmf/tex/latex/upquote/upquote.sty
-Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
-atim and verb
+(/usr/share/R/texmf/tex/latex/Sweave.sty
+Package: Sweave 
 
-(/usr/share/texmf/tex/latex/base/textcomp.sty
+(/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 1998/07/17
+
+Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
+\FV@CodeLineNo=\count131
+\FV@InFile=\read2
+\FV@TabBox=\box61
+\c@FancyVerbLine=\count132
+\FV@StepNumber=\count133
+\FV@OutFile=\write5
+
+No file fancyvrb.cfg.
+) (/usr/share/texmf/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -423,32 +425,53 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
-)) (./Brief_Template1.aux)
+)
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf/tex/latex/ae/ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+
+(/usr/share/texmf/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))) (./Brief_Template1.aux)
 \openout1 = `Brief_Template1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 104.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 56.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 104.
-Package hyperref Info: Link coloring OFF on input line 104.
+LaTeX Font Info:    ... okay on input line 56.
+Package hyperref Info: Link coloring OFF on input line 56.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
@@ -456,137 +479,142 @@ Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 (/usr/share/texmf/tex/latex/oberdiek/refcount.sty
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count131
+\c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 104.
-LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
  (./Brief_Template1.out)
 (./Brief_Template1.out)
-\@outlinefile=\write5
-\openout5 = `Brief_Template1.out'.
+\@outlinefile=\write6
+\openout6 = `Brief_Template1.out'.
 
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 108.
-LaTeX Font Info:    Try loading font information for T1+bch on input line 108.
+(./Brief_Template1-concordance.tex)
+LaTeX Font Info:    Try loading font information for T1+aett on input line 61.
+ (/usr/share/texmf/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+
+LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
+(Font)              using `T1/aett/m/n' instead on input line 61.
+
+LaTeX Font Info:    Try loading font information for T1+aess on input line 61.
+(/usr/share/texmf/tex/latex/ae/t1aess.fd
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+)
+LaTeX Font Info:    Try loading font information for T1+bch on input line 61.
 
 (/usr/share/texmf/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 )
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 108.
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <28.45274> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 61.
+LaTeX Font Info:    Try loading font information for T1+pag on input line 61.
 
-
-(/usr/share/texmf/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-
-LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/m/n' instead on input line 108.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <28.45274> not available
-(Font)              size <29.86> substituted on input line 108.
-
-LaTeX Font Info:    Try loading font information for T1+pag on input line 108.
 (/usr/share/texmf/tex/latex/psnfss/t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 108.
+(Font)              <7> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 108.
+(Font)              <5> on input line 61.
 
-<img/ireland.jpg, id=38, 401.5pt x 301.125pt>
+<img/ireland.jpg, id=39, 401.5pt x 301.125pt>
 File: img/ireland.jpg Graphic file (type jpg)
  <use img/ireland.jpg>
-Overfull \hbox (2.20001pt too wide) in paragraph at lines 110--110
+Overfull \hbox (2.20001pt too wide) in paragraph at lines 63--63
 [] 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 113--113
+Overfull \hbox (15.0pt too wide) in paragraph at lines 66--66
 [][] 
  []
 
 File: img/ireland.jpg Graphic file (type jpg)
 <use img/ireland.jpg>
-Overfull \hbox (2.20001pt too wide) in paragraph at lines 126--126
+Overfull \hbox (2.20001pt too wide) in paragraph at lines 79--79
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 133--133
-\OT1/cmss/m/n/12 Ae-nean ve-hi-cu-la com-mo-
+Underfull \hbox (badness 2245) in paragraph at lines 86--86
+\T1/aess/m/n/12 Ae-nean ve-hi-cu-la com-mo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Overfull \hbox (4.71405pt too wide) in paragraph at lines 136--136
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Overfull \hbox (4.71405pt too wide) in paragraph at lines 89--89
 [][] 
  []
 
-<img/rain.jpg, id=43, 128.48pt x 128.48pt>
+<img/rain.jpg, id=44, 128.48pt x 128.48pt>
 File: img/rain.jpg Graphic file (type jpg)
  <use img/rain.jpg>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 139.
+(Font)              <9> on input line 92.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 139.
+(Font)              <6> on input line 92.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 92.
 
-<img/sun.jpg, id=44, 128.48pt x 128.48pt>
+(/usr/share/R/texmf/tex/latex/ts1aer.fd
+File: ts1aer.fd 
+)
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <9> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 92.
+
+<img/sun.jpg, id=45, 128.48pt x 128.48pt>
 File: img/sun.jpg Graphic file (type jpg)
  <use img/sun.jpg>
-Overfull \hbox (9.34955pt too wide) in paragraph at lines 140--140
-[]\OT1/cmr/m/n/9 TOMORROW 
+Overfull \hbox (9.32762pt too wide) in paragraph at lines 93--93
+[]\T1/aer/m/n/9 TOMORROW 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
 
  []
 
-<img/clouds.jpg, id=45, 128.48pt x 128.48pt>
+<img/clouds.jpg, id=46, 128.48pt x 128.48pt>
 File: img/clouds.jpg Graphic file (type jpg)
  <use img/clouds.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 
  []
 
 
-Overfull \hbox (6.20001pt too wide) in paragraph at lines 138--142
+Overfull \hbox (6.20001pt too wide) in paragraph at lines 91--95
 [] 
  []
 
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <11.38109> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 97.
 
-LaTeX Font Warning: Font shape `T1/cmss/b/n' in size <11.38109> not available
-(Font)              size <10.95> substituted on input line 144.
-
-
-Overfull \hbox (3.34006pt too wide) in paragraph at lines 148--148
- [][]\OT1/cmtt/m/n/10 marc.loshuertos@pomona.edu[] 
+Overfull \hbox (3.081pt too wide) in paragraph at lines 101--101
+ [][]\T1/aett/m/n/10 marc.loshuertos@pomona.edu[] 
  []
 
 
-Overfull \hbox (4.71405pt too wide) in paragraph at lines 150--150
+Overfull \hbox (4.71405pt too wide) in paragraph at lines 103--103
 [][] 
  []
 
@@ -596,15 +624,15 @@ Overfull \hbox (4.71405pt too wide) in paragraph at lines 150--150
 Adding a new piece of news
 
 Class paperTeX Warning: Image img/ireland needs: 281.0748pt and there is left: 
-16383.99998pt  on input line 164.
+16383.99998pt  on input line 117.
 
 File: img/ireland.jpg Graphic file (type jpg)
 <use img/ireland.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 [][]
  []
 
-How much left 305.6141pt
+How much left 305.92746pt
 Adding sep line between news
 Adding a new piece of news
 [2.51.41
@@ -614,105 +642,99 @@ n already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.187 S
+l.140 S
        ed sit amet lectus. Suspendisse scelerisque. Donec nisl quam, mattis ...
 ]
-How much left 285.81914pt
+How much left 285.85448pt
 Adding sep line between news
 Adding a new piece of news
 
 Class paperTeX Warning: Image img/ireland needs: 215.80609pt and there is left:
- 265.41914pt  on input line 213.
+ 265.45448pt  on input line 166.
 
 File: img/ireland.jpg Graphic file (type jpg)
 <use img/ireland.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
 [][]
  []
 
 [3.51.41]
-How much left 345.99416pt
+How much left 346.06482pt
 Adding sep line between news
 Adding a new editorial
 
 Package multicol Warning: Using `1' columns doesn't seem a good idea.
- I therefore use two columns instead on input line 232.
+ I therefore use two columns instead on input line 185.
 
-How much left 63.24414pt
+How much left 63.36624pt
 Adding sep line between news
 Adding a short news block
 [4.51.41]
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
-How much left 414.33813pt
+How much left 414.3568pt
 Adding sep line between news
-How much left 393.93814pt
+How much left 393.9568pt
 Adding sep line between news
 [5.51.41] AED: lastpage setting LastPage (./Brief_Template1.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.40726pt have occurred.
-
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4846 strings out of 256214
- 66891 string characters out of 1917000
- 147606 words of memory out of 1500000
- 7987 multiletter control sequences out of 10000+200000
- 24837 words of font info for 56 fonts, out of 1200000 for 2000
+ 5544 strings out of 256214
+ 75409 string characters out of 1917000
+ 151625 words of memory out of 1500000
+ 8576 multiletter control sequences out of 10000+200000
+ 86511 words of font info for 146 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 37i,12n,45p,1060b,459s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/mwl04747/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
-ss2986.600pk> </home/CAMPUS/mwl04747/.texlive2007/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/tcrm0900.600pk>{/usr/share/texmf/fonts/enc/dvips/base/8r.enc} </home/C
-AMPUS/mwl04747/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600p
-k></usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/t
-ype1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx8.pfb><
-/usr/share/texmf/fonts/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/fonts/type1
-/bluesky/cm/cmcsc10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></us
-r/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bl
-uesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/shar
-e/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/c
-m/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmss10.pfb></usr/share/texm
-f/fonts/type1/bluesky/cm/cmss12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
-ss8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmssbx10.pfb></usr/share/texmf
-/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cms
-y9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fo
-nts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt12
-.pfb></usr/share/texmf/fonts/type1/urw/avantgar/uagk8a.pfb>
-Output written on Brief_Template1.pdf (5 pages, 205162 bytes).
+ 37i,12n,45p,1060b,461s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/lmh12014/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tc
+rm0900.600pk>{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fo
+nts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12
+.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx8.pfb></usr/share/texmf/fonts
+/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmcsc10.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bl
+uesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share
+/texmf/fonts/type1/bluesky/cm/cmss10.pfb></usr/share/texmf/fonts/type1/bluesky/
+cm/cmss12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmss8.pfb></usr/share/te
+xmf/fonts/type1/bluesky/cm/cmssbx10.pfb></usr/share/texmf/fonts/type1/bluesky/c
+m/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy9.pfb></usr/share/tex
+mf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/c
+mtt10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt12.pfb></usr/share/texmf
+/fonts/type1/urw/avantgar/uagk8a.pfb>
+Output written on Brief_Template1.pdf (5 pages, 204188 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
+ 172 PDF objects out of 1000 (max. 8388607)
  18 named destinations out of 1000 (max. 131072)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
