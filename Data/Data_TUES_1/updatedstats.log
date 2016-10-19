@@ -1,8 +1,8 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  13 OCT 2016 09:55
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  19 OCT 2016 11:38
 entering extended mode
  %&-line parsing enabled.
-**TrialDataSummary.tex
-(./TrialDataSummary.tex
+**updatedstats.tex
+(./updatedstats.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
@@ -68,6 +68,9 @@ Package: framed 2003/07/21 v 0.8a: framed or shaded text with page breaks
 )
 (/usr/share/texmf/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texmf/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
 )
 (/usr/share/texmf/tex/latex/upquote/upquote.sty
 Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
@@ -139,179 +142,221 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
-)) (./TrialDataSummary.aux)
-\openout1 = `TrialDataSummary.aux'.
+)) (./updatedstats.aux)
+\openout1 = `updatedstats.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 52.
-Package color Info: Redefining color shadecolor on input line 67.
+LaTeX Font Info:    ... okay on input line 54.
+\symgns@font=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 54.
+Package gensymb Info: Math companion symbols declared on input line 54.
+LaTeX Info: Redefining \degree on input line 54.
+LaTeX Info: Redefining \celsius on input line 54.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 54.
+LaTeX Info: Redefining \ohm on input line 54.
+Package gensymb Info: Using \textohm for \ohm on input line 54.
+Package gensymb Info: Using \textmu for \micro on input line 54.
+Package color Info: Redefining color shadecolor on input line 70.
 
-Overfull \hbox (179.99542pt too wide) in paragraph at lines 69--69
-[][]\OT1/cmtt/m/n/10 mydataGood[][]=[] []"/home/CAMPUS/vesj2015/Santa-Ana-Sucke
-r-Recovery/Data/Data_TUES_1/AllParametersGood.csv"[][] 
+Overfull \hbox (158.9956pt too wide) in paragraph at lines 72--72
+[][]\OT1/cmtt/m/n/10 updateddata[][]=[] []"/home/CAMPUS/fcl02013/Santa-Ana-Suck
+er-Recovery/Data/Data_TUES_1/updatedtemps.csv"[][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 71.
-Package color Info: Redefining color shadecolor on input line 79.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 73.
+Package color Info: Redefining color shadecolor on input line 81.
 
-Overfull \hbox (27.74675pt too wide) in paragraph at lines 98--98
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 107--107
 []\OT1/cmtt/m/n/10 ##        ID       Site      Algae           Sediment       
 Temperature[] 
  []
 
 
-Overfull \hbox (32.9967pt too wide) in paragraph at lines 98--98
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 107--107
 []\OT1/cmtt/m/n/10 ##  Min.   : 1.0   A:9   Min.   :  0.00   Min.   :0.0000   M
 in.   :28.00[] 
  []
 
 
-Overfull \hbox (32.9967pt too wide) in paragraph at lines 98--98
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 107--107
 []\OT1/cmtt/m/n/10 ##  1st Qu.: 7.5   B:9   1st Qu.:  0.00   1st Qu.:0.0000   1
 st Qu.:29.00[] 
  []
 
 
-Overfull \hbox (32.9967pt too wide) in paragraph at lines 98--98
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 107--107
 []\OT1/cmtt/m/n/10 ##  Median :14.0   C:9   Median : 50.00   Median :1.0000   M
 edian :29.00[] 
  []
 
 
-Overfull \hbox (32.9967pt too wide) in paragraph at lines 98--98
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 107--107
 []\OT1/cmtt/m/n/10 ##  Mean   :14.0         Mean   : 48.52   Mean   :0.5926   M
 ean   :28.89[] 
  []
 
 
-Overfull \hbox (32.9967pt too wide) in paragraph at lines 98--98
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 107--107
 []\OT1/cmtt/m/n/10 ##  3rd Qu.:20.5         3rd Qu.:100.00   3rd Qu.:1.0000   3
 rd Qu.:29.00[] 
  []
 
 
-Overfull \hbox (32.9967pt too wide) in paragraph at lines 98--98
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 107--107
 []\OT1/cmtt/m/n/10 ##  Max.   :27.0         Max.   :100.00   Max.   :1.0000   M
 ax.   :30.00[] 
  []
 
-Package color Info: Redefining color shadecolor on input line 107.
+Package color Info: Redefining color shadecolor on input line 116.
 [1
 
 {/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<figure/unnamed-chunk-3-1.pdf, id=8, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-3-1.pdf, id=9, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-3-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 112--113
+Overfull \hbox (15.0pt too wide) in paragraph at lines 121--122
 [][] 
  []
 
-Package color Info: Redefining color shadecolor on input line 117.
-<figure/unnamed-chunk-4-1.pdf, id=9, 505.89pt x 505.89pt>
+Package color Info: Redefining color shadecolor on input line 126.
+<figure/unnamed-chunk-4-1.pdf, id=10, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-4-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 122--123
+Overfull \hbox (15.0pt too wide) in paragraph at lines 131--132
 [][] 
  []
 
-Package color Info: Redefining color shadecolor on input line 127.
+Package color Info: Redefining color shadecolor on input line 136.
 [2 <./figure/unnamed-chunk-3-1.pdf>]
-<figure/unnamed-chunk-5-1.pdf, id=19, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-5-1.pdf, id=20, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-5-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 132--133
+Overfull \hbox (15.0pt too wide) in paragraph at lines 141--142
 [][] 
  []
 
-Package color Info: Redefining color shadecolor on input line 138.
+Package color Info: Redefining color shadecolor on input line 146.
 [3 <./figure/unnamed-chunk-4-1.pdf>]
-<figure/unnamed-chunk-6-1.pdf, id=29, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-6-1.pdf, id=30, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-6-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 143--144
+Overfull \hbox (15.0pt too wide) in paragraph at lines 151--152
 [][] 
  []
 
+Package color Info: Redefining color shadecolor on input line 157.
 [4 <./figure/unnamed-chunk-5-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 156.
- [5 <./figure/unnamed-chunk-6-1.pdf>]
-<figure/unnamed-chunk-7-1.pdf, id=48, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-7-1.pdf, id=40, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-7-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 161--162
+Overfull \hbox (15.0pt too wide) in paragraph at lines 162--163
 [][] 
  []
 
-Package color Info: Redefining color shadecolor on input line 166.
-<figure/unnamed-chunk-8-1.pdf, id=49, 505.89pt x 505.89pt>
+Package color Info: Redefining color shadecolor on input line 167.
+[5 <./figure/unnamed-chunk-6-1.pdf>]
+<figure/unnamed-chunk-8-1.pdf, id=50, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-8-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 171--172
+Overfull \hbox (15.0pt too wide) in paragraph at lines 172--173
 [][] 
  []
 
 [6 <./figure/unnamed-chunk-7-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 176.
-
-<figure/unnamed-chunk-9-1.pdf, id=58, 505.89pt x 505.89pt>
+Package color Info: Redefining color shadecolor on input line 185.
+ [7 <./figure/unnamed-chunk-8-1.pdf>]
+<figure/unnamed-chunk-9-1.pdf, id=70, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-9-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-9-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 181--182
+Overfull \hbox (15.0pt too wide) in paragraph at lines 190--191
 [][] 
  []
 
-[7 <./figure/unnamed-chunk-8-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 186.
-
-<figure/unnamed-chunk-10-1.pdf, id=68, 505.89pt x 505.89pt>
+Package color Info: Redefining color shadecolor on input line 195.
+<figure/unnamed-chunk-10-1.pdf, id=71, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-10-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-10-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 191--192
+Overfull \hbox (15.0pt too wide) in paragraph at lines 200--201
 [][] 
  []
 
-[8 <./figure/unnamed-chunk-9-1.pdf>] [9 <./figure/unnamed-chunk-10-1.pdf>]
-(./TrialDataSummary.aux) ) 
+Package color Info: Redefining color shadecolor on input line 205.
+[8 <./figure/unnamed-chunk-9-1.pdf>]
+<figure/unnamed-chunk-11-1.pdf, id=80, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-11-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-11-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 210--211
+[][] 
+ []
+
+[9 <./figure/unnamed-chunk-10-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 215.
+
+<figure/unnamed-chunk-12-1.pdf, id=89, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-12-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-12-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 220--221
+[][] 
+ []
+
+[10 <./figure/unnamed-chunk-11-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 225.
+
+<figure/unnamed-chunk-13-1.pdf, id=98, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-13-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-13-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 230--231
+[][] 
+ []
+
+[11 <./figure/unnamed-chunk-12-1.pdf>] [12 <./figure/unnamed-chunk-13-1.pdf>]
+(./updatedstats.aux) ) 
 Here is how much of TeX's memory you used:
- 1163 strings out of 256214
- 16348 string characters out of 1917000
- 62565 words of memory out of 1500000
- 4474 multiletter control sequences out of 10000+200000
- 5018 words of font info for 19 fonts, out of 1200000 for 2000
+ 1228 strings out of 256214
+ 17393 string characters out of 1917000
+ 64808 words of memory out of 1500000
+ 4531 multiletter control sequences out of 10000+200000
+ 5353 words of font info for 20 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,6n,19p,463b,248s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb><
-/usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1
-/bluesky/cm/cmtt10.pfb>
-Output written on TrialDataSummary.pdf (9 pages, 78864 bytes).
+ 25i,6n,19p,459b,248s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/fcl02013/.texlive2007/texmf-var/fonts/pk/l
+jfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmbx1
+2.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/font
+s/type1/bluesky/cm/cmtt10.pfb>
+Output written on updatedstats.pdf (12 pages, 95132 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 130 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

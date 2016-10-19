@@ -48,15 +48,18 @@
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
+
+\usepackage{gensymb} %https://www.overleaf.com/help/115-how-can-i-write-a-degrees-degree-symbol-in-latex#.WAeUUPkrJiw
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
 \section{Data Description}
 
 This data was collected on September 20, 2016 along 3 reaches of the Santa Ana River, with 9 observations per reach. 
-Site A (plunge pool): 34*2'5" N, 117*21'17" W
-Site B (below confluence): 34*2'21" N, 117*21'20" W
-Site C (above confluence): 34*2'29" N, 117*21'15" W. 
+Site 4 (plunge pool): 34\textdegree 2'5" N, 117 \textdegree 21'17" W
+Site 3 (below confluence): 34\textdegree 2'21" N, 117 \textdegree21'20" W
+Site 2 (above confluence): 34 \textdegree 2'29" N, 117\textdegree 21'15" W. 
+Site 1 (concrete channel) was used by other groups but not by us. 
 Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. 
 
 
@@ -66,9 +69,8 @@ The following code was used to import data into rstudio, assign a file path, and
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlstd{mydataGood}\hlkwb{=} \hlstr{"/home/CAMPUS/vesj2015/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParametersGood.csv"}
-
-\hlstd{importGood}\hlkwb{=}\hlkwd{read.csv}\hlstd{(mydataGood)}
+\hlstd{updateddata}\hlkwb{=} \hlstr{"/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"}
+\hlstd{importupdated}\hlkwb{=}\hlkwd{read.csv}\hlstd{(updateddata)}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
@@ -78,7 +80,7 @@ The following code was used to generate summary statisitics.
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{summary}\hlstd{(importGood)}
+\hlkwd{summary}\hlstd{(importupdated)}
 \end{alltt}
 \begin{verbatim}
 ##        ID       Site      Algae           Sediment       Temperature   
@@ -88,13 +90,20 @@ The following code was used to generate summary statisitics.
 ##  Mean   :14.0         Mean   : 48.52   Mean   :0.5926   Mean   :28.89  
 ##  3rd Qu.:20.5         3rd Qu.:100.00   3rd Qu.:1.0000   3rd Qu.:29.00  
 ##  Max.   :27.0         Max.   :100.00   Max.   :1.0000   Max.   :30.00  
-##      Canopy      
-##  Min.   : 0.000  
-##  1st Qu.: 3.000  
-##  Median :11.000  
-##  Mean   : 8.593  
-##  3rd Qu.:14.000  
-##  Max.   :15.000
+##      Canopy          Site_new    Temp_min        Temp_max    
+##  Min.   : 0.000   Min.   :2   Min.   :25.12   Min.   :30.25  
+##  1st Qu.: 3.000   1st Qu.:2   1st Qu.:25.12   1st Qu.:30.25  
+##  Median :11.000   Median :3   Median :25.90   Median :30.76  
+##  Mean   : 8.593   Mean   :3   Mean   :26.13   Mean   :30.79  
+##  3rd Qu.:14.000   3rd Qu.:4   3rd Qu.:27.37   3rd Qu.:31.37  
+##  Max.   :15.000   Max.   :4   Max.   :27.37   Max.   :31.37  
+##    Temp_mean       Temp_range   
+##  Min.   :27.46   Min.   :3.390  
+##  1st Qu.:27.46   1st Qu.:3.390  
+##  Median :27.94   Median :5.130  
+##  Mean   :27.81   Mean   :4.663  
+##  3rd Qu.:28.03   3rd Qu.:5.470  
+##  Max.   :28.03   Max.   :5.470
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
@@ -106,7 +115,7 @@ Write some stuff about the summary here...
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{hist}\hlstd{(importGood}\hlopt{$}\hlstd{Algae)}
+\hlkwd{hist}\hlstd{(importupdated}\hlopt{$}\hlstd{Algae)}
 \end{alltt}
 \end{kframe}
 \includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
@@ -116,7 +125,7 @@ Write some stuff about the summary here...
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{hist}\hlstd{(importGood}\hlopt{$}\hlstd{Sediment)}
+\hlkwd{hist}\hlstd{(importupdated}\hlopt{$}\hlstd{Sediment)}
 \end{alltt}
 \end{kframe}
 \includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
@@ -126,10 +135,20 @@ Write some stuff about the summary here...
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{hist}\hlstd{(importGood}\hlopt{$}\hlstd{Temperature)}
+\hlkwd{hist}\hlstd{(importupdated}\hlopt{$}\hlstd{Temperature)}
 \end{alltt}
 \end{kframe}
 \includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
+
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{hist}\hlstd{(importupdated}\hlopt{$}\hlstd{Temp_mean)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
 
 \end{knitrout}
 
@@ -137,10 +156,20 @@ Write some stuff about the summary here...
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{hist}\hlstd{(importGood}\hlopt{$}\hlstd{Canopy)}
+\hlkwd{hist}\hlstd{(importupdated}\hlopt{$}\hlstd{Temp_range)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-7-1} 
+
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{hist}\hlstd{(importupdated}\hlopt{$}\hlstd{Canopy)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-8-1} 
 
 \end{knitrout}
 
@@ -155,40 +184,50 @@ Abnormal event (car accident) occurred a few ? days before data collection which
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{plot}\hlstd{(importGood}\hlopt{$}\hlstd{Temperature,importGood}\hlopt{$}\hlstd{Algae)}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temperature,importupdated}\hlopt{$}\hlstd{Algae)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-7-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-9-1} 
 
 \end{knitrout}
-Our temperature data was too coarse to really be useful. Will eventually redo with other temp data, perhaps testing variance of temp by site rather than raw temp data. 
+Our temperature data was too coarse to really be useful. So instead we proceeded to use WED1 team's temperature data. The following is a plot of algae abundance as a function the range of temperature. 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{plot}\hlstd{(importGood}\hlopt{$}\hlstd{Canopy,importGood}\hlopt{$}\hlstd{Algae)}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temp_range,importupdated}\hlopt{$}\hlstd{Algae)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-8-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-10-1} 
+
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Canopy,importupdated}\hlopt{$}\hlstd{Algae)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-11-1} 
 
 \end{knitrout}
 Cannot reject null hypothesis. 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{plot}\hlstd{(importGood}\hlopt{$}\hlstd{Canopy,importGood}\hlopt{$}\hlstd{Temperature)}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Canopy,importupdated}\hlopt{$}\hlstd{Temp_range)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-9-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-12-1} 
 
 \end{knitrout}
 Our temperature data was too coarse to really be useful. Will eventually redo with other temp data, perhaps testing variance of temp by site rather than raw temp data. 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Sediment,importGood)}
+\hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Sediment,importupdated)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-10-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-13-1} 
 
 \end{knitrout}
 Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future.
