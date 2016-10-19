@@ -67,7 +67,7 @@ hist(site4$Temp)
 
 \section{Bias and Data Limitations}
 
-Location 3 was removed four days prior to the removal of locations 1, 2, and 4. The probes also may vary in their accuracy and calibration, which will be tested for via an ice bath test. 
+Location 3 was removed four days prior to the removal of locations 1, 2, and 4. The probes also may vary in their accuracy and calibration, which will be tested for via an ice bath test. Use the DataTime_Factor_Convertor file from Data Weds 1 to correct for date, temperature, and other data, as this will adjust the results for the calibration of each individual logger.
 
 
 \end{document}
