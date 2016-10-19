@@ -1,13 +1,15 @@
 \documentclass{article}
 
+\usepackage{gensymb} %https://www.overleaf.com/help/115-how-can-i-write-a-degrees-degree-symbol-in-latex#.WAeUUPkrJiw
+
 \begin{document}
 
 \section{Data Description}
 
 This data was collected on September 20, 2016 along 3 reaches of the Santa Ana River, with 9 observations per reach. 
-Site A (plunge pool): 34*2'5" N, 117*21'17" W
-Site B (below confluence): 34*2'21" N, 117*21'20" W
-Site C (above confluence): 34*2'29" N, 117*21'15" W. 
+Site A (plunge pool): 34\textdegree 2'5" N, 117 \textdegree 21'17" W
+Site B (below confluence): 34\textdegree 2'21" N, 117 \textdegree21'20" W
+Site C (above confluence): 34 \textdegree 2'29" N, 117\textdegree 21'15" W. 
 Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. 
 
 
