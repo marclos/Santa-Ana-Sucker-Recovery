@@ -7,9 +7,10 @@
 \section{Data Description}
 
 This data was collected on September 20, 2016 along 3 reaches of the Santa Ana River, with 9 observations per reach. 
-Site A (plunge pool): 34\textdegree 2'5" N, 117 \textdegree 21'17" W
-Site B (below confluence): 34\textdegree 2'21" N, 117 \textdegree21'20" W
-Site C (above confluence): 34 \textdegree 2'29" N, 117\textdegree 21'15" W. 
+Site 4 (plunge pool): 34\textdegree 2'5" N, 117 \textdegree 21'17" W
+Site 3 (below confluence): 34\textdegree 2'21" N, 117 \textdegree21'20" W
+Site 2 (above confluence): 34 \textdegree 2'29" N, 117\textdegree 21'15" W. 
+Site 1 (concrete channel) was used by other groups but not by us. 
 Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. 
 
 
@@ -17,15 +18,14 @@ Each observation contains the following variables: algae percent cover, canopy c
 
 The following code was used to import data into rstudio, assign a file path, and create a command to read the csv file. 
 <<>>=
-mydataGood= "/home/CAMPUS/vesj2015/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParametersGood.csv"
-
-importGood=read.csv(mydataGood)
+updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
+importupdated=read.csv(updateddata)
 @
 \subsection{Summary Statistics}
 
 The following code was used to generate summary statisitics. 
 <<>>=
-summary(importGood)
+summary(importupdated)
 @
 
 
@@ -33,20 +33,28 @@ summary(importGood)
 
 Write some stuff about the summary here...
 << figure=TRUE >>=
-hist(importGood$Algae)
+hist(importupdated$Algae)
 @
 
 << figure=TRUE >>=
-hist(importGood$Sediment)
+hist(importupdated$Sediment)
 @
 
 << figure=TRUE >>=
-hist(importGood$Temperature)
+hist(importupdated$Temperature)
+@
+
+<< figure=TRUE >>=
+hist(importupdated$Temp_mean)
 @
 
 
 << figure=TRUE >>=
-hist(importGood$Canopy)
+hist(importupdated$Temp_range)
+@
+
+<< figure=TRUE >>=
+hist(importupdated$Canopy)
 @
 
 \section{Bias and Data Limitations}
@@ -58,19 +66,23 @@ Abnormal event (car accident) occurred a few ? days before data collection which
 \section{Results}
 
 << figure=TRUE >>=
-plot(importGood$Temperature,importGood$Algae)
+plot(importupdated$Temperature,importupdated$Algae)
 @
-Our temperature data was too coarse to really be useful. Will eventually redo with other temp data, perhaps testing variance of temp by site rather than raw temp data. 
+Our temperature data was too coarse to really be useful. So instead we proceeded to use WED1 team's temperature data. The following is a plot of algae abundance as a function the range of temperature. 
 << figure=TRUE >>=
-plot(importGood$Canopy,importGood$Algae)
+plot(importupdated$Temp_range,importupdated$Algae)
+@
+
+<< figure=TRUE >>=
+plot(importupdated$Canopy,importupdated$Algae)
 @
 Cannot reject null hypothesis. 
 << figure=TRUE >>=
-plot(importGood$Canopy,importGood$Temperature)
+plot(importupdated$Canopy,importupdated$Temp_range)
 @
 Our temperature data was too coarse to really be useful. Will eventually redo with other temp data, perhaps testing variance of temp by site rather than raw temp data. 
 << figure=TRUE >>=
-boxplot(Algae~Sediment,importGood)
+boxplot(Algae~Sediment,importupdated)
 @
 Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future.
 \end{document}
