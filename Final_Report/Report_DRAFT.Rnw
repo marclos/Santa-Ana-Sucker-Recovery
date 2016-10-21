@@ -1,10 +1,10 @@
 \documentclass{article}
 
-\title{Temperature and the Santa Ana Sucker}
-\author{Sophie Janssen and Nicole Larson}
+\title{Santa Ana Sucker Habitat Evaluation}
+\author{Sophie Janssen and Nicole Larson, ed. Marc Los Huertos}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+
 
 \maketitle
 
