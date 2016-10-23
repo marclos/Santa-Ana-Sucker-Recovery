@@ -86,8 +86,16 @@ Our objective for this project is to unveil (even if just a little!) the possibl
 
 \subsection{Site Description}
 
-This data was collected in the Rialto portion of the Santa Ana river for locations 2, 3, and 4. Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
-We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site 4 (plunge pool): 34 degrees 2’5” N, 117 degrees 21’17” W Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
+This data was collected at three reaches in the Rialto portion of the Santa Ana river near Colton, California (Figure \ref{SAR_Image}).
+
+Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
+
+
+Site 4 (plunge pool): 34* 2’5” N, 117 degrees 21’17” W 
+Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W 
+Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. 
+
+Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition.  
 
 
 \begin{figure}
@@ -139,36 +147,8 @@ After conducting our ﬁeldwork, we imported our data in rstudio and generated s
 =======
 After conducting our ﬁeldwork, we will enter our data in rstudio. We will produce linear regressions of temperature vs algae abundance. We will producelinear regressions of canopy cover vs algae abundance. We will produce linear regressions of canopy cover vs temperature. We will create ANOVA or t-tests of bed composition vs. algae abundance. We will then analyze our data and write a project report 4-5 pages long with pictures and ﬁgures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed compositions eﬀect on algae abundance. In qualitative terms, we will synthesize our results with the ﬁsh videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their ﬁsh observations.
 The following code was used to generate summary statisitics. 
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{summary}\hlstd{(importupdated)}
-\end{alltt}
-\begin{verbatim}
-##        ID       Site      Algae           Sediment       Temperature   
-##  Min.   : 1.0   A:9   Min.   :  0.00   Min.   :0.0000   Min.   :28.00  
-##  1st Qu.: 7.5   B:9   1st Qu.:  0.00   1st Qu.:0.0000   1st Qu.:29.00  
-##  Median :14.0   C:9   Median : 50.00   Median :1.0000   Median :29.00  
-##  Mean   :14.0         Mean   : 48.52   Mean   :0.5926   Mean   :28.89  
-##  3rd Qu.:20.5         3rd Qu.:100.00   3rd Qu.:1.0000   3rd Qu.:29.00  
-##  Max.   :27.0         Max.   :100.00   Max.   :1.0000   Max.   :30.00  
-##      Canopy          Site_new    Temp_min        Temp_max    
-##  Min.   : 0.000   Min.   :2   Min.   :25.12   Min.   :30.25  
-##  1st Qu.: 3.000   1st Qu.:2   1st Qu.:25.12   1st Qu.:30.25  
-##  Median :11.000   Median :3   Median :25.90   Median :30.76  
-##  Mean   : 8.593   Mean   :3   Mean   :26.13   Mean   :30.79  
-##  3rd Qu.:14.000   3rd Qu.:4   3rd Qu.:27.37   3rd Qu.:31.37  
-##  Max.   :15.000   Max.   :4   Max.   :27.37   Max.   :31.37  
-##    Temp_mean       Temp_range   
-##  Min.   :27.46   Min.   :3.390  
-##  1st Qu.:27.46   1st Qu.:3.390  
-##  Median :27.94   Median :5.130  
-##  Mean   :27.81   Mean   :4.663  
-##  3rd Qu.:28.03   3rd Qu.:5.470  
-##  Max.   :28.03   Max.   :5.470
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
+INSERT CODE FOR SUMMARY STATISTICS
+>>>>>>> f31b8abefbb905befede6108d156a650b766b1ff
 
 Note that *Temp_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
 linear regression of temperature range vs algae abundance
@@ -178,7 +158,21 @@ ANOVA of site location vs. algae abundance
 For each of these statistical comparisons, we tested whether we could reject the null hypothesis, and if yes, discuss the implications of those findings. Our results are summarized in the following section. 
 \section{Results & Discussion}
 
+<<<<<<< HEAD
 The temperature data we collected with an analogue thermometer was too coarse to really be useful, because we took all our measurements in one afternoon and could only take temperature measurments at a resolution of whole degrees celsius. For that reason, we instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of range of temperature (*C) experienced at each site. 
+=======
+The temperature data we collected with an analogue thermometer was too coarse to really be useful (Figure \ref{Temp}).
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temperature,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Temperature (*C)"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Temperature as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
+
+\end{knitrout}
+So instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of temperature range (*C) at each site. 
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
