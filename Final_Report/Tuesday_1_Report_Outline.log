@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  21 OCT 2016 13:59
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 13:18
 entering extended mode
  %&-line parsing enabled.
 **Tuesday_1_Report_Outline.tex
@@ -160,16 +160,27 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 55.
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 58.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 58.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 58.
- [1
 
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Tuesday_1_Report_Outl
-ine.toc
+! Undefined control sequence.
+l.56 \SweaveOpts
+                {concordance=TRUE}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
+
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 59.
+ [2]
+(./Tuesday_1_Report_Outline.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -178,38 +189,272 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `Tuesday_1_Report_Outline.toc'.
 
- [2]
+ [3]
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+ [4]
+! Text line contains an invalid character.
+l.80 ...m tapemeasure +Recording material +Comp^^?
+                                                  uter +RStudio Server Micro...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Overfull \hbox (3.1395pt too wide) in paragraph at lines 98--99
+[]\OT1/cmr/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-
+gae per-cent cover, canopy
+ []
+
+
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
  PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<Figures/SantaAna_SatelliteImage.pdf, id=13, 614.295pt x 794.97pt>
+<Figures/SantaAna_SatelliteImage.pdf, id=19, 614.295pt x 794.97pt>
 File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
 
-<use Figures/SantaAna_SatelliteImage.pdf>
-<Figures/Temp.pdf, id=14, 505.89pt x 505.89pt>
-File: Figures/Temp.pdf Graphic file (type pdf)
- <use Figures/Temp.pdf>
-Overfull \hbox (160.88875pt too wide) in paragraph at lines 104--105
+<use Figures/SantaAna_SatelliteImage.pdf> [5] [6 <./Figures/SantaAna_SatelliteI
+mage.pdf>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Package color Info: Redefining color shadecolor on input line 140.
+
+Overfull \hbox (158.9956pt too wide) in paragraph at lines 142--142
+[][]\OT1/cmtt/m/n/10 updateddata[][]=[] []"/home/CAMPUS/fcl02013/Santa-Ana-Suck
+er-Recovery/Data/Data_TUES_1/updatedtemps.csv"[][] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 143.
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.153 Note that *Temp_
+                      x* entries were borrowed with permission from Sophie a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.159 \section
+              {Results}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (785.78563pt too wide) in paragraph at lines 153--159
+[]\OT1/cmr/m/n/10 Note that *Temp$[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 entr
+ieswereborrowedwithpermissionfromSophieandNicole[]sdataset:Wealsocreateda\OT1/c
+mr/m/n/10 "\OML/cmm/m/it/10 Site[]ew\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 fieldsoth
+atournamingconventionswhouldbeconsistantwithotherteams:Wethenusedrstudiotogener
+atethefollowingdescriptivestatisitcs \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (1358.26936pt too wide) in paragraph at lines 153--159
+\OML/cmm/m/it/10 linearregressionoftemperaturerangevsalgaeabundancelinearregres
+sionofcanopycovervsalgaeabundanceANOVAofbedcompositionvs:algaeabundanceANOVAofs
+itelocationvs:algaeabundanceForeachofthesestatisticalcomparisons; wetestedwheth
+erwecouldrejectthenullhypothesis; andifyes; discusstheimplicationsofthosefindin
+gs:Ourresultsaresummarizedinthefollowingsection:$ 
+ []
+
+Package color Info: Redefining color shadecolor on input line 163.
+[7]
+Overfull \hbox (542.24226pt too wide) in paragraph at lines 165--165
+[][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Temperature,importupdated[]
+[]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][
+]"Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predictor of Algae 
+Abundance"[][],[][]las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-2-1.pdf, id=46, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-2-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 168--169
 [][] 
  []
 
-[3] [4 <./Figures/SantaAna_SatelliteImage.pdf>] [5 <./Figures/Temp.pdf>]
+Package color Info: Redefining color shadecolor on input line 173.
+
+Overfull \hbox (536.99231pt too wide) in paragraph at lines 175--175
+[][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Temp_range,importupdated[][
+]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]
+"Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predictor of Algae A
+bundance"[][],[][]las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-3-1.pdf, id=47, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-3-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 178--179
+[][] 
+ []
+
+[8 <./figure/unnamed-chunk-2-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 184.
+
+Overfull \hbox (531.74236pt too wide) in paragraph at lines 186--186
+[][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Canopy,importupdated[][]$[]
+[]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Can
+opy Cover Index"[][],[][]main[] []=[][]"Canopy Cover as a predictor of Algae Ab
+undance"[][],[][]las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-4-1.pdf, id=57, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-4-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 190--191
+[][] 
+ []
+
+[9 <./figure/unnamed-chunk-3-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 195.
+
+Overfull \hbox (484.49277pt too wide) in paragraph at lines 197--197
+[][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Sediment,importupdated,[] []ylab
+[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed Composition"[][]
+,[][]main[] []=[][]"Bed Composition as a predictor of Algae Abundance"[][],[][]
+las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-5-1.pdf, id=67, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-5-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 200--201
+[][] 
+ []
+
+[10 <./figure/unnamed-chunk-4-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 205.
+
+Overfull \hbox (426.74327pt too wide) in paragraph at lines 207--207
+[][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Site_new,importupdated,[] []ylab
+[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site name"[][],[][]m
+ain[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],[][]las[][]=[][
+]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-6-1.pdf, id=77, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-6-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-6-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 210--211
+[][] 
+ []
+
+[11 <./figure/unnamed-chunk-5-1.pdf>]
+<Figures/Temp.pdf, id=87, 505.89pt x 505.89pt>
+File: Figures/Temp.pdf Graphic file (type pdf)
+ <use Figures/Temp.pdf>
+Overfull \hbox (160.88875pt too wide) in paragraph at lines 220--221
+[][] 
+ []
+
+[12 <./figure/unnamed-chunk-6-1.pdf>] [13 <./Figures/Temp.pdf>]
 (./Tuesday_1_Report_Outline.aux) ) 
 Here is how much of TeX's memory you used:
- 1160 strings out of 256214
- 15785 string characters out of 1917000
- 60578 words of memory out of 1500000
- 4466 multiletter control sequences out of 10000+200000
- 7895 words of font info for 28 fonts, out of 1200000 for 2000
+ 1189 strings out of 256214
+ 16589 string characters out of 1917000
+ 63636 words of memory out of 1500000
+ 4488 multiletter control sequences out of 10000+200000
+ 8063 words of font info for 29 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,6n,19p,267b,211s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,6n,19p,2018b,248s stack positions out of 5000i,500n,6000p,200000b,15000s
 </usr/share/texmf/fonts/type1/bluesky/cm/cmbx
 10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fo
-nts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.p
-fb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Tuesday_1_Report_Outline.pdf (5 pages, 309397 bytes).
+nts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.
+pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/
+type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb><
+/usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type
+1/bluesky/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb>
+Output written on Tuesday_1_Report_Outline.pdf (13 pages, 381583 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 139 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
