@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\title{Measuring Red Algae in the Santa Ana River}
+\title{111Measuring Red Algae in the Santa Ana River}
 \author{EA30: Valeria Sanchez, Frank Lyles, Olivia Howie} 
 
 \begin{document}
@@ -29,12 +29,18 @@ Our objective for this project is to unveil (even if just a little!) the possibl
 \subsection{Materials and Equipment} 
 GPS Spherical Canopy Densiometer, 30cm x 30cm PCV Quadrat, Analog Thermometer, 10 m string/rope, Recording material, Computer, RStudio Server, Microsoft Excel
 
-\subsection{Methods}
+\section{Methods}
 
 
 \subsection{Site Description}
+<<<<<<< HEAD
+
+FIX SITE NAMES
+We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site A (plunge pool): 34*2’5” N, 117*21’17” W Site B (below conﬂuence): 34*2’21” N, 117*21’20” W Site C (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
+=======
 This data was collected in the Rialto portion of the Santa Ana river for locations 2, 3, and 4. Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
 We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site 4 (plunge pool): 34*2’5” N, 117*21’17” W Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
+>>>>>>> f52c5f4ece92f8791d64a3fdd4871d215ac726dc
 
 \begin{figure}
 \includegraphics[width=1.00\textwidth]{Figures/SantaAna_SatelliteImage}
@@ -99,8 +105,11 @@ plot(importupdated$Temperature,importupdated$Algae, ylab="Algae Abundance (% cov
 @
 So instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of temperature range (*C) at each site. 
 << figure=TRUE >>=
-plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
+plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature Range as a predictor of Algae Abundance",las=1)
+abline(lm(Algae~Temp_range,importupdated))
 @
+While using our temperature data yielded p-value: 0.446, using the other teams's temperature range data yilded p-value: 3.49e-05. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826, there are clearly other important variables at work. 
+
 
 The temperature data suggests... (Figure \ref{Temp}).
 
