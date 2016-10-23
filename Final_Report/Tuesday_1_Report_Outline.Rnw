@@ -17,7 +17,7 @@
 
 \subsection{Problem Statement}
 This experiment explores whether there is a a relationship between red algae (scientific name) presence in reaches of the Santa Ana River
-and the parameters of water temperature, overhead tree canopy cover, and sediment type. It It will do so gathering data for which there is less information known - 
+and the parameters of water temperature, overhead tree canopy cover, and sediment type. It will do so gathering data for which there is less information known - 
 
 TEMPERATURE GROUP'S EXAMPLE: 
 
@@ -42,8 +42,15 @@ these weeks?
 This project is motivated by the decline of the threatened Santa Ana sucker, a small freshwater sucker ﬁsh endemic to southern California, where it is now present in only three rivers. While there are several threats to the Santa Ana sucker, including fragmentation of its river habitats and decreasing water levels and degradation to the riparian vegetation along the river (Thomson 2010). For the Santa Ana River sucker habitat, a central threat is that the fact that the invasive Red Algae has been spreading with alacrity in areas where the ﬁsh are known to be, including the reach below the Rapid Inﬁltration and Extraction (RIX) Treatment plan (Los Huertos 2016).There are concerns that it may be one of the contributing factors to the suckers decline. This project will therefore focus on qualitatively identifying and analyzing the substrate on which the Algae and Red Algae found grows, because one of the aspects of the suckers habitat is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand (Thomson et al. 2010, 321).The sucker is adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic) (Los Huertos 2016). This may lead to the suckerbeingincontactwiththealgaewhenfeeding. Ifthesuckerisingestingthe algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the ﬁsh being negatively impacted; the algae may also disrupt the ﬁshs well-being in unknown ways. Perhaps it actually crowds out the diatoms on which, along with algae and detritus, the sucker feeds (Thomson 2010, 322). For this reason, we will also take samples of algae found to potentially examine later for diatoms. Even if we do not detect the ﬁsh where we ﬁnd algae (through collaboration with other teams who are measuring ﬁsh presence), the presence of the algae in the same area and on the same type of substrate as the ﬁsh could indicate competition for resources between the algae and the ﬁsh.
 
 
-\subsection{Materials and Equipment}
-Water-quality Testing instruments GPS (included in testing instruments) Foliage Testing instrument 30cm x 30cm Quadrat Water Temperature Measurer Water sediment sample bottle 10 m string/rope
+\subsection{Materials and Equipment} 
+*GPS Spherical Canopy Densiometer 
+*30cm x 30cm PCV Quadrat 
+*Analog Thermometer 
+*10 m string/rope
+*Recording material
+*Computer
+*RStudio Server
++Microsoft Excel
 
 
 \subsection{Methods}
