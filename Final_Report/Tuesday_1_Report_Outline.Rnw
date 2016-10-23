@@ -37,8 +37,16 @@ Our objective for this project is to unveil (even if just a little!) the possibl
 
 \subsection{Site Description}
 
-This data was collected in the Rialto portion of the Santa Ana river for locations 2, 3, and 4. Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
-We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site 4 (plunge pool): 34 degrees 2’5” N, 117 degrees 21’17” W Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
+This data was collected at three reaches in the Rialto portion of the Santa Ana river near Colton, California (Figure \ref{SAR_Image}).
+
+Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
+
+
+Site 4 (plunge pool): 34* 2’5” N, 117 degrees 21’17” W 
+Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W 
+Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. 
+
+Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition.  
 
 
 \begin{figure}
@@ -86,9 +94,8 @@ importupdated=read.csv(updateddata)
 =======
 After conducting our ﬁeldwork, we will enter our data in rstudio. We will produce linear regressions of temperature vs algae abundance. We will producelinear regressions of canopy cover vs algae abundance. We will produce linear regressions of canopy cover vs temperature. We will create ANOVA or t-tests of bed composition vs. algae abundance. We will then analyze our data and write a project report 4-5 pages long with pictures and ﬁgures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed compositions eﬀect on algae abundance. In qualitative terms, we will synthesize our results with the ﬁsh videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their ﬁsh observations.
 The following code was used to generate summary statisitics. 
-<<>>=
-summary(importupdated)
-@
+INSERT CODE FOR SUMMARY STATISTICS
+>>>>>>> f31b8abefbb905befede6108d156a650b766b1ff
 
 Note that *Temp_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
 linear regression of temperature range vs algae abundance
