@@ -138,11 +138,51 @@ Steps 1)-8) were repeated at each Site, moving upstream from 4 to 2, for a total
 \subsection{Laboratory Methods}
 
 \subsection{Statistical Methods}
+<<<<<<< HEAD
+After conducting our ﬁeldwork, we imported our data in rstudio and generated summary statistics using the following code: 
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{updateddata}\hlkwb{=} \hlstr{"/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"}
+\hlstd{importupdated}\hlkwb{=}\hlkwd{read.csv}\hlstd{(updateddata)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+Note that *Temp_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
+linear regression of temperature range vs algae abundance
+linear regression of canopy cover vs algae abundance
+ANOVA of bed composition vs. algae abundance
+ANOVA of site location vs. algae abundance
+For each of these statistical comparisons, we tested whether we could reject the null hypothesis, and if yes, discuss the implications of those findings. Our results are summarized in the following section. 
+
+\section{Results}
+
+The temperature data we collected with an analogue thermometer was too coarse to really be useful (Figure \ref{Temp}).
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temperature,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Temperature (*C)"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Temperature as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
+
+\end{knitrout}
+So instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of temperature range (*C) at each site. 
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temp_range,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Temperature (*C)"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Temperature as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
+=======
 After conducting our ﬁeldwork, we will enter our data in rstudio. We will produce linear regressions of temperature vs algae abundance. We will producelinear regressions of canopy cover vs algae abundance. We will produce linear regressions of canopy cover vs temperature. We will create ANOVA or t-tests of bed composition vs. algae abundance. We will then analyze our data and write a project report 4-5 pages long with pictures and ﬁgures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed compositions eﬀect on algae abundance. In qualitative terms, we will synthesize our results with the ﬁsh videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their ﬁsh observations.
 The following code was used to generate summary statisitics. 
 INSERT CODE FOR SUMMARY STATISTICS
+>>>>>>> f31b8abefbb905befede6108d156a650b766b1ff
 
-\section{Results}
+\end{knitrout}
 
 The temperature data suggests... (Figure \ref{Temp}).
 
@@ -153,7 +193,7 @@ The temperature data suggests... (Figure \ref{Temp}).
 \end{figure}
 
 \section{Discussion}
-
+We
 
 \section{Conclusion and Recommendations}
 
