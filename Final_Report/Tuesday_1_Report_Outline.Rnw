@@ -45,10 +45,10 @@ Water-quality Testing instruments GPS (included in testing instruments) Foliage 
 >>>>>>> e1c80c034104a85d34ee77fdbeb6d74b5935eb46
 
 
-\subsection{Methods}
+\section{Methods}
 
 
-\subsection{Site Descrition}
+\subsection{Site Description}
 
 FIX SITE NAMES
 We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site A (plunge pool): 34*2’5” N, 117*21’17” W Site B (below conﬂuence): 34*2’21” N, 117*21’20” W Site C (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
