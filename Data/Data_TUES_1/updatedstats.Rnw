@@ -20,6 +20,7 @@ The following code was used to import data into rstudio, assign a file path, and
 <<>>=
 updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
 importupdated=read.csv(updateddata)
+summary(importupdated)
 @
 \subsection{Summary Statistics}
 
