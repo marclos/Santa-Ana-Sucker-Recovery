@@ -120,7 +120,7 @@ Bed composition did have a stronger relationship with Alage Abanundance, as sjho
 << figure=TRUE >>=
 boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Site name",main ="Reach Site as a predictor of Algae Abundance",las=1)
 @
-As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means 
+As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance. 
 
 The temperature data suggests... (Figure \ref{Temp}).
 
