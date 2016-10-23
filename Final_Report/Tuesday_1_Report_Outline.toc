@@ -7,11 +7,5 @@
 \contentsline {subsection}{\numberline {2.1}Site Description}{5}
 \contentsline {subsection}{\numberline {2.2}Field Methods}{5}
 \contentsline {subsection}{\numberline {2.3}Statistical Methods}{7}
-\contentsline {section}{\numberline {3}Results}{8}
-<<<<<<< HEAD
-\contentsline {section}{\numberline {4}Discussion}{13}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{13}
-=======
-\contentsline {section}{\numberline {4}Discussion}{12}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{12}
->>>>>>> 16b9f2646bf461138a82bc5e3623813e5b018075
+\contentsline {section}{\numberline {3}Results & Discussion}{8}
+\contentsline {section}{\numberline {4}Conclusion and Recommendations}{12}
