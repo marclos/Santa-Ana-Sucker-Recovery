@@ -67,11 +67,7 @@
 
 \subsection{Problem Statement}
 
-<<<<<<< HEAD
-The abundance of red algae, or as it is known by its scientific name Rhodophyta, has recently risen significantly in the Santa Ana River, at a questionably similar time that the Santa Ana Sucker, an endangered fish in the river, has been experiencing population declines. This experiment explores the change in red algae (Rhodophyta) presence in the Santa Ana River and the possible relationship it holds with Santa Ana Sucker's decline. Using measurments of river water temperature, overhead tree canopy cover, and sediment type we explore the connection these aspects of the river and their relationship with the red algae.
-=======
 The abundance of the red algae Cosmopogen Aeruginosus has recently risen significantly in the Santa Ana River. In a similar time period, the Santa Ana Sucker (Catostomus Santaanae), an endangered fish endemic to this and another three rivers in the Southern California region, has been experiencing population declines. This experiment explores the change in red algae presence in the Santa Ana River and the possible relationship it holds with Santa Ana Sucker's decline. Using measurments of river water temperature, overhead tree canopy cover, and sediment type we explore the connection these aspects of the river and their relationship with the red algae.
->>>>>>> 4d209e808746e9ef3b8e29225dd53b12dcd8e799
 
 \subsection{Background Research} 
 This project is motivated by the decline of the threatened Santa Ana sucker, a small freshwater sucker ﬁsh endemic to southern California, where it is now present in only three rivers. While there are several threats to the Santa Ana sucker, including fragmentation of its river habitats and decreasing water levels and degradation to the riparian vegetation along the river (Thomson 2010), red algae presence has significantly increased at this same time that the Suckers are dying. For the Santa Ana River sucker habitat, a central threat is the invasive Red Algae that has been spreading with alacrity in areas where the ﬁsh are known to be, including the reach below the Rapid Inﬁltration and Extraction (RIX) Treatment plan (Los Huertos 2016).There are concerns that it may be one of the contributing factors to the suckers decline. This project therefore focuses on qualitatively identifying and analyzing the substrate on which the red algae grows, because one of the aspects of the suckers habitat is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand (Thomson et al. 2010, 321). The sucker has adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic) (Los Huertos 2016). This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the ﬁsh being negatively impacted; the algae may also disrupt the ﬁshs well-being in unknown ways. Some researchers suggest that it actually crowds out the diatoms on which, along with algae and detritus, the sucker feeds (Thomson 2010, 322). The presence of the algae in the same area and on the same type of substrate as the ﬁsh could indicate competition for resources between the algae and the ﬁsh.'
@@ -79,16 +75,11 @@ This project is motivated by the decline of the threatened Santa Ana sucker, a s
 \subsection{Objectives}
 Our objective for this project is to unveil (even if just a little!) the possible relations that red algae has in the Santa Ana River. Our goal is to uncover the question "where does the red algae occur?" and relate it to the possible factors of canopy cover, temperature, pebble count. Our research is a tool to be developed, used, re-used, re-created, or whatever need be for fellow researchers who are interested in this connection as well. 
 
-<<<<<<< HEAD
-\subsection{Materials and Equipment} 
-GPS Spherical Canopy Densiometer, 30cm x 30cm PCV Quadrat, Analog Thermometer, 10 m string/rope, Recording material, Computer, RStudio Server, Microsoft Excel
-=======
 
 \subsection{Materials and Equipment} 
 +GPS Spherical Canopy Densiometer +30cm x 30cm PCV Quadrat +Analog Thermometer +10 m tapemeasure +Recording material +Computer +RStudio Server Microsoft Excel
 
 
->>>>>>> 4d209e808746e9ef3b8e29225dd53b12dcd8e799
 
 \section{Methods}
 
@@ -146,8 +137,36 @@ After conducting our ﬁeldwork, we imported our data in rstudio and generated s
 =======
 After conducting our ﬁeldwork, we will enter our data in rstudio. We will produce linear regressions of temperature vs algae abundance. We will producelinear regressions of canopy cover vs algae abundance. We will produce linear regressions of canopy cover vs temperature. We will create ANOVA or t-tests of bed composition vs. algae abundance. We will then analyze our data and write a project report 4-5 pages long with pictures and ﬁgures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed compositions eﬀect on algae abundance. In qualitative terms, we will synthesize our results with the ﬁsh videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their ﬁsh observations.
 The following code was used to generate summary statisitics. 
-INSERT CODE FOR SUMMARY STATISTICS
->>>>>>> f31b8abefbb905befede6108d156a650b766b1ff
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{summary}\hlstd{(importupdated)}
+\end{alltt}
+\begin{verbatim}
+##        ID       Site      Algae           Sediment       Temperature   
+##  Min.   : 1.0   A:9   Min.   :  0.00   Min.   :0.0000   Min.   :28.00  
+##  1st Qu.: 7.5   B:9   1st Qu.:  0.00   1st Qu.:0.0000   1st Qu.:29.00  
+##  Median :14.0   C:9   Median : 50.00   Median :1.0000   Median :29.00  
+##  Mean   :14.0         Mean   : 48.52   Mean   :0.5926   Mean   :28.89  
+##  3rd Qu.:20.5         3rd Qu.:100.00   3rd Qu.:1.0000   3rd Qu.:29.00  
+##  Max.   :27.0         Max.   :100.00   Max.   :1.0000   Max.   :30.00  
+##      Canopy          Site_new    Temp_min        Temp_max    
+##  Min.   : 0.000   Min.   :2   Min.   :25.12   Min.   :30.25  
+##  1st Qu.: 3.000   1st Qu.:2   1st Qu.:25.12   1st Qu.:30.25  
+##  Median :11.000   Median :3   Median :25.90   Median :30.76  
+##  Mean   : 8.593   Mean   :3   Mean   :26.13   Mean   :30.79  
+##  3rd Qu.:14.000   3rd Qu.:4   3rd Qu.:27.37   3rd Qu.:31.37  
+##  Max.   :15.000   Max.   :4   Max.   :27.37   Max.   :31.37  
+##    Temp_mean       Temp_range   
+##  Min.   :27.46   Min.   :3.390  
+##  1st Qu.:27.46   1st Qu.:3.390  
+##  Median :27.94   Median :5.130  
+##  Mean   :27.81   Mean   :4.663  
+##  3rd Qu.:28.03   3rd Qu.:5.470  
+##  Max.   :28.03   Max.   :5.470
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
 
 Note that *Temp_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
 linear regression of temperature range vs algae abundance
@@ -164,7 +183,7 @@ The temperature data we collected with an analogue thermometer was too coarse to
 \hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temperature,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Temperature (*C)"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Temperature as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
 
 \end{knitrout}
 So instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of temperature range (*C) at each site. 
@@ -174,7 +193,7 @@ So instead used WED1 team's temperature data. The following is a plot of algae a
 \hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temp_range,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Temperature (*C)"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Temperature as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
 
 \end{knitrout}
 <<<<<<< HEAD
@@ -186,7 +205,7 @@ While using our temperature data yielded p-value: 0.446, using the other teams's
 \hlkwd{abline}\hlstd{(}\hlkwd{lm}\hlstd{(Algae}\hlopt{~}\hlstd{Canopy,importupdated))}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
 
 \end{knitrout}
 Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
@@ -196,7 +215,7 @@ Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive v
 \hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Sediment,importupdated,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Bed Composition"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Bed Composition as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
 
 \end{knitrout}
 Bed composition did have a stronger relationship with Alage Abanundance, as sjhown in the figure above. 0 = fine sediment, while 1 = coarse sediment. Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future.
@@ -206,7 +225,7 @@ Bed composition did have a stronger relationship with Alage Abanundance, as sjho
 \hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Site_new,importupdated,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Site name"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Reach Site as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
 \end{alltt}
 \end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-7-1} 
 
 \end{knitrout}
 As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance. 
