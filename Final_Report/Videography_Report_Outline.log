@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 14:15
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 14:58
 entering extended mode
  %&-line parsing enabled.
 **Videography_Report_Outline.tex
@@ -197,7 +197,7 @@ Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
 
 ! Misplaced alignment tab character &.
-l.71 ...anta Ana river up to 35.5Â°C (Greenfield &
+l.65 ...anta Ana river up to 35.5Â°C (Greenfield &
                                                    Ross & Deckert 1970).  Th...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -207,7 +207,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.71 ...a river up to 35.5Â°C (Greenfield & Ross &
+l.65 ...a river up to 35.5Â°C (Greenfield & Ross &
                                                    Deckert 1970).  This rise...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -217,7 +217,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.72 Greenfield, D. W., Ross, S. T., &
+l.66 Greenfield, D. W., Ross, S. T., &
                                        Deckert, G. D. (1970). Some aspects o...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -226,14 +226,41 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[4]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [5]
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ° in font cmr10!
+! Misplaced alignment tab character &.
+l.73 ...anta Ana river up to 35.5Â°C (Greenfield &
+                                                   Ross & Deckert 1970).  Th...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.73 ...a river up to 35.5Â°C (Greenfield & Ross &
+                                                   Deckert 1970).  This rise...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.74 Greenfield, D. W., Ross, S. T., &
+                                       Deckert, G. D. (1970). Some aspects o...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[4] [5]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
  PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
@@ -241,31 +268,48 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
 File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
 
 <use Figures/SantaAna_SatelliteImage.pdf>
-<Figures/Temp.pdf, id=24, 505.89pt x 505.89pt>
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [6] [7 <./Figures/SantaAna_SatelliteImage.pdf>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [8] <Figures/Temp.pdf, id=45, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
- <use Figures/Temp.pdf>
-Overfull \hbox (160.88875pt too wide) in paragraph at lines 129--130
+
+<use Figures/Temp.pdf>
+Overfull \hbox (160.88875pt too wide) in paragraph at lines 125--126
 [][] 
  []
 
-[6] [7 <./Figures/SantaAna_SatelliteImage.pdf>] [8 <./Figures/Temp.pdf>]
-[9] (./Videography_Report_Outline.aux) ) 
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+[9] [10 <./Figures/Temp.pdf>] (./Videography_Report_Outline.aux) ) 
 Here is how much of TeX's memory you used:
  1163 strings out of 256214
  15843 string characters out of 1917000
- 62602 words of memory out of 1500000
+ 64602 words of memory out of 1500000
  4468 multiletter control sequences out of 10000+200000
  8230 words of font info for 29 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  25i,6n,19p,1587b,211s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/wjn02014/.texlive2007/te
-xmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type
-1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></u
-sr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/b
-luesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Videography_Report_Outline.pdf (9 pages, 325456 bytes).
+ </home/CAMPU
+S/wjn02014/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></
+usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1
+/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr
+/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/blu
+esky/cm/cmr17.pfb>
+Output written on Videography_Report_Outline.pdf (10 pages, 328434 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
