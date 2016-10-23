@@ -54,7 +54,9 @@ in the site description section on September 20th, 2016, from 1pm to 3:30pm.
 
 9 measurements of each parameter were taken at Sites 4, 3, and 2, for a total of 27 measurements. 
 At each site, beginning at Site 4, the following procedures were followed: 
+
 1)A spot was chosen along the right bank. Each of the parameters were then measured.
+
 2)For estimating algae abundance, we placed the 30  x 30 cm quadrat above the river bed and estimated
 the percent that was covered by algae to the nearest 10 percent.
 
