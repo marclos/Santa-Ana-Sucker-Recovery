@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 12:46
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 13:29
 entering extended mode
  %&-line parsing enabled.
 **Temperature_Report_Outline.tex
@@ -223,16 +223,16 @@ Missing character: There is no ™ in font cmr10!
 Here is how much of TeX's memory you used:
  1160 strings out of 256214
  15807 string characters out of 1917000
- 62606 words of memory out of 1500000
+ 63606 words of memory out of 1500000
  4466 multiletter control sequences out of 10000+200000
  7895 words of font info for 28 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,6n,19p,1439b,211s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,6n,19p,1460b,211s stack positions out of 5000i,500n,6000p,200000b,15000s
 </usr/share/texmf/fonts/type1/bluesky/
 cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/t
 exmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
 cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Temperature_Report_Outline.pdf (10 pages, 327682 bytes).
+Output written on Temperature_Report_Outline.pdf (10 pages, 327871 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
