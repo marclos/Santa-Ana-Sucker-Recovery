@@ -38,7 +38,7 @@ Our objective for this project is to unveil (even if just a little!) the possibl
 \subsection{Site Description}
 
 This data was collected in the Rialto portion of the Santa Ana river for locations 2, 3, and 4. Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
-We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site 4 (plunge pool): 34*2’5” N, 117*21’17” W Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
+We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site 4 (plunge pool): 34 degrees 2’5” N, 117 degrees 21’17” W Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
 
 
 \begin{figure}

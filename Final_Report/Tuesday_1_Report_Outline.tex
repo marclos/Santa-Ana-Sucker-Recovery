@@ -1,11 +1,59 @@
-\documentclass{article}
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 
 \title{Measuring Red Algae in the Santa Ana River}
-\author{EA30: Valeria Sanchez-Jimenez, Frank Lyles, Olivia Howie} 
-
-\usepackage{Sweave}
+\author{EA30: Valeria Sanchez-Jimenez, Frank Lyles, Olivia Howie}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\input{Tuesday_1_Report_Outline-concordance}
+\SweaveOpts{concordance=TRUE}
 
 
 \maketitle
@@ -39,7 +87,7 @@ Our objective for this project is to unveil (even if just a little!) the possibl
 \subsection{Site Description}
 
 This data was collected in the Rialto portion of the Santa Ana river for locations 2, 3, and 4. Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
-We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site 4 (plunge pool): 34*2’5” N, 117*21’17” W Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
+We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site 4 (plunge pool): 34 degrees 2’5” N, 117 degrees 21’17” W Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
 
 
 \begin{figure}
@@ -80,12 +128,14 @@ Steps 1)-8) were repeated at each Site, moving upstream from 4 to 2, for a total
 \subsection{Statistical Methods}
 
 After conducting our ﬁeldwork, we imported our data in rstudio and generated summary statistics using the following code: 
-\begin{Schunk}
-\begin{Sinput}
-> updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
-> importupdated=read.csv(updateddata)
-\end{Sinput}
-\end{Schunk}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{updateddata}\hlkwb{=} \hlstr{"/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"}
+\hlstd{importupdated}\hlkwb{=}\hlkwd{read.csv}\hlstd{(updateddata)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 =======
 After conducting our ﬁeldwork, we will enter our data in rstudio. We will produce linear regressions of temperature vs algae abundance. We will producelinear regressions of canopy cover vs algae abundance. We will produce linear regressions of canopy cover vs temperature. We will create ANOVA or t-tests of bed composition vs. algae abundance. We will then analyze our data and write a project report 4-5 pages long with pictures and ﬁgures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed compositions eﬀect on algae abundance. In qualitative terms, we will synthesize our results with the ﬁsh videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their ﬁsh observations.
 The following code was used to generate summary statisitics. 
@@ -101,19 +151,16 @@ For each of these statistical comparisons, we tested whether we could reject the
 \section{Results}
 
 The temperature data we collected with an analogue thermometer was too coarse to really be useful (Figure \ref{Temp}).
-\begin{Schunk}
-\begin{Sinput}
-> plot(importupdated$Temperature,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
-\end{Sinput}
-\end{Schunk}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temperature,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Temperature (*C)"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Temperature as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
+
+\end{knitrout}
 So instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of temperature range (*C) at each site. 
-<<<<<<< HEAD
-\begin{Schunk}
-\begin{Sinput}
-> plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
-\end{Sinput}
-\end{Schunk}
-=======
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
@@ -158,7 +205,6 @@ Bed composition did have a stronger relationship with Alage Abanundance, as sjho
 As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance. 
 =======
 >>>>>>> 4d209e808746e9ef3b8e29225dd53b12dcd8e799
->>>>>>> df22a21e55b74375b20ebae1f973610d5f2955e6
 
 The temperature data suggests... (Figure \ref{Temp}).
 
