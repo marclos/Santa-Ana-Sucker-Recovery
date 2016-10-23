@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\title{11123Measuring Red Algae in the Santa Ana River}
+\title{1112344Measuring Red Algae in the Santa Ana River}
 \author{EA30: Valeria Sanchez, Frank Lyles, Olivia Howie} 
 
 \begin{document}
