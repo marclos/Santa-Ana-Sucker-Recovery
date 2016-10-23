@@ -54,7 +54,9 @@ in the site description section on September 20th, 2016, from 1pm to 3:30pm.
 
 9 measurements of each parameter were taken at Sites 4, 3, and 2, for a total of 27 measurements. 
 At each site, beginning at Site 4, the following procedures were followed: 
+
 1)A spot was chosen along the right bank. Each of the parameters were then measured.
+
 2)For estimating algae abundance, we placed the 30  x 30 cm quadrat above the river bed and estimated
 the percent that was covered by algae to the nearest 10 percent.
 
@@ -93,7 +95,6 @@ linear regression of canopy cover vs algae abundance
 ANOVA of bed composition vs. algae abundance
 ANOVA of site location vs. algae abundance
 For each of these statistical comparisons, we tested whether we could reject the null hypothesis, and if yes, discuss the implications of those findings. Our results are summarized in the following section. 
-
 \section{Results}
 
 The temperature data we collected with an analogue thermometer was too coarse to really be useful (Figure \ref{Temp}).
@@ -104,6 +105,23 @@ So instead used WED1 team's temperature data. The following is a plot of algae a
 << figure=TRUE >>=
 plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
 @
+<<<<<<< HEAD
+While using our temperature data yielded p-value: 0.446, using the other teams's temperature range data yilded p-value: 3.49e-05. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826, there are clearly other important variables at work. 
+<< figure=TRUE >>=
+plot(importupdated$Canopy,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Canopy Cover Index",main ="Canopy Cover as a predictor of Algae Abundance",las=1)
+abline(lm(Algae~Canopy,importupdated))
+@
+Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
+<< figure=TRUE >>=
+boxplot(Algae~Sediment,importupdated, ylab="Algae Abundance (% cover)",xlab="Bed Composition",main ="Bed Composition as a predictor of Algae Abundance",las=1)
+@
+Bed composition did have a stronger relationship with Alage Abanundance, as sjhown in the figure above. 0 = fine sediment, while 1 = coarse sediment. Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future.
+<< figure=TRUE >>=
+boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Site name",main ="Reach Site as a predictor of Algae Abundance",las=1)
+@
+As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance. 
+=======
+>>>>>>> 4d209e808746e9ef3b8e29225dd53b12dcd8e799
 
 The temperature data suggests... (Figure \ref{Temp}).
 
