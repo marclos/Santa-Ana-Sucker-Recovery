@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 09:45
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 10:36
 entering extended mode
  %&-line parsing enabled.
 **Tuesday_1_Report_Outline.tex
@@ -208,28 +208,28 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
 <Figures/SantaAna_SatelliteImage.pdf, id=18, 614.295pt x 794.97pt>
 File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
 
-<use Figures/SantaAna_SatelliteImage.pdf>
-<Figures/Temp.pdf, id=19, 505.89pt x 505.89pt>
+<use Figures/SantaAna_SatelliteImage.pdf> [4] [5 <./Figures/SantaAna_SatelliteI
+mage.pdf>] <Figures/Temp.pdf, id=36, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
- <use Figures/Temp.pdf> [4]
-[5 <./Figures/SantaAna_SatelliteImage.pdf>] [6 <./Figures/Temp.pdf>]
+
+<use Figures/Temp.pdf> [6 <./Figures/Temp.pdf>] [7]
 (./Tuesday_1_Report_Outline.aux) ) 
 Here is how much of TeX's memory you used:
  1785 strings out of 256214
  23778 string characters out of 1917000
- 70375 words of memory out of 1500000
+ 71375 words of memory out of 1500000
  5049 multiletter control sequences out of 10000+200000
  25739 words of font info for 56 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,6n,21p,2017b,214s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 35i,6n,21p,2018b,214s stack positions out of 5000i,500n,6000p,200000b,15000s
 </usr/share/texmf/fonts/type1/bluesky/cm/cmbx
 10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fo
 nts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.
 pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/
 type1/bluesky/cm/cmr17.pfb>
-Output written on Tuesday_1_Report_Outline.pdf (6 pages, 324163 bytes).
+Output written on Tuesday_1_Report_Outline.pdf (7 pages, 327295 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  15 words of extra memory for PDF output out of 10000 (max. 10000000)
 
