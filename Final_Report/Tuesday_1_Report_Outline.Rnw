@@ -60,7 +60,32 @@ We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Si
 \end{figure}
 
 \subsection{Field Methods}
-Site selection: 3 measurements 1-10m apart for 4 diﬀerent reaches. Use random number generator to select distance. 12 measurements total. Reach 1 = original site visited already. Must select Reaches 2 3 in between. Reach 4 = ﬁsh-rich pool half hour downstream 30 minutes to walk down to reach D where we will start, then proceed back upstream. ATEACHSITE(25minuteseach): Algae: usequadrat30cmx30cm. Take three measurements on right bank, middle, left bank. For each measurement, estimate Pebble count. (What was the pebble structure and was the algae on the pebbles) Pebble size: qualitatively note grain size of streambed: cobbles, pebbles, coarse sand, ﬁne sand, or silt. Canopy cover: directly above each alage measurement, use canopy cover instrument to determine canopy cover. Temperature: 3 measurements per site, left middle and right. Time of each measurement Notekeeper who records as team members call out measurements TOTAL TIME NEEDED: 2 hours 40 mins
+The collection of data on the algae abundance, sediment type, vegetation canopy cover, 
+and temperature of the Santa Ana River was done along the section of the river described
+in the site description section on September 20th, 2016, from 1pm to 3:30pm.
+
+9 measurements of each parameter were taken at Sites 4, 3, and 2, for a total of 27 measurements. 
+At each site, beginning at Site 4, the following procedures were followed: 
+A spot was chosen along the right bank. Each of the parameters were then measured.
+For estimating algae abundance, we placed the 30  x 30 cm quadrat above the river bed and estimated
+the percent that was covered by algae to the nearest 10 percent.
+
+The sediment type of the site was characterized as either fine or coarse based on the grain size of the 30x30cm section of stream bed covered by the quadrat as either fine or coarse. Coarse substrate was classified as anything larger than pebbles or sand, that is, larger than 6.5cm. If more than half of the area covered by the quadrat was coarse substrate, or fine substrate, the area was characterized as such respectively.
+
+Canopy cover was measured from the same position as the algae by holding spherical canopy densiometer above water at elbow’s length. Based on how many of the 15 intersections on the densiometer reflected overhead canopy, cover was then quantified on a 0-15 scale, 0 being the no canopy cover and 15 being full cover.
+
+To measure temperature, we submerged the analog thermometer underwater and recorded the temperature in degrees Celsius.
+
+Qualitative aspects of the river, such as presence of a pool or of logs, were also noted at each measurement spot.
+
+Each measurement was then also taken at the middle of the river and the left bank of the cross-section. 
+
+Steps 1)-7) Were repeated at two cross-sections between 0 and 10 meters downstream both chosen using a random number generator for a total of 3 cross-sections along a possible total length of 20 meters, and 3 measurements at each cross-section, for a total of 9 measurements per site. 
+
+
+Steps 1)-8) were repeated at each Site, moving upstream from 4 to 2, for a total of 27 measurements of each parameter.
+
+
 \subsection{Laboratory Methods}
 
 \subsection{Statistical Methods}
