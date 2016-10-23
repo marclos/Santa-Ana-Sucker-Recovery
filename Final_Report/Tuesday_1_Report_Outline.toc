@@ -6,8 +6,15 @@
 \contentsline {section}{\numberline {2}Methods}{5}
 \contentsline {subsection}{\numberline {2.1}Site Description}{5}
 \contentsline {subsection}{\numberline {2.2}Field Methods}{5}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {2.3}Laboratory Methods}{7}
 \contentsline {subsection}{\numberline {2.4}Statistical Methods}{7}
 \contentsline {section}{\numberline {3}Results}{8}
 \contentsline {section}{\numberline {4}Discussion}{12}
 \contentsline {section}{\numberline {5}Conclusion and Recommendations}{12}
+=======
+\contentsline {subsection}{\numberline {2.3}Statistical Methods}{7}
+\contentsline {section}{\numberline {3}Results}{7}
+\contentsline {section}{\numberline {4}Discussion}{9}
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{9}
+>>>>>>> 4d209e808746e9ef3b8e29225dd53b12dcd8e799
