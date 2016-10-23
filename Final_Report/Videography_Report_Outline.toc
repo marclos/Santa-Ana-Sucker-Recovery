@@ -7,10 +7,10 @@
 \contentsline {subsection}{\numberline {1.6}Methods}{5}
 \contentsline {paragraph}{Preparing the Equipment}{5}
 \contentsline {paragraph}{Field Work}{6}
-\contentsline {subsection}{\numberline {1.7}Site Descrition}{6}
-\contentsline {subsection}{\numberline {1.8}Field Methods}{6}
-\contentsline {subsection}{\numberline {1.9}Laboratory Methods}{6}
-\contentsline {subsection}{\numberline {1.10}Statistical Methods}{6}
-\contentsline {section}{\numberline {2}Results}{6}
-\contentsline {section}{\numberline {3}Discussion}{6}
-\contentsline {section}{\numberline {4}Conclusion and Recommendations}{6}
+\contentsline {subsection}{\numberline {1.7}Site Description}{6}
+\contentsline {subsection}{\numberline {1.8}Field Methods}{9}
+\contentsline {subsection}{\numberline {1.9}Laboratory Methods}{9}
+\contentsline {subsection}{\numberline {1.10}Statistical Methods}{9}
+\contentsline {section}{\numberline {2}Results}{9}
+\contentsline {section}{\numberline {3}Discussion}{9}
+\contentsline {section}{\numberline {4}Conclusion and Recommendations}{9}
