@@ -25,19 +25,14 @@ The abundance of red algae, or as it is known by its scientific name Rhodophyta,
 >>>>>>> e1c80c034104a85d34ee77fdbeb6d74b5935eb46
 
 \subsection{Background Research} 
-This project is motivated by the decline of the threatened Santa Ana sucker, a small freshwater sucker ﬁsh endemic to southern California, where it is now present in only three rivers. While there are several threats to the Santa Ana sucker, including fragmentation of its river habitats and decreasing water levels and degradation to the riparian vegetation along the river (Thomson 2010), red algae presence has significantly increased at this same time that the Suckers are dying. For the Santa Ana River sucker habitat, a central threat is the invasive Red Algae that has been spreading with alacrity in areas where the ﬁsh are known to be, including the reach below the Rapid Inﬁltration and Extraction (RIX) Treatment plan (Los Huertos 2016).There are concerns that it may be one of the contributing factors to the suckers decline. This project therefore focuses on qualitatively identifying and analyzing the substrate on which the red algae grows, because one of the aspects of the suckers habitat is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand (Thomson et al. 2010, 321). The sucker has adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic) (Los Huertos 2016). This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the ﬁsh being negatively impacted; the algae may also disrupt the ﬁshs well-being in unknown ways. Some researchers suggest that it actually crowds out the diatoms on which, along with algae and detritus, the sucker feeds (Thomson 2010, 322). The presence of the algae in the same area and on the same type of substrate as the ﬁsh could indicate competition for resources between the algae and the ﬁsh.
+This project is motivated by the decline of the threatened Santa Ana sucker, a small freshwater sucker ﬁsh endemic to southern California, where it is now present in only three rivers. While there are several threats to the Santa Ana sucker, including fragmentation of its river habitats and decreasing water levels and degradation to the riparian vegetation along the river (Thomson 2010), red algae presence has significantly increased at this same time that the Suckers are dying. For the Santa Ana River sucker habitat, a central threat is the invasive Red Algae that has been spreading with alacrity in areas where the ﬁsh are known to be, including the reach below the Rapid Inﬁltration and Extraction (RIX) Treatment plan (Los Huertos 2016).There are concerns that it may be one of the contributing factors to the suckers decline. This project therefore focuses on qualitatively identifying and analyzing the substrate on which the red algae grows, because one of the aspects of the suckers habitat is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand (Thomson et al. 2010, 321). The sucker has adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic) (Los Huertos 2016). This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the ﬁsh being negatively impacted; the algae may also disrupt the ﬁshs well-being in unknown ways. Some researchers suggest that it actually crowds out the diatoms on which, along with algae and detritus, the sucker feeds (Thomson 2010, 322). The presence of the algae in the same area and on the same type of substrate as the ﬁsh could indicate competition for resources between the algae and the ﬁsh.'
 
+\subsection{Objectives}
+Our objective for this project is to unveil (even if just a little!) the possible relations that red algae has in the Santa Ana River. Our goal is to uncover the question "where does the red algae occur?" and relate it to the possible factors of canopy cover, temperature, pebble count. Our research is a tool to be developed, used, re-used, re-created, or whatever need be for fellow researchers who are interested in this connection as well. 
 
 <<<<<<< HEAD
 \subsection{Materials and Equipment} 
-*GPS Spherical Canopy Densiometer 
-*30cm x 30cm PCV Quadrat 
-*Analog Thermometer 
-*10 m string/rope
-*Recording material
-*Computer
-*RStudio Server
-+Microsoft Excel
+GPS Spherical Canopy Densiometer, 30cm x 30cm PCV Quadrat, Analog Thermometer, 10 m string/rope, Recording material, Computer, RStudio Server, Microsoft Excel
 =======
 \subsection{Materials and Equipment}
 
@@ -45,13 +40,18 @@ Water-quality Testing instruments GPS (included in testing instruments) Foliage 
 >>>>>>> e1c80c034104a85d34ee77fdbeb6d74b5935eb46
 
 
-\subsection{Methods}
+\section{Methods}
 
 
-\subsection{Site Descrition}
+\subsection{Site Description}
+<<<<<<< HEAD
 
 FIX SITE NAMES
 We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site A (plunge pool): 34*2’5” N, 117*21’17” W Site B (below conﬂuence): 34*2’21” N, 117*21’20” W Site C (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
+=======
+This data was collected in the Rialto portion of the Santa Ana river for locations 2, 3, and 4. Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
+We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site 4 (plunge pool): 34*2’5” N, 117*21’17” W Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
+>>>>>>> f52c5f4ece92f8791d64a3fdd4871d215ac726dc
 
 \begin{figure}
 \includegraphics[width=1.00\textwidth]{Figures/SantaAna_SatelliteImage}
@@ -60,7 +60,32 @@ We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Si
 \end{figure}
 
 \subsection{Field Methods}
-Site selection: 3 measurements 1-10m apart for 4 diﬀerent reaches. Use random number generator to select distance. 12 measurements total. Reach 1 = original site visited already. Must select Reaches 2 3 in between. Reach 4 = ﬁsh-rich pool half hour downstream 30 minutes to walk down to reach D where we will start, then proceed back upstream. ATEACHSITE(25minuteseach): Algae: usequadrat30cmx30cm. Take three measurements on right bank, middle, left bank. For each measurement, estimate Pebble count. (What was the pebble structure and was the algae on the pebbles) Pebble size: qualitatively note grain size of streambed: cobbles, pebbles, coarse sand, ﬁne sand, or silt. Canopy cover: directly above each alage measurement, use canopy cover instrument to determine canopy cover. Temperature: 3 measurements per site, left middle and right. Time of each measurement Notekeeper who records as team members call out measurements TOTAL TIME NEEDED: 2 hours 40 mins
+The collection of data on the algae abundance, sediment type, vegetation canopy cover, 
+and temperature of the Santa Ana River was done along the section of the river described
+in the site description section on September 20th, 2016, from 1pm to 3:30pm.
+
+9 measurements of each parameter were taken at Sites 4, 3, and 2, for a total of 27 measurements. 
+At each site, beginning at Site 4, the following procedures were followed: 
+A spot was chosen along the right bank. Each of the parameters were then measured.
+For estimating algae abundance, we placed the 30  x 30 cm quadrat above the river bed and estimated
+the percent that was covered by algae to the nearest 10 percent.
+
+The sediment type of the site was characterized as either fine or coarse based on the grain size of the 30x30cm section of stream bed covered by the quadrat as either fine or coarse. Coarse substrate was classified as anything larger than pebbles or sand, that is, larger than 6.5cm. If more than half of the area covered by the quadrat was coarse substrate, or fine substrate, the area was characterized as such respectively.
+
+Canopy cover was measured from the same position as the algae by holding spherical canopy densiometer above water at elbow’s length. Based on how many of the 15 intersections on the densiometer reflected overhead canopy, cover was then quantified on a 0-15 scale, 0 being the no canopy cover and 15 being full cover.
+
+To measure temperature, we submerged the analog thermometer underwater and recorded the temperature in degrees Celsius.
+
+Qualitative aspects of the river, such as presence of a pool or of logs, were also noted at each measurement spot.
+
+Each measurement was then also taken at the middle of the river and the left bank of the cross-section. 
+
+Steps 1)-7) Were repeated at two cross-sections between 0 and 10 meters downstream both chosen using a random number generator for a total of 3 cross-sections along a possible total length of 20 meters, and 3 measurements at each cross-section, for a total of 9 measurements per site. 
+
+
+Steps 1)-8) were repeated at each Site, moving upstream from 4 to 2, for a total of 27 measurements of each parameter.
+
+
 \subsection{Laboratory Methods}
 
 \subsection{Statistical Methods}
