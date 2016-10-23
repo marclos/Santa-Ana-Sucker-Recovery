@@ -5,7 +5,7 @@
 \contentsline {subsection}{\numberline {1.4}Objectives}{6}
 \contentsline {subsection}{\numberline {1.5}Materials and Equipment}{6}
 \contentsline {subsection}{\numberline {1.6}Procedure}{6}
-\contentsline {subsection}{\numberline {1.7}Site Descrition}{7}
+\contentsline {subsection}{\numberline {1.7}Site Description}{7}
 \contentsline {subsection}{\numberline {1.8}Field Methods}{7}
 \contentsline {subsection}{\numberline {1.9}Laboratory Methods}{7}
 \contentsline {subsection}{\numberline {1.10}Statistical Methods}{7}
