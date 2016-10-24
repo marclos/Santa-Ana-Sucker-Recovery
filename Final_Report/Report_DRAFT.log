@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.27)  24 OCT 2016 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.27)  24 OCT 2016 12:39
 entering extended mode
 **./Report_DRAFT.tex
 (Report_DRAFT.tex
@@ -202,77 +202,277 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
  [7]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Ç in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Overfull \hbox (3.1395pt too wide) in paragraph at lines 177--178
+[]\OT1/cmr/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-
+gae per-cent cover, canopy
+ []
+
 <Figures/SantaAna_SatelliteImage.pdf, id=31, 614.295pt x 794.97pt>
 File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
 
 <use Figures/SantaAna_SatelliteImage.pdf>
 Package pdftex.def Info: Figures/SantaAna_SatelliteImage.pdf used on input line
- 160.
+ 181.
 (pdftex.def)             Requested size: 345.0pt x 446.4781pt.
- [8] [9 <./Figures/SantaAna_SatelliteImage.pdf>]
-Overfull \hbox (13.72182pt too wide) in paragraph at lines 187--188
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [8] [9 <./Figures/SantaAna_SatelliteImage.pdf>] [10]
+Overfull \hbox (13.72182pt too wide) in paragraph at lines 236--237
 \OT1/cmr/m/n/10 solved in 1 L dis-tilled wa-ter), Mag-ne-sium sul-fate so-lu-ti
 on (4.5 g MgSO4*7H2O
  []
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.240 ...icole's dataset. We also created a "Site_
+                                                  New" field so that our nam...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Overfull \hbox (3.47292pt too wide) in paragraph at lines 196--197
+! Missing $ inserted.
+<inserted text> 
+                $
+l.246 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (456.63551pt too wide) in paragraph at lines 240--246
+\OT1/cmr/m/n/10 Nicole's dataset. We also cre-ated a "Site$[]\OML/cmm/m/it/10 e
+w\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 fieldsothatournamingconventionswhouldbeconsi
+stantwithotherteams:Wethenusedrstudiotogeneratethefollowingdescriptivestatisitc
+s \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (1358.26936pt too wide) in paragraph at lines 240--246
+\OML/cmm/m/it/10 linearregressionoftemperaturerangevsalgaeabundancelinearregres
+sionofcanopycovervsalgaeabundanceANOVAofbedcompositionvs:algaeabundanceANOVAofs
+itelocationvs:algaeabundanceForeachofthesestatisticalcomparisons; wetestedwheth
+erwecouldrejectthenullhypothesis; andifyes; discusstheimplicationsofthosefindin
+gs:Ourresultsaresummarizedinthefollowingsection:$ 
+ []
+
+[11]
+Overfull \hbox (3.47292pt too wide) in paragraph at lines 251--252
 \OT1/cmr/m/n/10 blanks (af-ter cor-rec-tion for di-lu-tion and seed-ing) must b
 e 198+/- 30.5mg/L. 
  []
 
-[10]
-Overfull \hbox (4.49951pt too wide) in paragraph at lines 199--200
+
+Overfull \hbox (4.49951pt too wide) in paragraph at lines 254--255
 []\OT1/cmr/m/n/10 Seed control--Calculate Seed Con-trol Fac-tor (SCF) us-ing [(
 D1-D2)*f], where 
  []
 
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-<Figures/Temp.pdf, id=52, 505.89pt x 505.89pt>
+[12]
+Package color Info: Redefining color shadecolor on input line 283.
+
+Overfull \hbox (158.9956pt too wide) in paragraph at lines 285--285
+[][]\OT1/cmtt/m/n/10 updateddata[][]=[] []"/home/CAMPUS/fcl02013/Santa-Ana-Suck
+er-Recovery/Data/Data_TUES_1/updatedtemps.csv"[][] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 286.
+
+Overfull \hbox (355.55386pt too wide) in paragraph at lines 290--291
+[]\OT1/cmtt/m/n/10 ## Warning in file(file, "rt"): cannot open file '/home/CAMP
+US/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data[]TUES[]1/updatedtemps.csv':
+ []
+
+<Figures/Temp.pdf, id=60, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
-Package pdftex.def Info: Figures/Temp.pdf used on input line 227.
+Package pdftex.def Info: Figures/Temp.pdf used on input line 299.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (160.88875pt too wide) in paragraph at lines 227--228
+Overfull \hbox (160.88875pt too wide) in paragraph at lines 299--300
 [][] 
+ []
+
+Package color Info: Redefining color shadecolor on input line 313.
+
+Overfull \hbox (536.99231pt too wide) in paragraph at lines 315--315
+[][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Temp_range,importupdated[][
+]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]
+"Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predictor of Algae A
+bundance"[][],[][]las[][]=[][]1[][])[][] 
+ []
+
+
+Overfull \hbox (10.52689pt too wide) in paragraph at lines 319--319
+[]\OT1/cmtt/m/n/10 ## Error in plot(importupdated$Temp[]range, importupdated$Al
+gae, ylab
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 319--319
+\OT1/cmtt/m/n/10 = "Algae Abundance (% cover)", : object 'importupdated' not fo
+und[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 324--324
+[]\OT1/cmtt/m/n/10 ## Error in is.data.frame(data): object 'importupdated' not 
+found[] 
+ []
+
+[13] [14 <./Figures/Temp.pdf>]
+Package color Info: Redefining color shadecolor on input line 330.
+
+Overfull \hbox (531.74236pt too wide) in paragraph at lines 332--332
+[][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Canopy,importupdated[][]$[]
+[]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Can
+opy Cover Index"[][],[][]main[] []=[][]"Canopy Cover as a predictor of Algae Ab
+undance"[][],[][]las[][]=[][]1[][])[][] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 336--336
+[]\OT1/cmtt/m/n/10 ## Error in plot(importupdated$Canopy, importupdated$Algae, 
+ylab =
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 341--341
+[]\OT1/cmtt/m/n/10 ## Error in is.data.frame(data): object 'importupdated' not 
+found[] 
+ []
+
+Package color Info: Redefining color shadecolor on input line 346.
+
+Overfull \hbox (484.49277pt too wide) in paragraph at lines 348--348
+[][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Sediment,importupdated,[] []ylab
+[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed Composition"[][]
+,[][]main[] []=[][]"Bed Composition as a predictor of Algae Abundance"[][],[][]
+las[][]=[][]1[][])[][] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 352--352
+[]\OT1/cmtt/m/n/10 ## Error in eval(expr, envir, enclos): object 'importupdated
+' not
+ []
+
+Package color Info: Redefining color shadecolor on input line 357.
+
+Overfull \hbox (426.74327pt too wide) in paragraph at lines 359--359
+[][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Site_new,importupdated,[] []ylab
+[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site name"[][],[][]m
+ain[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],[][]las[][]=[][
+]1[][])[][] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 363--363
+[]\OT1/cmtt/m/n/10 ## Error in eval(expr, envir, enclos): object 'importupdated
+' not
  []
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[11] [12 <./Figures/Temp.pdf>]
+[15]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [13]
+ [16]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [14] [15] (Report_DRAFT.aux) ) 
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [17] [18] (Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
- 1663 strings out of 493335
- 23550 string characters out of 3139210
- 85636 words of memory out of 3000000
- 5179 multiletter control sequences out of 15000+200000
- 8241 words of font info for 29 fonts, out of 3000000 for 9000
+ 1667 strings out of 493335
+ 23605 string characters out of 3139210
+ 88636 words of memory out of 3000000
+ 5182 multiletter control sequences out of 15000+200000
+ 8409 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,25p,1355b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,6n,25p,1355b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Report_DRAFT.pdf (15 pages, 410283 bytes).
+/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmtt10.pfb>
+Output written on Report_DRAFT.pdf (18 pages, 461712 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

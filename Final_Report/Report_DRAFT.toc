@@ -4,15 +4,15 @@
 \contentsline {subsection}{\numberline {1.3}Objectives}{6}
 \contentsline {section}{\numberline {2}Methods}{7}
 \contentsline {subsection}{\numberline {2.1}Materials and Equipment}{7}
-\contentsline {subsection}{\numberline {2.2}Site Descrition}{7}
+\contentsline {subsection}{\numberline {2.2}Site Descrition}{8}
 \contentsline {subsection}{\numberline {2.3}Habitat Evaluation}{8}
-\contentsline {subsection}{\numberline {2.4}Videography}{8}
-\contentsline {subsection}{\numberline {2.5}Temperature Loggers}{8}
-\contentsline {subsection}{\numberline {2.6}BOD Methods}{10}
-\contentsline {subsection}{\numberline {2.7}Statistical Methods}{10}
-\contentsline {subsection}{\numberline {2.8}Statistical Methods}{11}
-\contentsline {section}{\numberline {3}Results}{11}
-\contentsline {section}{\numberline {4}Discussion}{11}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{13}
-\contentsline {section}{\numberline {6}Literature Cited}{13}
-\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{13}
+\contentsline {subsection}{\numberline {2.4}Videography}{10}
+\contentsline {subsection}{\numberline {2.5}Temperature Loggers}{10}
+\contentsline {subsection}{\numberline {2.6}BOD Methods}{11}
+\contentsline {subsection}{\numberline {2.7}Statistical Methods}{12}
+\contentsline {subsection}{\numberline {2.8}Statistical Methods}{13}
+\contentsline {section}{\numberline {3}Results}{13}
+\contentsline {section}{\numberline {4}Discussion}{16}
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{17}
+\contentsline {section}{\numberline {6}Literature Cited}{17}
+\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{17}

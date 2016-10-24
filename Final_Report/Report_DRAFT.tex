@@ -147,14 +147,35 @@ If we can reject one or both of our null hypotheses, we can conclude that the st
 \item Red flags,
 \item Yellow marking tape,
 \item Ice Bath for calibrating loggers
+\item GPS Spherical Canopy Densiometer
+\item 30cm x 30cm PCV Quadrat
+\item Analog Thermometer
+\item 10 m tapemeasure
+\item Field Book Recording material
+\item Computer, RStudio Server, Microsoft Exc
+\item snorkleing goggles 
+
 \end{itemize}
 
 \subsection{Site Descrition}
 
 We collected our video on-site at the Santa Ana River. As a class we chose to collect data from four points along a small stretch of the river that was easily accessible by car. Because of this, the part of the river we took data from was relatively close to roadways and traffic. 
+
 The specific sites for our project consisted of one upstream location (site 2) and one downstream location (site 4), located roughly one kilometer apart. Site 2 was located just below the Rialto concrete channel and site 4 was a plunge pool. The upstream location was significantly more encumbered with large debris like rocks and branches. The downstream location was smooth and flat, with a bed of pebbles and smaller coarse sediments (Figure \ref{SAR_Image}). 
 
 We evaluated the Santa Ana River between... near Colton, California (Figure \ref{SAR_Image}). 
+
+This data was collected at three reaches in the Rialto portion of the Santa Ana river near Colton, California (Figure \ref{SAR_Image}).
+
+Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
+
+
+Site 4 (plunge pool): 34* 2’5” N, 117 degrees 21’17” W 
+Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W 
+Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. 
+
+Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition.  
+
 
 \begin{figure}
 \includegraphics[width=1.00\textwidth]{Figures/SantaAna_SatelliteImage}
@@ -163,6 +184,34 @@ We evaluated the Santa Ana River between... near Colton, California (Figure \ref
 \end{figure}
 
 \subsection{Habitat Evaluation}
+
+The collection of data on the algae abundance, sediment type, vegetation canopy cover, 
+and temperature of the Santa Ana River was done along the section of the river described
+in the site description section on September 20th, 2016, from 1pm to 3:30pm.
+
+9 measurements of each parameter were taken at Sites 4, 3, and 2, for a total of 27 measurements. 
+At each site, beginning at Site 4, the following procedures were followed: 
+
+1)A spot was chosen along the right bank. Each of the parameters were then measured.
+
+2)For estimating algae abundance, we placed the 30  x 30 cm quadrat above the river bed and estimated
+the percent that was covered by algae to the nearest 10 percent.
+
+3)The sediment type of the site was characterized as either fine or coarse based on the grain size of the 30x30cm section of stream bed covered by the quadrat as either fine or coarse. Coarse substrate was classified as anything larger than pebbles or sand, that is, larger than 6.5cm. If more than half of the area covered by the quadrat was coarse substrate, or fine substrate, the area was characterized as such respectively.
+
+4)Canopy cover was measured from the same position as the algae by holding spherical canopy densiometer above water at elbow’s length. Based on how many of the 15 intersections on the densiometer reflected overhead canopy, cover was then quantified on a 0-15 scale, 0 being the no canopy cover and 15 being full cover.
+
+5)To measure temperature, we submerged the analog thermometer underwater and recorded the temperature in degrees Celsius.
+
+6)Qualitative aspects of the river, such as presence of a pool or of logs, were also noted at each measurement spot.
+
+7)Each measurement was then also taken at the middle of the river and the left bank of the cross-section. 
+
+8)Steps 1)-7) Were repeated at two cross-sections between 0 and 10 meters downstream both chosen using a random number generator for a total of 3 cross-sections along a possible total length of 20 meters, and 3 measurements at each cross-section, for a total of 9 measurements per site. 
+
+
+Steps 1)-8) were repeated at each Site, moving upstream from 4 to 2, for a total of 27 measurements of each parameter.
+
 
 
 At each of the corresponding water sample collection sites, water velocity was also measured using a SonTek FlowTracker Handheld Advanced probe, which emits sonar waves at a certain depth in the water column, and based on the feedback (20 pings) gives a velocity reading. Ideally, multiple readings would be taken at each site, after the probe is placed on a flat section of the riverbed where water appears to be flowing net in the same direction. 
@@ -186,9 +235,15 @@ Ideally within the same day of collection, water samples were analyzed for initi
   \item A glucose-glutamic acid (GGA) solution was prepared by dissolving 150 mg each of dry glucose and glutamic acid in 1 L of distilled water, and was added to each of the four seed blanks, as well as the six source water samples. Three GGA blanks were also created with 6 mL of GGA solution in incubation bottles. 
   \item Dilution water was created using 1 mL each phosphate buffer (8.5 g KH2PO4, 21.75 g K2HPO4, 33.4 g Na2HPO*7H2O, and 1.7 g NH4Cl dissolved in 1 L distilled water), Magnesium sulfate solution (4.5 g MgSO4*7H2O dissolved in 200 mL distilled water), Calcium chloride solution (5.5 g CaCl2 dissolved in 200 mL distilled water), and Ferric chloride solution (0.05 g FeCl3*6H2O dissolved in 200 mL distilled water), and added to the six source water samples, four GGA blanks, and three seeded blanks. Three dilution water blanks were also created using the same procedure diluted to 300 mL.
 \end{itemize}
-Initial DO readings were to be taken on all blanks and samples using a Thermo Scientific DO Probe with auto-spinning functionality. The bottles were then incubated in a dark area for 5 days, and DO readings were again taken.    
+Initial DO readings were to be taken on all blanks and samples using a Thermo Scientific DO Probe with auto-spinning functionality. The bottles were then incubated in a dark area for 5 days, and DO readings were again taken.  
 
-\subsection{Statistical Methods}
+Note that *Temp\_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
+linear regression of temperature range vs algae abundance
+linear regression of canopy cover vs algae abundance
+ANOVA of bed composition vs. algae abundance
+ANOVA of site location vs. algae abundance
+For each of these statistical comparisons, we tested whether we could reject the null hypothesis, and if yes, discuss the implications of those findings. Our results are summarized in the following section. 
+
 \subsubsection*{Quality Control Checks}
 Using the seed blanks, glucose-glutamic acid blanks, and dilution water blanks, quality control checks were performed prior to data collection. 
 \begin{itemize}
@@ -212,6 +267,11 @@ D1= initial DO, mg/L
 D2= final DO after incubation, mg/L
 
 
+\subsection{Statistical Methods}
+
+After conducting our ﬁeldwork, we will enter our data in rstudio. We will produce linear regressions of temperature vs algae abundance. We will producelinear regressions of canopy cover vs algae abundance. We will produce linear regressions of canopy cover vs temperature. We will create ANOVA or t-tests of bed composition vs. algae abundance. We will then analyze our data and write a project report 4-5 pages long with pictures and ﬁgures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed compositions eﬀect on algae abundance. In qualitative terms, we will synthesize our results with the ﬁsh videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their ﬁsh observations.
+The following code was used to generate summary statisitics. 
+
 
 \subsection{Statistical Methods}
 
@@ -219,6 +279,18 @@ We ran an ANOVA test where time period was the categorical independent variable 
 
 \section{Results}
 
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{updateddata}\hlkwb{=} \hlstr{"/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"}
+\hlstd{importupdated}\hlkwb{=}\hlkwd{read.csv}\hlstd{(updateddata)}
+\end{alltt}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data\_TUES\_1/updatedtemps.csv': No such file or directory}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}\end{kframe}
+\end{knitrout}
 
 
 The tempeature data suggests... (Figure \ref{Temp}).
@@ -229,6 +301,70 @@ The tempeature data suggests... (Figure \ref{Temp}).
 \label{Temp}
 \end{figure}
 
+The Seed Control Factor was calculated for the four seed blanks, and the slope of the resulting values and the corresponding seed concentrations was determined. Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our BOD5 calculations on these data yielded the values:
+
+upstream BOD5= 22.069 mg/L 
+
+Downstream BOD5= 27.3493 mg/L 
+
+The temperature data we collected with an analogue thermometer was too coarse to really be useful, because we took all our measurements in one afternoon and could only take temperature measurments at a resolution of whole degrees celsius. For that reason, we instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of range of temperature (*C) experienced at each site. 
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temp_range,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Temperature (*C)"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Temperature as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in plot(importupdated\$Temp\_range, importupdated\$Algae, ylab = "{}Algae Abundance (\% cover)"{}, : object 'importupdated' not found}}\begin{alltt}
+\hlkwd{abline}\hlstd{(}\hlkwd{lm}\hlstd{(Algae}\hlopt{~}\hlstd{Temp_range,importupdated))}
+\end{alltt}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in is.data.frame(data): object 'importupdated' not found}}\end{kframe}
+\end{knitrout}
+<<<<<<< HEAD
+While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yilded the much better p-value of 3.49e-05. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Canopy,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Canopy Cover Index"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Canopy Cover as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in plot(importupdated\$Canopy, importupdated\$Algae, ylab = "{}Algae Abundance (\% cover)"{}, : object 'importupdated' not found}}\begin{alltt}
+\hlkwd{abline}\hlstd{(}\hlkwd{lm}\hlstd{(Algae}\hlopt{~}\hlstd{Canopy,importupdated))}
+\end{alltt}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in is.data.frame(data): object 'importupdated' not found}}\end{kframe}
+\end{knitrout}
+Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Sediment,importupdated,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Bed Composition"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Bed Composition as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'importupdated' not found}}\end{kframe}
+\end{knitrout}
+Bed composition did have a stronger relationship with Alage Abanundance, as shown in the figure above. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Site_new,importupdated,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Site name"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Reach Site as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
+\end{alltt}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'importupdated' not found}}\end{kframe}
+\end{knitrout}
+As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp\_range value. Therefore, the high predictive value of temp\_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. 
+
+
 \section{Discussion}
 
 
@@ -236,6 +372,14 @@ Certain issues we ran into during our study included visibility and camera place
 
 For future studies of this sort, a longer data sampling process would be ideal. While we were only able to collect and analyze one hour of footage each for the morning and afternoon sections, a more robust study might have 20 or so hours each over the course of a single month, or even a lot more than this, as there is no limit to the amount of data that could be taken for this study due to changes in season, water influx differences, and other factors.
 
+
+Our results were skewed due to several hiccups that occurred throughout the process of our experiment. The first time we collected our samples, said samples were not processed on the same day as collection. 
+We don’t have the initial BOD measurements and so our group had to think outside of the box and backpedal some in order to work backwards and acquire the numbers needed in order to make the vital calculations and check our work.
+When in the middle of checking the BOD of our samples after the 5 day incubation period we realized that we had not turned on the motor for the previous handful of samples as well as some in our initial stages. In order to accommodate this discrepancy, we decided to include spin v no spin as apart of our variables in our project to see the results we would get since there was such a huge margin between the numbers when the solutions were stirred and when they were not.
+In order to fill any gaps in our own research and numbers, we have also decided that it would be best that we correlate our results with those collected by the Fish and Wildlife service when they conducted their electroshock tests on the fish. 
+
+
+Future experiments can improve upon our methods by using the optimum amount of source water and dilution water to get the optimum about of BOD depletion. The ideal BOD depletion reading was given at 25 mL of source water and 275 mL dilution water. It would also be best if it is meticulously made sure of that the BOD is taken of the initial samples. Important to the process is to have every sample spun each time to allow for consistency and as much accuracy as possible with each BOD reading. 
 
 \section{Conclusion and Recommendations}
 
