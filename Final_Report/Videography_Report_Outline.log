@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  24 OCT 2016 14:06
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  24 OCT 2016 14:08
 entering extended mode
  %&-line parsing enabled.
 **Videography_Report_Outline.tex
@@ -279,22 +279,112 @@ Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
-Package color Info: Redefining color shadecolor on input line 125.
- [8]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 127.
 
-Overfull \hbox (253.49478pt too wide) in paragraph at lines 127--127
+! Missing $ inserted.
+<inserted text> 
+                $
+l.124 ...MPUS/cmfa2015/Santa Ana Sucker/Data/Data_
+                                                  Tues_2/newmetadata.csv")
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Package color Info: Redefining color shadecolor on input line 126.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.126 ....969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.126 ....969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.126 ....969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[8]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 128.
+
+Overfull \hbox (272.29477pt too wide) in paragraph at lines 128--128
 [][]\OT1/cmtt/m/n/10 boxplot[][](Fish[][]~[][]Section,newmetadata,[] []ylab[][]
 =[][]"Fish"[][],[][]xlab[][]=[][]"Time of Day"[][],[][]main[] []=[][]"Time of D
 ay as a predictor of Fish"[][],[][]las[][]=[][]1[][])[][] 
  []
 
 
-Overfull \hbox (22.4968pt too wide) in paragraph at lines 131--131
+Overfull \hbox (9.79706pt too wide) in paragraph at lines 132--132
 []\OT1/cmtt/m/n/10 ## Error in eval(expr, envir, enclos): object 'newmetadata' 
-not found[] 
+not
  []
+
+! Undefined control sequence.
+\endkframe ...ip \endMakeFramed \at@end@of@kframe 
+                                                  
+l.132 ...ect 'newmetadata' not found}}\end{kframe}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{kframe}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.132 ...ect 'newmetadata' not found}}\end{kframe}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.132 ...ect 'newmetadata' not found}}\end{kframe}
+                                                  
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: \begin{document} ended by \end{knitrout}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 \end{knitrout}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.133 \end{knitrout}
+                    
+Things are pretty mixed up, but I think the worst is over.
 
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
@@ -321,16 +411,18 @@ Here is how much of TeX's memory you used:
  4488 multiletter control sequences out of 10000+200000
  8398 words of font info for 30 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,6n,19p,1366b,246s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,6n,19p,1366b,222s stack positions out of 5000i,500n,6000p,200000b,15000s
  </home/CAMPUS/cmfa2015/.texlive20
 07/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts
 /type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pf
-b></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/ty
-pe1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></u
-sr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb>
-Output written on Videography_Report_Outline.pdf (10 pages, 320893 bytes).
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></
+usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/
+bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/sh
+are/texmf/fonts/type1/bluesky/cm/cmtt10.pfb>
+Output written on Videography_Report_Outline.pdf (10 pages, 330794 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
