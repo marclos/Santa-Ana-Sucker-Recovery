@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 15:31
+=======
 This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 14:21
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
 entering extended mode
  %&-line parsing enabled.
 **Tuesday_1_Report_Outline.tex
@@ -185,6 +189,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
+
+! Misplaced alignment tab character &.
+<argument> \numberline {3}Results &
+                                    Discussion
+l.10 ...n}{\numberline {3}Results & Discussion}{8}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 )
 \tf@toc=\write3
 \openout3 = `Tuesday_1_Report_Outline.toc'.
@@ -281,15 +298,25 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
+<<<<<<< HEAD
+Package color Info: Redefining color shadecolor on input line 132.
+
+Overfull \hbox (158.9956pt too wide) in paragraph at lines 134--134
+=======
 Package color Info: Redefining color shadecolor on input line 140.
 
 Overfull \hbox (158.9956pt too wide) in paragraph at lines 142--142
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
 [][]\OT1/cmtt/m/n/10 updateddata[][]=[] []"/home/CAMPUS/fcl02013/Santa-Ana-Suck
 er-Recovery/Data/Data_TUES_1/updatedtemps.csv"[][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+<<<<<<< HEAD
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 135.
+=======
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 143.
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -305,10 +332,61 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
+<<<<<<< HEAD
+Package color Info: Redefining color shadecolor on input line 143.
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 169--169
+[]\OT1/cmtt/m/n/10 ##        ID       Site      Algae           Sediment       
+Temperature[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 169--169
+[]\OT1/cmtt/m/n/10 ##  Min.   : 1.0   A:9   Min.   :  0.00   Min.   :0.0000   M
+in.   :28.00[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 169--169
+[]\OT1/cmtt/m/n/10 ##  1st Qu.: 7.5   B:9   1st Qu.:  0.00   1st Qu.:0.0000   1
+st Qu.:29.00[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 169--169
+[]\OT1/cmtt/m/n/10 ##  Median :14.0   C:9   Median : 50.00   Median :1.0000   M
+edian :29.00[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 169--169
+[]\OT1/cmtt/m/n/10 ##  Mean   :14.0         Mean   : 48.52   Mean   :0.5926   M
+ean   :28.89[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 169--169
+[]\OT1/cmtt/m/n/10 ##  3rd Qu.:20.5         3rd Qu.:100.00   3rd Qu.:1.0000   3
+rd Qu.:29.00[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 169--169
+[]\OT1/cmtt/m/n/10 ##  Max.   :27.0         Max.   :100.00   Max.   :1.0000   M
+ax.   :30.00[] 
+ []
+
+[7]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.173 Note that *Temp_
+=======
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.153 Note that *Temp_
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
                       x* entries were borrowed with permission from Sophie a...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -316,13 +394,22 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
+<<<<<<< HEAD
+l.179 \section
+              {Results & Discussion}
+=======
 l.159 \section
               {Results}
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
+<<<<<<< HEAD
+Overfull \hbox (785.78563pt too wide) in paragraph at lines 173--179
+=======
 Overfull \hbox (785.78563pt too wide) in paragraph at lines 153--159
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
 []\OT1/cmr/m/n/10 Note that *Temp$[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 entr
 ieswereborrowedwithpermissionfromSophieandNicole[]sdataset:Wealsocreateda\OT1/c
 mr/m/n/10 "\OML/cmm/m/it/10 Site[]ew\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 fieldsoth
@@ -331,7 +418,11 @@ atethefollowingdescriptivestatisitcs \OT1/cmr/m/n/10 :
  []
 
 
+<<<<<<< HEAD
+Overfull \hbox (1358.26936pt too wide) in paragraph at lines 173--179
+=======
 Overfull \hbox (1358.26936pt too wide) in paragraph at lines 153--159
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
 \OML/cmm/m/it/10 linearregressionoftemperaturerangevsalgaeabundancelinearregres
 sionofcanopycovervsalgaeabundanceANOVAofbedcompositionvs:algaeabundanceANOVAofs
 itelocationvs:algaeabundanceForeachofthesestatisticalcomparisons; wetestedwheth
@@ -339,6 +430,157 @@ erwecouldrejectthenullhypothesis; andifyes; discusstheimplicationsofthosefindin
 gs:Ourresultsaresummarizedinthefollowingsection:$ 
  []
 
+<<<<<<< HEAD
+! Misplaced alignment tab character &.
+<argument> Results &
+                     Discussion
+l.179 \section{Results & Discussion}
+                                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Package color Info: Redefining color shadecolor on input line 183.
+
+Overfull \hbox (536.99231pt too wide) in paragraph at lines 185--185
+[][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Temp_range,importupdated[][
+]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]
+"Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predictor of Algae A
+bundance"[][],[][]las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-3-1.pdf, id=42, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-3-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 189--190
+[][] 
+ []
+
+[8]
+Package color Info: Redefining color shadecolor on input line 195.
+
+Overfull \hbox (531.74236pt too wide) in paragraph at lines 197--197
+[][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Canopy,importupdated[][]$[]
+[]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Can
+opy Cover Index"[][],[][]main[] []=[][]"Canopy Cover as a predictor of Algae Ab
+undance"[][],[][]las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-4-1.pdf, id=50, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-4-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 201--202
+[][] 
+ []
+
+[9 <./figure/unnamed-chunk-3-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 206.
+
+Overfull \hbox (484.49277pt too wide) in paragraph at lines 208--208
+[][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Sediment,importupdated,[] []ylab
+[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed Composition"[][]
+,[][]main[] []=[][]"Bed Composition as a predictor of Algae Abundance"[][],[][]
+las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-5-1.pdf, id=60, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-5-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 211--212
+[][] 
+ []
+
+[10 <./figure/unnamed-chunk-4-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 216.
+
+Overfull \hbox (426.74327pt too wide) in paragraph at lines 218--218
+[][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Site_new,importupdated,[] []ylab
+[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site name"[][],[][]m
+ain[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],[][]las[][]=[][
+]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-6-1.pdf, id=70, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-6-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-6-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 221--222
+[][] 
+ []
+
+[11 <./figure/unnamed-chunk-5-1.pdf>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224 ...measurements were assigned the same temp_
+                                                  range value. Therefore, th...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.227 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (464.64848pt too wide) in paragraph at lines 224--227
+\OT1/cmr/m/n/10 ments were as-signed the same temp$[]\OML/cmm/m/it/10 angevalue
+:Therefore; thehighpredictivevalueoftemp[]angecouldbejustanartifactofthatmethod
+ologicaldecision:However; temperaturevariationsp \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (20.88655pt too wide) in paragraph at lines 224--227
+\OML/cmm/m/it/10 valuewasover\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ordersofmagnitud
+esmallerthanReachSitealone\OT1/cmr/m/n/10 (3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4
+9\OML/cmm/m/it/10 e \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 05\OML/cmm/m/it/10 vs:
+\OT1/cmr/m/n/10 8\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 17\OML/cmm/m/it/10 e \OMS/cm
+sy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (1192.31693pt too wide) in paragraph at lines 224--227
+\OT1/cmr/m/n/10 03\OML/cmm/m/it/10 respectively\OT1/cmr/m/n/10 )\OML/cmm/m/it/1
+0 ; soitremainsthoroughlyplausiblethatwatertemperaturevariationispredictorofalg
+aeabundanceindependentofsitevariation:Becauseofourexperiementaldesign; itisunfo
+rtunatelyimpossibletocontrolbysitefortemperaturevariationandseeiftherelationshi
+premainsrobust:Thisshouldbeexaminedinfuturework: \OT1/cmr/m/n/10 =======\OML/cm
+m/m/it/10 >>>>>>>
+ []
+
+<Figures/Temp.pdf, id=80, 505.89pt x 505.89pt>
+File: Figures/Temp.pdf Graphic file (type pdf)
+ <use Figures/Temp.pdf>
+Overfull \hbox (160.88875pt too wide) in paragraph at lines 231--232
+[][] 
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+[12 <./figure/unnamed-chunk-6-1.pdf>] [13 <./Figures/Temp.pdf>] [14]
+(./Tuesday_1_Report_Outline.aux) ) 
+Here is how much of TeX's memory you used:
+ 1184 strings out of 256214
+ 16437 string characters out of 1917000
+ 64636 words of memory out of 1500000
+ 4484 multiletter control sequences out of 10000+200000
+=======
 Package color Info: Redefining color shadecolor on input line 163.
 [7]
 Overfull \hbox (542.24226pt too wide) in paragraph at lines 165--165
@@ -442,6 +684,7 @@ Here is how much of TeX's memory you used:
  16589 string characters out of 1917000
  63636 words of memory out of 1500000
  4488 multiletter control sequences out of 10000+200000
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
  8063 words of font info for 29 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  25i,6n,19p,2018b,248s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -452,9 +695,15 @@ pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/
 type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb><
 /usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type
 1/bluesky/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb>
+<<<<<<< HEAD
+Output written on Tuesday_1_Report_Outline.pdf (14 pages, 383932 bytes).
+PDF statistics:
+ 135 PDF objects out of 1000 (max. 8388607)
+=======
 Output written on Tuesday_1_Report_Outline.pdf (13 pages, 381583 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0
  0 named destinations out of 1000 (max. 131072)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
