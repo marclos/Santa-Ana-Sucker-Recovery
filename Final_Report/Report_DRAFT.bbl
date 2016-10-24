@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+
+\bibitem{goossens93}
+Michel Goossens, Frank Mittlebach, and Alexander Samarin.
+\newblock {\em The Latex Companion}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1993.
+
+\bibitem{greenwade93}
+George~D. Greenwade.
+\newblock The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN}).
+\newblock {\em TUGBoat}, 14(3):342--351, 1993.
+
+\bibitem{knuth79}
+Donald~E. Knuth.
+\newblock {\em Tex and Metafont, New Directions in Typesetting}.
+\newblock American Mathematical Society and Digital Press, Stanford, 1979.
+
+\bibitem{lamport94}
+Leslie Lamport.
+\newblock {\em Latex: A Document Preparation System}.
+\newblock Addison-Wesley, Reading, Massachusetts, second edition, 1994.
+
+\bibitem{patashnik88}
+Oren Patashnik.
+\newblock {B}ib{T}e{X}ing. documentation for general {B}ib{T}e{X} users.
+\newblock Electronic document accompanying BibTeX distribution, 1988.
+
+\bibitem{rahtz89}
+Sebastian Rahtz.
+\newblock A survey of {T}ex and graphics.
+\newblock Technical Report CSTR 89-7, Department of Electronics and Computer
+  Science, University of Southampton, UK, 1989.
+
+\end{thebibliography}
