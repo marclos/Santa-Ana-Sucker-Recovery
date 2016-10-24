@@ -121,15 +121,21 @@ We ran an ANOVA test where time period was the categorical independent variable 
 
 \section{Results}
 We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764°C in the morning and increased to 28.456°C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
-newmetadata <- read.csv("/home/CAMPUS/cmfa2015/Santa Ana Sucker/Data/Data_Tues_2/newmetadata.csv")
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{newmetadata} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(}\hlstr{"/home/CAMPUS/cmfa2015/Santa Ana Sucker/Data/Data_Tues_2/newmetadata.csv"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{boxplot}\hlstd{(Fish}\hlopt{~}\hlstd{Section,newmetadata,} \hlkwc{ylab}\hlstd{=}\hlstr{"Fish"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Time of Day"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Time of Day as a predictor of Fish"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
 \end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
 
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'newmetadata' not found}}\end{kframe}
 \end{knitrout}
 
 \section{Discussion}
