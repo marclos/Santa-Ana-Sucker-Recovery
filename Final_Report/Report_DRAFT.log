@@ -1,13 +1,20 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.27)  24 OCT 2016 12:39
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  24 OCT 2016 13:39
 entering extended mode
-**./Report_DRAFT.tex
-(Report_DRAFT.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+ %&-line parsing enabled.
+**Report_DRAFT.tex
+(./Report_DRAFT.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
+erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
+ french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
+us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
+tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
+turkish, ukenglish, ukrainian, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -21,46 +28,39 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 90.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
+(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
 \Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+(/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 147.
-) (framed.sty
+Package color Info: Driver file: pdftex.def on input line 130.
+) (./framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip43
 \fb@frw=\dimen105
@@ -68,13 +68,80 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen107
 \FrameSep=\dimen108
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
+(/usr/share/texmf/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\upquote\upquote.sty"
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
-tim
-) (Report_DRAFT.aux)
+(/usr/share/texmf/tex/latex/upquote/upquote.sty
+Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
+atim and verb
+
+(/usr/share/texmf/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texmf/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)) (./Report_DRAFT.aux)
 \openout1 = `Report_DRAFT.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -89,64 +156,13 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count88
-\scratchdimen=\dimen109
-\scratchbox=\box26
-\nofMPsegments=\count89
-\nofMParguments=\count90
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count91
-\MPscratchDim=\dimen110
-\MPnumerator=\count92
-\makeMPintoPDFobject=\count93
-\everyMPtoPDFconversion=\toks16
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
-)
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 55.
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+(/usr/share/texmf/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
+LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -160,8 +176,7 @@ Overfull \hbox (57.35016pt too wide) in paragraph at lines 57--57
 
 [1
 
-{C:/Users/mwl04747/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(Report_DRAFT.toc
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Report_DRAFT.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -170,19 +185,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `Report_DRAFT.toc'.
 
- [2]
+
+[2]
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no ∞ in font cmr10!
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no ∞ in font cmr10!
- [3]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [4]
+ [3] [4]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ∂ in font cmr10!
 Missing character: There is no √ in font cmr10!
@@ -192,16 +201,7 @@ Missing character: There is no ∫ in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [5] [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 137.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
- [7]
+ [5] [6] [7]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -245,68 +245,36 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Overfull \hbox (3.1395pt too wide) in paragraph at lines 177--178
+Overfull \hbox (3.1395pt too wide) in paragraph at lines 178--179
 []\OT1/cmr/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-
 gae per-cent cover, canopy
  []
 
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
+ PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
 <Figures/SantaAna_SatelliteImage.pdf, id=31, 614.295pt x 794.97pt>
 File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
 
 <use Figures/SantaAna_SatelliteImage.pdf>
-Package pdftex.def Info: Figures/SantaAna_SatelliteImage.pdf used on input line
- 181.
-(pdftex.def)             Requested size: 345.0pt x 446.4781pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
  [8] [9 <./Figures/SantaAna_SatelliteImage.pdf>] [10]
-Overfull \hbox (13.72182pt too wide) in paragraph at lines 236--237
+Overfull \hbox (13.72182pt too wide) in paragraph at lines 237--238
 \OT1/cmr/m/n/10 solved in 1 L dis-tilled wa-ter), Mag-ne-sium sul-fate so-lu-ti
 on (4.5 g MgSO4*7H2O
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.240 ...icole's dataset. We also created a "Site_
-                                                  New" field so that our nam...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.246 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (456.63551pt too wide) in paragraph at lines 240--246
-\OT1/cmr/m/n/10 Nicole's dataset. We also cre-ated a "Site$[]\OML/cmm/m/it/10 e
-w\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 fieldsothatournamingconventionswhouldbeconsi
-stantwithotherteams:Wethenusedrstudiotogeneratethefollowingdescriptivestatisitc
-s \OT1/cmr/m/n/10 :
- []
-
-
-Overfull \hbox (1358.26936pt too wide) in paragraph at lines 240--246
-\OML/cmm/m/it/10 linearregressionoftemperaturerangevsalgaeabundancelinearregres
-sionofcanopycovervsalgaeabundanceANOVAofbedcompositionvs:algaeabundanceANOVAofs
-itelocationvs:algaeabundanceForeachofthesestatisticalcomparisons; wetestedwheth
-erwecouldrejectthenullhypothesis; andifyes; discusstheimplicationsofthosefindin
-gs:Ourresultsaresummarizedinthefollowingsection:$ 
- []
-
 [11]
-Overfull \hbox (3.47292pt too wide) in paragraph at lines 251--252
+Overfull \hbox (3.47292pt too wide) in paragraph at lines 252--253
 \OT1/cmr/m/n/10 blanks (af-ter cor-rec-tion for di-lu-tion and seed-ing) must b
 e 198+/- 30.5mg/L. 
  []
 
 
-Overfull \hbox (4.49951pt too wide) in paragraph at lines 254--255
+Overfull \hbox (4.49951pt too wide) in paragraph at lines 255--256
 []\OT1/cmr/m/n/10 Seed control--Calculate Seed Con-trol Fac-tor (SCF) us-ing [(
 D1-D2)*f], where 
  []
@@ -326,153 +294,135 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
 [12]
-Package color Info: Redefining color shadecolor on input line 283.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Package color Info: Redefining color shadecolor on input line 284.
 
-Overfull \hbox (158.9956pt too wide) in paragraph at lines 285--285
+Overfull \hbox (158.9956pt too wide) in paragraph at lines 286--286
 [][]\OT1/cmtt/m/n/10 updateddata[][]=[] []"/home/CAMPUS/fcl02013/Santa-Ana-Suck
 er-Recovery/Data/Data_TUES_1/updatedtemps.csv"[][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 286.
-
-Overfull \hbox (355.55386pt too wide) in paragraph at lines 290--291
-[]\OT1/cmtt/m/n/10 ## Warning in file(file, "rt"): cannot open file '/home/CAMP
-US/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data[]TUES[]1/updatedtemps.csv':
- []
-
-<Figures/Temp.pdf, id=60, 505.89pt x 505.89pt>
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 287.
+<Figures/Temp.pdf, id=58, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
-Package pdftex.def Info: Figures/Temp.pdf used on input line 299.
-(pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
-
-Overfull \hbox (160.88875pt too wide) in paragraph at lines 299--300
+Overfull \hbox (160.88875pt too wide) in paragraph at lines 296--297
 [][] 
  []
 
-Package color Info: Redefining color shadecolor on input line 313.
+Package color Info: Redefining color shadecolor on input line 310.
 
-Overfull \hbox (536.99231pt too wide) in paragraph at lines 315--315
+Overfull \hbox (536.99231pt too wide) in paragraph at lines 312--312
 [][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Temp_range,importupdated[][
 ]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]
 "Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predictor of Algae A
 bundance"[][],[][]las[][]=[][]1[][])[][] 
  []
 
+<figure/unnamed-chunk-2-1.pdf, id=59, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
-Overfull \hbox (10.52689pt too wide) in paragraph at lines 319--319
-[]\OT1/cmtt/m/n/10 ## Error in plot(importupdated$Temp[]range, importupdated$Al
-gae, ylab
- []
-
-
-Overfull \hbox (1.49698pt too wide) in paragraph at lines 319--319
-\OT1/cmtt/m/n/10 = "Algae Abundance (% cover)", : object 'importupdated' not fo
-und[] 
- []
-
-
-Overfull \hbox (1.49698pt too wide) in paragraph at lines 324--324
-[]\OT1/cmtt/m/n/10 ## Error in is.data.frame(data): object 'importupdated' not 
-found[] 
+<use figure/unnamed-chunk-2-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 316--317
+[][] 
  []
 
 [13] [14 <./Figures/Temp.pdf>]
-Package color Info: Redefining color shadecolor on input line 330.
+Package color Info: Redefining color shadecolor on input line 323.
 
-Overfull \hbox (531.74236pt too wide) in paragraph at lines 332--332
+Overfull \hbox (531.74236pt too wide) in paragraph at lines 325--325
 [][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Canopy,importupdated[][]$[]
 []Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Can
 opy Cover Index"[][],[][]main[] []=[][]"Canopy Cover as a predictor of Algae Ab
 undance"[][],[][]las[][]=[][]1[][])[][] 
  []
 
+<figure/unnamed-chunk-3-1.pdf, id=74, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
-Overfull \hbox (1.49698pt too wide) in paragraph at lines 336--336
-[]\OT1/cmtt/m/n/10 ## Error in plot(importupdated$Canopy, importupdated$Algae, 
-ylab =
+<use figure/unnamed-chunk-3-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 329--330
+[][] 
  []
 
+[15 <./figure/unnamed-chunk-2-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 335.
 
-Overfull \hbox (1.49698pt too wide) in paragraph at lines 341--341
-[]\OT1/cmtt/m/n/10 ## Error in is.data.frame(data): object 'importupdated' not 
-found[] 
- []
-
-Package color Info: Redefining color shadecolor on input line 346.
-
-Overfull \hbox (484.49277pt too wide) in paragraph at lines 348--348
+Overfull \hbox (484.49277pt too wide) in paragraph at lines 337--337
 [][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Sediment,importupdated,[] []ylab
 [][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed Composition"[][]
 ,[][]main[] []=[][]"Bed Composition as a predictor of Algae Abundance"[][],[][]
 las[][]=[][]1[][])[][] 
  []
 
+<figure/unnamed-chunk-4-1.pdf, id=84, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
-Overfull \hbox (1.49698pt too wide) in paragraph at lines 352--352
-[]\OT1/cmtt/m/n/10 ## Error in eval(expr, envir, enclos): object 'importupdated
-' not
+<use figure/unnamed-chunk-4-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 340--341
+[][] 
  []
 
-Package color Info: Redefining color shadecolor on input line 357.
+[16 <./figure/unnamed-chunk-3-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 346.
 
-Overfull \hbox (426.74327pt too wide) in paragraph at lines 359--359
+Overfull \hbox (426.74327pt too wide) in paragraph at lines 348--348
 [][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Site_new,importupdated,[] []ylab
 [][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site name"[][],[][]m
 ain[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],[][]las[][]=[][
 ]1[][])[][] 
  []
 
+<figure/unnamed-chunk-5-1.pdf, id=94, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
-Overfull \hbox (1.49698pt too wide) in paragraph at lines 363--363
-[]\OT1/cmtt/m/n/10 ## Error in eval(expr, envir, enclos): object 'importupdated
-' not
+<use figure/unnamed-chunk-5-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 351--352
+[][] 
  []
 
+[17 <./figure/unnamed-chunk-4-1.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[15]
+ [18 <./figure/unnamed-chunk-5-1.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [16]
+
+[19]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [17] [18] (Report_DRAFT.aux) ) 
+ [20] [21] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
- 1667 strings out of 493335
- 23605 string characters out of 3139210
- 88636 words of memory out of 3000000
- 5182 multiletter control sequences out of 15000+200000
- 8409 words of font info for 30 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 40i,6n,25p,1355b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb>
-Output written on Report_DRAFT.pdf (18 pages, 461712 bytes).
+ 1212 strings out of 256214
+ 16560 string characters out of 1917000
+ 63453 words of memory out of 1500000
+ 4511 multiletter control sequences out of 10000+200000
+ 8744 words of font info for 31 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 25i,6n,19p,1352b,248s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/mwl04747/.texlive2007/texmf-var
+/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/blues
+ky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/shar
+e/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/
+cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/tex
+mf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/c
+mtt10.pfb>
+Output written on Report_DRAFT.pdf (21 pages, 406821 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 150 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
