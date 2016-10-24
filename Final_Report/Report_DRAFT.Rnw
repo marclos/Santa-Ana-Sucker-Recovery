@@ -188,7 +188,7 @@ Ideally within the same day of collection, water samples were analyzed for initi
 \end{itemize}
 Initial DO readings were to be taken on all blanks and samples using a Thermo Scientific DO Probe with auto-spinning functionality. The bottles were then incubated in a dark area for 5 days, and DO readings were again taken.  
 
-Note that *Temp\_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
+Note that *Temp\_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site\_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
 linear regression of temperature range vs algae abundance
 linear regression of canopy cover vs algae abundance
 ANOVA of bed composition vs. algae abundance
