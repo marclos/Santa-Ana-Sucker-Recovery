@@ -19,13 +19,12 @@ The Santa Ana sucker is a 16 cm fish that lives in the rivers of Southern Califo
 
 The abundance of the red algae Cosmopogen Aeruginosus has recently risen significantly in the Santa Ana River. In a similar time period, the Santa Ana Sucker (\emph{Catostomus Santaanae}), an endangered fish endemic to this and another three rivers in the Southern California region, has been experiencing population declines. This experiment explores the change in red algae presence in the Santa Ana River and the possible relationship it holds with Santa Ana Sucker's decline. Using measurments of river water temperature, overhead tree canopy cover, and sediment type we explore the connection these aspects of the river and their relationship with the red algae.
 
-<<<<<<< HEAD
+
 This report aims to determine whether the study of Biological Oxygen Demand (BOD) and water flow velocity are relevant to future conservation research for the endangered Santa Ana sucker \emph{C. santaanae}. The experiment seeks to gather information on the water quality of a section of the Santa Ana River and use this data to help answer the questions: \emph{Are the biochemical oxygen demand (BOD) levels healthy for sucker}, \emph{do differing levels affect the  abundance of individuals in certain sections of the river}, \emph{Are the flow rates in certain sections of the river optimum for sucker populations}, and \emph{do high- or low-flow events affect the number of individuals in the stream?} Because the river is regulated by a water treatment facility, we believe that BOD levels will be very low, increasing with distance from the facility. Because of this, we also expect high dissolved oxygen (DO) content and a high sucker presence. We additionally hypothesize that larger populations of the sucker will concentrate in low-flow areas that are nearby high-flow sections. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
 
-\subsection{Problem Statement}
-=======
+
 \subsection{Problem Statement AND OBJECTIVES OVERLAP, SHOULD SEPARATE}
->>>>>>> c3793cd38c7996b406a3f1ade08777b1f8608270
+
 
 Driving Question 
 This project began with the broad driving question, "How can the Santa Ana sucker be saved?" The Santa Ana Sucker (Catostomus Santaanae) is an endangered fish endemic to the Santa Ana and another three rivers in the Southern California region, and has been experiencing population declines in recent years.
@@ -130,6 +129,38 @@ We will obtain four HOBO Tidbit water temperature Data Loggers to set up at the 
 
 Approximately 1L of source river water was collected at each of two sites, one upstream location closer to the wastewater discharge facility, and one downstream location (fig. 1). Ideally, these would be transported to the laboratory for analysis within four hours.
 
+Ideally within the same day of collection, water samples were analyzed for initial dissolved oxygen content and prepared for 5-day incubation.  
+\begin{itemize}
+  \item Three different dilutions were used for each of two sites, with source water volumes of 25, 50, and 100 mL. 
+  \item A seed suspension was prepared using PolySeed Seed Innoculum, and 4 mL of the solution was added to each 300 mL sample bottle. This solution was also used to create four seed blanks with seed volumes 15, 20, 25, and 30 mL.
+  \item Nitrification inhibitor was created by dissolving 2.0 g allylthiourea (ATU, C4H8N2S) in 1 L distilled water. 0.3 mL of the ATU solution was added to each source water sample, as well as to all seeded samples. 
+  \item A glucose-glutamic acid (GGA) solution was prepared by dissolving 150 mg each of dry glucose and glutamic acid in 1 L of distilled water, and was added to each of the four seed blanks, as well as the six source water samples. Three GGA blanks were also created with 6 mL of GGA solution in incubation bottles. 
+  \item Dilution water was created using 1 mL each phosphate buffer (8.5 g KH2PO4, 21.75 g K2HPO4, 33.4 g Na2HPO*7H2O, and 1.7 g NH4Cl dissolved in 1 L distilled water), Magnesium sulfate solution (4.5 g MgSO4*7H2O dissolved in 200 mL distilled water), Calcium chloride solution (5.5 g CaCl2 dissolved in 200 mL distilled water), and Ferric chloride solution (0.05 g FeCl3*6H2O dissolved in 200 mL distilled water), and added to the six source water samples, four GGA blanks, and three seeded blanks. Three dilution water blanks were also created using the same procedure diluted to 300 mL.
+\end{itemize}
+Initial DO readings were to be taken on all blanks and samples using a Thermo Scientific DO Probe with auto-spinning functionality. The bottles were then incubated in a dark area for 5 days, and DO readings were again taken.    
+
+\subsection{Statistical Methods}
+\subsubsection*{Quality Control Checks}
+Using the seed blanks, glucose-glutamic acid blanks, and dilution water blanks, quality control checks were performed prior to data collection. 
+\begin{itemize}
+  \item Minimum DO Depletion--Viable samples must have min. DO depletion of 2.0mg/L, and residual DO of at least 1.0mg/L.
+  \item Glucose-Glutamic Acid Check--The resulting average BOD for the 3 GGA blanks (after correction for dilution and seeding) must be 198+/- 30.5mg/L.
+  \item Dilution water check--DO uptake after incubation must not be more than 0.20mg/L and preferably not more than 0.10 (before seed corrections). 
+  \subitem Dilution Water--If dilution water blank exceeds 0.20 mg/L, clearly identify samples in data.
+  \item Seed control--Calculate Seed Control Factor (SCF) using [(D1-D2)*f], where
+  \subitem D1= initial DO of seed control, mg/L
+  \subitem D2= final DO after indubation, mg/L,
+  \subitem f= (vol. seed in diluted sample)/(vol. seed in seed control)
+\end{itemize}
+
+\subsubsection*{BOD5}
+BOD5 was calculated for viable samples according to Standard Methods for the Examination of Water and Wastewater, using the equation 
+BOD5, mg/L= ((D1-D2)-(S)Vs)/P, where 
+
+
+D1= initial DO, mg/L
+
+D2= final DO after incubation, mg/L
 
 
 
