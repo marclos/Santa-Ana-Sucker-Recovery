@@ -1,0 +1,88 @@
+\documentclass{article}
+
+\usepackage{gensymb} %https://www.overleaf.com/help/115-how-can-i-write-a-degrees-degree-symbol-in-latex#.WAeUUPkrJiw
+
+\begin{document}
+
+\section{Data Description}
+
+This data was collected on September 20, 2016 along 3 reaches of the Santa Ana River, with 9 observations per reach. 
+Site 4 (plunge pool): 34\textdegree 2'5" N, 117 \textdegree 21'17" W
+Site 3 (below confluence): 34\textdegree 2'21" N, 117 \textdegree21'20" W
+Site 2 (above confluence): 34 \textdegree 2'29" N, 117\textdegree 21'15" W. 
+Site 1 (concrete channel) was used by other groups but not by us. 
+Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. 
+
+
+\subsection{Importing Data}
+
+The following code was used to import data into rstudio, assign a file path, and create a command to read the csv file. 
+<<>>=
+updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
+importupdated=read.csv(updateddata)
+@
+\subsection{Summary Statistics}
+
+The following code was used to generate summary statisitics. 
+<<>>=
+summary(importupdated)
+@
+
+
+\subsection{Distribution}
+
+Write some stuff about the summary here...
+<< figure=TRUE >>=
+hist(importupdated$Algae)
+@
+
+<< figure=TRUE >>=
+hist(importupdated$Sediment)
+@
+
+<< figure=TRUE >>=
+hist(importupdated$Temperature)
+@
+
+<< figure=TRUE >>=
+hist(importupdated$Temp_mean)
+@
+
+
+<< figure=TRUE >>=
+hist(importupdated$Temp_range)
+@
+
+<< figure=TRUE >>=
+hist(importupdated$Canopy)
+@
+
+\section{Bias and Data Limitations}
+
+All data collected on one day, Sept. 20, 2016.
+
+Abnormal event (car accident) occurred a few ? days before data collection which caused the RIX treatment plant to temporarily shut off water outlet pipes, effectively draining the river and adeversely impacting algae populations to an unknown degree. Therefore our measurements likely reflect less-than-typical algae abundance. Our measuremnts were taken by undergraduate students without extensive algae fieldwork experience or training. 
+
+\section{Results}
+
+<< figure=TRUE >>=
+plot(importupdated$Temperature,importupdated$Algae)
+@
+Our temperature data was too coarse to really be useful. So instead we proceeded to use WED1 team's temperature data. The following is a plot of algae abundance as a function the range of temperature. 
+<< figure=TRUE >>=
+plot(importupdated$Temp_range,importupdated$Algae)
+@
+
+<< figure=TRUE >>=
+plot(importupdated$Canopy,importupdated$Algae)
+@
+Cannot reject null hypothesis. 
+<< figure=TRUE >>=
+plot(importupdated$Canopy,importupdated$Temp_range)
+@
+Our temperature data was too coarse to really be useful. Will eventually redo with other temp data, perhaps testing variance of temp by site rather than raw temp data. 
+<< figure=TRUE >>=
+boxplot(Algae~Sediment,importupdated)
+@
+Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future.
+\end{document}

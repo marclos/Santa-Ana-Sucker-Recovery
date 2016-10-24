@@ -1,0 +1,154 @@
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+\section{Group Project Overview}
+
+Science and the Environment
+Prof. Marc Los Huertos
+09.16.16
+Project Proposal: Revision #2
+Santa Ana River: Red Algae
+Frank Lyles, Olivia Howie, Valeria Sanchez-Jimenez, Ana Vacas
+
+
+\subsection{Driving Question:}
+
+Where does Red Algae occur in the stream? Is its occurrence related to canopy cover, water temperature, or bed composition? 
+How do our findings compare with the fish videography team’s, which will be gathering fish data at Reaches A & D? Is there a possible connection to presence of the Santa Ana Sucker?
+
+\subsection{Methods:}
+
+Site selection: 3 measurements 1-10m apart for 4 different reaches. Use random number generator to select distance. 12 measurements total. Reach 1 = original site visited already. Must select Reaches 2 & 3 in between. Reach 4 = fish-rich pool half hour downstream 
+
+30 minutes to walk down to reach D where we will start, then proceed back upstream. 
+AT EACH SITE (25 minutes each): 
+Algae: use quadrat 30cm x 30cm. Take three measurements on right bank, middle, left bank. For each measurement, estimate % cover of algae in 10% increments 
+Pebble count. (What was the pebble structure and was the algae on the pebbles) Pebble size: qualitatively note grain size of streambed: cobbles, pebbles, coarse sand, fine sand, or silt. 
+Canopy cover: directly above each alage measurement, use canopy cover instrument to determine canopy cover. 
+Temperature: 3 measurements per site, left middle and right. 
+Time of each measurement 
+Notekeeper who records as team members call out measurements 
+
+TOTAL TIME NEEDED: 2 hours 40 mins 
+
+\subsection{Notes:} This would not deal with the Sucker directly (presumably other groups will) but if we think the red algae is disrupting them, then this is an important question. 
+
+\subsection{Equipment needed:}
+	Water-quality Testing instruments 
+	GPS (included in testing instruments)
+	Foliage Testing instrument 
+	Container(s) for algae specimens (13-36, smaller than 1oz preferred)
+	30cm x 30cm Quadrat
+	Water Temperature Measurer
+	Water sediment sample bottle
+	10 m string/rope 
+
+\subsection{Anticipated Public Product}
+	After conducting our fieldwork, we will enter our data in rstudio. 
+We will produce linear regressions of temperature vs algae abundance. 
+We will produce linear regressions of canopy cover vs algae abundance.
+We will produce linear regressions of canopy cover vs temperature.
+We will create ANOVA or t-tests of bed composition vs. algae abundance. 
+	We will then analyze our data and write a project report 4-5 pages long with pictures and figures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed composition’s effect on algae abundance. In qualitative terms, we will synthesize our results with the fish videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their fish observations. 
+
+Data Sheet Link: https://docs.google.com/spreadsheets/d/1ID74tAhfjUAnnpkZms6on354COm8Do5tsd1Y5CK_xeo/edit#gid=0
+
+
+\section{Individual Elaboration on Team Proposal}
+
+EA 30 Fall 2016 Project 1
+Santa Ana River: Red Algae Team - Algae count vs Dominant Substrate type.
+Valeria Sanchez-Jimenez
+September 18, 2019
+
+\subsection{Driving Question}
+
+This project is motivated by the decline of the threatened Santa Ana sucker, a small freshwater sucker fish endemic to southern California, where it is now present in only three rivers. While there are several threats to the Santa Ana sucker, including fragmentation of its river habitats and decreasing water levels and degradation to the riparian vegetation along the river (Thomson 2010). For the Santa Ana River sucker habitat, a central threat is that the fact that the invasive Red Algae has been spreading with alacrity in areas where the fish are known to be, including the reach below the Rapid Infiltration and Extraction (RIX) Treatment plan (Los Huertos 2016).There are concerns that it may be one of the contributing factors to the sucker’s decline.
+
+This project will therefore focus on qualitatively identifying and analyzing the substrate on which the Algae and Red Algae found grows, because one of the aspects of the sucker’s habitat is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand (Thomson et al. 2010, 321).The sucker is adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic) (Los Huertos 2016). This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Sucker’s decline. Of course, ingesting the algae is not a necessity to the fish being negatively impacted; the algae may also disrupt the fish’s well-being in unknown ways. Perhaps it actually crowds out the diatoms on which, along with algae and detritus, the sucker feeds (Thomson 2010, 322). For this reason, we will also take samples of algae found to potentially examine later for diatoms.
+
+Even if we do not detect the fish where we find algae (through collaboration with other teams who are measuring fish presence), the presence of the algae in the same area and on the same type of substrate as the fish could indicate competition for resources between the algae and the fish.
+
+\subsection{Methods Rationale:}
+
+Ideally, the whole river would be characterized, particularly with the substantial changes in sediment conditions and turbidity that occur year-to-year (Thomson 2010). Since this is not possible due to constraints of time and resources, we will attempt to sample a large enough range (from the beginning of the RIX canal to a pool known to be rich with fish approximately thirty minutes downstream), while maintaining a sufficient degree of reliability.
+
+Therefore, within the the aforementioned range, we will select four 10-meter reaches, and in each 10-meter reach, we will randomly select three sites. In each site, we will take three samples, on the right bank, middle, and left bank of the river, respectively.
+
+This is similar (though substantially smaller in scope) to a strategy undertaken by a recent study on sucker population headed by United States Fish and Wildlife Service researchers, who collected data at 300-m intervals along the 30 km stretch of river below the RIX Treatment plan (Thomson 2010). 
+
+At each of these sites, we will use a 30-by-30 cm quadrat to attempt to estimate the presence of algae, in decile increments. Where we lay down the quadrat, we will identify qualitatively what type of substrate we find there. Visually estimating the proportion of coarse substrate was the method used by a recent study on sucker population headed by United States Fish and Wildlife Service researchers (Thomson 2010, 325). We will replicate this method, with sediment sizes based on the Wentworth sediment size scale (Bunte and Abt 2001). However, we will group a few of the categories together into more manageable and (for this project) relevant categories, in the following ways:
+
+ Particle Description   	Particle size mm 
+  Boulder: 		257-4096
+  Cobble:   		63-256
+  Pebble:		2.84-64
+  Sand, silt and Clay:   1=>
+
+\subsection{Data Analysis:}
+
+The relationship between the frequency of coarse substrate and algae presence will be tested via an ANOVA or T-tests test. This test will be used because it allows for analysis of a relationship between a categorical and a continuous variable. The categorical variable will be the type of substrate deemed most abundant in each sample, and the continuous variable will be the estimated percent cover of algae at each site.
+
+Again, we hope to explore whether there is a correlation between algae presence and the type of coarse cobble substrate favored by the sucker. However, just collection information on the algae presence and the sediment type will be an asset in understanding the composition of the endangered sucker’s habitat.
+
+\subsection{References:}
+
+Bunte, Kristin, and Steven R. Abt. "Sampling surface and subsurface particle-size distributions in wadable gravel-and cobble-bed streams for analyses in sediment transport, hydraulics, and streambed monitoring." (2001).
+
+Los Huertos, Marc. “How can the Santa Ana sucker be saved?” (16 Sept. 2016): 6.
+Palenscar, Kai. “Compsopogon coeruleus in the Santa Ana River.” 15 May 2014. Web Archived Presentation. Sept. 18 2016.
+http://www.sawpa.org/wp-content/uploads/2012/05/Santa-Ana-River-Invasive-Algae-20140515.pdf
+Thompson, Andrew Richard, et al. "Influence of habitat dynamics on the distribution and abundance of the federally threatened Santa Ana Sucker, Catostomus santaanae, in the Santa Ana River." Environmental biology of fishes 87.4 (2010): 321-332.
+
+
+\end{document}

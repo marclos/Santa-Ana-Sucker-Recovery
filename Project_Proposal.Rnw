@@ -49,7 +49,7 @@ Scientific methods vary dramatically accross and within disciplines and subdisci
   \item Session 2: Define \textbf{Public Product} (September 6).  
   \item Session 3: Revise \textbf{Driving Question}, list resources needed,  \& develop \textbf{Team Contract} (Sept. 13/14)
   \item Session 4: Read, clarify, or develop appropriate \textbf{SOPs} (Sept 6-12)
-  \item Session 5: \textbf{Field Work} (Sept 20/21)\sidenote{We might try to go the previous week, but dates are tough.}
+  \item Session 5: \textbf{Field Work} (Sept 13/21)\sidenote{We might try to go the previous week, but dates are tough.}
   \item Session 5: \textbf{Data Analysis} (September 27/28)
   \item Session 7: Development of \textbf{Public Products} (September 27/28)
   \item Session 6: \textbf{Presentation} of Public Products (Oct 4/5)

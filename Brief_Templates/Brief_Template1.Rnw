@@ -53,6 +53,7 @@
 %\minraggedcols=3 % MLH Commented this out because it seemed to generate the error that prevented the pdf from being created!
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 %\maketitle
 
