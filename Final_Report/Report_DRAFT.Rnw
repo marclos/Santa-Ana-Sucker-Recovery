@@ -43,7 +43,8 @@ The report also collected data on the river water temperature to explore relatio
 
 \subsection{Background (Literature Review)}
 
- 
+We missed the....
+
 Albertson, L.K., Koenig, L.E., Lewis, B.L., Zeug, S.C., Harrison, L.R., \& Cardinale, B.J. (2012). How Does Restored Habitat for Chinook Salmon (Oncorhynchus Tshawytscha) in the Merced River in California Compare with other Chinook Streams? River Research and Applications, 29(4), 469-482). doi: 10.1002/rra.1604
 
 By looking at Chinook salmon in the Merced river, restoration projects seemed to be failing to prevent the Chinook population from falling. The installation of gravel augmentation in a reconfigured channel seemed to have little impact on the salmon, suggesting that other factors were catalyzing the fall of the species. By comparing the restored portion with other portions of the Merced river, food web characteristics and flow discharge seemed to produce the same results on the various life stages of the salmon. However, higher temperatures, less woody debris, and minimal riparian cover seemed to limit populations in the restored portions. Restoration efforts are then presented with an added challenge of ensuring that every aspect of the ecosystem is beneficial to the species, which demands more work toward temperature regulation and attempts to restore the river bank. To see how the Santa Ana sucker would react to similar conservation efforts would be interesting in discussions in attempting to determine solutions. 
