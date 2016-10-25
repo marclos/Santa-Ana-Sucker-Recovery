@@ -37,8 +37,16 @@ Our objective for this project is to unveil (even if just a little!) the possibl
 
 \subsection{Site Description}
 
-This data was collected in the Rialto portion of the Santa Ana river for locations 2, 3, and 4. Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
-We evaluated 3 reaches of the Santa Ana River, with 9 observations per reach. Site 4 (plunge pool): 34*2’5” N, 117*21’17” W Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition. near Colton, California (Figure \ref{SAR_Image}). 
+This data was collected at three reaches in the Rialto portion of the Santa Ana river near Colton, California (Figure \ref{SAR_Image}).
+
+Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
+
+
+Site 4 (plunge pool): 34* 2’5” N, 117 degrees 21’17” W 
+Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W 
+Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. 
+
+Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition.  
 
 
 \begin{figure}
@@ -95,18 +103,15 @@ linear regression of canopy cover vs algae abundance
 ANOVA of bed composition vs. algae abundance
 ANOVA of site location vs. algae abundance
 For each of these statistical comparisons, we tested whether we could reject the null hypothesis, and if yes, discuss the implications of those findings. Our results are summarized in the following section. 
-\section{Results}
+\section{Results & Discussion}
 
-The temperature data we collected with an analogue thermometer was too coarse to really be useful (Figure \ref{Temp}).
-<< figure=TRUE >>=
-plot(importupdated$Temperature,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
-@
-So instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of temperature range (*C) at each site. 
+The temperature data we collected with an analogue thermometer was too coarse to really be useful, because we took all our measurements in one afternoon and could only take temperature measurments at a resolution of whole degrees celsius. For that reason, we instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of range of temperature (*C) experienced at each site. 
 << figure=TRUE >>=
 plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
+abline(lm(Algae~Temp_range,importupdated))
 @
 <<<<<<< HEAD
-While using our temperature data yielded p-value: 0.446, using the other teams's temperature range data yilded p-value: 3.49e-05. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826, there are clearly other important variables at work. 
+While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yilded the much better p-value of 3.49e-05. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
 << figure=TRUE >>=
 plot(importupdated$Canopy,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Canopy Cover Index",main ="Canopy Cover as a predictor of Algae Abundance",las=1)
 abline(lm(Algae~Canopy,importupdated))
@@ -115,11 +120,11 @@ Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive v
 << figure=TRUE >>=
 boxplot(Algae~Sediment,importupdated, ylab="Algae Abundance (% cover)",xlab="Bed Composition",main ="Bed Composition as a predictor of Algae Abundance",las=1)
 @
-Bed composition did have a stronger relationship with Alage Abanundance, as sjhown in the figure above. 0 = fine sediment, while 1 = coarse sediment. Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future.
+Bed composition did have a stronger relationship with Alage Abanundance, as shown in the figure above. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
 << figure=TRUE >>=
 boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Site name",main ="Reach Site as a predictor of Algae Abundance",las=1)
 @
-As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance. 
+As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp_range value. Therefore, the high predictive value of temp_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. 
 =======
 >>>>>>> 4d209e808746e9ef3b8e29225dd53b12dcd8e799
 
@@ -131,11 +136,9 @@ The temperature data suggests... (Figure \ref{Temp}).
 \label{Temp}
 \end{figure}
 
-\section{Discussion}
-We
-
 \section{Conclusion and Recommendations}
-
+There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100 percent algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 percent level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
+Our exploratory study is one of the first to examine what variables may control red algae's distribution in the Santa Ana River. While the limited scope of this research eliminated the possibility of conclusive findings, we can suggest promising areas for further research. Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. Most importantly, red algae’s co-occurrence with the federally endangered Santa Ana sucker should be examined. These improvements on our experiment will yield a much better idea of what factors control red algae’s distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae’s effect on Santa Ana Suckers. 
 
 \end{document}
 
