@@ -7,5 +7,5 @@
 \contentsline {subsection}{\numberline {2.1}Site Description}{4}
 \contentsline {subsection}{\numberline {2.2}Field Methods}{4}
 \contentsline {subsection}{\numberline {2.3}Statistical Methods}{6}
-\contentsline {section}{\numberline {3}Results & Discussion}{7}
-\contentsline {section}{\numberline {4}Conclusion and Recommendations}{9}
+\contentsline {section}{\numberline {3}Results and Discussion}{7}
+\contentsline {section}{\numberline {4}Conclusion and Recommendations}{13}
