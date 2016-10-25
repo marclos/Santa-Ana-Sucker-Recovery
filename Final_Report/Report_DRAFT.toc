@@ -3,33 +3,20 @@
 \contentsline {subsection}{\numberline {1.2}Scope of Problem}{3}
 \contentsline {subsection}{\numberline {1.3}Problem Statement}{3}
 \contentsline {subsection}{\numberline {1.4}Objectives}{4}
-\contentsline {subsection}{\numberline {1.5}Background (Literature Review)}{4}
-\contentsline {subsection}{\numberline {1.6}Objectives}{6}
-\contentsline {section}{\numberline {2}Methods}{6}
-\contentsline {subsection}{\numberline {2.1}Materials and Equipment}{6}
-\contentsline {subsection}{\numberline {2.2}Site Descrition}{7}
-\contentsline {subsection}{\numberline {2.3}Habitat Evaluation}{8}
+\contentsline {subsection}{\numberline {1.5}Background (Literature Review)}{5}
+\contentsline {subsection}{\numberline {1.6}Objectives}{7}
+\contentsline {section}{\numberline {2}Methods}{7}
+\contentsline {subsection}{\numberline {2.1}Materials and Equipment}{7}
+\contentsline {subsection}{\numberline {2.2}Site Descrition}{8}
+\contentsline {subsection}{\numberline {2.3}Habitat Evaluation}{10}
 \contentsline {subsection}{\numberline {2.4}Videography}{10}
-\contentsline {subsection}{\numberline {2.5}Temperature Loggers}{10}
-\contentsline {subsection}{\numberline {2.6}BOD Methods}{10}
-\contentsline {subsection}{\numberline {2.7}Statistical Methods}{12}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {2.8}Statistical Methods}{12}
-\contentsline {section}{\numberline {3}Results}{12}
-\contentsline {section}{\numberline {4}Discussion}{18}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{19}
-\contentsline {section}{\numberline {6}Literature Cited}{19}
-\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{19}
-\contentsline {section}{\numberline {8}Conclusion and Recommendations}{20}
-=======
+\contentsline {subsection}{\numberline {2.5}Temperature Loggers}{11}
+\contentsline {subsection}{\numberline {2.6}BOD Methods}{11}
+\contentsline {subsection}{\numberline {2.7}Statistical Methods}{13}
 \contentsline {subsection}{\numberline {2.8}Statistical Methods}{13}
 \contentsline {section}{\numberline {3}Results}{13}
 \contentsline {section}{\numberline {4}Discussion}{19}
 \contentsline {section}{\numberline {5}Conclusion and Recommendations}{21}
 \contentsline {section}{\numberline {6}Literature Cited}{21}
 \contentsline {section}{\numberline {7}Appendix: Detailed Methods}{21}
-<<<<<<< HEAD
 \contentsline {section}{\numberline {8}Conclusion and Recommendations}{23}
-=======
->>>>>>> d093b2153263801f35e18898a596e36b42286749
->>>>>>> 9813ac811b83ebc117e724d2166e232b1334cb7a
