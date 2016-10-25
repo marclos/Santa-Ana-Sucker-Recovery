@@ -1,58 +1,11 @@
-\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
-%% maxwidth is the original width if it is less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
-\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
-\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
-\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
-\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
-\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
-\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
-\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
-
-\usepackage{alltt}
+\documentclass{article}
 
 \title{Measuring Red Algae in the Santa Ana River}
-\author{EA30: Valeria Sanchez-Jimenez, Frank Lyles, Olivia Howie}
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\author{EA30: Valeria Sanchez-Jimenez, Frank Lyles, Olivia Howie} 
+
+\usepackage{Sweave}
 \begin{document}
+\input{Tuesday_1_Report_Outline-concordance}
 
 
 \maketitle
@@ -143,14 +96,12 @@ Steps 1)-8) were repeated at each Site, moving upstream from 4 to 2, for a total
 \subsection{Statistical Methods}
 
 After conducting our ﬁeldwork, we imported our data in rstudio and generated summary statistics using the following code: 
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{updateddata}\hlkwb{=} \hlstr{"/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"}
-\hlstd{importupdated}\hlkwb{=}\hlkwd{read.csv}\hlstd{(updateddata)}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
+\begin{Schunk}
+\begin{Sinput}
+> updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
+> importupdated=read.csv(updateddata)
+\end{Sinput}
+\end{Schunk}
 =======
 After conducting our ﬁeldwork, we will enter our data in rstudio. We will produce linear regressions of temperature vs algae abundance. We will producelinear regressions of canopy cover vs algae abundance. We will produce linear regressions of canopy cover vs temperature. We will create ANOVA or t-tests of bed composition vs. algae abundance. We will then analyze our data and write a project report 4-5 pages long with pictures and ﬁgures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed compositions eﬀect on algae abundance. In qualitative terms, we will synthesize our results with the ﬁsh videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their ﬁsh observations.
 The following code was used to generate summary statisitics. 
@@ -166,48 +117,32 @@ For each of these statistical comparisons, we tested whether we could reject the
 \section{Results and Discussion}
 
 The temperature data we collected with an analogue thermometer was too coarse to really be useful, because we took all our measurements in one afternoon and could only take temperature measurments at a resolution of whole degrees celsius. For that reason, we instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of range of temperature (*C) experienced at each site. 
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temp_range,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Temperature (*C)"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Temperature as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
-\hlkwd{abline}\hlstd{(}\hlkwd{lm}\hlstd{(Algae}\hlopt{~}\hlstd{Temp_range,importupdated))}
-\end{alltt}
-\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
-
-\end{knitrout}
+\begin{Schunk}
+\begin{Sinput}
+> plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
+> abline(lm(Algae~Temp_range,importupdated))
+\end{Sinput}
+\end{Schunk}
 <<<<<<< HEAD
 While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yilded the much better p-value of 3.49e-05. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Canopy,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Canopy Cover Index"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Canopy Cover as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
-\hlkwd{abline}\hlstd{(}\hlkwd{lm}\hlstd{(Algae}\hlopt{~}\hlstd{Canopy,importupdated))}
-\end{alltt}
-\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
-
-\end{knitrout}
+\begin{Schunk}
+\begin{Sinput}
+> plot(importupdated$Canopy,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Canopy Cover Index",main ="Canopy Cover as a predictor of Algae Abundance",las=1)
+> abline(lm(Algae~Canopy,importupdated))
+\end{Sinput}
+\end{Schunk}
 Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Sediment,importupdated,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Bed Composition"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Bed Composition as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
-\end{alltt}
-\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
-
-\end{knitrout}
+\begin{Schunk}
+\begin{Sinput}
+> boxplot(Algae~Sediment,importupdated, ylab="Algae Abundance (% cover)",xlab="Bed Composition",main ="Bed Composition as a predictor of Algae Abundance",las=1)
+\end{Sinput}
+\end{Schunk}
 Bed composition did have a stronger relationship with Alage Abanundance, as shown in the figure above. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Site_new,importupdated,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Site name"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Reach Site as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
-\end{alltt}
-\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
-
-\end{knitrout}
+\begin{Schunk}
+\begin{Sinput}
+> boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Site name",main ="Reach Site as a predictor of Algae Abundance",las=1)
+\end{Sinput}
+\end{Schunk}
 As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp\_range value. Therefore, the high predictive value of temp\_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. 
 =======
 >>>>>>> 4d209e808746e9ef3b8e29225dd53b12dcd8e799

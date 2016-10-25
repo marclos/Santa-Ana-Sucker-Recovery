@@ -4,6 +4,7 @@
 \author{EA30: Valeria Sanchez-Jimenez, Frank Lyles, Olivia Howie} 
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 
 \maketitle
