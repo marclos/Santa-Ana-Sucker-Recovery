@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  21 OCT 2016 14:10
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 13:41
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -191,11 +191,10 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no º in font cmr10!
- [3]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [4]
+ [3] [4]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
  PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
@@ -210,12 +209,12 @@ Overfull \hbox (160.88875pt too wide) in paragraph at lines 135--136
 [][] 
  []
 
-[5] [6 <./Figures/SantaAna_SatelliteImage.pdf>] [7] [8 <./Figures/Temp.pdf>]
+[5] [6 <./Figures/SantaAna_SatelliteImage.pdf>] [7 <./Figures/Temp.pdf>]
 (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
  1160 strings out of 256214
  15653 string characters out of 1917000
- 62730 words of memory out of 1500000
+ 63730 words of memory out of 1500000
  4466 multiletter control sequences out of 10000+200000
  7895 words of font info for 28 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
@@ -224,9 +223,9 @@ Here is how much of TeX's memory you used:
 /share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bl
 uesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/sha
 re/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Report_DRAFT.pdf (8 pages, 326151 bytes).
+Output written on Report_DRAFT.pdf (7 pages, 325011 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 65 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
