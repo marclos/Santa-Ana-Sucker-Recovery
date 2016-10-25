@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 09:47
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 09:49
 entering extended mode
  %&-line parsing enabled.
 **Temperature_Report_Outline.tex
@@ -218,7 +218,7 @@ File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
 mage.pdf>] <Figures/Temp.pdf, id=42, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
 
-<use Figures/Temp.pdf> [8] [9 <./Figures/Temp.pdf>] [10]
+<use Figures/Temp.pdf> [8] [9 <./Figures/Temp.pdf>] [10] [11]
 (./Temperature_Report_Outline.aux) ) 
 Here is how much of TeX's memory you used:
  1785 strings out of 256214
@@ -232,9 +232,9 @@ Here is how much of TeX's memory you used:
 bx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/
 fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12
 .pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb>
-Output written on Temperature_Report_Outline.pdf (10 pages, 332277 bytes).
+Output written on Temperature_Report_Outline.pdf (11 pages, 338211 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  15 words of extra memory for PDF output out of 10000 (max. 10000000)
 
