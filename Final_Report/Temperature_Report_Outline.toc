@@ -1,14 +1,14 @@
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {subsection}{\numberline {1.1}Problem Statement}{3}
 \contentsline {subsection}{\numberline {1.2}Background (Literature Review)}{3}
-\contentsline {subsection}{\numberline {1.3}Background Research w/Citations}{3}
+\contentsline {subsection}{\numberline {1.3}Background Research w/Citations}{4}
 \contentsline {subsection}{\numberline {1.4}Objectives}{5}
-\contentsline {subsection}{\numberline {1.5}Materials and Equipment}{5}
-\contentsline {subsection}{\numberline {1.6}Procedure}{5}
+\contentsline {subsection}{\numberline {1.5}Materials and Equipment}{6}
+\contentsline {subsection}{\numberline {1.6}Procedure}{6}
 \contentsline {subsection}{\numberline {1.7}Site Descrition}{6}
-\contentsline {subsection}{\numberline {1.8}Field Methods}{6}
-\contentsline {subsection}{\numberline {1.9}Laboratory Methods}{6}
-\contentsline {subsection}{\numberline {1.10}Statistical Methods}{6}
-\contentsline {section}{\numberline {2}Results}{6}
-\contentsline {section}{\numberline {3}Discussion}{9}
-\contentsline {section}{\numberline {4}Conclusion and Recommendations}{9}
+\contentsline {subsection}{\numberline {1.8}Field Methods}{8}
+\contentsline {subsection}{\numberline {1.9}Laboratory Methods}{8}
+\contentsline {subsection}{\numberline {1.10}Statistical Methods}{8}
+\contentsline {section}{\numberline {2}Results}{8}
+\contentsline {section}{\numberline {3}Discussion}{8}
+\contentsline {section}{\numberline {4}Conclusion and Recommendations}{10}
