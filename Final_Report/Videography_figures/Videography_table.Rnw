@@ -2,7 +2,7 @@
 
 \begin{document}
 
-\begin{tabular}{ |p{2cm}||p{2cm}|p{2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}  }
+\begin{tabular}{ |p{2cm}||p{1.5cm}|p{2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}  }
  \hline
  \multicolumn{8}{|c|}{Videography Summary Statistics} \\
  \hline
