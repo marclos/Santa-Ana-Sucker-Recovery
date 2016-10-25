@@ -8,10 +8,5 @@
 \contentsline {subsection}{\numberline {2.2}Field Methods}{4}
 \contentsline {subsection}{\numberline {2.3}Statistical Methods}{6}
 \contentsline {section}{\numberline {3}Results}{7}
-<<<<<<< HEAD
 \contentsline {section}{\numberline {4}Discussion}{7}
 \contentsline {section}{\numberline {5}Conclusion and Recommendations}{7}
-=======
-\contentsline {section}{\numberline {4}Discussion}{12}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{12}
->>>>>>> df22a21e55b74375b20ebae1f973610d5f2955e6
