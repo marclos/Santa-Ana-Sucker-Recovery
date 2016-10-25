@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:22
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:30
 entering extended mode
  %&-line parsing enabled.
 **Tuesday_1_Report_Outline.tex
@@ -240,7 +240,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Overfull \hbox (3.1395pt too wide) in paragraph at lines 105--106
+Overfull \hbox (3.1395pt too wide) in paragraph at lines 106--107
 []\OT1/cmr/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-
 gae per-cent cover, canopy
  []
@@ -260,15 +260,15 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
-Package color Info: Redefining color shadecolor on input line 147.
+Package color Info: Redefining color shadecolor on input line 148.
 
-Overfull \hbox (158.9956pt too wide) in paragraph at lines 149--149
+Overfull \hbox (158.9956pt too wide) in paragraph at lines 150--150
 [][]\OT1/cmtt/m/n/10 updateddata[][]=[] []"/home/CAMPUS/fcl02013/Santa-Ana-Suck
 er-Recovery/Data/Data_TUES_1/updatedtemps.csv"[][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 150.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 151.
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -285,9 +285,9 @@ Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
 [6]
-Package color Info: Redefining color shadecolor on input line 170.
+Package color Info: Redefining color shadecolor on input line 171.
 
-Overfull \hbox (536.99231pt too wide) in paragraph at lines 172--172
+Overfull \hbox (536.99231pt too wide) in paragraph at lines 173--173
 [][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Temp_range,importupdated[][
 ]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]
 "Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predictor of Algae A
@@ -298,14 +298,14 @@ bundance"[][],[][]las[][]=[][]1[][])[][]
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-2-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 176--177
+Overfull \hbox (15.0pt too wide) in paragraph at lines 177--178
 [][] 
  []
 
 [7]
-Package color Info: Redefining color shadecolor on input line 182.
+Package color Info: Redefining color shadecolor on input line 183.
 
-Overfull \hbox (531.74236pt too wide) in paragraph at lines 184--184
+Overfull \hbox (531.74236pt too wide) in paragraph at lines 185--185
 [][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Canopy,importupdated[][]$[]
 []Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Can
 opy Cover Index"[][],[][]main[] []=[][]"Canopy Cover as a predictor of Algae Ab
@@ -316,14 +316,14 @@ undance"[][],[][]las[][]=[][]1[][])[][]
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-3-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 188--189
+Overfull \hbox (15.0pt too wide) in paragraph at lines 189--190
 [][] 
  []
 
 [8 <./figure/unnamed-chunk-2-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 193.
+Package color Info: Redefining color shadecolor on input line 194.
 
-Overfull \hbox (484.49277pt too wide) in paragraph at lines 195--195
+Overfull \hbox (484.49277pt too wide) in paragraph at lines 196--196
 [][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Sediment,importupdated,[] []ylab
 [][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed Composition"[][]
 ,[][]main[] []=[][]"Bed Composition as a predictor of Algae Abundance"[][],[][]
@@ -334,14 +334,14 @@ las[][]=[][]1[][])[][]
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-4-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 198--199
+Overfull \hbox (15.0pt too wide) in paragraph at lines 199--200
 [][] 
  []
 
 [9 <./figure/unnamed-chunk-3-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 203.
+Package color Info: Redefining color shadecolor on input line 204.
 
-Overfull \hbox (426.74327pt too wide) in paragraph at lines 205--205
+Overfull \hbox (426.74327pt too wide) in paragraph at lines 206--206
 [][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Site_new,importupdated,[] []ylab
 [][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site name"[][],[][]m
 ain[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],[][]las[][]=[][
@@ -352,7 +352,7 @@ ain[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],[][]las[][]=[][
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-5-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 208--209
+Overfull \hbox (15.0pt too wide) in paragraph at lines 209--210
 [][] 
  []
 
@@ -360,7 +360,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 208--209
 <Figures/Temp.pdf, id=75, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
-Overfull \hbox (160.88875pt too wide) in paragraph at lines 218--219
+Overfull \hbox (160.88875pt too wide) in paragraph at lines 219--220
 [][] 
  []
 
@@ -390,7 +390,7 @@ re/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky
 /cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/te
 xmf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
 cmtt10.pfb>
-Output written on Tuesday_1_Report_Outline.pdf (13 pages, 369823 bytes).
+Output written on Tuesday_1_Report_Outline.pdf (13 pages, 369748 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
