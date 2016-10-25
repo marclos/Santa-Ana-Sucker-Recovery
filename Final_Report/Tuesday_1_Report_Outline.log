@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:50
+=======
+<<<<<<< HEAD
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:29
+=======
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:31
+>>>>>>> 7e761f7a0af2c4fcbbacb90c5907be495b0ec0bb
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 entering extended mode
  %&-line parsing enabled.
 **Tuesday_1_Report_Outline.tex
@@ -28,6 +36,12 @@ File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/share/R/texmf/tex/latex/Sweave.sty
+Package: Sweave 
+
+(/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
 (/usr/share/texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -53,6 +67,7 @@ File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+<<<<<<< HEAD
 (/usr/share/texmf/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
@@ -76,6 +91,21 @@ Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
 atim and verb
 
 (/usr/share/texmf/tex/latex/base/textcomp.sty
+=======
+(/usr/share/texmf/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 1998/07/17
+
+Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
+\FV@CodeLineNo=\count88
+\FV@InFile=\read1
+\FV@TabBox=\box26
+\c@FancyVerbLine=\count89
+\FV@StepNumber=\count90
+\FV@OutFile=\write3
+
+No file fancyvrb.cfg.
+) (/usr/share/texmf/tex/latex/base/textcomp.sty
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -141,144 +171,88 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
-)) (./Tuesday_1_Report_Outline.aux)
+)
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf/tex/latex/ae/ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+
+(/usr/share/texmf/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))) (./Tuesday_1_Report_Outline.aux)
 \openout1 = `Tuesday_1_Report_Outline.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 7.
+
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    ... okay on input line 7.
 
-! Undefined control sequence.
-l.56 \SweaveOpts
-                {concordance=TRUE}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(./Tuesday_1_Report_Outline-concordance.tex)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+ [1
 
-[1
-
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 59.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 59.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 59.
- [2]
-(./Tuesday_1_Report_Outline.toc
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Tuesday_1_Report_Outl
+ine.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
-
-! Misplaced alignment tab character &.
-<argument> \numberline {3}Results &
-                                    Discussion
-l.10 ...n}{\numberline {3}Results & Discussion}{8}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 )
-\tf@toc=\write3
-\openout3 = `Tuesday_1_Report_Outline.toc'.
+\tf@toc=\write4
+\openout4 = `Tuesday_1_Report_Outline.toc'.
 
- [3]
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Å in font cmr10!
- [4]
-! Text line contains an invalid character.
-l.80 ...m tapemeasure +Recording material +Comp^^?
-                                                  uter +RStudio Server Micro...
-A funny symbol that I can't read has just been input.
-Continue, and I'll forget that it ever happened.
+ [2] [3]
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 35.
 
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Ç in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ¨ in font cmr10!
-Missing character: There is no Ç in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
+(/usr/share/R/texmf/tex/latex/ts1aer.fd
+File: ts1aer.fd 
+)
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 35.
 
-Overfull \hbox (3.1395pt too wide) in paragraph at lines 98--99
+<<<<<<< HEAD
+Overfull \hbox (2.85312pt too wide) in paragraph at lines 58--59
+[]\T1/aer/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-g
+ae per-cent cover, canopy
+=======
+Overfull \hbox (3.1395pt too wide) in paragraph at lines 106--107
 []\OT1/cmr/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-
 gae per-cent cover, canopy
+>>>>>>> 7e761f7a0af2c4fcbbacb90c5907be495b0ec0bb
  []
 
 
@@ -288,23 +262,44 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
 <Figures/SantaAna_SatelliteImage.pdf, id=19, 614.295pt x 794.97pt>
 File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
 
-<use Figures/SantaAna_SatelliteImage.pdf> [5] [6 <./Figures/SantaAna_SatelliteI
+<use Figures/SantaAna_SatelliteImage.pdf> [4] [5 <./Figures/SantaAna_SatelliteI
 mage.pdf>]
+<<<<<<< HEAD
+LaTeX Font Info:    Try loading font information for T1+aett on input line 100.
+
+ (/usr/share/texmf/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+) [6] [7]
+<Figures/Temp.pdf, id=46, 505.89pt x 505.89pt>
+File: Figures/Temp.pdf Graphic file (type pdf)
+ <use Figures/Temp.pdf> [8 <./Figures/Temp.pdf>] [9] (./Tuesday_1_Report_Outlin
+e.aux) ) 
+=======
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
+<<<<<<< HEAD
 Package color Info: Redefining color shadecolor on input line 140.
 
 Overfull \hbox (158.9956pt too wide) in paragraph at lines 142--142
+=======
+Package color Info: Redefining color shadecolor on input line 148.
+
+Overfull \hbox (158.9956pt too wide) in paragraph at lines 150--150
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 [][]\OT1/cmtt/m/n/10 updateddata[][]=[] []"/home/CAMPUS/fcl02013/Santa-Ana-Suck
 er-Recovery/Data/Data_TUES_1/updatedtemps.csv"[][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+<<<<<<< HEAD
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 143.
+=======
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 151.
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
@@ -320,6 +315,7 @@ Missing character: There is no Å in font cmr10!
 Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
+<<<<<<< HEAD
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -369,12 +365,19 @@ might try typing `S' now just to see what is salvageable.
 Package color Info: Redefining color shadecolor on input line 163.
 [7]
 Overfull \hbox (536.99231pt too wide) in paragraph at lines 165--165
+=======
+[6]
+Package color Info: Redefining color shadecolor on input line 171.
+
+Overfull \hbox (536.99231pt too wide) in paragraph at lines 173--173
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 [][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Temp_range,importupdated[][
 ]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]
 "Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predictor of Algae A
 bundance"[][],[][]las[][]=[][]1[][])[][] 
  []
 
+<<<<<<< HEAD
 <figure/unnamed-chunk-2-1.pdf, id=46, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
@@ -386,12 +389,27 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 169--170
 Package color Info: Redefining color shadecolor on input line 175.
 [8 <./figure/unnamed-chunk-2-1.pdf>]
 Overfull \hbox (531.74236pt too wide) in paragraph at lines 177--177
+=======
+<figure/unnamed-chunk-2-1.pdf, id=40, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-2-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 177--178
+[][] 
+ []
+
+[7]
+Package color Info: Redefining color shadecolor on input line 183.
+
+Overfull \hbox (531.74236pt too wide) in paragraph at lines 185--185
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 [][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Canopy,importupdated[][]$[]
 []Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Can
 opy Cover Index"[][],[][]main[] []=[][]"Canopy Cover as a predictor of Algae Ab
 undance"[][],[][]las[][]=[][]1[][])[][] 
  []
 
+<<<<<<< HEAD
 <figure/unnamed-chunk-3-1.pdf, id=56, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
@@ -403,30 +421,59 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 181--182
 Package color Info: Redefining color shadecolor on input line 186.
 
 Overfull \hbox (484.49277pt too wide) in paragraph at lines 188--188
+=======
+<figure/unnamed-chunk-3-1.pdf, id=45, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-3-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 189--190
+[][] 
+ []
+
+[8 <./figure/unnamed-chunk-2-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 194.
+
+Overfull \hbox (484.49277pt too wide) in paragraph at lines 196--196
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 [][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Sediment,importupdated,[] []ylab
 [][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed Composition"[][]
 ,[][]main[] []=[][]"Bed Composition as a predictor of Algae Abundance"[][],[][]
 las[][]=[][]1[][])[][] 
  []
 
+<<<<<<< HEAD
 <figure/unnamed-chunk-4-1.pdf, id=57, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-4-1.pdf>
 Overfull \hbox (15.0pt too wide) in paragraph at lines 191--192
+=======
+<figure/unnamed-chunk-4-1.pdf, id=55, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-4-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 199--200
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 [][] 
  []
 
 [9 <./figure/unnamed-chunk-3-1.pdf>]
+<<<<<<< HEAD
 Package color Info: Redefining color shadecolor on input line 197.
 
 Overfull \hbox (426.74327pt too wide) in paragraph at lines 199--199
+=======
+Package color Info: Redefining color shadecolor on input line 204.
+
+Overfull \hbox (426.74327pt too wide) in paragraph at lines 206--206
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 [][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Site_new,importupdated,[] []ylab
 [][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site name"[][],[][]m
 ain[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],[][]las[][]=[][
 ]1[][])[][] 
  []
 
+<<<<<<< HEAD
 <figure/unnamed-chunk-5-1.pdf, id=67, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
@@ -477,6 +524,21 @@ m/m/it/10 >>>>>>>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
 Overfull \hbox (160.88875pt too wide) in paragraph at lines 214--215
+=======
+<figure/unnamed-chunk-5-1.pdf, id=65, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-5-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 209--210
+[][] 
+ []
+
+[10 <./figure/unnamed-chunk-4-1.pdf>]
+<Figures/Temp.pdf, id=75, 505.89pt x 505.89pt>
+File: Figures/Temp.pdf Graphic file (type pdf)
+ <use Figures/Temp.pdf>
+Overfull \hbox (160.88875pt too wide) in paragraph at lines 219--220
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
 [][] 
  []
 
@@ -491,6 +553,7 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+<<<<<<< HEAD
  [13] [14] (./Tuesday_1_Report_Outline.aux) ) 
 Here is how much of TeX's memory you used:
  1206 strings out of 256214
@@ -511,6 +574,41 @@ cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf
 Output written on Tuesday_1_Report_Outline.pdf (14 pages, 383555 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
+=======
+[11 <./figure/unnamed-chunk-5-1.pdf>] [12 <./Figures/Temp.pdf>] [13]
+(./Tuesday_1_Report_Outline.aux) ) 
+>>>>>>> 7e761f7a0af2c4fcbbacb90c5907be495b0ec0bb
+Here is how much of TeX's memory you used:
+ 1838 strings out of 256214
+ 24641 string characters out of 1917000
+ 71383 words of memory out of 1500000
+ 5089 multiletter control sequences out of 10000+200000
+ 29370 words of font info for 63 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+<<<<<<< HEAD
+ 35i,6n,21p,2016b,214s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/oih01925/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen
+/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/sh
+are/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/blues
+ky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share
+/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/c
+m/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsltt10.pfb></usr/share/t
+exmf/fonts/type1/bluesky/cm/cmti10.pfb>
+Output written on Tuesday_1_Report_Outline.pdf (9 pages, 353138 bytes).
+=======
+ 25i,6n,19p,2016b,246s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/fcl02013/.texlive2007/texmf-va
+r/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/blue
+sky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/sha
+re/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky
+/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/te
+xmf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
+cmtt10.pfb>
+Output written on Tuesday_1_Report_Outline.pdf (13 pages, 369748 bytes).
+>>>>>>> 7e761f7a0af2c4fcbbacb90c5907be495b0ec0bb
+PDF statistics:
+ 89 PDF objects out of 1000 (max. 8388607)
+>>>>>>> 01ba632b1f399fbbda3be47972e667807001f8ce
  0 named destinations out of 1000 (max. 131072)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 15 words of extra memory for PDF output out of 10000 (max. 10000000)
 

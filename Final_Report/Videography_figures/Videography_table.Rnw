@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\begin{document}
+\begin{table}
+\begin{tabular}{|p{1.5cm}||p{1cm}|p{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
+ \hline
+ \multicolumn{8}{|c|}{Videography Summary Statistics} \\
+ \hline
+ Section & Min & Max & Mean & Median & 1st Quartile & 3rd Quartile & K\\
+ \hline
+ Morning & 7 & 29 & 20.13 & 22  & 16.75 & 25 & -0.6\\
+ Afternoon & 14 & 49 & 32.25 & 31 & 24.75 &  42 & -1.3\\
+ \hline
+\end{tabular}
+\caption{Look at me}
+\label{tab:summarystat}
+\end{table}
+This is a table (\ref{tab:summarystat})
+
+\end{document}
