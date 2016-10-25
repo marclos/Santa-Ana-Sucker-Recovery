@@ -1,19 +1,4 @@
 \contentsline {section}{\numberline {1}Introduction}{3}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {1.1}Problem Statement}{3}
-\contentsline {subsection}{\numberline {1.2}Background (Literature Review)}{3}
-\contentsline {subsection}{\numberline {1.3}Background Research w/Citations}{3}
-\contentsline {subsection}{\numberline {1.4}Objectives}{4}
-\contentsline {subsection}{\numberline {1.5}Materials and Equipment}{4}
-\contentsline {subsection}{\numberline {1.6}Methods}{4}
-\contentsline {subsection}{\numberline {1.7}Site Descrition}{5}
-\contentsline {subsection}{\numberline {1.8}Field Methods}{5}
-\contentsline {subsection}{\numberline {1.9}Laboratory Methods}{5}
-\contentsline {subsection}{\numberline {1.10}Statistical Methods}{5}
-\contentsline {section}{\numberline {2}Results}{5}
-\contentsline {section}{\numberline {3}Discussion}{5}
-\contentsline {section}{\numberline {4}Conclusion and Recommendations}{5}
-=======
 \contentsline {subsection}{\numberline {1.1}Testing Citations}{3}
 \contentsline {subsection}{\numberline {1.2}Scope of Problem}{3}
 \contentsline {subsection}{\numberline {1.3}Problem Statement AND OBJECTIVES OVERLAP, SHOULD SEPARATE}{4}
@@ -30,7 +15,6 @@
 \contentsline {subsection}{\numberline {2.8}Statistical Methods}{13}
 \contentsline {section}{\numberline {3}Results}{13}
 \contentsline {section}{\numberline {4}Discussion}{19}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{20}
-\contentsline {section}{\numberline {6}Literature Cited}{20}
-\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{20}
->>>>>>> 1409d73a6c2be8657bb611c981e9be506b5dc062
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{21}
+\contentsline {section}{\numberline {6}Literature Cited}{21}
+\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{21}

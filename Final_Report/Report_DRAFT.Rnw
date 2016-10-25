@@ -64,6 +64,8 @@ Another aspect that this report explored was the Biological Oxygen Demand (BOD) 
 
 The report also collected data on the river water temperature to explore relationships between this and other parameters. The following questions were also asked: does the Santa Ana Sucker shift its distribution in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period. 
 
+[needs transition] Does the Santa Ana Sucker shift its distributon in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period.
+
 \subsection{Background (Literature Review)}
 
 We missed the....
@@ -87,6 +89,8 @@ A power station discharged water that was on average 7 degrees Celsius above nor
 U.S. Fish \& Wildlife Service. 2012. Recovery Outline for Santa Ana sucker. Sacramento, California. 38 pp.
 
 This report discusses Santa Ana Suckers and possible recovery plans. In order to do so, it clearly outlines Sucker habitat preferences, behavior, and threats. We used this source to determine preferred temperature for the Santa Ana Sucker and in general to inform ourselves more about the fish. Little research has been done on specific threats to the Santa Ana Sucker, but the document did point out possible threats arising from hydrological modification and urban development in general. Sophie and I thought that potentially water coming out of a treatment plant could be a threat under hydrological modification or urban development, so that will be what our research focuses on.
+
+We expect that water temperatures at the downstream location will be less than the upstream location throughout the day. We know the current range of the Santa Ana Sucker differs significantly from its historic distribution in the Los Angeles Basin (Thompson 2010). We also know that the sucker prefers environments with cool water (Moyle 2002) and other fish have been known to regulate their body temperatures by moving to different areas in their habitat throughout the day (Matthews & Berg & Azuma 1994)
 
 \subsection{Objectives}
 Our goal with this experiment was to find out whether or not temperature was affecting the population and/or livelihood of the Santa Ana Sucker in the Santa Ana River.
@@ -297,7 +301,14 @@ Bed composition did have a stronger relationship with Alage Abanundance, as show
 << figure=TRUE >>=
 boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Site name",main ="Reach Site as a predictor of Algae Abundance",las=1)
 @
-As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp\_range value. Therefore, the high predictive value of temp\_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. 
+As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp\_range value. Therefore, the high predictive value of temp\_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764°C in the morning and increased to 28.456°C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
+<<>>=
+newmetadata <- read.csv("/home/CAMPUS/cmfa2015/Santa Ana Sucker/Data/Data_Tues_2/newmetadata.csv")
+@
+<< figure=TRUE >>=
+boxplot(Fish~Section,newmetadata, ylab="Fish",xlab="Time of Day",main ="Time of Day as a predictor of Fish",las=1)
+@
+
 
 
 \section{Discussion}
@@ -315,6 +326,9 @@ In order to fill any gaps in our own research and numbers, we have also decided 
 
 
 Future experiments can improve upon our methods by using the optimum amount of source water and dilution water to get the optimum about of BOD depletion. The ideal BOD depletion reading was given at 25 mL of source water and 275 mL dilution water. It would also be best if it is meticulously made sure of that the BOD is taken of the initial samples. Important to the process is to have every sample spun each time to allow for consistency and as much accuracy as possible with each BOD reading. 
+
+Our videos of site 2 contained so few fish that we were unable to draw any conclusions from the data.  In the morning there were no Santa Ana suckers seen in the entire hour, and in the afternoon there was one sucker that would occasionally swim out from behind a rock.  This could be because the temperature that far upstream was too hot for the suckers to live there; the temperature data found that at that location the water was around 29°C in the afternoon and 25°C in the morning.  It is also possible that our camera was placed in a section of the river that the suckers don’t like, so the lack of fish could have had nothing to do with temperature.
+When we compared the number of fish downstream in the afternoon compared to the morning, we had a p-value of 6.027e-13, meaning there were significantly more suckers in the afternoon than there were in the morning.  This suggests that the suckers do move downstream throughout the day to get to cooler temperatures.  On the afternoon we tested, the plunge pool (downstream) was 28.5°C, whereas the river at our upstream location, closer to the concrete, was 29.4°C.  However, we cannot definitively prove that we observed more fish in the afternoon because of the temperature change; there could have been a variety of other factors.  For example, the fish could have moved from one river bank to the other throughout the day to stay in the shade of the brush as the sun moved.
 
 \section{Conclusion and Recommendations}
 
