@@ -2,6 +2,8 @@
 \usepackage{natbib}
 \usepackage{times}
 
+\usepackage{gensymb} % How can I write a ° (degree) symbol in LaTeX?
+
 \newcommand{\BibTeX}{{\sc Bib}\TeX}
 
 \title{Santa Ana Sucker Habitat Evaluation}
@@ -20,8 +22,8 @@
 \subsection{Testing Citations}
 
 \LaTeX{} is a typesetting system developed by Leslie
-Lamport\citet{lamport94}.  It builds on foundations created by Donald
-Knuth's \TeX{} system\citep{knuth79}.  \TeX{} became very popular within
+ \citet{lamport94}.  It builds on foundations created by Donald
+Knuth's \TeX{} system \citep{knuth79}.  \TeX{} became very popular within
 the scientiic community because it was very good at producing
 mathematical manuscripts.  It was extremely powerful and provided the
 user with exceptional control of the presentation of their documents.
@@ -32,9 +34,9 @@ presentation issues.  \LaTeX{} also added extra functionality through
 auxiliary programs that can generate bibliographies, tables of contents,
 indices, tables, cross-references and figures.
 
-\subsection{Scope of Problme}
+\subsection{Scope of Problem}
 
-The Santa Ana sucker is a 16 cm fish that lives in the rivers of Southern California.  They have recently been placed on the endangered species list, partially due to their losing over 70 percent of their habitat (FWS 2012). Also, in the 1960s, the habitat of the suckers would range from 10-26°C, but when we tested the water in September 2016, we found temperatures in the Santa Ana river up to 35.5°C \cite{greenfield70}.  This rise in temperature is most likely due to the extreme industrialization of the stream; much of it runs over concrete, which heats up to extreme temperatures in the sunlight.  A majority of the stream water also comes from discharge from a sewage treatment plant upstream, creating an unhealthy and unnatural environment.  The river is also greatly diminished from what it used to be due to the extreme drought in Southern California.  The river is shallower, slower moving, and has less ice melt coming from the mountains, all of which factor into an increase in temperature.  Our goal of this study is to discover whether or not the Santa Ana suckers are coping with this dramatic increase in temperature by moving to cooler sections of the stream throughout the day.  
+The Santa Ana sucker is a 16 cm fish that lives in the rivers of Southern California.  They have recently been placed on the endangered species list, partially due to their losing over 70 percent of their habitat (FWS 2012). Also, in the 1960s, the habitat of the suckers would range from 10-26\textdegree~C, but when we tested the water in September 2016, we found temperatures in the Santa Ana river up to 35.5\textdegree~C \cite{greenfield70}.  This rise in temperature is most likely due to the extreme industrialization of the stream; much of it runs over concrete, which heats up to extreme temperatures in the sunlight.  A majority of the stream water also comes from discharge from a sewage treatment plant upstream, creating an unhealthy and unnatural environment.  The river is also greatly diminished from what it used to be due to the extreme drought in Southern California.  The river is shallower, slower moving, and has less ice melt coming from the mountains, all of which factor into an increase in temperature.  Our goal of this study is to discover whether or not the Santa Ana suckers are coping with this dramatic increase in temperature by moving to cooler sections of the stream throughout the day.  
 
 
 
