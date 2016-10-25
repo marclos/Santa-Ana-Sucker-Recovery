@@ -285,10 +285,15 @@ Downstream BOD5= 27.3493 mg/L
 
 The temperature data we collected with an analogue thermometer was too coarse to really be useful, because we took all our measurements in one afternoon and could only take temperature measurments at a resolution of whole degrees celsius. For that reason, we instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of range of temperature (*C) experienced at each site. 
 
+This is describing the figure: (figure \ref{fig:tempalgae})
+\begin{figure}
 << figure=TRUE >>=
 plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
 abline(lm(Algae~Temp_range,importupdated))
 @
+\caption{Ths is caption}
+\label{fig:tempalgae}
+\end{figure}
 <<<<<<< HEAD
 While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yilded the much better p-value of 3.49e-05. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
 
