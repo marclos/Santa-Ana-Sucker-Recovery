@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:29
+=======
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:31
+>>>>>>> 7e761f7a0af2c4fcbbacb90c5907be495b0ec0bb
 entering extended mode
  %&-line parsing enabled.
 **Tuesday_1_Report_Outline.tex
@@ -210,9 +214,15 @@ File: ts1aer.fd
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
 (Font)              Font shape `TS1/cmr/m/n' tried instead on input line 35.
 
+<<<<<<< HEAD
 Overfull \hbox (2.85312pt too wide) in paragraph at lines 58--59
 []\T1/aer/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-g
 ae per-cent cover, canopy
+=======
+Overfull \hbox (3.1395pt too wide) in paragraph at lines 106--107
+[]\OT1/cmr/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-
+gae per-cent cover, canopy
+>>>>>>> 7e761f7a0af2c4fcbbacb90c5907be495b0ec0bb
  []
 
 
@@ -224,6 +234,7 @@ File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
 
 <use Figures/SantaAna_SatelliteImage.pdf> [4] [5 <./Figures/SantaAna_SatelliteI
 mage.pdf>]
+<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for T1+aett on input line 100.
 
  (/usr/share/texmf/tex/latex/ae/t1aett.fd
@@ -233,6 +244,129 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf> [8 <./Figures/Temp.pdf>] [9] (./Tuesday_1_Report_Outlin
 e.aux) ) 
+=======
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Package color Info: Redefining color shadecolor on input line 148.
+
+Overfull \hbox (158.9956pt too wide) in paragraph at lines 150--150
+[][]\OT1/cmtt/m/n/10 updateddata[][]=[] []"/home/CAMPUS/fcl02013/Santa-Ana-Suck
+er-Recovery/Data/Data_TUES_1/updatedtemps.csv"[][] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 151.
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ô in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+Missing character: There is no Å in font cmr10!
+[6]
+Package color Info: Redefining color shadecolor on input line 171.
+
+Overfull \hbox (536.99231pt too wide) in paragraph at lines 173--173
+[][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Temp_range,importupdated[][
+]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]
+"Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predictor of Algae A
+bundance"[][],[][]las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-2-1.pdf, id=40, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-2-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 177--178
+[][] 
+ []
+
+[7]
+Package color Info: Redefining color shadecolor on input line 183.
+
+Overfull \hbox (531.74236pt too wide) in paragraph at lines 185--185
+[][]\OT1/cmtt/m/n/10 plot[][](importupdated[][]$[][]Canopy,importupdated[][]$[]
+[]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Can
+opy Cover Index"[][],[][]main[] []=[][]"Canopy Cover as a predictor of Algae Ab
+undance"[][],[][]las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-3-1.pdf, id=45, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-3-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 189--190
+[][] 
+ []
+
+[8 <./figure/unnamed-chunk-2-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 194.
+
+Overfull \hbox (484.49277pt too wide) in paragraph at lines 196--196
+[][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Sediment,importupdated,[] []ylab
+[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed Composition"[][]
+,[][]main[] []=[][]"Bed Composition as a predictor of Algae Abundance"[][],[][]
+las[][]=[][]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-4-1.pdf, id=55, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-4-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 199--200
+[][] 
+ []
+
+[9 <./figure/unnamed-chunk-3-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 204.
+
+Overfull \hbox (426.74327pt too wide) in paragraph at lines 206--206
+[][]\OT1/cmtt/m/n/10 boxplot[][](Algae[][]~[][]Site_new,importupdated,[] []ylab
+[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site name"[][],[][]m
+ain[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],[][]las[][]=[][
+]1[][])[][] 
+ []
+
+<figure/unnamed-chunk-5-1.pdf, id=65, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+
+<use figure/unnamed-chunk-5-1.pdf>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 209--210
+[][] 
+ []
+
+[10 <./figure/unnamed-chunk-4-1.pdf>]
+<Figures/Temp.pdf, id=75, 505.89pt x 505.89pt>
+File: Figures/Temp.pdf Graphic file (type pdf)
+ <use Figures/Temp.pdf>
+Overfull \hbox (160.88875pt too wide) in paragraph at lines 219--220
+[][] 
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+[11 <./figure/unnamed-chunk-5-1.pdf>] [12 <./Figures/Temp.pdf>] [13]
+(./Tuesday_1_Report_Outline.aux) ) 
+>>>>>>> 7e761f7a0af2c4fcbbacb90c5907be495b0ec0bb
 Here is how much of TeX's memory you used:
  1838 strings out of 256214
  24641 string characters out of 1917000
@@ -240,6 +374,7 @@ Here is how much of TeX's memory you used:
  5089 multiletter control sequences out of 10000+200000
  29370 words of font info for 63 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
+<<<<<<< HEAD
  35i,6n,21p,2016b,214s stack positions out of 5000i,500n,6000p,200000b,15000s
  </home/CAMPUS/oih01925/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen
 /ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/sh
@@ -249,6 +384,17 @@ ky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share
 m/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsltt10.pfb></usr/share/t
 exmf/fonts/type1/bluesky/cm/cmti10.pfb>
 Output written on Tuesday_1_Report_Outline.pdf (9 pages, 353138 bytes).
+=======
+ 25i,6n,19p,2016b,246s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/fcl02013/.texlive2007/texmf-va
+r/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/blue
+sky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/sha
+re/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky
+/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/te
+xmf/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
+cmtt10.pfb>
+Output written on Tuesday_1_Report_Outline.pdf (13 pages, 369748 bytes).
+>>>>>>> 7e761f7a0af2c4fcbbacb90c5907be495b0ec0bb
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
