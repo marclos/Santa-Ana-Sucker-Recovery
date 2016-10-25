@@ -1,0 +1,18 @@
+#ANOVAProcedures
+
+read.csv(file.choose())
+
+mydataGood= "/home/CAMPUS/vesj2015/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/AllParametersGood.csv"
+
+importGood=read.csv(mydataGood)
+
+summary(importGood)
+
+hist(importGood$Algae)
+
+hist(importGood$Sediment)
+
+hist(importGood$Temperature)
+
+hist(importGood$Canopy)
+

@@ -71,7 +71,31 @@ The following code was used to import data into rstudio, assign a file path, and
 \begin{alltt}
 \hlstd{updateddata}\hlkwb{=} \hlstr{"/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"}
 \hlstd{importupdated}\hlkwb{=}\hlkwd{read.csv}\hlstd{(updateddata)}
+\hlkwd{summary}\hlstd{(importupdated)}
 \end{alltt}
+\begin{verbatim}
+##        ID       Site      Algae           Sediment       Temperature   
+##  Min.   : 1.0   A:9   Min.   :  0.00   Min.   :0.0000   Min.   :28.00  
+##  1st Qu.: 7.5   B:9   1st Qu.:  0.00   1st Qu.:0.0000   1st Qu.:29.00  
+##  Median :14.0   C:9   Median : 50.00   Median :1.0000   Median :29.00  
+##  Mean   :14.0         Mean   : 48.52   Mean   :0.5926   Mean   :28.89  
+##  3rd Qu.:20.5         3rd Qu.:100.00   3rd Qu.:1.0000   3rd Qu.:29.00  
+##  Max.   :27.0         Max.   :100.00   Max.   :1.0000   Max.   :30.00  
+##      Canopy          Site_new    Temp_min        Temp_max    
+##  Min.   : 0.000   Min.   :2   Min.   :25.12   Min.   :30.25  
+##  1st Qu.: 3.000   1st Qu.:2   1st Qu.:25.12   1st Qu.:30.25  
+##  Median :11.000   Median :3   Median :25.90   Median :30.76  
+##  Mean   : 8.593   Mean   :3   Mean   :26.13   Mean   :30.79  
+##  3rd Qu.:14.000   3rd Qu.:4   3rd Qu.:27.37   3rd Qu.:31.37  
+##  Max.   :15.000   Max.   :4   Max.   :27.37   Max.   :31.37  
+##    Temp_mean       Temp_range   
+##  Min.   :27.46   Min.   :3.390  
+##  1st Qu.:27.46   1st Qu.:3.390  
+##  Median :27.94   Median :5.130  
+##  Mean   :27.81   Mean   :4.663  
+##  3rd Qu.:28.03   3rd Qu.:5.470  
+##  Max.   :28.03   Max.   :5.470
+\end{verbatim}
 \end{kframe}
 \end{knitrout}
 \subsection{Summary Statistics}
