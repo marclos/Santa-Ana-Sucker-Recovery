@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:07
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:58
 entering extended mode
  %&-line parsing enabled.
 **Videography_table.tex
@@ -142,29 +142,29 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )) (./Videography_table.aux)
 \openout1 = `Videography_table.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 54.
+(Font)              <7> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 54.
+(Font)              <5> on input line 56.
 
 
 ! LaTeX Error: Illegal character in array arg.
@@ -173,7 +173,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
+l.56 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -185,7 +185,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
+l.56 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -197,7 +197,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
+l.56 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -209,7 +209,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
+l.56 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -221,37 +221,44 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
+l.56 ...{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
                                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (1.51544pt too wide) in paragraph at lines 61--61
+Overfull \hbox (1.51544pt too wide) in paragraph at lines 63--63
 []\OT1/cmr/m/n/10 Afternoon| 
  []
 
 
-Overfull \hbox (31.61278pt too wide) in paragraph at lines 54--64
+Overfull \hbox (31.61278pt too wide) in paragraph at lines 56--66
+[][] 
+ []
+
+<reallygoodcrop.png, id=1, 841.1425pt x 588.1975pt>
+File: reallygoodcrop.png Graphic file (type png)
+ <use reallygoodcrop.png>
+Overfull \hbox (75.57022pt too wide) in paragraph at lines 74--75
 [][] 
  []
 
 [1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-(./Videography_table.aux) ) 
+ <./reallygoodcrop.png>] (./Videography_table.aux) ) 
 Here is how much of TeX's memory you used:
- 1115 strings out of 256214
- 15060 string characters out of 1917000
- 61565 words of memory out of 1500000
- 4439 multiletter control sequences out of 10000+200000
+ 1121 strings out of 256214
+ 15173 string characters out of 1917000
+ 61590 words of memory out of 1500000
+ 4443 multiletter control sequences out of 10000+200000
  3640 words of font info for 14 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  25i,10n,19p,260b,209s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb>
-Output written on Videography_table.pdf (1 page, 12485 bytes).
+</usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmr10.pfb>
+Output written on Videography_table.pdf (1 page, 4344023 bytes).
 PDF statistics:
- 10 PDF objects out of 1000 (max. 8388607)
+ 12 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

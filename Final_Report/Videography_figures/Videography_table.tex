@@ -48,6 +48,8 @@
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
+\usepackage{graphicx}
+\graphicspath{ {/videography_figures}}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 \begin{table}
@@ -64,6 +66,12 @@
 \caption{Look at me}
 \label{tab:summarystat}
 \end{table}
-This is a table (\ref{tab:summarystat})
+This is a table (Table \ref{tab:summarystat})
 
+
+ 
+\begin{figure}
+\includegraphics[scale=.5]{reallygoodcrop}
+
+\end{figure}
 \end{document}
