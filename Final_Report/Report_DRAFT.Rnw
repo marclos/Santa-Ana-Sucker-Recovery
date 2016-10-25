@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{natbib}
 \usepackage{times}
 
 \newcommand{\BibTeX}{{\sc Bib}\TeX}
@@ -16,7 +17,24 @@
 
 \section{Introduction}
 
-The Santa Ana sucker is a 16 cm fish that lives in the rivers of Southern California.  They have recently been placed on the endangered species list, partially due to their losing over 70 percent of their habitat (FWS 2012). Also, in the 1960s, the habitat of the suckers would range from 10-26°C, but when we tested the water in September 2016, we found temperatures in the Santa Ana river up to 35.5°C (Greenfield, Ross \& Deckert 1970).  This rise in temperature is most likely due to the extreme industrialization of the stream; much of it runs over concrete, which heats up to extreme temperatures in the sunlight.  A majority of the stream water also comes from discharge from a sewage treatment plant upstream, creating an unhealthy and unnatural environment.  The river is also greatly diminished from what it used to be due to the extreme drought in Southern California.  The river is shallower, slower moving, and has less ice melt coming from the mountains, all of which factor into an increase in temperature.  Our goal of this study is to discover whether or not the Santa Ana suckers are coping with this dramatic increase in temperature by moving to cooler sections of the stream throughout the day.  
+\subsection{Testing Citations}
+
+\LaTeX{} is a typesetting system developed by Leslie
+Lamport\citet{lamport94}.  It builds on foundations created by Donald
+Knuth's \TeX{} system\citep{knuth79}.  \TeX{} became very popular within
+the scientiic community because it was very good at producing
+mathematical manuscripts.  It was extremely powerful and provided the
+user with exceptional control of the presentation of their documents.
+In the 80s, Lamport began developing \LaTeX, which was designed to add a
+layer of abstraction on top of \TeX{} which allows the user to focus
+more on the document structure, rather than getting too bogged down with
+presentation issues.  \LaTeX{} also added extra functionality through
+auxiliary programs that can generate bibliographies, tables of contents,
+indices, tables, cross-references and figures.
+
+\subsection{Scope of Problme}
+
+The Santa Ana sucker is a 16 cm fish that lives in the rivers of Southern California.  They have recently been placed on the endangered species list, partially due to their losing over 70 percent of their habitat (FWS 2012). Also, in the 1960s, the habitat of the suckers would range from 10-26°C, but when we tested the water in September 2016, we found temperatures in the Santa Ana river up to 35.5°C \cite{greenfield70}.  This rise in temperature is most likely due to the extreme industrialization of the stream; much of it runs over concrete, which heats up to extreme temperatures in the sunlight.  A majority of the stream water also comes from discharge from a sewage treatment plant upstream, creating an unhealthy and unnatural environment.  The river is also greatly diminished from what it used to be due to the extreme drought in Southern California.  The river is shallower, slower moving, and has less ice melt coming from the mountains, all of which factor into an increase in temperature.  Our goal of this study is to discover whether or not the Santa Ana suckers are coping with this dramatic increase in temperature by moving to cooler sections of the stream throughout the day.  
 
 
 
@@ -301,7 +319,12 @@ Future experiments can improve upon our methods by using the optimum amount of s
 
 \section{Literature Cited}
 
+\bibliographystyle{apalike}
+\bibliography{report}
+
 Greenfield, D. W., Ross, S. T., \& Deckert, G. D. (1970). Some aspects of the life history of the Santa Ana sucker, Catostomus (Pantosteus) santaanae (Snyder). Calif. Fish Game, 56(3), 166-179. 
+
+
 
 \section{Appendix: Detailed Methods}
 
@@ -321,42 +344,5 @@ Next, we walked approximately 20 minutes upstream to another covered pool next t
 We returned at approximately 2 pm.  We took out the camera at the downstream site, replaced the memory card and the battery pack, hit record, and replaced the camera exactly as it was positioned previously.  We then walked upstream and did the same thing with the second camera.  After returning, we cleared the memory cards and plugged in the battery packs.
 Our last recording session was at 8 am the next morning.  We replaced the memory cards and battery packs again and returned the cameras to their positions.  One of us returned the next day to collect the cameras.
 
-\LaTeX{} is a typesetting system developed by Leslie
-Lamport\cite{lamport94}.  It builds on foundations created by Donald
-Knuth's \TeX{} system\cite{knuth79}.  \TeX{} became very popular within
-the scientiic community because it was very good at producing
-mathematical manuscripts.  It was extremely powerful and provided the
-user with exceptional control of the presentation of their documents.
-In the 80s, Lamport began developing \LaTeX, which was designed to add a
-layer of abstraction on top of \TeX{} which allows the user to focus
-more on the document structure, rather than getting too bogged down with
-presentation issues.  \LaTeX{} also added extra functionality through
-auxiliary programs that can generate bibliographies, tables of contents,
-indices, tables, cross-references and figures.
-
-\section{How to learn more}
-Here are some well established resources to help you learn more about
-this excellent system.
-
-\begin{itemize}
-	
-	\item General \LaTeX{} resources - the excellent \LaTeX{}
-Companion\cite{goossens93} is a broad, yet in depth look at the most
-important aspects.
-
-	\item Graphics - take a look at Rahtz's\cite{rahtz89} survey of graphics
-techniques in \TeX. 
-
-	\item Bibliographies - the best place to start would be the
-\BibTeX{} documentation\cite{patashnik88}.
-
-	\item Extras - The CTAN archives\cite{greenwade93} contain a vast
-number of supplimentary features, such as packages, macros, styles,
-etc., that can extend the potential of \LaTeX{} even further.
-
-\end{itemize}
-
-\bibliographystyle{plain}
-\bibliography{sample}
 
 \end{document}

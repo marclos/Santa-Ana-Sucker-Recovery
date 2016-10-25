@@ -1,34 +1,19 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{}
 
-\bibitem{goossens93}
-Michel Goossens, Frank Mittlebach, and Alexander Samarin.
-\newblock {\em The Latex Companion}.
-\newblock Addison-Wesley, Reading, Massachusetts, 1993.
+\bibitem[Greenfield et~al., 1970]{greenfield70}
+Greenfield, D.~W., Ross, S.~T., and Deckert, G.~D. (1970).
+\newblock Some aspects of the life history of the santa ana sucker, catostomus
+  (pantosteus) santaanae (snyder).
+\newblock {\em Calif. Fish Game}, 56(3):166--179.
 
-\bibitem{greenwade93}
-George~D. Greenwade.
-\newblock The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN}).
-\newblock {\em TUGBoat}, 14(3):342--351, 1993.
-
-\bibitem{knuth79}
-Donald~E. Knuth.
+\bibitem[Knuth, 1979]{knuth79}
+Knuth, D.~E. (1979).
 \newblock {\em Tex and Metafont, New Directions in Typesetting}.
-\newblock American Mathematical Society and Digital Press, Stanford, 1979.
+\newblock American Mathematical Society and Digital Press, Stanford.
 
-\bibitem{lamport94}
-Leslie Lamport.
+\bibitem[Lamport, 1994]{lamport94}
+Lamport, L. (1994).
 \newblock {\em Latex: A Document Preparation System}.
-\newblock Addison-Wesley, Reading, Massachusetts, second edition, 1994.
-
-\bibitem{patashnik88}
-Oren Patashnik.
-\newblock {B}ib{T}e{X}ing. documentation for general {B}ib{T}e{X} users.
-\newblock Electronic document accompanying BibTeX distribution, 1988.
-
-\bibitem{rahtz89}
-Sebastian Rahtz.
-\newblock A survey of {T}ex and graphics.
-\newblock Technical Report CSTR 89-7, Department of Electronics and Computer
-  Science, University of Southampton, UK, 1989.
+\newblock Addison-Wesley, Reading, Massachusetts, second edition.
 
 \end{thebibliography}
