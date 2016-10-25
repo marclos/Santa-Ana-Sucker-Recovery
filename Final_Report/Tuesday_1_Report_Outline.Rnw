@@ -121,9 +121,12 @@ Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive v
 boxplot(Algae~Sediment,importupdated, ylab="Algae Abundance (% cover)",xlab="Bed Composition",main ="Bed Composition as a predictor of Algae Abundance",las=1)
 @
 Bed composition did have a stronger relationship with Alage Abanundance, as shown in the figure above. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
+\begin{figure}
 << figure=TRUE >>=
 boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Site name",main ="Reach Site as a predictor of Algae Abundance",las=1)
 @
+\end{figure}
+
 As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp_range value. Therefore, the high predictive value of temp_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. 
 =======
 >>>>>>> 4d209e808746e9ef3b8e29225dd53b12dcd8e799
@@ -135,6 +138,24 @@ The temperature data suggests... (Figure \ref{Temp}).
 \caption{Temperature time...}
 \label{Temp}
 \end{figure}
+
+\subsection{Discussion}
+
+Water temperature vs Algae Abundance: Our temperature data is coarse, measured in whole degrees, and has no predictive value. Data collection was limited to of one afternoon. The P-value was 0.446 for a linear regression testing correlation between water temperature and algae abundance. 
+We cannot reject the null hypothesis of no relationship between the two parameters.
+However, Fish and Wildlife Service employee, Kai Pelenscar, suggested that temperature variation, rather than absolute temperature, might be the  controlling factor of algae abundance. 
+
+
+We borrowed data from N. Larson and Sophie J., and assigned their measured ranges of temp to each site. We redid our linear regression with temp range at each site as the predictor variable, and this time got a very strong relationship, with a p-value: 3.49e-05.
+
+
+There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an adjusted R-squared of only 0.4826, there are clearly other important variables at work.
+
+
+Canopy Cover was a very poor predictor of Algae Abundance, with no predictive value. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis of no difference.
+
+
+Bed composition did have a stronger relationship with Alage Abundance, as sjhown in the figure above. 0 = fine sediment, while 1 = coarse sediment. Our Pr(>F)=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future.
 
 \section{Conclusion and Recommendations}
 There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100 percent algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 percent level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 

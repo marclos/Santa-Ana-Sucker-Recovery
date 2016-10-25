@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 12:45
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 15:47
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -374,9 +374,9 @@ Overfull \hbox (160.88875pt too wide) in paragraph at lines 319--320
 [][] 
  []
 
-Package color Info: Redefining color shadecolor on input line 333.
+Package color Info: Redefining color shadecolor on input line 335.
 
-Overfull \hbox (663.0pt too wide) in paragraph at lines 335--335
+Overfull \hbox (663.0pt too wide) in paragraph at lines 337--337
 [][]\OT1/pcr/b/n/10 plot[][]\OT1/pcr/m/n/10 (importupdated[][]$[][]Temp_range,i
 mportupdated[][]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[]
 []xlab[][]=[][]"Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predi
@@ -387,37 +387,27 @@ ctor of Algae Abundance"[][],[][]las[][]=[][]1[][])[][]
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-2-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 339--340
-[][] 
- []
+Package color Info: Redefining color shadecolor on input line 351.
 
-[13] [14 <./Figures/Temp.pdf>]
-Overfull \hbox (4.69682pt too wide) in paragraph at lines 342--344
-\OT1/ptm/m/n/10 abun-dance yielded p-value: 0.446 (can-not re-ject null hy-poth
--e-sis), us-ing the other teams's
- []
-
-Package color Info: Redefining color shadecolor on input line 346.
-
-Overfull \hbox (657.0pt too wide) in paragraph at lines 348--348
+Overfull \hbox (657.0pt too wide) in paragraph at lines 353--353
 [][]\OT1/pcr/b/n/10 plot[][]\OT1/pcr/m/n/10 (importupdated[][]$[][]Canopy,impor
 tupdated[][]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xl
 ab[][]=[][]"Canopy Cover Index"[][],[][]main[] []=[][]"Canopy Cover as a predic
 tor of Algae Abundance"[][],[][]las[][]=[][]1[][])[][] 
  []
 
-<figure/unnamed-chunk-3-1.pdf, id=71, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-3-1.pdf, id=56, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-3-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 352--353
+Overfull \hbox (15.0pt too wide) in paragraph at lines 357--358
 [][] 
  []
 
-[15 <./figure/unnamed-chunk-2-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 358.
+[13] [14 <./Figures/Temp.pdf>] [15 <./figure/unnamed-chunk-2-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 363.
 
-Overfull \hbox (603.0pt too wide) in paragraph at lines 360--360
+Overfull \hbox (603.0pt too wide) in paragraph at lines 365--365
 [][]\OT1/pcr/b/n/10 boxplot[][]\OT1/pcr/m/n/10 (Algae[][]~[][]Sediment,importup
 dated,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed C
 omposition"[][],[][]main[] []=[][]"Bed Composition as a predictor of Algae Abun
@@ -428,14 +418,14 @@ dance"[][],[][]las[][]=[][]1[][])[][]
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-4-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 363--364
+Overfull \hbox (15.0pt too wide) in paragraph at lines 368--369
 [][] 
  []
 
 [16 <./figure/unnamed-chunk-3-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 369.
+Package color Info: Redefining color shadecolor on input line 374.
 
-Overfull \hbox (537.0pt too wide) in paragraph at lines 371--371
+Overfull \hbox (537.0pt too wide) in paragraph at lines 376--376
 [][]\OT1/pcr/b/n/10 boxplot[][]\OT1/pcr/m/n/10 (Algae[][]~[][]Site_new,importup
 dated,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site 
 name"[][],[][]main[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],
@@ -446,7 +436,7 @@ name"[][],[][]main[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-5-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 374--375
+Overfull \hbox (15.0pt too wide) in paragraph at lines 379--380
 [][] 
  []
 
@@ -469,19 +459,19 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
  [21] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
- 1634 strings out of 256214
- 21693 string characters out of 1917000
+ 1635 strings out of 256214
+ 21708 string characters out of 1917000
  70493 words of memory out of 1500000
- 4900 multiletter control sequences out of 10000+200000
+ 4901 multiletter control sequences out of 10000+200000
  22699 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,7n,20p,1352b,248s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,7n,20p,1352b,299s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr
 /share/texmf/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texmf/fonts/type1/u
 rw/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (21 pages, 408041 bytes).
+Output written on Report_DRAFT.pdf (21 pages, 408038 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
