@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 14:46
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 14:47
 entering extended mode
  %&-line parsing enabled.
 **Videography_table.tex
@@ -167,6 +167,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 54.
 
 ! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.56 ...mn{8}{|c|}{Videography Summary Statistics}
+                                                   \\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
 l.58  Section & Min & 1st Quartile & Mean &
@@ -194,7 +203,7 @@ in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
 
-Overfull \hbox (61.43304pt too wide) in paragraph at lines 54--64
+Overfull \hbox (118.13068pt too wide) in paragraph at lines 54--64
 [][] 
  []
 
@@ -211,7 +220,7 @@ Here is how much of TeX's memory you used:
  645 hyphenation exceptions out of 8191
  25i,8n,19p,260b,119s stack positions out of 5000i,500n,6000p,200000b,15000s
 </usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb>
-Output written on Videography_table.pdf (1 page, 11282 bytes).
+Output written on Videography_table.pdf (1 page, 11276 bytes).
 PDF statistics:
  10 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
