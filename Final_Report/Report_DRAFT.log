@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 13:37
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 13:56
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -255,8 +255,13 @@ Overfull \hbox (9.3213pt too wide) in paragraph at lines 99--100
 S. C., & Sepúlveda,
  []
 
-[5] [6] [7] [8]
-Overfull \hbox (2.85312pt too wide) in paragraph at lines 188--189
+[5] [6] [7]
+Overfull \hbox (10.46239pt too wide) in paragraph at lines 173--180
+[][] 
+ []
+
+[8]
+Overfull \hbox (2.85312pt too wide) in paragraph at lines 186--187
 []\T1/aer/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-g
 ae per-cent cover, canopy
  []
@@ -273,24 +278,24 @@ File: Figures/SiteMap.pdf Graphic file (type pdf)
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf> [12]
 [13 <./Figures/Temp.pdf>]
-Overfull \hbox (10.89636pt too wide) in paragraph at lines 301--312
+Overfull \hbox (10.89636pt too wide) in paragraph at lines 299--310
 [][]
  []
 
 [14] [15] (./Report_DRAFT.bbl [16]) [17] [18] [19]
-Overfull \hbox (13.4067pt too wide) in paragraph at lines 384--385
+Overfull \hbox (13.4067pt too wide) in paragraph at lines 382--383
 \T1/aer/m/n/10 solved in 1 L dis-tilled wa-ter), Mag-ne-sium sul-fate so-lu-tio
 n (4.5 g MgSO4*7H2O
  []
 
 
-Overfull \hbox (3.1558pt too wide) in paragraph at lines 399--400
+Overfull \hbox (3.1558pt too wide) in paragraph at lines 397--398
 \T1/aer/m/n/10 blanks (af-ter cor-rec-tion for di-lu-tion and seed-ing) must be
  198+/- 30.5mg/L. 
  []
 
 
-Overfull \hbox (4.16641pt too wide) in paragraph at lines 402--403
+Overfull \hbox (4.16641pt too wide) in paragraph at lines 400--401
 []\T1/aer/m/n/10 Seed control--Calculate Seed Con-trol Fac-tor (SCF) us-ing [(D
 1-D2)*f], where 
  []
@@ -313,7 +318,7 @@ mf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
 r6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf/font
 s/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti10.pfb
 >
-Output written on Report_DRAFT.pdf (21 pages, 979284 bytes).
+Output written on Report_DRAFT.pdf (21 pages, 979510 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)

@@ -171,18 +171,16 @@ This data was collected at three reaches in the Rialto portion of the Santa Ana 
 \caption{caption}
 \begin{tabular}{llll}\hline
 Location & Latitude             & Longitude   & Description \\ \hline\hline
-Site 1  & 34\textdegree 2'5"N   &   & \\
-Site 2  &           &   & \\
-Site 3  &           &   & \\
-Site 4  &           &   & Pool, approximately 40-50 cm in depth\\
+Site 1  &    &   & Rialto Channel \\
+Site 2  & 34\textdegree 2'29"N          & 117\textdegree 21'15"W   & Above Rix Influx \\
+Site 3  & 34\textdegree 2'21"N          & 117\textdegree 21'20"W   & Below Rix Influx\\
+Site 4  & 34\textdegree 2'5"N           & 117\textdegree 21"17"W   & Pool, approximately 40-50 cm in depth\\ \hline
 \end{tabular}
 \end{table}
 
 Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
 
-Site 4 (plunge pool): 34* 2'5” N, 117 degrees 21'17” W 
-Site 3 (below conﬂuence): 34*2'21” N, 117*21'20” W 
-Site 2 (above conﬂuence): 34*2'29” N, 117*21'15” W. 
+The river was surrounded by a derelict lot filled with trash. It was very industrial, with many trucks idling by the roadside and industrial shipping buildings. Rip-rap to protect the channel levy. The area we walked through to approach the river was very sandy, with tire tracks. The river itself had some trash in it and was smaller than expected in contrast to rivers in other areas of the country, like the Pacific Northwest. 
 
 Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition.  
 
