@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\section{Data Description}
+
+Write some intro stuff here...
+
+
+\subsection{Importing Data}
+
+
+<<>>=
+file = "/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_Tues_Template.csv"
+import <- read.csv(file)
+
+@
+
+
+\subsection{Summary Statistics}
+
+Write some stuff about the summary here...
+<<>>=
+summary(import)
+@
+
+\subsection{Distribution}
+
+Write some stuff about the summary here...
+<< figure=TRUE >>=
+hist(import$Predictor)
+@
+
+
+Write some stuff about the summary here...
+<< figure=TRUE >>=
+hist(import$Response)
+@
+
+\section{Bias and Data Limitations}
+
+Write some stuff about the summary here...
+
+
+
+\end{document}

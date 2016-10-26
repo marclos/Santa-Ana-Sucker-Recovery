@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 15:02
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 16:09
 entering extended mode
  %&-line parsing enabled.
 **BOD_Report_Outline_Draft.tex
@@ -60,11 +60,13 @@ Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
-)
-(/usr/share/texmf/tex/latex/ltxmisc/framed.sty
-Package: framed 2003/07/21 v 0.8a: framed or shaded text with page breaks
-\FrameRule=\dimen105
-\FrameSep=\dimen106
+) (./framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip43
+\fb@frw=\dimen105
+\fb@frh=\dimen106
+\FrameRule=\dimen107
+\FrameSep=\dimen108
 )
 (/usr/share/texmf/tex/latex/base/alltt.sty
 Package: alltt 1997/06/16 v2.0g defines alltt environment
@@ -160,27 +162,16 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 55.
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 55.
-
-! Undefined control sequence.
-l.56 \SweaveOpts
-                {concordance=TRUE}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[1
-
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 58.
+(Font)              <12> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 58.
+(Font)              <8> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 58.
- [2]
-(./BOD_Report_Outline_Draft.toc
+(Font)              <6> on input line 57.
+ [1
+
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./BOD_Report_Outline_Dr
+aft.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -189,54 +180,42 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `BOD_Report_Outline_Draft.toc'.
 
- [3] [4]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
- PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<Figures/SantaAna_SatelliteImage.pdf, id=20, 614.295pt x 794.97pt>
-File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
-
-<use Figures/SantaAna_SatelliteImage.pdf> [5] [6 <./Figures/SantaAna_SatelliteI
-mage.pdf>]
-Overfull \hbox (13.72182pt too wide) in paragraph at lines 110--111
-\OT1/cmr/m/n/10 solved in 1 L dis-tilled wa-ter), Mag-ne-sium sul-fate so-lu-ti
-on (4.5 g MgSO4*7H2O
+ [2] [3]
+Overfull \hbox (2.964pt too wide) in paragraph at lines 98--99
+\OT1/cmr/m/n/10 dis-solved in 1 L dis-tilled wa-ter), Mag-ne-sium sul-fate so-l
+u-tion (4.5 g $\OML/cmm/m/it/10 MgSO[] \OMS/cmsy/m/n/10 ^^C
  []
 
-
-Overfull \hbox (3.47292pt too wide) in paragraph at lines 119--120
+[4]
+Overfull \hbox (3.47292pt too wide) in paragraph at lines 107--108
 \OT1/cmr/m/n/10 blanks (af-ter cor-rec-tion for di-lu-tion and seed-ing) must b
 e 198+/- 30.5mg/L. 
  []
 
-
-Overfull \hbox (4.49951pt too wide) in paragraph at lines 122--123
-[]\OT1/cmr/m/n/10 Seed control--Calculate Seed Con-trol Fac-tor (SCF) us-ing [(
-D1-D2)*f], where 
- []
-
-[7]
 Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
- [8] (./BOD_Report_Outline_Draft.aux) ) 
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no † in font cmr10!
+[5] [6] [7] (./BOD_Report_Outline_Draft.aux) ) 
 Here is how much of TeX's memory you used:
- 1159 strings out of 256214
- 15745 string characters out of 1917000
- 62583 words of memory out of 1500000
- 4464 multiletter control sequences out of 10000+200000
+ 1172 strings out of 256214
+ 15710 string characters out of 1917000
+ 63306 words of memory out of 1500000
+ 4481 multiletter control sequences out of 10000+200000
  8576 words of font info for 30 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,6n,19p,1281b,209s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/wjn02014/.texlive2007/tex
-mf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1
-/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></us
-r/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bl
-uesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/sha
-re/texmf/fonts/type1/bluesky/cm/cmti10.pfb>
-Output written on BOD_Report_Outline_Draft.pdf (8 pages, 318336 bytes).
+ 25i,6n,19p,1111b,189s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/daw02013/.texlive2
+007/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/font
+s/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.p
+fb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/
+type1/bluesky/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb><
+/usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1
+/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/s
+hare/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/blue
+sky/cm/cmti10.pfb>
+Output written on BOD_Report_Outline_Draft.pdf (7 pages, 83263 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

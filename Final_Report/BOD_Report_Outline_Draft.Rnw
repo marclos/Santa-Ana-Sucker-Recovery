@@ -4,7 +4,6 @@
 \author{2016 EA30 Students}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -15,14 +14,13 @@
 \section{Introduction}
 
 \subsection{Problem Statement}
-This report aims to determine whether the study of Biological Oxygen Demand (BOD) and water flow velocity are relevant to future conservation research for the endangered Santa Ana sucker \emph{C. santaanae}. The experiment seeks to gather information on the water quality of a section of the Santa Ana River and use this data to help answer the questions: \emph{Are the biochemical oxygen demand (BOD) levels healthy for sucker}, \emph{do differing levels affect the  abundance of individuals in certain sections of the river}, \emph{Are the flow rates in certain sections of the river optimum for sucker populations}, and \emph{do high- or low-flow events affect the number of individuals in the stream?} Because the river is regulated by a water treatment facility, we believe that BOD levels will be very low, increasing with distance from the facility. Because of this, we also expect high dissolved oxygen (DO) content and a high sucker presence. We additionally hypothesize that larger populations of the sucker will concentrate in low-flow areas that are nearby high-flow sections. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
-
+This report aims to determine whether Biochemical Oxygen Demand (BOD) and water flow velocity are relevant to future research regarding the endangered Santa Ana sucker \emph{C. santaanae}. We collected water quality data from the Santa Ana River to answer the following questions: \emph{Do BOD levels vary in different sections of the river}; \emph{Do differing BOD levels correlate with the abundance of individuals?}; and \emph{Do the water flow rates in different sections of the river correlate with sucker populations?} Because the section of the river we evaluated regularly receives discharge water from a nearby water treatment facility, we believe that BOD levels will be relatively low, around 10 mg/L, decreasing further from the discharge point. Where the BOD levels are lower, we expect higher fish count. We also hypothesize that larger populations of the sucker will concentrate near high-flow sections. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
 
 \subsection{Background (Literature Review)}
-A 2012 U.S. Fish and Wildlife Service report on the recovery of the endangered fish noted that specific tolerances to dissolved oxygen have not been determined for  Santa Ana Sucker[1]. In general, fish have been known to be at risk of suffocation when exposed to dissolved oxygen (D.O.) levels below 2 mg/L for only short periods of time[2]. The 2012 FWS report also notes that constant water flows are important to the availability of coarse substrate which the Sucker needs to spawn offspring and hide from predators. According to Evans et al. (2005), temporary reduction of flows can significantly reduce the amount of habitat for suckers.[3] Just last month, the Center for Biological Diversity reported that ``by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish.'' [4]
+In general, fish have been known to be at risk of suffocation when exposed to dissolved oxygen (D.O.) levels below 2 mg/L for only short periods of time[2]. A 2012 U.S. Fish and Wildlife Service report on the recovery of the endangered fish noted that specific tolerances to dissolved oxygen have not been determined for  Santa Ana Sucker[1]. The 2012 FWS report also notes that constant water flows are important to the availability of coarse substrate which the Sucker needs to spawn offspring and hide from predators. According to Evans et al. (2005), temporary reduction of flows can significantly reduce the amount of habitat for suckers.[3] Just last month, the Center for Biological Diversity reported that ``by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish.'' [4]
 
 \subsection{Objectives}
-We hope to measure BOD levels and water flow velocity in different areas of the Santa Ana River and correlate those measurements with FWS data about where the Sucker is living in the river.
+We measured BOD levels and water flow velocity in different areas of the Santa Ana River and correlated those measurements with camera observations of Sucker abundance in both sample locations.
 \begin{quote}
 Our null hypotheses are H0: Water flow velocity and/or BOD levels do not significantly correlate with prevalence of the Santa Ana Sucker.
 \end{quote}
@@ -33,32 +31,22 @@ If we can reject one or both of our null hypotheses, we can conclude that the st
 
 \section{Methods}
 
-\subsection{Site Descrition}
-
-We evaluated the Santa Ana River between... near Colton, California (Figure \ref{SAR_Image}). 
-
-\begin{figure}
-\includegraphics[width=1.00\textwidth]{Figures/SantaAna_SatelliteImage}
-\caption{Google Earth --Example of a map. What's wrong with this image?}
-\label{SAR_Image}
-\end{figure}
-
 \subsection{Field Methods}
 \subsubsection*{5-Day Biochemical Oxygen Demand Test (BOD5)}
-Approximately 1L of source river water was collected at each of two sites, one upstream location closer to the wastewater discharge facility, and one downstream location (fig. 1). Ideally, these would be transported to the laboratory for analysis within four hours.
+Approximately 1L of source river water was collected at each of two sites, one upstream location (Site 2) closer to the wastewater discharge facility, and one downstream location (Site 4), which was transported to the laboratory for analysis within four hours.
 
 \subsubsection*{Water Velocity Collection}
-At each of the corresponding water sample collection sites, water velocity was also measured using a SonTek FlowTracker Handheld Advanced probe, which emits sonar waves at a certain depth in the water column, and based on the feedback (20 pings) gives a velocity reading. Ideally, multiple readings would be taken at each site, after the probe is placed on a flat section of the riverbed where water appears to be flowing net in the same direction. 
+At each of the corresponding water sample collection sites, water velocity was also measured using a SonTek FlowTracker Handheld Advanced probe, which emits sonar waves at a certain depth in the water column, and based on the feedback (20 pings) gives a velocity reading. Ideally, multiple readings would be taken at each site, after the probe is placed on a flat section of the riverbed where water appears to be flowing in the same direction. 
 
 \subsection{Laboratory Methods}
 \subsubsection*{BOD5}
-Ideally within the same day of collection, water samples were analyzed for initial dissolved oxygen content and prepared for 5-day incubation.  
+Ideally within the same day of collection, water samples are analyzed for initial dissolved oxygen content and prepared for 5-day incubation.  
 \begin{itemize}
   \item Three different dilutions were used for each of two sites, with source water volumes of 25, 50, and 100 mL. 
   \item A seed suspension was prepared using PolySeed Seed Innoculum, and 4 mL of the solution was added to each 300 mL sample bottle. This solution was also used to create four seed blanks with seed volumes 15, 20, 25, and 30 mL.
-  \item Nitrification inhibitor was created by dissolving 2.0 g allylthiourea (ATU, C4H8N2S) in 1 L distilled water. 0.3 mL of the ATU solution was added to each source water sample, as well as to all seeded samples. 
+  \item Nitrification inhibitor was created by dissolving 2.0 g allylthiourea (ATU, $C_4H_8N_2S$) in 1 L distilled water. 0.3 mL of the ATU solution was added to each source water sample, as well as to all seeded samples. 
   \item A glucose-glutamic acid (GGA) solution was prepared by dissolving 150 mg each of dry glucose and glutamic acid in 1 L of distilled water, and was added to each of the four seed blanks, as well as the six source water samples. Three GGA blanks were also created with 6 mL of GGA solution in incubation bottles. 
-  \item Dilution water was created using 1 mL each phosphate buffer (8.5 g KH2PO4, 21.75 g K2HPO4, 33.4 g Na2HPO*7H2O, and 1.7 g NH4Cl dissolved in 1 L distilled water), Magnesium sulfate solution (4.5 g MgSO4*7H2O dissolved in 200 mL distilled water), Calcium chloride solution (5.5 g CaCl2 dissolved in 200 mL distilled water), and Ferric chloride solution (0.05 g FeCl3*6H2O dissolved in 200 mL distilled water), and added to the six source water samples, four GGA blanks, and three seeded blanks. Three dilution water blanks were also created using the same procedure diluted to 300 mL.
+  \item Dilution water was created using 1 mL each phosphate buffer (8.5 g $KH_2PO_4$, 21.75 g $K_2HPO_4$, 33.4 g $Na_2HPO*7H_2O$, and 1.7 g $NH_4Cl$ dissolved in 1 L distilled water), Magnesium sulfate solution (4.5 g $MgSO_4*7H_2O$ dissolved in 200 mL distilled water), Calcium chloride solution (5.5 g $CaCl_2$ dissolved in 200 mL distilled water), and Ferric chloride solution (0.05 g $FeCl_3*6H_2O$ dissolved in 200 mL distilled water), and added to the six source water samples, four GGA blanks, and three seeded blanks. Three dilution water blanks were also created using the same procedure diluted to 300 mL.
 \end{itemize}
 Initial DO readings were to be taken on all blanks and samples using a Thermo Scientific DO Probe with auto-spinning functionality. The bottles were then incubated in a dark area for 5 days, and DO readings were again taken.    
 
@@ -70,32 +58,48 @@ Using the seed blanks, glucose-glutamic acid blanks, and dilution water blanks, 
   \item Glucose-Glutamic Acid Check--The resulting average BOD for the 3 GGA blanks (after correction for dilution and seeding) must be 198+/- 30.5mg/L.
   \item Dilution water check--DO uptake after incubation must not be more than 0.20mg/L and preferably not more than 0.10 (before seed corrections). 
   \subitem Dilution Water--If dilution water blank exceeds 0.20 mg/L, clearly identify samples in data.
-  \item Seed control--Calculate Seed Control Factor (SCF) using [(D1-D2)*f], where
-  \subitem D1= initial DO of seed control, mg/L
-  \subitem D2= final DO after indubation, mg/L,
+  \item Seed control--Calculate Seed Control Factor (SCF) using 
+  \begin{equation}
+  [(D1-D2)*f], 
+  \end{equation}
+  where
+  \subitem $D_1$= initial DO of seed control, mg/L
+  \subitem $D_2$= final DO after indubation, mg/L,
   \subitem f= (vol. seed in diluted sample)/(vol. seed in seed control)
 \end{itemize}
 
 \subsubsection*{BOD5}
 BOD5 was calculated for viable samples according to Standard Methods for the Examination of Water and Wastewater, using the equation 
-BOD5, mg/L= ((D1-D2)-(S)Vs)/P, where 
-\subitem D1= initial DO, mg/L
-\subitem D2= final DO after incubation, mg/L
-
+BOD5,
+\begin{equation}
+mg/L= ((D_1-D_2)-(S)V_s)/P,
+\end{equation}
+where 
+\subitem $D_1$= initial DO, mg/L
+\subitem $D_2$= final DO after incubation, mg/L
+\subitem S= oxygen uptake of seed, ∆DO/mL of seed suspension added per bottle
+\subitem Vs= volume of seed in test bottle
+\subitem P= decimal volumetric fraction of sample used.
+The average of the resulting values for all viable samples was determined
 
 \section{Results}
-The Seed Control Factor was calculated for the four seed blanks, and the slope of the resulting values and the corresponding seed concentrations was determined. Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our BOD5 calculations on these data yielded the values:
+Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our $BOD_5$ calculations of these data yielded the values:
 
-\subitem Upstream BOD5= 22.069 mg/L 
-\subitem Downstream BOD5= 27.3493 mg/L 
+\subitem Site 2 $BOD_5$= 22.1 mg/L 
+\subitem Site 4 $BOD_5$= 27.3 mg/L 
+
+The average recorded water flow velocities were:
+
+\subitem Site 2: 0.27 ft/sec
+\subitem Site 4: 1.09 ft/sec 
+
 
 \section{Discussion}
-Our results were skewed due to several hiccups that occurred throughout the process of our experiment. The first time we collected our samples, said samples were not processed on the same day as collection. 
-We don’t have the initial BOD measurements and so our group had to think outside of the box and backpedal some in order to work backwards and acquire the numbers needed in order to make the vital calculations and check our work.
-When in the middle of checking the BOD of our samples after the 5 day incubation period we realized that we had not turned on the motor for the previous handful of samples as well as some in our initial stages. In order to accommodate this discrepancy, we decided to include spin v no spin as apart of our variables in our project to see the results we would get since there was such a huge margin between the numbers when the solutions were stirred and when they were not.
-In order to fill any gaps in our own research and numbers, we have also decided that it would be best that we correlate our results with those collected by the Fish and Wildlife service when they conducted their electroshock tests on the fish. 
+Due to the learning curve associated with performing a new experiment, procedural complications were encountered at several points in the experiment. As a result, initial DO content was not measured for the source water samples before incubation. We estimated a constant initial sample DO measurement using the DO of the seeded blanks. This decreased the accuracy of the BOD5 calculations, but gave a relative idea of the initial values. Inconsistent DO measuring methods also added to the inaccuracy of the final BOD5 results. Despite these procedural errors, our BOD5 measurements, 27.3493 mg/L at Site 4 and 22.069 mg/L at Site 2, did reach quality control parameters.
+
+It should also be noted that the water velocity averages were derived from a small sample size; three readings in total were taken, two from the Site 4 location and one from Site 2.
 
 \section{Conclusion and Recommendations}
-Future experiments can improve upon our methods by using the optimum amount of source water and dilution water to get the optimum about of BOD depletion. The ideal BOD depletion reading was given at 25 mL of source water and 275 mL dilution water. It would also be best if it is meticulously made sure of that the BOD is taken of the initial samples. Important to the process is to have every sample spun each time to allow for consistency and as much accuracy as possible with each BOD reading. 
+Future study of dissolved oxygen levels and water velocity in the Santa Ana River measure any correlations with therecent Fish and Wildlife Service electroshock population data. Though we did not have access to this data, we had access to a rough estimate of the Sucker population from video-counting. In a week, about 12 fish were counted at Site 2 and 671 fish at Site 4. So, many more fish were spotted where the river velocity was higher and where the $BOD_5$ levels were higher. Since BOD can be less than 2 mg/L in clear water and reach hundreds of mg/L in organic waste water, a difference of about 5 mg/L between Site 2 and Site 4 is very small. It is unlikely a threshhold was reached between 22.1 and 27.3 mg/L that made Site 2 unliveable for the sucker. The difference in velocity is more significant and also supports the referenced existing literature that says water flow velocity is one of the primary determinants of sucker population. We recommend future research on the Santa Ana Sucker population focus on water velocity.
 
 \end{document}

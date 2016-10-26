@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage{Sweave}
+\begin{document}
+\input{Meta_Tues_Template-concordance}
+
+\section{Data Description}
+
+Write some intro stuff here...
+
+
+\subsection{Importing Data}
+
+
+\begin{Schunk}
+\begin{Sinput}
+> file = "/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_Tues_Template.csv"
+> import <- read.csv(file)
+> 
+\end{Sinput}
+\end{Schunk}
+
+
+\subsection{Summary Statistics}
+
+Write some stuff about the summary here...
+\begin{Schunk}
+\begin{Sinput}
+> summary(import)
+\end{Sinput}
+\begin{Soutput}
+   Predictor        Response    
+ Min.   : 4.00   Min.   : 2.00  
+ 1st Qu.:12.50   1st Qu.:11.25  
+ Median :22.50   Median :18.50  
+ Mean   :22.00   Mean   :21.80  
+ 3rd Qu.:32.25   3rd Qu.:33.25  
+ Max.   :39.00   Max.   :55.00  
+\end{Soutput}
+\end{Schunk}
+
+\subsection{Distribution}
+
+Write some stuff about the summary here...
+\begin{Schunk}
+\begin{Sinput}
+> hist(import$Predictor)
+\end{Sinput}
+\end{Schunk}
+
+
+Write some stuff about the summary here...
+\begin{Schunk}
+\begin{Sinput}
+> hist(import$Response)
+\end{Sinput}
+\end{Schunk}
+
+\section{Bias and Data Limitations}
+
+Write some stuff about the summary here...
+
+
+
+\end{document}
