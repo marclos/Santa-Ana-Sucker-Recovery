@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  25 OCT 2016 17:08
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 08:42
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -279,7 +279,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
  [7]
-Overfull \hbox (4.00722pt too wide) in paragraph at lines 205--206
+Overfull \hbox (4.00722pt too wide) in paragraph at lines 201--202
 []\OT1/ptm/m/n/10 4 Wa-ter-proof Re-Fuel 6-Hour Ac-tion-Pack Bat-tery for Go-Pr
 o HERO by DigiPower 
  []
@@ -329,41 +329,41 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SantaAna_SatelliteImage.pdf):
- PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<Figures/SantaAna_SatelliteImage.pdf, id=30, 614.295pt x 794.97pt>
-File: Figures/SantaAna_SatelliteImage.pdf Graphic file (type pdf)
-
-<use Figures/SantaAna_SatelliteImage.pdf>
+pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SiteMap.pdf): PDF inclusion: 
+found PDF version <1.5>, but at most version <1.4> allowed
+<Figures/SiteMap.pdf, id=30, 614.295pt x 794.97pt>
+File: Figures/SiteMap.pdf Graphic file (type pdf)
+ <use Figures/SiteMap.pdf>
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [9] [10 <./Figures/SantaAna_SatelliteImage.pdf>] [11]
-Overfull \hbox (16.09677pt too wide) in paragraph at lines 300--301
+
+[9] [10 <./Figures/SiteMap.pdf>] [11]
+Overfull \hbox (16.09677pt too wide) in paragraph at lines 296--297
 []\OT1/ptm/m/n/10 Nitrification in-hibitor was cre-ated by dis-solv-ing 2.0 g a
 l-lylth-iourea (ATU, C4H8N2S)
  []
 
 
-Overfull \hbox (7.38701pt too wide) in paragraph at lines 306--312
+Overfull \hbox (7.38701pt too wide) in paragraph at lines 302--308
 []\OT1/ptm/m/n/10 Note that *Temp[]x* en-tries were bor-rowed with per-mis-sion
  from So-phie and Nicole's
  []
 
 [12]
-Overfull \hbox (9.8658pt too wide) in paragraph at lines 316--317
+Overfull \hbox (9.8658pt too wide) in paragraph at lines 312--313
 []\OT1/ptm/m/n/10 Minimum DO Depletion--Viable sam-ples must have min. DO de-pl
 e-tion of 2.0mg/L,
  []
 
 
-Overfull \hbox (1.35622pt too wide) in paragraph at lines 317--318
+Overfull \hbox (1.35622pt too wide) in paragraph at lines 313--314
 []\OT1/ptm/m/n/10 Glucose-Glutamic Acid Check--The re-sult-ing av-er-age BOD fo
 r the 3 GGA blanks
  []
 
 
-Overfull \hbox (4.81665pt too wide) in paragraph at lines 318--319
+Overfull \hbox (4.81665pt too wide) in paragraph at lines 314--315
 []\OT1/ptm/m/n/10 Dilution wa-ter check--DO up-take af-ter in-cu-ba-tion must n
 ot be more than 0.20mg/L
  []
@@ -389,191 +389,88 @@ Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-[13]
-Package color Info: Redefining color shadecolor on input line 349.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 350.
+[13] <Figures/Temp.pdf, id=58, 505.89pt x 505.89pt>
+File: Figures/Temp.pdf Graphic file (type pdf)
+ <use Figures/Temp.pdf>
+[14 <./Figures/Temp.pdf>]
+Package color Info: Redefining color shadecolor on input line 366.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 367.
 
  (/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (231.0pt too wide) in paragraph at lines 351--351
-[][]\OT1/pcr/m/n/10 updateddata[][]=[] []"/home/CAMPUS/fcl02013/Santa-Ana-Sucke
-r-Recovery/Data/Data_TUES_1/updatedtemps.csv"[][] 
- []
-
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 352.
-<Figures/Temp.pdf, id=58, 505.89pt x 505.89pt>
-File: Figures/Temp.pdf Graphic file (type pdf)
- <use Figures/Temp.pdf>
-Overfull \hbox (160.88875pt too wide) in paragraph at lines 361--362
-[][] 
- []
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 368.
 
-Package color Info: Redefining color shadecolor on input line 377.
-
-Overfull \hbox (663.0pt too wide) in paragraph at lines 379--379
+Overfull \hbox (663.0pt too wide) in paragraph at lines 368--368
 [][]\OT1/pcr/b/n/10 plot[][]\OT1/pcr/m/n/10 (importupdated[][]$[][]Temp_range,i
 mportupdated[][]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[]
 []xlab[][]=[][]"Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predi
 ctor of Algae Abundance"[][],[][]las[][]=[][]1[][])[][] 
  []
 
-<figure/unnamed-chunk-2-1.pdf, id=59, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-2-1.pdf, id=68, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-2-1.pdf>
-Package color Info: Redefining color shadecolor on input line 393.
-
-Overfull \hbox (657.0pt too wide) in paragraph at lines 395--395
-[][]\OT1/pcr/b/n/10 plot[][]\OT1/pcr/m/n/10 (importupdated[][]$[][]Canopy,impor
-tupdated[][]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xl
-ab[][]=[][]"Canopy Cover Index"[][],[][]main[] []=[][]"Canopy Cover as a predic
-tor of Algae Abundance"[][],[][]las[][]=[][]1[][])[][] 
+Overfull \hbox (0.23695pt too wide) in paragraph at lines 380--381
+[]\OT1/ptm/m/n/10 While us-ing our ab-so-lute tem-per-a-ture data as a pre-dic-
+tor of al-gae abun-dance yielded
  []
 
-<figure/unnamed-chunk-3-1.pdf, id=60, 505.89pt x 505.89pt>
+Package color Info: Redefining color shadecolor on input line 384.
+<figure/unnamed-chunk-3-1.pdf, id=69, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-3-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 399--400
-[][] 
- []
+Package color Info: Redefining color shadecolor on input line 395.
 
-[14] [15 <./Figures/Temp.pdf>] [16 <./figure/unnamed-chunk-2-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 405.
-
-Overfull \hbox (603.0pt too wide) in paragraph at lines 407--407
+Overfull \hbox (603.0pt too wide) in paragraph at lines 397--397
 [][]\OT1/pcr/b/n/10 boxplot[][]\OT1/pcr/m/n/10 (Algae[][]~[][]Sediment,importup
 dated,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed C
 omposition"[][],[][]main[] []=[][]"Bed Composition as a predictor of Algae Abun
 dance"[][],[][]las[][]=[][]1[][])[][] 
  []
 
-<figure/unnamed-chunk-4-1.pdf, id=84, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-4-1.pdf, id=70, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-4-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 410--411
-[][] 
- []
+Package color Info: Redefining color shadecolor on input line 409.
 
-[17 <./figure/unnamed-chunk-3-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 416.
-
-Overfull \hbox (537.0pt too wide) in paragraph at lines 418--418
+Overfull \hbox (537.0pt too wide) in paragraph at lines 411--411
 [][]\OT1/pcr/b/n/10 boxplot[][]\OT1/pcr/m/n/10 (Algae[][]~[][]Site_new,importup
 dated,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site 
 name"[][],[][]main[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],
 [][]las[][]=[][]1[][])[][] 
  []
 
-<figure/unnamed-chunk-5-1.pdf, id=94, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-5-1.pdf, id=71, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-5-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 421--422
-[][] 
- []
-
-[18 <./figure/unnamed-chunk-4-1.pdf>]
 Missing character: There is no ¬ in font ptmr7t!
 Missing character: There is no ∞ in font ptmr7t!
 Missing character: There is no ¬ in font ptmr7t!
 Missing character: There is no ∞ in font ptmr7t!
-Package color Info: Redefining color shadecolor on input line 426.
- [19 <./figure/unnamed-chunk-5-1.pdf>]
-Overfull \hbox (243.0pt too wide) in paragraph at lines 428--428
-[][]\OT1/pcr/m/n/10 newmetadata[] []<-[] []\OT1/pcr/b/n/10 read.csv[][]\OT1/pcr
-/m/n/10 ([][]"/home/CAMPUS/cmfa2015/Santa Ana Sucker/Data/Data_Tues_2/newmetada
-ta.csv"[][])[][] 
- []
+Package color Info: Redefining color shadecolor on input line 425.
 
-Package color Info: Redefining color shadecolor on input line 433.
-
-Overfull \hbox (339.0pt too wide) in paragraph at lines 435--435
+Overfull \hbox (339.0pt too wide) in paragraph at lines 427--427
 [][]\OT1/pcr/b/n/10 boxplot[][]\OT1/pcr/m/n/10 (Fish[][]~[][]Section,newmetadat
 a,[] []ylab[][]=[][]"Fish"[][],[][]xlab[][]=[][]"Time of Day"[][],[][]main[] []
 =[][]"Time of Day as a predictor of Fish"[][],[][]las[][]=[][]1[][])[][] 
  []
 
-<figure/unnamed-chunk-7-1.pdf, id=114, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-7-1.pdf, id=72, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-7-1.pdf>
-Overfull \hbox (15.0pt too wide) in paragraph at lines 438--439
-[][] 
- []
-
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.441 ...m}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|  }
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.441 ...m}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|  }
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.441 ...m}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|  }
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.441 ...m}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|  }
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.441 ...m}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|  }
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (32.27272pt too wide) in paragraph at lines 441--451
-[][] 
- []
-
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-[20 <./figure/unnamed-chunk-7-1.pdf>]
+ [15] [16 <./figure/unnamed-chunk-2-1.pdf>]
+[17 <./figure/unnamed-chunk-3-1.pdf>] [18 <./figure/unnamed-chunk-4-1.pdf>]
+[19 <./figure/unnamed-chunk-5-1.pdf>] [20 <./figure/unnamed-chunk-7-1.pdf>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
@@ -588,7 +485,8 @@ Missing character: There is no ¬ in font ptmr7t!
 Missing character: There is no ∞ in font ptmr7t!
 Missing character: There is no ¬ in font ptmr7t!
 Missing character: There is no ∞ in font ptmr7t!
- [21] (./Report_DRAFT.bbl)
+
+[21] (./Report_DRAFT.bbl)
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
@@ -606,22 +504,21 @@ Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-
-[24] (./Report_DRAFT.aux) ) 
+ [24] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
  1640 strings out of 256214
- 21860 string characters out of 1917000
- 70493 words of memory out of 1500000
+ 21780 string characters out of 1917000
+ 72493 words of memory out of 1500000
  4905 multiletter control sequences out of 10000+200000
  22699 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,8n,20p,1549b,299s stack positions out of 5000i,500n,6000p,200000b,15000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/
-share/texmf/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texmf/fonts/type1/ur
-w/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/s
-hare/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (24 pages, 420562 bytes).
+ 25i,7n,20p,1549b,336s stack positions out of 5000i,500n,6000p,200000b,15000s
+{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr
+/share/texmf/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texmf/fonts/type1/u
+rw/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/
+share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on Report_DRAFT.pdf (24 pages, 423935 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)

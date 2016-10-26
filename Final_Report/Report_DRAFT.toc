@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {2.7}Statistical Methods}{13}
 \contentsline {subsection}{\numberline {2.8}Statistical Methods}{14}
 \contentsline {section}{\numberline {3}Results}{14}
-\contentsline {section}{\numberline {4}Discussion}{20}
+\contentsline {section}{\numberline {4}Discussion}{21}
 \contentsline {section}{\numberline {5}Conclusion and Recommendations}{22}
 \contentsline {section}{\numberline {6}Literature Cited}{22}
 \contentsline {section}{\numberline {7}Appendix: Detailed Methods}{22}
