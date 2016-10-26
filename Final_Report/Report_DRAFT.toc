@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {4}Discussion}{14}
 \contentsline {subsection}{\numberline {4.1}Research Limitations}{16}
 \contentsline {section}{\numberline {5}Conclusion and Recommendations}{17}
-\contentsline {section}{\numberline {6}Literature Cited}{17}
-\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{18}
-\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{18}
-\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{19}
+\contentsline {section}{\numberline {6}Literature Cited}{18}
+\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{19}
+\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{19}
+\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{20}
