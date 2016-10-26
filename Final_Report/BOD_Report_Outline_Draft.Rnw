@@ -89,16 +89,20 @@ The Seed Control Factor was calculated for the four seed blanks, which determine
 \subitem Upstream BOD5= 22.069 mg/L 
 \subitem Downstream BOD5= 27.3493 mg/L 
 
+The average recorded water flow velocities were:
+\subitem Upstream: 0.27 ft/sec
+\subitem Downstream: 1.09 ft/sec 
+
 \section{Discussion}
-We don’t have the initial BOD measurements for the samples.
-We also took some of the measurements incorrectly.
-Downstream = About 40 fish Upstream = 0 fish
-Downstream BOD5= 27.3493 mg/L Upstream BOD5= 22.069 mg/L 
-Downstream 1.09 ft/sec Upstream 0.27 ft/sec
-Since there are correlations, we think that our independent variables, especially the water 
-velocity, are relevant to the study of Sucker populations.
+Due to the learning curve associated with performing a new experiment, procedural complications were encountered at several points in the experiment. As a result, initial DO content was not measured for the source water samples before incubation. We estimated a constant initial sample DO measurement using the DO of the seeded blanks. This decreased the accuracy of the BOD5 calculations, but gave a relative idea of the initial values. Inconsistent DO measuring methods also added to the inaccuracy of the final BOD5 results. Despite these procedural errors, our BOD5 measurements, 27.3493 mg/L at the downstream location and 22.069 mg/L at the upstream location, did reach quality control parameters.
+
+
+It should also be noted that the water velocity averages were derived from a small sample size; three readings in total were taken, two from the downstream location and one from the upstream.
 
 \section{Conclusion and Recommendations}
-Use the FWS electroshock data
-We additionally hypothesize that larger populations of the sucker will concentrate in low-flow areas that are nearby high-flow sections. 
+Future study of dissolved oxygen levels and water velocity in the Santa Ana River should correlate with recent Fish and Wildlife Service electroshock population data. Though we do not have access to this data, we do have access to a rough estimate of the Sucker population from video-counting. In a given time frame, about 40 fish were counted in the upstream location and 0 in the downstream location. 
+
+
+We recommend further study of water velocity in the Santa Ana River in the future. 
+
 \end{document}
