@@ -13,8 +13,8 @@
 \contentsline {subsection}{\numberline {2.5}Temperature Loggers}{11}
 \contentsline {subsection}{\numberline {2.6}BOD Methods}{12}
 \contentsline {subsection}{\numberline {2.7}Statistical Methods}{12}
-\contentsline {section}{\numberline {3}Results}{12}
-\contentsline {subsection}{\numberline {3.1}Habitat Quality}{12}
+\contentsline {section}{\numberline {3}Results}{13}
+\contentsline {subsection}{\numberline {3.1}Habitat Quality}{13}
 \contentsline {subsection}{\numberline {3.2}Fish Counts}{19}
 \contentsline {section}{\numberline {4}Discussion}{20}
 \contentsline {subsection}{\numberline {4.1}Research Limitations}{20}
