@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \section{Data Description}
 
