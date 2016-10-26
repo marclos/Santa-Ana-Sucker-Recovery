@@ -1,0 +1,99 @@
+\documentclass{article}
+
+\title{Temperature and the Santa Ana Sucker}
+\author{Sophie Janssen and Nicole Larson}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\subsection{Problem Statement}
+This experiment aims to see the true impact of fluctuating water temperature on the Santa Ana sucker (C. santaanae) population in the Rialto portion of the Santa Ana river in Southern California. Populations of the Santa Ana sucker have been declining and in peril since the mid-1950s; however, the lack of attention and careful actions have lead to its continued demise. The experiment has gathered water temperature data in four portions of the Santa Ana river, extending less than a mile along the river. Our original research question was to determine how does temperature affect the Santa Ana Sucker? Our null hypothesis was that the Santa Ana Suckers will be spread randomly through the river, without regard to possible temperature differences. There will also be no noticeable temperature abnormalities in the river. After collecting data and recognizing noticeable daily spikes in temperature, we expanded on our question to include several more driving questions regarding the relationship between water temperature and the Santa Ana sucker: does the frequency of temperature drops and spikes affect the sucker population and if so, in what way? Which portions of the river contain the most Santa Ana suckers and how much is this a result of the fluctuating temperatures? Is the Rialto plant contributing to the temperature spikes or can these fluctuations be written off as typical of the weather during these weeks?
+
+\subsection{Background (Literature Review)}
+From our background research, we found that many species of fish are affected by the temperature in their habitats. This is especially related to studies done in rivers with higher than normal temperatures, due to damming and/or climate change. Because the Santa Ana River is not a very big river and is subjected to large influxes of treated wastewater from the Rialto Channel and the Rix Influx, we hypothesized that the temperature may be abnormal in the river and therefore could be restricting the Suckers to their preferred location, site 4 - The Plunge Pool. We found that there were indeed daily spikes and lows in temperature. Site 1 and Site 2 had especially dramatic spikes, with Site 1 fluctuating up to 5.41 degrees a day. This fluctuation could have an impact on the Santa Ana Suckers, especially because according to research done by the US Fish and Wildlife Service, they can experience extreme mortality if water temperatures exceed 32.8 degrees Celsius. We would expect them to stick to water that is their optimum temperature, which is under 22 degrees Celsius, or to temperatures reasonably close to that. 
+ 
+\subsection{Background Research w/Citations} 
+
+Albertson, L.K., Koenig, L.E., Lewis, B.L., Zeug, S.C., Harrison, L.R., \& Cardinale, B.J. (2012). How Does Restored Habitat for Chinook Salmon (Oncorhynchus Tshawytscha) in the Merced River in California Compare with other Chinook Streams? River Research and Applications, 29(4), 469-482). doi: 10.1002/rra.1604
+
+By looking at Chinook salmon in the Merced river, restoration projects seemed to be failing to prevent the Chinook population from falling. The installation of gravel augmentation in a reconfigured channel seemed to have little impact on the salmon, suggesting that other factors were catalyzing the fall of the species. By comparing the restored portion with other portions of the Merced river, food web characteristics and flow discharge seemed to produce the same results on the various life stages of the salmon. However, higher temperatures, less woody debris, and minimal riparian cover seemed to limit populations in the restored portions. Restoration efforts are then presented with an added challenge of ensuring that every aspect of the ecosystem is beneficial to the species, which demands more work toward temperature regulation and attempts to restore the river bank. To see how the Santa Ana sucker would react to similar conservation efforts would be interesting in discussions in attempting to determine solutions. 
+
+Coulter, D. P., Höök, T. O., Mahapatra, C. T., Guffey, S. C., \& Sepúlveda, M. S. (2015). Fluctuating Water Temperatures Affect Development, Physiological Responses and Cause Sex Reversal in Fathead Minnows. Environmental Science \& Technology, 49(3), 1921-1928. doi:10.1021/es5057159
+
+Human activities can increase water temperature. Water-based organisms are sensitive to temperature change, especially young fish due to limited mobility. This paper explained how young Flathead Minnows exposed to warmer temperatures underwent a nondirectional sex reversal. This paper shows us how temperature can greatly affect fish and stress them out. Clearly, water temperature drastically affects fish, not necessarily in a positive way, and therefore, we should see if there is a correlation between stream temperature and where the Santa Ana Sucker chooses to live.
+
+Los Huertos, Marc. (2016). Thermal Properties of Water. Environmental Science of Aquatic Systems. 297-308.
+
+Temperature varies greatly in its impact on fish depending upon the conditions affecting the lake or river. Heat, temperature, thermal energy, and heat capacity all slightly change how heat is measured in an ecosystem. Water in general has a high heat capacity, which indicates its high specific heat. These aquatic systems therefore often retain their heat and are less susceptible to increase/decrease in temperature. Inflows/mixing can have an effect on water temperature but it is often hard to detect due to thermal stratification mixing, seasonal change in temperature profile depth, and small volume inflow in terms of fraction of the lake volume. This chapter sheds light that variations in temperature trigger chemicals dissolving/remaining, tend to raise/lower a fish’s body temperature to the same degree, etc. Temperature impacts many other features of water quality, which will be important to keep in mind going forward with the project.
+
+Sadler, K. (1980). Effect of the warm water discharge from a power station on fish populations in the river Trent. Journal Of Applied Ecology, 17(2):349-357.
+
+A power station discharged water that was on average 7 degrees Celsius above normal in the River Trent. This meant that in affected areas, the winter migration was delayed from Sep/Oct to Dec/Jan, while in unaffected areas, migration continued at normal times. Also, below the power station, fish preferred to live further downstream, in terms of diversity and population density. This tells us that fish are able to change their living patterns based on water temperature, and shows that fish were noticeably affected by the temperature change. 
+
+U.S. Fish \& Wildlife Service. 2012. Recovery Outline for Santa Ana sucker. Sacramento, California. 38 pp.
+
+This report discusses Santa Ana Suckers and possible recovery plans. In order to do so, it clearly outlines Sucker habitat preferences, behavior, and threats. We used this source to determine preferred temperature for the Santa Ana Sucker and in general to inform ourselves more about the fish. Little research has been done on specific threats to the Santa Ana Sucker, but the document did point out possible threats arising from hydrological modification and urban development in general. Sophie and I thought that potentially water coming out of a treatment plant could be a threat under hydrological modification or urban development, so that will be what our research focuses on.
+
+\subsection{Objectives}
+Our goal with this experiment was to find out whether or not temperature was affecting the population and/or livelihood of the Santa Ana Sucker in the Santa Ana River. Our null hypothesis was that the Santa Ana Suckers will be spread randomly through the river, without regard to possible temperature differences. There will also be no noticeable temperature abnormalities in the river. If this null hypothesis is questionable, due to a a correlation between temperature and fish populations, the U.S. Fish and Wildlife Service should follow up with the Rialto water facility to better regulate temperature and depth of the river.
+
+\subsection{Materials and Equipment}
+
+4 HOBO Tidbit Water Temperature Data Logger,
+1 Optic USB U-4 Base Station,
+1 Coupler,
+4 Green Garden stakes,
+Red flags,
+Yellow marking tape,
+Free Hoboware software,
+Transportation to and from the river,
+Ice Bath
+
+\subsection{Procedure}
+
+We obtained four HOBO Tidbit water temperature Data Loggers to set up at the Rialto Channel at Agua Mansa (site 1), another at the point where the Rix Influx meets the river (site 3), another just above that site (site 2), and a fourth in the pool where Suckers have previously been observed (site 4). Before going to the river, we programmed the loggers via our base station and the HOBOware software to collect water temperature data every 15 minutes. In order to start the data process, we put each logger into the coupler and pushed the level til the light was flashing. We then put them in the river by looping a garden stake through one, sticking it into the substrate, and securing it with rocks. We then put yellow marking tape on plants nearby and red flags along the bank to show where we left the main path. We repeated this for each site, making sure the loggers were secure and fairly hidden. After seven nights (for site 2) and eleven nights (for the other sites), we returned to the river and collected the loggers. In the lab, using the software, we loaded our data and transferred it to RStudio. Later, to calibrate the loggers, we put them in an ice bath for 6 minutes to ensure that the temperature settled around zero and each logger was measuring to the same temperature with the same accuracy.
+
+\subsection{Site Description}
+This data was collected in the Rialto portion of the Santa Ana river over a period of eleven nights for locations 1, 3, and 4, and seven nights for location 2. Location 4 was the plunge pool, located the furthest downstream. Location 3 was where the Rix influx was. Location 2 was upstream below the concrete channel and Location 1 was in the concrete Rialto channel. The pendant data logger collected data in degrees Celsius every fifteen minutes from 9/24/16 through 10/05/16, or until 10/1/16 for Location 2. 
+
+\begin{figure}
+\includegraphics[width=1.00\textwidth]{Figures/SantaAna_SatelliteImage}
+\caption{Google Earth --Example of a map. What's wrong with this image?}
+\label{SAR_Image}
+\end{figure}
+
+\subsection{Field Methods} 
+At each location, we used a garden stake to secure a logger in the river. We then marked the location using yellow marking tape and used red flag stakes in order to remember where in the river we left the loggers. We also secured the loggers using rocks to ensure they were less visible and would remain in place for a week. Later, we collected them and removed our flags and marking tape. 
+
+\subsection{Laboratory Methods}
+In the lab, we used an ice bath to calibrate the loggers. To do this, we put the loggers in an ice bath and left them there for an hour. We then checked to see what data they were reading. Ideally, if calibrated correctly, it would have been 0 degrees Celsius. All the loggers were calibrated within .2 degrees.
+
+\subsection{Statistical Methods}
+We used HoboWare to collect the data off the loggers, then moved it to Excel, clipped it appropriately, and made a graph and charts using r studio. 
+
+\section{Results}
+
+(Figure \ref{Temp}).
+
+\begin{figure}
+\includegraphics{Figures/Temp}
+\caption{Temperature time...}
+\label{Temp}
+\end{figure}
+
+\section{Discussion}
+The temperature data suggests that there is something abnormal happening in the river. There were pretty extreme spikes, especially at sites 1 and 2. Our original hypothesis when we saw this was to assume water spikes were occurring from the Rialto Channel and as they travelled down river, becoming less extreme. However, when we looked at the timing of these spikes, they did not correlate with each other, and the spikes further downstream were actually occurring before the spikes upstream. We are unsure why this happened. In terms of fish population, using the data from the Fish and Wildlife Service, as well as the data from Clare and Wendy's group, we realized that there were no fish counted at site 1, only one fish counted in the afternoon at site 2 at various points, no fish were found by the FWS at site 3, but many fish were observed by Clare and Wendy in the plunge pool at site 4. The data collected by Clare and Wendy’s group may not have been a very good indicator of population because the fish were constantly swimming around and only the fish in the foreground during the hours of videoing were counted. However, this does tell us that in general the fish were more abundant downstream, where the least extreme temperature spikes were occurring. 
+
+
+\section{Conclusion and Recommendations}
+
+
+\end{document}
