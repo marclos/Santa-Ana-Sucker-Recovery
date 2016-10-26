@@ -1,13 +1,17 @@
-\contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {subsection}{\numberline {1.1}Problem Statement}{3}
-\contentsline {subsection}{\numberline {1.2}Background Research}{3}
-\contentsline {subsection}{\numberline {1.3}Objectives}{3}
-\contentsline {subsection}{\numberline {1.4}Materials and Equipment}{4}
-\contentsline {section}{\numberline {2}Methods}{4}
-\contentsline {subsection}{\numberline {2.1}Site Description}{4}
-\contentsline {subsection}{\numberline {2.2}Field Methods}{4}
-\contentsline {subsection}{\numberline {2.3}Laboratory Methods}{6}
-\contentsline {subsection}{\numberline {2.4}Statistical Methods}{6}
-\contentsline {section}{\numberline {3}Results}{7}
-\contentsline {section}{\numberline {4}Discussion}{7}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{7}
+\contentsline {section}{\numberline {1}Introduction}{4}
+\contentsline {subsection}{\numberline {1.1}Problem Statement}{4}
+\contentsline {subsection}{\numberline {1.2}Background Research}{4}
+\contentsline {subsection}{\numberline {1.3}Objectives}{5}
+\contentsline {subsection}{\numberline {1.4}Materials and Equipment}{5}
+\contentsline {section}{\numberline {2}Methods}{5}
+\contentsline {subsection}{\numberline {2.1}Site Description}{5}
+\contentsline {subsection}{\numberline {2.2}Field Methods}{5}
+\contentsline {subsection}{\numberline {2.3}Statistical Methods}{7}
+<<<<<<< HEAD
+\contentsline {section}{\numberline {3}Results & Discussion}{8}
+\contentsline {section}{\numberline {4}Conclusion and Recommendations}{12}
+=======
+\contentsline {section}{\numberline {3}Results}{8}
+\contentsline {section}{\numberline {4}Discussion}{12}
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{12}
+>>>>>>> e47a9e462aab0705c24b086ef899f8eac88370c0

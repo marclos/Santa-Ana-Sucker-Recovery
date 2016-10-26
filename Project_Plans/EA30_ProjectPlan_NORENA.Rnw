@@ -1,3 +1,4 @@
+
 \documentclass{tufte-handout}
 \usepackage{hyperref}
 
