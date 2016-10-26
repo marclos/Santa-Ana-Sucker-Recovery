@@ -4,7 +4,6 @@
 \author{2016 EA30 Students}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -15,11 +14,8 @@
 \section{Introduction}
 
 \subsection{Problem Statement}
-<<<<<<< HEAD
-This report aims to determine whether the Biochemical Oxygen Demand (BOD) and water flow velocity are relevant to future conservation research for the endangered Santa Ana sucker \emph{C. santaanae}. The experiment seeks to gather information on the water quality of a section of the Santa Ana River and use this data to help answer the questions: \emph{Are the biochemical oxygen demand (BOD) levels healthy for sucker}, \emph{do differing levels affect the  abundance of individuals in certain sections of the river}, \emph{Are the flow rates in certain sections of the river optimum for sucker populations}, and \emph{do high- or low-flow events affect the number of individuals in the stream?} Because the river is regulated by a water treatment facility, we believe that BOD levels will be very low, increasing with distance from the facility. Because of this, we also expect high dissolved oxygen (DO) content and a high sucker presence. We additionally hypothesize that larger populations of the sucker will concentrate in low-flow areas that are nearby high-flow sections. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
+This report aims to determine whether Biochemical Oxygen Demand (BOD) and water flow velocity are relevant to future research regarding the endangered Santa Ana sucker \emph{C. santaanae}. We collected water quality data from the Santa Ana River to answer the following questions: \emph{Do BOD levels vary in different sections of the river};\emph{do differing BOD levels affect correlate with the abundance of individuals?}; \emph{Do the water flow rates in different sections of the river correlate with sucker populations?} Because the part of the river we evaluated regularly receives discharge water from a water treatment facility, we believe that BOD levels will be POLYSEED, decreasing further from the discharge point. Where the BOD levels are lower, we expect there to be more fish. We also hypothesize that larger populations of the sucker will concentrate near high-flow sections. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
 =======
-This report aims to determine whether the Biochemical Oxygen Demand (BOD) and water flow velocity are relevant to future conservation research for the endangered Santa Ana sucker \emph{C. santaanae}. The experiment seeks to gather information on the water quality of a section of the Santa Ana River and use this data to help answer the questions: \emph{Are the biochemical oxygen demand (BOD) levels healthy for sucker}; \emph{do differing levels affect the  abundance of individuals in certain sections of the river}; \emph{are the flow rates in certain sections of the river optimum for sucker populations}; and \emph{do high- or low-flow events affect the number of individuals in the stream?} Because the river is regulated by a water treatment facility, we believe that BOD levels will be very low, increasing with distance from the facility. We also expect high dissolved oxygen (DO) content and a high sucker presence. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
->>>>>>> 261e133571febec3c181725cb6cc9cbdb781d589
 
 
 \subsection{Background (Literature Review)}
@@ -85,10 +81,13 @@ BOD5 was calculated for viable samples according to Standard Methods for the Exa
 BOD5, mg/L= ((D1-D2)-(S)Vs)/P, where 
 \subitem D1= initial DO, mg/L
 \subitem D2= final DO after incubation, mg/L
-
+\subitem S= oxygen uptake of seed, ∆DO/mL of seed suspension added per bottle
+\subitem Vs= volume of seed in test bottle
+\subitem P= decimal volumetric fraction of sample used.
+The average of the resulting values for all viable samples was determined
 
 \section{Results}
-The Seed Control Factor was calculated for the four seed blanks, which determined the slope of the resulting values versus the corresponding seed concentrations. Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our BOD5 calculations on these data yielded the values:
+Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our BOD5 calculations of these data yielded the values:
 
 \subitem Upstream BOD5= 22.069 mg/L 
 \subitem Downstream BOD5= 27.3493 mg/L 
@@ -97,16 +96,17 @@ The average recorded water flow velocities were:
 \subitem Upstream: 0.27 ft/sec
 \subitem Downstream: 1.09 ft/sec 
 
+
 \section{Discussion}
 Due to the learning curve associated with performing a new experiment, procedural complications were encountered at several points in the experiment. As a result, initial DO content was not measured for the source water samples before incubation. We estimated a constant initial sample DO measurement using the DO of the seeded blanks. This decreased the accuracy of the BOD5 calculations, but gave a relative idea of the initial values. Inconsistent DO measuring methods also added to the inaccuracy of the final BOD5 results. Despite these procedural errors, our BOD5 measurements, 27.3493 mg/L at the downstream location and 22.069 mg/L at the upstream location, did reach quality control parameters.
 
 
 It should also be noted that the water velocity averages were derived from a small sample size; three readings in total were taken, two from the downstream location and one from the upstream.
 
+
 \section{Conclusion and Recommendations}
 Future study of dissolved oxygen levels and water velocity in the Santa Ana River should correlate with recent Fish and Wildlife Service electroshock population data. Though we do not have access to this data, we do have access to a rough estimate of the Sucker population from video-counting. In a given time frame, about 40 fish were counted in the upstream location and 0 in the downstream location. 
 
 
 We recommend further study of water velocity in the Santa Ana River in the future. 
-
 \end{document}
