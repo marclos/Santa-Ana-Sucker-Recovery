@@ -11,24 +11,14 @@
 \contentsline {subsection}{\numberline {2.4}Videography}{10}
 \contentsline {subsection}{\numberline {2.5}Temperature Loggers}{10}
 \contentsline {subsection}{\numberline {2.6}BOD Methods}{11}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {2.7}Statistical Methods}{12}
-\contentsline {subsection}{\numberline {2.8}Statistical Methods}{13}
-\contentsline {section}{\numberline {3}Results}{13}
-\contentsline {section}{\numberline {4}Discussion}{16}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{17}
-\contentsline {section}{\numberline {6}Literature Cited}{17}
-\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{17}
-=======
 \contentsline {subsection}{\numberline {2.7}Statistical Methods}{11}
 \contentsline {section}{\numberline {3}Results}{11}
-\contentsline {subsection}{\numberline {3.1}Habitat Quality}{11}
-\contentsline {subsection}{\numberline {3.2}Fish Counts}{15}
-\contentsline {section}{\numberline {4}Discussion}{19}
-\contentsline {subsection}{\numberline {4.1}Research Limitations}{20}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{21}
-\contentsline {section}{\numberline {6}Literature Cited}{22}
-\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{23}
-\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{23}
-\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{24}
->>>>>>> c9bd09cc36220c97af16f5930cd51d5b0c64bf7f
+\contentsline {subsection}{\numberline {3.1}Habitat Quality}{12}
+\contentsline {subsection}{\numberline {3.2}Fish Counts}{13}
+\contentsline {section}{\numberline {4}Discussion}{16}
+\contentsline {subsection}{\numberline {4.1}Research Limitations}{17}
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{18}
+\contentsline {section}{\numberline {6}Literature Cited}{19}
+\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{20}
+\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{20}
+\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{21}
