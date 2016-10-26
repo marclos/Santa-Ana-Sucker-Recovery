@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {2.7}Statistical Methods}{12}
 \contentsline {section}{\numberline {3}Results}{12}
 \contentsline {subsection}{\numberline {3.1}Habitat Quality}{12}
-\contentsline {subsection}{\numberline {3.2}Fish Counts}{13}
+\contentsline {subsection}{\numberline {3.2}Fish Counts}{14}
 \contentsline {section}{\numberline {4}Discussion}{19}
 \contentsline {subsection}{\numberline {4.1}Research Limitations}{19}
 \contentsline {section}{\numberline {5}Conclusion and Recommendations}{21}
