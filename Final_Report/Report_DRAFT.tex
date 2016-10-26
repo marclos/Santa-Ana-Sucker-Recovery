@@ -1,4 +1,53 @@
-\documentclass{article}
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 \usepackage{natbib}
 \usepackage{times}
 \usepackage[section]{placeins}
@@ -8,10 +57,10 @@
 
 \title{Santa Ana Sucker Habitat Evaluation}
 \author{C. Flynn, E. Harris-Tyrrell, O. Howie, L. Israel, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ ed. Marc Los Huertos}
-
-\usepackage{Sweave}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\input{Report_DRAFT-concordance}
+
+
 
 \maketitle
 
@@ -48,7 +97,7 @@ In general, the environmental variables that influence \emph{C. santaanae} popul
 \subsection{Problem Statement}
 
 
-This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain what environmental variables affect \emph{C. santaanae} distributions. Better understanding of water temperature, discharge rates, BOD, and red algae distribution could aid in conservation efforts of this federally endangered fish.
+This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain what environmental variables affect \emph{C. santaanae} distributions to water temperatures, BOD, red algae content, etc. 
 
 \subsection{Background (Literature Review)}
 
@@ -240,11 +289,18 @@ We ran an ANOVA test where time period was the categorical independent variable 
 \section{Results}
 
 
+
+
 \subsection{Habitat Quality}
 
 Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value (Figure \ref{fig:canopyalgae}. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
 
 \begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
+
+\end{knitrout}
 \caption{Caption for this figure!}
 \label{fig:canopyalgae}
 \end{figure}
@@ -252,6 +308,11 @@ Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive v
 Bed composition did have a stronger relationship with Algae Abundance, as shown in \textbf{Figure X}. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. 
 
 \begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
+
+\end{knitrout}
 \caption{need caption, remove main}
 \label{fig:algaesediment}
 \end{figure}
@@ -260,20 +321,39 @@ Bed composition did have a stronger relationship with Algae Abundance, as shown 
 As a control\footnote{I am not sure what this means?}, we also analyzed to what extend Site alone could predict Algae Abundance(Figure \ref{fig:algaesite}). Our ANOVA test yielded p-value: 0.008176 \textbf{which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation.}\footnote{this a discussion point, not a result.} 
 
 \begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
+
+\end{knitrout}
 \caption{Algae Abundance as a function of Site.}
 \label{fig:algaesite}
 \end{figure}
 
-The initial temperature data collected with an analog thermometer did not adequately describe the stream temperatures, so we relied on the temperature logger data for most of our analyses. The tempeature data suggests... (Figure \ref{Temp}).
+The initial temperature data collected with an analog thermometer did not adequately describe the stream temperatures, so we relied on the temperature logger data for most of our analyses. We found that temperature fluctuated between a minimum of 25.12 degrees Celsius and a maximum of 31.37 degrees Celsius, which are all well above the 22 degrees that many studies found is the optimal temperature for the fish. The plunge pool, site 4, contained the most data points around 27.5 degrees, which proved true for each locations, having the most repetitive temperature between 27 and 28 degrees. Site 4, however, had the least temperature range, only varying between 27 and 28.5 degrees, while other sites tended to have a bigger variation, with site 1 varying up to 5.41 degrees. (Figures \ref{fig:Temp} and \ref{fig:tempbox}).
 
 \begin{figure}[!ht]
 \includegraphics[width=0.90\textwidth]{Figures/Temp}
-\caption{Temperature time...NEEDS CAPTION.}
-\label{Temp}
+\caption{Temperature vs. time for all sites}
+\label{fig:Temp}
+\end{figure}
+\begin{figure}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
+
+\end{knitrout}
+\label{fig:tempbox}
+\caption{Box plots of temperature collected}
 \end{figure}
 
 We evaluated the relationship between algae abundance as a function of range of temperature (*C) experienced at each site (Figure \ref{fig:tempalgae}) \textbf{and found... what???}. While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yeilded \textbf{the much better p-value of 3.49e-05}\footnote{better?!!! says who?}. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826\footnote{This is quite high in ecology, please revise}, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
 \begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-7-1} 
+
+\end{knitrout}
 \caption{Ths is caption that needs info...}
 \label{fig:tempalgae}
 \end{figure}
@@ -286,9 +366,15 @@ Although we looked at few water quality parameters, we found a BOD5 differed bet
 We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764\textdegree C in the morning and increased to 28.456\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
 
 
+
 \textbf{[Text to describe Figure \ref{fig:fishsection}]}
 
 \begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-9-1} 
+
+\end{knitrout}
 \caption{needs a caption! Can we change after to afternoon...}
 \label{fig:fishsection}
 \end{figure}
@@ -315,8 +401,13 @@ We need some text here on the fish counts... (Table \ref{tab:fishcounts}).
 
 \textbf{We need to describe the habitat value that we determined! relative to the literature...}
 
-Our videos of site 2 contained very few fish. In the morning there were no Santa Ana suckers seen in the entire hour, and in the afternoon there was one sucker that would occasionally swim out from behind a rock.  This could be because the temperature further upstream was too hot for the suckers to live in; the temperature data found that at that location the water was between 30.25\textdegree~C in the afternoon and 25.12\textdegree~C in the morning. This is a range of 5.13\textdegree~C, which is a much larger range than the range found at site 4, where more suckers were found. Also, the hottest temperatures that occurred at site 2 were almost at mortality rate for suckers, and were 1.59\textdegree~C higher than any temperatures found in site 4. It is also possible that our camera was placed in a section of the river that the suckers don't like, so the lack of fish could have had nothing to do with temperature.
-When we compared the number of fish downstream in the afternoon compared to the morning, we had a p-value of 6.027e-13, meaning there were significantly more suckers in the afternoon than there were in the morning.  This suggests that the suckers do move downstream throughout the day to get to cooler temperatures.  On the afternoon we tested, the plunge pool (downstream) was 28.5\textdegree~C, whereas the river at our upstream location, closer to the concrete, was 29.4\textdegree~C. Throughout our temperature testing, we noticed there was significantly more variation in temperature the further upstream we tested. These large temperature spikes and variability could have prevented fish from successfully habitating the upstream sites. 
+The temperature data suggests that there is something abnormal happening in the river. There were pretty extreme spikes, especially at sites 1 and 2. Our original hypothesis when we saw this was to assume water spikes were occurring from the Rialto Channel and as they travelled down river, becoming less extreme. However, when we looked at the timing of these spikes, they did not correlate with each other, and the spikes further downstream were actually occurring before the spikes upstream. We found that there were indeed daily spikes and lows in temperature. Site 1 and Site 2 had especially dramatic spikes, with Site 1 fluctuating up to 5.41 degrees a day. We are unsure why there were such fluctuations in the river, because it did not appear that spikes were travelling downstream, based on the times that high and low temperatures occurred at different points in the river. 
+
+In terms of fish population, using the data from the Fish and Wildlife Service, as well as the data from Clare and Wendy's group, we realized that there were no fish counted at site 1, only one fish counted in the afternoon at site 2 at various points, no fish were found by the FWS at site 3, but many fish were observed by Clare and Wendy in the plunge pool at site 4. Also, from previous results, we knew that most Santa Ana Suckers live in the plunge pool and prefer it there. This could be because of reasons other than temperature, but we did notice that there were less extreme spikes in site 4. Our videos of site 2 contained very few fish. In the morning there were no Santa Ana suckers seen in the entire hour, and in the afternoon there was one sucker that would occasionally swim out from behind a rock.  This could be because the temperature further upstream was too hot for the suckers to live in; the temperature data found that at that location the water was between 30.25\textdegree~C in the afternoon and 25.12\textdegree~C in the morning. This is a range of 5.13\textdegree~C, which is a much larger range than the range found at site 4, where more suckers were found. In general, the fish were more abundant downstream, where the least extreme temperature spikes were occurring. From what we observed, the extreme temperature spikes at sites 1 and 2, and the medium spike at site 3, could have caused the fish to prefer to stay at site 4, where they are most abundant. This disproves our null hypothesis that the fish would be randomly spread throughout the channel and that temperature would remain fairly constant throughout the river, which suggests there could be a correlation between what is happening temperature wise and with the location of the suckers.
+
+Also, the hottest temperatures that occurred at site 2 were almost at mortality rate for suckers, and were 1.59\textdegree~C higher than any temperatures found in site 4. It is possible that the fish prefer site 4 for other reasons than temperature, but correlations between temperature and Sucker abundance should be further explored.
+
+When we compared the number of fish downstream in the afternoon compared to the morning, we had a p-value of 6.027e-13, meaning there were significantly more suckers in the afternoon than there were in the morning.  This suggests that the suckers do move downstream throughout the day to get to cooler temperatures.  On the afternoon we tested, the plunge pool (downstream) was 28.5\textdegree~C, whereas the river at our upstream location, closer to the concrete, was 29.4\textdegree~C. Throughout our longer term temperature testing, we noticed there was significantly more variation in temperature the further upstream we tested. These large temperature spikes and variability could have prevented fish from successfully habitating the upstream sites. 
 
 There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100\% algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 percent level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
 Our exploratory study is one of the first to examine what variables may control red algae's distribution in the Santa Ana River. 
@@ -334,7 +425,15 @@ It would also be best if it is meticulously made sure of that the BOD is taken o
 
 
 \section{Conclusion and Recommendations}
+We collected our data in a simple yet straightforward manner to ensure its comprehensibility and communicability. Not only does our data span over a week, 24 hours a day, but we collected at four different sites every 15 minutes, giving us a significant spread of data to work with. Given the limited timeline of the experiment, our data can be said to have captured a glimpse into an average week for this portion of the river, and can be used as a baseline and reference for future projects. A weakness was that we were not able to measure possible temperature stratification, since we only measured at one point for each of the four sites. 
 
+Our data itself has left us with many unknowns. The water temperature measurements seem to fluctuate but not necessarily with the air temperature measurements, averaged, from that day. Compared with the historic averages, the week of our experiment was particularly hot, but the effect on the suckers is hard to determine as the air temperature data was not collected every fifteen minutes or even hourly (as our data was), and instead we had to rely on daily highs and lows. 
+
+There were also pretty extreme spikes, but not occurring at times that suggested spikes were travelling downstream, originating from the Veolia water plant. Initially, Veolia agreed to send over their data on both the influx and outflux water temperatures, to allow us to see what was happening to water temperature from the plant. However, after a week of following up, we have not been able to get the data, as the CPO has hesitated to release it and says it will take up to a month to compile it. Without this data, it is hard to explain these randomly occurring spikes at different points in the river. This part of the data could have also been affected by canopy cover or stratification. 
+
+It is difficult to determine if the temperature spikes were what caused the fish to choose to reside primarily in site 4, because there are a myriad of other variables. Other variables that could have affected where the fish chose to live include algae/food source, canopy cover, depth, or sediment type/size. What we do know is that the further upstream locations not only had a wide range of temperatures, but also experienced hotter temperatures than site 4, which was where the fish live. From our background research, we know that the US Fish and Wildlife Service found that Santa Ana Suckers prefer water that is around 22 degrees Celsius. None of our sites had water this cold, but site 4 had the least variability and averaged around 28 degrees. According to a brief overview from Larry Brown of the US Geological Survey, there are no fish at site 1, and at sites 2 and 3 there are only a few European chubs. At site 4 they estimated large numbers of fish but did not conduct a formal survey of this site. However, our video data showed a much larger population in the plunge pool. These population estimates were the results of random surveying, and could be limited in their applicability because of variation in site location and scope. For example, Larry Brown measured sucker populations in the Rialto drainage but not in the pool below it, which is where we placed our data logger. Therefore, it is difficult to tell to what extent the US Geological Survey’s data works with our data. 
+
+Data should be collected on air temperature, canopy cover, and fish population by the same group, to avoid the possibility of slightly different locations and unclear methods. If multiple groups do decide to collaborate, the teams should establish exact locations for all groups to work on, and conduct research on the same day and at the same times, to standardize the time frame of the experiment. It would have been helpful to meet with various stakeholders such as researchers, regulators, Veolia water representatives, etc. to learn more about their methods and tips for experiment design prior to conducting our own experiments. After collecting data, we did try to contact several of these people but did not receive responses. This process would allow us to see what work has already been done, and possibly form a hypothesis based off of their work and findings.
 
 \section{Literature Cited}
 
