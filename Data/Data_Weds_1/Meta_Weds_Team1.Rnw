@@ -66,6 +66,12 @@ hist(site3$Temp)
 hist(site4$Temp)
 @
 
+<< figure=TRUE >>=
+boxplot(site4$Temp)
+boxplot(list(site1$Temp, site2$Temp, site3$Temp, site4$Temp), las=1, ylab="Temperature (C)")
+@
+
+
 \section{Bias and Data Limitations}
 
 Site 2 was removed four days prior to the removal of sites 1, 3, and 4. The probes also may vary in their accuracy and calibration, which will be tested for via an ice bath test. 
