@@ -2,21 +2,23 @@
 \contentsline {subsection}{\numberline {1.1}Testing Citations}{3}
 \contentsline {subsection}{\numberline {1.2}Scope of Problem}{3}
 \contentsline {subsection}{\numberline {1.3}Problem Statement}{3}
-\contentsline {subsection}{\numberline {1.4}Objectives}{4}
-\contentsline {subsection}{\numberline {1.5}Background (Literature Review)}{5}
-\contentsline {subsection}{\numberline {1.6}Objectives}{7}
-\contentsline {section}{\numberline {2}Methods}{8}
-\contentsline {subsection}{\numberline {2.1}Materials and Equipment}{8}
-\contentsline {subsection}{\numberline {2.2}Site Descrition}{9}
-\contentsline {subsection}{\numberline {2.3}Habitat Evaluation}{9}
+\contentsline {subsection}{\numberline {1.4}Background (Literature Review)}{4}
+\contentsline {subsection}{\numberline {1.5}Objectives}{6}
+\contentsline {section}{\numberline {2}Methods}{7}
+\contentsline {subsection}{\numberline {2.1}Materials and Equipment}{7}
+\contentsline {subsection}{\numberline {2.2}Site Descrition}{8}
+\contentsline {subsection}{\numberline {2.3}Habitat Evaluation}{10}
 \contentsline {subsection}{\numberline {2.4}Videography}{11}
 \contentsline {subsection}{\numberline {2.5}Temperature Loggers}{11}
-\contentsline {subsection}{\numberline {2.6}BOD Methods}{12}
-\contentsline {subsection}{\numberline {2.7}Statistical Methods}{13}
-\contentsline {subsection}{\numberline {2.8}Statistical Methods}{14}
-\contentsline {section}{\numberline {3}Results}{14}
-\contentsline {section}{\numberline {4}Discussion}{20}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{22}
-\contentsline {section}{\numberline {6}Literature Cited}{22}
-\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{22}
-\contentsline {section}{\numberline {8}Conclusion and Recommendations}{24}
+\contentsline {subsection}{\numberline {2.6}BOD Methods}{11}
+\contentsline {subsection}{\numberline {2.7}Statistical Methods}{11}
+\contentsline {section}{\numberline {3}Results}{12}
+\contentsline {subsection}{\numberline {3.1}Habitat Quality}{12}
+\contentsline {subsection}{\numberline {3.2}Fish Counts}{14}
+\contentsline {section}{\numberline {4}Discussion}{14}
+\contentsline {subsection}{\numberline {4.1}Research Limitations}{15}
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{17}
+\contentsline {section}{\numberline {6}Literature Cited}{17}
+\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{18}
+\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{18}
+\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{19}
