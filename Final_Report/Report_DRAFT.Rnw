@@ -10,6 +10,7 @@
 \author{C. Flynn, E. Harris-Tyrrell, O. Howie, L. Israel, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ ed. Marc Los Huertos}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -62,10 +63,6 @@ The presence of the non-native red algae in the Santa Ana River and the possible
 
 Another aspect that this report explored was the Biological Oxygen Demand (BOD) and water flow velocity of the river, to help answer the questions: Are the biochemical oxygen demand (BOD) levels healthy for sucker, do differing levels affect the abundance of individuals in certain sections of the river, Are the flow rates in certain sections of the river optimum for sucker populations, and do high- or low-flow events affect the number of individuals in the stream? Because the river is regulated by a water treatment facility, we believe that BOD levels will be very low, increasing with distance from the facility. Because of this, we also expect high dissolved oxygen (DO) content and a high sucker presence. We additionally hypothesize that larger populations of the sucker will concentrate in low-flow areas that are nearby high-flow sections. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
 
-
-The report also collected data on the river water temperature to explore relationships between this and other parameters. The following questions were also asked: does the Santa Ana Sucker shift its distribution in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period. 
-
-\textbf{[needs transition]} Does the Santa Ana Sucker shift its distributon in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period.
 
 \subsection{Background (Literature Review)}
 

@@ -1,53 +1,4 @@
-\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
-%% maxwidth is the original width if it is less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
-\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
-\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
-\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
-\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
-\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
-\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
-\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
-
-\usepackage{alltt}
+\documentclass{article}
 \usepackage{natbib}
 \usepackage{times}
 \usepackage[section]{placeins}
@@ -57,8 +8,10 @@
 
 \title{Santa Ana Sucker Habitat Evaluation}
 \author{C. Flynn, E. Harris-Tyrrell, O. Howie, L. Israel, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ ed. Marc Los Huertos}
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\usepackage{Sweave}
 \begin{document}
+\input{Report_DRAFT-concordance}
 
 \maketitle
 
@@ -111,10 +64,6 @@ The presence of the non-native red algae in the Santa Ana River and the possible
 
 Another aspect that this report explored was the Biological Oxygen Demand (BOD) and water flow velocity of the river, to help answer the questions: Are the biochemical oxygen demand (BOD) levels healthy for sucker, do differing levels affect the abundance of individuals in certain sections of the river, Are the flow rates in certain sections of the river optimum for sucker populations, and do high- or low-flow events affect the number of individuals in the stream? Because the river is regulated by a water treatment facility, we believe that BOD levels will be very low, increasing with distance from the facility. Because of this, we also expect high dissolved oxygen (DO) content and a high sucker presence. We additionally hypothesize that larger populations of the sucker will concentrate in low-flow areas that are nearby high-flow sections. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
 
-
-The report also collected data on the river water temperature to explore relationships between this and other parameters. The following questions were also asked: does the Santa Ana Sucker shift its distribution in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period. 
-
-\textbf{[needs transition]} Does the Santa Ana Sucker shift its distributon in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period.
 
 \subsection{Background (Literature Review)}
 
@@ -301,17 +250,11 @@ We ran an ANOVA test where time period was the categorical independent variable 
 \section{Results}
 
 
-
 \subsection{Habitat Quality}
 
 Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value (Figure \ref{fig:canopyalgae}. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
 
 \begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
-
-\end{knitrout}
 \caption{Caption for this figure!}
 \label{fig:canopyalgae}
 \end{figure}
@@ -319,11 +262,6 @@ Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive v
 Bed composition did have a stronger relationship with Algae Abanundance, as shown in \textbf{Figure X}. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. 
 
 \begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
-
-\end{knitrout}
 \caption{need caption, remove main}
 \label{fig:algaesediment}
 \end{figure}
@@ -332,11 +270,6 @@ Bed composition did have a stronger relationship with Algae Abanundance, as show
 As a control\footnote{I am not sure what this means?}, we also analyzed to what extend Site alone could predict Algae Abundance(Figure \ref{fig:algaesite}). Our ANOVA test yielded p-value: 0.008176 \textbf{which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation.}\footnote{this a discussion point, not a result.} 
 
 \begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
-
-\end{knitrout}
 \caption{Algae Abundance as a function of Site.}
 \label{fig:algaesite}
 \end{figure}
@@ -351,11 +284,6 @@ The initial temperature data collected with an analog thermometer did not adequa
 
 We evaluated the relationship between algae abundance as a function of range of temperature (*C) experienced at each site (Figure \ref{fig:tempalgae}) \textbf{and found... what???}. While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yeilded \textbf{the much better p-value of 3.49e-05}\footnote{better?!!! says who?}. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826\footnote{This is quite high in ecology, please revise}, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
 \begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
-
-\end{knitrout}
 \caption{Ths is caption that needs info...}
 \label{fig:tempalgae}
 \end{figure}
@@ -368,15 +296,9 @@ Although we looked at few water quality parameters, we found a BOD5 differed bet
 We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764\textdegree C in the morning and increased to 28.456\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
 
 
-
 \textbf{[Text to describe Figure \ref{fig:fishsection}]}
 
 \begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-7-1} 
-
-\end{knitrout}
 \caption{needs a caption! Can we change after to afternoon...}
 \label{fig:fishsection}
 \end{figure}
