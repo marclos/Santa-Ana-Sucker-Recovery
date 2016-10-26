@@ -38,7 +38,7 @@ indices, tables, cross-references and figures.
 
 \subsection{Scope of Problem}
 
-The Santa Ana sucker (\emph{Catostomus santaanae}) is a 16 cm fish that lives in the rivers of Southern California.  They have recently been placed on the endangered species list, partially due to their losing over 70 percent of their habitat (FWS 2012). Also, in the 1960s, the habitat of the suckers would range from 10-26\textdegree~C \cite{greenfield70}.  This rise in temperature is most likely due to the extreme industrialization of the stream; much of it runs over concrete, which heats up to extreme temperatures in the sunlight.  A majority of the stream water also comes from discharge from a sewage treatment plant upstream, creating an unhealthy and unnatural environment.  The river discharge is also greatly diminished from what it used to be due to the extreme drought in Southern California.  The river is shallower, slower moving, and has less ice melt coming from the mountains, all of which factor into an increase in temperature. Biological Oxygen Demand (BOD) may also have deviated significantly from typical values in a less disturbed stream. 
+The Santa Ana sucker (\emph{Catostomus santaanae}) is a 16 cm fish that lives in the rivers of Southern California.  They have recently been placed on the endangered species list, partially due to their losing over 70 percent of their habitat (FWS 2012). Also, in the 1960s, the habitat of the suckers would range from 10-26\textdegree~C \citep{greenfield70}.  This rise in temperature is most likely due to the extreme industrialization of the stream; much of it runs over concrete, which heats up to extreme temperatures in the sunlight.  A majority of the stream water also comes from discharge from a sewage treatment plant upstream, creating an unhealthy and unnatural environment.  The river discharge is also greatly diminished from what it used to be due to the extreme drought in Southern California.  The river is shallower, slower moving, and has less ice melt coming from the mountains, all of which factor into an increase in temperature. Biological Oxygen Demand (BOD) may also have deviated significantly from typical values in a less disturbed stream. 
 
 As the Santa Ana Sucker's population has declined, the abundance of the red algae (\emph{Cosmopogen aeruginosus}) has risen significantly in the Santa Ana River. This may also be contributing to the sucker's decline, but the environmental variables that control the red algae's distribution in the Santa Ana River are currently not well understood. The direct effect this invasive algae has on \emph{C. santaanae} is also poorly constrained. 
 
@@ -46,7 +46,6 @@ In general, the environmental variables that influence \emph{C. santaanae} popul
 
 
 \subsection{Problem Statement}
-
 
 This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain what environmental variables affect \emph{C. santaanae} distributions to water temperatures, BOD, red algae content, etc. 
 
@@ -66,7 +65,7 @@ Each of the elements explored in this report was decided as being important to e
 
 The range of the fish is of significant interest to efforts for its preservation. The current range of the Santa Ana Sucker differs significantly from its historic distribution in the Los Angeles Basin (Thompson 2010 NO CITATION YET IN R).
 
-Regarding the importance of water temperature to the fish, Moyle postulates that the sucker prefers environments with cool water (Moyle 2002 NO CITATION YET IN R). Again, the temperature of the Santa Ana River has been rising to levels greater than the sucker could stand (CITE). Other types of fish have been known to regulate their body temperatures by moving to different areas in their habitat throughout the day (Matthews Berg Azuma 1994).
+Regarding the importance of water temperature to the fish, Moyle postulates that the sucker prefers environments with cool water \citep{moyle2002inland}. Again, the temperature of the Santa Ana River has been rising to levels greater than the sucker could stand (CITE). Other types of fish have been known to regulate their body temperatures by moving to different areas in their habitat throughout the day (Matthews Berg Azuma 1994).
 
 We used this source to determine preferred temperature for the Santa Ana Sucker and in general to inform ourselves more about the fish. Little research has been done on specific threats to the Santa Ana Sucker, but the document did point out possible threats arising from hydrological modification and urban development in general. The idea emerged that water coming out of a treatment plant could potentially be a threat under hydrological modification or urban development.
 
@@ -242,17 +241,14 @@ We ran an ANOVA test where time period was the categorical independent variable 
 <<echo=FALSE>>=
 updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
 importupdated=read.csv(updateddata)
-@
-<<echo=FALSE>>=
+
+# Temperature Data Import
 file4 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/Plunge_Pool clipped.csv"
 site4 <- read.csv(file4)
-
 file3 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/2nd_Site clipped.csv"
 site3 <- read.csv(file3)
-
 file2 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/3rd_Site clipped.csv"
 site2 <- read.csv(file2)
-
 file1 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/Concrete clipped.csv"
 site1 <- read.csv(file1)
 @

@@ -16,4 +16,9 @@ Lamport, L. (1994).
 \newblock {\em Latex: A Document Preparation System}.
 \newblock Addison-Wesley, Reading, Massachusetts, second edition.
 
+\bibitem[Moyle, 2002]{moyle2002inland}
+Moyle, P.~B. (2002).
+\newblock {\em Inland fishes of California}.
+\newblock Univ of California Press.
+
 \end{thebibliography}
