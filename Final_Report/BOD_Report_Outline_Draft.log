@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  24 OCT 2016 12:50
+=======
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  23 OCT 2016 15:02
+>>>>>>> 21416ee7eab742821086468e77a9d140583fc44d
 entering extended mode
  %&-line parsing enabled.
 **BOD_Report_Outline_Draft.tex
@@ -227,14 +231,23 @@ Here is how much of TeX's memory you used:
  4464 multiletter control sequences out of 10000+200000
  8576 words of font info for 30 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
+<<<<<<< HEAD
  25i,6n,19p,1119b,209s stack positions out of 5000i,500n,6000p,200000b,15000s
  </home/CAMPUS/daw02013/.texlive2007/tex
+=======
+ 25i,6n,19p,1281b,209s stack positions out of 5000i,500n,6000p,200000b,15000s
+ </home/CAMPUS/wjn02014/.texlive2007/tex
+>>>>>>> 21416ee7eab742821086468e77a9d140583fc44d
 mf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1
 /bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></us
 r/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bl
 uesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/sha
 re/texmf/fonts/type1/bluesky/cm/cmti10.pfb>
+<<<<<<< HEAD
 Output written on BOD_Report_Outline_Draft.pdf (8 pages, 317586 bytes).
+=======
+Output written on BOD_Report_Outline_Draft.pdf (8 pages, 318336 bytes).
+>>>>>>> 21416ee7eab742821086468e77a9d140583fc44d
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)

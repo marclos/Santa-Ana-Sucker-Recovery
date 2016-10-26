@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\title{Temperature and the Santa Ana Sucker}
+\author{EA30}
+
+\begin{document}
+
+
+\maketitle
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+
+\subsection{Problem Statement}
+ 
+\subsection{Background Research w/Citations} 
+
+
+\subsection{Materials and Equipment}
+
+
+\subsection{Methods}
+
+
+\subsection{Site Descrition}
+
+
+\begin{figure}
+\includegraphics[width=1.00\textwidth]{Figures/SantaAna_SatelliteImage}
+\caption{Google Earth --THIS IS HOW YOU DO A CAPTION IN CASE WE NEED IT}
+\label{SAR_Image}
+\end{figure}
+
+\subsection{Field Methods}
+\subsection{Laboratory Methods}
+
+\subsection{Statistical Methods}
+
+\section{Results}
+
+The temperature data suggests... (Figure \ref{Temp}).
+
+\begin{figure}
+\includegraphics{Figures/Temp}
+\caption{Temperature time...}
+\label{Temp}
+\end{figure}
+
+\section{Discussion}
+
+
+\section{Conclusion and Recommendations}
+
+
+\end{document}
