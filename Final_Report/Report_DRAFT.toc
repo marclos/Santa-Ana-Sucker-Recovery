@@ -15,11 +15,11 @@
 \contentsline {subsection}{\numberline {2.7}Statistical Methods}{12}
 \contentsline {section}{\numberline {3}Results}{13}
 \contentsline {subsection}{\numberline {3.1}Habitat Quality}{13}
-\contentsline {subsection}{\numberline {3.2}Fish Counts}{19}
+\contentsline {subsection}{\numberline {3.2}Fish Counts}{18}
 \contentsline {section}{\numberline {4}Discussion}{20}
 \contentsline {subsection}{\numberline {4.1}Research Limitations}{20}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{21}
-\contentsline {section}{\numberline {6}Literature Cited}{21}
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{22}
+\contentsline {section}{\numberline {6}Literature Cited}{22}
 \contentsline {section}{\numberline {7}Appendix: Detailed Methods}{23}
 \contentsline {subsection}{\numberline {7.1}Video Camera Set up}{23}
 \contentsline {subsection}{\numberline {7.2}BOD5 Methods}{24}

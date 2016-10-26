@@ -272,14 +272,17 @@ abline(lm(Algae~Canopy,importupdated))
 \label{fig:canopyalgae}
 \end{figure}
 
+Bed composition did have a stronger relationship with Algae Abanundance, as shown in \textbf{Figure X}. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. 
 
 \begin{figure}
 << figure=TRUE, echo=FALSE >>=
 boxplot(Algae~Sediment,importupdated, ylab="Algae Abundance (% cover)",xlab="Bed Composition",main ="Bed Composition as a predictor of Algae Abundance",las=1)
 @
+\caption{need caption, remove main}
+\label{fig:algaesediment}
 \end{figure}
 
-Bed composition did have a stronger relationship with Algae Abanundance, as shown in \textbf{Figure X}. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
+
 
 As a control, we also analyzed to what extend Site alone could predict Algae Abundance(Figure \ref{fig:algaesite}). Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. 
 
@@ -353,6 +356,7 @@ We need some text here on the fish counts... (Table \ref{tab:fishcounts}).
 
 \textbf{We need to describe the habitat value that we determined! relative to the literature...}
 
+This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
 
 \subsection{Research Limitations}
 

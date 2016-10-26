@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 10:02
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 10:06
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -320,13 +320,13 @@ Package color Info: Redefining color shadecolor on input line 314.
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-2-1.pdf>
-Package color Info: Redefining color shadecolor on input line 325.
+Package color Info: Redefining color shadecolor on input line 326.
 
 <figure/unnamed-chunk-3-1.pdf, id=55, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-3-1.pdf>
-Package color Info: Redefining color shadecolor on input line 337.
+Package color Info: Redefining color shadecolor on input line 340.
 
 <figure/unnamed-chunk-4-1.pdf, id=56, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
@@ -335,7 +335,7 @@ File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <Figures/Temp.pdf, id=57, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
-Package color Info: Redefining color shadecolor on input line 357.
+Package color Info: Redefining color shadecolor on input line 360.
 
 <figure/unnamed-chunk-5-1.pdf, id=58, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
@@ -343,17 +343,17 @@ File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 <use figure/unnamed-chunk-5-1.pdf> [13] [14 <./figure/unnamed-chunk-2-1.pdf>]
 [15 <./figure/unnamed-chunk-3-1.pdf>] [16 <./figure/unnamed-chunk-4-1.pdf>]
 [17 <./Figures/Temp.pdf>] [18 <./figure/unnamed-chunk-5-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 379.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 380.
+Package color Info: Redefining color shadecolor on input line 382.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 383.
 
 
 (/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 381.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 384.
 
-Overfull \hbox (339.0pt too wide) in paragraph at lines 381--381
+Overfull \hbox (339.0pt too wide) in paragraph at lines 384--384
 [][]\OT1/pcr/b/n/10 boxplot[][]\OT1/pcr/m/n/10 (Fish[][]~[][]Section,newmetadat
 a,[] []ylab[][]=[][]"Fish"[][],[][]xlab[][]=[][]"Time of Day"[][],[][]main[] []
 =[][]"Time of Day as a predictor of Fish"[][],[][]las[][]=[][]1[][])[][] 
@@ -364,41 +364,41 @@ File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-7-1.pdf> [19 <./figure/unnamed-chunk-7-1.pdf>]
 [20] (./Report_DRAFT.bbl [21]) [22] [23]
-Overfull \hbox (16.09677pt too wide) in paragraph at lines 469--470
+Overfull \hbox (16.09677pt too wide) in paragraph at lines 473--474
 []\OT1/ptm/m/n/10 Nitrification in-hibitor was cre-ated by dis-solv-ing 2.0 g a
 l-lylth-iourea (ATU, C4H8N2S)
  []
 
 [24]
-Overfull \hbox (7.38701pt too wide) in paragraph at lines 475--481
+Overfull \hbox (7.38701pt too wide) in paragraph at lines 479--485
 []\OT1/ptm/m/n/10 Note that *Temp[]x* en-tries were bor-rowed with per-mis-sion
  from So-phie and Nicole's
  []
 
 
-Overfull \hbox (9.8658pt too wide) in paragraph at lines 485--486
+Overfull \hbox (9.8658pt too wide) in paragraph at lines 489--490
 []\OT1/ptm/m/n/10 Minimum DO Depletion--Viable sam-ples must have min. DO de-pl
 e-tion of 2.0mg/L,
  []
 
 
-Overfull \hbox (1.35622pt too wide) in paragraph at lines 486--487
+Overfull \hbox (1.35622pt too wide) in paragraph at lines 490--491
 []\OT1/ptm/m/n/10 Glucose-Glutamic Acid Check--The re-sult-ing av-er-age BOD fo
 r the 3 GGA blanks
  []
 
 
-Overfull \hbox (4.81665pt too wide) in paragraph at lines 487--488
+Overfull \hbox (4.81665pt too wide) in paragraph at lines 491--492
 []\OT1/ptm/m/n/10 Dilution wa-ter check--DO up-take af-ter in-cu-ba-tion must n
 ot be more than 0.20mg/L
  []
 
 [25] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
- 1664 strings out of 256214
- 22157 string characters out of 1917000
+ 1665 strings out of 256214
+ 22176 string characters out of 1917000
  71619 words of memory out of 1500000
- 4923 multiletter control sequences out of 10000+200000
+ 4924 multiletter control sequences out of 10000+200000
  25869 words of font info for 54 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  25i,9n,20p,1350b,334s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -407,7 +407,7 @@ share/texmf/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texmf/fonts/type1/ur
 w/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/s
 hare/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (25 pages, 422814 bytes).
+Output written on Report_DRAFT.pdf (25 pages, 422886 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
