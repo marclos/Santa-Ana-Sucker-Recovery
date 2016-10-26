@@ -2,7 +2,7 @@
 \usepackage{natbib}
 \usepackage{times}
 \usepackage[section]{placeins}
-\usepackage{gensymb} % How can I write a ° (degree) symbol in LaTeX?
+\usepackage{gensymb} % How can I write a \textdegree~ (degree) symbol in LaTeX?
 
 \newcommand{\BibTeX}{{\sc Bib}\TeX}
 
@@ -65,13 +65,13 @@ Another aspect that this report explored was the Biological Oxygen Demand (BOD) 
 
 The report also collected data on the river water temperature to explore relationships between this and other parameters. The following questions were also asked: does the Santa Ana Sucker shift its distribution in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period. 
 
-[needs transition] Does the Santa Ana Sucker shift its distributon in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period.
+\textbf{[needs transition]} Does the Santa Ana Sucker shift its distributon in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period.
 
 \subsection{Background (Literature Review)}
 
 [FOR NEXT PERSON WHO EDITS: 
 
-WHAT THINGS’ SUSPECTEDSIGNIFICANCE DO WE NEED TO EXPLAIN? 
+WHAT THINGS' SUSPECTEDSIGNIFICANCE DO WE NEED TO EXPLAIN? 
 •	Habitat 
 •	Temperature 
 •	Red Algae
@@ -88,15 +88,15 @@ Regarding the importance of water temperature to the fish, Moyle postulates that
 We used this source to determine preferred temperature for the Santa Ana Sucker and in general to inform ourselves more about the fish. Little research has been done on specific threats to the Santa Ana Sucker, but the document did point out possible threats arising from hydrological modification and urban development in general. The idea emerged that water coming out of a treatment plant could potentially be a threat under hydrological modification or urban development.
 
 
-According to Evans et al. (2005 FIND FULL CITATION IN NICOLE AND SOPHIE’S OR CLARE AND WENDY’S GROUP), temporary reduction of flow, such as that which can occur when the treatment plant which now largely supplies the river halts releases of the water which now largely maintains, can significantly reduce the amount of habitat for suckers.[3] Just last month, the Center for Biological Diversity reported that “by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish.” 
+According to Evans et al. (2005 FIND FULL CITATION IN NICOLE AND SOPHIE'S OR CLARE AND WENDY'S GROUP), temporary reduction of flow, such as that which can occur when the treatment plant which now largely supplies the river halts releases of the water which now largely maintains, can significantly reduce the amount of habitat for suckers.[3] Just last month, the Center for Biological Diversity reported that “by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish.” 
 
 ALGAE: 
 
-For the Santa Ana River sucker habitat, a central threat is the invasive Red Algae that has been spreading with alacrity in areas where the fish are known to be, including the reach below the Rapid Infiltration and Extraction (RIX) Treatment plan (Palenscar).There are concerns that the algae may be one of the contributing factors to the sucker’s decline. For example, one of the important features of the Santa Ana River for the sucker is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand (Thomson et al. 2010, 321 CREATE CITE). The sucker has adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic). 
+For the Santa Ana River sucker habitat, a central threat is the invasive Red Algae that has been spreading with alacrity in areas where the fish are known to be, including the reach below the Rapid Infiltration and Extraction (RIX) Treatment plan (Palenscar).There are concerns that the algae may be one of the contributing factors to the sucker's decline. For example, one of the important features of the Santa Ana River for the sucker is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand (Thomson et al. 2010, 321 CREATE CITE). The sucker has adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic). 
 
-This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the fish being negatively impacted; the algae may also disrupt the fish’s well-being in unknown ways. 
+This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the fish being negatively impacted; the algae may also disrupt the fish's well-being in unknown ways. 
 
-Some researchers suggest that algae may actually crowd out the diatoms on which, along with algae and detritus, the sucker feeds (Thomson 2010, 322). The presence of the algae in the same area and on the same type of substrate as the fish could indicate competition for resources between the algae and the sh.’ 4 1.3 Objectives
+Some researchers suggest that algae may actually crowd out the diatoms on which, along with algae and detritus, the sucker feeds (Thomson 2010, 322). The presence of the algae in the same area and on the same type of substrate as the fish could indicate competition for resources between the algae and the sh.' 4 1.3 Objectives
 
 
 Sadler, K. (1980). Effect of the warm water discharge from a power station on fish populations in the river Trent. Journal Of Applied Ecology, 17(2):349-357.
@@ -123,7 +123,7 @@ Los Huertos, Marc. (2016). Thermal Properties of Water. Environmental Science of
 The effect of temperature on fish varies greatly depending on other conditions of the lake or river environment of the fish in question.
 Heat, temperature, thermal energy, and heat capacity all slightly change how heat is measured in an ecosystem. Water in general has a high heat capacity, which indicates its high specific heat. 
 
-These aquatic systems therefore often retain their heat and are less susceptible to changes in temperature than non-acquatic systems. Inflows/mixing can have an effect on water temperature but it is often hard to detect due to thermal stratification mixing, seasonal change in temperature profile depth, and small volume inflow in terms of fraction of the lake volume. This chapter sheds light that variations in temperature trigger chemicals dissolving/remaining, tend to raise/lower a fish’s body temperature to the same degree, etc. Temperature impacts many other features of water quality, which will be important to keep in mind going forward with the project.
+These aquatic systems therefore often retain their heat and are less susceptible to changes in temperature than non-acquatic systems. Inflows/mixing can have an effect on water temperature but it is often hard to detect due to thermal stratification mixing, seasonal change in temperature profile depth, and small volume inflow in terms of fraction of the lake volume. This chapter sheds light that variations in temperature trigger chemicals dissolving/remaining, tend to raise/lower a fish's body temperature to the same degree, etc. Temperature impacts many other features of water quality, which will be important to keep in mind going forward with the project.
 
 
 \subsection{Objectives}
@@ -178,14 +178,24 @@ The specific sites for our project consisted of one upstream location (site 2) a
 
 We evaluated the Santa Ana River between... near Colton, California (Figure \ref{SAR_Image}). 
 
-This data was collected at three reaches in the Rialto portion of the Santa Ana river near Colton, California (Figure \ref{SAR_Image}).
+This data was collected at three reaches in the Rialto portion of the Santa Ana river near Colton, California (Figure \ref{SAR_Image}). 
+
+\begin{table}
+\caption{caption}
+\begin{tabular}{llll}\hline
+Location & Latitude             & Longitude   & Description \\ \hline\hline
+Site 1  & 34\textdegree 2'5"N   &   & \\
+Site 2  &           &   & \\
+Site 3  &           &   & \\
+Site 4  &           &   & Pool, approximately 40-50 cm in depth\\
+\end{tabular}
+\end{table}
 
 Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
 
-
-Site 4 (plunge pool): 34* 2’5” N, 117 degrees 21’17” W 
-Site 3 (below conﬂuence): 34*2’21” N, 117*21’20” W 
-Site 2 (above conﬂuence): 34*2’29” N, 117*21’15” W. 
+Site 4 (plunge pool): 34* 2'5” N, 117 degrees 21'17” W 
+Site 3 (below conﬂuence): 34*2'21” N, 117*21'20” W 
+Site 2 (above conﬂuence): 34*2'29” N, 117*21'15” W. 
 
 Each observation contains the following variables: algae percent cover, canopy cover, water temperature, bed composition.  
 
@@ -212,7 +222,7 @@ the percent that was covered by algae to the nearest 10 percent.
 
 3)The sediment type of the site was characterized as either fine or coarse based on the grain size of the 30x30cm section of stream bed covered by the quadrat as either fine or coarse. Coarse substrate was classified as anything larger than pebbles or sand, that is, larger than 6.5cm. If more than half of the area covered by the quadrat was coarse substrate, or fine substrate, the area was characterized as such respectively.
 
-4)Canopy cover was measured from the same position as the algae by holding spherical canopy densiometer above water at elbow’s length. Based on how many of the 15 intersections on the densiometer reflected overhead canopy, cover was then quantified on a 0-15 scale, 0 being the no canopy cover and 15 being full cover.
+4)Canopy cover was measured from the same position as the algae by holding spherical canopy densiometer above water at elbow's length. Based on how many of the 15 intersections on the densiometer reflected overhead canopy, cover was then quantified on a 0-15 scale, 0 being the no canopy cover and 15 being full cover.
 
 5)To measure temperature, we submerged the analog thermometer underwater and recorded the temperature in degrees Celsius.
 
@@ -238,17 +248,14 @@ We will obtain four HOBO Tidbit water temperature Data Loggers to set up at the 
 
 \subsection{BOD Methods}
 
-Approximately 1L of source river water was collected at each of two sites, one upstream location closer to the wastewater discharge facility, and one downstream location (fig. 1). Ideally, these would be transported to the laboratory for analysis within four hours. BOD was carried out using the following methods...
-
-
-
+Approximately 1L of source river water was collected at each of two sites, one upstream location closer to the wastewater discharge facility, and one downstream location \textbf{[Please identify site \#!-]}. Ideally, these would be transported to the laboratory for analysis within four hours. BOD was carried out using the following methods...\textbf{[need to add method to report.bib]}
 
 \subsection{Statistical Methods}
 
 After conducting our ﬁeldwork, we will enter our data in rstudio. We will produce linear regressions of temperature vs algae abundance. We will producelinear regressions of canopy cover vs algae abundance. We will produce linear regressions of canopy cover vs temperature. We will create ANOVA or t-tests of bed composition vs. algae abundance. We will then analyze our data and write a project report 4-5 pages long with pictures and ﬁgures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed compositions eﬀect on algae abundance. In qualitative terms, we will synthesize our results with the ﬁsh videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their ﬁsh observations.
-The following code was used to generate summary statisitics. 
 
-We ran an ANOVA test where time period was the categorical independent variable and number of fish was the continuous dependent variable.  We weren’t able to run the test for location 2 because there were too few fish seen to draw any conclusions.  We also couldn’t test the effect of location on number of fish, because the conditions were too different between the upstream and downstream locations to compare.
+
+We ran an ANOVA test where time period was the categorical independent variable and number of fish was the continuous dependent variable.  We weren't able to run the test for location 2 because there were too few fish seen to draw any conclusions.  We also couldn't test the effect of location on number of fish, because the conditions were too different between the upstream and downstream locations to compare.
 
 \section{Results}
 
@@ -259,38 +266,10 @@ importupdated=read.csv(updateddata)
 
 \subsection{Habitat Quality}
 
-The tempeature data suggests... (Figure \ref{Temp}).
+There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100\% algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 percent level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
+Our exploratory study is one of the first to examine what variables may control red algae's distribution in the Santa Ana River. While the limited scope of this research eliminated the possibility of conclusive findings, we can suggest promising areas for further research. Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. Most importantly, red algae's co-occurrence with the federally endangered Santa Ana sucker should be examined. These improvements on our experiment will yield a much better idea of what factors control red algae's distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae's effect on Santa Ana Suckers. 
 
-\begin{figure}
-\includegraphics[width=1.00\textwidth]{Figures/Temp}
-\caption{Temperature time...NEEDS CAPTION.}
-\label{Temp}
-\end{figure}
-
-There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100 percent algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 percent level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
-Our exploratory study is one of the first to examine what variables may control red algae's distribution in the Santa Ana River. While the limited scope of this research eliminated the possibility of conclusive findings, we can suggest promising areas for further research. Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. Most importantly, red algae’s co-occurrence with the federally endangered Santa Ana sucker should be examined. These improvements on our experiment will yield a much better idea of what factors control red algae’s distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae’s effect on Santa Ana Suckers. 
-
-
-Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our BOD5 calculations on these data yielded the values:
-
-upstream BOD5= 22.069 mg/L 
-
-Downstream BOD5= 27.3493 mg/L 
-
-The temperature data we collected with an analogue thermometer was too coarse to really be useful, because we took all our measurements in one afternoon and could only take temperature measurments at a resolution of whole degrees celsius. For that reason, we instead used WED1 team's temperature data. The following is a plot of algae abundance as a function of range of temperature (*C) experienced at each site. 
-
-This is describing the figure: (figure \ref{fig:tempalgae})
-\begin{figure}
-<< figure=TRUE, echo=FALSE>>=
-plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
-abline(lm(Algae~Temp_range,importupdated))
-@
-\caption{Ths is caption}
-\label{fig:tempalgae}
-\end{figure}
-
-
-While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yilded the much better p-value of 3.49e-05. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
+Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value (Figure \ref{fig:canopyalgae}. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
 
 \begin{figure}
 << figure=TRUE, echo=FALSE>>=
@@ -298,9 +277,9 @@ plot(importupdated$Canopy,importupdated$Algae, ylab="Algae Abundance (% cover)",
 abline(lm(Algae~Canopy,importupdated))
 @
 \caption{Caption for this figure!}
+\label{fig:canopyalgae}
 \end{figure}
 
-Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
 
 \begin{figure}
 << figure=TRUE, echo=FALSE >>=
@@ -308,21 +287,49 @@ boxplot(Algae~Sediment,importupdated, ylab="Algae Abundance (% cover)",xlab="Bed
 @
 \end{figure}
 
-Bed composition did have a stronger relationship with Alage Abanundance, as shown in the figure above. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
+Bed composition did have a stronger relationship with Algae Abanundance, as shown in \textbf{Figure X}. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
+
 
 \begin{figure}
-<< figure=TRUE >>=
-boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Site name",main ="Reach Site as a predictor of Algae Abundance",las=1)
+<< figure=TRUE, echo=FALSE>>=
+boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Site name",las=1)
 @
+\caption{Algae Abundance as a function of Site.}
+\label{fig:algaesite}
 \end{figure}
 
-As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp\_range value. Therefore, the high predictive value of temp\_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764\textdegree C in the morning and increased to 28.456\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
+
+The initial temperature data collected with an analog thermometer did not adequately describe the stream temperatures, so we relied on the temperature logger data for most of our analyses. The tempeature data suggests... (Figure \ref{Temp}).
+
+\begin{figure}
+\includegraphics[width=1.00\textwidth]{Figures/Temp}
+\caption{Temperature time...NEEDS CAPTION.}
+\label{Temp}
+\end{figure}
+
+We evaluated the relationship between algae abundance as a function of range of temperature (*C) experienced at each site (Figure \ref{fig:tempalgae}) \textbf{and found... what???}. While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yeilded \textbf{the much better p-value of 3.49e-05}\footnote{better?!!! says who?}. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826\footnote{This is quite high in ecology, please revise}, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
+\begin{figure}
+<< figure=TRUE, echo=FALSE>>=
+plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
+abline(lm(Algae~Temp_range,importupdated))
+@
+\caption{Ths is caption that needs info...}
+\label{fig:tempalgae}
+\end{figure}
+
+
+Although we looked at few water quality parameters, we found a BOD5 differed between the upstream (22.069 mg/L) and downstream (27.3493 mg/L) location.
+
+
+As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation.  
+
+\subsection{Fish Counts}
+
+We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764\textdegree C in the morning and increased to 28.456\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
 
 <<echo=FALSE>>=
 newmetadata <- read.csv("/home/CAMPUS/cmfa2015/Santa Ana Sucker/Data/Data_Tues_2/newmetadata.csv")
 @
-
-\subsection{Fish Counts}
 
 \begin{figure}
 << figure=TRUE >>=
@@ -351,27 +358,31 @@ We need some text here on the fish counts... (Table \ref{tab:fishcounts}).
 
 \section{Discussion}
 
+\textbf{We need to describe the habitat value that we determined! relative to the literature...}
 
-Certain issues we ran into during our study included visibility and camera placement. Unfortunately, we did not formulate a standardized method with which to place our cameras in the water. For this reason, there were differences in footage from morning to afternoon as well as from site to site. For future studies, we recommend including physical place-markers in the river for the cinderblock structures, maybe in the form of flags placed directly in the river bed. Markers inside of the cinderblock structure that delineate the exact position and angle of the cameras would also be ideal in order to ensure the same exact field of vision is present throughout the collected footage. Additionally, a marker such as a graphic scale would be useful to have in the camera’s field of vision in order to figure out size of the fish and distance from the camera. Finally, our model of GoPro did not have a timestamp feature. Though we were able to figure out the initial recording times from the data saved in each individual video file, a timestamp would have greatly facilitated and ensured the accuracy of our counting process.
+
+\subsection{Research Limitations}
+
+However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp\_range value. Therefore, the high predictive value of temp\_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work.
+
+Certain issues we ran into during our study included visibility and camera placement. Unfortunately, we did not formulate a standardized method with which to place our cameras in the water. For this reason, there were differences in footage from morning to afternoon as well as from site to site. For future studies, we recommend including physical place-markers in the river for the cinderblock structures, maybe in the form of flags placed directly in the river bed. Markers inside of the cinderblock structure that delineate the exact position and angle of the cameras would also be ideal in order to ensure the same exact field of vision is present throughout the collected footage. Additionally, a marker such as a graphic scale would be useful to have in the camera's field of vision in order to figure out size of the fish and distance from the camera. Finally, our model of GoPro did not have a timestamp feature. Though we were able to figure out the initial recording times from the data saved in each individual video file, a timestamp would have greatly facilitated and ensured the accuracy of our counting process.
 
 For future studies of this sort, a longer data sampling process would be ideal. While we were only able to collect and analyze one hour of footage each for the morning and afternoon sections, a more robust study might have 20 or so hours each over the course of a single month, or even a lot more than this, as there is no limit to the amount of data that could be taken for this study due to changes in season, water influx differences, and other factors.
 
-
 Our results were skewed due to several hiccups that occurred throughout the process of our experiment. The first time we collected our samples, said samples were not processed on the same day as collection. 
-We don’t have the initial BOD measurements and so our group had to think outside of the box and backpedal some in order to work backwards and acquire the numbers needed in order to make the vital calculations and check our work.
+We don't have the initial BOD measurements and so our group had to think outside of the box and backpedal some in order to work backwards and acquire the numbers needed in order to make the vital calculations and check our work.
 When in the middle of checking the BOD of our samples after the 5 day incubation period we realized that we had not turned on the motor for the previous handful of samples as well as some in our initial stages. In order to accommodate this discrepancy, we decided to include spin v no spin as apart of our variables in our project to see the results we would get since there was such a huge margin between the numbers when the solutions were stirred and when they were not.
 In order to fill any gaps in our own research and numbers, we have also decided that it would be best that we correlate our results with those collected by the Fish and Wildlife service when they conducted their electroshock tests on the fish. 
 
 
 Future experiments can improve upon our methods by using the optimum amount of source water and dilution water to get the optimum about of BOD depletion. The ideal BOD depletion reading was given at 25 mL of source water and 275 mL dilution water. It would also be best if it is meticulously made sure of that the BOD is taken of the initial samples. Important to the process is to have every sample spun each time to allow for consistency and as much accuracy as possible with each BOD reading. 
 
-Our videos of site 2 contained so few fish that we were unable to draw any conclusions from the data.  In the morning there were no Santa Ana suckers seen in the entire hour, and in the afternoon there was one sucker that would occasionally swim out from behind a rock.  This could be because the temperature that far upstream was too hot for the suckers to live there; the temperature data found that at that location the water was around 29°C in the afternoon and 25°C in the morning.  It is also possible that our camera was placed in a section of the river that the suckers don’t like, so the lack of fish could have had nothing to do with temperature.
-When we compared the number of fish downstream in the afternoon compared to the morning, we had a p-value of 6.027e-13, meaning there were significantly more suckers in the afternoon than there were in the morning.  This suggests that the suckers do move downstream throughout the day to get to cooler temperatures.  On the afternoon we tested, the plunge pool (downstream) was 28.5°C, whereas the river at our upstream location, closer to the concrete, was 29.4°C.  However, we cannot definitively prove that we observed more fish in the afternoon because of the temperature change; there could have been a variety of other factors.  For example, the fish could have moved from one river bank to the other throughout the day to stay in the shade of the brush as the sun moved.
+Our videos of site 2 contained so few fish that we were unable to draw any conclusions from the data.  In the morning there were no Santa Ana suckers seen in the entire hour, and in the afternoon there was one sucker that would occasionally swim out from behind a rock.  This could be because the temperature that far upstream was too hot for the suckers to live there; the temperature data found that at that location the water was around 29\textdegree~C in the afternoon and 25\textdegree~C in the morning.  It is also possible that our camera was placed in a section of the river that the suckers don't like, so the lack of fish could have had nothing to do with temperature.
+When we compared the number of fish downstream in the afternoon compared to the morning, we had a p-value of 6.027e-13, meaning there were significantly more suckers in the afternoon than there were in the morning.  This suggests that the suckers do move downstream throughout the day to get to cooler temperatures.  On the afternoon we tested, the plunge pool (downstream) was 28.5\textdegree~C, whereas the river at our upstream location, closer to the concrete, was 29.4\textdegree~C.  However, we cannot definitively prove that we observed more fish in the afternoon because of the temperature change; there could have been a variety of other factors.  For example, the fish could have moved from one river bank to the other throughout the day to stay in the shade of the brush as the sun moved.
 
 
 
 \section{Conclusion and Recommendations}
-
 
 
 \section{Literature Cited}
@@ -386,11 +397,11 @@ When we compared the number of fish downstream in the afternoon compared to the 
 
 To set up the cameras, we removed them from the packaging, inserted a microSD card into each, and charged them fully by connecting the included USB cables to a computer. The cameras needed to be fully charged before we were able to adjust the settings. Once the cameras were sufficiently charged, we set the filming settings to record in 720p x 30fps. We set the cameras aside and left them charging. 
 
-Next, we charged all four of the waterproof Re-Fuel battery packs. As these were charging, we put together our cinder block mounting structures. We took our cinder block cubes and set them up on a clean, stable table. We connected the flat adhesive mounts that were included with the GoPros and connected a GoPro camera to each. Since the cinder blocks were open on two parallel sides, we were able to see right through the cinder block cube to the other side. One of us stood on one side with the GoPro and mount, and the other stood on the other side of the opening. One of us turned the GoPro on and put the camera with the mount inside the cinder block cube, using the view on the screen to find the best position for the mount inside of the cube, taking care to ensure we could clearly see the other person on the other side. We found an ideal place where the view was mostly unobstructed by the sides of the cube but the cameras were still far enough inside the cube that they wouldn’t be too easily spotted by passersby. This spot was 5 cm from the edge of the cube. We traced the front and the back of the mount so we could glue it in the correct place. We repeated this procedure for the second cube and mount, and standardized the construction by placing the mount in the second cube 5 cm away from the edge of the cube. 
+Next, we charged all four of the waterproof Re-Fuel battery packs. As these were charging, we put together our cinder block mounting structures. We took our cinder block cubes and set them up on a clean, stable table. We connected the flat adhesive mounts that were included with the GoPros and connected a GoPro camera to each. Since the cinder blocks were open on two parallel sides, we were able to see right through the cinder block cube to the other side. One of us stood on one side with the GoPro and mount, and the other stood on the other side of the opening. One of us turned the GoPro on and put the camera with the mount inside the cinder block cube, using the view on the screen to find the best position for the mount inside of the cube, taking care to ensure we could clearly see the other person on the other side. We found an ideal place where the view was mostly unobstructed by the sides of the cube but the cameras were still far enough inside the cube that they wouldn't be too easily spotted by passersby. This spot was 5 cm from the edge of the cube. We traced the front and the back of the mount so we could glue it in the correct place. We repeated this procedure for the second cube and mount, and standardized the construction by placing the mount in the second cube 5 cm away from the edge of the cube. 
 
 In order to securely glue the mount in place, we used Gorilla glue. To activate the Gorilla glue, we first had to moisten one of the surfaces with water. We moistened the mounts on the adhesive side. We did not remove the adhesive backing so we could reutilize the mounts in the future. Once the mount was damp, we put Gorilla glue on the cinder block inside the lines we had drawn around the mount. We then placed the mount on the Gorilla glue, taking care to align the edges of the mount with the lines we had drawn. Next, as per the Gorilla glue instructions, we found a heavy object that could provide significant pressure on the mount and that would fit inside the cube. We left this for three hours to harden.
 
-Upon returning to the lab, we removed the heavy objects from the cube and checked the seal on the mount and cinder block to ensure the bond had successfully cemented. After this, we went to work on attaching the cinder block backs to close up one of the open sides on the cubes. We repeated much of the same process we used when attaching the mounts to the cubes, and followed the Gorilla Glue instructions carefully. First, one of us moistened the cinder block back while the other applied Gorilla Glue to the edge of the cube. Then, we carefully aligned the corners of the back with the cube. We repeated this with the second cube. Seeing that the cinderblock back was heavy enough on it’s own, we did not place a heavy object on top of this structure and instead simply left it to dry and harden overnight.
+Upon returning to the lab, we removed the heavy objects from the cube and checked the seal on the mount and cinder block to ensure the bond had successfully cemented. After this, we went to work on attaching the cinder block backs to close up one of the open sides on the cubes. We repeated much of the same process we used when attaching the mounts to the cubes, and followed the Gorilla Glue instructions carefully. First, one of us moistened the cinder block back while the other applied Gorilla Glue to the edge of the cube. Then, we carefully aligned the corners of the back with the cube. We repeated this with the second cube. Seeing that the cinderblock back was heavy enough on it's own, we did not place a heavy object on top of this structure and instead simply left it to dry and harden overnight.
 
 Finally, we checked on the cameras and battery packs again to ensure they had charged. We left them plugged in overnight. We also packed away the Gorilla Glue, the multiple SD cards, paper towels, and extra mounts in a field kit so we could deal with any emergencies in the field.
 
