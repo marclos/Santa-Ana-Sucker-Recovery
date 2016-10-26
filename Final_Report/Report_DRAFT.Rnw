@@ -47,7 +47,7 @@ In general, the environmental variables that influence \emph{C. santaanae} popul
 \subsection{Problem Statement}
 
 
-This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain what environmental variables affect \emph{C. santaanae} distributions. Better understanding of water temperature, discharge rates, BOD, and red algae distribution could aid in conservation efforts of this federally endangered fish.
+This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain what environmental variables affect \emph{C. santaanae} distributions to water temperatures, BOD, red algae content, etc. 
 
 \subsection{Background (Literature Review)}
 
