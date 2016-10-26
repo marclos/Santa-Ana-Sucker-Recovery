@@ -1,8 +1,8 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 14:14
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 13:55
 entering extended mode
  %&-line parsing enabled.
-**Report_DRAFT.tex
-(./Report_DRAFT.tex
+**Meta_Tues_Template.tex
+(./Meta_Tues_Template.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
@@ -27,22 +27,6 @@ File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(/usr/share/texmf/tex/latex/natbib/natbib.sty
-Package: natbib 2007/02/05 8.0 (PWD)
-\bibhang=\skip43
-\bibsep=\skip44
-LaTeX Info: Redefining \cite on input line 602.
-\c@NAT@ctr=\count87
-)
-(/usr/share/texmf/tex/latex/psnfss/times.sty
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-(/usr/share/texmf/tex/latex/placeins/placeins.sty
-Package: placeins 2005/04/18  v 2.2
-)
-(/usr/share/texmf/tex/latex/was/gensymb.sty
-Package: gensymb 2003/07/02 v1.0 (WaS)
 )
 (/usr/share/R/texmf/tex/latex/Sweave.sty
 Package: Sweave 
@@ -70,7 +54,7 @@ Package graphics Info: Driver file: pdftex.def on input line 90.
 
 (/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
-\Gread@gobject=\count88
+\Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -79,11 +63,11 @@ File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
 Package: fancyvrb 1998/07/17
 
 Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
-\FV@CodeLineNo=\count89
+\FV@CodeLineNo=\count88
 \FV@InFile=\read1
 \FV@TabBox=\box26
-\c@FancyVerbLine=\count90
-\FV@StepNumber=\count91
+\c@FancyVerbLine=\count89
+\FV@StepNumber=\count90
 \FV@OutFile=\write3
 
 No file fancyvrb.cfg.
@@ -175,152 +159,51 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
 (/usr/share/texmf/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))) (./Report_DRAFT.aux)
-\openout1 = `Report_DRAFT.aux'.
+)))) (./Meta_Tues_Template.aux)
+\openout1 = `Meta_Tues_Template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 13.
-\symgns@font=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/aer/m/n --> TS1/aer/bx/n on input line 13.
-Package gensymb Info: Math companion symbols declared on input line 13.
-LaTeX Info: Redefining \degree on input line 13.
-LaTeX Info: Redefining \celsius on input line 13.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 13.
-LaTeX Info: Redefining \ohm on input line 13.
-Package gensymb Info: Using \textohm for \ohm on input line 13.
-Package gensymb Info: Using \textmu for \micro on input line 13.
- (./Report_DRAFT-concordance.tex)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 16.
+LaTeX Font Info:    ... okay on input line 4.
 
-(/usr/share/R/texmf/tex/latex/ts1aer.fd
-File: ts1aer.fd 
-)
-LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <12> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <8> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <6> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 16.
+(./Meta_Tues_Template-concordance.tex)
+LaTeX Font Info:    Try loading font information for T1+aett on input line 16.
+ (/usr/share/texmf/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+) [1
 
-Overfull \hbox (56.87695pt too wide) in paragraph at lines 16--16
- [][] 
- []
-
-[1
-
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Report_DRAFT.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
-LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <7> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <5> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 2.
-)
-\tf@toc=\write4
-\openout4 = `Report_DRAFT.toc'.
-
-
-[2] [3] [4]
-Overfull \hbox (9.3213pt too wide) in paragraph at lines 99--100
-[]\T1/aer/m/n/10 Coulter, D. P., Höök, T. O., Ma-ha-p-a-tra, C. T., Guf-fey, 
-S. C., & Sepúlveda,
- []
-
-[5] [6] [7]
-Overfull \hbox (10.46239pt too wide) in paragraph at lines 173--180
-[][] 
- []
-
-[8]
-Overfull \hbox (2.85312pt too wide) in paragraph at lines 186--187
-[]\T1/aer/m/n/10 Each ob-ser-va-tion con-tains the fol-low-ing vari-ables: al-g
-ae per-cent cover, canopy
- []
-
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SiteMap.pdf): PDF inclusion: 
-found PDF version <1.6>, but at most version <1.4> allowed
-<Figures/SiteMap.pdf, id=36, 425.74055pt x 328.49725pt>
-File: Figures/SiteMap.pdf Graphic file (type pdf)
-
-<use Figures/SiteMap.pdf> [9 <./Figures/SiteMap.pdf>] [10] [11]
-<Figures/Temp.pdf, id=49, 505.89pt x 505.89pt>
-File: Figures/Temp.pdf Graphic file (type pdf)
- <use Figures/Temp.pdf> [12]
-[13 <./Figures/Temp.pdf>]
-Overfull \hbox (10.89636pt too wide) in paragraph at lines 301--312
-[][]
- []
-
-[14] [15] (./Report_DRAFT.bbl [16]) [17] [18] [19]
-Overfull \hbox (13.4067pt too wide) in paragraph at lines 384--385
-\T1/aer/m/n/10 solved in 1 L dis-tilled wa-ter), Mag-ne-sium sul-fate so-lu-tio
-n (4.5 g MgSO4*7H2O
- []
-
-
-Overfull \hbox (3.1558pt too wide) in paragraph at lines 399--400
-\T1/aer/m/n/10 blanks (af-ter cor-rec-tion for di-lu-tion and seed-ing) must be
- 198+/- 30.5mg/L. 
- []
-
-
-Overfull \hbox (4.16641pt too wide) in paragraph at lines 402--403
-[]\T1/aer/m/n/10 Seed control--Calculate Seed Con-trol Fac-tor (SCF) us-ing [(D
-1-D2)*f], where 
- []
-
-[20] [21] (./Report_DRAFT.aux) ) 
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./Meta_Tues_Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2177 strings out of 256214
- 28321 string characters out of 1917000
- 77641 words of memory out of 1500000
- 5402 multiletter control sequences out of 10000+200000
- 36708 words of font info for 74 fonts, out of 1200000 for 2000
+ 1756 strings out of 256214
+ 23442 string characters out of 1917000
+ 68312 words of memory out of 1500000
+ 5042 multiletter control sequences out of 10000+200000
+ 17176 words of font info for 37 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,8n,21p,1468b,217s stack positions out of 5000i,500n,6000p,200000b,15000s
- </home/CAMPUS/nllk2015/.texlive2007/texmf-var/
-fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf/fonts/type1/bluesk
-y/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share
-/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/
-cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/tex
-mf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
-r6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf/font
-s/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti10.pfb
->
-Output written on Report_DRAFT.pdf (21 pages, 979641 bytes).
+ 35i,4n,21p,224b,190s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb
+></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmsltt10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt10.pfb>
+Output written on Meta_Tues_Template.pdf (1 page, 31409 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 23 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 15 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5 words of extra memory for PDF output out of 10000 (max. 10000000)
 
