@@ -59,7 +59,8 @@
 \author{C. Flynn, E. Harris-Tyrrell, O. Howie, L. Israel, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ ed. Marc Los Huertos}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+
+
 
 \maketitle
 
@@ -289,6 +290,7 @@ We ran an ANOVA test where time period was the categorical independent variable 
 
 
 
+
 \subsection{Habitat Quality}
 
 Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value (Figure \ref{fig:canopyalgae}. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
@@ -296,7 +298,7 @@ Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive v
 \begin{figure}[!ht]
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
 
 \end{knitrout}
 \caption{Caption for this figure!}
@@ -308,7 +310,7 @@ Bed composition did have a stronger relationship with Algae Abundance, as shown 
 \begin{figure}[!ht]
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
 
 \end{knitrout}
 \caption{need caption, remove main}
@@ -321,26 +323,35 @@ As a control\footnote{I am not sure what this means?}, we also analyzed to what 
 \begin{figure}[!ht]
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
 
 \end{knitrout}
 \caption{Algae Abundance as a function of Site.}
 \label{fig:algaesite}
 \end{figure}
 
-The initial temperature data collected with an analog thermometer did not adequately describe the stream temperatures, so we relied on the temperature logger data for most of our analyses. The tempeature data suggests... (Figure \ref{Temp}).
+The initial temperature data collected with an analog thermometer did not adequately describe the stream temperatures, so we relied on the temperature logger data for most of our analyses. We found that temperature fluctuated between a minimum of 25.12 degrees Celsius and a maximum of 31.37 degrees Celsius, which are all well above the 22 degrees that many studies found is the optimal temperature for the fish. The plunge pool, site 4, contained the most data points around 27.5 degrees, which proved true for each locations, having the most repetitive temperature between 27 and 28 degrees. Site 4, however, had the least temperature range, only varying between 27 and 28.5 degrees, while other sites tended to have a bigger variation, with site 1 varying up to 5.41 degrees. (Figures \ref{fig:Temp} and \ref{fig:tempbox}).
 
 \begin{figure}[!ht]
 \includegraphics[width=0.90\textwidth]{Figures/Temp}
-\caption{Temperature time...NEEDS CAPTION.}
-\label{Temp}
+\caption{Temperature vs. time for all sites}
+\label{fig:Temp}
+\end{figure}
+\begin{figure}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
+
+\end{knitrout}
+\label{fig:tempbox}
+\caption{Box plots of temperature collected}
 \end{figure}
 
 We evaluated the relationship between algae abundance as a function of range of temperature (*C) experienced at each site (Figure \ref{fig:tempalgae}) \textbf{and found... what???}. While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yeilded \textbf{the much better p-value of 3.49e-05}\footnote{better?!!! says who?}. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826\footnote{This is quite high in ecology, please revise}, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
 \begin{figure}[!ht]
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-7-1} 
 
 \end{knitrout}
 \caption{Ths is caption that needs info...}
@@ -361,7 +372,7 @@ We counted an average of 20.133 suckers in the morning with a standard deviation
 \begin{figure}[!ht]
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-7-1} 
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-9-1} 
 
 \end{knitrout}
 \caption{needs a caption! Can we change after to afternoon...}
