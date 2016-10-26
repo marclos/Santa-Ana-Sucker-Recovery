@@ -52,12 +52,24 @@
 \graphicspath{ {/videography_figures}}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
+
+    \begin{tabular}{|*9{c|}}\hline
+        A & \multicolumn{2}{c|}{B} & \multicolumn{2}{c|}{C} & \multicolumn{2}{c|}{D} & \multicolumn{2}{c|}{E} \\\cline{2-9}
+        & \multicolumn{2}{c|}{x} & \multicolumn{2}{c|}{x} & \multicolumn{2}{c|}{x} & \multicolumn{2}{c|}{x} \\\cline{2-9}
+        & U & V &  U & V & U & V & U & V \\\hline
+        y  & 7.23 & 6.39  & 7.76 &  6.93 & 2.81 &  2.54 & 0.59 &  0.55  \\ \hline
+        z  & 2.5503 &  2.2658  & 2.5345 &  2.3741 & 1.85 &  1.64 & 0.46 &  0.37   \\ \hline
+        $\sum{E^{i}_{U/V}}$  & & & & &  & & $\sim 1$ & $\sim 1$   \\ [1ex]  \hline
+    \end{tabular} 
+    
+
 \begin{table}
-\begin{tabular}{|p{1.5cm}||p{1cm}|p{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
+%\begin{tabular}{|p{1.5cm}|p{1cm}|p{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|}
+\begin{tabular}{|cccccccc|}
  \hline
  \multicolumn{8}{|c|}{Videography Summary Statistics} \\
  \hline
- Section & Min & Max & Mean & Median & 1st Quartile & 3rd Quartile & K\\
+ Time & Min & Max & Mean & Median & 1st Quartile & 3rd Quartile & K\\
  \hline
  Morning & 7 & 29 & 20.13 & 22  & 16.75 & 25 & -0.6\\
  Afternoon & 14 & 49 & 32.25 & 31 & 24.75 &  42 & -1.3\\

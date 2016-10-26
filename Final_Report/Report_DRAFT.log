@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 08:42
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  26 OCT 2016 09:02
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -393,100 +393,88 @@ Missing character: There is no ™ in font ptmr7t!
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
 [14 <./Figures/Temp.pdf>]
-Package color Info: Redefining color shadecolor on input line 366.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 367.
-
- (/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 368.
-
-Overfull \hbox (663.0pt too wide) in paragraph at lines 368--368
-[][]\OT1/pcr/b/n/10 plot[][]\OT1/pcr/m/n/10 (importupdated[][]$[][]Temp_range,i
-mportupdated[][]$[][]Algae,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[]
-[]xlab[][]=[][]"Temperature (*C)"[][],[][]main[] []=[][]"Temperature as a predi
-ctor of Algae Abundance"[][],[][]las[][]=[][]1[][])[][] 
- []
+Package color Info: Redefining color shadecolor on input line 368.
 
 <figure/unnamed-chunk-2-1.pdf, id=68, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-2-1.pdf>
-Overfull \hbox (0.23695pt too wide) in paragraph at lines 380--381
+Overfull \hbox (0.23695pt too wide) in paragraph at lines 377--378
 []\OT1/ptm/m/n/10 While us-ing our ab-so-lute tem-per-a-ture data as a pre-dic-
 tor of al-gae abun-dance yielded
  []
 
-Package color Info: Redefining color shadecolor on input line 384.
-<figure/unnamed-chunk-3-1.pdf, id=69, 505.89pt x 505.89pt>
+[15 <./figure/unnamed-chunk-2-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 381.
+
+<figure/unnamed-chunk-3-1.pdf, id=78, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-3-1.pdf>
-Package color Info: Redefining color shadecolor on input line 395.
+Package color Info: Redefining color shadecolor on input line 392.
 
-Overfull \hbox (603.0pt too wide) in paragraph at lines 397--397
-[][]\OT1/pcr/b/n/10 boxplot[][]\OT1/pcr/m/n/10 (Algae[][]~[][]Sediment,importup
-dated,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Bed C
-omposition"[][],[][]main[] []=[][]"Bed Composition as a predictor of Algae Abun
-dance"[][],[][]las[][]=[][]1[][])[][] 
- []
-
-<figure/unnamed-chunk-4-1.pdf, id=70, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-4-1.pdf, id=79, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-4-1.pdf>
-Package color Info: Redefining color shadecolor on input line 409.
+<use figure/unnamed-chunk-4-1.pdf> [16 <./figure/unnamed-chunk-3-1.pdf>]
+[17 <./figure/unnamed-chunk-4-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 402.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 403.
 
-Overfull \hbox (537.0pt too wide) in paragraph at lines 411--411
+
+(/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 404.
+
+Overfull \hbox (537.0pt too wide) in paragraph at lines 404--404
 [][]\OT1/pcr/b/n/10 boxplot[][]\OT1/pcr/m/n/10 (Algae[][]~[][]Site_new,importup
 dated,[] []ylab[][]=[][]"Algae Abundance (% cover)"[][],[][]xlab[][]=[][]"Site 
 name"[][],[][]main[] []=[][]"Reach Site as a predictor of Algae Abundance"[][],
 [][]las[][]=[][]1[][])[][] 
  []
 
-<figure/unnamed-chunk-5-1.pdf, id=71, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-5-1.pdf, id=98, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-5-1.pdf>
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no ° in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no ° in font ptmr7t!
-Package color Info: Redefining color shadecolor on input line 425.
+<use figure/unnamed-chunk-5-1.pdf> [18 <./figure/unnamed-chunk-5-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 420.
 
-Overfull \hbox (339.0pt too wide) in paragraph at lines 427--427
+Overfull \hbox (339.0pt too wide) in paragraph at lines 422--422
 [][]\OT1/pcr/b/n/10 boxplot[][]\OT1/pcr/m/n/10 (Fish[][]~[][]Section,newmetadat
 a,[] []ylab[][]=[][]"Fish"[][],[][]xlab[][]=[][]"Time of Day"[][],[][]main[] []
 =[][]"Time of Day as a predictor of Fish"[][],[][]las[][]=[][]1[][])[][] 
  []
 
-<figure/unnamed-chunk-7-1.pdf, id=72, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-7-1.pdf, id=110, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-7-1.pdf>
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [15] [16 <./figure/unnamed-chunk-2-1.pdf>]
-[17 <./figure/unnamed-chunk-3-1.pdf>] [18 <./figure/unnamed-chunk-4-1.pdf>]
-[19 <./figure/unnamed-chunk-5-1.pdf>] [20 <./figure/unnamed-chunk-7-1.pdf>]
+ [19 <./figure/unnamed-chunk-7-1.pdf>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no ° in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no ° in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no ° in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no ° in font ptmr7t!
 
-[21] (./Report_DRAFT.bbl)
+[20]
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+ (./Report_DRAFT.bbl) [21]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -494,33 +482,29 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [23]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
- [24] (./Report_DRAFT.aux) ) 
+ [23] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
- 1640 strings out of 256214
- 21780 string characters out of 1917000
- 72493 words of memory out of 1500000
- 4905 multiletter control sequences out of 10000+200000
+ 1642 strings out of 256214
+ 21802 string characters out of 1917000
+ 70493 words of memory out of 1500000
+ 4907 multiletter control sequences out of 10000+200000
  22699 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,7n,20p,1549b,336s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,9n,20p,1569b,332s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr
 /share/texmf/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texmf/fonts/type1/u
 rw/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (24 pages, 423935 bytes).
+Output written on Report_DRAFT.pdf (23 pages, 420840 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
+ 151 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

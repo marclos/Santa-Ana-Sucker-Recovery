@@ -343,6 +343,7 @@ We ran an ANOVA test where time period was the categorical independent variable 
 
 
 
+\subsection{Habitat Quality}
 
 The tempeature data suggests... (Figure \ref{Temp}).
 
@@ -351,6 +352,7 @@ The tempeature data suggests... (Figure \ref{Temp}).
 \caption{Temperature time...NEEDS CAPTION.}
 \label{Temp}
 \end{figure}
+
 
 The Seed Control Factor was calculated for the four seed blanks, and the slope of the resulting values and the corresponding seed concentrations was determined. Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our BOD5 calculations on these data yielded the values:
 
@@ -363,12 +365,7 @@ The temperature data we collected with an analogue thermometer was too coarse to
 This is describing the figure: (figure \ref{fig:tempalgae})
 \begin{figure}
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{plot}\hlstd{(importupdated}\hlopt{$}\hlstd{Temp_range,importupdated}\hlopt{$}\hlstd{Algae,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Temperature (*C)"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Temperature as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
-\hlkwd{abline}\hlstd{(}\hlkwd{lm}\hlstd{(Algae}\hlopt{~}\hlstd{Temp_range,importupdated))}
-\end{alltt}
-\end{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 \includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
 
 \end{knitrout}
@@ -392,11 +389,7 @@ Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive v
 
 \begin{figure}
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{boxplot}\hlstd{(Algae}\hlopt{~}\hlstd{Sediment,importupdated,} \hlkwc{ylab}\hlstd{=}\hlstr{"Algae Abundance (% cover)"}\hlstd{,}\hlkwc{xlab}\hlstd{=}\hlstr{"Bed Composition"}\hlstd{,}\hlkwc{main} \hlstd{=}\hlstr{"Bed Composition as a predictor of Algae Abundance"}\hlstd{,}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
-\end{alltt}
-\end{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
 \includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
 
 \end{knitrout}
@@ -416,9 +409,11 @@ Bed composition did have a stronger relationship with Alage Abanundance, as show
 \end{knitrout}
 \end{figure}
 
-As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp\_range value. Therefore, the high predictive value of temp\_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764°C in the morning and increased to 28.456°C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
+As a control, we also analyzed to what extend Reach Site alone could predict Algae Abundance. Our ANOVA test yielded p-value: 0.008176 which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation. However, our temperature variation data was merged with our algae data after the fact, and for each site, all measurements were assigned the same temp\_range value. Therefore, the high predictive value of temp\_range could be just an artifact of that methodological decision. However, temperature variations p-value was over 2 orders of magnitude smaller than Reach Site alone (3.49e-05 vs. 8.17e-03 respectively), so it remains thoroughly plausible that water temperature variation is predictor of algae abundance independent of site variation. Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764\textdegree C in the morning and increased to 28.456\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
 
 
+
+\subsection{Fish Counts}
 
 \begin{figure}
 \begin{knitrout}
@@ -432,17 +427,23 @@ As a control, we also analyzed to what extend Reach Site alone could predict Alg
 \end{knitrout}
 \end{figure}
 
-%\begin{tabular}{ |p{1.5cm}||p{1cm}|p{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|  }
-% \hline
- %\multicolumn{8}{|c|}{Videography Summary Statistics} \\
-% \hline
-% Section & Min & Max & Mean & Median & 1st Quartile & 3rd Quartile & K\\
-% \hline
-% Morning & 7 & 29 & 20.13 & 22  & 16.75 & 25 & -0.6\\
-% Afternoon & 14 & 49 & 32.25 & 31 & 24.75 &  42 & -1.3\\
-% \hline
-%\end{tabular}
+We need some text here on the fish counts... (Table \ref{tab:fishcounts}).
 
+\begin{table}
+\caption{Summary Statistics for Videography Fish Counts}
+%\begin{tabular}{ |p{1.5cm}||p{1cm}|p{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|  }
+\begin{tabular}{cccccccc}
+ \hline
+ \multicolumn{8}{c}{Videography Summary Statistics} \\
+ \hline
+ Section & Min & Max & Mean & Median & 1st Quartile & 3rd Quartile & K\\
+ \hline
+ Morning & 7 & 29 & 20.13 & 22  & 16.75 & 25 & -0.6\\
+ Afternoon & 14 & 49 & 32.25 & 31 & 24.75 &  42 & -1.3\\
+ \hline
+\end{tabular}
+\label{tab:fishcounts}
+\end{table}
 
 
 \section{Discussion}
