@@ -50,7 +50,7 @@
 \usepackage{alltt}
 \usepackage{natbib}
 \usepackage{times}
-
+\usepackage[section]{placeins}
 \usepackage{gensymb} % How can I write a ° (degree) symbol in LaTeX?
 
 \newcommand{\BibTeX}{{\sc Bib}\TeX}
@@ -287,55 +287,15 @@ We will obtain four HOBO Tidbit water temperature Data Loggers to set up at the 
 
 \subsection{BOD Methods}
 
-Approximately 1L of source river water was collected at each of two sites, one upstream location closer to the wastewater discharge facility, and one downstream location (fig. 1). Ideally, these would be transported to the laboratory for analysis within four hours.
-
-Ideally within the same day of collection, water samples were analyzed for initial dissolved oxygen content and prepared for 5-day incubation.  
-\begin{itemize}
-  \item Three different dilutions were used for each of two sites, with source water volumes of 25, 50, and 100 mL. 
-  \item A seed suspension was prepared using PolySeed Seed Innoculum, and 4 mL of the solution was added to each 300 mL sample bottle. This solution was also used to create four seed blanks with seed volumes 15, 20, 25, and 30 mL.
-  \item Nitrification inhibitor was created by dissolving 2.0 g allylthiourea (ATU, C4H8N2S) in 1 L distilled water. 0.3 mL of the ATU solution was added to each source water sample, as well as to all seeded samples. 
-  \item A glucose-glutamic acid (GGA) solution was prepared by dissolving 150 mg each of dry glucose and glutamic acid in 1 L of distilled water, and was added to each of the four seed blanks, as well as the six source water samples. Three GGA blanks were also created with 6 mL of GGA solution in incubation bottles. 
-  \item Dilution water was created using 1 mL each phosphate buffer (8.5 g KH2PO4, 21.75 g K2HPO4, 33.4 g Na2HPO*7H2O, and 1.7 g NH4Cl dissolved in 1 L distilled water), Magnesium sulfate solution (4.5 g MgSO4*7H2O dissolved in 200 mL distilled water), Calcium chloride solution (5.5 g CaCl2 dissolved in 200 mL distilled water), and Ferric chloride solution (0.05 g FeCl3*6H2O dissolved in 200 mL distilled water), and added to the six source water samples, four GGA blanks, and three seeded blanks. Three dilution water blanks were also created using the same procedure diluted to 300 mL.
-\end{itemize}
-Initial DO readings were to be taken on all blanks and samples using a Thermo Scientific DO Probe with auto-spinning functionality. The bottles were then incubated in a dark area for 5 days, and DO readings were again taken.  
-
-Note that *Temp\_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site\_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
-linear regression of temperature range vs algae abundance
-linear regression of canopy cover vs algae abundance
-ANOVA of bed composition vs. algae abundance
-ANOVA of site location vs. algae abundance
-For each of these statistical comparisons, we tested whether we could reject the null hypothesis, and if yes, discuss the implications of those findings. Our results are summarized in the following section. 
-
-\subsubsection*{Quality Control Checks}
-Using the seed blanks, glucose-glutamic acid blanks, and dilution water blanks, quality control checks were performed prior to data collection. 
-\begin{itemize}
-  \item Minimum DO Depletion--Viable samples must have min. DO depletion of 2.0mg/L, and residual DO of at least 1.0mg/L.
-  \item Glucose-Glutamic Acid Check--The resulting average BOD for the 3 GGA blanks (after correction for dilution and seeding) must be 198+/- 30.5mg/L.
-  \item Dilution water check--DO uptake after incubation must not be more than 0.20mg/L and preferably not more than 0.10 (before seed corrections). 
-  \subitem Dilution Water--If dilution water blank exceeds 0.20 mg/L, clearly identify samples in data.
-  \item Seed control--Calculate Seed Control Factor (SCF) using [(D1-D2)*f], where
-  \subitem D1= initial DO of seed control, mg/L
-  \subitem D2= final DO after indubation, mg/L,
-  \subitem f= (vol. seed in diluted sample)/(vol. seed in seed control)
-\end{itemize}
-
-\subsubsection*{BOD5}
-BOD5 was calculated for viable samples according to Standard Methods for the Examination of Water and Wastewater, using the equation 
-BOD5, mg/L= ((D1-D2)-(S)Vs)/P, where 
+Approximately 1L of source river water was collected at each of two sites, one upstream location closer to the wastewater discharge facility, and one downstream location (fig. 1). Ideally, these would be transported to the laboratory for analysis within four hours. BOD was carried out using the following methods...
 
 
-D1= initial DO, mg/L
-
-D2= final DO after incubation, mg/L
 
 
 \subsection{Statistical Methods}
 
 After conducting our ﬁeldwork, we will enter our data in rstudio. We will produce linear regressions of temperature vs algae abundance. We will producelinear regressions of canopy cover vs algae abundance. We will produce linear regressions of canopy cover vs temperature. We will create ANOVA or t-tests of bed composition vs. algae abundance. We will then analyze our data and write a project report 4-5 pages long with pictures and ﬁgures. We should hopefully be able to draw conclusions about canopy cover, temperature, and stream bed compositions eﬀect on algae abundance. In qualitative terms, we will synthesize our results with the ﬁsh videography team and state whether our observed relationship between stream conditions and algae abundance matches the frequency of their ﬁsh observations.
 The following code was used to generate summary statisitics. 
-
-
-\subsection{Statistical Methods}
 
 We ran an ANOVA test where time period was the categorical independent variable and number of fish was the continuous dependent variable.  We weren’t able to run the test for location 2 because there were too few fish seen to draw any conclusions.  We also couldn’t test the effect of location on number of fish, because the conditions were too different between the upstream and downstream locations to compare.
 
@@ -353,8 +313,11 @@ The tempeature data suggests... (Figure \ref{Temp}).
 \label{Temp}
 \end{figure}
 
+There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100 percent algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 percent level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
+Our exploratory study is one of the first to examine what variables may control red algae's distribution in the Santa Ana River. While the limited scope of this research eliminated the possibility of conclusive findings, we can suggest promising areas for further research. Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. Most importantly, red algae’s co-occurrence with the federally endangered Santa Ana sucker should be examined. These improvements on our experiment will yield a much better idea of what factors control red algae’s distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae’s effect on Santa Ana Suckers. 
 
-The Seed Control Factor was calculated for the four seed blanks, and the slope of the resulting values and the corresponding seed concentrations was determined. Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our BOD5 calculations on these data yielded the values:
+
+Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our BOD5 calculations on these data yielded the values:
 
 upstream BOD5= 22.069 mg/L 
 
@@ -465,7 +428,10 @@ Future experiments can improve upon our methods by using the optimum amount of s
 Our videos of site 2 contained so few fish that we were unable to draw any conclusions from the data.  In the morning there were no Santa Ana suckers seen in the entire hour, and in the afternoon there was one sucker that would occasionally swim out from behind a rock.  This could be because the temperature that far upstream was too hot for the suckers to live there; the temperature data found that at that location the water was around 29°C in the afternoon and 25°C in the morning.  It is also possible that our camera was placed in a section of the river that the suckers don’t like, so the lack of fish could have had nothing to do with temperature.
 When we compared the number of fish downstream in the afternoon compared to the morning, we had a p-value of 6.027e-13, meaning there were significantly more suckers in the afternoon than there were in the morning.  This suggests that the suckers do move downstream throughout the day to get to cooler temperatures.  On the afternoon we tested, the plunge pool (downstream) was 28.5°C, whereas the river at our upstream location, closer to the concrete, was 29.4°C.  However, we cannot definitively prove that we observed more fish in the afternoon because of the temperature change; there could have been a variety of other factors.  For example, the fish could have moved from one river bank to the other throughout the day to stay in the shade of the brush as the sun moved.
 
+
+
 \section{Conclusion and Recommendations}
+
 
 
 \section{Literature Cited}
@@ -473,11 +439,10 @@ When we compared the number of fish downstream in the afternoon compared to the 
 \bibliographystyle{apalike}
 \bibliography{report}
 
-Greenfield, D. W., Ross, S. T., \& Deckert, G. D. (1970). Some aspects of the life history of the Santa Ana sucker, Catostomus (Pantosteus) santaanae (Snyder). Calif. Fish Game, 56(3), 166-179. 
-
-
-
+\newpage
 \section{Appendix: Detailed Methods}
+
+\subsection{Video Camera Set up}
 
 To set up the cameras, we removed them from the packaging, inserted a microSD card into each, and charged them fully by connecting the included USB cables to a computer. The cameras needed to be fully charged before we were able to adjust the settings. Once the cameras were sufficiently charged, we set the filming settings to record in 720p x 30fps. We set the cameras aside and left them charging. 
 
@@ -495,9 +460,47 @@ Next, we walked approximately 20 minutes upstream to another covered pool next t
 We returned at approximately 2 pm.  We took out the camera at the downstream site, replaced the memory card and the battery pack, hit record, and replaced the camera exactly as it was positioned previously.  We then walked upstream and did the same thing with the second camera.  After returning, we cleared the memory cards and plugged in the battery packs.
 Our last recording session was at 8 am the next morning.  We replaced the memory cards and battery packs again and returned the cameras to their positions.  One of us returned the next day to collect the cameras.
 
-\section{Conclusion and Recommendations}
-There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100 percent algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 percent level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
-Our exploratory study is one of the first to examine what variables may control red algae's distribution in the Santa Ana River. While the limited scope of this research eliminated the possibility of conclusive findings, we can suggest promising areas for further research. Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. Most importantly, red algae’s co-occurrence with the federally endangered Santa Ana sucker should be examined. These improvements on our experiment will yield a much better idea of what factors control red algae’s distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae’s effect on Santa Ana Suckers. 
+\subsection{BOD5 Methods}
 
+Ideally within the same day of collection, water samples were analyzed for initial dissolved oxygen content and prepared for 5-day incubation.  
+\begin{itemize}
+  \item Three different dilutions were used for each of two sites, with source water volumes of 25, 50, and 100 mL. 
+  \item A seed suspension was prepared using PolySeed Seed Innoculum, and 4 mL of the solution was added to each 300 mL sample bottle. This solution was also used to create four seed blanks with seed volumes 15, 20, 25, and 30 mL.
+  \item Nitrification inhibitor was created by dissolving 2.0 g allylthiourea (ATU, C4H8N2S) in 1 L distilled water. 0.3 mL of the ATU solution was added to each source water sample, as well as to all seeded samples. 
+  \item A glucose-glutamic acid (GGA) solution was prepared by dissolving 150 mg each of dry glucose and glutamic acid in 1 L of distilled water, and was added to each of the four seed blanks, as well as the six source water samples. Three GGA blanks were also created with 6 mL of GGA solution in incubation bottles. 
+  \item Dilution water was created using 1 mL each phosphate buffer (8.5 g KH2PO4, 21.75 g K2HPO4, 33.4 g Na2HPO*7H2O, and 1.7 g NH4Cl dissolved in 1 L distilled water), Magnesium sulfate solution (4.5 g MgSO4*7H2O dissolved in 200 mL distilled water), Calcium chloride solution (5.5 g CaCl2 dissolved in 200 mL distilled water), and Ferric chloride solution (0.05 g FeCl3*6H2O dissolved in 200 mL distilled water), and added to the six source water samples, four GGA blanks, and three seeded blanks. Three dilution water blanks were also created using the same procedure diluted to 300 mL.
+\end{itemize}
+Initial DO readings were to be taken on all blanks and samples using a Thermo Scientific DO Probe with auto-spinning functionality. The bottles were then incubated in a dark area for 5 days, and DO readings were again taken.  
+
+Note that *Temp\_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site\_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
+linear regression of temperature range vs algae abundance
+linear regression of canopy cover vs algae abundance
+ANOVA of bed composition vs. algae abundance
+ANOVA of site location vs. algae abundance
+For each of these statistical comparisons, we tested whether we could reject the null hypothesis, and if yes, discuss the implications of those findings. Our results are summarized in the following section. 
+
+\subsubsection*{Quality Control Checks}
+Using the seed blanks, glucose-glutamic acid blanks, and dilution water blanks, quality control checks were performed prior to data collection. 
+\begin{itemize}
+  \item Minimum DO Depletion--Viable samples must have min. DO depletion of 2.0mg/L, and residual DO of at least 1.0mg/L.
+  \item Glucose-Glutamic Acid Check--The resulting average BOD for the 3 GGA blanks (after correction for dilution and seeding) must be 198+/- 30.5mg/L.
+  \item Dilution water check--DO uptake after incubation must not be more than 0.20mg/L and preferably not more than 0.10 (before seed corrections). 
+  \subitem Dilution Water--If dilution water blank exceeds 0.20 mg/L, clearly identify samples in data.
+  \item Seed control--Calculate Seed Control Factor (SCF) using [(D1-D2)*f], where
+  \subitem D1= initial DO of seed control, mg/L
+  \subitem D2= final DO after indubation, mg/L,
+  \subitem f= (vol. seed in diluted sample)/(vol. seed in seed control)
+\end{itemize}
+
+\subsubsection*{BOD5}
+BOD5 was calculated for viable samples according to Standard Methods for the Examination of Water and Wastewater, using the equation 
+BOD5, mg/L= ((D1-D2)-(S)Vs)/P, where 
+
+
+D1= initial DO, mg/L
+
+D2= final DO after incubation, mg/L
+
+The Seed Control Factor was calculated for the four seed blanks, and the slope of the resulting values and the corresponding seed concentrations was determined. 
 
 \end{document}
