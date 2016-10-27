@@ -38,7 +38,7 @@ This project began with the broad driving question, "How can the Santa Ana sucke
 
 [FOR NEXT PERSON WHO EDITS: 
 
-WHAT THINGS' SUSPECTEDSIGNIFICANCE DO WE NEED TO EXPLAIN? 
+WHAT THINGS' SUSPECTED SIGNIFICANCE DO WE NEED TO EXPLAIN? 
 •	Habitat 
 •	Temperature 
 •	Red Algae
@@ -46,57 +46,33 @@ WHAT THINGS' SUSPECTEDSIGNIFICANCE DO WE NEED TO EXPLAIN?
 •	The connections between these]
 
 
-Each of the elements explored in this report was decided as being important to explore based on a review of the following literature:
+The range of the fish is of significant interest to efforts for its preservation. The current range of the Santa Ana Sucker differs significantly from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}. The habitat value of the Santa Ana sucker is highly constrained by the reach of the Santa Ana river that we evaluated, where the water source is treated discharges for most of the year --- in this context the river reach is highly modified in terms of it's hydrology, geomorphology,  water quality, and habitat characteristics. 
 
-The range of the fish is of significant interest to efforts for its preservation. The current range of the Santa Ana Sucker differs significantly from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}.
-
-Regarding the importance of water temperature to the fish, Moyle postulates that the sucker prefers environments with cool water \citep{moyle2002inland}. Again, the temperature of the Santa Ana River has been rising to levels greater than the sucker could stand \citep{REF}. Other types of fish have been known to regulate their body temperatures by moving to different areas in their habitat throughout the day (Matthews Berg Azuma 1994).
-
-We used this source to determine preferred temperature for the Santa Ana Sucker and in general to inform ourselves more about the fish. Little research has been done on specific threats to the Santa Ana Sucker, but the document did point out possible threats arising from hydrological modification and urban development in general. The idea emerged that water coming out of a treatment plant could potentially be a threat under hydrological modification or urban development.
-
+\subsubsection{Stream Hydrology and Geomorphology}
 
 According to Evans et al. (2005 FIND FULL CITATION IN NICOLE AND SOPHIE'S OR CLARE AND WENDY'S GROUP), temporary reduction of flow, such as that which can occur when the treatment plant which now largely supplies the river halts releases of the water which now largely maintains, can significantly reduce the amount of habitat for suckers.[3] Just last month, the Center for Biological Diversity reported that "by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish." 
 
+Understanding the role of stream substrate can be important in restoring various fish populations. For example, restoration projects seemed to be failing to prevent the Chinook population from falling in the Merced River \citep{albertson13}. The installation of gravel augmentation in a reconfigured channel seemed to have little impact on the salmon, suggesting that other factors were catalyzing the fall of the species. By comparing the restored portion with other portions of the Merced river, food web characteristics and flow discharge seemed to produce the same results on the various life stages of the salmon. However, higher temperatures, less woody debris, and minimal riparian cover seemed to limit populations in the restored portions. Restoration efforts are then presented with an added challenge of ensuring that every aspect of the ecosystem is beneficial to the species, which demands more work toward temperature regulation and attempts to restore the river bank. To see how the Santa Ana sucker would react to similar conservation efforts would be interesting in discussions in attempting to determine solutions.
+
+\subsection{Water Quality}
+
+We used this source to determine preferred temperature for the Santa Ana Sucker and in general to inform ourselves more about the fish. Little research has been done on specific threats to the Santa Ana Sucker, but the document did point out possible threats arising from hydrological modification and urban development in general. The idea emerged that water coming out of a treatment plant could potentially be a threat under hydrological modification or urban development.
+
+Regarding the importance of water temperature to the fish, Moyle postulates that the sucker prefers environments with cool water \citep{moyle2002inland}. Again, the temperature of the Santa Ana River has been rising to levels greater than the sucker could stand \citep{REF}. Other types of fish have been known to regulate their body temperatures by moving to different areas in their habitat throughout the day (Matthews Berg Azuma 1994). Temperature can play a signficant role fish behavior. For example, \citet{sadler1980effect} found discharge downstream of a impoundment altered fish populiaton densities as a result of temperature. Human activities can increase water temperature. Water-based organisms are sensitive to temperature change, especially young fish due to limited mobility. The effect of temperature on fish varies greatly depending on other conditions of the lake or river environment of the fish in question \citep{loshuertos16}. Heat, temperature, thermal energy, and heat capacity all slightly change how heat is measured in an ecosystem. Water in general has a high heat capacity, which indicates its high specific heat. Thus, aquatic systems therefore often retain their heat and are less susceptible to changes in temperature than non-aquatic systems. Inflows/mixing can have an effect on water temperature but it is often hard to detect due to thermal stratification mixing, seasonal change in temperature profile depth, and small volume inflow in terms of fraction of the lake volume. Temperature impacts many other features of water quality, which will be important to keep in mind going forward with the project. \citet{coulter2015fluctuating} explain how young Flathead Minnows exposed to warmer temperatures underwent a nondirectional sex reversal . This paper shows us how temperature can greatly affect fish and stress them out. 
+
 In addition, evidence suggests that the RIX discharge waters affect the growth and development of the of mosquito fish (xxx) and the Santa Ana sucker \citep{jenkins2009effects}.
 
-ALGAE: 
+\subsubsection{Community Ecology}
 
 For the Santa Ana River sucker habitat, a central threat is the invasive Red Algae that has been spreading with alacrity in areas where the fish are known to be, including the reach below the Rapid Infiltration and Extraction (RIX) Treatment plan (Palenscar).There are concerns that the algae may be one of the contributing factors to the sucker's decline. For example, one of the important features of the Santa Ana River for the sucker is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand \citep{thompson2010influence}. The sucker has adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic). 
-
-This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the fish being negatively impacted; the algae may also disrupt the fish's well-being in unknown ways. 
-
-Some researchers suggest that algae may actually crowd out the diatoms on which, along with algae and detritus, the sucker feeds \citep{thompson2010influence}. The presence of the algae in the same area and on the same type of substrate as the fish could indicate competition for resources between the algae\textbf{[ and the sh???]}\footnote{I am not sure where this was going\ldots}
-
-
-
-Temperature can play a signficant role fish behavior. For example, \citet{sadler1980effect} found discharge downstream of a impoundment altered fish populiaton densities as a result of temperature.
 
 Algae biomass can depend on a range of variables, both biotic and abiotic \citep{winkelmann2014top}. In general, diatom growth dominance has been associated with high quality sucker habitat \citep{REF}. 
 
 New introductions of the red algae are not unique to the Santa Ana River \citep{vzakova2013new}.
 
-UNNECESSARY?/INFO THAT WAS PREVIOUSLY INCLUDED, JIC:
+This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the fish being negatively impacted; the algae may also disrupt the fish's well-being in unknown ways. 
 
-ON GENERAL HABITAT AUGMENTATIONS: Albertson, L.K., Koenig, L.E., Lewis, B.L., Zeug, S.C., Harrison, L.R., \& Cardinale, B.J. (2012). How Does Restored Habitat for Chinook Salmon (Oncorhynchus Tshawytscha) in the Merced River in California Compare with other Chinook Streams? River Research and Applications, 29(4), 469-482). doi: 10.1002/rra.1604
-
-at Chinook salmon in the Merced river, restoration projects seemed to be failing to prevent the Chinook population from falling. The installation of gravel augmentation in a reconfigured channel seemed to have little impact on the salmon, suggesting that other factors were catalyzing the fall of the species. 
-By comparing the restored portion with other portions of the Merced river, food web characteristics and flow discharge seemed to produce the same results on the various life stages of the salmon. However, higher temperatures, less woody debris, and minimal riparian cover seemed to limit populations in the restored portions. 
-Restoration efforts are then presented with an added challenge of ensuring that every aspect of the ecosystem is beneficial to the species, which demands more work toward temperature regulation and attempts to restore the river bank. 
-To see how the Santa Ana sucker would react to similar conservation efforts would be interesting in discussions in attempting to determine solutions. 
-
-Coulter, D. P., Höök, T. O., Mahapatra, C. T., Guffey, S. C., \& Sepúlveda, M. S. (2015). Fluctuating Water Temperatures Affect Development, Physiological Responses and Cause Sex Reversal in Fathead Minnows. Environmental Science \& Technology, 49(3), 1921-1928. doi:10.1021/es5057159
-
-\citep{coulter2015fluctuating}
-
-Human activities can increase water temperature. Water-based organisms are sensitive to temperature change, especially young fish due to limited mobility. Coulter et al. explain how young Flathead Minnows exposed to warmer temperatures underwent a nondirectional sex reversal (Coulter et al 2015). This paper shows us how temperature can greatly affect fish and stress them out. 
-
-TEMP:
-Los Huertos, Marc. (2016). Thermal Properties of Water. Environmental Science of Aquatic Systems. 297-308.
-
-The effect of temperature on fish varies greatly depending on other conditions of the lake or river environment of the fish in question.
-Heat, temperature, thermal energy, and heat capacity all slightly change how heat is measured in an ecosystem. Water in general has a high heat capacity, which indicates its high specific heat. 
-
-These aquatic systems therefore often retain their heat and are less susceptible to changes in temperature than non-acquatic systems. Inflows/mixing can have an effect on water temperature but it is often hard to detect due to thermal stratification mixing, seasonal change in temperature profile depth, and small volume inflow in terms of fraction of the lake volume. This chapter sheds light that variations in temperature trigger chemicals dissolving/remaining, tend to raise/lower a fish's body temperature to the same degree, etc. Temperature impacts many other features of water quality, which will be important to keep in mind going forward with the project.
+Some researchers suggest that algae may actually crowd out the diatoms on which, along with algae and detritus, the sucker feeds \citep{thompson2010influence}. The presence of the algae in the same area and on the same type of substrate as the fish could indicate competition for resources between the algae\textbf{[ and the sh???]}\footnote{I am not sure where this was going\ldots}
 
 
 \subsection{Objectives}
