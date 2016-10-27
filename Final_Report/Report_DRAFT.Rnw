@@ -29,7 +29,6 @@ As the Santa Ana Sucker's population has declined, the abundance of the red alga
 
 In general, the environmental variables that influence \emph{C. santaanae} populations are poorly understood. Better understanding of water temperature, discharge rates, BOD, and red algae distribution could aid in conservation efforts of this federally endangered fish. 
 
-
 \subsection{Problem Statement}
 
 This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain what environmental variables affect \emph{C. santaanae} distributions to water temperatures, BOD, red algae content, etc. 
@@ -355,8 +354,6 @@ Our data itself has left us with many unknowns. The water temperature measuremen
 There were also pretty extreme spikes, but not occurring at times that suggested spikes were travelling downstream, originating from the Veolia water plant. Initially, Veolia agreed to send over their data on both the influx and outflux water temperatures, to allow us to see what was happening to water temperature from the plant. However, after a week of following up, we have not been able to get the data, as the CPO has hesitated to release it and says it will take up to a month to compile it. Without this data, it is hard to explain these randomly occurring spikes at different points in the river. This part of the data could have also been affected by canopy cover or stratification. 
 
 It is difficult to determine if the temperature spikes were what caused the fish to choose to reside primarily in site 4, because there are a myriad of other variables. Other variables that could have affected where the fish chose to live include algae/food source, canopy cover, depth, or sediment type/size. What we do know is that the further upstream locations not only had a wide range of temperatures, but also experienced hotter temperatures than site 4, which was where the fish live. From our background research, we know that the US Fish and Wildlife Service found that Santa Ana Suckers prefer water that is around 22 degrees Celsius. None of our sites had water this cold, but site 4 had the least variability and averaged around 28 degrees. According to a brief overview from Larry Brown of the US Geological Survey, there are no fish at site 1, and at sites 2 and 3 there are only a few European chubs. At site 4 they estimated large numbers of fish but did not conduct a formal survey of this site. However, our video data showed a much larger population in the plunge pool. These population estimates were the results of random surveying, and could be limited in their applicability because of variation in site location and scope. For example, Larry Brown measured sucker populations in the Rialto drainage but not in the pool below it, which is where we placed our data logger. Therefore, it is difficult to tell to what extent the US Geological Survey’s data works with our data. 
-
-
 
 \subsection{Research Limitations}
 
