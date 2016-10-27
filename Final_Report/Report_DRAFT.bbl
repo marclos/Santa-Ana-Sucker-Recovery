@@ -6,20 +6,15 @@ Greenfield, D.~W., Ross, S.~T., and Deckert, G.~D. (1970).
   (pantosteus) santaanae (snyder).
 \newblock {\em Calif. Fish Game}, 56(3):166--179.
 
-\bibitem[Knuth, 1979]{knuth79}
-Knuth, D.~E. (1979).
-\newblock {\em Tex and Metafont, New Directions in Typesetting}.
-\newblock American Mathematical Society and Digital Press, Stanford.
-
-\bibitem[Lamport, 1994]{lamport94}
-Lamport, L. (1994).
-\newblock {\em Latex: A Document Preparation System}.
-\newblock Addison-Wesley, Reading, Massachusetts, second edition.
-
 \bibitem[Moyle, 2002]{moyle2002inland}
 Moyle, P.~B. (2002).
 \newblock {\em Inland fishes of California}.
 \newblock Univ of California Press.
+
+\bibitem[{R Core Team}, 2016]{CRAN}
+{R Core Team} (2016).
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
 
 \bibitem[Sadler, 1980]{sadler1980effect}
 Sadler, K. (1980).

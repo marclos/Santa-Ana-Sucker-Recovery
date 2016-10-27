@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  27 OCT 2016 10:58
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  27 OCT 2016 13:59
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -77,6 +77,54 @@ Package: natbib 2007/02/05 8.0 (PWD)
 \bibsep=\skip45
 LaTeX Info: Redefining \cite on input line 602.
 \c@NAT@ctr=\count88
+)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
+\@linkdim=\dimen109
+\Hy@linkcounter=\count89
+\Hy@pagecounter=\count90
+
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
+HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 2288.
+Package hyperref Info: Link nesting OFF on input line 2293.
+Package hyperref Info: Hyper index ON on input line 2296.
+Package hyperref Info: Plain pages OFF on input line 2303.
+Package hyperref Info: Backreferencing OFF on input line 2308.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2444.
+(/usr/share/texmf/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 2599.
+\Fld@menulength=\count91
+\Field@Width=\dimen110
+\Fld@charsize=\dimen111
+\Choice@toks=\toks15
+\Field@toks=\toks16
+Package hyperref Info: Hyper figures OFF on input line 3102.
+Package hyperref Info: Link nesting OFF on input line 3107.
+Package hyperref Info: Hyper index ON on input line 3110.
+Package hyperref Info: backreferencing OFF on input line 3117.
+Package hyperref Info: Link coloring OFF on input line 3122.
+\Hy@abspage=\count92
+\c@Item=\count93
+\c@Hfootnote=\count94
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
+\Fld@listcount=\count95
 )
 (/usr/share/texmf/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
@@ -160,53 +208,71 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )) (./Report_DRAFT.aux)
 \openout1 = `Report_DRAFT.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 63.
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 61.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 63.
 
 (/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+Package hyperref Info: Link coloring OFF on input line 63.
+
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
+
+(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count96
+)
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+ (./Report_DRAFT.out)
+(./Report_DRAFT.out)
+\@outlinefile=\write3
+\openout3 = `Report_DRAFT.out'.
+
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ptm/m/n --> TS1/ptm/bx/n on input line 61.
-Package gensymb Info: Math companion symbols declared on input line 61.
-LaTeX Info: Redefining \degree on input line 61.
-LaTeX Info: Redefining \celsius on input line 61.
+(Font)                  TS1/ptm/m/n --> TS1/ptm/bx/n on input line 63.
+Package gensymb Info: Math companion symbols declared on input line 63.
+LaTeX Info: Redefining \degree on input line 63.
+LaTeX Info: Redefining \celsius on input line 63.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 61.
-LaTeX Info: Redefining \ohm on input line 61.
-Package gensymb Info: Using \textohm for \ohm on input line 61.
-Package gensymb Info: Using \textmu for \micro on input line 61.
+erthousand on input line 63.
+LaTeX Info: Redefining \ohm on input line 63.
+Package gensymb Info: Using \textohm for \ohm on input line 63.
+Package gensymb Info: Using \textmu for \micro on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 63.
+(Font)              <12> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 63.
+(Font)              <8> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 63.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 63.
-
-(/usr/share/texmf/tex/latex/psnfss/ts1ptm.fd
+(Font)              <6> on input line 66.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 66.
+ (/usr/share/texmf/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (27.5137pt too wide) in paragraph at lines 63--63
+Overfull \hbox (27.5137pt too wide) in paragraph at lines 66--66
  [][] 
  []
 
@@ -214,7 +280,7 @@ Overfull \hbox (27.5137pt too wide) in paragraph at lines 63--63
 
 {/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
  (./Report_DRAFT.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
@@ -223,29 +289,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
 )
-\tf@toc=\write3
-\openout3 = `Report_DRAFT.toc'.
+\tf@toc=\write4
+\openout4 = `Report_DRAFT.toc'.
 
 
 [2]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ¢ in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ¢ in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ¢ in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ¢ in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ¢ in font ptmr7t!
  [3]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ¢ in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ¢ in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ¢ in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ¢ in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ¢ in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -260,7 +326,7 @@ Missing character: There is no ∂ in font ptmr7t!
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no ∫ in font ptmr7t!
  [5] [6]
-Overfull \hbox (4.00722pt too wide) in paragraph at lines 188--189
+Overfull \hbox (4.00722pt too wide) in paragraph at lines 175--176
 []\OT1/ptm/m/n/10 4 Wa-ter-proof Re-Fuel 6-Hour Ac-tion-Pack Bat-tery for Go-Pr
 o HERO by DigiPower 
  []
@@ -269,145 +335,111 @@ o HERO by DigiPower
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SiteMap.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.4> allowed
-<Figures/SiteMap.pdf, id=27, 425.74055pt x 328.49725pt>
+<Figures/SiteMap.pdf, id=168, 425.74055pt x 328.49725pt>
 File: Figures/SiteMap.pdf Graphic file (type pdf)
 
 <use Figures/SiteMap.pdf> [8] [9 <./Figures/SiteMap.pdf>] [10]
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ¨ in font ptmr7t!
-Missing character: There is no Å in font ptmr7t!
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ¨ in font ptmr7t!
-Missing character: There is no Å in font ptmr7t!
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ¨ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ¨ in font ptmr7t!
-Missing character: There is no Å in font ptmr7t!
-Missing character: There is no Ô in font ptmr7t!
-Missing character: There is no ¨ in font ptmr7t!
-Missing character: There is no Å in font ptmr7t!
-Package color Info: Redefining color shadecolor on input line 298.
+Package color Info: Redefining color shadecolor on input line 282.
 
-<figure/unnamed-chunk-2-1.pdf, id=39, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-2-1.pdf, id=196, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-2-1.pdf> [11]
-Package color Info: Redefining color shadecolor on input line 310.
+<use figure/unnamed-chunk-2-1.pdf>
+Package color Info: Redefining color shadecolor on input line 294.
 
-<figure/unnamed-chunk-3-1.pdf, id=43, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-3-1.pdf, id=197, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-3-1.pdf>
-Package color Info: Redefining color shadecolor on input line 323.
+Package color Info: Redefining color shadecolor on input line 307.
 
-<figure/unnamed-chunk-4-1.pdf, id=44, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-4-1.pdf, id=201, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-4-1.pdf> [12 <./figure/unnamed-chunk-2-1.pdf>]
-<Figures/Temp.pdf, id=54, 505.89pt x 505.89pt>
+<use figure/unnamed-chunk-4-1.pdf>
+<Figures/Temp.pdf, id=204, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
-Package color Info: Redefining color shadecolor on input line 340.
+Package color Info: Redefining color shadecolor on input line 324.
 
-<figure/unnamed-chunk-5-1.pdf, id=55, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-5-1.pdf, id=205, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-5-1.pdf>
-Package color Info: Redefining color shadecolor on input line 351.
+Package color Info: Redefining color shadecolor on input line 335.
 
-<figure/unnamed-chunk-6-1.pdf, id=56, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-6-1.pdf, id=209, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-6-1.pdf> [13 <./figure/unnamed-chunk-3-1.pdf>]
-[14 <./figure/unnamed-chunk-4-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 372.
+<use figure/unnamed-chunk-6-1.pdf> [11] [12 <./figure/unnamed-chunk-2-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 356.
 
-<figure/unnamed-chunk-8-1.pdf, id=75, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-8-1.pdf, id=236, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-8-1.pdf>
+<Videography_figures/reallygoodcrop.png, id=238, 841.1425pt x 588.1975pt>
+File: Videography_figures/reallygoodcrop.png Graphic file (type png)
 
-! LaTeX Error: Can be used only in preamble.
+<use Videography_figures/reallygoodcrop.png>
+Overfull \hbox (75.57022pt too wide) in paragraph at lines 385--386
+[][] 
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.398 \usepackage
-                 {graphicx}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: File `reallygoodcrop' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.401 \includegraphics[scale=.5]{reallygoodcrop}
-                                                
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[13 <./figure/unnamed-chunk-3-1.pdf>] [14 <./figure/unnamed-chunk-4-1.pdf>]
 [15 <./Figures/Temp.pdf>] [16 <./figure/unnamed-chunk-5-1.pdf>] [17 <./figure/u
-nnamed-chunk-6-1.pdf>] [18 <./figure/unnamed-chunk-8-1.pdf>] [19
+nnamed-chunk-6-1.pdf>] [18 <./figure/unnamed-chunk-8-1.pdf>] [19 <./Videography
+_figures/reallygoodcrop.png>] [20
 
-] [20]
+] [21]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [21]
-(./Report_DRAFT.bbl) [22] [23]
-Overfull \hbox (16.09677pt too wide) in paragraph at lines 474--475
+ [22] (./Report_DRAFT.bbl) [23] [24]
+Overfull \hbox (16.09677pt too wide) in paragraph at lines 458--459
 []\OT1/ptm/m/n/10 Nitrification in-hibitor was cre-ated by dis-solv-ing 2.0 g a
 l-lylth-iourea (ATU, C4H8N2S)
  []
 
-[24]
-Overfull \hbox (7.38701pt too wide) in paragraph at lines 480--486
+[25]
+Overfull \hbox (7.38701pt too wide) in paragraph at lines 464--470
 []\OT1/ptm/m/n/10 Note that *Temp[]x* en-tries were bor-rowed with per-mis-sion
  from So-phie and Nicole's
  []
 
 
-Overfull \hbox (9.8658pt too wide) in paragraph at lines 490--491
+Overfull \hbox (9.8658pt too wide) in paragraph at lines 474--475
 []\OT1/ptm/m/n/10 Minimum DO Depletion--Viable sam-ples must have min. DO de-pl
 e-tion of 2.0mg/L,
  []
 
 
-Overfull \hbox (1.35622pt too wide) in paragraph at lines 491--492
+Overfull \hbox (1.35622pt too wide) in paragraph at lines 475--476
 []\OT1/ptm/m/n/10 Glucose-Glutamic Acid Check--The re-sult-ing av-er-age BOD fo
 r the 3 GGA blanks
  []
 
 
-Overfull \hbox (4.81665pt too wide) in paragraph at lines 492--493
+Overfull \hbox (4.81665pt too wide) in paragraph at lines 476--477
 []\OT1/ptm/m/n/10 Dilution wa-ter check--DO up-take af-ter in-cu-ba-tion must n
 ot be more than 0.20mg/L
  []
 
-[25] (./Report_DRAFT.aux) ) 
+[26] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
- 1650 strings out of 256214
- 22032 string characters out of 1917000
- 70619 words of memory out of 1500000
- 4900 multiletter control sequences out of 10000+200000
+ 3581 strings out of 256214
+ 50026 string characters out of 1917000
+ 104127 words of memory out of 1500000
+ 6730 multiletter control sequences out of 10000+200000
  24839 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,9n,24p,1816b,230s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,9n,36p,1816b,381s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/
 share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (25 pages, 973096 bytes).
+Output written on Report_DRAFT.pdf (26 pages, 5327333 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 131072)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 131072)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
