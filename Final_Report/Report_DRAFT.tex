@@ -60,8 +60,6 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
-
-
 \maketitle
 
 \newpage
@@ -131,6 +129,8 @@ Some researchers suggest that algae may actually crowd out the diatoms on which,
 
 
 Sadler, K. (1980). Effect of the warm water discharge from a power station on fish populations in the river Trent. Journal Of Applied Ecology, 17(2):349-357.
+
+\citep{sadler1980effect}
 
 A power station discharged water that was on average 7 degrees Celsius above normal in the River Trent. This meant that in affected areas, the winter migration was delayed from Sep/Oct to Dec/Jan, while in unaffected areas, migration continued at normal times. Also, below the power station, fish preferred to live further downstream, in terms of diversity and population density. This tells us that fish are able to change their living patterns based on water temperature, and shows that fish were noticeably affected by the temperature change. 
 
@@ -287,30 +287,7 @@ We ran an ANOVA test where time period was the categorical independent variable 
 
 \section{Results}
 
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data\_TUES\_1/updatedtemps.csv': No such file or directory}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data\_Weds\_1/Plunge\_Pool clipped.csv': No such file or directory}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data\_Weds\_1/2nd\_Site clipped.csv': No such file or directory}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data\_Weds\_1/3rd\_Site clipped.csv': No such file or directory}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data\_Weds\_1/Concrete clipped.csv': No such file or directory}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}\end{kframe}
-\end{knitrout}
 
 \subsection{Habitat Quality}
 
@@ -318,12 +295,9 @@ Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive v
 
 \begin{figure}[!ht]
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
 
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in plot(importupdated\$Canopy, importupdated\$Algae, ylab = "{}Algae Abundance (\% cover)"{}, : object 'importupdated' not found}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in is.data.frame(data): object 'importupdated' not found}}\end{kframe}
 \end{knitrout}
 \caption{Caption for this figure!}
 \label{fig:canopyalgae}
@@ -333,10 +307,9 @@ Bed composition did have a stronger relationship with Algae Abundance, as shown 
 
 \begin{figure}[!ht]
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
 
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'importupdated' not found}}\end{kframe}
 \end{knitrout}
 \caption{need caption, remove main}
 \label{fig:algaesediment}
@@ -347,10 +320,9 @@ As a control\footnote{I am not sure what this means?}, we also analyzed to what 
 
 \begin{figure}[!ht]
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
 
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'importupdated' not found}}\end{kframe}
 \end{knitrout}
 \caption{Algae Abundance as a function of Site.}
 \label{fig:algaesite}
@@ -365,10 +337,9 @@ The initial temperature data collected with an analog thermometer did not adequa
 \end{figure}
 \begin{figure}
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
 
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in boxplot(list(site1\$Temp, site2\$Temp, site3\$Temp, site4\$Temp), : object 'site1' not found}}\end{kframe}
 \end{knitrout}
 \label{fig:tempbox}
 \caption{Box plots of temperature collected}
@@ -377,12 +348,9 @@ The initial temperature data collected with an analog thermometer did not adequa
 We evaluated the relationship between algae abundance as a function of range of temperature (*C) experienced at each site (Figure \ref{fig:tempalgae}) \textbf{and found... what???}. While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yeilded \textbf{the much better p-value of 3.49e-05}\footnote{better?!!! says who?}. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826\footnote{This is quite high in ecology, please revise}, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
 \begin{figure}[!ht]
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-6-1} 
 
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in plot(importupdated\$Temp\_range, importupdated\$Algae, ylab = "{}Algae Abundance (\% cover)"{}, : object 'importupdated' not found}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in is.data.frame(data): object 'importupdated' not found}}\end{kframe}
 \end{knitrout}
 \caption{Ths is caption that needs info...}
 \label{fig:tempalgae}
@@ -395,23 +363,15 @@ Although we looked at few water quality parameters, we found a BOD5 differed bet
 
 We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764\textdegree C in the morning and increased to 28.456\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
 
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/cmfa2015/Santa Ana Sucker/Data/Data\_Tues\_2/newmetadata.csv': No such file or directory}}
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}\end{kframe}
-\end{knitrout}
 
 \textbf{[Text to describe Figure \ref{fig:fishsection}]}
 
 \begin{figure}[!ht]
 \begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-8-1} 
 
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'newmetadata' not found}}\end{kframe}
 \end{knitrout}
 \caption{needs a caption! Can we change after to afternoon...}
 \label{fig:fishsection}
