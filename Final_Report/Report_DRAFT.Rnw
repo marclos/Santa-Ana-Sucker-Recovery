@@ -36,14 +36,7 @@ This project began with the broad driving question, "How can the Santa Ana sucke
 
 \subsection{Background (Literature Review)}
 
-[FOR NEXT PERSON WHO EDITS: 
-
-WHAT THINGS' SUSPECTED SIGNIFICANCE DO WE NEED TO EXPLAIN? 
-•	Habitat 
-•	Temperature 
-•	Red Algae
-•	RIX plant
-•	The connections between these]
+\textbf{[FOR NEXT PERSON WHO EDITS: Try to create a compelling reason why we sampled what we sampled... and set us up for the discussion section...]}
 
 
 The range of the fish is of significant interest to efforts for its preservation. The current range of the Santa Ana Sucker differs significantly from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}. The habitat value of the Santa Ana sucker is highly constrained by the reach of the Santa Ana river that we evaluated, where the water source is treated discharges for most of the year --- in this context the river reach is highly modified in terms of it's hydrology, geomorphology,  water quality, and habitat characteristics--- becoming a disconnected stream \citep{poole2002fluvial}. 
@@ -328,7 +321,22 @@ We need some text here on the fish counts... (Table \ref{tab:fishcounts}).
 
 \textbf{We need to describe the habitat value that we determined! relative to the literature...}
 
+\subsubsection{Hydrology and Geomorphology and Algae?}
+
+There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100\% algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 \% level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
+Our exploratory study is one of the first to examine what variables may control red algae's distribution in the Santa Ana River. 
+
+This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
+
+Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. 
+
+Most importantly, red algae's co-occurrence with the federally endangered Santa Ana sucker should be examined. These improvements on our experiment will yield a much better idea of what factors control red algae's distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae's effect on Santa Ana Suckers.
+
+\subsection{Temperature and Invasive Algae}
+
 The temperature data suggests that there is something abnormal happening in the river. There were pretty extreme spikes, especially at sites 1 and 2. Our original hypothesis when we saw this was to assume water spikes were occurring from the Rialto Channel and as they travelled down river, becoming less extreme. However, when we looked at the timing of these spikes, they did not correlate with each other, and the spikes further downstream were actually occurring before the spikes upstream. We found that there were indeed daily spikes and lows in temperature. Site 1 and Site 2 had especially dramatic spikes, with Site 1 fluctuating up to 5.41 degrees a day. We are unsure why there were such fluctuations in the river, because it did not appear that spikes were travelling downstream, based on the times that high and low temperatures occurred at different points in the river. 
+
+\subsubsection{Fish Behavior and Counts}
 
 In terms of fish population, using the data from the Fish and Wildlife Service, as well as the data from Clare and Wendy's group, we realized that there were no fish counted at site 1, only one fish counted in the afternoon at site 2 at various points, no fish were found by the FWS at site 3, but many fish were observed by Clare and Wendy in the plunge pool at site 4. Also, from previous results, we knew that most Santa Ana Suckers live in the plunge pool and prefer it there. This could be because of reasons other than temperature, but we did notice that there were less extreme spikes in site 4. Our videos of site 2 contained very few fish. In the morning there were no Santa Ana suckers seen in the entire hour, and in the afternoon there was one sucker that would occasionally swim out from behind a rock.  This could be because the temperature further upstream was too hot for the suckers to live in; the temperature data found that at that location the water was between 30.25\textdegree~C in the afternoon and 25.12\textdegree~C in the morning. This is a range of 5.13\textdegree~C, which is a much larger range than the range found at site 4, where more suckers were found. In general, the fish were more abundant downstream, where the least extreme temperature spikes were occurring. From what we observed, the extreme temperature spikes at sites 1 and 2, and the medium spike at site 3, could have caused the fish to prefer to stay at site 4, where they are most abundant. This disproves our null hypothesis that the fish would be randomly spread throughout the channel and that temperature would remain fairly constant throughout the river, which suggests there could be a correlation between what is happening temperature wise and with the location of the suckers.
 
@@ -336,12 +344,9 @@ Also, the hottest temperatures that occurred at site 2 were almost at mortality 
 
 When we compared the number of fish downstream in the afternoon compared to the morning, we had a p-value of 6.027e-13, meaning there were significantly more suckers in the afternoon than there were in the morning.  This suggests that the suckers do move downstream throughout the day to get to cooler temperatures.  On the afternoon we tested, the plunge pool (downstream) was 28.5\textdegree~C, whereas the river at our upstream location, closer to the concrete, was 29.4\textdegree~C. Throughout our longer term temperature testing, we noticed there was significantly more variation in temperature the further upstream we tested. These large temperature spikes and variability could have prevented fish from successfully habitating the upstream sites. 
 
-There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100\% algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 \% level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
-Our exploratory study is one of the first to examine what variables may control red algae's distribution in the Santa Ana River. 
 
-Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. Most importantly, red algae's co-occurrence with the federally endangered Santa Ana sucker should be examined. These improvements on our experiment will yield a much better idea of what factors control red algae's distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae's effect on Santa Ana Suckers.
 
-This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
+
 
 We collected our data in a simple yet straightforward manner to ensure its comprehensibility and communicability. Not only does our data span over a week, 24 hours a day, but we collected at four different sites every 15 minutes, giving us a significant spread of data to work with. Given the limited timeline of the experiment, our data can be said to have captured a glimpse into an average week for this portion of the river, and can be used as a baseline and reference for future projects. A weakness was that we were not able to measure possible temperature stratification, since we only measured at one point for each of the four sites. 
 
@@ -351,7 +356,7 @@ There were also pretty extreme spikes, but not occurring at times that suggested
 
 It is difficult to determine if the temperature spikes were what caused the fish to choose to reside primarily in site 4, because there are a myriad of other variables. Other variables that could have affected where the fish chose to live include algae/food source, canopy cover, depth, or sediment type/size. What we do know is that the further upstream locations not only had a wide range of temperatures, but also experienced hotter temperatures than site 4, which was where the fish live. From our background research, we know that the US Fish and Wildlife Service found that Santa Ana Suckers prefer water that is around 22 degrees Celsius. None of our sites had water this cold, but site 4 had the least variability and averaged around 28 degrees. According to a brief overview from Larry Brown of the US Geological Survey, there are no fish at site 1, and at sites 2 and 3 there are only a few European chubs. At site 4 they estimated large numbers of fish but did not conduct a formal survey of this site. However, our video data showed a much larger population in the plunge pool. These population estimates were the results of random surveying, and could be limited in their applicability because of variation in site location and scope. For example, Larry Brown measured sucker populations in the Rialto drainage but not in the pool below it, which is where we placed our data logger. Therefore, it is difficult to tell to what extent the US Geological Survey’s data works with our data. 
 
-Data should be collected on air temperature, canopy cover, and fish population by the same group, to avoid the possibility of slightly different locations and unclear methods. If multiple groups do decide to collaborate, the teams should establish exact locations for all groups to work on, and conduct research on the same day and at the same times, to standardize the time frame of the experiment. It would have been helpful to meet with various stakeholders such as researchers, regulators, Veolia water representatives, etc. to learn more about their methods and tips for experiment design prior to conducting our own experiments. After collecting data, we did try to contact several of these people but did not receive responses. This process would allow us to see what work has already been done, and possibly form a hypothesis based off of their work and findings.
+
 
 \subsection{Research Limitations}
 
@@ -361,7 +366,7 @@ In terms of BOD, the first time we collected our samples, said samples were not 
 
 It would also be best if it is meticulously made sure of that the BOD is taken of the initial samples. Important to the process is to have every sample spun each time to allow for consistency and as much accuracy as possible with each BOD reading. 
 
-
+Data should be collected on air temperature, canopy cover, and fish population by the same group, to avoid the possibility of slightly different locations and unclear methods. If multiple groups do decide to collaborate, the teams should establish exact locations for all groups to work on, and conduct research on the same day and at the same times, to standardize the time frame of the experiment. It would have been helpful to meet with various stakeholders such as researchers, regulators, Veolia water representatives, etc. to learn more about their methods and tips for experiment design prior to conducting our own experiments. After collecting data, we did try to contact several of these people but did not receive responses. This process would allow us to see what work has already been done, and possibly form a hypothesis based off of their work and findings.
 \section{Conclusion and Recommendations}
 
 
