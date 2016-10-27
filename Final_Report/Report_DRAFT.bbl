@@ -1,25 +1,91 @@
 \begin{thebibliography}{}
 
+\bibitem[Brown et~al., 2005]{brown2005aquatic}
+Brown, L.~R., Burton, C.~A., and Belitz, K. (2005).
+\newblock Aquatic assemblages of the highly urbanized santa ana river basin,
+  california.
+\newblock In {\em American Fisheries Society Symposium}, volume~47, pages
+  263--287.
+
+\bibitem[Coulter et~al., 2015]{coulter2015fluctuating}
+Coulter, D.~P., H\"o\"ok, T.~O., Mahapatra, C.~T., Guffey, S.~C., and
+  Sep\'ulveda, M.~S. (2015).
+\newblock Fluctuating water temperatures affect development, physiological
+  responses and cause sex reversal in fathead minnows.
+\newblock {\em Environmental science \& technology}, 49(3):1921--1928.
+
+\bibitem[Fish and Service, 2014]{usfishandwildlifeservice14}
+Fish, U. and Service, W. (2014).
+\newblock Draft recovery plan for the santa ana sucker.
+\newblock Technical Report v + 61 pp, U.S. Fish and Wildlife Service, U.S. Fish
+  and Wildlife Service.
+
 \bibitem[Greenfield et~al., 1970]{greenfield70}
 Greenfield, D.~W., Ross, S.~T., and Deckert, G.~D. (1970).
 \newblock Some aspects of the life history of the santa ana sucker, catostomus
   (pantosteus) santaanae (snyder).
 \newblock {\em Calif. Fish Game}, 56(3):166--179.
 
+\bibitem[Jenkins et~al., 2009]{jenkins2009effects}
+Jenkins, J.~A., Goodbred, S.~L., Olivier, H.~M., Draugelis-Dale, R.~O., and
+  Alvarez, D.~A. (2009).
+\newblock Effects of wastewater discharges on endocrine and reproductive
+  function of western mosquitofish (gambusia spp.) and implications for the
+  threatened santa ana sucker (catostomus santaanae).
+\newblock Technical report, US Geological Survey.
+
 \bibitem[Moyle, 2002]{moyle2002inland}
 Moyle, P.~B. (2002).
 \newblock {\em Inland fishes of California}.
 \newblock Univ of California Press.
+
+\bibitem[O'Brien et~al., 2011]{obrien2011status}
+O'Brien, J.~W., Hansen, H.~K., and Stephens, M.~E. (2011).
+\newblock Status of fishes in the upper san gabriel river basin, los angeles
+  county, california.
+\newblock {\em California Fish and Game}, 97(4):149--163.
 
 \bibitem[{R Core Team}, 2016]{CRAN}
 {R Core Team} (2016).
 \newblock {\em R: A Language and Environment for Statistical Computing}.
 \newblock R Foundation for Statistical Computing, Vienna, Austria.
 
+\bibitem[REF, XXXX]{REF}
+REF (XXXX).
+\newblock Reference needed.
+
 \bibitem[Sadler, 1980]{sadler1980effect}
 Sadler, K. (1980).
 \newblock Effect of the warm water discharge from a power station on fish
   populations in the river trent.
 \newblock {\em Journal of Applied Ecology}, pages 349--357.
+
+\bibitem[Saiki et~al., 2007]{saiki2007life}
+Saiki, M.~K., Martin, B.~A., Knowles, G.~W., and Tennant, P.~W. (2007).
+\newblock Life history and ecological characteristics of the santa ana sucker,
+  catostomus santaanae.
+\newblock {\em California Fish and Game}, 93(2):87.
+
+\bibitem[Thompson et~al., 2010]{thompson2010influence}
+Thompson, A.~R., Baskin, J.~N., Swift, C.~C., Haglund, T.~R., and Nagel, R.~J.
+  (2010).
+\newblock Influence of habitat dynamics on the distribution and abundance of
+  the federally threatened santa ana sucker, catostomus santaanae, in the santa
+  ana river.
+\newblock {\em Environmental biology of fishes}, 87(4):321--332.
+
+\bibitem[Winkelmann et~al., 2014]{winkelmann2014top}
+Winkelmann, C., Schneider, J., Mewes, D., Schmidt, S.~I., Worischka, S.,
+  Hellmann, C., and Benndorf, J. (2014).
+\newblock Top-down and bottom-up control of periphyton by benthivorous fish and
+  light supply in two streams.
+\newblock {\em Freshwater biology}, 59(4):803--818.
+
+\bibitem[{\v{Z}}{\'a}kov{\'a} et~al., 2013]{vzakova2013new}
+{\v{Z}}{\'a}kov{\'a}, Z., Pum, M., Sedl{\'a}{\v{c}}ek, P., Mlejnkov{\'a}, H.,
+  and Hind{\'a}k, F. (2013).
+\newblock New records of compsopogon aeruginosus (rhodophyta) in rivers of
+  central europe.
+\newblock {\em Oceanological and Hydrobiological Studies}, 42(4):412--419.
 
 \end{thebibliography}

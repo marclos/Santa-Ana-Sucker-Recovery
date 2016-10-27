@@ -2,7 +2,7 @@
 \contentsline {subsection}{\numberline {1.1}Scope of Problem}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Problem Statement}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Background (Literature Review)}{3}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Objectives}{5}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.4}Objectives}{6}{subsection.1.4}
 \contentsline {section}{\numberline {2}Methods}{7}{section.2}
 \contentsline {subsection}{\numberline {2.1}Materials and Equipment}{7}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Site Description}{8}{subsection.2.2}
@@ -15,9 +15,10 @@
 \contentsline {subsection}{\numberline {3.1}Habitat Quality}{11}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Fish Counts}{13}{subsection.3.2}
 \contentsline {section}{\numberline {4}Discussion}{20}{section.4}
-\contentsline {subsection}{\numberline {4.1}Research Limitations}{21}{subsection.4.1}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{22}{section.5}
+\contentsline {subsection}{\numberline {4.1}Habitat Quality and Fish Activity}{20}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Research Limitations}{22}{subsection.4.2}
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{23}{section.5}
 \contentsline {section}{\numberline {6}Literature Cited}{23}{section.6}
-\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{24}{section.7}
-\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{24}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{25}{subsection.7.2}
+\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{25}{section.7}
+\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{25}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{26}{subsection.7.2}

@@ -23,7 +23,7 @@
 
 \subsection{Scope of Problem}
 
-The Santa Ana sucker (\emph{Catostomus santaanae}) is a 16 cm fish that lives in the rivers of Southern California.  They have recently been placed on the endangered species list, partially due to their losing over 70 percent of their habitat (FWS 2012). Also, in the 1960s, the habitat of the suckers would range from 10-26\textdegree~C \citep{greenfield70}.  This rise in temperature is most likely due to the extreme industrialization of the stream; much of it runs over concrete, which heats up to extreme temperatures in the sunlight.  A majority of the stream water also comes from discharge from a sewage treatment plant upstream, creating an unhealthy and unnatural environment.  The river discharge is also greatly diminished from what it used to be due to the extreme drought in Southern California.  The river is shallower, slower moving, and has less snow melt coming from the mountains, all of which factor into an increase in temperature. Biological Oxygen Demand (BOD) may also have deviated significantly from typical values in a less disturbed stream. 
+The Santa Ana sucker (\emph{Catostomus santaanae}) is a 16 cm fish that lives in the rivers of Southern California. The species has been listed as threatened by the US Fish and Wildlife Service, partially due to their losing over 70 percent of their habitat \citep{obrien2011status, usfishandwildlifeservice14}. Also, in the 1960s, the habitat of the suckers would range from 10-26\textdegree~C \citep{greenfield70}.  This rise in temperature is most likely due to the extreme industrialization of the stream; much of it runs over concrete, which heats up to extreme temperatures in the sunlight.  A majority of the stream water also comes from discharge from a sewage treatment plant upstream, creating an unhealthy and unnatural environment.  The river discharge is also greatly diminished from what it used to be due to the extreme drought in Southern California.  The river is shallower, slower moving, and has less snow melt coming from the mountains, all of which factor into an increase in temperature. Biological Oxygen Demand (BOD) may also have deviated significantly from typical values in a less disturbed stream. 
 
 As the Santa Ana Sucker's population has declined, the abundance of the red algae (\emph{Cosmopogen aeruginosus}) has risen significantly in the Santa Ana River. This may also be contributing to the sucker's decline, but the environmental variables that control the red algae's distribution in the Santa Ana River are currently not well understood. The direct effect this invasive algae has on \emph{C. santaanae} is also poorly constrained. 
 
@@ -48,30 +48,32 @@ WHAT THINGS' SUSPECTEDSIGNIFICANCE DO WE NEED TO EXPLAIN?
 
 Each of the elements explored in this report was decided as being important to explore based on a review of the following literature:
 
-The range of the fish is of significant interest to efforts for its preservation. The current range of the Santa Ana Sucker differs significantly from its historic distribution in the Los Angeles Basin (Thompson 2010 NO CITATION YET IN R).
+The range of the fish is of significant interest to efforts for its preservation. The current range of the Santa Ana Sucker differs significantly from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}.
 
-Regarding the importance of water temperature to the fish, Moyle postulates that the sucker prefers environments with cool water \citep{moyle2002inland}. Again, the temperature of the Santa Ana River has been rising to levels greater than the sucker could stand (CITE). Other types of fish have been known to regulate their body temperatures by moving to different areas in their habitat throughout the day (Matthews Berg Azuma 1994).
+Regarding the importance of water temperature to the fish, Moyle postulates that the sucker prefers environments with cool water \citep{moyle2002inland}. Again, the temperature of the Santa Ana River has been rising to levels greater than the sucker could stand \citep{REF}. Other types of fish have been known to regulate their body temperatures by moving to different areas in their habitat throughout the day (Matthews Berg Azuma 1994).
 
 We used this source to determine preferred temperature for the Santa Ana Sucker and in general to inform ourselves more about the fish. Little research has been done on specific threats to the Santa Ana Sucker, but the document did point out possible threats arising from hydrological modification and urban development in general. The idea emerged that water coming out of a treatment plant could potentially be a threat under hydrological modification or urban development.
 
 
-According to Evans et al. (2005 FIND FULL CITATION IN NICOLE AND SOPHIE'S OR CLARE AND WENDY'S GROUP), temporary reduction of flow, such as that which can occur when the treatment plant which now largely supplies the river halts releases of the water which now largely maintains, can significantly reduce the amount of habitat for suckers.[3] Just last month, the Center for Biological Diversity reported that “by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish.” 
+According to Evans et al. (2005 FIND FULL CITATION IN NICOLE AND SOPHIE'S OR CLARE AND WENDY'S GROUP), temporary reduction of flow, such as that which can occur when the treatment plant which now largely supplies the river halts releases of the water which now largely maintains, can significantly reduce the amount of habitat for suckers.[3] Just last month, the Center for Biological Diversity reported that "by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish." 
+
+In addition, evidence suggests that the RIX discharge waters affect the growth and development of the of mosquito fish (xxx) and the Santa Ana sucker \citep{jenkins2009effects}.
 
 ALGAE: 
 
-For the Santa Ana River sucker habitat, a central threat is the invasive Red Algae that has been spreading with alacrity in areas where the fish are known to be, including the reach below the Rapid Infiltration and Extraction (RIX) Treatment plan (Palenscar).There are concerns that the algae may be one of the contributing factors to the sucker's decline. For example, one of the important features of the Santa Ana River for the sucker is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand (Thomson et al. 2010, 321 CREATE CITE). The sucker has adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic). 
+For the Santa Ana River sucker habitat, a central threat is the invasive Red Algae that has been spreading with alacrity in areas where the fish are known to be, including the reach below the Rapid Infiltration and Extraction (RIX) Treatment plan (Palenscar).There are concerns that the algae may be one of the contributing factors to the sucker's decline. For example, one of the important features of the Santa Ana River for the sucker is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand \citep{thompson2010influence}. The sucker has adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic). 
 
 This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the fish being negatively impacted; the algae may also disrupt the fish's well-being in unknown ways. 
 
-Some researchers suggest that algae may actually crowd out the diatoms on which, along with algae and detritus, the sucker feeds (Thomson 2010, 322). The presence of the algae in the same area and on the same type of substrate as the fish could indicate competition for resources between the algae and the sh.' 4 1.3 Objectives
+Some researchers suggest that algae may actually crowd out the diatoms on which, along with algae and detritus, the sucker feeds \citep{thompson2010influence}. The presence of the algae in the same area and on the same type of substrate as the fish could indicate competition for resources between the algae\textbf{[ and the sh???]}\footnote{I am not sure where this was going\ldots}
 
 
-Sadler, K. (1980). Effect of the warm water discharge from a power station on fish populations in the river Trent. Journal Of Applied Ecology, 17(2):349-357.
 
-\citep{sadler1980effect}
+Temperature can play a signficant role fish behavior. For example, \citet{sadler1980effect} found discharge downstream of a impoundment altered fish populiaton densities as a result of temperature.
 
-A power station discharged water that was on average 7 degrees Celsius above normal in the River Trent. This meant that in affected areas, the winter migration was delayed from Sep/Oct to Dec/Jan, while in unaffected areas, migration continued at normal times. Also, below the power station, fish preferred to live further downstream, in terms of diversity and population density. This tells us that fish are able to change their living patterns based on water temperature, and shows that fish were noticeably affected by the temperature change. 
+Algae biomass can depend on a range of variables, both biotic and abiotic \citep{winkelmann2014top}. In general, diatom growth dominance has been associated with high quality sucker habitat \citep{REF}. 
 
+New introductions of the red algae are not unique to the Santa Ana River \citep{vzakova2013new}.
 
 UNNECESSARY?/INFO THAT WAS PREVIOUSLY INCLUDED, JIC:
 
@@ -83,6 +85,8 @@ Restoration efforts are then presented with an added challenge of ensuring that 
 To see how the Santa Ana sucker would react to similar conservation efforts would be interesting in discussions in attempting to determine solutions. 
 
 Coulter, D. P., Höök, T. O., Mahapatra, C. T., Guffey, S. C., \& Sepúlveda, M. S. (2015). Fluctuating Water Temperatures Affect Development, Physiological Responses and Cause Sex Reversal in Fathead Minnows. Environmental Science \& Technology, 49(3), 1921-1928. doi:10.1021/es5057159
+
+\citep{coulter2015fluctuating}
 
 Human activities can increase water temperature. Water-based organisms are sensitive to temperature change, especially young fish due to limited mobility. Coulter et al. explain how young Flathead Minnows exposed to warmer temperatures underwent a nondirectional sex reversal (Coulter et al 2015). This paper shows us how temperature can greatly affect fish and stress them out. 
 
