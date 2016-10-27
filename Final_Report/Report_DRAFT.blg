@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: Report_DRAFT.aux
+The style file: apalike.bst
+Database file #1: report.bib
+You've used 5 entries,
+            1935 wiz_defined-function locations,
+            503 strings with 4355 characters,
+and the built_in function-call counts, 1741 in all, are:
+= -- 172
+> -- 46
+< -- 5
++ -- 14
+- -- 14
+* -- 124
+:= -- 305
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 30
+chr.to.int$ -- 5
+cite$ -- 5
+duplicate$ -- 79
+empty$ -- 135
+format.name$ -- 19
+if$ -- 349
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 28
+num.names$ -- 15
+pop$ -- 32
+preamble$ -- 1
+purify$ -- 32
+quote$ -- 0
+skip$ -- 64
+stack$ -- 0
+substring$ -- 117
+swap$ -- 14
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 15
+width$ -- 0
+write$ -- 67

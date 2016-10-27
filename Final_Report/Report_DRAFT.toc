@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {1.5}Objectives}{6}
 \contentsline {section}{\numberline {2}Methods}{7}
 \contentsline {subsection}{\numberline {2.1}Materials and Equipment}{7}
-\contentsline {subsection}{\numberline {2.2}Site Descrition}{8}
+\contentsline {subsection}{\numberline {2.2}Site Description}{8}
 \contentsline {subsection}{\numberline {2.3}Habitat Evaluation}{9}
 \contentsline {subsection}{\numberline {2.4}Videography}{10}
 \contentsline {subsection}{\numberline {2.5}Temperature Loggers}{10}
