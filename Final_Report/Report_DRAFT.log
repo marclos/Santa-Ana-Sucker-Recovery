@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  27 OCT 2016 15:24
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  27 OCT 2016 15:30
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -321,50 +321,50 @@ o HERO by DigiPower
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SiteMap.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.4> allowed
-<Figures/SiteMap.pdf, id=232, 425.74055pt x 328.49725pt>
+<Figures/SiteMap.pdf, id=242, 425.74055pt x 328.49725pt>
 File: Figures/SiteMap.pdf Graphic file (type pdf)
 
 <use Figures/SiteMap.pdf> [8] [9 <./Figures/SiteMap.pdf>] [10]
 Package color Info: Redefining color shadecolor on input line 262.
 
-<figure/unnamed-chunk-2-1.pdf, id=260, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-2-1.pdf, id=270, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-2-1.pdf>
 Package color Info: Redefining color shadecolor on input line 274.
 
-<figure/unnamed-chunk-3-1.pdf, id=261, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-3-1.pdf, id=271, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-3-1.pdf>
 Package color Info: Redefining color shadecolor on input line 287.
 
-<figure/unnamed-chunk-4-1.pdf, id=265, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-4-1.pdf, id=275, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-4-1.pdf>
-<Figures/Temp.pdf, id=268, 505.89pt x 505.89pt>
+<Figures/Temp.pdf, id=278, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
 Package color Info: Redefining color shadecolor on input line 304.
 
-<figure/unnamed-chunk-5-1.pdf, id=269, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-5-1.pdf, id=279, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-5-1.pdf>
 Package color Info: Redefining color shadecolor on input line 315.
 
-<figure/unnamed-chunk-6-1.pdf, id=273, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-6-1.pdf, id=283, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-6-1.pdf> [11] [12 <./figure/unnamed-chunk-2-1.pdf>]
 Package color Info: Redefining color shadecolor on input line 336.
 
-<figure/unnamed-chunk-8-1.pdf, id=300, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-8-1.pdf, id=310, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-8-1.pdf>
-<Videography_figures/reallygoodcrop.png, id=302, 841.1425pt x 588.1975pt>
+<Videography_figures/reallygoodcrop.png, id=312, 841.1425pt x 588.1975pt>
 File: Videography_figures/reallygoodcrop.png Graphic file (type png)
 
 <use Videography_figures/reallygoodcrop.png>
@@ -414,19 +414,19 @@ ot be more than 0.20mg/L
 
 [27] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
- 3619 strings out of 256214
- 50686 string characters out of 1917000
+ 3624 strings out of 256214
+ 50769 string characters out of 1917000
  104127 words of memory out of 1500000
- 6750 multiletter control sequences out of 10000+200000
+ 6752 multiletter control sequences out of 10000+200000
  24839 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,9n,36p,1906b,408s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,9n,36p,1906b,406s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/
 share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (27 pages, 5341418 bytes).
+Output written on Report_DRAFT.pdf (27 pages, 5343580 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
- 101 named destinations out of 1000 (max. 131072)
+ 456 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 131072)
  278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
