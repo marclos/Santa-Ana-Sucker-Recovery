@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  27 OCT 2016 22:57
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  27 OCT 2016 23:19
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -310,60 +310,56 @@ found PDF version <1.6>, but at most version <1.4> allowed
 File: Figures/SiteMap.pdf Graphic file (type pdf)
 
 <use Figures/SiteMap.pdf> [8] [9 <./Figures/SiteMap.pdf>] [10]
-Package color Info: Redefining color shadecolor on input line 254.
+Package color Info: Redefining color shadecolor on input line 256.
 
 <figure/unnamed-chunk-2-1.pdf, id=285, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-2-1.pdf>
-Package color Info: Redefining color shadecolor on input line 266.
+Package color Info: Redefining color shadecolor on input line 268.
 
-<figure/unnamed-chunk-3-1.pdf, id=286, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-3-1.pdf, id=287, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-3-1.pdf>
-Package color Info: Redefining color shadecolor on input line 279.
+Package color Info: Redefining color shadecolor on input line 281.
 
-<figure/unnamed-chunk-4-1.pdf, id=290, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-4-1.pdf, id=291, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-4-1.pdf>
-<Figures/Temp.pdf, id=293, 505.89pt x 505.89pt>
+<Figures/Temp.pdf, id=294, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
-Package color Info: Redefining color shadecolor on input line 296.
+Package color Info: Redefining color shadecolor on input line 298.
 
-<figure/unnamed-chunk-5-1.pdf, id=294, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-5-1.pdf, id=295, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-5-1.pdf>
-Package color Info: Redefining color shadecolor on input line 307.
+Package color Info: Redefining color shadecolor on input line 309.
 
-<figure/unnamed-chunk-6-1.pdf, id=298, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-6-1.pdf, id=299, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-6-1.pdf> [11] [12 <./figure/unnamed-chunk-2-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 328.
+Package color Info: Redefining color shadecolor on input line 346.
 
-<figure/unnamed-chunk-8-1.pdf, id=325, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-8-1.pdf, id=327, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-8-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-8-1.pdf>
-<Videography_figures/reallygoodcrop.png, id=327, 841.1425pt x 588.1975pt>
+<Videography_figures/reallygoodcrop.png, id=329, 841.1425pt x 588.1975pt>
 File: Videography_figures/reallygoodcrop.png Graphic file (type png)
 
-<use Videography_figures/reallygoodcrop.png>
-Overfull \hbox (75.57022pt too wide) in paragraph at lines 357--358
-[][] 
- []
-
-[13 <./figure/unnamed-chunk-3-1.pdf>] [14 <./figure/unnamed-chunk-4-1.pdf>]
-[15 <./Figures/Temp.pdf>] [16 <./figure/unnamed-chunk-5-1.pdf>] [17 <./figure/u
-nnamed-chunk-6-1.pdf>] [18 <./figure/unnamed-chunk-8-1.pdf>] [19 <./Videography
-_figures/reallygoodcrop.png>] [20
+<use Videography_figures/reallygoodcrop.png> [13 <./figure/unnamed-chunk-3-1.pd
+f>] [14 <./figure/unnamed-chunk-4-1.pdf>] [15 <./Figures/Temp.pdf>] [16 <./figu
+re/unnamed-chunk-5-1.pdf>] [17 <./figure/unnamed-chunk-6-1.pdf>] [18 <./figure/
+unnamed-chunk-8-1.pdf>] [19 <./Videography_figures/reallygoodcrop.png>]
+[20
 
 ]
-Overfull \hbox (16.03427pt too wide) in paragraph at lines 382--383
+Overfull \hbox (16.03427pt too wide) in paragraph at lines 384--385
 []\OT1/ptm/b/n/10 [NEED DIS-CUS-SION COM-PAR-ING TEM-PER-A-TURE WITH LIT-ER-A-T
 URE...] 
  []
@@ -373,31 +369,31 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
  [22] (./Report_DRAFT.bbl [23]) [24] [25]
-Overfull \hbox (16.09677pt too wide) in paragraph at lines 450--451
+Overfull \hbox (16.09677pt too wide) in paragraph at lines 452--453
 []\OT1/ptm/m/n/10 Nitrification in-hibitor was cre-ated by dis-solv-ing 2.0 g a
 l-lylth-iourea (ATU, C4H8N2S)
  []
 
 [26]
-Overfull \hbox (7.38701pt too wide) in paragraph at lines 456--462
+Overfull \hbox (7.38701pt too wide) in paragraph at lines 458--464
 []\OT1/ptm/m/n/10 Note that *Temp[]x* en-tries were bor-rowed with per-mis-sion
  from So-phie and Nicole's
  []
 
 
-Overfull \hbox (9.8658pt too wide) in paragraph at lines 466--467
+Overfull \hbox (9.8658pt too wide) in paragraph at lines 468--469
 []\OT1/ptm/m/n/10 Minimum DO Depletion--Viable sam-ples must have min. DO de-pl
 e-tion of 2.0mg/L,
  []
 
 
-Overfull \hbox (1.35622pt too wide) in paragraph at lines 467--468
+Overfull \hbox (1.35622pt too wide) in paragraph at lines 469--470
 []\OT1/ptm/m/n/10 Glucose-Glutamic Acid Check--The re-sult-ing av-er-age BOD fo
 r the 3 GGA blanks
  []
 
 
-Overfull \hbox (4.81665pt too wide) in paragraph at lines 468--469
+Overfull \hbox (4.81665pt too wide) in paragraph at lines 470--471
 []\OT1/ptm/m/n/10 Dilution wa-ter check--DO up-take af-ter in-cu-ba-tion must n
 ot be more than 0.20mg/L
  []
@@ -405,18 +401,18 @@ ot be more than 0.20mg/L
 [27] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
  3630 strings out of 256214
- 50889 string characters out of 1917000
- 104127 words of memory out of 1500000
- 6755 multiletter control sequences out of 10000+200000
+ 50902 string characters out of 1917000
+ 104314 words of memory out of 1500000
+ 6756 multiletter control sequences out of 10000+200000
  24839 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  25i,9n,36p,1906b,402s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/
 share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (27 pages, 5345741 bytes).
+Output written on Report_DRAFT.pdf (27 pages, 5345640 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 131072)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 131072)
  302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

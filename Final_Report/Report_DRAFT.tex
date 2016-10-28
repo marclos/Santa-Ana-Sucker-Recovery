@@ -245,9 +245,11 @@ Using the R programming environment \citep{CRAN}, we use linear regression and A
 
 
 
-\subsection{Habitat Quality}
+\subsection{Hydrology, Geomorphology, Canopy and Algae}
 
-Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value (Figure \ref{fig:canopyalgae}. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
+\textbf{[Velocity Measurements HERE]}
+
+The the percent cover of the invasive algae may be influence by the stream substrate size (Figure \ref{fig:algaesediment}, p = 0.0643). 
 
 \begin{figure}[!ht]
 \begin{knitrout}
@@ -255,11 +257,11 @@ Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive v
 \includegraphics[width=\maxwidth]{figure/unnamed-chunk-2-1} 
 
 \end{knitrout}
-\caption{Caption for this figure!}
-\label{fig:canopyalgae}
+\caption{Algae abundance as a function of the bed composition, where course sediments = 1 and fine sediments = 0.}
+\label{fig:algaesediment}
 \end{figure}
 
-Bed composition did have a stronger relationship with Algae Abundance, as shown in \textbf{Figure X}. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. 
+We found no relationship between the percent cover of the invasive algae species on the canopy cover (Figure \ref{fig:canopyalgae}, p = 0.334). 
 
 \begin{figure}[!ht]
 \begin{knitrout}
@@ -267,8 +269,8 @@ Bed composition did have a stronger relationship with Algae Abundance, as shown 
 \includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
 
 \end{knitrout}
-\caption{need caption, remove main}
-\label{fig:algaesediment}
+\caption{Algae percent cover of red algae as a function of canopy cover}
+\label{fig:canopyalgae}
 \end{figure}
 
 
@@ -317,23 +319,9 @@ Although we looked at few water quality parameters, we found a BOD5 differed bet
 
 \subsection{Fish Counts}
 
-We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764\textdegree C in the morning and increased to 28.456\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
 
 
-
-\textbf{[Text to describe Figure \ref{fig:fishsection}]}
-
-\begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-8-1} 
-
-\end{knitrout}
-\caption{needs a caption! Can we change after to afternoon...}
-\label{fig:fishsection}
-\end{figure}
-
-At the upstream location (Site 2), no suckers were observed in the morning while one sucker occasionally swim out from behind a rock. At the downstream locatin (Site 4), we observed numeous fish \ldots (Table \ref{tab:fishcounts}). 
+At the upstream location (Site 2), no suckers were observed in the morning while one sucker occasionally swim out from behind a rock. At the downstream locatin (Site 4), we observed numeous fish \ldots (Table \ref{tab:fishcounts}). We counted an average of 20.1 suckers in the morning with a standard deviation of 6.0 fish.  In the afternoon, we counted an average of 32.2 with a standard deviation of 9.9, meaning both the average and the variance were higher in the afternoon.  The river was 27.8\textdegree C in the morning and increased to 28.4\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
 
 \begin{table}
 \caption{Summary Statistics for Videography Fish Counts}
@@ -348,14 +336,28 @@ At the upstream location (Site 2), no suckers were observed in the morning while
  Afternoon & 14 & 49 & 32.25 & 31 & 24.75 &  42 & -1.3\\
  \hline
 \end{tabular}
-\caption{Summary statistics for morning and afternoon fish counts.}
 \label{tab:fishcounts}
 \end{table}
 
+\textbf{[Text to describe Figure \ref{fig:fishsection}]}
+
+\begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{figure/unnamed-chunk-8-1} 
+
+\end{knitrout}
+\caption{needs a caption! Can we change after to afternoon...}
+\label{fig:fishsection}
+\end{figure}
+
+
+\textbf{[Text to describe Figure \ref{fig:reallygoodcrop}]}
 
 \begin{figure}
-\includegraphics[scale=.5]{Videography_figures/reallygoodcrop}
+\includegraphics[scale=.4]{Videography_figures/reallygoodcrop}
 \caption{A close up of a Santa Ana Sucker from the footage we collected.}
+\label{fig:reallygoodcrop}
 \end{figure}
 
 \section{Discussion}

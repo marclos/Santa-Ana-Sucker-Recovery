@@ -209,27 +209,29 @@ file1 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/Concrete clippe
 site1 <- read.csv(file1)
 @
 
-\subsection{Habitat Quality}
+\subsection{Hydrology, Geomorphology, Canopy and Algae}
 
-Canopy Cover was a very poor predictor of Algae Abnundance, with no predictive value (Figure \ref{fig:canopyalgae}. A linear regression yielded p-value: 0.3339, so we cannot reject the null hypothesis.
+\textbf{[Velocity Measurements HERE]}
 
-\begin{figure}[!ht]
-<< figure=TRUE, echo=FALSE>>=
-plot(importupdated$Canopy,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Canopy Cover Index",main ="Canopy Cover as a predictor of Algae Abundance",las=1)
-abline(lm(Algae~Canopy,importupdated))
-@
-\caption{Caption for this figure!}
-\label{fig:canopyalgae}
-\end{figure}
-
-Bed composition did have a stronger relationship with Algae Abundance, as shown in \textbf{Figure X}. 0 = fine sediment, while 1 = coarse sediment. Our P value=0.0643 which means we cannot reject null hypothesis, but only barely. 
+The the percent cover of the invasive algae may be influence by the stream substrate size (Figure \ref{fig:algaesediment}, p = 0.0643). 
 
 \begin{figure}[!ht]
 << figure=TRUE, echo=FALSE >>=
-boxplot(Algae~Sediment,importupdated, ylab="Algae Abundance (% cover)",xlab="Bed Composition",main ="Bed Composition as a predictor of Algae Abundance",las=1)
+boxplot(Algae~Sediment,importupdated, ylab="Algae Abundance (% cover)",xlab="Bed Composition", las=1)
 @
-\caption{need caption, remove main}
+\caption{Algae abundance as a function of the bed composition, where course sediments = 1 and fine sediments = 0.}
 \label{fig:algaesediment}
+\end{figure}
+
+We found no relationship between the percent cover of the invasive algae species on the canopy cover (Figure \ref{fig:canopyalgae}, p = 0.334). 
+
+\begin{figure}[!ht]
+<< figure=TRUE, echo=FALSE>>=
+plot(importupdated$Canopy,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Canopy Cover Index",las=1)
+abline(lm(Algae~Canopy,importupdated))
+@
+\caption{Algae percent cover of red algae as a function of canopy cover}
+\label{fig:canopyalgae}
 \end{figure}
 
 
@@ -273,23 +275,11 @@ Although we looked at few water quality parameters, we found a BOD5 differed bet
 
 \subsection{Fish Counts}
 
-We counted an average of 20.133 suckers in the morning with a standard deviation of 6.007 fish.  In the afternoon, we counted an average of 32.25 with a standard deviation of 9.928, meaning both the average and the variance were higher in the afternoon.  The river was 27.764\textdegree C in the morning and increased to 28.456\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
-
 <<echo=FALSE>>=
 newmetadata <- read.csv("/home/CAMPUS/cmfa2015/Santa Ana Sucker/Data/Data_Tues_2/newmetadata.csv")
 @
 
-\textbf{[Text to describe Figure \ref{fig:fishsection}]}
-
-\begin{figure}[!ht]
-<< figure=TRUE, echo=FALSE >>=
-boxplot(Fish~Section,newmetadata, ylab="Fish",xlab="Time of Day",main ="Time of Day as a predictor of Fish",las=1)
-@
-\caption{needs a caption! Can we change after to afternoon...}
-\label{fig:fishsection}
-\end{figure}
-
-At the upstream location (Site 2), no suckers were observed in the morning while one sucker occasionally swim out from behind a rock. At the downstream locatin (Site 4), we observed numeous fish \ldots (Table \ref{tab:fishcounts}). 
+At the upstream location (Site 2), no suckers were observed in the morning while one sucker occasionally swim out from behind a rock. At the downstream locatin (Site 4), we observed numeous fish \ldots (Table \ref{tab:fishcounts}). We counted an average of 20.1 suckers in the morning with a standard deviation of 6.0 fish.  In the afternoon, we counted an average of 32.2 with a standard deviation of 9.9, meaning both the average and the variance were higher in the afternoon.  The river was 27.8\textdegree C in the morning and increased to 28.4\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
 
 \begin{table}
 \caption{Summary Statistics for Videography Fish Counts}
@@ -304,14 +294,26 @@ At the upstream location (Site 2), no suckers were observed in the morning while
  Afternoon & 14 & 49 & 32.25 & 31 & 24.75 &  42 & -1.3\\
  \hline
 \end{tabular}
-\caption{Summary statistics for morning and afternoon fish counts.}
 \label{tab:fishcounts}
 \end{table}
 
+\textbf{[Text to describe Figure \ref{fig:fishsection}]}
+
+\begin{figure}[!ht]
+<< figure=TRUE, echo=FALSE >>=
+boxplot(Fish~Section,newmetadata, ylab="Fish",xlab="Time of Day",main ="Time of Day as a predictor of Fish",las=1)
+@
+\caption{needs a caption! Can we change after to afternoon...}
+\label{fig:fishsection}
+\end{figure}
+
+
+\textbf{[Text to describe Figure \ref{fig:reallygoodcrop}]}
 
 \begin{figure}
-\includegraphics[scale=.5]{Videography_figures/reallygoodcrop}
+\includegraphics[scale=.4]{Videography_figures/reallygoodcrop}
 \caption{A close up of a Santa Ana Sucker from the footage we collected.}
+\label{fig:reallygoodcrop}
 \end{figure}
 
 \section{Discussion}

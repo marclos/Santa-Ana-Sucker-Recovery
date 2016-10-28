@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {2.6}BOD Methods}{11}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Statistical Methods}{11}{subsection.2.7}
 \contentsline {section}{\numberline {3}Results}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Habitat Quality}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Hydrology, Geomorphology, Canopy and Algae}{11}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Fish Counts}{13}{subsection.3.2}
 \contentsline {section}{\numberline {4}Discussion}{20}{section.4}
 \contentsline {subsection}{\numberline {4.1}Habitat Quality and Fish Activity}{20}{subsection.4.1}
