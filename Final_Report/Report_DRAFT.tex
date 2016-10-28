@@ -1,53 +1,4 @@
-\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
-%% maxwidth is the original width if it is less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
-\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
-\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
-\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
-\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
-\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
-\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
-\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
-
-\usepackage{alltt}
+\documentclass{article}
 \usepackage{natbib}
 \usepackage{hyperref}
 \usepackage{times}
@@ -59,8 +10,14 @@
 
 \title{Santa Ana Sucker Habitat Evaluation}
 \author{C. Flynn, E. Harris-Tyrrell, O. Howie, L. Ho-Israel, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Ed. Marc Los Huertos}
+<<<<<<< HEAD
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+=======
+
+\usepackage{Sweave}
+>>>>>>> 718073c554b7ba0f274d172b3b3253ca947bb73b
 \begin{document}
+\input{Report_DRAFT-concordance}
 
 \maketitle
 
@@ -244,7 +201,6 @@ Using the R programming environment \citep{CRAN}, we use linear regression and A
 \section{Results}
 
 
-
 \subsection{Hydrology, Geomorphology, Canopy and Algae}
 
 \textbf{[Velocity Measurements HERE]}
@@ -252,11 +208,6 @@ Using the R programming environment \citep{CRAN}, we use linear regression and A
 The the percent cover of the invasive algae may be influence by the stream substrate size (Figure \ref{fig:algae}, Panel A, p = 0.0643). We found no relationship between the percent cover of the invasive algae species on the canopy cover (Figure \ref{fig:algae} Panel B, p = 0.334).
 
 \begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=5in,height=2.5in]{figure/unnamed-chunk-2-1} 
-
-\end{knitrout}
 \caption{Algae abundance as a function of the bed composition (Panel A), where course sediments = 1 and fine sediments = 0 and canopy cover (Panel B).}
 \label{fig:algae}
 \end{figure}
@@ -264,11 +215,6 @@ The the percent cover of the invasive algae may be influence by the stream subst
 As a control\footnote{I am not sure what this means?}, we also analyzed to what extend Site alone could predict Algae Abundance(Figure \ref{fig:algaesite}). Our ANOVA test yielded p-value: 0.008176 \textbf{which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation.}\footnote{this a discussion point, not a result.} 
 
 \begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-3-1} 
-
-\end{knitrout}
 \caption{Algae Abundance as a function of Site.}
 \label{fig:algaesite}
 \end{figure}
@@ -281,22 +227,12 @@ The initial temperature data collected with an analog thermometer did not adequa
 \label{fig:Temp}
 \end{figure}
 \begin{figure}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-4-1} 
-
-\end{knitrout}
 \label{fig:tempbox}
 \caption{Box plots of temperature collected}
 \end{figure}
 
 We evaluated the relationship between algae abundance as a function of range of temperature (*C) experienced at each site (Figure \ref{fig:tempalgae}) \textbf{and found... what???}. While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yeilded \textbf{the much better p-value of 3.49e-05}\footnote{better?!!! says who?}. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826\footnote{This is quite high in ecology, please revise}, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
 \begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-5-1} 
-
-\end{knitrout}
 \caption{Ths is caption that needs info...}
 \label{fig:tempalgae}
 \end{figure}
@@ -306,6 +242,14 @@ Analysis of the data using quality control parameters indicated that two source 
 
 \subitem Site 2 $BOD_5$= 22.1 mg/L 
 \subitem Site 4 $BOD_5$= 27.3 mg/L 
+<<<<<<< HEAD
+
+The average recorded water flow velocities were:
+
+\subitem Site 2: 0.27 ft/sec
+\subitem Site 4: 1.09 ft/sec 
+=======
+>>>>>>> 718073c554b7ba0f274d172b3b3253ca947bb73b
 
 The average recorded water flow velocities were:
 
@@ -313,7 +257,6 @@ The average recorded water flow velocities were:
 \subitem Site 4: 1.09 ft/sec 
 
 \subsection{Fish Counts}
-
 
 
 At the upstream location (Site 2), no suckers were observed in the morning while one sucker occasionally swim out from behind a rock. At the downstream locatin (Site 4), we observed numeous fish \ldots (Table \ref{tab:fishcounts}). We counted an average of 20.1 suckers in the morning with a standard deviation of 6.0 fish.  In the afternoon, we counted an average of 32.2 with a standard deviation of 9.9, meaning both the average and the variance were higher in the afternoon.  The river was 27.8\textdegree C in the morning and increased to 28.4\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that tie of day will have no effect on the number of fish.
@@ -337,11 +280,6 @@ At the upstream location (Site 2), no suckers were observed in the morning while
 \textbf{[Text to describe Figure \ref{fig:fishsection}]}
 
 \begin{figure}[!ht]
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-7-1} 
-
-\end{knitrout}
 \caption{needs a caption! Can we change after to afternoon...}
 \label{fig:fishsection}
 \end{figure}
