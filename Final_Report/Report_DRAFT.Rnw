@@ -213,27 +213,18 @@ site1 <- read.csv(file1)
 
 \textbf{[Velocity Measurements HERE]}
 
-The the percent cover of the invasive algae may be influence by the stream substrate size (Figure \ref{fig:algaesediment}, p = 0.0643). 
+The the percent cover of the invasive algae may be influence by the stream substrate size (Figure \ref{fig:algae}, Panel A, p = 0.0643). We found no relationship between the percent cover of the invasive algae species on the canopy cover (Figure \ref{fig:algae} Panel B, p = 0.334).
 
 \begin{figure}[!ht]
-<< figure=TRUE, echo=FALSE >>=
+<< figure=TRUE, echo=FALSE, out.width='5in', out.height='2.5in'>>=
+par(mfrow=c(1,2))
 boxplot(Algae~Sediment,importupdated, ylab="Algae Abundance (% cover)",xlab="Bed Composition", las=1)
-@
-\caption{Algae abundance as a function of the bed composition, where course sediments = 1 and fine sediments = 0.}
-\label{fig:algaesediment}
-\end{figure}
-
-We found no relationship between the percent cover of the invasive algae species on the canopy cover (Figure \ref{fig:canopyalgae}, p = 0.334). 
-
-\begin{figure}[!ht]
-<< figure=TRUE, echo=FALSE>>=
 plot(importupdated$Canopy,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Canopy Cover Index",las=1)
 abline(lm(Algae~Canopy,importupdated))
 @
-\caption{Algae percent cover of red algae as a function of canopy cover}
-\label{fig:canopyalgae}
+\caption{Algae abundance as a function of the bed composition (Panel A), where course sediments = 1 and fine sediments = 0 and canopy cover (Panel B).}
+\label{fig:algae}
 \end{figure}
-
 
 As a control\footnote{I am not sure what this means?}, we also analyzed to what extend Site alone could predict Algae Abundance(Figure \ref{fig:algaesite}). Our ANOVA test yielded p-value: 0.008176 \textbf{which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation.}\footnote{this a discussion point, not a result.} 
 
