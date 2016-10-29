@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  29 OCT 2016 13:06
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  29 OCT 2016 13:31
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -324,9 +324,10 @@ Overfull \hbox (40.83466pt too wide) in paragraph at lines 231--232
 [][] 
  []
 
-[10]
+[10] [11 <./Videography_figures/wherefish.png>]
 Package color Info: Redefining color shadecolor on input line 260.
- <figure/unnamed-chunk-2-1.pdf, id=315, 505.89pt x 505.89pt>
+
+<figure/unnamed-chunk-2-1.pdf, id=320, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-2-1.pdf>
@@ -334,28 +335,26 @@ Overfull \hbox (16.35352pt too wide) in paragraph at lines 261--262
 [][] 
  []
 
-[11 <./Videography_figures/wherefish.png>]
 Package color Info: Redefining color shadecolor on input line 272.
-
-<figure/unnamed-chunk-3-1.pdf, id=327, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-3-1.pdf, id=324, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-3-1.pdf>
-<Figures/Temp.pdf, id=330, 505.89pt x 505.89pt>
+<use figure/unnamed-chunk-3-1.pdf> [12 <./figure/unnamed-chunk-2-1.pdf>]
+<Figures/Temp.pdf, id=341, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
 Package color Info: Redefining color shadecolor on input line 289.
 
-<figure/unnamed-chunk-4-1.pdf, id=331, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-4-1.pdf, id=342, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-4-1.pdf>
 Package color Info: Redefining color shadecolor on input line 300.
 
-<figure/unnamed-chunk-5-1.pdf, id=335, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-5-1.pdf, id=346, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-5-1.pdf>
+<use figure/unnamed-chunk-5-1.pdf> [13 <./figure/unnamed-chunk-3-1.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `math shift' on input line 308.
@@ -368,28 +367,25 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `math shift' on input line 308.
 
-[12 <./figure/unnamed-chunk-2-1.pdf>] [13 <./figure/unnamed-chunk-3-1.pdf>]
+[14 <./Figures/Temp.pdf>] [15 <./figure/unnamed-chunk-4-1.pdf>] [16 <./figure/u
+nnamed-chunk-5-1.pdf>]
 Package color Info: Redefining color shadecolor on input line 345.
 
-<figure/unnamed-chunk-7-1.pdf, id=365, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-7-1.pdf, id=396, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-7-1.pdf>
-<Videography_figures/reallygoodcrop.png, id=367, 841.1425pt x 588.1975pt>
+<Videography_figures/reallygoodcrop.png, id=398, 841.1425pt x 588.1975pt>
 File: Videography_figures/reallygoodcrop.png Graphic file (type png)
 
-<use Videography_figures/reallygoodcrop.png> [14 <./Figures/Temp.pdf>] [15 <./f
-igure/unnamed-chunk-4-1.pdf>] [16 <./figure/unnamed-chunk-5-1.pdf>] [17 <./figu
-re/unnamed-chunk-7-1.pdf>] [18 <./Videography_figures/reallygoodcrop.png>]
-[19
-
-]
+<use Videography_figures/reallygoodcrop.png> [17 <./figure/unnamed-chunk-7-1.pd
+f>] [18 <./Videography_figures/reallygoodcrop.png>]
 Overfull \hbox (16.03427pt too wide) in paragraph at lines 383--384
 []\OT1/ptm/b/n/10 [NEED DIS-CUS-SION COM-PAR-ING TEM-PER-A-TURE WITH LIT-ER-A-T
 URE...] 
  []
 
-[20]
+[19] [20]
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `math shift' on input line 404.
@@ -402,7 +398,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `math shift' on input line 404.
 
-[21] (./Report_DRAFT.bbl [22] [23]) [24] [25]
+[21] (./Report_DRAFT.bbl [22]) [23] [24] [25]
 Overfull \hbox (16.09677pt too wide) in paragraph at lines 454--455
 []\OT1/ptm/m/n/10 Nitrification in-hibitor was cre-ated by dis-solv-ing 2.0 g a
 l-lylth-iourea (ATU, C4H8N2S)
@@ -440,11 +436,11 @@ Missing character: There is no † in font ptmr7t!
 Here is how much of TeX's memory you used:
  3644 strings out of 256214
  51137 string characters out of 1917000
- 104458 words of memory out of 1500000
+ 104660 words of memory out of 1500000
  6762 multiletter control sequences out of 10000+200000
  24839 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,9n,39p,1904b,418s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,9n,39p,1904b,406s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr
 /share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bl
 uesky/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb></usr/sh
@@ -453,7 +449,7 @@ y/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/tex
 mf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (28 pages, 10535349 bytes).
+Output written on Report_DRAFT.pdf (28 pages, 10535765 bytes).
 PDF statistics:
  527 PDF objects out of 1000 (max. 8388607)
  114 named destinations out of 1000 (max. 131072)
