@@ -5,26 +5,45 @@
 \contentsline {subsubsection}{\numberline {1.3.1}Stream Hydrology and Geomorphology}{4}{subsubsection.1.3.1}
 \contentsline {subsection}{\numberline {1.4}Water Quality}{4}{subsection.1.4}
 \contentsline {subsubsection}{\numberline {1.4.1}Community Ecology}{5}{subsubsection.1.4.1}
-\contentsline {subsection}{\numberline {1.5}Objectives}{5}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.5}Objectives}{6}{subsection.1.5}
 \contentsline {section}{\numberline {2}Methods}{7}{section.2}
 \contentsline {subsection}{\numberline {2.1}Materials and Equipment}{7}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Site Description}{8}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Habitat Evaluation}{8}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Habitat Evaluation}{9}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Videography}{10}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Temperature Loggers}{10}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}BOD Methods}{11}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Statistical Methods}{11}{subsection.2.7}
 \contentsline {section}{\numberline {3}Results}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Hydrology, Geomorphology, Canopy and Algae}{11}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Fish Counts}{15}{subsection.3.2}
-\contentsline {section}{\numberline {4}Discussion}{17}{section.4}
-\contentsline {subsection}{\numberline {4.1}Habitat Quality and Fish Activity}{17}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Hydrology and Geomorphology and Algae?}{17}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Temperature and Invasive Algae}{18}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Fish Behavior and Counts}{18}{subsubsection.4.1.3}
-\contentsline {subsection}{\numberline {4.2}Research Limitations}{20}{subsection.4.2}
-\contentsline {section}{\numberline {5}Conclusion and Recommendations}{21}{section.5}
-\contentsline {section}{\numberline {6}Literature Cited}{21}{section.6}
-\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{23}{section.7}
-\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{23}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{24}{subsection.7.2}
+<<<<<<< HEAD
+\contentsline {subsection}{\numberline {3.2}$BOD_5$ and Water Velocity}{15}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Fish Counts}{16}{subsection.3.3}
+\contentsline {section}{\numberline {4}Discussion}{19}{section.4}
+\contentsline {subsection}{\numberline {4.1}Habitat Quality and Fish Activity}{19}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Hydrology and Geomorphology and Algae?}{19}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Temperature and Invasive Algae}{19}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Fish Behavior and Counts}{20}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}$BOD_5$ and Water Velocity}{21}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Research Limitations}{22}{subsection.4.3}
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{23}{section.5}
+\contentsline {section}{\numberline {6}Literature Cited}{23}{section.6}
+\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{25}{section.7}
+\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{25}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{26}{subsection.7.2}
+=======
+\contentsline {subsection}{\numberline {3.2}$BOD_5$ and Water Velocity}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Fish Counts}{13}{subsection.3.3}
+\contentsline {section}{\numberline {4}Discussion}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Habitat Quality and Fish Activity}{15}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Hydrology and Geomorphology and Algae?}{15}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Temperature and Invasive Algae}{16}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Fish Behavior and Counts}{16}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}$BOD_5$ and Water Velocity}{18}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Research Limitations}{18}{subsection.4.3}
+\contentsline {section}{\numberline {5}Conclusion and Recommendations}{19}{section.5}
+\contentsline {section}{\numberline {6}Literature Cited}{19}{section.6}
+\contentsline {section}{\numberline {7}Appendix: Detailed Methods}{22}{section.7}
+\contentsline {subsection}{\numberline {7.1}Video Camera Set up}{22}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}BOD5 Methods}{23}{subsection.7.2}
+>>>>>>> 718073c554b7ba0f274d172b3b3253ca947bb73b
