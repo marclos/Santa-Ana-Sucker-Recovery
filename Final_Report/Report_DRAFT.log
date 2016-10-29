@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  28 OCT 2016 20:58
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  28 OCT 2016 21:13
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -312,144 +312,139 @@ o HERO by DigiPower
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/SiteMap.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.4> allowed
-<Figures/SiteMap.pdf, id=275, 425.74055pt x 328.49725pt>
+<Figures/SiteMap.pdf, id=283, 425.74055pt x 328.49725pt>
 File: Figures/SiteMap.pdf Graphic file (type pdf)
 
 <use Figures/SiteMap.pdf> [8] [9 <./Figures/SiteMap.pdf>] [10]
-Package color Info: Redefining color shadecolor on input line 258.
+Package color Info: Redefining color shadecolor on input line 255.
 
-<figure/unnamed-chunk-2-1.pdf, id=304, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-2-1.pdf, id=313, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-2-1.pdf>
-Overfull \hbox (16.35352pt too wide) in paragraph at lines 259--260
+Overfull \hbox (16.35352pt too wide) in paragraph at lines 256--257
 [][] 
  []
 
-[11 <./figure/unnamed-chunk-2-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 270.
-
-<figure/unnamed-chunk-3-1.pdf, id=320, 505.89pt x 505.89pt>
+Package color Info: Redefining color shadecolor on input line 267.
+<figure/unnamed-chunk-3-1.pdf, id=317, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-3-1.pdf>
-<Figures/Temp.pdf, id=323, 505.89pt x 505.89pt>
+<use figure/unnamed-chunk-3-1.pdf> [11 <./figure/unnamed-chunk-2-1.pdf>]
+<Figures/Temp.pdf, id=333, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
- <use Figures/Temp.pdf> [12 <./figure/unnamed-chunk-3-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 287.
+ <use Figures/Temp.pdf>
+Package color Info: Redefining color shadecolor on input line 284.
 
-<figure/unnamed-chunk-4-1.pdf, id=335, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-4-1.pdf, id=334, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-4-1.pdf>
-Package color Info: Redefining color shadecolor on input line 298.
+Package color Info: Redefining color shadecolor on input line 295.
 
-<figure/unnamed-chunk-5-1.pdf, id=339, 505.89pt x 505.89pt>
+<figure/unnamed-chunk-5-1.pdf, id=338, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
-<use figure/unnamed-chunk-5-1.pdf>
+<use figure/unnamed-chunk-5-1.pdf> [12 <./figure/unnamed-chunk-3-1.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 306.
-
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `subscript' on input line 306.
+(hyperref)                removing `math shift' on input line 303.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `subscript' on input line 303.
 
-[13 <./Figures/Temp.pdf>] [14 <./figure/unnamed-chunk-4-1.pdf>] [15 <./figure/u
-nnamed-chunk-5-1.pdf>]
-Package color Info: Redefining color shadecolor on input line 343.
 
-<figure/unnamed-chunk-7-1.pdf, id=379, 505.89pt x 505.89pt>
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 303.
+
+[13 <./Figures/Temp.pdf>] [14 <./figure/unnamed-chunk-4-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 340.
+
+<figure/unnamed-chunk-7-1.pdf, id=377, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-7-1.pdf>
-<Videography_figures/reallygoodcrop.png, id=381, 841.1425pt x 588.1975pt>
+<Videography_figures/reallygoodcrop.png, id=379, 841.1425pt x 588.1975pt>
 File: Videography_figures/reallygoodcrop.png Graphic file (type png)
 
-<use Videography_figures/reallygoodcrop.png> [16] [17 <./figure/unnamed-chunk-7
--1.pdf>] [18 <./Videography_figures/reallygoodcrop.png>] [19
+<use Videography_figures/reallygoodcrop.png> [15 <./figure/unnamed-chunk-5-1.pd
+f>] [16 <./figure/unnamed-chunk-7-1.pdf>] [17 <./Videography_figures/reallygood
+crop.png>] [18
 
 ]
-Overfull \hbox (16.03427pt too wide) in paragraph at lines 381--382
+Overfull \hbox (16.03427pt too wide) in paragraph at lines 378--379
 []\OT1/ptm/b/n/10 [NEED DIS-CUS-SION COM-PAR-ING TEM-PER-A-TURE WITH LIT-ER-A-T
 URE...] 
  []
 
-[20]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
+[19]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 399.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 405.
+(hyperref)                removing `subscript' on input line 399.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `subscript' on input line 405.
+(hyperref)                removing `math shift' on input line 399.
 
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 405.
-
-[21] (./Report_DRAFT.bbl [22] [23]) [24] [25]
-Overfull \hbox (16.09677pt too wide) in paragraph at lines 452--453
+[20] (./Report_DRAFT.bbl [21] [22]) [23] [24]
+Overfull \hbox (16.09677pt too wide) in paragraph at lines 449--450
 []\OT1/ptm/m/n/10 Nitrification in-hibitor was cre-ated by dis-solv-ing 2.0 g a
 l-lylth-iourea (ATU, C4H8N2S)
  []
 
-[26]
-Overfull \hbox (7.38701pt too wide) in paragraph at lines 458--464
+[25]
+Overfull \hbox (7.38701pt too wide) in paragraph at lines 455--461
 []\OT1/ptm/m/n/10 Note that *Temp[]x* en-tries were bor-rowed with per-mis-sion
  from So-phie and Nicole's
  []
 
 
-Overfull \hbox (9.8658pt too wide) in paragraph at lines 468--469
+Overfull \hbox (9.8658pt too wide) in paragraph at lines 465--466
 []\OT1/ptm/m/n/10 Minimum DO Depletion--Viable sam-ples must have min. DO de-pl
 e-tion of 2.0mg/L,
  []
 
 
-Overfull \hbox (1.35622pt too wide) in paragraph at lines 469--470
+Overfull \hbox (1.35622pt too wide) in paragraph at lines 466--467
 []\OT1/ptm/m/n/10 Glucose-Glutamic Acid Check--The re-sult-ing av-er-age BOD fo
 r the 3 GGA blanks
  []
 
 
-Overfull \hbox (4.81665pt too wide) in paragraph at lines 470--471
+Overfull \hbox (4.81665pt too wide) in paragraph at lines 467--468
 []\OT1/ptm/m/n/10 Dilution wa-ter check--DO up-take af-ter in-cu-ba-tion must n
 ot be more than 0.20mg/L
  []
 
+[26]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no ˆ in font ptmr7t!
 Missing character: There is no † in font ptmr7t!
-[27] [28] (./Report_DRAFT.aux) ) 
+ [27] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
- 3632 strings out of 256214
- 50870 string characters out of 1917000
- 104332 words of memory out of 1500000
- 6755 multiletter control sequences out of 10000+200000
+ 3636 strings out of 256214
+ 50943 string characters out of 1917000
+ 104367 words of memory out of 1500000
+ 6757 multiletter control sequences out of 10000+200000
  24839 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,9n,39p,1906b,416s stack positions out of 5000i,500n,6000p,200000b,15000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}<
-/usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type
-1/bluesky/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb></us
-r/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bl
-uesky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share
-/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/urw/time
-s/utmb8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
-mf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (28 pages, 5366116 bytes).
+ 25i,9n,39p,1904b,418s stack positions out of 5000i,500n,6000p,200000b,15000s
+{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr
+/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bl
+uesky/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb></usr/sh
+are/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesk
+y/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/tex
+mf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/urw/times/ut
+mb8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on Report_DRAFT.pdf (27 pages, 5367108 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 110 named destinations out of 1000 (max. 131072)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 519 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 131072)
+ 321 words of extra memory for PDF output out of 10000 (max. 10000000)
 
