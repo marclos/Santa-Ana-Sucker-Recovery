@@ -13,11 +13,11 @@
 \contentsline {subsection}{\numberline {2.4}Videography}{10}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Temperature Loggers}{10}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}BOD Methods}{10}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Statistical Methods}{10}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.7}Statistical Methods}{11}{subsection.2.7}
 \contentsline {section}{\numberline {3}Results}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Hydrology, Geomorphology, Canopy and Algae}{11}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}$BOD_5$ and Water Velocity}{12}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Fish Counts}{13}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.2}$BOD_5$ and Water Velocity}{13}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Fish Counts}{14}{subsection.3.3}
 \contentsline {section}{\numberline {4}Discussion}{19}{section.4}
 \contentsline {subsection}{\numberline {4.1}Habitat Quality and Fish Activity}{19}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Hydrology and Geomorphology and Algae?}{19}{subsubsection.4.1.1}
