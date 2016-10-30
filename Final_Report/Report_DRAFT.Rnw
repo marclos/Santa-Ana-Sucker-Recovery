@@ -8,7 +8,7 @@
 
 \newcommand{\BibTeX}{{\sc Bib}\TeX}
 
-\title{Santa Ana Sucker Habitat Evaluation}
+\title{Santa Ana sucker Habitat Evaluation}
 \author{C. Flynn, E. Harris-Tyrrell, O. Howie, L. Ho-Israel, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Ed. Marc Los Huertos}
 
 \begin{document}
@@ -25,9 +25,9 @@
 
 The Santa Ana sucker (\emph{Catostomus santaanae}) is a relatively small fish is extant in a few streams of Southern California. The species has been listed as threatened by the US Fish and Wildlife Service, which has lost over 70\% of its habitat \citep{obrien2011status, usfishandwildlifeservice14}. Besides habitat loss, hydrodomodifications that include the the construction of flood control damns, stream channelization, groundwater extraction, and treated water discharges have a profound effects to river's hydrology and ecology. For example, water temperatures in portions of the Santa Ana river can range from 10-26\textdegree~C while in areas of discharge the elevated temperatues are constantly high due to treated urban discharges \citep{greenfield70}. 
 
-More recently, the abundance of the red algae (\emph{Cosmopogen aeruginosus}) has increased significantly in the Santa Ana River. This may also be contributing to the sucker's decline, but the environmental variables that control the red algae's distribution in the Santa Ana River are currently not well understood. The direct effect this invasive algae has on \emph{C. santaanae} is also poorly constrained. 
+More recently, the abundance of the red alga, \emph{Cosmopogen aeruginosus}, has increased significantly in the Santa Ana River. This may also be contributing to the sucker's decline, but the environmental variables that control the \emph{Cosmopogen aeruginosus}'s distribution in the Santa Ana River are currently not well understood. The direct effect this invasive algae has on \emph{C. santaanae} is also poorly constrained. 
 
-In general, the environmental variables that influence \emph{C. santaanae} populations are poorly understood. Better understanding of water temperature, discharge rates, Biochemicial Oxygen Demand (BOD), and red algae distribution could aid in conservation efforts of this federally threantened fish. 
+In general, the environmental variables that influence \emph{C. santaanae} populations are poorly understood. Better understanding of water temperature, discharge rates, Biochemicial Oxygen Demand (BOD), and \emph{Cosmopogen aeruginosus} distribution could aid in conservation efforts of this federally threantened fish. 
 
 \subsection{Problem Statement}
 
@@ -35,57 +35,46 @@ This project began with the broad driving question, "How can the Santa Ana sucke
 
 \subsection{Background}
 
-\textbf{[FOR NEXT PERSON WHO EDITS: Try to create a compelling reason why we sampled what we sampled... and set us up for the discussion section...]}
-
-The range of the fish is of significant interest to efforts for its preservation. The current range of the Santa Ana Sucker differs significantly from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}. The habitat value of the Santa Ana sucker is highly constrained by the reach of the Santa Ana river that we evaluated, where the water source is treated discharges for most of the year --- in this context the river reach is highly modified in terms of it's hydrology, geomorphology,  water quality, and habitat characteristics--- becoming a disconnected stream \citep{poole2002fluvial}. 
+The geographic range of the Santa Ana sucker has declined from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}. And within the Santa Ana River, the sucker habitat habitat is contrained some short reaches that are fed by treated discharges for most of the year --- in this context the river reach is highly modified in terms of it's hydrology, geomorphology,  water quality, and habitat characteristics--- becoming a disconnected stream \citep{poole2002fluvial}. 
 
 \subsubsection{Stream Hydrology and Geomorphology}
 
-A \citet{baskerville2012recovery} report states that constant water flows are important to the availability of coarse substrate which the Sucker needs to spawn offspring and hide from predators. According to \citet{evans2005long}, temporary reduction of flow, such as occurs when the treatment plant which now largely supplies the river halts releases of discharge water, can significantly reduce the amount of habitat for suckers. Just last month, the Center for Biological Diversity reported that "by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish" \citep{evans2005draft}. 
+Stream bed substract plays in important role in providing habitat for benthic dwelling fish, like the Santa Ana sucker. \citet{baskerville2012recovery} state that constant water flows are important to the availability of coarse substrate which the sucker needs to spawn offspring and hide from predators. According to \citet{evans2005long}, temporary reduction of flow, such as occurs when the treatment plant which now largely supplies the river halts releases of discharge water, can significantly reduce the habitat available for suckers. Just last month, the Center for Biological Diversity reported that "by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish" \citep{evans2005draft}. 
 
 Understanding the role of stream substrate can be important in restoring various fish populations. For example, restoration projects seemed to be failing to prevent the Chinook population from falling in the Merced River \citep{albertson13}. For example, the installation of gravel augmentation in a reconfigured channel seemed to have little impact on the salmon, suggesting that other factors were catalyzing the fall of the species. By comparing the restored portion with other portions of the Merced river, food web characteristics and flow discharge seemed to produce the same results on the various life stages of the salmon. However, higher temperatures, less woody debris, and minimal riparian cover seemed to limit populations in the restored portions. Restoration efforts are then presented with an added challenge of ensuring that every aspect of the ecosystem is beneficial to the species, which demands more work toward temperature regulation and attempts to restore the river bank. To see how the Santa Ana sucker would react to similar conservation efforts would be interesting in discussions in attempting to determine solutions.
 
 \subsection{Water Quality}
 
-We used this source to determine preferred temperature for the Santa Ana Sucker and in general to inform ourselves more about the fish. Little research has been done on specific threats to the Santa Ana Sucker, but the document did point out possible threats arising from hydrological modification and urban development in general. The idea emerged that water coming out of a treatment plant could potentially be a threat under hydrological modification or urban development.
+Water temperature can influence sucker habitat value. For example, Moyle postulates that the sucker prefers environments with cool water \citep{moyle2002inland}. Again, the temperature of the Santa Ana River has been rising to levels greater than the sucker could stand \citep{REF}. Other types of fish have been known to regulate their body temperatures by moving to different areas in their habitat throughout the day \citep{matthews1994cool}. Temperature can play a signficant role fish behavior. For example, \citet{sadler1980effect} found discharge downstream of a impoundment altered fish populiaton densities as a result of temperature. Human activities can increase water temperature. Water-based organisms are sensitive to temperature change, especially young fish due to limited mobility. The effect of temperature on fish varies greatly depending on other conditions of the lake or river environment of the fish in question \citep{loshuertos16}. Heat, temperature, thermal energy, and heat capacity all slightly change how heat is measured in an ecosystem. Water in general has a high heat capacity, which indicates its high specific heat. Thus, aquatic systems therefore often retain their heat and are less susceptible to changes in temperature than non-aquatic systems. Inflows/mixing can have an effect on water temperature but it is often hard to detect due to thermal stratification mixing, seasonal change in temperature profile depth, and small volume inflow in terms of fraction of the lake volume. Temperature impacts many other features of water quality, which will be important to keep in mind going forward with the project. \citet{coulter2015fluctuating} explain how young Flathead Minnows exposed to warmer temperatures underwent a nondirectional sex reversal . This paper shows us how temperature can greatly affect fish and stress them out. 
 
-In general, fish have been known to be at risk of suffocation when exposed to dissolved oxygen (DO) levels below 2 mg/L for only short periods of time \citep{REF}. A 2012 U.S. Fish and Wildlife Service report on the recovery of the endangered fish noted that specific tolerances to dissolved oxygen have not been determined for  Santa Ana sucker \citep{evans2005draft}.
-
-Regarding the importance of water temperature to the fish, Moyle postulates that the sucker prefers environments with cool water \citep{moyle2002inland}. Again, the temperature of the Santa Ana River has been rising to levels greater than the sucker could stand \citep{REF}. Other types of fish have been known to regulate their body temperatures by moving to different areas in their habitat throughout the day \citep{matthews1994cool}. Temperature can play a signficant role fish behavior. For example, \citet{sadler1980effect} found discharge downstream of a impoundment altered fish populiaton densities as a result of temperature. Human activities can increase water temperature. Water-based organisms are sensitive to temperature change, especially young fish due to limited mobility. The effect of temperature on fish varies greatly depending on other conditions of the lake or river environment of the fish in question \citep{loshuertos16}. Heat, temperature, thermal energy, and heat capacity all slightly change how heat is measured in an ecosystem. Water in general has a high heat capacity, which indicates its high specific heat. Thus, aquatic systems therefore often retain their heat and are less susceptible to changes in temperature than non-aquatic systems. Inflows/mixing can have an effect on water temperature but it is often hard to detect due to thermal stratification mixing, seasonal change in temperature profile depth, and small volume inflow in terms of fraction of the lake volume. Temperature impacts many other features of water quality, which will be important to keep in mind going forward with the project. \citet{coulter2015fluctuating} explain how young Flathead Minnows exposed to warmer temperatures underwent a nondirectional sex reversal . This paper shows us how temperature can greatly affect fish and stress them out. 
-
-In addition, evidence suggests that the RIX discharge waters affect the growth and development of the of mosquito fish (xxx) and the Santa Ana sucker \citep{jenkins2009effects}.
+In addition, evidence suggests that the RIX discharge waters affect the growth and development of the of mosquito fish (xxx) and the Santa Ana sucker \citep{jenkins2009effects}. For example, fish have been known to be at risk of suffocation when exposed to dissolved oxygen (DO) levels below 2 mg/L for only short periods of time \citep{REF}. A 2012 U.S. Fish and Wildlife Service report on the recovery of the endangered fish noted that specific tolerances to dissolved oxygen have not been determined for  Santa Ana sucker \citep{evans2005draft}.
 
 \subsubsection{Community Ecology}
 
-For the Santa Ana River sucker habitat, a central threat is the invasive Red Algae that has been spreading with alacrity in areas where the fish are known to be, including the reach below the Rapid Infiltration and Extraction (RIX) Treatment plan (Palenscar).There are concerns that the algae may be one of the contributing factors to the sucker's decline. For example, one of the important features of the Santa Ana River for the sucker is the presence of coarse substrate, that is, gravel and cobble, as opposed to silt and sand \citep{thompson2010influence}. The sucker has adapted to feeding on the diatoms that tend to grow on the former. There is also evidence that some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic). 
+For the Santa Ana River sucker habitat, a central threat is the invasive \emph{Cosmopogen aeruginosus} that has been spreading with alacrity in areas where the fish are known to be, including the reach below the Rapid Infiltration and Extraction (RIX) Treatment plan (Palenscar).There are concerns that the algae may be one of the contributing factors to the sucker's decline. For example, one of the important features of the Santa Ana River for the sucker is the presence of coarse substrate i.e., gravel and cobble as opposed to silt and sand \citep{thompson2010influence}. The sucker has adapted to feeding on the diatoms that tend to grow on the former. 
 
-Algae biomass can depend on a range of variables, both biotic and abiotic \citep{winkelmann2014top}. In general, diatom growth dominance has been associated with high quality sucker habitat \citep{REF}. 
+Algae biomass can depend on a range of variables, both biotic and abiotic \citep{winkelmann2014top}. In general, diatom growth dominance has been associated with high quality sucker habitat \citep{REF}. However, an introduced red alga, \emph{Cosmopogen aeruginosus}, may be displacing diatom food sources. 
 
-New introductions of the red algae are not unique to the Santa Ana River \citep{vzakova2013new}.
-
-This may lead to the sucker being in contact with the algae when feeding. If the sucker is ingesting the algae, this may constitute a factor to the Suckers decline. Of course, ingesting the algae is not a necessity to the fish being negatively impacted; the algae may also disrupt the fish's well-being in unknown ways. 
-
-Some researchers suggest that algae may actually crowd out the diatoms on which, along with algae and detritus, the sucker feeds \citep{thompson2010influence}. The presence of the algae in the same area and on the same type of substrate as the fish could indicate competition for resources between the algae\textbf{[ and the sh???]}\footnote{I am not sure where this was going\ldots}
-
+Although the introduction of the \emph{Cosmopogen aeruginosus} are not unique to the Santa Ana River \citep{vzakova2013new}, few locations have documented the ecological impact of its presence. Some of the diatoms on which the sucker feeds may be able to grow on the algae (are epiphytic), thus have limited impact on the sucker. Alternatively, \emph{Cosmopogen aeruginosus} may displace diatoms and detritus, on which the sucker relies \citep{thompson2010influence}. In addition, if the sucker is ingesting the algae, this may constitute a factor to the sucker's decline. Of course, ingesting the algae is not a necessity to the fish being negatively impacted; the algae may also disrupt the fish's well-being in unknown ways. 
 
 \subsection{Objectives}
-This experiment explores sevreal aspects of \emph{C. santaanae} habitat and distribution. Using measurments of river water temperature, overhead tree canopy cover, and sediment type we explore the environmental variables of the river and their relationship with the distribution of red algae. Our second goal of this study is to discover whether or not the Santa Ana suckers are coping with this dramatic increase in temperature by moving to cooler sections of the stream throughout the day, by recording video footage of \emph{C. santaanae} movement. 
+This experiment explores sevreal aspects of \emph{C. santaanae} habitat and distribution. Using measurments of river water temperature, overhead tree canopy cover, and sediment type we explore the environmental variables of the river and their relationship with the distribution of \emph{Cosmopogen aeruginosus}. Our second goal of this study is to discover whether or not the Santa Ana suckers are coping with this dramatic increase in temperature by moving to cooler sections of the stream throughout the day, by recording video footage of \emph{C. santaanae} movement. 
 
-Our goal with this experiment was to find out whether or not temperature was affecting the population and/or livelihood of the Santa Ana Sucker in the Santa Ana River.
+Our goal with this experiment was to find out whether or not temperature was affecting the population and/or livelihood of the Santa Ana sucker in the Santa Ana River.
 
 Our goal is to obtain footage clearly showing the density of Santa Ana suckers in the different locations at different points in the day.  We hope to get accurate enough footage to count the number of fish in each video, then run an ANOVA test on each location to see if the quantity of fish significantly varies at different times of the day.  If they do, we will be able to conclude that the suckers move throughout the day to find their preferred temperature.
 
-Does the Santa Ana Sucker shift its distribution in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana Suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period.
+Does the Santa Ana sucker shift its distribution in the Santa Ana River based on natural temperature changes that occur throughout the day? We believe that if we monitor the relative distribution of the Santa Ana suckers throughout the day we will see a difference in sucker abundance between an upstream and downstream location in response to changing temperature throughout a 24-hour period.
 
 Finally, this report aims to determine whether Biochemical Oxygen Demand (BOD) and water flow velocity are relevant to future research regarding the endangered Santa Ana sucker \emph{C. santaanae}. We collected water quality data from the Santa Ana River to answer the following questions: \emph{Do BOD levels vary in different sections of the river}; \emph{Do differing BOD levels correlate with the abundance of individuals?}; and \emph{Do the water flow rates in different sections of the river correlate with sucker populations?} Because the section of the river we evaluated regularly receives discharge water from a nearby water treatment facility, we believe that BOD levels will be relatively low, around 10 mg/L, decreasing further from the discharge point. Where the BOD levels are lower, we expect higher fish count. We also hypothesize that larger populations of the sucker will concentrate near high-flow sections. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
 
-The presence of the non-native red algae in the Santa Ana River and the possible relationship it holds with Santa Ana Sucker's decline. In the last five years, the non-native tropical red algae Cosmopogen Aeruginosus has been found in large quantities in the Santa Ana River. Using measurements of river water temperature, overhead tree canopy cover, and sediment type, we explore the connection these aspects of the river and their relationship with the red algae.
+The presence of the non-native \emph{Cosmopogen aeruginosus} in the Santa Ana River and the possible relationship it holds with Santa Ana sucker's decline. In the last five years, the non-native tropical \emph{Cosmopogen aeruginosus} Cosmopogen Aeruginosus has been found in large quantities in the Santa Ana River. Using measurements of river water temperature, overhead tree canopy cover, and sediment type, we explore the connection these aspects of the river and their relationship with the \emph{Cosmopogen aeruginosus}.
 
 \begin{quote}
-Our null hypotheses are H0: Water flow velocity and/or BOD levels do not significantly correlate with prevalence of the Santa Ana Sucker.
+Our null hypotheses are H0: Water flow velocity and/or BOD levels do not significantly correlate with prevalence of the Santa Ana sucker.
 \end{quote}
 \begin{quote}
-Our alternative hypotheses are H1: Water flow velocity and/or BOD levels significantly correlate with prevalence of the Santa Ana Sucker.
+Our alternative hypotheses are H1: Water flow velocity and/or BOD levels significantly correlate with prevalence of the Santa Ana sucker.
 \end{quote}
 If we can reject one or both of our null hypotheses, we can conclude that the study of Biological Oxygen Demand (BOD) and water flow velocity are relevant to future conservation research for the endangered Santa Ana sucker \emph{C. santaanae}.
 
@@ -94,60 +83,46 @@ If we can reject one or both of our null hypotheses, we can conclude that the st
 
 \subsection{Materials and Equipment}
 \begin{itemize}
-\item 2 Waterproof GoPro Hero 4 Silver cameras with mounts
-\item 4 64GB microSD SanDisk memory cards
-\item 4 Waterproof Re-Fuel 6-Hour ActionPack Battery for GoPro HERO by DigiPower
-\item 2 HOBO Tidbit water temperature data loggers
-\item 2 Grey Cinder block cubes open on two parallel sides, ~8in x 8in x 8in, Home Depot
+\item 2 Waterproof GoPro "Hero 4 Silver" cameras with mounts, and 4 64GB microSD SanDisk memory cards
+\item 4 Waterproof Re-Fuel 6-Hour ActionPack Battery (DigiPower)
 \item 2 Grey Cinder block backs, ~8in x 8in
-\item 1 bottle of Original Sticks to Everything Gorilla Glue
+\item Original Sticks to Everything Gorilla Glue
 \item 4 HOBO Tidbit Water Temperature Data Logger,
 \item 1 Optic USB U-4 Base Station with coupler and HOBOware software,
 \item 4 Green Garden stakes to hold loggers in stream channel
-\item Red flags,
-\item Yellow marking tape,
-\item Ice Bath for calibrating loggers
+\item Red flags, Yellow marking tape,
 \item GPS Spherical Canopy Densiometer
 \item 30cm x 30cm PCV Quadrat
-\item Analog Thermometer
-\item 10 m tapemeasure
-\item Field Book Recording material
-\item Computer, RStudio Server, Microsoft Exc
+\item Meter tape
+\item Write-in-the-Rain field books
 \item snorkleing goggles 
-
 \end{itemize}
 
 \subsection{Site Description}
 
-We collected our video on-site at the Santa Ana River. As a class we chose to collect data from four points along a small stretch of the river that was easily accessible by car. Because of this, the part of the river we took data from was relatively close to roadways and traffic. 
+We evaluated the Santa Ana River near Colton, California (Figure \ref{SAR_Image}) along Aqua Mansa Road between S Riverside Ave. and S. Rancho Ave in Rialto, California.  We collected data from four reaches, one on the Rialto Channel and the other three in the Santa Ana river (Figure \ref{SAR_Image}). 
 
-The specific sites for our project consisted of one upstream location (site 2) and one downstream location (site 4), located roughly one kilometer apart. Site 2 was located just below the Rialto concrete channel and site 4 was a plunge pool. The upstream location was significantly more encumbered with large debris like rocks and branches. The downstream location was smooth and flat, with a bed of pebbles and smaller coarse sediments (Figure \ref{SAR_Image}). 
-
-We evaluated the Santa Ana River between... near Colton, California (Figure \ref{SAR_Image}). 
-
-This data was collected at three reaches in the Rialto portion of the Santa Ana river near Colton, California (Figure \ref{SAR_Image}). 
+The specific sites for our project consisted of one upstream location (Site 1) and one downstream location (Site 4), located roughly one kilometer apart (Table \ref{tab:sitedescription}). Site 2 was located just below the Rialto concrete channel and Site 4 was a plunge pool. The upstream location had large debris like rocks and branches. The downstream location was smooth and flat, with a bed of pebbles and smaller coarse sediments. 
 
 \begin{table}
-\caption{caption}
+\caption{Description of sampling locations.}
 \begin{tabular}{llll}\hline
 Location & Latitude             & Longitude   & Description \\ \hline\hline
-Site 1  &    &   & Rialto Channel \\
+Site 1  &  TBD  & TBD  & Rialto Channel \\
 Site 2  & 34\textdegree 2'29"N          & 117\textdegree 21'15"W   & Above RIX Influx \\
 Site 3  & 34\textdegree 2'21"N          & 117\textdegree 21'20"W   & Below RIX Influx\\
 Site 4  & 34\textdegree 2'5"N           & 117\textdegree 21"17"W   & Pool, approximately 40-50 cm in depth\\ \hline
 \end{tabular}
+\label{tab:sitedescription}
 \end{table}
 
-Site 4 was the plunge pool, located the furthest downstream. Site 3 was below the confluence and Site 2 was upstream from the confluence. 
 
 The river was surrounded by a derelict lot filled with trash. It was very industrial, with many trucks idling by the roadside and industrial shipping buildings. Rip-rap to protect the channel levy. The area we walked through to approach the river was very sandy, with tire tracks. The river itself had some trash in it and was smaller than expected in contrast to rivers in other areas of the country, like the Pacific Northwest. 
-
-Each observation contains the following variables: algae \% cover, canopy cover, water temperature, bed composition.  
 
 
 \begin{figure}[!ht]
 \includegraphics[width=1.00\textwidth]{Figures/SiteMap}
-\caption{Google Earth --Example of a map. Needs a caption.}
+\caption{Sampling location maps}
 \label{SAR_Image}
 \end{figure}
 
@@ -189,7 +164,7 @@ Temperature collection occurred from September 25th til October 1st for Site 2, 
 
 \subsection{BOD Methods}
 
-Approximately 1L of source river water was collected at each of two sites, one upstream location (site 2) closer to the wastewater discharge facility, and one downstream location (site 4). Ideally, these would be transported to the laboratory for analysis within four hours. BOD was carried out using the following methods...\textbf{[need to add method to report.bib]}
+Approximately 1L of source river water was collected at each of two sites, one upstream location (Site 2) closer to the wastewater discharge facility, and one downstream location (Site 4). Ideally, these would be transported to the laboratory for analysis within four hours. BOD was carried out using the following methods...\textbf{[need to add method to report.bib]}
 
 \subsection{Statistical Methods}
 
@@ -198,17 +173,17 @@ Using the R programming environment \citep{CRAN}, we use linear regression and A
 \section{Results}
 
 <<echo=FALSE>>=
-updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-Sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
+updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
 importupdated=read.csv(updateddata)
 
 # Temperature Data Import
-file4 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/Plunge_Pool clipped.csv"
+file4 = "/home/CAMPUS/smjx2015/Santa Ana sucker/Data/Data_Weds_1/Plunge_Pool clipped.csv"
 site4 <- read.csv(file4)
-file3 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/2nd_Site clipped.csv"
+file3 = "/home/CAMPUS/smjx2015/Santa Ana sucker/Data/Data_Weds_1/2nd_Site clipped.csv"
 site3 <- read.csv(file3)
-file2 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/3rd_Site clipped.csv"
+file2 = "/home/CAMPUS/smjx2015/Santa Ana sucker/Data/Data_Weds_1/3rd_Site clipped.csv"
 site2 <- read.csv(file2)
-file1 = "/home/CAMPUS/smjx2015/Santa Ana Sucker/Data/Data_Weds_1/Concrete clipped.csv"
+file1 = "/home/CAMPUS/smjx2015/Santa Ana sucker/Data/Data_Weds_1/Concrete clipped.csv"
 site1 <- read.csv(file1)
 @
 
@@ -229,17 +204,17 @@ abline(lm(Algae~Canopy,importupdated))
 \label{fig:algae}
 \end{figure}
 
-As a control\footnote{I am not sure what this means?}, we also analyzed to what extend Site alone could predict Algae Abundance(Figure \ref{fig:algaesite}). Our ANOVA test yielded p-value: 0.008176 \textbf{which means the reach of the river studied is alone one of our best predictors of algae abundance, second only to temperature variation.}\footnote{this a discussion point, not a result.} 
+As an alternative method of analysis, we also analyzed to what extent site alone could predict algae abundance (Figure \ref{fig:algaesite}): site as a predictor was significant (p = 0.008).
 
 \begin{figure}[!ht]
 << figure=TRUE, echo=FALSE>>=
 boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Site name",las=1)
 @
-\caption{Algae Abundance as a function of Site.}
+\caption{Algae abundance as a function of site.}
 \label{fig:algaesite}
 \end{figure}
 
-The initial temperature data collected with an analog thermometer did not adequately describe the stream temperatures, so we relied on the temperature logger data for most of our analyses. We found that temperature fluctuated between a minimum of 25.12 degrees Celsius and a maximum of 31.37 degrees Celsius, which are all well above the 22 degrees that many studies found is the optimal temperature for the fish. The plunge pool, site 4, contained the most data points around 27.5 degrees, which proved true for each locations, having the most repetitive temperature between 27 and 28 degrees. Site 4, however, had the least temperature range, only varying between 27 and 28.5 degrees, while other sites tended to have a bigger variation, with site 1 varying up to 5.41 degrees. (Figures \ref{fig:Temp} and \ref{fig:tempbox}).
+The initial temperature data collected with an analog thermometer did not adequately describe the stream temperatures, so we relied on the temperature logger data for most of our analyses. We found that temperature fluctuated between a minimum of 25.12 degrees Celsius and a maximum of 31.37 degrees Celsius, which are all well above the 22 degrees that many studies found is the optimal temperature for the fish. The plunge pool, Site4, contained the most data points around 27.5 degrees, which proved true for each locations, having the most repetitive temperature between 27 and 28 degrees. Site 4, however, had the least temperature range, only varying between 27 and 28.5 degrees, while other sites tended to have a bigger variation, with Site1 varying up to 5.41 degrees. (Figures \ref{fig:Temp} and \ref{fig:tempbox}).
 
 \begin{figure}[!ht]
 \includegraphics[width=0.90\textwidth]{Figures/Temp}
@@ -278,7 +253,7 @@ The average recorded water flow velocities were:
 \subsection{Fish Counts}
 
 <<echo=FALSE>>=
-newmetadata <- read.csv("/home/CAMPUS/cmfa2015/Santa Ana Sucker/Data/Data_Tues_2/newmetadata.csv")
+newmetadata <- read.csv("/home/CAMPUS/cmfa2015/Santa Ana sucker/Data/Data_Tues_2/newmetadata.csv")
 @
 
 At the upstream location (Site 2), no suckers were observed in the morning while one sucker occasionally swim out from behind a rock. At the downstream location (Site 4), we observed numerous fish \ldots (Table \ref{tab:fishcounts}). We counted an average of 20.1 suckers in the morning with a standard deviation of 6.0 fish.  In the afternoon, we counted an average of 32.2 with a standard deviation of 9.9, meaning both the average and the variance were higher in the afternoon.  The river was 27.8\textdegree C in the morning and increased to 28.4\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that time of day will have no effect on the number of fish.
@@ -314,7 +289,7 @@ boxplot(Fish~Section,newmetadata, ylab="Fish",xlab="Time of Day",main ="Time of 
 
 \begin{figure}
 \includegraphics[scale=.4]{Videography_figures/reallygoodcrop}
-\caption{A close up of two Santa Ana Suckers from the footage we collected.}
+\caption{A close up of two Santa Ana suckers from the footage we collected.}
 \label{fig:reallygoodcrop}
 \end{figure}
 
@@ -322,18 +297,12 @@ boxplot(Fish~Section,newmetadata, ylab="Fish",xlab="Time of Day",main ="Time of 
 
 \subsection{Habitat Quality and Fish Activity}
 
-\textbf{We need to describe the habitat value that we determined! relative to the literature...}
+\subsubsection{Hydrology and Geomorphology and Algae}
 
-\subsubsection{Hydrology and Geomorphology and Algae?}
-
-There is a statistically significant variation of algae abundance between the 3 sites examined in our study. Some measurements showed up to 100\% algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 \% level, but did tentatively suggest that algae may prefer coarse sediment. Red Algae in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
-Our exploratory study is one of the first to examine what variables may control red algae's distribution in the Santa Ana River. 
+Algae cover was a function of several predictors that could not be disentangled. For example, algae abundance between the 3 sites examined in our study, but that might have been a result several factors. Some measurements showed up to 100\% algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 \% level, but did tentatively suggest that algae may prefer coarse sediment. \emph{Cosmopogen aeruginosus} in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
+Our exploratory study is one of the first to examine what variables may control \emph{Cosmopogen aeruginosus}'s distribution in the Santa Ana River. 
 
 This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
-
-Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. 
-
-Most importantly, red algae's co-occurrence with the federally endangered Santa Ana sucker should be examined. These improvements on our experiment will yield a much better idea of what factors control red algae's distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae's effect on Santa Ana Suckers.
 
 \subsubsection{Temperature and Invasive Algae}
 
@@ -343,27 +312,30 @@ The temperature data include spikes on a daily basis, which were especially sign
 
 \subsubsection{Fish Behavior and Counts}
 
-In terms of fish population, using the data from the Fish and Wildlife Service and our video data, no suckers were found at Site 1, only one fish counted in the afternoon at Site 2 at various points, no fish were found by the FWS at Site 3, but many fish were observed in the plunge pool at Site 4. Also, from previous results, we knew that most Santa Ana Suckers live in the plunge pool and prefer it there. This could be because of reasons other than temperature, but we did notice that there were less extreme spikes in Site 4. Our videos of Site 2 contained very few fish. 
+In terms of fish population, using the data from the Fish and Wildlife Service and our video data, no suckers were found at Site 1, only one fish counted in the afternoon at Site 2 at various points, no fish were found by the FWS at Site 3, but many fish were observed in the plunge pool at Site 4. Also, from previous results, we knew that most Santa Ana suckers live in the plunge pool and prefer it there. This could be because of reasons other than temperature, but we did notice that there were less extreme spikes in Site 4. Our videos of Site 2 contained very few fish. 
 
 This could be because the temperature further upstream was too hot for the suckers to live in; the temperature data found that at that location the water was between 30.25\textdegree~C in the afternoon and 25.12\textdegree~C in the morning. This is a range of 5.13\textdegree~C, which is a much larger range than the range found at Site 4, where more suckers were found. In general, the fish were more abundant downstream, where the least extreme temperature spikes were occurring. From what we observed, the extreme temperature spikes at sites 1 and 2, and the medium spike at Site 3, could have caused the fish to prefer to stay at Site 4, where they are most abundant. This disproves our null hypothesis that the fish would be randomly spread throughout the channel and that temperature would remain fairly constant throughout the river, which suggests there could be a correlation between what is happening temperature wise and with the location of the suckers.
 
-Also, the hottest temperatures that occurred at Site 2 were almost at mortality rate for suckers, and were 1.59\textdegree~C higher than any temperatures found in site 4. It is possible that the fish prefer site 4 for other reasons than temperature, but correlations between temperature and Sucker abundance should be further explored.
+Also, the hottest temperatures that occurred at Site 2 were almost at mortality rate for suckers, and were 1.59\textdegree~C higher than any temperatures found in Site4. It is possible that the fish prefer Site 4 for other reasons than temperature, but correlations between temperature and sucker abundance should be further explored.
 
 When we compared the number of fish downstream in the afternoon compared to the morning, we had a p-value of 6.027e-13, meaning there were significantly more suckers in the afternoon than there were in the morning.  This suggests that the suckers do move downstream throughout the day to get to cooler temperatures.  On the afternoon we tested, the plunge pool (downstream) was 28.5\textdegree~C, whereas the river at our upstream location, closer to the concrete, was 29.4\textdegree~C. Throughout our longer term temperature testing, we noticed there was significantly more variation in temperature the further upstream we tested. These large temperature spikes and variability could have prevented fish from successfully habitating the upstream sites. 
-
-
 We collected our data in a simple yet straightforward manner to ensure its comprehensibility and communicability. Not only does our data span over a week, 24 hours a day, but we collected at four different sites every 15 minutes, giving us a significant spread of data to work with. Given the limited timeline of the experiment, our data can be said to have captured a glimpse into an average week for this portion of the river, and can be used as a baseline and reference for future projects. A weakness was that we were not able to measure possible temperature stratification, since we only measured at one point for each of the four sites. 
 
 Our data itself has left us with many unknowns. The water temperature measurements seem to fluctuate but not necessarily with the air temperature measurements, averaged, from that day. Compared with the historic averages, the week of our experiment was particularly hot, but the effect on the suckers is hard to determine as the air temperature data was not collected every fifteen minutes or even hourly (as our data was), and instead we had to rely on daily highs and lows. 
 
 There were also pretty extreme spikes, but not occurring at times that suggested spikes were travelling downstream, originating from the Veolia water plant. Initially, Veolia agreed to send over their data on both the influx and outflux water temperatures, to allow us to see what was happening to water temperature from the plant. However, after a week of following up, we have not been able to get the data, as the CPO has hesitated to release it and says it will take up to a month to compile it. Without this data, it is hard to explain these randomly occurring spikes at different points in the river. This part of the data could have also been affected by canopy cover or stratification. 
 
-It is difficult to determine if the temperature spikes were what caused the fish to choose to reside primarily in site 4, because there are a myriad of other variables. Other variables that could have affected where the fish chose to live include algae/food source, canopy cover, depth, or sediment type/size. What we do know is that the further upstream locations not only had a wide range of temperatures, but also experienced hotter temperatures than site 4, which was where the fish live. From our background research, we know that the US Fish and Wildlife Service found that Santa Ana suckers prefer water that is around 22 \textdegree~C. None of our sites had water this cold, but site 4 had the least variability and averaged around 28 \textdegree. According to a brief overview from Larry Brown of the US Geological Survey, no fish were detected at Site 1, while a few European chubs\footnote{What are these??} were sampled at Sites 2 and 3. At Site 4 they estimated large numbers of fish but did not conduct a formal survey of this site. However, our video data showed a much larger population in the plunge pool. These population estimates were the results of random surveying, and could be limited in their applicability because of variation in site location and scope. For example, Larry Brown measured sucker populations in the Rialto drainage but not in the pool below it, which is where we placed our data logger. Therefore, it is difficult to tell to what extent the US Geological Survey's data works with our data. 
+It is difficult to determine if the temperature spikes were what caused the fish to choose to reside primarily in Site 4, because there are a myriad of other variables. Other variables that could have affected where the fish chose to live include algae/food source, canopy cover, depth, or sediment type/size. What we do know is that the further upstream locations not only had a wide range of temperatures, but also experienced hotter temperatures than Site 4, which was where the fish live. From our background research, we know that the US Fish and Wildlife Service found that Santa Ana suckers prefer water that is around 22 \textdegree~C. None of our sites had water this cold, but Site 4 had the least variability and averaged around 28 \textdegree. According to a brief overview from Larry Brown of the US Geological Survey, no fish were detected at Site 1, while a few European chubs\footnote{What are these??} were sampled at Sites 2 and 3. At Site 4 they estimated large numbers of fish but did not conduct a formal survey of this site. However, our video data showed a much larger population in the plunge pool. These population estimates were the results of random surveying, and could be limited in their applicability because of variation in site location and scope. For example, Larry Brown measured sucker populations in the Rialto drainage but not in the pool below it, which is where we placed our data logger. Therefore, it is difficult to tell to what extent the US Geological Survey's data works with our data. 
 
 \subsection{$BOD_5$}
-Future study of dissolved oxygen levels and water velocity in the Santa Ana River should test for any correlations with the recent Fish and Wildlife Service electroshock population data. Though we did not have access to this data, we had access to a rough estimate of the Sucker population from video-counting (mentioned above). In a \textbf{week(NEEDS TO BE CHANGED)}, about 12 fish were counted at Site 2 and 671 fish at Site 4. So, many more fish were spotted where the river velocity was higher and where the $BOD_5$ levels were higher. Since BOD can be less than 2 mg/L in clear water and reach hundreds of mg/L in organic waste water, a difference of about 5 mg/L between Site 2 and Site 4 is very small. It is unlikely a threshhold was reached between 22.1 and 27.3 mg/L that made Site 2 unliveable for the sucker. The difference in velocity is more significant and also supports the referenced existing literature that says water flow velocity is one of the primary determinants of sucker population. We recommend future research on the Santa Ana Sucker population focus on water velocity.
+Future study of dissolved oxygen levels and water velocity in the Santa Ana River should test for any correlations with the recent Fish and Wildlife Service electroshock population data. Though we did not have access to this data, we had access to a rough estimate of the sucker population from video-counting (mentioned above). In a \textbf{week(NEEDS TO BE CHANGED)}, about 12 fish were counted at Site 2 and 671 fish at Site 4. So, many more fish were spotted where the river velocity was higher and where the $BOD_5$ levels were higher. Since BOD can be less than 2 mg/L in clear water and reach hundreds of mg/L in organic waste water, a difference of about 5 mg/L between Site 2 and Site 4 is very small. It is unlikely a threshhold was reached between 22.1 and 27.3 mg/L that made Site 2 unliveable for the sucker. The difference in velocity is more significant and also supports the referenced existing literature that says water flow velocity is one of the primary determinants of sucker population. We recommend future research on the Santa Ana sucker population focus on water velocity.
 
 \subsection{Research Limitations}
+
+Most importantly, \emph{Cosmopogen aeruginosus}'s co-occurrence with the federally endangered Santa Ana sucker should be examined. 
+
+Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. 
+These improvements on our experiment will yield a much better idea of what factors control \emph{Cosmopogen aeruginosus}'s distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae's effect on Santa Ana suckers.
 
 Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. For videography, we did not formulate a standardized method with which to place our cameras in the water. For this reason, there were differences in footage from morning to afternoon as well as from site to site. For future studies, we recommend including physical place-markers in the river for the cinderblock structures, maybe in the form of flags placed directly in the river bed. Markers inside of the cinderblock structure that delineate the exact position and angle of the cameras would also be ideal in order to ensure the same exact field of vision is present throughout the collected footage. 
 
@@ -402,7 +374,7 @@ We returned at approximately 2 pm.  We took out the camera at the downstream sit
 Our last recording session was at 8 am the next morning.  We replaced the memory cards and battery packs again and returned the cameras to their positions.  One of us returned the next day to collect the cameras.
 
 \subsection{Temperature Loggers}
-We obtained four HOBO Tidbit water temperature Data Loggers to set up at the Rialto Channel at Agua Mansa (site 4), another at the point where the other discharge site meets the river (site 2), another just above that site (site 3), and a fourth in the pool where Suckers have previously been observed (site 1). Before going to the river, In order to start the data process, we put each logger into the coupler and pushed the level til the light was flashing. We then put them in the river by looping a garden stake through one, sticking it into the substrate, and securing it with rocks. We then put yellow marking tape on plants nearby and red flags along the bank to show where we left the main path. We repeated this for each site, making sure the loggers were secure and fairly hidden. After seven nights (for site 3) and eleven nights (for the other sites), we returned to the river and collected the loggers. In the lab, using the software, we loaded our data and transferred it to RStudio.
+We obtained four HOBO Tidbit water temperature Data Loggers to set up at the Rialto Channel at Agua Mansa (Site 4), another at the point where the other discharge site meets the river (Site 2), another just above that site (Site 3), and a fourth in the pool where suckers have previously been observed (Site 1). Before going to the river, In order to start the data process, we put each logger into the coupler and pushed the level til the light was flashing. We then put them in the river by looping a garden stake through one, sticking it into the substrate, and securing it with rocks. We then put yellow marking tape on plants nearby and red flags along the bank to show where we left the main path. We repeated this for each site, making sure the loggers were secure and fairly hidden. After seven nights (for Site 3) and eleven nights (for the other sites), we returned to the river and collected the loggers. In the lab, using the software, we loaded our data and transferred it to RStudio.
 
 \subsection{BOD5 Methods}
 
