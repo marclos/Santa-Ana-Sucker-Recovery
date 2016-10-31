@@ -28,19 +28,19 @@ The Santa Ana sucker (\emph{Catostomus santaanae}) is a relatively small fish ex
 
 More recently, the abundance of the red alga \emph{Cosmopogen aeruginosus}, has increased significantly in the Santa Ana River. This may also be contributing to the sucker's decline, but the environmental variables that control the \emph{Cosmopogen aeruginosus}'s distribution in the Santa Ana River are currently not well understood. The direct effect this invasive algae has on \emph{C. santaanae} is also poorly constrained. 
 
-In general, the environmental variables that influence \emph{C. santaanae} populations are poorly understood. Better understanding of water temperature, discharge rates, biochemicial oxygen demand (BOD), and \emph{Cosmopogen aeruginosus} distribution could aid in conservation efforts of this federally threantened fish. 
+In general, the environmental variables that influence \emph{C. santaanae} populations are poorly understood. Better understanding of water temperature, discharge rates, biochemicial oxygen demand (BOD) and water velocity, and \emph{Cosmopogen aeruginosus} distribution could aid in conservation efforts of this federally threatened fish. 
 
 \subsection{Problem Statement}
 
-This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain what environmental variables affect \emph{C. santaanae} distributions to water temperatures, BOD, (\emph{Cosmopogen aeruginosus} abundance, etc. 
+This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain environmental variables affecting \emph{C. santaanae} distributions to water temperatures, BOD, (\emph{Cosmopogen aeruginosus} abundance, etc. 
 
 \subsection{Background}
 
-The geographic range of the Santa Ana sucker has declined from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}. And within the Santa Ana River, the sucker habitat habitat is contrained some short reaches that are fed by treated discharges for most of the year --- in this context the river reach is highly modified in terms of it's hydrology, geomorphology,  water quality, and habitat characteristics--- becoming a disconnected stream \citep{poole2002fluvial}. 
+The geographic range of the Santa Ana sucker has declined from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}. And within the Santa Ana River, the sucker habitat is contrained to some short reaches supplied by treated discharges for most of the year. In this context the river is highly modified in terms of its hydrology, geomorphology, water quality, and habitat characteristics, essentially becoming a disconnected stream \citep{poole2002fluvial}. 
 
 \subsubsection{Stream Hydrology and Geomorphology}
 
-Stream bed substract plays in important role in providing habitat for benthic dwelling fish, like the Santa Ana sucker. \citet{baskerville2012recovery} state that constant water flows are important to the availability of coarse substrate which the sucker needs to spawn offspring and hide from predators. According to \citet{evans2005long}, temporary reduction of flow, such as occurs when the treatment plant which now largely supplies the river halts releases of discharge water, can significantly reduce the habitat available for suckers. Just last month, the Center for Biological Diversity reported that "by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish" \citep{evans2005draft}. 
+Stream bed substrate plays in important role in providing habitat for benthic dwelling fish such as the Santa Ana sucker. \citet{baskerville2012recovery} state that constant water flows are important to the availability of coarse substrate which the sucker needs to spawn offspring and hide from predators. According to \citet{evans2005long}, temporary reduction of flow, such as occurs when the treatment plant which now largely supplies the river halts releases of discharge water, can significantly reduce the habitat available for suckers. Just last month, the Center for Biological Diversity reported that "by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish" \citep{evans2005draft}. 
 
 Understanding the role of stream substrate can be important in restoring various fish populations. For example, restoration projects seemed to be failing to prevent the Chinook population from falling in the Merced River \citep{albertson13}. For example, the installation of gravel augmentation in a reconfigured channel seemed to have little impact on the salmon, suggesting that other factors were catalyzing the fall of the species. By comparing the restored portion with other portions of the Merced river, food web characteristics and flow discharge seemed to produce the same results on the various life stages of the salmon. However, higher temperatures, less woody debris, and minimal riparian cover seemed to limit populations in the restored portions. Restoration efforts are then presented with an added challenge of ensuring that every aspect of the ecosystem is beneficial to the species, which demands more work toward temperature regulation and attempts to restore the river bank. To see how the Santa Ana sucker would react to similar conservation efforts would be interesting in discussions in attempting to determine solutions.
 
@@ -173,7 +173,7 @@ Using the R programming environment \citep{CRAN}, we use linear regression and A
 
 \section{Results}
 
-<< echo=FALSE>>=
+<<echo=FALSE>>=
 updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
 importupdated=read.csv(updateddata)
 
