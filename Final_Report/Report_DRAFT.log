@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  31 OCT 2016 07:41
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  31 OCT 2016 09:55
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -317,264 +317,161 @@ Overfull \hbox (40.83466pt too wide) in paragraph at lines 207--208
  []
 
 [9] [10 <./Videography_figures/wherefish.png>]
-Package color Info: Redefining color shadecolor on input line 227.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 230.
+Package color Info: Redefining color shadecolor on input line 236.
 
+<figure/unnamed-chunk-2-1.pdf, id=316, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
-(/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Overfull \hbox (454.20001pt too wide) in paragraph at lines 230--231
-[]\OT1/pcr/m/n/10 ## Warning in file(file, "rt"): cannot open file '/home/CAMPU
-S/fcl02013/Santa-Ana-sucker-Recovery/Data/Data[]TUES[]1/updatedtemps.csv':
+<use figure/unnamed-chunk-2-1.pdf>
+Overfull \hbox (16.35352pt too wide) in paragraph at lines 237--238
+[][] 
  []
 
-LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 232.
+Package color Info: Redefining color shadecolor on input line 248.
+<figure/unnamed-chunk-3-1.pdf, id=318, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
-Overfull \hbox (123.0pt too wide) in paragraph at lines 234--235
-[]\OT1/pcr/m/n/10 ## Warning in file(file, "rt"): cannot open file '/home/CAMPU
-S/smjx2015/Santa
- []
-
-
-Overfull \hbox (19.80002pt too wide) in paragraph at lines 234--235
-\OT1/pcr/m/n/10 Ana sucker/Data/Data[]Weds[]1/Plunge[]Pool clipped.csv': No suc
-h
- []
-
-
-Overfull \hbox (123.0pt too wide) in paragraph at lines 238--239
-[]\OT1/pcr/m/n/10 ## Warning in file(file, "rt"): cannot open file '/home/CAMPU
-S/smjx2015/Santa
- []
-
-
-Overfull \hbox (1.80002pt too wide) in paragraph at lines 238--239
-\OT1/pcr/m/n/10 Ana sucker/Data/Data[]Weds[]1/2nd[]Site clipped.csv': No such
- []
-
-
-Overfull \hbox (123.0pt too wide) in paragraph at lines 242--243
-[]\OT1/pcr/m/n/10 ## Warning in file(file, "rt"): cannot open file '/home/CAMPU
-S/smjx2015/Santa
- []
-
-
-Overfull \hbox (1.80002pt too wide) in paragraph at lines 242--243
-\OT1/pcr/m/n/10 Ana sucker/Data/Data[]Weds[]1/3rd[]Site clipped.csv': No such
- []
-
-
-Overfull \hbox (123.0pt too wide) in paragraph at lines 246--247
-[]\OT1/pcr/m/n/10 ## Warning in file(file, "rt"): cannot open file '/home/CAMPU
-S/smjx2015/Santa
- []
-
-
-Overfull \hbox (4.20001pt too wide) in paragraph at lines 246--247
-\OT1/pcr/m/n/10 Ana sucker/Data/Data[]Weds[]1/Concrete clipped.csv': No such
- []
-
-Package color Info: Redefining color shadecolor on input line 259.
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-[]\OT1/pcr/b/n/10 ## Error in eval(expr, envir, enclos): object
- []
-
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 264.
-
-(/usr/share/texmf/tex/latex/psnfss/ts1pcr.fd
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-)
-LaTeX Font Info:    Font shape `TS1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `TS1/pcr/b/n' tried instead on input line 264.
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
-[]\OT1/pcr/b/n/10 ## Error in plot(importupdated\TS1/pcr/b/n/10 $\OT1/pcr/b/n/1
-0 Canopy,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
-\OT1/pcr/b/n/10 importupdated\TS1/pcr/b/n/10 $\OT1/pcr/b/n/10 Algae, ylab = "Al
-gae Abundance (% cover)",
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
-[]\OT1/pcr/b/n/10 ## Error in is.data.frame(data): object 'importupdated'
- []
-
-Package color Info: Redefining color shadecolor on input line 276.
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
-[]\OT1/pcr/b/n/10 ## Error in eval(expr, envir, enclos): object
- []
-
-[11] <Figures/Temp.pdf, id=328, 505.89pt x 505.89pt>
+<use figure/unnamed-chunk-3-1.pdf> [11 <./figure/unnamed-chunk-2-1.pdf>]
+<Figures/Temp.pdf, id=333, 505.89pt x 505.89pt>
 File: Figures/Temp.pdf Graphic file (type pdf)
  <use Figures/Temp.pdf>
-Package color Info: Redefining color shadecolor on input line 294.
+Package color Info: Redefining color shadecolor on input line 265.
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--297
-[]\OT1/pcr/b/n/10 ## Error in boxplot(list(site1\TS1/pcr/b/n/10 $\OT1/pcr/b/n/1
-0 Temp, site2\TS1/pcr/b/n/10 $\OT1/pcr/b/n/10 Temp,
- []
+<figure/unnamed-chunk-4-1.pdf, id=334, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
+<use figure/unnamed-chunk-4-1.pdf>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 303.
+(Font)              <8> on input line 273.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 303.
-Package color Info: Redefining color shadecolor on input line 306.
+(Font)              <6> on input line 273.
+Package color Info: Redefining color shadecolor on input line 276.
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
-[]\OT1/pcr/b/n/10 ## Error in plot(importupdated\TS1/pcr/b/n/10 $\OT1/pcr/b/n/1
-0 Temp[]range,
- []
+<figure/unnamed-chunk-5-1.pdf, id=338, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
-\OT1/pcr/b/n/10 importupdated\TS1/pcr/b/n/10 $\OT1/pcr/b/n/10 Algae, ylab = "Al
-gae Abundance (% cover)",
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--311
-[]\OT1/pcr/b/n/10 ## Error in is.data.frame(data): object 'importupdated'
- []
-
+<use figure/unnamed-chunk-5-1.pdf> [12 <./figure/unnamed-chunk-3-1.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 317.
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 317.
+(Font)              <12> on input line 284.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `subscript' on input line 317.
+(hyperref)                removing `math shift' on input line 284.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 317.
-
-[12]
-Package color Info: Redefining color shadecolor on input line 331.
-
-Overfull \hbox (123.0pt too wide) in paragraph at lines 334--335
-[]\OT1/pcr/m/n/10 ## Warning in file(file, "rt"): cannot open file '/home/CAMPU
-S/cmfa2015/Santa
- []
+(hyperref)                removing `subscript' on input line 284.
 
 
-Overfull \hbox (4.20001pt too wide) in paragraph at lines 334--335
-\OT1/pcr/m/n/10 Ana sucker/Data/Data[]Tues[]2/newmetadata.csv': No such file
- []
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 284.
 
-[13 <./Figures/Temp.pdf>]
-Package color Info: Redefining color shadecolor on input line 361.
+[13 <./Figures/Temp.pdf>] [14 <./figure/unnamed-chunk-4-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 321.
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
-[]\OT1/pcr/b/n/10 ## Error in eval(expr, envir, enclos): object
- []
+<figure/unnamed-chunk-7-1.pdf, id=377, 505.89pt x 505.89pt>
+File: figure/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
-<Videography_figures/reallygoodcrop.png, id=357, 841.1425pt x 588.1975pt>
+<use figure/unnamed-chunk-7-1.pdf>
+<Videography_figures/reallygoodcrop.png, id=379, 841.1425pt x 588.1975pt>
 File: Videography_figures/reallygoodcrop.png Graphic file (type png)
 
-<use Videography_figures/reallygoodcrop.png> [14] [15 <./Videography_figures/re
-allygoodcrop.png>]
-Overfull \hbox (16.03427pt too wide) in paragraph at lines 394--395
+<use Videography_figures/reallygoodcrop.png> [15 <./figure/unnamed-chunk-5-1.pd
+f>] [16 <./figure/unnamed-chunk-7-1.pdf>] [17 <./Videography_figures/reallygood
+crop.png>]
+Overfull \hbox (16.03427pt too wide) in paragraph at lines 353--354
 []\OT1/ptm/b/n/10 [NEED DIS-CUS-SION COM-PAR-ING TEM-PER-A-TURE WITH LIT-ER-A-T
 URE...] 
  []
 
+[18
 
-Overfull \hbox (1.3671pt too wide) in paragraph at lines 404--405
+]
+Overfull \hbox (1.3671pt too wide) in paragraph at lines 363--364
 \OT1/ptm/m/n/10 whereas the river at our up-stream lo-ca-tion, closer to the co
 n-crete, was 29.4\TS1/ptm/m/n/10 ° \OT1/ptm/m/n/10 C. Through-
  []
 
-[16]
+[19]
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 412.
-
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `subscript' on input line 412.
+(hyperref)                removing `math shift' on input line 371.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 412.
-
-[17] [18] (./Report_DRAFT.bbl [19]) [20] [21]
-
-Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 463.
+(hyperref)                removing `subscript' on input line 371.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `subscript' on input line 463.
+(hyperref)                removing `math shift' on input line 371.
+
+[20] (./Report_DRAFT.bbl [21] [22]) [23] [24]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 463.
+(hyperref)                removing `subscript' on input line 422.
 
 
-Overfull \hbox (16.09677pt too wide) in paragraph at lines 469--470
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `math shift' on input line 422.
+
+
+Overfull \hbox (16.09677pt too wide) in paragraph at lines 428--429
 []\OT1/ptm/m/n/10 Nitrification in-hibitor was cre-ated by dis-solv-ing 2.0 g a
 l-lylth-iourea (ATU, C4H8N2S)
  []
 
-[22]
-Overfull \hbox (7.38701pt too wide) in paragraph at lines 475--481
+[25]
+Overfull \hbox (7.38701pt too wide) in paragraph at lines 434--440
 []\OT1/ptm/m/n/10 Note that *Temp[]x* en-tries were bor-rowed with per-mis-sion
  from So-phie and Nicole's
  []
 
 
-Overfull \hbox (9.8658pt too wide) in paragraph at lines 485--486
+Overfull \hbox (9.8658pt too wide) in paragraph at lines 444--445
 []\OT1/ptm/m/n/10 Minimum DO Depletion--Viable sam-ples must have min. DO de-pl
 e-tion of 2.0mg/L,
  []
 
 
-Overfull \hbox (1.35622pt too wide) in paragraph at lines 486--487
+Overfull \hbox (1.35622pt too wide) in paragraph at lines 445--446
 []\OT1/ptm/m/n/10 Glucose-Glutamic Acid Check--The re-sult-ing av-er-age BOD fo
 r the 3 GGA blanks
  []
 
 
-Overfull \hbox (4.81665pt too wide) in paragraph at lines 487--488
+Overfull \hbox (4.81665pt too wide) in paragraph at lines 446--447
 []\OT1/ptm/m/n/10 Dilution wa-ter check--DO up-take af-ter in-cu-ba-tion must n
 ot be more than 0.20mg/L
  []
 
-[23]
+[26]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no ˆ in font ptmr7t!
 Missing character: There is no † in font ptmr7t!
- [24] (./Report_DRAFT.aux) ) 
+ [27] (./Report_DRAFT.aux) ) 
 Here is how much of TeX's memory you used:
- 3745 strings out of 256214
- 51912 string characters out of 1917000
- 105981 words of memory out of 1500000
- 6861 multiletter control sequences out of 10000+200000
- 26162 words of font info for 55 fonts, out of 1200000 for 2000
+ 3714 strings out of 256214
+ 51893 string characters out of 1917000
+ 105963 words of memory out of 1500000
+ 6832 multiletter control sequences out of 10000+200000
+ 24839 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,9n,39p,1987b,410s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,9n,39p,1987b,426s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr
 /share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bl
 uesky/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb></usr/sh
 are/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesk
 y/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/tex
-mf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/urw/courier/
-ucrb8a.pfb></usr/share/texmf/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/tex
-mf/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf/fonts/type1/urw/times/utm
-r8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (24 pages, 10537480 bytes).
+mf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/urw/times/ut
+mb8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on Report_DRAFT.pdf (27 pages, 10533799 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 131072)
- 301 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 519 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 131072)
+ 326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
