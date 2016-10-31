@@ -2,6 +2,7 @@
 \usepackage{natbib}
 \usepackage{hyperref}
 \usepackage{times}
+\usepackage{authblk}
 \usepackage[section]{placeins}
 \usepackage{gensymb} % How can I write a \textdegree~ (degree) symbol in LaTeX?
 %\graphicspath{ {/Videography_figures}}
@@ -9,7 +10,8 @@
 \newcommand{\BibTeX}{{\sc Bib}\TeX}
 
 \title{Santa Ana sucker Habitat Evaluation}
-\author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Ed. Marc Los Huertos}
+\author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Editor Marc Los Huertos}
+\affil{Environmental Analysis 30, Fall 2016, Pomona College}
 
 \begin{document}
 
