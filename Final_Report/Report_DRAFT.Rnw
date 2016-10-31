@@ -12,6 +12,7 @@
 \author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Ed. Marc Los Huertos}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
@@ -172,7 +173,7 @@ Using the R programming environment \citep{CRAN}, we use linear regression and A
 
 \section{Results}
 
-<<echo=FALSE>>=
+<< echo=FALSE>>=
 updateddata= "/home/CAMPUS/fcl02013/Santa-Ana-sucker-Recovery/Data/Data_TUES_1/updatedtemps.csv"
 importupdated=read.csv(updateddata)
 
