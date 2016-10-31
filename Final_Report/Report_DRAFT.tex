@@ -1,4 +1,53 @@
-\documentclass{article}
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 \usepackage{natbib}
 \usepackage{hyperref}
 \usepackage{times}
@@ -10,10 +59,8 @@
 
 \title{Santa Ana sucker Habitat Evaluation}
 \author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Ed. Marc Los Huertos}
-
-\usepackage{Sweave}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
-\input{Report_DRAFT-concordance}
 
 \maketitle
 
@@ -29,19 +76,19 @@ The Santa Ana sucker (\emph{Catostomus santaanae}) is a relatively small fish ex
 
 More recently, the abundance of the red alga \emph{Cosmopogen aeruginosus}, has increased significantly in the Santa Ana River. This may also be contributing to the sucker's decline, but the environmental variables that control the \emph{Cosmopogen aeruginosus}'s distribution in the Santa Ana River are currently not well understood. The direct effect this invasive algae has on \emph{C. santaanae} is also poorly constrained. 
 
-In general, the environmental variables that influence \emph{C. santaanae} populations are poorly understood. Better understanding of water temperature, discharge rates, biochemicial oxygen demand (BOD), and \emph{Cosmopogen aeruginosus} distribution could aid in conservation efforts of this federally threantened fish. 
+In general, the environmental variables that influence \emph{C. santaanae} populations are poorly understood. Better understanding of water temperature, discharge rates, biochemicial oxygen demand (BOD) and water velocity, and \emph{Cosmopogen aeruginosus} distribution could aid in conservation efforts of this federally threatened fish. 
 
 \subsection{Problem Statement}
 
-This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain what environmental variables affect \emph{C. santaanae} distributions to water temperatures, BOD, (\emph{Cosmopogen aeruginosus} abundance, etc. 
+This project began with the broad driving question, "How can the Santa Ana sucker be saved?" To that end, we have tried to constrain environmental variables affecting \emph{C. santaanae} distributions to water temperatures, BOD, (\emph{Cosmopogen aeruginosus} abundance, etc. 
 
 \subsection{Background}
 
-The geographic range of the Santa Ana sucker has declined from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}. And within the Santa Ana River, the sucker habitat habitat is contrained some short reaches that are fed by treated discharges for most of the year --- in this context the river reach is highly modified in terms of it's hydrology, geomorphology,  water quality, and habitat characteristics--- becoming a disconnected stream \citep{poole2002fluvial}. 
+The geographic range of the Santa Ana sucker has declined from its historic distribution in the Los Angeles Basin \citep{brown2005aquatic, saiki2007life}. And within the Santa Ana River, the sucker habitat is contrained to some short reaches supplied by treated discharges for most of the year. In this context the river is highly modified in terms of its hydrology, geomorphology, water quality, and habitat characteristics, essentially becoming a disconnected stream \citep{poole2002fluvial}. 
 
 \subsubsection{Stream Hydrology and Geomorphology}
 
-Stream bed substract plays in important role in providing habitat for benthic dwelling fish, like the Santa Ana sucker. \citet{baskerville2012recovery} state that constant water flows are important to the availability of coarse substrate which the sucker needs to spawn offspring and hide from predators. According to \citet{evans2005long}, temporary reduction of flow, such as occurs when the treatment plant which now largely supplies the river halts releases of discharge water, can significantly reduce the habitat available for suckers. Just last month, the Center for Biological Diversity reported that "by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish" \citep{evans2005draft}. 
+Stream bed substrate plays in important role in providing habitat for benthic dwelling fish such as the Santa Ana sucker. \citet{baskerville2012recovery} state that constant water flows are important to the availability of coarse substrate which the sucker needs to spawn offspring and hide from predators. According to \citet{evans2005long}, temporary reduction of flow, such as occurs when the treatment plant which now largely supplies the river halts releases of discharge water, can significantly reduce the habitat available for suckers. Just last month, the Center for Biological Diversity reported that "by halting water releases critical to maintaining surface flows of the Santa Ana River, the Rapid Infiltration and Extraction (RIX) treatment plant is stranding and killing threatened fish" \citep{evans2005draft}. 
 
 Understanding the role of stream substrate can be important in restoring various fish populations. For example, restoration projects seemed to be failing to prevent the Chinook population from falling in the Merced River \citep{albertson13}. For example, the installation of gravel augmentation in a reconfigured channel seemed to have little impact on the salmon, suggesting that other factors were catalyzing the fall of the species. By comparing the restored portion with other portions of the Merced river, food web characteristics and flow discharge seemed to produce the same results on the various life stages of the salmon. However, higher temperatures, less woody debris, and minimal riparian cover seemed to limit populations in the restored portions. Restoration efforts are then presented with an added challenge of ensuring that every aspect of the ecosystem is beneficial to the species, which demands more work toward temperature regulation and attempts to restore the river bank. To see how the Santa Ana sucker would react to similar conservation efforts would be interesting in discussions in attempting to determine solutions.
 
@@ -174,3 +221,292 @@ Using the R programming environment \citep{CRAN}, we use linear regression and A
 
 \section{Results}
 
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/fcl02013/Santa-Ana-sucker-Recovery/Data/Data\_TUES\_1/updatedtemps.csv': No such file or directory}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/smjx2015/Santa Ana sucker/Data/Data\_Weds\_1/Plunge\_Pool clipped.csv': No such file or directory}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/smjx2015/Santa Ana sucker/Data/Data\_Weds\_1/2nd\_Site clipped.csv': No such file or directory}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/smjx2015/Santa Ana sucker/Data/Data\_Weds\_1/3rd\_Site clipped.csv': No such file or directory}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/smjx2015/Santa Ana sucker/Data/Data\_Weds\_1/Concrete clipped.csv': No such file or directory}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}\end{kframe}
+\end{knitrout}
+
+\subsection{Hydrology, Geomorphology, Canopy and Algae}
+
+\textbf{[Velocity Measurements HERE]}
+
+The the percent cover of the invasive algae may be influence by the stream substrate size (Figure \ref{fig:algae}, Panel A, p = 0.0643). We found no relationship between the percent cover of the invasive algae species on the canopy cover (Figure \ref{fig:algae} Panel B, p = 0.334).
+
+\begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'importupdated' not found}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in plot(importupdated\$Canopy, importupdated\$Algae, ylab = "{}Algae Abundance (\% cover)"{}, : object 'importupdated' not found}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in is.data.frame(data): object 'importupdated' not found}}\end{kframe}
+\end{knitrout}
+\caption{Algae abundance as a function of the bed composition (Panel A), where course sediments = 1 and fine sediments = 0 and canopy cover (Panel B).}
+\label{fig:algae}
+\end{figure}
+
+As an alternative method of analysis, we also analyzed to what extent site alone could predict algae abundance (Figure \ref{fig:algaesite}): site as a predictor was significant (p = 0.008).
+
+\begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'importupdated' not found}}\end{kframe}
+\end{knitrout}
+\caption{Algae abundance as a function of site.}
+\label{fig:algaesite}
+\end{figure}
+
+The initial temperature data collected with an analog thermometer did not adequately describe the stream temperatures, so we relied on the temperature logger data for most of our analyses. We found that temperature fluctuated between a minimum of 25.12 degrees Celsius and a maximum of 31.37 degrees Celsius, which are all well above the 22 degrees that many studies found is the optimal temperature for the fish. The plunge pool, Site4, contained the most data points around 27.5 degrees, which proved true for each locations, having the most repetitive temperature between 27 and 28 degrees. Site 4, however, had the least temperature range, only varying between 27 and 28.5 degrees, while other sites tended to have a bigger variation, with Site1 varying up to 5.41 degrees. (Figures \ref{fig:Temp} and \ref{fig:tempbox}).
+
+\begin{figure}[!ht]
+\includegraphics[width=0.90\textwidth]{Figures/Temp}
+\caption{Temperature vs. time for all sites}
+\label{fig:Temp}
+\end{figure}
+\begin{figure}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in boxplot(list(site1\$Temp, site2\$Temp, site3\$Temp, site4\$Temp), : object 'site1' not found}}\end{kframe}
+\end{knitrout}
+\label{fig:tempbox}
+\caption{Box plots of temperature collected}
+\end{figure}
+
+We evaluated the relationship between algae abundance as a function of range of temperature (*C) experienced at each site (Figure \ref{fig:tempalgae}) \textbf{and found... what???}. While using our absolute temperature data as a predictor of algae abundance yielded p-value: 0.446 (cannot reject null hypothesis), using the other teams's temperature d range data yeilded \textbf{the much better p-value of 3.49e-05}\footnote{better?!!! says who?}. There is a strong nonrandom relationship between the range of temperatures a site experiences and the abundance of algae. However, with an Adjusted R-squared of only 0.4826\footnote{This is quite high in ecology, please revise}, there are clearly other important variables at work as well. We find that higher variation in water temperatures generally coorelates to higher algae abundance. 
+\begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in plot(importupdated\$Temp\_range, importupdated\$Algae, ylab = "{}Algae Abundance (\% cover)"{}, : object 'importupdated' not found}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in is.data.frame(data): object 'importupdated' not found}}\end{kframe}
+\end{knitrout}
+\caption{Ths is caption that needs info...}
+\label{fig:tempalgae}
+\end{figure}
+
+\subsection{$BOD_5$ and Water Velocity}
+Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our $BOD_5$ calculations of these data yielded the values:
+
+\subitem Site 2 $BOD_5$= 22.1 mg/L 
+\subitem Site 4 $BOD_5$= 27.3 mg/L 
+
+The average recorded water flow velocities were:
+
+\subitem Site 2: 0.27 ft/sec
+\subitem Site 4: 1.09 ft/sec 
+
+\subsection{Fish Counts}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in file(file, "{}rt"{}): cannot open file '/home/CAMPUS/cmfa2015/Santa Ana sucker/Data/Data\_Tues\_2/newmetadata.csv': No such file or directory}}
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in file(file, "{}rt"{}): cannot open the connection}}\end{kframe}
+\end{knitrout}
+
+At the upstream location (Site 2), no suckers were observed in the morning while one sucker occasionally swim out from behind a rock. At the downstream location (Site 4), we observed numerous fish \ldots (Table \ref{tab:fishcounts}). We counted an average of 20.1 suckers in the morning with a standard deviation of 6.0 fish.  In the afternoon, we counted an average of 32.2 with a standard deviation of 9.9, meaning both the average and the variance were higher in the afternoon.  The river was 27.8\textdegree C in the morning and increased to 28.4\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that time of day will have no effect on the number of fish.
+
+\begin{table}
+\caption{Summary Statistics for Videography Fish Counts}
+%\begin{tabular}{ |p{1.5cm}||p{1cm}|p{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|  }
+\begin{tabular}{cccccccc}
+ \hline
+ \multicolumn{8}{c}{Videography Summary Statistics} \\
+ \hline
+ Section & Min & Max & Mean & Median & 1st Quartile & 3rd Quartile & K\\
+ \hline
+ Morning & 7 & 29 & 20.13 & 22  & 16.75 & 25 & -0.6\\
+ Afternoon & 14 & 49 & 32.25 & 31 & 24.75 &  42 & -1.3\\
+ \hline
+\end{tabular}
+\label{tab:fishcounts}
+\end{table}
+
+\textbf{[Text to describe Figure \ref{fig:fishsection}]}
+
+\begin{figure}[!ht]
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in eval(expr, envir, enclos): object 'newmetadata' not found}}\end{kframe}
+\end{knitrout}
+\caption{needs a caption! Can we change after to afternoon...}
+\label{fig:fishsection}
+\end{figure}
+
+
+\textbf{[Text to describe Figure \ref{fig:reallygoodcrop}]}
+
+\begin{figure}
+\includegraphics[scale=.4]{Videography_figures/reallygoodcrop}
+\caption{A close up of two Santa Ana suckers from the footage we collected.}
+\label{fig:reallygoodcrop}
+\end{figure}
+
+\section{Discussion}
+
+\subsection{Habitat Quality and Fish Activity}
+
+\subsubsection{Hydrology and Geomorphology and Algae}
+
+Algae cover was a function of several predictors that could not be disentangled. For example, algae abundance between the 3 sites examined in our study, but that might have been a result several factors. Some measurements showed up to 100\% algae cover, while others exhibited none. This variation suggests the possibility that algae may be controlled by specific variables. We tested whether water temperature, water temperature variation, canopy cover, or stream bed composition could explain these variations. Of these possible causal factors, we found the strongest evidence for higher water temperature variation exerting a positive effect of algae abundance. The relationship between algae cover and streambed sediment composition of the stream bed was not statistically significant at the 95 \% level, but did tentatively suggest that algae may prefer coarse sediment. \emph{Cosmopogen aeruginosus} in the Santa Ana River has a highly unequal distribution, that appears to be controlled in part by water temperature variation, with a possible small contribution of streambed sediment composition. 
+Our exploratory study is one of the first to examine what variables may control \emph{Cosmopogen aeruginosus}'s distribution in the Santa Ana River. 
+
+This indicates that there is probably some relationship between algae cover and sediment composition of the stream bed, and this should be examined in future. In general, alage seem to perhaps prefer coarser sediment. 
+
+\subsubsection{Temperature and Invasive Algae}
+
+The temperature data include spikes on a daily basis, which were especially significant Sites 1 and 2. For example, Site 1 fluctuated up to 5.4 \textdegree~C a day. Our original hypothesis when we saw this was to assume water spikes were occurring from the Rialto Channel and as they travelled down river, becoming less extreme. In additioin, we did not find a temperature spikes traveling downstream. In fact, the spikes further downstream were actually occurring before the spikes upstream. We are unsure why there were such fluctuations in the river, because it did not appear that spikes were travelling downstream, based on the times that high and low temperatures occurred at different points in the river. 
+
+\textbf{[NEED DISCUSSION COMPARING TEMPERATURE WITH LITERATURE...]}
+
+\subsubsection{Fish Behavior and Counts}
+
+In terms of fish population, using the data from the Fish and Wildlife Service and our video data, no suckers were found at Site 1, only one fish counted in the afternoon at Site 2 at various points, no fish were found by the FWS at Site 3, but many fish were observed in the plunge pool at Site 4. Also, from previous results, we knew that most Santa Ana suckers live in the plunge pool and prefer it there. This could be because of reasons other than temperature, but we did notice that there were less extreme spikes in Site 4. Our videos of Site 2 contained very few fish. 
+
+This could be because the temperature further upstream was too hot for the suckers to live in; the temperature data found that at that location the water was between 30.25\textdegree~C in the afternoon and 25.12\textdegree~C in the morning. This is a range of 5.13\textdegree~C, which is a much larger range than the range found at Site 4, where more suckers were found. In general, the fish were more abundant downstream, where the least extreme temperature spikes were occurring. From what we observed, the extreme temperature spikes at sites 1 and 2, and the medium spike at Site 3, could have caused the fish to prefer to stay at Site 4, where they are most abundant. This disproves our null hypothesis that the fish would be randomly spread throughout the channel and that temperature would remain fairly constant throughout the river, which suggests there could be a correlation between what is happening temperature wise and with the location of the suckers.
+
+Also, the hottest temperatures that occurred at Site 2 were almost at mortality rate for suckers, and were 1.59\textdegree~C higher than any temperatures found in Site4. It is possible that the fish prefer Site 4 for other reasons than temperature, but correlations between temperature and sucker abundance should be further explored.
+
+Significantly more suckers in the afternoon than there were in the morning (p < 0.001).  Perhaps, suckers do move downstream throughout the day to get to cooler temperatures.  On the afternoon we tested, the plunge pool (downstream) was 28.5\textdegree~C, whereas the river at our upstream location, closer to the concrete, was 29.4\textdegree~C. Throughout our longer term temperature testing, we noticed there was significantly more variation in temperature the further upstream we tested. These large temperature spikes and variability could have prevented fish from successfully habitating the upstream sites.
+
+We collected our data in a simple yet straightforward manner to ensure its comprehensibility and communicability. Not only does our data span over a week, 24 hours a day, but we collected at four different sites every 15 minutes, giving us a significant spread of data to work with. Given the limited timeline of the experiment, our data can be said to have captured a glimpse into an average week for this portion of the river, and can be used as a baseline and reference for future projects. A weakness was that we were not able to measure possible temperature stratification, since we only measured at one point for each of the four sites. 
+
+There were also pretty extreme spikes, but not occurring at times that suggested spikes were travelling downstream, originating from the Veolia water plant. Initially, Veolia agreed to send over their data on both the influx and outflux water temperatures, to allow us to see what was happening to water temperature from the plant. However, after a week of following up, we have not been able to get the data, as the CPO has hesitated to release it and says it will take up to a month to compile it. Without this data, it is hard to explain these randomly occurring spikes at different points in the river. This part of the data could have also been affected by canopy cover or stratification. 
+
+It is difficult to determine if the temperature spikes were what caused the fish to choose to reside primarily in Site 4, because there are a myriad of other variables. Other variables that could have affected where the fish chose to live include algae/food source, canopy cover, depth, or sediment type/size. What we do know is that the further upstream locations not only had a wide range of temperatures, but also experienced hotter temperatures than Site 4, which was where the fish live. From our background research, we know that the US Fish and Wildlife Service found that Santa Ana suckers prefer water that is around 22 \textdegree~C. None of our sites had water this cold, but Site 4 had the least variability and averaged around 28 \textdegree. According to a brief overview from Larry Brown of the US Geological Survey, no fish were detected at Site 1, while a few European chubs\footnote{What are these??} were sampled at Sites 2 and 3. At Site 4 they estimated large numbers of fish but did not conduct a formal survey of this site. However, our video data showed a much larger population in the plunge pool. These population estimates were the results of random surveying, and could be limited in their applicability because of variation in site location and scope. For example, Larry Brown measured sucker populations in the Rialto drainage but not in the pool below it, which is where we placed our data logger. Therefore, it is difficult to tell to what extent the US Geological Survey's data works with our data. 
+
+\subsection{$BOD_5$}
+Future study of dissolved oxygen levels and water velocity in the Santa Ana River should test for any correlations with the recent Fish and Wildlife Service electroshock population data. Though we did not have access to this data, we had access to a rough estimate of the sucker population from video-counting (mentioned above). In a \textbf{week(NEEDS TO BE CHANGED)}, about 12 fish were counted at Site 2 and 671 fish at Site 4. So, many more fish were spotted where the river velocity was higher and where the $BOD_5$ levels were higher. Since BOD can be less than 2 mg/L in clear water and reach hundreds of mg/L in organic waste water, a difference of about 5 mg/L between Site 2 and Site 4 is very small. It is unlikely a threshhold was reached between 22.1 and 27.3 mg/L that made Site 2 unliveable for the sucker. The difference in velocity is more significant and also supports the referenced existing literature that says water flow velocity is one of the primary determinants of sucker population. We recommend future research on the Santa Ana sucker population focus on water velocity.
+
+\subsection{Research Limitations}
+
+Most importantly, \emph{Cosmopogen aeruginosus}'s co-occurrence with the federally endangered Santa Ana sucker should be examined. 
+
+Future studies should more systematically examine the relationship between temporal variability in water temperature and algae abundance. Sediment type should be assigned to narrow categories such as silt, sand, gravel, and cobbles rather than simply being tagged as fine or coarse. More than 3 reaches/sites should be used. 
+These improvements on our experiment will yield a much better idea of what factors control \emph{Cosmopogen aeruginosus}'s distribution in the Santa Ana River, and create a statistically supported foundation for considering the algae's effect on Santa Ana suckers.
+
+Because of our experiemental design, it is unfortunately impossible to control by site for temperature variation and see if the relationship remains robust. This should be examined in future work. For videography, we did not formulate a standardized method with which to place our cameras in the water. For this reason, there were differences in footage from morning to afternoon as well as from site to site. For future studies, we recommend including physical place-markers in the river for the cinderblock structures, maybe in the form of flags placed directly in the river bed. Markers inside of the cinderblock structure that delineate the exact position and angle of the cameras would also be ideal in order to ensure the same exact field of vision is present throughout the collected footage. 
+
+Our data itself has left us with many unknowns. The water temperature measurements seem to fluctuate but not necessarily with the air temperature measurements, averaged, from that day. Compared with the historic averages, the week of our experiment was particularly hot, but the effect on the suckers is hard to determine as the air temperature data was not collected every fifteen minutes or even hourly (as our data was), and instead we had to rely on daily highs and lows. 
+
+Due to the learning curve associated with performing the $BOD_5$ experiment for the first time, procedural complications were encountered at several points in the experiment. As a result, initial DO content was not measured for the source water samples before incubation. We estimated a constant initial sample DO measurement using the DO of the seeded blanks. This decreased the accuracy of the BOD5 calculations, but gave a relative idea of the initial values. Inconsistent DO measuring methods also added to the inaccuracy of the final BOD5 results. Despite these procedural errors, our BOD5 measurements, 27.3493 mg/L at Site 4 and 22.069 mg/L at Site 2, did reach quality control parameters.
+
+It should also be noted that the water velocity averages were derived from a small sample size; three readings in total were taken, two from the Site 4 location and one from Site 2.
+
+Data should be collected on air temperature, canopy cover, and fish population by the same group, to avoid the possibility of slightly different locations and unclear methods. If multiple groups do decide to collaborate, the teams should establish exact locations for all groups to work on, and conduct research on the same day and at the same times, to standardize the time frame of the experiment. It would have been helpful to meet with various stakeholders such as researchers, regulators, Veolia water representatives, etc. to learn more about their methods and tips for experiment design prior to conducting our own experiments. After collecting data, we did try to contact several of these people but did not receive responses. This process would allow us to see what work has already been done, and possibly form a hypothesis based off of their work and findings.
+\section{Conclusion and Recommendations}
+
+
+\section{Literature Cited}
+
+\bibliographystyle{apalike}
+\bibliography{report}
+
+\newpage
+\section{Appendix: Detailed Methods}
+
+\subsection{Video Camera Set up}
+
+To set up the cameras, we removed them from the packaging, inserted a microSD card into each, and charged them fully by connecting the included USB cables to a computer. The cameras needed to be fully charged before we were able to adjust the settings. Once the cameras were sufficiently charged, we set the filming settings to record in 720p x 30fps. We set the cameras aside and left them charging. 
+
+Next, we charged all four of the waterproof Re-Fuel battery packs. As these were charging, we put together our cinder block mounting structures. We took our cinder block cubes and set them up on a clean, stable table. We connected the flat adhesive mounts that were included with the GoPros and connected a GoPro camera to each. Since the cinder blocks were open on two parallel sides, we were able to see right through the cinder block cube to the other side. One of us stood on one side with the GoPro and mount, and the other stood on the other side of the opening. One of us turned the GoPro on and put the camera with the mount inside the cinder block cube, using the view on the screen to find the best position for the mount inside of the cube, taking care to ensure we could clearly see the other person on the other side. We found an ideal place where the view was mostly unobstructed by the sides of the cube but the cameras were still far enough inside the cube that they wouldn't be too easily spotted by passersby. This spot was 5 cm from the edge of the cube. We traced the front and the back of the mount so we could glue it in the correct place. We repeated this procedure for the second cube and mount, and standardized the construction by placing the mount in the second cube 5 cm away from the edge of the cube. 
+
+In order to securely glue the mount in place, we used Gorilla glue. To activate the Gorilla glue, we first had to moisten one of the surfaces with water. We moistened the mounts on the adhesive side. We did not remove the adhesive backing so we could reutilize the mounts in the future. Once the mount was damp, we put Gorilla glue on the cinder block inside the lines we had drawn around the mount. We then placed the mount on the Gorilla glue, taking care to align the edges of the mount with the lines we had drawn. Next, as per the Gorilla glue instructions, we found a heavy object that could provide significant pressure on the mount and that would fit inside the cube. We left this for three hours to harden.
+
+Upon returning to the lab, we removed the heavy objects from the cube and checked the seal on the mount and cinder block to ensure the bond had successfully cemented. After this, we went to work on attaching the cinder block backs to close up one of the open sides on the cubes. We repeated much of the same process we used when attaching the mounts to the cubes, and followed the Gorilla Glue instructions carefully. First, one of us moistened the cinder block back while the other applied Gorilla Glue to the edge of the cube. Then, we carefully aligned the corners of the back with the cube. We repeated this with the second cube. Seeing that the cinderblock back was heavy enough on it's own, we did not place a heavy object on top of this structure and instead simply left it to dry and harden overnight.
+
+Finally, we checked on the cameras and battery packs again to ensure they had charged. We left them plugged in overnight. We also packed away the Gorilla Glue, the multiple SD cards, paper towels, and extra mounts in a field kit so we could deal with any emergencies in the field.
+
+We started our first recording session at 10 am.  We drove to the downstream site and found a spot under brush cover in a pool next to a fast moving section of the stream.  We first placed the cinderblock squarely on the riverbed and positioned it facing the fast moving water.  We then turned the camera on, pressed record, and placed it on the mount in the cinderblock.  We let it run for a few seconds, then took it out and watched the video to ensure it was recording at a good angle.  We then pressed record again and replaced it.  Before leaving, we marked the area with flags so we would be able to find it again.
+Next, we walked approximately 20 minutes upstream to another covered pool next to a fast moving section, and repeated the camera placement procedures.  We marked with flags, and then left.
+
+We returned at approximately 2 pm.  We took out the camera at the downstream site, replaced the memory card and the battery pack, hit record, and replaced the camera exactly as it was positioned previously.  We then walked upstream and did the same thing with the second camera.  After returning, we cleared the memory cards and plugged in the battery packs.
+Our last recording session was at 8 am the next morning.  We replaced the memory cards and battery packs again and returned the cameras to their positions.  One of us returned the next day to collect the cameras.
+
+\subsection{Temperature Loggers}
+We obtained four HOBO Tidbit water temperature Data Loggers to set up at the Rialto Channel at Agua Mansa (Site 4), another at the point where the other discharge site meets the river (Site 2), another just above that site (Site 3), and a fourth in the pool where suckers have previously been observed (Site 1). Before going to the river, In order to start the data process, we put each logger into the coupler and pushed the level til the light was flashing. We then put them in the river by looping a garden stake through one, sticking it into the substrate, and securing it with rocks. We then put yellow marking tape on plants nearby and red flags along the bank to show where we left the main path. We repeated this for each site, making sure the loggers were secure and fairly hidden. After seven nights (for Site 3) and eleven nights (for the other sites), we returned to the river and collected the loggers. In the lab, using the software, we loaded our data and transferred it to RStudio.
+
+\subsection{$BOD_5$ Methods}
+
+Ideally within the same day of collection, water samples were analyzed for initial dissolved oxygen content and prepared for 5-day incubation.  
+\begin{itemize}
+  \item Three different dilutions were used for each of two sites, with source water volumes of 25, 50, and 100 mL. 
+  \item A seed suspension was prepared using PolySeed Seed Innoculum, and 4 mL of the solution was added to each 300 mL sample bottle. This solution was also used to create four seed blanks with seed volumes 15, 20, 25, and 30 mL.
+  \item Nitrification inhibitor was created by dissolving 2.0 g allylthiourea (ATU, C4H8N2S) in 1 L distilled water. 0.3 mL of the ATU solution was added to each source water sample, as well as to all seeded samples. 
+  \item A glucose-glutamic acid (GGA) solution was prepared by dissolving 150 mg each of dry glucose and glutamic acid in 1 L of distilled water, and was added to each of the four seed blanks, as well as the six source water samples. Three GGA blanks were also created with 6 mL of GGA solution in incubation bottles. 
+  \item Dilution water was created using 1 mL each phosphate buffer (8.5 g KH2PO4, 21.75 g K2HPO4, 33.4 g Na2HPO*7H2O, and 1.7 g NH4Cl dissolved in 1 L distilled water), Magnesium sulfate solution (4.5 g MgSO4*7H2O dissolved in 200 mL distilled water), Calcium chloride solution (5.5 g CaCl2 dissolved in 200 mL distilled water), and Ferric chloride solution (0.05 g FeCl3*6H2O dissolved in 200 mL distilled water), and added to the six source water samples, four GGA blanks, and three seeded blanks. Three dilution water blanks were also created using the same procedure diluted to 300 mL.
+\end{itemize}
+Initial DO readings were to be taken on all blanks and samples using a Thermo Scientific DO Probe with auto-spinning functionality. The bottles were then incubated in a dark area for 5 days, and DO readings were again taken.  
+
+Note that *Temp\_x* entries were borrowed with permission from Sophie and Nicole's dataset. We also created a "Site\_New" field so that our naming conventions whould be consistant with other teams. We then used rstudio to generate the following descriptive statisitcs:  
+linear regression of temperature range vs algae abundance
+linear regression of canopy cover vs algae abundance
+ANOVA of bed composition vs. algae abundance
+ANOVA of site location vs. algae abundance
+For each of these statistical comparisons, we tested whether we could reject the null hypothesis, and if yes, discuss the implications of those findings. Our results are summarized in the following section. 
+
+\subsubsection*{Quality Control Checks}
+Using the seed blanks, glucose-glutamic acid blanks, and dilution water blanks, quality control checks were performed prior to data collection. 
+\begin{itemize}
+  \item Minimum DO Depletion--Viable samples must have min. DO depletion of 2.0mg/L, and residual DO of at least 1.0mg/L.
+  \item Glucose-Glutamic Acid Check--The resulting average BOD for the 3 GGA blanks (after correction for dilution and seeding) must be 198+/- 30.5mg/L.
+  \item Dilution water check--DO uptake after incubation must not be more than 0.20mg/L and preferably not more than 0.10 (before seed corrections). 
+  \subitem Dilution Water--If dilution water blank exceeds 0.20 mg/L, clearly identify samples in data.
+  \item Seed control--Calculate Seed Control Factor (SCF) using 
+  \begin{equation}
+  [(D1-D2)*f], 
+  \end{equation}
+  where
+  \subitem $D_1$= initial DO of seed control, mg/L
+  \subitem $D_2$= final DO after indubation, mg/L,
+  \subitem f= (vol. seed in diluted sample)/(vol. seed in seed control)
+\end{itemize}
+
+\subsubsection*{BOD5}
+BOD5 was calculated for viable samples according to Standard Methods for the Examination of Water and Wastewater, using the equation 
+BOD5,
+\begin{equation}
+mg/L= ((D_1-D_2)-(S)V_s)/P,
+\end{equation}
+where 
+\subitem $D_1$= initial DO, mg/L
+\subitem $D_2$= final DO after incubation, mg/L
+\subitem S= oxygen uptake of seed, ∆DO/mL of seed suspension added per bottle
+\subitem $V_s$= volume of seed in test bottle
+\subitem P= decimal volumetric fraction of sample used.
+The average of the resulting values for all viable samples was determined, and reported as our results. 
+
+
+\end{document}
