@@ -12,6 +12,7 @@
 \author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Ed. Marc Los Huertos}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \maketitle
 
