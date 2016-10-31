@@ -9,7 +9,7 @@
 \newcommand{\BibTeX}{{\sc Bib}\TeX}
 
 \title{Santa Ana sucker Habitat Evaluation}
-\author{C. Flynn, E. Harris-Tyrrell, O. Howie, L. Ho-Israel, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Ed. Marc Los Huertos}
+\author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Ed. Marc Los Huertos}
 
 \begin{document}
 
@@ -23,11 +23,11 @@
 
 \subsection{Scope of Problem}
 
-The Santa Ana sucker (\emph{Catostomus santaanae}) is a relatively small fish is extant in a few streams of Southern California. The species has been listed as threatened by the US Fish and Wildlife Service, which has lost over 70\% of its habitat \citep{obrien2011status, usfishandwildlifeservice14}. Besides habitat loss, hydrodomodifications that include the the construction of flood control damns, stream channelization, groundwater extraction, and treated water discharges have a profound effects to river's hydrology and ecology. For example, water temperatures in portions of the Santa Ana river can range from 10-26\textdegree~C while in areas of discharge the elevated temperatues are constantly high due to treated urban discharges \citep{greenfield70}. 
+The Santa Ana sucker (\emph{Catostomus santaanae}) is a relatively small fish extant in a few streams of Southern California. The species has been listed as threatened by the U.S. Fish and Wildlife Service, and has undergone a 70\% habitat loss \citep{obrien2011status, usfishandwildlifeservice14}. In addition to habitat loss, hydrodomodifications including the construction of flood control dams, stream channelization, groundwater extraction, and discharge of treated water, have profound effects on the river's hydrology and ecology. For example, water temperatures in portions of the Santa Ana river can range from 10 to 26\textdegree~C, however temperatures are noticeably elevated nearby areas of discharge due to the incorporated urban effluent \citep{greenfield70}. Additionally, wastewater discharge has been known to affect levels of dissolved oxygen in the water, potentially making it so that not enough oxygen is available for respiratory processes. Inadequate treatment techniques by the nearby treatment facility could affect sucker abundance, however optimal dissolved oxygen and biochemical oxygen demand levels have not been determined for the sucker \citep{baskerville2012recovery}. 
 
-More recently, the abundance of the red alga, \emph{Cosmopogen aeruginosus}, has increased significantly in the Santa Ana River. This may also be contributing to the sucker's decline, but the environmental variables that control the \emph{Cosmopogen aeruginosus}'s distribution in the Santa Ana River are currently not well understood. The direct effect this invasive algae has on \emph{C. santaanae} is also poorly constrained. 
+More recently, the abundance of the red alga \emph{Cosmopogen aeruginosus}, has increased significantly in the Santa Ana River. This may also be contributing to the sucker's decline, but the environmental variables that control the \emph{Cosmopogen aeruginosus}'s distribution in the Santa Ana River are currently not well understood. The direct effect this invasive algae has on \emph{C. santaanae} is also poorly constrained. 
 
-In general, the environmental variables that influence \emph{C. santaanae} populations are poorly understood. Better understanding of water temperature, discharge rates, Biochemicial Oxygen Demand (BOD), and \emph{Cosmopogen aeruginosus} distribution could aid in conservation efforts of this federally threantened fish. 
+In general, the environmental variables that influence \emph{C. santaanae} populations are poorly understood. Better understanding of water temperature, discharge rates, biochemicial oxygen demand (BOD), and \emph{Cosmopogen aeruginosus} distribution could aid in conservation efforts of this federally threantened fish. 
 
 \subsection{Problem Statement}
 
@@ -377,7 +377,7 @@ Our last recording session was at 8 am the next morning.  We replaced the memory
 \subsection{Temperature Loggers}
 We obtained four HOBO Tidbit water temperature Data Loggers to set up at the Rialto Channel at Agua Mansa (Site 4), another at the point where the other discharge site meets the river (Site 2), another just above that site (Site 3), and a fourth in the pool where suckers have previously been observed (Site 1). Before going to the river, In order to start the data process, we put each logger into the coupler and pushed the level til the light was flashing. We then put them in the river by looping a garden stake through one, sticking it into the substrate, and securing it with rocks. We then put yellow marking tape on plants nearby and red flags along the bank to show where we left the main path. We repeated this for each site, making sure the loggers were secure and fairly hidden. After seven nights (for Site 3) and eleven nights (for the other sites), we returned to the river and collected the loggers. In the lab, using the software, we loaded our data and transferred it to RStudio.
 
-\subsection{BOD5 Methods}
+\subsection{$BOD_5$ Methods}
 
 Ideally within the same day of collection, water samples were analyzed for initial dissolved oxygen content and prepared for 5-day incubation.  
 \begin{itemize}
