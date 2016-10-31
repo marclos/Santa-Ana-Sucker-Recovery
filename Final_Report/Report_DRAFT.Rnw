@@ -10,7 +10,7 @@
 \newcommand{\BibTeX}{{\sc Bib}\TeX}
 
 \title{Santa Ana sucker Habitat Evaluation}
-\author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner,\\ Editor Marc Los Huertos}
+\author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner, Editor Marc Los Huertos}
 \affil{Environmental Analysis 30, Fall 2016, Pomona College}
 
 \begin{document}
