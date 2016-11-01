@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: Report_DRAFT.aux
+The style file: apalike.bst
+Database file #1: report.bib
+Warning--empty journal in baskerville2012recovery
+Warning--empty journal in REF
+You've used 21 entries,
+            1935 wiz_defined-function locations,
+            602 strings with 7808 characters,
+and the built_in function-call counts, 8465 in all, are:
+= -- 823
+> -- 370
+< -- 13
++ -- 126
+- -- 126
+* -- 741
+:= -- 1492
+add.period$ -- 61
+call.type$ -- 21
+change.case$ -- 167
+chr.to.int$ -- 21
+cite$ -- 23
+duplicate$ -- 308
+empty$ -- 571
+format.name$ -- 149
+if$ -- 1627
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 20
+newline$ -- 106
+num.names$ -- 63
+pop$ -- 143
+preamble$ -- 1
+purify$ -- 168
+quote$ -- 0
+skip$ -- 236
+stack$ -- 0
+substring$ -- 581
+swap$ -- 38
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 122
+warning$ -- 2
+while$ -- 70
+width$ -- 0
+write$ -- 271
+(There were 2 warnings)

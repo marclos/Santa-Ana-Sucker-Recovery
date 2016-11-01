@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  1 NOV 2016 13:50
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.10.2)  1 NOV 2016 15:53
 entering extended mode
  %&-line parsing enabled.
 **Report_DRAFT.tex
@@ -405,45 +405,53 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `math shift' on input line 371.
 
+! You can't use `macro parameter character #' in vertical mode.
+l.375 #
+       FORWEDNESDAYLAB PERSON: i cut out a lot of the previous stuff from th...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
 [20] (./Report_DRAFT.bbl [21] [22]) [23] [24]
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 419.
+(hyperref)                removing `math shift' on input line 420.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `subscript' on input line 419.
+(hyperref)                removing `subscript' on input line 420.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 419.
+(hyperref)                removing `math shift' on input line 420.
 
 
-Overfull \hbox (16.09677pt too wide) in paragraph at lines 425--426
+Overfull \hbox (16.09677pt too wide) in paragraph at lines 426--427
 []\OT1/ptm/m/n/10 Nitrification in-hibitor was cre-ated by dis-solv-ing 2.0 g a
 l-lylth-iourea (ATU, C4H8N2S)
  []
 
 [25]
-Overfull \hbox (7.38701pt too wide) in paragraph at lines 431--437
+Overfull \hbox (7.38701pt too wide) in paragraph at lines 432--438
 []\OT1/ptm/m/n/10 Note that *Temp[]x* en-tries were bor-rowed with per-mis-sion
  from So-phie and Nicole's
  []
 
 
-Overfull \hbox (9.8658pt too wide) in paragraph at lines 441--442
+Overfull \hbox (9.8658pt too wide) in paragraph at lines 442--443
 []\OT1/ptm/m/n/10 Minimum DO Depletion--Viable sam-ples must have min. DO de-pl
 e-tion of 2.0mg/L,
  []
 
 
-Overfull \hbox (1.35622pt too wide) in paragraph at lines 442--443
+Overfull \hbox (1.35622pt too wide) in paragraph at lines 443--444
 []\OT1/ptm/m/n/10 Glucose-Glutamic Acid Check--The re-sult-ing av-er-age BOD fo
 r the 3 GGA blanks
  []
 
 
-Overfull \hbox (4.81665pt too wide) in paragraph at lines 443--444
+Overfull \hbox (4.81665pt too wide) in paragraph at lines 444--445
 []\OT1/ptm/m/n/10 Dilution wa-ter check--DO up-take af-ter in-cu-ba-tion must n
 ot be more than 0.20mg/L
  []
@@ -460,7 +468,7 @@ Here is how much of TeX's memory you used:
  6832 multiletter control sequences out of 10000+200000
  24839 words of font info for 50 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,9n,39p,1987b,436s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,9n,39p,1987b,432s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr
 /share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bl
 uesky/cm/cmmi12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb></usr/sh
@@ -469,7 +477,7 @@ y/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/tex
 mf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on Report_DRAFT.pdf (27 pages, 10532563 bytes).
+Output written on Report_DRAFT.pdf (27 pages, 10532809 bytes).
 PDF statistics:
  519 PDF objects out of 1000 (max. 8388607)
  110 named destinations out of 1000 (max. 131072)
