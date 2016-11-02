@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -116,6 +116,12 @@ Geoffrey~C Poole.
 REF.
 \newblock Citation needed.
 \newblock XXXX.
+
+\bibitem[Rice et~al.(2012)Rice, Baird, Eaton, and Clesceri]{rice2012standard}
+Eugene~W Rice, Rodger~B Baird, Andrew~D Eaton, and LS~Clesceri.
+\newblock Standard methods for the examination of water and wastewater.
+\newblock \emph{American Public Health Association, American Water Works
+  Association, Water Environment Federation: Washington, DC}, 2012.
 
 \bibitem[Sadler(1980)]{sadler1980effect}
 K~Sadler.
