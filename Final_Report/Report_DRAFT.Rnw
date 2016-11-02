@@ -11,7 +11,7 @@
 \newcommand{\BibTeX}{{\sc Bib}\TeX}
 
 \title{Santa Ana sucker Habitat Evaluation}
-\author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, A. Vacas, D. Wagner, Editor Marc Los Huertos}
+\author{C. Flynn, E. Harris-Tyrrell, L. Ho-Israel, O. Howie, S. Janssen, \\N. Larson, F. Lyles, W. Nore\~na, V. Sanchez-Jimenez, \\A. Vacas, D. Wagner M. Los Huertos, Editor}
 \affil{Environmental Analysis 30, Fall 2016, Pomona College}
 
 \begin{document}
@@ -71,7 +71,7 @@ Does the Santa Ana sucker shift its distribution in the Santa Ana River based on
 
 Finally, this report aims to determine whether Biochemical Oxygen Demand (BOD) and water flow velocity are relevant to future research regarding the endangered Santa Ana sucker \emph{C. santaanae}. We collected water quality data from the Santa Ana River to answer the following questions: \emph{Do BOD levels vary in different sections of the river}; \emph{Do differing BOD levels correlate with the abundance of individuals?}; and \emph{Do the water flow rates in different sections of the river correlate with sucker populations?} Because the section of the river we evaluated regularly receives discharge water from a nearby water treatment facility, we believe that BOD levels will be relatively low, around 10 mg/L, decreasing further from the discharge point. Where the BOD levels are lower, we expect higher fish count. We also hypothesize that larger populations of the sucker will concentrate near high-flow sections. Through this experiment, we aim to inform Santa Ana sucker conservation efforts and hope to inform action by the nearby water treatment facility. 
 
-The presence of the non-native \emph{Cosmopogen aeruginosus} in the Santa Ana River and the possible relationship it holds with Santa Ana sucker's decline. In the last five years, the non-native tropical \emph{Cosmopogen aeruginosus} Cosmopogen Aeruginosus has been found in large quantities in the Santa Ana River. Using measurements of river water temperature, overhead tree canopy cover, and sediment type, we explore the connection these aspects of the river and their relationship with the \emph{Cosmopogen aeruginosus}.
+The presence of the non-native \emph{Cosmopogen aeruginosus} in the Santa Ana River and the possible relationship it holds with Santa Ana sucker's decline. In the last five years, the non-native tropical \emph{Cosmopogen aeruginosus} has been found in large quantities in the Santa Ana River. Using measurements of river water temperature, overhead tree canopy cover, and sediment type, we explore the connection these aspects of the river and their relationship with the \emph{Cosmopogen aeruginosus}.
 
 \begin{quote}
 Our null hypotheses are H0: Water flow velocity and/or BOD levels do not significantly correlate with prevalence of the Santa Ana sucker.
@@ -103,7 +103,7 @@ If we can reject one or both of our null hypotheses, we can conclude that the st
 
 \subsection{Site Description}
 
-We evaluated the Santa Ana River near Colton, California (Figure \ref{SAR_Image}) along Aqua Mansa Road between S Riverside Ave. and S. Rancho Ave in Rialto, California.  We collected data from four reaches, one on the Rialto Channel and the other three in the Santa Ana river (Figure \ref{SAR_Image}). 
+We evaluated four locations in the Santa Ana River near Colton, Californiaalong Aqua Mansa Road between S Riverside Ave. and S. Rancho Ave in Rialto, California (Figure \ref{SAR_Image}). 
 
 The specific sites for our project consisted of one upstream location (Site 1) and one downstream location (Site 4), located roughly one kilometer apart (Table \ref{tab:sitedescription}). Site 2 was located just below the Rialto concrete channel and Site 4 was a plunge pool. The upstream location had large debris like rocks and branches. The downstream location was smooth and flat, with a bed of pebbles and smaller coarse sediments. 
 
@@ -118,7 +118,6 @@ Site 4  & 34\textdegree 2'5"N           & 117\textdegree 21"17"W   & Pool, appro
 \end{tabular}
 \label{tab:sitedescription}
 \end{table}
-
 
 The river was surrounded by a derelict lot filled with trash. It was very industrial, with many trucks idling by the roadside and industrial shipping buildings. Rip-rap to protect the channel levy. The area we walked through to approach the river was very sandy, with tire tracks. The river itself had some trash in it and was smaller than expected in contrast to rivers in other areas of the country, like the Pacific Northwest. 
 
@@ -155,6 +154,7 @@ At each of the corresponding water sample collection sites, water velocity was a
 \subsection{Videography}
 
 We acquired all the necessary equipment for an underwater filming project, keeping in mind the length of time we wanted to keep our cameras underwater. We chose the GoPro Hero 4 Silver because of its battery life and recording time. We also considered safety and theft prevention for the cameras, and for this reason decided to mount the cameras in cube-shaped cinderblock structures with one open side that we constructed ourselves. In the lab, we set up all the equipment, built the cinderblock structures, and prepared everything for the field. Once in the field, we selected appropriate data sites (sites 2 and 4), set up our cameras, and set them to record at morning and afternoon times throughout the day. After the data collection period, we collected the equipment from the river and did a fish count analysis of all the footage back in the lab. Initially, we tried counting the fish by placing an arbitrary line in the footage and only counting in that area. We counted during an interval of ten seconds As can be seen in Figure \ref{fig:wherefish}, fish were very hard to see in the footage. We later did a recount and counted all the visible fish in the video frame every minute for one hour of footage each in the morning and afternoon. More detailed information on these processes can be found in the appendix.
+
 \begin{figure}
 \includegraphics[scale=.4]{Videography_figures/wherefish}
 \caption{The Santa Ana suckers were difficult to see in the underwater footage. Here, a few fish have been circled in the frame to showcase this. Because the fish were only clearly visbile when they were moving, it was necessary to count during a 10 second interval of footage.}
@@ -163,7 +163,7 @@ We acquired all the necessary equipment for an underwater filming project, keepi
 
 \subsection{Temperature Loggers}
 
-Temperature collection occurred from September 25th til October 1st for Site 2, and September 25th til October 4th for Sites 1, 3, and 4, every 15 minutes. We programmed the loggers via our base station and the HOBOware software to collect water temperature data every 15 minutes. After collecting the field data, we calibrated the loggers by putting them in an ice bath for several minutes to ensure that the temperature settled around zero and each logger was measuring to the same temperature with the same accuracy.
+Temperature collection occurred from September 25th til October 1st for Site 2, and September 25th til October 4th for sites 1, 3, and 4, at 15 minute intervals. After collecting the field data, we calibrated each logger using an ice bath, and adjusted final temperatures based on differences in the ice bath.
 
 \subsection{BOD Methods}
 
@@ -188,7 +188,7 @@ site4 = read.csv("/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Da
 
 The average recorded water flow velocity was lower at Site 2, 0.27 ft/sec than Site 4, 1.09 ft/sec, where the difference was caused by a steeper channel gradient and a narrower channel width. 
 
-The the percent cover of the invasive algae may be influence by the stream substrate size (Figure \ref{fig:algae}, Panel A, p = 0.0643). We found no relationship between the percent cover of the invasive algae species on the canopy cover (Figure \ref{fig:algae} Panel B, p = 0.334).
+The the percent cover of the invasive algae may be influence by the stream substrate size (Figure \ref{fig:algae}, Panel A, p = 0.06). We found no relationship between the percent cover of the invasive algae species on the canopy cover (Figure \ref{fig:algae} Panel B, p = 0.334).
 
 \begin{figure}[!ht]
 << figure=TRUE, echo=FALSE, out.width='5in', out.height='2.5in'>>=
@@ -211,13 +211,17 @@ boxplot(Algae~Site_new,importupdated, ylab="Algae Abundance (% cover)",xlab="Sit
 \label{fig:algaesite}
 \end{figure}
 
-We found that temperature fluctuated between a minimum of 25.1 \textdegree~C and a maximum of 31.4 \textdegree~C Celsius, which are all well above the 22 \textdegree~C that many studies found is the optimal temperature for the fish. The plunge pool, Site 4, contained the most data points around 27.5 \textdegree~C, which proved true for each locations, having the most repetitive temperature between 27 and 28 \textdegree~C. Site 4, however, had the least temperature range, only varying between 27 and 28.5 \textdegree~C, while other sites tended to have a bigger variation, with Site 1 varying up to 5.4 \textdegree~C. (Figures \ref{fig:Temp} and \ref{fig:tempbox}).
+\subsection{Water Quality Parameters}
+
+We found that temperature fluctuated between a minimum of 25.1 \textdegree~C and a maximum of 31.4 \textdegree~C Celsius, which are all well above the 22 \textdegree~C that many studies found is the optimal temperature for the fish. The plunge pool, Site 4, had a mode of 27.5 \textdegree~C, which proved true for each locations, having the most repetitive temperature between 27 and 28 \textdegree~C. Site 4, however, had the least temperature range, only varying between 27 and 28.5 \textdegree~C, while other sites tended to have a bigger variation, with Site 1 varying up to 5.4 \textdegree~C. (Figures \ref{fig:Temp} and \ref{fig:tempbox}).
 
 \begin{figure}[!ht]
 \includegraphics[width=0.90\textwidth]{Figures/Temp}
 \caption{Temperature vs. time for all sites}
 \label{fig:Temp}
 \end{figure}
+
+
 \begin{figure}
 << figure=TRUE, echo=FALSE>>=
 boxplot(list(site1$Temp, site2$Temp, site3$Temp, site4$Temp), las=1, ylab="Temperature (C)")
@@ -230,34 +234,35 @@ We evaluated the relationship between algae abundance as a function of range of 
 
 \begin{figure}[!ht]
 << figure=TRUE, echo=FALSE>>=
-plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",main ="Temperature as a predictor of Algae Abundance",las=1)
+plot(importupdated$Temp_range,importupdated$Algae, ylab="Algae Abundance (% cover)",xlab="Temperature (*C)",las=1)
 abline(lm(Algae~Temp_range,importupdated))
 @
-\caption{Ths is caption that needs info...}
+\caption{\emph{Cosmopogen aeruginosus} abundance as a function of temperature.}
 \label{fig:tempalgae}
 \end{figure}
 
-\subsection{$BOD_5$ and Water Velocity}
-Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Our $BOD_5$ calculations of these data yielded the values:
-
-\subitem Site 2 $BOD_5$= 22.1 mg/L 
-\subitem Site 4 $BOD_5$= 27.3 mg/L 
-
+Analysis of the data using quality control parameters indicated that two source water samples met minimum DO depletion standards. Site 4 had a higher BOD$_5$, 27.3 mg/L, and upstream site, Site 2, had a lower BOD$_5$ with 22.1 mg/L. 
 
 \subsection{Fish Counts}
+
+Counting the suckers relied on videography because still fish were well comoflauged and difficult to see (Figure \ref{fig:reallygoodcrop}). However, when use in conjunction video, fish could be counted because their swimming distinquished them from their surroundings.
+
+\begin{figure}
+\includegraphics[scale=.4]{Videography_figures/reallygoodcrop}
+\caption{A close up of two Santa Ana suckers from the footage we collected.}
+\label{fig:reallygoodcrop}
+\end{figure}
 
 <<echo=FALSE>>=
 newmetadata <- read.csv("/home/CAMPUS/mwl04747/github/Santa-Ana-Sucker-Recovery/Data/Data_Tues_2/newmetadata.csv")
 @
 
-At the upstream location (Site 2), no suckers were observed in the morning while one sucker occasionally swim out from behind a rock. At the downstream location (Site 4), we observed numerous fish \ldots (Table \ref{tab:fishcounts}). We counted an average of 20.1 suckers in the morning with a standard deviation of 6.0 fish.  In the afternoon, we counted an average of 32.2 with a standard deviation of 9.9, meaning both the average and the variance were higher in the afternoon.  The river was 27.8\textdegree C in the morning and increased to 28.4\textdegree C in the afternoon.  We calculated a p-value of 6.027e-13, which is less than .05 so we can reject our null hypothesis that time of day will have no effect on the number of fish.
-
 \begin{table}
-\caption{Summary Statistics for Videography Fish Counts}
+\caption{Videography Fish Count Summary Statistics at Site 4}
 %\begin{tabular}{ |p{1.5cm}||p{1cm}|p{1cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|{p2cm}|  }
 \begin{tabular}{cccccccc}
  \hline
- \multicolumn{8}{c}{Videography Summary Statistics} \\
+ \multicolumn{8}{c}{Summary Statistics} \\
  \hline
  Section & Min & Max & Mean & Median & 1st Quartile & 3rd Quartile & K\\
  \hline
@@ -268,23 +273,15 @@ At the upstream location (Site 2), no suckers were observed in the morning while
 \label{tab:fishcounts}
 \end{table}
 
-\textbf{[Text to describe Figure \ref{fig:fishsection}]}
+At the upstream location (Site 2), no suckers were observed in the morning while one sucker occasionally swim out from behind a rock. At the downstream location (Site 4), we observed numerous fish \ldots (Table \ref{tab:fishcounts}). We counted an average of 20.1 suckers in the morning with a standard deviation of 6.0 fish.  In the afternoon, we counted an average of 32.2 with a standard deviation of 9.9, meaning both the average and the variance were higher in the afternoon (Figure \ref{fig:fishsection}, p << 0,001).  The river was 27.8\textdegree C in the morning and increased to 28.4\textdegree C in the afternoon. 
 
 \begin{figure}[!ht]
 << figure=TRUE, echo=FALSE >>=
-boxplot(Fish~Section,newmetadata, ylab="Fish",xlab="Time of Day",main ="Time of Day as a predictor of Fish",las=1)
+#summary(aov(Fish~Section,newmetadata))
+boxplot(Fish~Section,newmetadata, ylab="Fish",xlab="Time of Day",las=1)
 @
-\caption{needs a caption! Can we change after to afternoon...}
+\caption{Fish counts as a function of time of day at Site 4}
 \label{fig:fishsection}
-\end{figure}
-
-
-\textbf{[Text to describe Figure \ref{fig:reallygoodcrop}]}
-
-\begin{figure}
-\includegraphics[scale=.4]{Videography_figures/reallygoodcrop}
-\caption{A close up of two Santa Ana suckers from the footage we collected.}
-\label{fig:reallygoodcrop}
 \end{figure}
 
 \section{Discussion}
@@ -320,8 +317,8 @@ There were also pretty extreme spikes, but not occurring at times that suggested
 
 It is difficult to determine if the temperature spikes were what caused the fish to choose to reside primarily in Site 4, because there are a myriad of other variables. Other variables that could have affected where the fish chose to live include algae/food source, canopy cover, depth, or sediment type/size. What we do know is that the further upstream locations not only had a wide range of temperatures, but also experienced hotter temperatures than Site 4, which was where the fish live. From our background research, we know that the US Fish and Wildlife Service found that Santa Ana suckers prefer water that is around 22 \textdegree~C. None of our sites had water this cold, but Site 4 had the least variability and averaged around 28 \textdegree. According to a brief overview from Larry Brown of the US Geological Survey, no fish were detected at Site 1, while a few European chubs\footnote{What are these??} were sampled at Sites 2 and 3. At Site 4 they estimated large numbers of fish but did not conduct a formal survey of this site. However, our video data showed a much larger population in the plunge pool. These population estimates were the results of random surveying, and could be limited in their applicability because of variation in site location and scope. For example, Larry Brown measured sucker populations in the Rialto drainage but not in the pool below it, which is where we placed our data logger. Therefore, it is difficult to tell to what extent the US Geological Survey's data works with our data. 
 
-\subsection{$BOD_5$}
-Future study of dissolved oxygen levels and water velocity in the Santa Ana River should test for any correlations with the recent Fish and Wildlife Service electroshock population data. Though we did not have access to this data, we had access to a rough estimate of the sucker population from video-counting (mentioned above). In a \textbf{week(NEEDS TO BE CHANGED)}, about 12 fish were counted at Site 2 and 671 fish at Site 4. So, many more fish were spotted where the river velocity was higher and where the $BOD_5$ levels were higher. Since BOD can be less than 2 mg/L in clear water and reach hundreds of mg/L in organic waste water, a difference of about 5 mg/L between Site 2 and Site 4 is very small. It is unlikely a threshhold was reached between 22.1 and 27.3 mg/L that made Site 2 unliveable for the sucker. The difference in velocity is more significant and also supports the referenced existing literature that says water flow velocity is one of the primary determinants of sucker population. We recommend future research on the Santa Ana sucker population focus on water velocity.
+\subsection{BOD$_5$}
+Future study of dissolved oxygen levels and water velocity in the Santa Ana River should test for any correlations with the recent Fish and Wildlife Service electroshock population data. Though we did not have access to this data, we had access to a rough estimate of the sucker population from video-counting (mentioned above). In a \textbf{week(NEEDS TO BE CHANGED)}, about 12 fish were counted at Site 2 and 671 fish at Site 4. So, many more fish were spotted where the river velocity was higher and where the BOD$_5$ levels were higher. Since BOD can be less than 2 mg/L in clear water and reach hundreds of mg/L in organic waste water, a difference of about 5 mg/L between Site 2 and Site 4 is very small. It is unlikely a threshhold was reached between 22.1 and 27.3 mg/L that made Site 2 unliveable for the sucker. The difference in velocity is more significant and also supports the referenced existing literature that says water flow velocity is one of the primary determinants of sucker population. We recommend future research on the Santa Ana sucker population focus on water velocity.
 
 \subsection{Research Limitations}
 
