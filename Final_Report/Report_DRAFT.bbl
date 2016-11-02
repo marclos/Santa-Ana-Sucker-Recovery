@@ -1,133 +1,159 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Albertson et~al., 2013]{albertson13}
-Albertson, L., Koenig, L., Lewis, B., Zeug, S., Harrison, L., and Cardinale, B.
-  (2013).
+\bibitem[Albertson et~al.(2013)Albertson, Koenig, Lewis, Zeug, Harrison, and
+  Cardinale]{albertson13}
+L.K. Albertson, L.E. Koenig, B.L. Lewis, S.C. Zeug, L.R. Harrison, and B.J.
+  Cardinale.
 \newblock How does restored habitat for chinook salmon (oncorhynchus
   tshawytscha) in the merced river in california compare with other chinook
   streams?
-\newblock {\em River Research and Applications}, 29(1):469--482.
+\newblock \emph{River Research and Applications}, 29\penalty0 (1):\penalty0
+  469--482, 2013.
 
-\bibitem[Baskerville-Bridges, 2012]{baskerville2012recovery}
-Baskerville-Bridges, B. (2012).
+\bibitem[Baskerville-Bridges(2012)]{baskerville2012recovery}
+Bradd Baskerville-Bridges.
 \newblock Recovery outline.
+\newblock 2012.
 
-\bibitem[Brown et~al., 2005]{brown2005aquatic}
-Brown, L.~R., Burton, C.~A., and Belitz, K. (2005).
+\bibitem[Brown et~al.(2005)Brown, Burton, and Belitz]{brown2005aquatic}
+Larry~R Brown, Carmen~A Burton, and Kenneth Belitz.
 \newblock Aquatic assemblages of the highly urbanized santa ana river basin,
   california.
-\newblock In {\em American Fisheries Society Symposium}, volume~47, pages
-  263--287.
+\newblock In \emph{American Fisheries Society Symposium}, volume~47, pages
+  263--287, 2005.
 
-\bibitem[Coulter et~al., 2015]{coulter2015fluctuating}
-Coulter, D.~P., H\"o\"ok, T.~O., Mahapatra, C.~T., Guffey, S.~C., and
-  Sep\'ulveda, M.~S. (2015).
+\bibitem[Coulter et~al.(2015)Coulter, H\"o\"ok, Mahapatra, Guffey, and
+  Sep\'ulveda]{coulter2015fluctuating}
+David~P Coulter, Tomas~O H\"o\"ok, Cecon~T Mahapatra, Samuel~C Guffey, and
+  Maria~S Sep\'ulveda.
 \newblock Fluctuating water temperatures affect development, physiological
   responses and cause sex reversal in fathead minnows.
-\newblock {\em Environmental science \& technology}, 49(3):1921--1928.
+\newblock \emph{Environmental science \& technology}, 49\penalty0 (3):\penalty0
+  1921--1928, 2015.
 
-\bibitem[Evans et~al., 2005]{evans2005long}
-Evans, C., Monteith, D., and Cooper, D. (2005).
+\bibitem[Evans et~al.(2005)Evans, Monteith, and Cooper]{evans2005long}
+CD~Evans, DT~Monteith, and DM~Cooper.
 \newblock Long-term increases in surface water dissolved organic carbon:
   observations, possible causes and environmental impacts.
-\newblock {\em Environmental Pollution}, 137(1):55--71.
+\newblock \emph{Environmental Pollution}, 137\penalty0 (1):\penalty0 55--71,
+  2005.
 
-\bibitem[Evans, 2005]{evans2005draft}
-Evans, J. (2005).
+\bibitem[Evans(2005)]{evans2005draft}
+J.~Evans.
 \newblock Draft eir for the santa ana river water right applications for
   supplemental water supply.
-\newblock {\em Center for Biological Diversity}, -(-):N/A.
+\newblock \emph{Center for Biological Diversity}, -\penalty0 (-):\penalty0 N/A,
+  2005.
 
-\bibitem[Fish and Service, 2014]{usfishandwildlifeservice14}
-Fish, U. and Service, W. (2014).
+\bibitem[Fish and Service(2014)]{usfishandwildlifeservice14}
+U.S. Fish and Wildlife Service.
 \newblock Draft recovery plan for the santa ana sucker.
 \newblock Technical Report v + 61 pp, U.S. Fish and Wildlife Service, U.S. Fish
-  and Wildlife Service.
+  and Wildlife Service, 2014.
 
-\bibitem[Greenfield et~al., 1970]{greenfield70}
-Greenfield, D.~W., Ross, S.~T., and Deckert, G.~D. (1970).
+\bibitem[Greenfield et~al.(1970)Greenfield, Ross, and Deckert]{greenfield70}
+D.~W. Greenfield, S.~T. Ross, and G.~D. Deckert.
 \newblock Some aspects of the life history of the santa ana sucker, catostomus
   (pantosteus) santaanae (snyder).
-\newblock {\em Calif. Fish Game}, 56(3):166--179.
+\newblock \emph{Calif. Fish Game}, 56\penalty0 (3):\penalty0 166--179, 1970.
 
-\bibitem[Jenkins et~al., 2009]{jenkins2009effects}
-Jenkins, J.~A., Goodbred, S.~L., Olivier, H.~M., Draugelis-Dale, R.~O., and
-  Alvarez, D.~A. (2009).
+\bibitem[Jenkins et~al.(2009)Jenkins, Goodbred, Olivier, Draugelis-Dale, and
+  Alvarez]{jenkins2009effects}
+Jill~A Jenkins, Steven~L Goodbred, Heather~M Olivier, Rassa~O Draugelis-Dale,
+  and David~A Alvarez.
 \newblock Effects of wastewater discharges on endocrine and reproductive
   function of western mosquitofish (gambusia spp.) and implications for the
   threatened santa ana sucker (catostomus santaanae).
-\newblock Technical report, US Geological Survey.
+\newblock Technical report, US Geological Survey, 2009.
 
-\bibitem[{Los Huertos}, 2016]{loshuertos16}
-{Los Huertos}, M. (2016).
-\newblock {\em Thermal Properties of Water}.
-\newblock Pomona College, Claremont, California, first edition.
+\bibitem[{Los Huertos}(2016)]{loshuertos16}
+Marc {Los Huertos}.
+\newblock \emph{Thermal Properties of Water}.
+\newblock Pomona College, Claremont, California, first edition, 2016.
 
-\bibitem[Matthews et~al., 1994]{matthews1994cool}
-Matthews, K.~R., Berg, N.~H., Azuma, D.~L., and Lambert, T.~R. (1994).
+\bibitem[Matthews et~al.(1994)Matthews, Berg, Azuma, and
+  Lambert]{matthews1994cool}
+Kathleen~R Matthews, Neil~H Berg, David~L Azuma, and Thomas~R Lambert.
 \newblock Cool water formation and trout habitat use in a deep pool in the
   sierra nevada, california.
-\newblock {\em Transactions of the American Fisheries Society},
-  123(4):549--564.
+\newblock \emph{Transactions of the American Fisheries Society}, 123\penalty0
+  (4):\penalty0 549--564, 1994.
 
-\bibitem[Moyle, 2002]{moyle2002inland}
-Moyle, P.~B. (2002).
-\newblock {\em Inland fishes of California}.
-\newblock Univ of California Press.
+\bibitem[Moyle(2002)]{moyle2002inland}
+Peter~B Moyle.
+\newblock \emph{Inland fishes of California}.
+\newblock Univ of California Press, 2002.
 
-\bibitem[O'Brien et~al., 2011]{obrien2011status}
-O'Brien, J.~W., Hansen, H.~K., and Stephens, M.~E. (2011).
+\bibitem[O'Brien et~al.(2011)O'Brien, Hansen, and Stephens]{obrien2011status}
+John~W O'Brien, Hans~K Hansen, and Mike~E Stephens.
 \newblock Status of fishes in the upper san gabriel river basin, los angeles
   county, california.
-\newblock {\em California Fish and Game}, 97(4):149--163.
+\newblock \emph{California Fish and Game}, 97\penalty0 (4):\penalty0 149--163,
+  2011.
 
-\bibitem[Poole, 2002]{poole2002fluvial}
-Poole, G.~C. (2002).
+\bibitem[Palenscar()]{palenscar}
+Kai Palenscar.
+\newblock personal communication.
+
+\bibitem[Poole(2002)]{poole2002fluvial}
+Geoffrey~C Poole.
 \newblock Fluvial landscape ecology: addressing uniqueness within the river
   discontinuum.
-\newblock {\em Freshwater Biology}, 47(4):641--660.
+\newblock \emph{Freshwater Biology}, 47\penalty0 (4):\penalty0 641--660, 2002.
 
-\bibitem[{R Core Team}, 2016]{CRAN}
-{R Core Team} (2016).
-\newblock {\em R: A Language and Environment for Statistical Computing}.
-\newblock R Foundation for Statistical Computing, Vienna, Austria.
+\bibitem[{R Core Team}(2016)]{CRAN}
+{R Core Team}.
+\newblock \emph{R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2016.
+\newblock URL \url{https://www.R-project.org/}.
 
-\bibitem[REF, XXXX]{REF}
-REF (XXXX).
-\newblock Reference needed.
+\bibitem[REF(XXXX)]{REF}
+REF.
+\newblock Citation needed.
+\newblock XXXX.
 
-\bibitem[Sadler, 1980]{sadler1980effect}
-Sadler, K. (1980).
+\bibitem[Sadler(1980)]{sadler1980effect}
+K~Sadler.
 \newblock Effect of the warm water discharge from a power station on fish
   populations in the river trent.
-\newblock {\em Journal of Applied Ecology}, pages 349--357.
+\newblock \emph{Journal of Applied Ecology}, pages 349--357, 1980.
 
-\bibitem[Saiki et~al., 2007]{saiki2007life}
-Saiki, M.~K., Martin, B.~A., Knowles, G.~W., and Tennant, P.~W. (2007).
+\bibitem[Saiki et~al.(2007)Saiki, Martin, Knowles, and Tennant]{saiki2007life}
+Michael~K Saiki, BARBARA~A Martin, GLEN~W Knowles, and PATRICK~W Tennant.
 \newblock Life history and ecological characteristics of the santa ana sucker,
   catostomus santaanae.
-\newblock {\em California Fish and Game}, 93(2):87.
+\newblock \emph{California Fish and Game}, 93\penalty0 (2):\penalty0 87, 2007.
 
-\bibitem[Thompson et~al., 2010]{thompson2010influence}
-Thompson, A.~R., Baskin, J.~N., Swift, C.~C., Haglund, T.~R., and Nagel, R.~J.
-  (2010).
+\bibitem[Thompson et~al.(2010)Thompson, Baskin, Swift, Haglund, and
+  Nagel]{thompson2010influence}
+Andrew~Richard Thompson, Jonathan~N Baskin, Camm~C Swift, Thomas~R Haglund, and
+  Randall~J Nagel.
 \newblock Influence of habitat dynamics on the distribution and abundance of
   the federally threatened santa ana sucker, catostomus santaanae, in the santa
   ana river.
-\newblock {\em Environmental biology of fishes}, 87(4):321--332.
+\newblock \emph{Environmental biology of fishes}, 87\penalty0 (4):\penalty0
+  321--332, 2010.
 
-\bibitem[Winkelmann et~al., 2014]{winkelmann2014top}
-Winkelmann, C., Schneider, J., Mewes, D., Schmidt, S.~I., Worischka, S.,
-  Hellmann, C., and Benndorf, J. (2014).
+\bibitem[Winkelmann et~al.(2014)Winkelmann, Schneider, Mewes, Schmidt,
+  Worischka, Hellmann, and Benndorf]{winkelmann2014top}
+Carola Winkelmann, Jana Schneider, Daniela Mewes, Susanne~I Schmidt, Susanne
+  Worischka, Claudia Hellmann, and J{\"u}rgen Benndorf.
 \newblock Top-down and bottom-up control of periphyton by benthivorous fish and
   light supply in two streams.
-\newblock {\em Freshwater biology}, 59(4):803--818.
+\newblock \emph{Freshwater biology}, 59\penalty0 (4):\penalty0 803--818, 2014.
 
-\bibitem[{\v{Z}}{\'a}kov{\'a} et~al., 2013]{vzakova2013new}
-{\v{Z}}{\'a}kov{\'a}, Z., Pum, M., Sedl{\'a}{\v{c}}ek, P., Mlejnkov{\'a}, H.,
-  and Hind{\'a}k, F. (2013).
+\bibitem[{\v{Z}}{\'a}kov{\'a} et~al.(2013){\v{Z}}{\'a}kov{\'a}, Pum,
+  Sedl{\'a}{\v{c}}ek, Mlejnkov{\'a}, and Hind{\'a}k]{vzakova2013new}
+Zde{\v{n}}ka {\v{Z}}{\'a}kov{\'a}, Manfred Pum, Pavel Sedl{\'a}{\v{c}}ek, Hana
+  Mlejnkov{\'a}, and Franti{\v{s}}ek Hind{\'a}k.
 \newblock New records of compsopogon aeruginosus (rhodophyta) in rivers of
   central europe.
-\newblock {\em Oceanological and Hydrobiological Studies}, 42(4):412--419.
+\newblock \emph{Oceanological and Hydrobiological Studies}, 42\penalty0
+  (4):\penalty0 412--419, 2013.
 
 \end{thebibliography}
