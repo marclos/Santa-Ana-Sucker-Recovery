@@ -111,6 +111,14 @@ The river was surrounded by a derelict lot filled with trash. It was very indust
 \label{SAR_Image}
 \end{figure}
 
+The project involved a study of a section of the Santa Ana River located along Aqua Mansa Road between South Riverside Ave and South Rancho Ave in the city of Rialto, California (Figure 1). 
+Four specific sites within that section were chosen for sampling, and are numbered 1 through 4 in Table 1. Samples were taken from the four sites, beginning with Site 4, the downstream location, and ending with the upstream location identified as Site 1.  These two sites are approximately one kilometer apart. 
+Site 1 was characterized by the presence of large debris, e.g., rocks and branches. In contrast, the river at Site 4 was a plunge pool whose surface was relatively smooth. The clarity of the water made it possible to see that It had a bed of pebbles and small coarse sediments.  Site 2, which is located just below the Rialto concrete channel, DESCRIBE had a Shallow water sheet with fine sediments except in the left bank with coarse Site 3, DESCRIBE. was characterized by coarse sediments in the left bank and in the middle stream and more opened by riparian vegetation.
+The riparian characteristics of the river included invasive species salt cedar (Tamarix) and castor bean (Ricinus communis)  and some giant cane (Arundo donax). 
+
+The section of the river studied is in an industrial area containing numerous storage buildings. Many large trucks were present, several of which had their motors idling.  A significant amount of trash was visible, both on the ground and to a lesser degree in the river itself.  
+
+
 \subsection{Habitat Evaluation}
 
 The collection of data on the algae abundance, sediment type, and vegetation canopy cover of the Santa Ana River was done along the section of the river described in the site description section on September 20th, 2016, from 1pm to 3:30pm. We evaluated 9 parameters from Sites 2-4, for a total of 27 measurements. At each site, beginning at Site 4, the following procedures were followed: 
