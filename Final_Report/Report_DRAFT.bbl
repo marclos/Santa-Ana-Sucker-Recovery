@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,12 +20,22 @@ Bradd Baskerville-Bridges.
 \newblock Recovery outline.
 \newblock 2012.
 
+\bibitem[Brown()]{perscomBrown}
+Larry Brown.
+\newblock personal communication.
+
 \bibitem[Brown et~al.(2005)Brown, Burton, and Belitz]{brown2005aquatic}
 Larry~R Brown, Carmen~A Burton, and Kenneth Belitz.
 \newblock Aquatic assemblages of the highly urbanized santa ana river basin,
   california.
 \newblock In \emph{American Fisheries Society Symposium}, volume~47, pages
   263--287, 2005.
+
+\bibitem[Chattopadhyay et~al.(1988)Chattopadhyay, Saha, Ghosh, and
+  Karmakar]{chattopadhyay1988study}
+GN~Chattopadhyay, PK~Saha, Apurba Ghosh, and HC~Karmakar.
+\newblock A study on optimum bod levels for fish culture in wastewater ponds.
+\newblock \emph{Biological Wastes}, 25\penalty0 (2):\penalty0 79--85, 1988.
 
 \bibitem[Coulter et~al.(2015)Coulter, H\"o\"ok, Mahapatra, Guffey, and
   Sep\'ulveda]{coulter2015fluctuating}
@@ -71,10 +81,23 @@ Jill~A Jenkins, Steven~L Goodbred, Heather~M Olivier, Rassa~O Draugelis-Dale,
   threatened santa ana sucker (catostomus santaanae).
 \newblock Technical report, US Geological Survey, 2009.
 
+\bibitem[Jones et~al.(2007)Jones, Hunt, and Smith]{jones2007effect}
+Matthew~P Jones, William~F Hunt, and Jonathan~T Smith.
+\newblock The effect of urban stormwater bmps on runoff temperature in trout
+  sensitive waters.
+\newblock In \emph{2007 ASAE Annual Meeting}, page~1. American Society of
+  Agricultural and Biological Engineers, 2007.
+
 \bibitem[{Los Huertos}(2016)]{loshuertos16}
 Marc {Los Huertos}.
 \newblock \emph{Thermal Properties of Water}.
 \newblock Pomona College, Claremont, California, first edition, 2016.
+
+\bibitem[Mallya(2007)]{mallya2007effects}
+Yovita~John Mallya.
+\newblock The effects of dissolved oxygen on fish growth in aquaculture.
+\newblock \emph{The United Nations University fisheries training programmer,
+  Final project, pp30}, 2007.
 
 \bibitem[Matthews et~al.(1994)Matthews, Berg, Azuma, and
   Lambert]{matthews1994cool}
@@ -88,6 +111,19 @@ Kathleen~R Matthews, Neil~H Berg, David~L Azuma, and Thomas~R Lambert.
 Peter~B Moyle.
 \newblock \emph{Inland fishes of California}.
 \newblock Univ of California Press, 2002.
+
+\bibitem[Nelson et~al.(2009)Nelson, Palmer, Pizzuto, Moglen, Angermeier,
+  Hilderbrand, Dettinger, and Hayhoe]{Nelson09}
+Kären~C. Nelson, Margaret~A. Palmer, James~E. Pizzuto, Glenn~E. Moglen,
+  Paul~L. Angermeier, Robert~H. Hilderbrand, Michael Dettinger, and Katharine
+  Hayhoe.
+\newblock Forecasting the combined effects of urbanization and climate change
+  on stream ecosystems: from impacts to management options.
+\newblock \emph{Journal of Applied Ecology}, 46\penalty0 (1):\penalty0
+  154--163, 2009.
+\newblock ISSN 1365-2664.
+\newblock \doi{10.1111/j.1365-2664.2008.01599.x}.
+\newblock URL \url{http://dx.doi.org/10.1111/j.1365-2664.2008.01599.x}.
 
 \bibitem[O'Brien et~al.(2011)O'Brien, Hansen, and Stephens]{obrien2011status}
 John~W O'Brien, Hans~K Hansen, and Mike~E Stephens.
