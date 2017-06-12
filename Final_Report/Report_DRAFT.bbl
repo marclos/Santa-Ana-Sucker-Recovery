@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -188,6 +188,12 @@ Carola Winkelmann, Jana Schneider, Daniela Mewes, Susanne~I Schmidt, Susanne
 \newblock Top-down and bottom-up control of periphyton by benthivorous fish and
   light supply in two streams.
 \newblock \emph{Freshwater biology}, 59\penalty0 (4):\penalty0 803--818, 2014.
+
+\bibitem[Wulff et~al.(2017)Wulff, Brown, and May]{wulff2017native}
+Marissa~L Wulff, Larry~R Brown, and Jason May.
+\newblock Native fish population and habitat study, {S}anta {A}na {R}iver,
+  {C}alifornia.
+\newblock 2017.
 
 \bibitem[{\v{Z}}{\'a}kov{\'a} et~al.(2013){\v{Z}}{\'a}kov{\'a}, Pum,
   Sedl{\'a}{\v{c}}ek, Mlejnkov{\'a}, and Hind{\'a}k]{vzakova2013new}
